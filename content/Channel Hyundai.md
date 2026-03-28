@@ -1,0 +1,507 @@
+- [Aliases](~/Aliases.md) [[Aliases]]
+    - 채널 현대
+    - 채널현대
+    - ChannelHyundai
+    - Channelhyundai
+-  [[Channel Hyundai]] 
+- 고도화 방안 [[Channel Hyundai]] 
+    - Screen Saver
+        - TV app
+    - Apple TV app
+    - iOS App
+    - Android App
+    - Explore 진입경로 우회
+    - 웹 플레이어 사용성 개선
+- 콘텐츠 아이데이션
+    - WRC 1인칭 시점 제공
+- TV 앱 레퍼런스
+    - 문서 작성
+        - Overview
+            - 비교 장표
+        - Summary
+            - TV 앱 시장 분포도
+                - 삼성, LG TV OS 분포
+                - 
+            - 미디어별 특장점 소개
+        - Detail
+            - 각 서비스 리서치 자료
+    - 동종
+        - AUDI TV(07.29 기준)
+            - 미디어
+                - LG
+                - 삼성
+                - 웹사이트
+                    - [https://www.audi-mediacenter.com/en/audimediatv/video/the-making-of-the-audi-e-tron-gt-a-documentary-5543](https://www.audi-mediacenter.com/en/audimediatv/video/the-making-of-the-audi-e-tron-gt-a-documentary-5543)
+                    - 웹사이트와 TV app은 별개로 운영 중인것으로 파악됨
+                - Apple TV
+                    - audi media TV(확인 불가)
+            - 메뉴 구조
+                - Home
+                    - New now
+                    - Audi tron
+                    - Design
+                    - Sustainability
+                    - Performance
+                    - Technology
+                    - Audi x FC Bayern
+                - Channels(같은 카테고리 재활용)
+                    - Design
+                    - Performance
+                    - Sustainability
+                    - Digitalization
+                    - Ultra HD
+                - Models
+                    - e-tron
+                    - A1
+                    - A3
+                    - A4
+                    - A5
+                    - A6
+                    - A7
+                    - A8
+                    - Q2
+                    - Q3
+                    - Q5
+                    - Q7
+                    - Q8
+                    - TT
+                    - R8
+                    - RS
+            - 콘텐츠 제공
+                - 헤리티지
+                - World Premiere
+                - 문화
+                - 환경
+                - 생산과정
+                - Future Vision
+                - 후원 축구 클럽
+                - 컨셉카
+                - Connectivity
+                - Innovation
+                - Event
+                - AI
+                - Motorsports
+            - 기능
+                - 영상 프리뷰 제공하지 않음
+                - 키비주얼 롤링
+                - 영상 태그 기능
+            - 언어
+                - 독어, 영어
+            - 특징
+                - 같은 콘텐츠를 제공하면서 메뉴 구조로 필터링해서 콘텐츠를 제공
+                    - 콘텐츠 욹어먹기
+                - 영상 로드가 느림
+                - 광고 영상과 피쳐영상 위주의 콘텐츠 제공
+                - 영상 탐색이 힘듦
+                - 2중 GNB 구조
+                - 검색 미제공
+        - Porsche TV(07.29 기준)
+            - 미디어
+                - LG
+                - 삼성
+                - 웹(다른 서비스)
+                    - [https://newstv.porsche.com/en/](https://newstv.porsche.com/en/)
+                - apple TV
+            - 메뉴 구조
+                - Newest Videos
+                - Models
+                    - 718
+                    - 911
+                    - PANAMERA
+                    - MACAN
+                    - TAYCAN
+                - MOTORSPORT
+                - EVENT
+                - CLASSIC
+            - 언어
+                - 영문
+            - 특징
+                - 같은 콘텐츠를 제공하면서 메뉴 구조로 필터링해서 콘텐츠를 제공
+                    - 콘텐츠 욹어먹기
+                - 키비주얼 롤링
+                - 프리뷰 제공하지 않음
+                - 차량 관련 세부 정보
+                    - 연료 소비 표
+                - 검색관련 키보드
+            - 콘텐츠 제공
+                - 차종 관련 영상
+                - 개발 비하인드
+                - 광고 영상
+                - 모터 스포츠
+                - 해리티지
+        - Benz
+            - 없음
+        - BMW
+            - 없음
+        - Toyota
+            - 없음
+        - Volkswagen
+            - 없음
+    - 이종
+        - 레드불 TV
+            - 미디어
+                - 웹
+                - Samsung TV
+                - Fire
+                - Android TV
+                - Apple TV
+            - 메뉴 구조
+                - Home
+                    - Now Playing
+                    - Chnnels
+                    - Favorites
+                    - Featured
+                    - This is Red Bull Romaniacs
+                    - The Best in their Game
+                    - Most Popular Videos
+                    - Upcoming Live Events
+                    - Replays
+                    - Films & Documentaries
+                    - Shows
+                    - Clips
+                - Browse
+                    - Formats
+                        - Events
+                        - Shows
+                        - Films
+                        - Clips
+                    - All Channels
+                        - Bike
+                        - Adventure
+                        - Motor
+                        - Surfing
+                        - Skateboarding
+                        - Winter
+                        - Dance
+                        - Gaming
+                        - Music
+                - Event
+                    - Featured Event
+                    - Upcoming Live Events
+                    - Past Live Events
+                    - Canceled Live Events
+                - Account
+                    - 로그인
+                    - Favorites
+                    - 설정
+                - Search
+            - 라이브 채널 항시 운용
+                - 다양한 라이브 채널 이용 가능 24/7
+                - 종류
+                    - World of Red bull
+                    - bike
+                    - adventure
+                    - Motor
+            - 로그인 기능
+                - QR 코드 로그인 기능
+                - 로그인 이후 기능 조사
+            - 콘텐츠 구성
+                - 시리즈
+                - 에피소드
+            - 기능
+                - 국가별 콘텐츠 제한 기능
+                - 계속되는 이벤트 업데이트로 인한 안내 및 이전 에피소드, 라이브 예정인 콘텐츠
+                - 접속 지역별 시간 제공
+                - Info
+                    - Audio 변경
+                    - About 기능
+                - 라이브 채널이 아닌 콘텐츠들은 TV 에서 랜딩으로 던진 다음 플레이어로 진입하게 함
+                - 라이브 채널간 이동을 할 수 있게 함
+            - 언어
+                - 영어
+        - Digital Concert Hall
+            - 미디어
+                - 웹
+                - LG TV
+                - Samsung TV
+                - Apple TV
+                - Android TV
+            - 메뉴 구조
+                - 홈
+                    - 무료 보기
+                    - 다음 라이브 공연
+                    - 최근 추가
+                    - 플레이 리스트
+                - 공연
+                    - 라이브
+                    - 공연 아카이브
+                        - 필터
+                            - 작곡가
+                            - 지휘자
+                            - 독주자
+                            - 앙상블
+                            - 시즌
+                            - 시대
+                            - 카테고리
+                - 영상
+                    - 영상 아카이브
+                - 인터뷰
+                    - 인터뷰 아카이브
+                - 로그인
+                    - 언어
+                        - English
+                        - Deutsch
+                        - 일본어
+                        - 스페인어
+                        - 한국어
+                    - 계정
+                    - 법적고지
+    - 관련 업종
+        - WRC
+            - 메뉴 구조
+                - Home
+                    - 스케줄
+                    - Latest Videos
+                    - Lates WRC+ Videos
+                    - WRC Historys
+                    - Esport WRC
+                    - Latest Junior WRC
+                - WRC +
+                    - Rally Estonia 2021
+                    - Safari Rally Kenya 2021
+                    - Rally Italia Sardegna 2021
+                    - Rally De Portugal 2021
+                    - Croatia Rally 2021
+                    - Arctic Rally
+                    - Rallye Monte-carlo 2021
+                    - Aci Rally Monza 2020
+                    - Rally Italia Sardegna 2020
+                    - Rally Turkey 2020
+                    - Rally Estonia 2020
+                    - Rally Mexico 2020
+                    - Rally Sweden 2020
+                    - Rally Monte-Carlo 2020
+                - WRC Schedule
+                - Search
+                - Login
+- 제조사 미팅
+    - LG
+        - 디폴트앱 등록 협의
+            - 단가
+            - 계약 조건
+                - 기간이 정해져 있지 않다.
+                - 슬롯이 더 많아진다.
+                - 집행하게 되면? 어떤 기간으로
+                    - 년도 모델 기준으로 슬롯
+            - 고정형은 팔렸다.
+            - 연단위 계약(자동 갱신, 2 ~ 3년 간)
+            - 지금 당장은 어려울 수 있다.
+            - placement fee
+                - 국가별 CP 의 계약이 크다.
+            - 제일 오른쪽 끝에 노출될 수 있다.
+            - 국가 별 가격은 Placement 는 담당자 통해서 진행을 하겠다.
+                - 미국
+                    - 
+                - 영국
+                    - 
+                - 독일
+                    - 
+                - 브라질
+                    - 
+                - 한국
+                    - 
+            - Netflix 수익이랑 쉐어를 한다.
+        - 광고 상품 리스트 및 단가
+            - 앱스토어 광고 = 콘텐츠 스토어 배너
+                - 100% 광고
+                - 로테이션으로 진행
+                - 빅베너
+                - 오른쪽 두개 고정
+                - 국가 테이블 조건
+                - 상품 단가
+                - ROI
+                - 5% 미만
+                - 데이터 전달할 수 있는지
+            - Notice Case 이다.
+                - 초기에 높았던 이유는
+            - 애드 타일 광고 쪽은 배제한다.
+                - 다른 디지털 케이스와 다르게 움직이는게 ...
+            - 애드 타일 광고
+                - 성과가 좋았다
+                - App Download: 4 -> 454
+                - App Access:  21 -> 408
+                - 비교할 레퍼런스가 있을까?
+                    - Reference 전달 부탁
+                - 마쯔다 케이스는 영상 광고
+                - 현대 외에는 없었다.
+                - 2021
+                - Long term Fee
+                - 가격
+                - CTR 추정치가 있는지
+                - Refence 데이터 및 올라가게 된 상태에서
+            - 광고는 타게팅 해서 실행가능하다
+                - 카테고리 기준으로 타게팅 가능
+        - 앱스토어 내 '에디터 추천', '최신 앱' 등재 조건 확인
+            - Placement 광고와 같이 매핑해준다. = 삼성과 같음
+            - 국가별 순위 공개
+                - 오토모티브 계열 중에서의 순위 공개
+                - 국가별
+        - 제공 가능한 채널현대 app. 유저 정보
+            - 공유가능한 정보
+                - Demography
+                - 데이터 어려울 수 있다.
+            - 미국 샘플데이터 전달 예정
+            - 타사간 데이터 순위 비교
+                - A사 앱 비교 다운로드(5월)
+                    - 오픈일: 5년 이상
+                    - 한국: 월 2배 높음
+                    - 미, 영, 독: - 50%
+                    - Global: -10% (10:9(채널 현대))
+                    - 국가 특성이 반영된다
+        - 스마트 TV 마켓 리서치 자료 공유
+            - 받아보는 리포트 공유
+                - 미국 중심으로 전달받을 예정
+            - LG TV Market Share(대 수)
+                - 미국
+                    - 20% 삼성과 비슷
+                    - 3. 소니(Android)
+                    - 4. TCL(Android)
+                - 독일
+                    - 25%
+                - 영국
+                    - 25%
+                - 한국
+                    - ??????????
+        - 양사 간 콜라보 아이디어 논의
+        - App Store 단가 테이블 기준
+            - Placement: 1년 기준
+            - Ad Tile
+                - 억단위
+                - 작게하면 국가별 천 단위
+            - Long Term
+                - XX 억
+            - 
+    - Samsung
+        - Agenda
+            - 삼성 TV 디폴트앱 등록 협의
+                - Placement
+                    - Default 1 줄 Launcher 스크롤 이전 ATF(Above the Fold) / 스크롤 이후 BTF(Below the Fold) 3자리
+                    - 연초 1년 단위로 계약한다.
+                    - 최초 노출에만 적용되며 사용자가 조작하지 않는이상 없어지지 않는다.
+                    - 없으면 추천 앱에 노출
+                    - ATF 19 년도 9개
+                        - 삼성 전체 앱 10위 안에 들어온다.
+                    - 12월 말 ~ 1월 초
+                    - 미국
+                        - 11million $
+                        - CTR 한국 대비 5 ~ 6 정도 높다.
+                    - 영국, 독일
+                        - 1million $
+                    - 한국은 제일 싸다.
+                        - 1억
+                    - 미국은 2018 Code cutting 시작
+                    - 한국은 2020 Code Cutting 시작
+                - Apps Preview
+                    - 4번째 자리까지 노출됨
+                    - 미국
+                        - 8m
+                    - 다른 국가
+                        - 100k ~ 120k $
+                    - 한국
+                        - 3,000만원
+                - 글로벌 or 한국, 미국, 영국, 독일, 브라질, 인도 등의 특정 국가 대상
+            - 앱스토어 광고 상품 리스트 및 단가
+                - 한국, 미국, 영국, 독일, 브라질, 인도 등 대상
+            - 앱스토어 내 '에디터 추천', '최신 앱' 등재 조건 확인
+                - 에디터스 초이스(판매 상품 아님)
+                    - 런처플레이스 서비스
+                    - 미국, 영국은 요청을 드린
+                - 앱스토러 앱 캐로셀
+                    - 애드타일 안되는 국가가 있다.
+                    - 한국은 운영하고 있지 않다.
+                    - 각 국가별로 광고 세일즈팀이 따로 있다.
+                    - 애드타일의 보완제의 개념
+                    - 단독으로 팔리는 경우는 거의 없다.
+                    - CPM 1,000
+                        - USA 20$
+                        - UK, DE 29.5$
+                        - BR, IN 21.5$
+            - 제공 가능한 채널현대 app. 유저 정보
+                - 전달할 수 있는 것이 없다.
+            - (삼성) 스마트 TV 마켓 리서치 자료 공유
+                - 가능한 선에서 전달드리겠다.
+            - 등수 공유가 가능한지???
+                - 확인 후 전달 예정
+            - 마켓쉐어
+                - 글로벌과 같다
+                - TV 금액 기준 35%
+                - TV
+                    - 한국은 1등
+                - Smart TV
+                    - ???
+            - 광고시 TV Viwer 식 기반 전달 가능
+                - 미국
+                - 영국
+            - 약 700만명의 pre-download 유저 활용 방안
+                - 운영사의 노력이 많이 필요하다
+                - Watcha
+                    - Mix Launcher
+            - 양사 간 콜라보 아이디어 논의
+        - Discussion
+            - 조윤형, 김형구
+- 1.5차 + 운영
+    - 운영 제안서
+        - 컨텐츠 및 라이브 스트리밍 관리
+            - 영상 편집
+            - 확장자변환
+            - 영상 제공 측에서 풀에셋을 전달할 수 있는 여건 조성
+                - 썸네일제작 가이드
+                - 썸네일 업로드 시 프로토타입 템플릿
+            - 인트로 아웃트로 영상 에셋 규격화
+                - 인트로, 아웃트로 영상 템플릿 개발
+        - Back-end 운영
+            - 카테고리 순서 및 메인 메뉴 설정 등
+            - 예약 기능 추가
+                - 예약 릴리즈 기능, 예약 등록 해제 기능, 예약 라이브 스타트 및 종료
+            - Explorer Admin
+        - 모니터링 기반 인사이트 도출
+            - 데이터 분석
+                - 국가별/플랫폼별, 방문자 / 체류시간 / 주요소비 컨텐츠 등 월/분기/연단위 현황 분석
+                - 영상 카테고리별 분리 측정 등
+                - 경쟁사 및 유사 플랫폼을 추가 분석 ?????
+            - 데이터 취합
+                - Reporting API를 활용, 커스텀 대시보드????를 구축하여 데이터 취합을 위한 불필요한 시간 제거
+            - 인사이트 도출
+                - 플랫폼의 역할 및 주요 타깃 국가 / 고객군 설정
+                - 당사 보유 채널들과의 연계 및 시너지 발굴 방안
+        - 광고 및 홍보마케팅 수행
+            - 스마트 TV 제조사와 협업
+                - Unboxing 후, 스마트 TV 초기 set-up 화면
+                - 스마트 TV 앱 관련 이용 가이드 동영상
+            - 구글 검색 광고 활용
+                - Google CPC광고: 국가별 키워드 전략을 수립하여 광고 집행
+                - 유튜브 Pre-roll 동영상 광고 제작 (15초 내외)
+        - 플랫폼 확대 및 UX 고도화
+            - UX 개선 및 개인화
+                - 스마트TV 홈화면 상 애플리케이션 아이콘에 포커스 시 추천 영상 등을 지속적으로 교체하며 노출
+                - 딥링크 및 이미지/영상 관리를 위한 어드민 개발 필요
+                - 간소화된 회원 체계를 기반으로 로그인 기능 개발
+                - 넷플릭스/유튜브 등과 같이 시청한 시간대부터 이어보기 기능 제공 가능
+                - 시청 이력과 지역, TV모델 정보, 연령/성별 등을 분석하여 영상 추천 기능 제공 가능
+            - 라이브 커머스 연계
+                - 현대차 MD 상품 판매 연계
+        - 해외 딜러용 설치 가이드 PDF 개발
+    - 1.5차 개발
+        - Android TV 개발
+            - 기획
+            - 디자인
+            - 개발
+        - SEO 관리 기능 개발
+            - 개발
+        - 애널리틱스 대시보드
+            - 기획
+            - 디자인
+            - 개발
+        - 4K 영상 스트리밍 지원
+            - 기술 지원
+            - 개발
+        - 썸네일 Hover 시 프리뷰 재생
+            - 기획 및 디자인
+            - 개발
+        - 지원 언어 확대
+            - 포르투갈어 번역
+            - 러시아어 번역
+            - 스페인어 번역
+            - 언어 등록 및 검수
+            - 언어별 에셋 등록 기능 추가
+- 

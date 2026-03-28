@@ -1,0 +1,5 @@
+- Status
+    - Finished [[Status]]
+    - Draft [[Status]]
+    - Pinned [[Status]]
+- Source

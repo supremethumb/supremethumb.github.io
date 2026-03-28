@@ -1,0 +1,117 @@
+- 객체 지향, 표준화된 범용 모델링 언어
+- 특징
+    - 가시화 언어
+    - 구축 언어
+    - 명세화 언어
+    - 문서화 언어
+- 구성요소
+    - 사물
+    - 관계
+    - 다이어그램
+- 다이어그램 종류
+    - 구조적 다이어그램
+        -
+            - Structural Diagram
+            - 정적 다이어그램
+            - Static Diagram
+        - 클래스(Class) [[UML]]
+            - 시스템 내 클래스의 정적 구조를 표현
+            - 속성(Attribute)과 동작(Behavior)으로 구성
+            - 시스템의 구조를 파악하고 구조상의 문제점 도출 가능
+        - 객체(Object) [[UML]]
+            - 클래스에 속한 사물(객체)들. 즉 인스턴스(Instance)를 특정 시점의 객체와 객체 사이의 관계로 표현
+            - 객체 인스턴스를 나타내는 대신 실제 클래스를 사용
+            - 연관된 모든 [인스턴스](인스턴스.md) 를 표현
+        - 컴포넌트 (Component) [[UML]]
+            - 코드 컴포넌트 기반의 물리적 구조 표현
+            - 실질적 프로그래밍 작업에 사용
+        - 배치 (Deployment) [[UML]]
+            - 컴포넌트 사이의 종속성을 표현
+            - 결고屋, 프로세스. 컴포넌트 등 물리적 요소들의 위치를 표현
+        - 복합체 구조 (Composite Structure) [[UML]]
+            - 클래스나 컴포넌트가 복합 구조를 갖는 경우 그 내부 구조를 표현
+        - 패키지 (**Package**) [[UML]]
+            - 유스케이스나 클래스 등의 모델 요소들을 그룹화한 패키지 들의 관계를 표현
+    - 행위적 다이어그램
+        -
+            - Behavioral Diagram
+            - 동적 다이어그램
+            - Dynamic Diagram
+        - 유스케이스 (Usecase) [[UML]]
+            - 사용자 관점에서 시스템의 활동을 표현
+            - 유스케이스는 시스템의 기능적 요구 정의에 활용
+        - 시퀀스 (Sequence) [[UML]]
+            - 객체 간 상호작용을 메시지 흐름으로 표현
+            - 객체 사이 메시지를 보내는 시간을 표현
+        - 커뮤니케이션 (Communication) [[UML]]
+            - 시퀀스 다이어그램과 같이 동작에 참여하는 객체들이 주고 받는 메시지를 표현하는데. 메시지뿐만 아니라 객체 간의 연관까지 표현
+        - 상태 (State) [[UML]]
+            - 하나의 객체가 자신이 속한 클래스의 상태 변화 혹은 다른 객체와의 상호작용에 따라 상태가 어떻게 변하하는지 표현
+            - 모든 가능한 상태와 전이를 표현
+            - 진입 조건 탈출 조건 상태 전이 등 기술
+        - 활동 (Activity) [[UML]]
+            - 시스템이 어떤 기능을 수행하는지를 객체의 처리 로직이나 조건에 따른 처리의 흐름으로 순서대로 표현
+            - 활동의 순서대로 흐름을 표현
+        - 타이밍 (Timing) [[UML]]
+            - 객체 상태 변화와 시간 제약을 명시적으로 표현
+- 상세
+    - 클래스 다이어그램 [[UML]]
+        - 클래스 다이어그램은 객체지향 모델링 시 클래스의 속성 및 연산과 클래스 간 정적인 관계를 표현한 다이어그램이다.
+        - 클래스 다이어그램의 구성요소로는 클래스 이름, 속성，연산，접근 제어자가 있다.
+        - ![](%LOCAL_FILE%FoDjhrECzFMwQq6Fw8XhAjqvQjhosGsMQ_0lqvEUehWEz9rl8kPbgb8qT100VYGZfN-1sSGwS5lR6DCytnHuuuMuvO4nnnuaSQ3tKB9uWQe8T_IJoGjdpTwt4q_-3UZR.jpeg)
+        - ![](%LOCAL_FILE%GiOhNWUPXvwYNqIAVwbR72a22PR4lpk0iDm3is0JRacRPsH5_A9WWQgA4wAgSjPgAvN-afK_wQoKVq-G_vkGtqggJuZPJeYXI8HSWm-0RKtgJRaqSDNPeF5ahgRNSk2Q.jpeg)
+    - 유스케이스 다이어그램
+        - 유스케이스 다이어그램은 시스템이 제공하고 있는 기능 및 그와 관련된 외부 요소를 사용자의 관점에서 표현하는 다이어그램이다.
+        - 유스케이스 다이어그램 구성요소는 유스케이스, 액터, 시스템이 있다.
+        - ![](%LOCAL_FILE%0bYWQQ5V-6L_pH8ZfiKi7o6i1aizOC59pPeqeVBoxrYJJOpkbunRVhK7pR4xG1-LrPcoeVCOnHSgNr0y-S3FUvP3YggT-TNod6GxttaoJ-bITn5YFOKLe1ZuguEe3ANN.jpeg)
+    - 시퀀스 다이어그램
+        - 시퀀스 다이어그램은 객체 간 상호작용을 ==메시지 흐름==으로 표현한 다이어그 램이다.
+        - ![](%LOCAL_FILE%VIYZwcO4h9u1yJjbCILGhLGiprBJQLoOSk64WA9t7sr1TSkqSua3gm-KByOFEDEF7E_nzFMVEJ_IWfJ6jeSce3MFdD3x9FLy5Q-1Z8aZtPK5RtALIM9eKItiGGPJKqvY.jpeg)
+- 관계
+    - 연관관계(Association)
+        - 연관 관계는 2개 이상의 사물이 서로 관련된 상태를 표현
+        - 사물 사이를 실전으로 연결하여 표현하며, 방향성을 화살표로 표현
+        - 서로에게 영향을 주는 양방향 관계의 경우 화살표를 생략하고 실선으로만 연결
+        - ![](%LOCAL_FILE%P0WDEPOrtCSEFl2NF-j7oHslakr40mMBY6O7K3mWfjK6K5ms5rbDdCmwzHeiYqH-vh7WvHk9k0ilsHIogyma2YBwVRvcJWi0Tfn8_kqOJMsm_8ibHDtw32MWs4cIJb1h.jpeg)
+    - 집합관계(Aggregation)
+        - 집합 관계는 하나의 사물이 다른 사물에 포함된 관계 표현
+        - 포함되는 쪽에서 포함하는 쪽으로 속이 빈 마름모를 연결하여 표현
+        - ![](%LOCAL_FILE%bdkfqxKPCzVrcB8OretlOhNjAbioe-zZtmsxp4aT1EnQ2N9wNC9Haa9HSO5wW9YotcyqE53sPIvBfJQ2UdIl_0DLJRwLTX8yZwQ4fuFEtAgbsGn76N5lzjxiovWZS0p-.jpeg)
+    - 포함관계(Composition)
+        - 포함 관계는 집합 관계의 특수한 형태로, 포함하는 사물의 변화가 포함되는 사물에 영향을 미치는 관계를 표현
+        - 포함되는 쪽에서 포함하는 쪽으로 속이 채워진 마름모를 연결하여 표현.
+        - ![](%LOCAL_FILE%N_vpaGcTaT40QKrkSFeFxvpTMZaSrMKgnuoyFYXznvvMoCHTLK_c157ZyMFO5XeOuRZ6mqmWE4aP7QD0DZDIbzj7RC3RORtZBh6J2Hmo5WNXA0LfAozmKPwL5GhjM_GD.jpeg)
+    - 일반화관계(Generalization)
+        - 일반화 관계는 하나의 사물이 다른 사물에 비해 더 일반적인지 구체적인지를 표현
+        - 일잔적인 개념을 부모(상위)라고 하고, 구체적인 개념을 자식이라 함.
+        - 구체적인 사물에서 일반적인 사물 쪽으로 속이 빈 화살표를 연결하여 표현.
+        - ![](%LOCAL_FILE%RjIYpvOtO7ByPVcdQkvjhFxsXxK7WXV_cyyzOOR0NccGFyHrYMIfabHSNebmj7ZikXllAVCO70iZVvzEsddME-cDIGz35CZ8uJHMxA850z6qX2ewwBAwsMBXUc00zZqp.jpeg)
+    - 의존관계(Dependency)
+        - 의존 관계는 사물 사이에 서로 연관은 있으나 필요에 따라 서로에게 영향을 주는 짧은 시간 동안만 연관을 유지하는 관계를 표현
+        - 사물의 변화가 다른 사물에도 영향을 미치는 관계.
+        - 영향을 주는 사물이 영향을 받는 사물 쪽으로 점선 화살표를 연결하여 표현.
+        - ![](%LOCAL_FILE%QSUk7Mu8mIaSadatdABxvRRCSLi7oP8Q_D1qWtSykeXCJF8PCYXZFFhcDJL9e6j39xsyuYS15FdeOgVqzgJ3GZh846Bg3w8Zs5dMeVIcixsgLgkyQriBARkXTRFvmSOf.jpeg)
+    - 실제화관계(Realization)
+        - 실제화 관계는 사물이 할 수 있거나, 해야 하는 기능으로 서로를 그룹화할 수 있는 관계를 표현
+        - 사물에서 기능 쪽으로 속이 빈 점선 화살표를 연결하여 표현.
+        - ![](%LOCAL_FILE%7W24utg-zhV-XRnVyVhaTSdw5w9mQVyruo1EyvJfLnsng9DI9JdsyDrTQq3GBIGeUSAbGTfFSOAu1J8_HMxt3ZkzDf6V5zC9IrNyQZGyd59XlYF3wlIOufrIoPR6hQJx.jpeg)
+- 스테레오 타입
+    - 스테레오 타입은 ‘〈〈〉〉’ (길러멧; Guillemet) 기호를 사용하여 표현한다.
+    - 유형
+        - <<include>>
+            - 하나의 유스케이스가 어떤 시점에 반드시 다른 유스케이스를 실행하는 포함 관계
+        - <<extend>>
+            - 하나의 유스케이스가 어떤 시점에 다른 유스케이스를 실행할 수도 있고. 그렇지 않을 수도 있는 확장 관계
+        - <<interface>>
+            - 모든 메소드가 추상 메소드이며. 바로 [인스턴스](인스턴스.md) 를 만들 수 없는 클래스로 추상 메소드와 상수만으로 구성된 클래스
+            - ![](%LOCAL_FILE%YP7Y2zrfdk1vTyD7NZRGPhl1164cGzcjpXe2H9rkmAPP9KC8DA2DJhahXw5B7I5kDl1sCCWUwQaSkKhViBJUB7sTuWa6wPP8gFzX5w9OJk7hHTHTLB3qj_gvBJVb_T7p.jpeg)
+        - <<entity>>
+            - 일반적으로 정보 또는 오래 지속되는 연관된 행위를 형상화하는 클래스로 유스케이스 처리 흐름이 수행되는 과정에서 기억 장치에 저장되어야 할 정보를 표현하는 클래스
+            - ![](%LOCAL_FILE%5z_NgPhF4eFaoKgsDEsug6Dr-eqVmThyZ8xzxcOj4skXftGRm0Y3bDtEx-ETGaEre4h_zQAdlYHF4L2wZeG1ZZYbt9YRHX9ldjBOfZTuMMYmDlgjhjWb1Fg8pLtOgFyI.jpeg)
+        - <<boundary>>
+            - 시스템과 외부 액터와의 상호작용을 담당하는 클래스
+            - ![](%LOCAL_FILE%dwbmJTwFZuqEaBsl7B3oF3LmNaRaSdRZqsARViuzf3Lj2zO1ZMP2ZGHs-5-I1ggoR4p1BLRzG4x2rQ1EIi3V5QQdMGPt3NECzDa34sjFNsIX2tqNAcF4LQRoaU7w6qaF.jpeg)
+        - <<control>>
+            - 시스템이 제공하는 기능의 로직 및 제어를 담당하는 클래스
+            - ![](%LOCAL_FILE%mHwXu6nXnt3j_UveVUawXlVigWxqh5gfDYOHjznvH5fpj-j4L71nP6aOsOT4xLLUttvnE-kAJt8J9n1SIPwH1vpWI4vmKw7363ulrpairUOuvFI89OEg_0GoOkGSEQbD.jpeg)
+    - 

@@ -1,0 +1,6 @@
+- Message
+    - Restructure [[Message]]
+    - Add Connection [[Message]]
+    - Add Mnemonic [[Message]]
+    - Typo [[Message]]
+    - Correct Content [[Message]]

@@ -1,0 +1,5 @@
+- Type
+    - Pdf [[Type]]
+- URL
+- Name
+- ViewerData

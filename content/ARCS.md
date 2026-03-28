@@ -1,0 +1,5 @@
+- Attention
+- Relevance
+- Confidence
+- Satisfaction
+

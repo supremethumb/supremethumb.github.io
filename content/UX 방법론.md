@@ -1,0 +1,21 @@
+- 문제해결
+    - ![](%LOCAL_FILE%O2JfMDcxx7JmmP8rBWUagiIvyOxqt29cuSri7r5Z1WQpTRqLOLNRmezFK6k3ms3SwdsSaZV-H4pVbxa7Sc1_ht0sPJC8vqf1cB689fR4dfl-6dBockRWa3VqY4MoKj-N.png)
+    - ![](%LOCAL_FILE%OILRy-uoC_eEO3wakonsxcDPBPk0sKFzso_FZ3W87cEWF9BzZ4MJAb-y5Z9-NGA44AicUlLRoObbuPNlKH6oKFB8xXLrfOZrDfMx19nbbjbJbfyI02g2CnKlP68AYgyr.png)
+    - 사용자의 문제를 찾아서 그 해결 방법을 아이디어, [시나리오](시나리오.md) , [프로토타입](프로토타입.md)  순서로 풀어나가는 것이 UX 방법론이다. 바람직한 미래를 먼저 그리고 거기에 도달할 방법을 디자인하는 [](Bridging/Untitled.md) ([Bridging](Bridging.md) )나 가능한 여러 가지 대한을 놓고서 가장 가능성 높은 대안을 디자인하는 [](Proposing/Untitled.md) ([Proposing](Proposing.md) )와는 다르다.
+    - 사용자 경험 측면에서 문제를 밝힌 다음에 그 해결 방법을 디자인 한다.
+    - [디자인씽킹](디자인씽킹.md)
+- 문제를 찾는 3가지 관점
+    - 프로세스  중심
+        - 문제를 찾아 나가는 절차를 중요시한다. 사용자들이 서비스를 이용하는 경험을 실제로 조사한 다음, 그 과정에서 사용자들이 겪는 [고충](고충.md) 이나 [니즈](니즈.md) , [행동](행동.md)  등을 면밀하게 분석해 문제를 찾는다. 이후 과정은 찾아낸 문제를 해결하는 일련의 절차로 구성된다.
+    - 원칙 중심
+        - 사람들이 보편적으로 가지고 있는 심리적인 경향, 서비스 이용 시 겪게 될 것으로 예상되는 고충, 디자인 영역별로 준수해야 할 원칙을 가지고 문제를 찾는다. 심리학이나 사용성, 게슈탈트 원리, 인터랙션 디자인 원칙이 중요시된다.
+    - 트렌드 중심
+        - 현시대의 디자인 트렌드를 중요하게 여긴다. 최근 기술이나 디자인 트렌드의 변화에 따라 그것을 받아들이는 사용자경험도 큰 영향을 받는다는데 주목하며, 그러한 트렌드 관점에서 서비스의 문제를 찾는다.
+- UX 방법론 프로세스 #[[UX 방법론]] 
+    - 사용자들이 서비스를 명확하게 인식하고 쉽게 접근할 수 있게 한다.
+    - 사용자들이 서비스 내에서 원활하게 탐색할 수 있게 돕느낟.
+    - 사용자들이 정보를 더 잘 이해하고 능숙하게 화면을 제스처할 수 있게 한다.
+    - 사용자들이 서비스를 경험하는 맥락을 반영해 이용흐름이나 예외처리를 설계하고 버튼, 팝업, 기능, 도움말, 필터링 옵션 등을 배치한다.
+    - ![](%LOCAL_FILE%6D_YPEwXYzke4-kUdxVdgOk-z6bZUrAZ0JVcdDbweirB5cXSWoc4SZs3GlDXVNSMWQEbCTj7yaJGsuM2SNAKqhBQz-HnsCIWJachoatSaW9Qb6fDroyXbDSk3Gui3LdK.png)
+    - ![](%LOCAL_FILE%QZpoa62XrtDbHPsbtGtaZ1SK3100DSKJQ4jF4zzOgzMcLtCKqVLUbeMTcENV35JmtIB9Xa6ts-XxgK660QHfZ7E_BJWriQg8NSTPx_Q9ZW0ZLaOAOs2ZvlWn5RndI8Fb.png)
+    - ![](%LOCAL_FILE%_LhVvz41lGbT6mR20QI8Hu9enky2kftZ52vkqiIJiClz7152z8cERQ-XGjBNxMVn45GQsv_nCXQgCIoL-gGg6V7YBCTljGjdprudDfzaEplrXQbcgDOiyz_T_HhIrr9O.png)

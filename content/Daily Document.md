@@ -1,0 +1,559 @@
+- 2023-09-01 Fri
+- 2021-09-09 Thu
+- 2021-08-13 Fri
+- 2021-08-11 Wed
+    - 산타 크루즈, SANTA FE
+        - ![](%LOCAL_FILE%b4XjvU5YxifzQotiXVEi4aELBF0MNgqEXr5yZiIj5muZtENMoDmmcgPItnSgsGf6fSBRgagsVQfeQJzzO_SVoC4L2v30TX0PzFfk4dEZfL4jsKZjgFYVPSJKNUo4ZqXW.jpeg)
+    - 안드로이드 TV 검수
+        - 수정사항 송부
+    - 수정사항 TV, WEB 전달
+- 2021-08-05 Thu
+    - 채널 현대 랭크 공유 가능 여부 확인
+- 2021-08-02 Mon
+    - 주간 보고 문서 [[Channel Hyundai]] 
+    - 월간 보고 문서 [[Channel Hyundai]] 
+    - 리서치 문서 [[Channel Hyundai]] 
+    - 
+    - 
+- 2021-07-20 Tue
+    - 주간 보고 문서 전달 [[Channel Hyundai]] 
+    - 아웃링크 기획 파일 전달하기 [[Channel Hyundai]] 
+    - 운영 견적 [[Channel Hyundai]] 
+    - 구글에 문의하기 [[Channel Hyundai]] 
+    - Explore 변경된 수치로 비율 확인 후 전달(FRUM – 현대) [[Channel Hyundai]] 
+    - 제조사 국가별 다운로드 데이터 전달 요청(FRUM – 현대) [[Channel Hyundai]] 
+    - 라이브 이벤트 시점으로부터 4주 동안 데이터 보강 후 금주중 전달 예정 [[Channel Hyundai]] 
+    - 
+    - 
+- 2021-07-19 Mon
+    - 쿼터 문서 보강 [[Channel Hyundai]] 
+    - 주간 보고 문서 제작 [[Channel Hyundai]] 
+    - Explore NX4 [[Channel Hyundai]] 
+    - 추천 검색어 전달 [[Channel Hyundai]] 
+        - 개발사
+    - BTS 연관 분석 [[Channel Hyundai]] 
+    - 영상 오가닉 조회별 국가 순위 [[Channel Hyundai]]  #[[월간 보고서]]  #[[분기 보고서 작성하기]] 
+    - 
+- 2021-07-16 Fri
+    - 구글에 문의 넣기 [[Channel Hyundai]] 
+    - GA 대시보드 만들기 위한 데이터 전달 [[Channel Hyundai]] 
+    - 아웃링크 기획 [[Channel Hyundai]] 
+    - 대시보드 업데이트 [[Channel Hyundai]] 
+    - Models N Line 분리 [[Channel Hyundai]] 
+    - 어제 보낸 문서 설명하기 [[Channel Hyundai]] 
+    - [안드로이드 마켓 등록](안드로이드 마켓 등록.md)
+    - 
+- 2021-07-15 Thu
+    - 제조사별 광고 상품 [[Channel Hyundai]] 
+    - 월간 보고 문서 전달 [[Channel Hyundai]] 
+    - 분기 보고 문서 전달 [[Channel Hyundai]] 
+    - 안드로이드 설치 안내 업데이트 [[Channel Hyundai]] 
+    - 추천검색어 [[Channel Hyundai]] 
+    - Outlink [[Channel Hyundai]] 
+    - US - TUCSON Raw data 전달 [[Channel Hyundai]] 
+    - 좋아요 시각적 리액션 Plugin 전달 [[Channel Hyundai]] 
+    - 이노션에서 모든 보고 문서를 가져가겠다고 한다. [[Channel Hyundai]] 
+- 2021-07-14 Wed
+    - ELANTRA N LINE - Live Event [[Channel Hyundai]] 
+        - 07:59 회사 도착
+        - 08:30 라이브 영상 운영계 반영
+        - 09:00 콘텐츠 확인
+    - 보고서 확인 및 적용 [[Channel Hyundai]] 
+    - Android 광고 [[Channel Hyundai]] 
+    - 광고 문서 정리 [[Channel Hyundai]] 
+    - 
+    - 
+- 2021-07-13 Tue
+    - Live 관련 에셋 전달 [[Channel Hyundai]] 
+        - 8:00 전달 예정
+        - 9:12 전달
+            - 프로토타입 진행
+        - [2021-07-14 Wed](Daily Document/2021-07-14 Wed.md) 06:00 시 교체 소스 전달
+    - 주간 보고 [[Channel Hyundai]] 
+    - 이기범 안과
+    - 운영계 URL 전달 [[Channel Hyundai]] 
+    - Android 설치 안내 페이지 Figma 로 마이그레이션 [[Channel Hyundai]] 
+    - Outlink Case 정리 [[Channel Hyundai]] 
+    - 탁 다른 업무 시킴 [[Channel Hyundai]] 
+    - 
+- 2021-07-12 Mon
+    - 주간 보고 문서 [[Channel Hyundai]] 
+    - 쿼터 보고 문서 초안 완성 [[Channel Hyundai]] 
+    - 월간 보고 문서 초안 완성 [[Channel Hyundai]] 
+    - 좋아요 효과 [[Channel Hyundai]] 
+        - [ Glamour Titles by Rickyloca on Envato Elements](https://elements.envato.com/glamour-titles-ZA6WQXE)
+        - [ Confetti Burst - Logo Reveal by King_Solomon on Envato Elements](https://elements.envato.com/confetti-burst-logo-reveal-HFB23DS)
+        - [ Minimal Particle Light Logo by NeuronFX on Envato Elements](https://elements.envato.com/minimal-particle-light-logo-WGYA2GZ)
+        - [ Magic Music Event  v2.0 by FVS on Envato Elements](https://elements.envato.com/magic-music-event-v2-0-VKGTFNR)
+        - [ Graduation Award Opener by voxeldesign on Envato Elements](https://elements.envato.com/graduation-award-opener-282LAVW)
+        - [ Epic Fire Titles by Voxyde on Envato Elements](https://elements.envato.com/epic-fire-titles-V4DZFUC)
+        - [ Fire Logo Cinematic by Treedeo on Envato Elements](https://elements.envato.com/fire-logo-cinematic-VCPLYBD)
+        - [ Trigger Particles Title Reveal by Voxyde on Envato Elements](https://elements.envato.com/trigger-particles-title-reveal-PQX9LMC)
+        - 
+    - 안드로이드 설치 문서 초안 작성 [[Channel Hyundai]] 
+        - 콘텐츠 디테일 확인하기
+    - Outlink 문서 작성 [[Channel Hyundai]] 
+    - 
+    - 
+    - 
+    - 
+- 2021-07-10 Sat
+- 2021-07-08 Thu
+- 2021-07-07 Wed
+    - 안드로이드 앱 등록 완료 [[Channel Hyundai]]  [[Android TV]] 
+        - 이미지 수정
+    - 
+    - 
+    - 
+- 2021-07-06 Tue
+    - 산출물 정리 [[Channel Hyundai]] 
+    - 월간보고 문서 작성 완료 [[Channel Hyundai]] 
+        - 비교데이터 노출[2021-07-07 Wed](Daily Document/2021-07-07 Wed.md) [[Channel Hyundai]] 
+    - 주간 보고 [[Channel Hyundai]] 
+    - 
+- 2021-07-05 Mon
+    - 안드로이드 TV 업로드 데이터 및 확인하기 [[Channel Hyundai]]  [[Android TV]] 
+        - GA 연동 대시보드
+        - 대시보드 수정
+            - 기획문서 작성하기
+    - 안드로이드 TV 반려 [[Channel Hyundai]]  [[Android TV]] 
+        - 재등록 예정
+        - CN7 까지 등록하는 것
+    - 개발계 동적구성 더미데이터 업로드하기(한시간 정도 소요) [[Channel Hyundai]] 
+        - 투싼
+        - 그랜저
+    - 월간 보고서 작성하기 [[Channel Hyundai]] 
+        - 얼개짜기
+        - 월간 데이터 확인 요청사항 확인 후 회신하기
+    - 주간 보고서 작성하기(3시간) [[Channel Hyundai]] 
+        - 다운로드 데이터 대시보드 업로드
+        - 새로운 포맷으로 작성하기
+    - 분기 보고서 작성하기 [[Channel Hyundai]] 
+        - 
+    - CN7 Explore 개발 챙기기 [[Channel Hyundai]] 
+        - TV 완료[2021-07-04 Sun](Daily Document/2021-07-04 Sun.md)
+        - WEB 완료 [2021-07-05 Mon](Daily Document/2021-07-05 Mon.md)
+    - 
+    - 
+- 2021-07-04 Sun
+- 2021-07-02 Fri
+    - CN7 N-Line 업데이트 일정 안내 [[Channel Hyundai]] 
+        - [2021-07-05 Mon](Daily Document/2021-07-05 Mon.md)[2021-07-06 Tue](Daily Document/2021-07-06 Tue.md)  양일중 하나 개발계 완료
+    - Explore GA 측정 변경 [[Channel Hyundai]] 
+        - 현재 모델명/VIS → 모델명-모델ID/VIS
+        - 동적 구성이후 일괄 적용 →모델명-모델ID/VIS
+    - Most Popular 로직 변경 [[Channel Hyundai]] 
+        - Player 재생수로 노출할 것[2021-07-08 Thu](Daily Document/2021-07-08 Thu.md)
+    - 전체 화면일 경우 해당 TV 위에 UI 노출하지 못함. [[Channel Hyundai]] 
+    - 영상 전체화면 영상 플레이 종료 후 전체화면 종료하기 [[Channel Hyundai]] 
+    - 아웃링크 기획 완료 [[Channel Hyundai]] 
+        - 문서 작업
+            - 아웃링크 버튼 레이블 안 확인하기
+                - Go to Website
+                - Learn more
+                - More Info
+    - Explore 동적구성 Admin 완료 [[Channel Hyundai]] 
+- 2021-07-01 Thu
+    - 안드로이드 등록이후 업데이트 관련 회의 [[Channel Hyundai]] 
+        - 개발계 진행할 때, 예외처리 케이스 추가 등록
+    - Outlink 기획 완료 하기 [[Channel Hyundai]] 
+    - 썸네일 확인요청 [[Channel Hyundai]] 
+    - 산출물 정리 [[Channel Hyundai]] 
+    - 안드로이드 설치방법 확인하기 [[Channel Hyundai]] 
+    - 잔금 처리하기 [[Channel Hyundai]] 
+    - 삼성 데이터 확인하기 [[Channel Hyundai]] 
+    - 진급 누락 #[[섭섭한 것]] 
+    - 안드로이드 앱 등록 [[Channel Hyundai]]  [[Android TV]] 
+        - Advanced Settings에 TV 트랙으로 등록
+        - ![](%LOCAL_FILE%herDOs4bwfXjJ0i1EUNBzo00w_N_OegNFu0yg-hc1RL-z7QxjA8JI52U2mZg3ja6NyNrSp7kY0DXe9P7lRKoMeLKvOABPlHFQDLEM0hNhopIltQnSmTqCpfis8XJdfyQ.jpeg)
+- 2021-06-30 Wed
+    - 안드로이드 TV 앱 이의제기 내역 답변 [[Channel Hyundai]] 
+    - 월간 데이터 수정 [[Channel Hyundai]] 
+    - 
+    - WRC Innocean 자막 전달 [[Channel Hyundai]] 
+- 2021-06-29 Tue
+    - IG 운영계 반영 [[Channel Hyundai]] 
+    - 주간 보고 [[Channel Hyundai]] 
+    - 5월 유니크 사용자 수치 전달 [[Channel Hyundai]] 
+    - 안드로이드 TV app 반려 [[Channel Hyundai]] 
+        - 후속대책 메일전달
+        - 유두원, 메일 전달
+    - 썸네일 전달 [[Channel Hyundai]] 
+    - 추천 키워드 검색어 기획 초안 제작 [[Channel Hyundai]] 
+    - 이것이 UX 디자인이다 책 구매 #구매
+    - 
+- 2021-06-28 Mon
+    - 안드로이드 앱 2차 앱 반려 [[Channel Hyundai]] 
+        - 이의 제기 [[Channel Hyundai]] 
+        - 재등록 [[Channel Hyundai]] 
+    - AWS 담당자 변경 [[Channel Hyundai]] 
+    - 월간 회장보고  데이터 취합 [[Channel Hyundai]] 
+    - IG 개발계 반영 [[Channel Hyundai]] 
+- 2021-06-25 Fri
+    - Outlink Front 기획 [[Channel Hyundai]] 
+    - 반영된 것 업로드 하기
+    - 
+    - 
+- 2021-06-24 Thu
+    - IG 오픈 [[Channel Hyundai]] 
+    - IG 개발 버전 수정 [[Channel Hyundai]] 
+    - 데이터 전달 [[Channel Hyundai]] 
+    - WRC 오픈 [[Channel Hyundai]] 
+        - ep.1
+    - 썸네일 전달 [[Channel Hyundai]] 
+    - 캡쳐 이미지 전달 [[Channel Hyundai]] 
+    - 추천 검색어 기획 완료 [[Channel Hyundai]] 
+    - 채널 카시아 기획 [[Channel Hyundai]] 
+    - 덕후 선생 예약 [[Channel Hyundai]] 
+    - 안드로이드 TV 제출 [[Channel Hyundai]] 
+        - 안드로이드 TV 준비완료 상태인 것을 확인 하지 못하고 3일이 지나갔다.
+        - 남한테 맡기되 검증을 하는 절차를 거치자
+            - 정이사님은 꼼꼼하시지 않다. LG 와 같은 사건이다 이건
+- 2021-06-23 Wed
+    - IF 어워드 [[Award]]
+        - 현대 월요일 퀵 [2021-06-28 Mon](Daily Document/2021-06-28 Mon.md)
+    - 썸네일 피드백 [[Channel Hyundai]] 
+    - 추천 검색어 기획 및 디자인 [[Channel Hyundai]] 
+        - Back end 기획
+        - Front end 기획
+        - 문서 작업
+            - 1
+                - Recommended Searches
+                - 추천 검색어
+            - 2
+                - Trending Search Keywords
+                - 트렌드 검색 키워드
+    - 썸네일 전달[2021-06-24 Thu](Daily Document/2021-06-24 Thu.md) [[Channel Hyundai]] 
+        - 신정은 내용 먼저 전달
+    - 데이터 취합 및 전달 [[Channel Hyundai]] 
+    - LG 미팅 내역 전달 [[Channel Hyundai]] 
+    - Knotted Donut #식단
+    - 청담 순두부 #식단
+    - WRC 오픈 [[Channel Hyundai]] 
+    - 
+    - 
+- 2021-06-22 Tue
+    - 
+    - 월간보고 파일 피드백 [[Channel Hyundai]] 
+    - 신정은 feedback [[Channel Hyundai]] 
+    - 주간 회의 [[Channel Hyundai]] 
+        - 주간 보고서 전달
+        - 주간회의[2021-06-22 Tue](Daily Document/2021-06-22 Tue.md) [[Channel Hyundai]] 
+            - 사용
+                - 누적 사용자 29만 9천명 달성
+                - ALCAZAR 라이브로 인한 Web의 인도 유입 대폭 상승
+                - 전주 대비 평균 체류 시간 하락
+                - 전주 대비 이탈률 소폭 하락
+            - 콘텐츠 일정
+                - Pure ETCR Vallelunga제외
+                - 티저와 ep.1 은 각각 23일 3시, 24일 3시에 오픈
+            - 3. 데모그라피
+                - 인도가 2등으로 주간 사용자 200% 이상 상승
+                - 인도 방문 또한 상승
+            - 4. 인사이트
+                - 인도 ALCAZAR Global Debut 콘텐츠로 인한 웹 방문 상승
+                - App 스토어 상위 노출 효과 유의미한 수치로 상승
+            - 5. Editors Pick
+                - 2021 WRC Beyond the Champion 시리즈 모두 업로드 이후 리텐션할 수 있도록 하자
+            - 6. 기타
+                - 신규 episode 노티: 프리뷰 노출과 상관 없이 썸네일에 직접 수동으로 작업하는 것으로 결정
+                - ROBOTICS 콘텐츠 6월 22일 화 EOD까지 전달 예정
+                - 퍼블릭 프리뷰에 Most Popular 대신에 WRC 컨텐츠를 2~3주간 Newly Release로 노출
+    - IG Explore 수정사항 확인 [[Channel Hyundai]] 
+    - 운영 반영 [[Channel Hyundai]] 
+        - Upcoming
+        - IG Explore
+        - 웹 반영 완료 14:08
+        - TV 반영 완료
+    - 아웃링크 기획 [[Channel Hyundai]] 
+    - 추천 검색어 기획 [[Channel Hyundai]] 
+    - 좋아요 기획 [[Channel Hyundai]] 
+    - URL 전달 [[Channel Hyundai]] 
+        - Teaser
+            - [https://channel.hyundai.com/en/web/player/series_player.view?menuType=TV&catId=CAT0000187&contsId=CONTS0000000549](https://channel.hyundai.com/en/web/player/series_player.view?menuType=TV&catId=CAT0000187&contsId=CONTS0000000549)
+        - Ep.1
+            - [https://channel.hyundai.com/en/web/player/series_player.view?menuType=TV&catId=CAT0000187&contsId=CONTS0000000550](https://channel.hyundai.com/en/web/player/series_player.view?menuType=TV&catId=CAT0000187&contsId=CONTS0000000550)
+    - WRC Original [[Channel Hyundai]] 
+        - 통합 티저 [2021-06-23 Wed](Daily Document/2021-06-23 Wed.md)
+        - 에피소드1 [2021-06-24 Thu](Daily Document/2021-06-24 Thu.md)
+        - 에피소드2 [2021-07-15 Thu](Daily Document/2021-07-15 Thu.md)
+        - 에피소드3 [2021-08-13 Fri](Daily Document/2021-08-13 Fri.md)
+        - 에피소드4 [2021-09-09 Thu](Daily Document/2021-09-09 Thu.md)
+    - LG 미팅 변경 [[Channel Hyundai]] 
+        - [2021-06-25 Fri](Daily Document/2021-06-25 Fri.md) 오후 3시. LG 미팅
+    - 
+    - 
+    - 
+    - 
+- 2021-06-21 Mon
+    - 탁예슬 문서 관리 [[Intern]]
+    - 안드로이드 앱 반려 [[Channel Hyundai]] 
+        - 아이콘 해상도 관련 문제
+            - 512*512 전달
+        - 재등록
+    - LG 미팅 [[Channel Hyundai]] 
+        - 수요일 오후 4시
+    - 썸네일 개편안 전달 피드백 [[Channel Hyundai]] 
+    - 주간 보고 문서 작성 [[Channel Hyundai]] 
+        - TV 앱 트래픽 비교
+    - BTS 영상 올듯 [[Channel Hyundai]] 
+        - Dance PJT
+    - IG 영상 업데이트 [[Channel Hyundai]] 
+    - WRC 자막 전달 됨 [[Channel Hyundai]] 
+- 2021-06-20 Sun
+    - 아침에 다운이가 잠을 깨워서 짜증을 냄
+    - 렘노트로 정보처리기사 정리 정보를 모아놓지 않으면 언젠가 반드시 후회할 날이 올거라는 확신을 가지고 있다.
+    - 쇼파 커버 9만원 주고 샀는데 너무 만족스럽다.
+    - 
+    - ^[rem-graph](https://www.nhanvu327.com/rem-plugins/graph)
+    - 
+    - 
+- 2021-06-19 Sat
+    - 아침에 일어나서 Remnote 정리
+        - Remnote 내 지식을 모두 링크해주는 느낌을 받는다.
+        - 다 정리해서 다시는 놓치는 30년을 보내지 않겠다.
+    - 아침밥
+    - 봉화산 생각보다 괜찮다.
+    - 갔다와서 샤브샤브 행복한 주말
+    - 
+    - 
+    - 
+    - 
+- 2021-06-18 Fri
+    - 익스플로어 기획문서 리뷰 [[Channel Hyundai]] 
+        - 윤대표님께 전화하기
+        - 수정된 문서 등
+    - 인도 자막 검수 [[Channel Hyundai]] 
+    - 익스플로어 디자인 문서 올리기 [[Channel Hyundai]] 
+        - TV 완료 스크롤 올림
+        - WEB 일부만 올림
+    - 카테고리 이미지 변경 문서 확인 및 검수 4시 부터 작업 시작하기 [[Channel Hyundai]] 
+    - 안드로이드 앱 등록 완료 [[Channel Hyundai]] 
+        - com.hyundai.channel 중복때문에 등록이 안됨
+    - 윤이사님, 정이사님, 맹이사님 이랑 회식함 #친목
+        - 봉피양
+        - 네비게이터 와인 맛나다
+        - 봉피양은 언제나 환영
+    - 패스워드 변경함 [[Channel Hyundai]] 
+        - dev.frum.co.kr
+        - ID: chhdev
+        - P/W: p@ss2106
+    - 썸네일 전달 [[Channel Hyundai]] 
+        - Car and Life
+        - Hydrogen Society
+        - Future Mobility
+        - N
+        - IONIQ
+    - 오타쫌 잘보자 [[Fault]]
+        - 항상 보낼려는 맘이 급해서 실수를 한다. 맘을 식히고 메일을 보내자 오타 두개 냈다.
+    - 사람이 이상하지 않다. 상황이 사람을 이상하게 만든다. 기획자는 상황을 사람들이 힘들지 않게 풀어주는 역할을 해야한다. [[Insight]]
+    - 
+- June 17th, 2021
+    - 인도 라이브 아카이브 준비 [[Channel Hyundai]] 
+        - 이기범 썸네일 및 이미지 제작
+        - 자막 전달
+    - WRC 시리즈 시리즈 타이틀 전달 받음 [[Channel Hyundai]] 
+        - **A. [첫 번째 다큐멘터리] 강조**
+            - A-1. 현대 모터스포츠의 역사와 브랜드 정신을 다룬 첫 장편 다큐멘터리를 선보입니다.
+            - A-2. 현대 모터스포츠의 역사와 브랜드 정신을 담은 채널 현대의 첫 오리지널 다큐멘터리입니다.
+        - **B. [2년 연속 우승+현대 모터스포츠의 여정] 강조**
+            - B-1. 세계 랠리 챔피언십(WRC) 2년 연속 제조사 우승. 끝없는 도전의 여정을 소개합니다.
+            - B-2. 2년 연속 세계 랠리 챔피언십(WRC) 제조사 타이틀을 거머쥔 현대 모터스포츠가 지나온 여정을 소개합니다.
+        - **C. [다큐멘터리의 주제] 강조**
+            - C. "더 나은 것을 향한 욕망(Desire for Better)". 2년 연속 우승 타이틀 뒤에는, 우리의 끝없는 도전과 포기하지 않는 정신이 있었습니다.
+            - --> desire for better은 "What is the driving force behind Hyundai?"라는 질문에 대한 답으로서, 저희 티저에서도 등장하고 에피소드4 마지막에 토마스 쉬미에라 부사장님 인터뷰 꼭지에서도 나오는 표현이어서 포함해보았습니다.
+    - 회장 보고 문서 준비 [[Channel Hyundai]] 
+    - IG Explore 전달 예정 시간 [[Channel Hyundai]] 
+    - Android 등록 [[Channel Hyundai]] 
+    - Explore 고도화 기획 문서 전달 [[Channel Hyundai]] 
+- 2021-06-16 Wed
+    - 인도 라이브 요청 [[Channel Hyundai]] 
+        - Alcazar
+    - 데이터 관련 답변 [[Channel Hyundai]] 
+    - 이노션 썸네일 작업 [[Channel Hyundai]] 
+    - LG Public Preview [[Channel Hyundai]] 
+    - TV 기획 완료 [[Channel Hyundai]] 
+    - 삼성 미팅 [[Channel Hyundai]] 
+        - Agenda
+            - 삼성 TV 디폴트앱 등록 협의
+                - Placement
+                    - Default 1 줄 Launcher 스크롤 이전 ATF(Above the Fold) / 스크롤 이후 BTF(Below the Fold) 3자리
+                    - 연초 1년 단위로 계약한다.
+                    - 최초 노출에만 적용되며 사용자가 조작하지 않는이상 없어지지 않는다.
+                    - 없으면 추천 앱에 노출
+                    - ATF 19 년도 9개
+                        - 삼성 전체 앱 10위 안에 들어온다.
+                    - 12월 말 ~ 1월 초
+                    - 미국
+                        - 11million $
+                        - CTR 한국 대비 5 ~ 6 정도 높다.
+                    - 영국, 독일
+                        - 1million $
+                    - 한국은 제일 싸다.
+                        - 1억
+                    - 미국은 2018 Code cutting 시작 [[Code Cutting]] 
+                    - 한국은 2020 Code Cutting 시작 [[Code Cutting]] 
+                - Apps Preview
+                    - 4번째 자리까지 노출됨
+                    - 미국
+                        - 8m
+                    - 다른 국가
+                        - 100k ~ 120k $
+                    - 한국
+                        - 3,000만원
+                - 글로벌 or 한국, 미국, 영국, 독일, 브라질, 인도 등의 특정 국가 대상
+            - 앱스토어 광고 상품 리스트 및 단가
+                - 한국, 미국, 영국, 독일, 브라질, 인도 등 대상
+            - 앱스토어 내 '에디터 추천', '최신 앱' 등재 조건 확인
+                - 에디터스 초이스(판매 상품 아님)
+                    - 런처플레이스 서비스
+                    - 미국, 영국은 요청을 드린
+                - 앱스토러 앱 캐로셀
+                    - 애드타일 안되는 국가가 있다.
+                    - 한국은 운영하고 있지 않다.
+                    - 각 국가별로 광고 세일즈팀이 따로 있다.
+                    - 애드타일의 보완제의 개념
+                    - 단독으로 팔리는 경우는 거의 없다.
+                    - CPM 1,000
+                        - USA 20$
+                        - UK, DE 29.5$
+                        - BR, IN 21.5$
+            - 제공 가능한 채널현대 app. 유저 정보
+                - 전달할 수 있는 것이 없다.
+            - (삼성) 스마트 TV 마켓 리서치 자료 공유
+                - 가능한 선에서 전달드리겠다.
+            - 등수 공유가 가능한지???
+                - 확인 후 전달 예정
+            - 마켓쉐어
+                - 글로벌과 같다
+                - TV 금액 기준 35%
+                - TV
+                    - 한국은 1등
+                - Smart TV
+                    - ???
+            - 광고시 TV Viwer 식 기반 전달 가능
+                - 미국
+                - 영국
+            - 약 700만명의 pre-download 유저 활용 방안
+                - 운영사의 노력이 많이 필요하다
+                - Watcha
+                    - Mix Launcher
+            - 양사 간 콜라보 아이디어 논의
+    - 자막 수정사항 공유 [[Channel Hyundai]] 
+    - 최종 안드로이드 TV 전달 [[Channel Hyundai]] 
+    - IG USP 국문 등록 [[Channel Hyundai]] 
+    - WRC Documentary [[Channel Hyundai]] 
+    - Apple Business 등록 [[Channel Hyundai]] 
+    - Explore 고도화 항목 경영진 컨펌라인 올라감 [[Channel Hyundai]] 
+    - 
+- 2021-06-15 Tue
+    - 일찍 출근
+    - 맥북은 마르고 닳도록 사용하기
+    - 기범이 Features 썸네일 작업시키기 [[Channel Hyundai]] 
+    - 아이폰 가로형 세로형 치게 하기 [[Channel Hyundai]] 
+    - 월간 보고서 [[Channel Hyundai]] 
+        - 1.채널 관점
+            - 1.1. Main KPI 셋팅 (※목적: 중장기적 관점에서 채널현대의 퍼포먼스를 어떻게 평가할 것인가?
+                - ‘방문자수/재방문율/평균체류시간/TV App 다운로드 건수/영상플레이수’ 에서 적합한 Main index 를 선정해야 함
+                - 사용자의 직접적인 행동을 필요로 하고, 채널현대가 고객과 지속적으로 Engage 하게 하는 환경을 마련하는 관점에서 ‘TV App 다운로드수’ 가 적합
+            - 1.2. 방문자 국가 별 비중 비교 (※목적: 채널현대가 글로벌 audience 에게 고르게 reach 하고 있는가?)
+                - ‘21년 1Q 기준 채널현대 방문자의 약 61% 가 한국으로, 아직 글로벌 고객들에게 고르게 reach 하고 있다고 볼 수는 없음
+                - 채널현대의 한국 외 국가 비중을 높일 수 있도록, WW채널의 글로벌 팔로워 대상 채널현대 인지도 향상 방안/컨텐츠 고민 필요
+            - 1.3. 광고집행 효율 비교 (※목적: 채널현대에 최적화된 광고 집행 방안은 무엇인가?)
+                - WW SNS 포스팅 중 채널현대 클릭을 유도하는 광고의 효율성(CPC) 을 비교하여, WW SNS-채널현대의 효율적인 연계 방안 도출 가능
+        - 2.컨텐츠 관점 (※목적: 채널현대에 최적화된 영상 컨텐츠는 무엇인가?)
+            - 2.1. 시간 데이터 비교
+                - Youtube(Organic view / Watch time, APV) vs 채널현대(Organic view / Watch time, APV)
+                - ’해당 월 전체 누적’ or ‘동일 영상’ 기준으로 데이터 비교
+            - 2.2. 브랜드 컨텐츠 vs 상품 컨텐츠 / 설명적 컨텐츠 vs 유희적 컨텐츠
+                - 동일한 주제의 영상 컨텐츠의 WW SNS 및 채널현대 간 상대적 퍼포먼스 비교 분석 (ex. 상위 Top 5 에 있는지 여부)
+        - 기타
+            - 1. 채널현대의 중장기 채널 활용 방안 (Web, TV)
+                - 채널현대는 궁극적으로 TV 중심의 플랫폼을 목표로 하기 때문에, Web 은 인지도 향상 차원에서 활용한 뒤 TV 방문율을 높이는 것을 목표
+                - Phase 1 (인지도 개선 – Web 강조): WW SNS 의 Linkage 를 적극 활용하여 Web 방문자 비중을 높이면서, 이를 통해 채널현대의 인지도 확보
+                - Phase 2 (선호도 개선 – TV 강조): WW SNS 를 레버리지 하지 않고도, 스마트 TV 를 통한 고객 유입 확보
+            - 2. 차량 컨텐츠 최적화 방안 (WW Web vs 채널현대)
+                - 각 채널에서의 Models 페이지 조회율(%)을 비교하여, 각 채널에 최적화된 차량 컨텐츠 유형 도출
+    - 안드로이드 TV 전달하기 [[Channel Hyundai]] 
+        - GA 검수 완료 후 전달
+        - 오늘 오후 중으로 전달
+    - 삼성 미팅 안건 [[Channel Hyundai]] 
+        - 1. 삼성 TV 디폴트앱 등록 협의
+            - 글로벌 or 한국, 미국, 영국, 독일, 브라질, 인도 등의 특정 국가 대상
+        - 2. 앱스토어 광고 상품 리스트 및 단가
+            - - 한국, 미국, 영국, 독일, 브라질, 인도 등 대상
+        - 3. 앱스토어 내 '에디터 추천', '최신 앱' 등재 조건 확인
+        - 4. 제공 가능한 채널현대 app. 유저 정보
+        - 5. (삼성) 스마트 TV 마켓 리서치 자료 공유
+            - - 현재는 구글링 통해 구하는 상황이라..
+        - 6. 양사 간 콜라보 아이디어 논의
+        - 7. 약 700만명의 pre-download 유저 활용 방안
+        - 
+    - Explore 고도화 최종 버전 전달하기 [[Channel Hyundai]] 
+    - IG Features 국문 받기 [[Channel Hyundai]] 
+    - WRC 자막 재작업 [[Channel Hyundai]] 
+    - Explore 가이드 파일 제작 [[Channel Hyundai]] 
+        - 기획 및 디자인 파일 공유
+            - 디자인은 제플린
+            - 기획은 PDF 문서로 정리
+    - IG Explore 반영할 때 [[Channel Hyundai]] 
+        - Upcoming Contents 같이 반영하기 [[Channel Hyundai]] 
+- 2021-06-14 Mon
+    - [다운이](다운이.md) 가 새벽에 토를 했다
+        - 차를 오래탔고
+        - 아이스크림을 먹었으며
+        - 영양제를 먹었다.
+        - 그래서 손가락을 땄다
+    - Explore Azera 전달 [[Channel Hyundai]] 
+        - 개발 시작
+            - 안드로이드
+            - SS, LG
+            - Web
+    - Models Tab UI 노출 [[Channel Hyundai]] 
+    - 주간 보고 문서 [[Channel Hyundai]] 
+    - 점심 #식단
+        - 김치돈까스우동
+    - Explore 고도화 B안으로 확정 [[Channel Hyundai]] 
+        - 이기범 디자인 진행
+        - 문서작업 해야됨
+    - 월간 보고 문서 보강 [[Channel Hyundai]] 
+    - 삼성과 미팅 조율 [[Channel Hyundai]] 
+    - 저녁 #식단
+        - 새우튀김김밥
+        - 요거트
+    - 무지함, 능력부족, 소통이 안됨 [[Insight]]
+        - Innocean에 말도 안되는 메일을 보면서 화가 치밀어 올랐다.
+            - 내가 해당 문서로 자막 작업하면 안된다고 분명히 말했다.
+            - 자막에 폰트랑 디자인을 적용해 달란다.
+            - 병신들이랑 일하면 고달프다.
+            - 일을 잘하나, 이해도가 높나, 애정을 가지고 있나 그냥 병신들 집합소다.
+- 2021-06-13 Sun
+    - 
+    - [일기](일기.md)
+        - 많은 것을 정리하는데 필요한 것을 찾고 있었다. 지금 나는 로 모든 지식을 정리하고자 한다
+        - 렘노트로 데이터 베이스를 이동하고자 한다.
+            - Silo 형식의 데이터 베이스는 한계가 있다.
+            - Notion 에서의 대대적인 이동을 할 것이다.
+                - 노션
+                    - 장점
+                        - 아카이빙 하기에 노션만한 것은 없다
+                        - 이미지 영상 등 무제한 용량이 너무 매력적이다.
+                        - 학생계정으로 무료로 무제한을 이용한다.
+                    - 단점
+                        - 검색할 때 오래 걸린다.
+                        - 집중력을 흐트리는 구조로 되어있다.
+                        - 내가 정리를 아무리 잘해놔도 사일로 구조여서 상호간 연결이 불가능하다.
+                - Remnote
+                    - 장점
+                        - Workflowy와 같은 불릿 리스트 방식이다.
+                        - 생각의 흐름을 놓치지 않고 세분화 할 수 있다.
+                        - PDF 에 하일라이트 하면서 작업할 수 있다.
+                    - 단점
+                        - PDF 업로드 속도가 불안정하다.
+                        - 아직 UI가 불안정하다.
+                        - 서비스의 완성도가 낮은 편이다.
+            - 데이터를 수평적으로 나열하고, 그리고 그것들을 키워드 중심으로 연결할 수 있도록 플랫하게 만든다.
+        - 한달에 7달러 내고 이런 서비스를 쓰면서 나는 더 발전하리란 확신을 가진다.
+    - 
+- Timestamp
+- 

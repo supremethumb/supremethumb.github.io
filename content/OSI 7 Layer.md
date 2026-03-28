@@ -1,0 +1,87 @@
+- 국제 표준화 기구 ISO에서 개발한 네트워크 프로토콜 디자인과 통신을 계층별로 나누어 설명한 개방형 시스템 상호 연결 모델
+- ![](file:///Applications/RemNote.app/Contents/Resources/app.asar/build/d/%LOCAL_FILE%g5wL8KGNvWHnO7VhqL-otLuAT74RNH0KilR-o-Wk9XeBnroVmeUSq2ynPf-AoS8WXH9MlsE3GfLzvy9SlIyjGIfSnGpSBEQ_WDcp_wRKODjQaYcLq4MI6J4UvXM7e9s-.png)
+- 7. 응용 계층 : Application
+    - HTTP
+    - FTP
+    - SMTP
+    - SNMP
+- 6. 표현 계층 : Presentation
+    - JPEG
+    - MPEG
+- 5. 세션: Sessions
+    - 논리적연결
+    - RPC
+    - Netbios
+- 4. 전송: Transport
+    --------------------- Portal ---------------------
+        - TCP [[Stub]]
+            - 
+            - 인터넷 프로토콜 스위트의 핵심 프로토콜 중 하나로 IP와 함께 TCP/IP라고 불림
+            - 전송계층에 위치하면서 근거리 통신망이나 인트라넷, 인터넷에 연결된 컴퓨터에 실행되는 프로그램 간 일련의 옥텟을 안정적으로, 순서대로, 에러없이 교환할 수 있께 해주는 프로토콜
+            - 전송 계층
+            - 근거리 통신망
+            - 인트라넷
+            - 순서대로 에러없이 전송
+            - TCP 헤더는 20 byte ~ 60 Byte
+            - TCP/IP
+            - 특징
+                - 신뢰성 보장
+                - 연결지향적
+                - 흐름제어
+                - 혼잡제어
+            - 
+            - 
+            - 
+    - UDP
+    - 세그먼트
+- 3. 네트워크: Network
+    --------------------- Portal ---------------------
+        - IP [[Stub]] #개발 [[IT]] #네트워크
+    - [ICMP](ICMP.md)
+        --------------------- Portal ---------------------
+            - ICMP [[Stub]]
+                -
+                - 수신자가 도달불가 메시지를 수신지 또는 서비스에 도달할 수 없는 호스트를 통지하는데 사용
+                - 오류 제어
+    - [ARP](ARP.md)
+        --------------------- Portal ---------------------
+            - ARP [[Stub]]
+                -
+                    - Address Resolution Protocol
+                - IP 네트워크상에서 IP 주소를 MAC주소로 변환하는 프로토콜
+    - [RARP](RARP.md)
+        --------------------- Portal ---------------------
+            - RARP [[Stub]]
+                -
+                    - Reverse Address Resolution Protocol
+                - IP 호스트가 자신의 물리 네트워크 주소(MAC)는 알지만 IP 주소를 모르는 경우, 서버로부터 IP주소를 요청하기 위해 사용하는 프로토콜
+    - [IGMP](IGMP.md)
+        --------------------- Portal ---------------------
+            - IGMP [[Stub]]
+                -
+                    - Internet Group Management Protocol
+                - 인터넷 그룹 관리 프로토콜은 호스트 컴퓨터와 인접 라우터가 멀티캐스트 그룹 멤버쉽을 구성하는데 사용
+    - [Routing Protocol](Routing Protocol.md)
+        --------------------- Portal ---------------------
+            - Routing Protocol [[Stub]]
+                -
+                    - 라우팅 프로토콜
+                - 데이터 전송을 위해 목적지까지 갈 수 있는 여러 경로 등 최적의 경로를 설정해주는 라우터 간의 상호 통신 프로토콜
+    - 포트
+    - 패킷
+- 2. 데이터 링크: Data Link
+    - 회선제어
+    - HDLC
+    - PPP
+    - Mac
+    - 개념
+    - 데이터 링크 개념도
+    - 프래임
+- 1. 물리계층: Physical
+    - 물리 계층은 실제 장치들을 연결하기 위해 필요한 전기적, 물리적 세부 사항들을 정의하는 계층이다.
+    - 통신 채널을 통해 전송되는 사용자 장치의 디지털 데이터를 이에 상응하는 신호들로 변환(변조 및 복조)한다.
+    - 물리 계층 프로토콜
+    - 물리 계층 장비
+    - 전기적 신호
+    - RS-232C
+    - 비

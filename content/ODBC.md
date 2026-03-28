@@ -1,0 +1,3 @@
+- Open Database Connectivity
+- 데이터베이스를 액세스하기 위한 표준 개방형 응용 프로그램 인터페이
+- 

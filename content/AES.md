@@ -1,0 +1,4 @@
+- 
+    - Advanced Encryption Standard
+- 2001년 미국 표준기술 연구소 NIST에서 발표한 블록 암호화 알고리즘
+- AES의 라운드 수는 10, 12, 14 라운드로 분류되어 한 라운드는 bab Bytes, Shift Rows, Mix Columns, Add Round Key의 4가지 계층 구성
