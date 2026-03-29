@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
       - name: Build Quartz
         run: npx quartz build
       - name: Add .nojekyll
