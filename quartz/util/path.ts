@@ -93,7 +93,13 @@ export function simplifySlug(fp: FullSlug): SimpleSlug {
 }
 
 export function transformInternalLink(link: string): RelativeURL {
-  let [fplike, anchor] = splitAnchor(decodeURI(link))
+  let decoded: string
+  try {
+    decoded = decodeURI(link)
+  } catch {
+    decoded = link
+  }
+  let [fplike, anchor] = splitAnchor(decoded)
 
   const folderPath = isFolderPath(fplike)
   let segments = fplike.split("/").filter((x) => x.length > 0)
