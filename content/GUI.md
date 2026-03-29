@@ -2,7 +2,7 @@
 tags: ['ux', '개발', 'ui']  
 aliases: [Graphic User Interface]
 source: 'book'
-ongoing: '작성중', '완료'
+ongoing: '완료'
 rating: 3
 ---
 # GUI

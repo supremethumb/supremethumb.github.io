@@ -1,5 +1,5 @@
 ---
-aliases:[Signed Exchanges, 서명된 거래소]
+aliases: [Signed Exchanges, 서명된 거래소]
 ---
 SXG는 리소스가 전달된 방식에 관계없이 리소스의 출처를 인증할 수 있도록 하는 전달 메커니즘입니다.
 
