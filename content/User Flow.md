@@ -1,3 +1,0 @@
-        - 이용흐름
-- 사용자가 서비스를 이용하는 흐름을 말한다. 이용흐름 설계에서는 사용자의 연속된 행동이 실제 서비스상에서 어떤 식으로 흘가는지를 업무, 화면 단위로 정의. 여기에는 탐색, 조회, 주 활동과 같은 기본적인 흐름 이외에 인증이나 옵션 선택, 예외처리 등의 부가적인 흐름도 담긴다.
-- ![](%LOCAL_FILE%Mib9fCZMIGbi6ZUdr_qhlkZxqfbk8bH3faV4brhquIcUFkVjY31-r_mYEIl9DeV0gYHiAhLKBuUqsTMHlRR_gqaj_fzq0n-VRHqHKetnYXLRzCax7HWBVXbldp5vZH6J.png)

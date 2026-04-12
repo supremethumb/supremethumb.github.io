@@ -1,2 +1,0 @@
-    - Not Used Recently
-- 참조 비트, 변형 비드 사용

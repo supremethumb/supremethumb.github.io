@@ -1,4 +1,0 @@
----
-
----
-# Reduce server response times
