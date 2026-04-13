@@ -1,0 +1,16 @@
+---
+title: "RBAC"
+date: 2026-04-13
+description: "Role Based Access Control"
+tags: ["IT", "개발", "기술"]
+---
+
+# RBAC
+
+Role Based Access Control
+
+역할기반 접근통제
+
+중앙관리자가 사용자와 시스템의 상호관계를 통제하여 조직내 맡은 역할에 기초하여 자원에 대한 접근을 제한하는 방법
+
+역할

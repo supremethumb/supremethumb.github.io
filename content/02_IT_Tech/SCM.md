@@ -1,0 +1,18 @@
+﻿---
+title: "SCM"
+date: 2026-04-13
+description: "Supply Chain Management"
+tags: ["IT", "개발", "기술"]
+---
+
+# SCM
+
+Supply Chain Management
+
+공급망 관리
+
+부품 공급업체와 생산업체 그리고 고객에 이르기까지 거래관계에 있는 기업들간 IT를 이용ㅎㄴ 실시간 정보공유를 통해 시장이나 수요자들의 요구에 기민하게 대응토록 지원하는 것이다.
+
+
+
+-

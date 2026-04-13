@@ -1,0 +1,12 @@
+﻿---
+title: "CALS"
+date: 2026-04-13
+description: "Commerce At Light Speed"
+tags: ["IT", "개발", "기술"]
+---
+
+# CALS
+
+Commerce At Light Speed
+
+[제품의 설계 • 개발 • 생산에서 유통 • 폐기에 이르기까지 제품의 라이프 사이클 (life cycle) 전반에 관련된 데이터를 통합하고 공유 ■교환할 수 있도록 한 경영 통합정보시스템](빅분기_필기.pdf/Page 024/제품의 설계 • 개발 • 생산에서 유통 • 폐기에 이르기까지 제품의 라이프 사이클 (life cycle) 전반에 관련된 데이터를 통합하고 공유 ■교환할 수 있도록 한 경영 통합정보시스템.md)
