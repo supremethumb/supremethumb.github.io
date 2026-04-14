@@ -55,7 +55,7 @@ export default (() => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="google-site-verification"
-          content="RTIgq4s0HwHlmnc8L4zg11cPX4VYxA5RurOnBTGzN5s"
+          content="GRby-SmWvVKq1RGgI73YGfj0NK-nG6c3R6189cBE9Fw"
         />
 
         <meta name="og:site_name" content={cfg.pageTitle}></meta>
