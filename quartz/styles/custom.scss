@@ -1,3 +1,100 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--highlight);
+  border: 1px solid var(--lightgray);
+}
+
+#hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Let clicks pass through if needed, or change based on interaction goals */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem !important;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--tertiary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  font-family: var(--codeFont);
+  /* Typing animation */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--tertiary);
+  margin: 0 auto 1.5rem auto;
+  animation:
+    typing 3s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+  max-width: fit-content;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--darkgray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--tertiary);
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    min-height: 40vh;
+  }
+  .hero-title {
+    font-size: 2.2rem !important;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
