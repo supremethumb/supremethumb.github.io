@@ -36,6 +36,29 @@ export default (() => {
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
+    const isArticle = fileData.slug !== "index" && fileData.slug !== "404"
+
+    const schemaOrg = {
+      "@context": "https://schema.org",
+      "@type": isArticle ? "Article" : "WebSite",
+      headline: title,
+      description: description,
+      url: socialUrl,
+      author: {
+        "@type": "Person",
+        name: cfg.pageTitle,
+      },
+      ...(isArticle &&
+        fileData.dates && {
+          datePublished: fileData.dates.published
+            ? fileData.dates.published.toISOString()
+            : undefined,
+          dateModified: fileData.dates.modified ? fileData.dates.modified.toISOString() : undefined,
+        }),
+    }
+
+    const schemaOrgString = JSON.stringify(schemaOrg)
+
     return (
       <head>
         <title>{title}</title>
@@ -95,6 +118,7 @@ export default (() => {
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
           .map((res) => JSResourceToScriptElement(res, true))}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaOrgString }} />
         {additionalHead.map((resource) => {
           if (typeof resource === "function") {
             return resource(fileData)
