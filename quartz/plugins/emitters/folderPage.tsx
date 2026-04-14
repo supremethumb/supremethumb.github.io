@@ -74,6 +74,7 @@ function computeFolderInfo(
           title: `${i18n(locale).pages.folderContent.folder}: ${folder}`,
           tags: [],
         },
+        description: `${folder} 폴더에 포함된 항목들입니다.`,
       }),
     ]),
   )

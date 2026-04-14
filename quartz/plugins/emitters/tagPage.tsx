@@ -40,6 +40,7 @@ function computeTagInfo(
         defaultProcessedContent({
           slug: joinSegments("tags", tag) as FullSlug,
           frontmatter: { title, tags: [] },
+          description: `${title} 관련 항목들입니다.`,
         }),
       ]
     }),
