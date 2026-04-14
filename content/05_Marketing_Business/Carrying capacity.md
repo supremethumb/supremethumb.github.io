@@ -61,7 +61,7 @@ Q5. You start having email deliverability problems so you can’t notify users o
 
             - 토스 송금은? 30%가 이전달에 온 적이 없는 유저
 
-!Pasted image 20220528080802.png
+
 
 제품의 본질적인 체력(마케팅, 광고가 제외된)
 
@@ -70,7 +70,7 @@ Q1 : 현재 MAU 10만, Carrying Capacity 75만, 광고를 해야할까?
 Q2 : 현재 MAU 70만, Carrying Capacity 75만, 광고를 해야할까?
 
 Q3 : 현재 MAU 100만, Carrying Capcity 75만, MAU는 떨어질까?
-!Pasted image 20220528080754.png
+
 
 마케팅 활동을 통해 일시적으로 Inflow Boosting은 가능하지만, 결국 광고를 끄면 그대로 다시 주저앉게 됩니다. Carrying Capacity가 변하지 않았기 때문이죠.
 
