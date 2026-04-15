@@ -39,7 +39,7 @@ export default {
       createdWith: "Created with",
     },
     graph: {
-      title: "그래프 뷰",
+      title: "",
     },
     recentNotes: {
       title: "최근 게시글",
