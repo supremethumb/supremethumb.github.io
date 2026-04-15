@@ -18,7 +18,38 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
-      component: Component.GlobeGraph({ height: 400 }),
+      component: Component.Graph({
+        localGraph: {
+          drag: true,
+          zoom: true,
+          depth: -1,
+          scale: 1.5,
+          repelForce: 0.5,
+          centerForce: 0.3,
+          linkDistance: 30,
+          fontSize: 0.6,
+          opacityScale: 1,
+          showTags: true,
+          removeTags: [],
+          focusOnHover: true,
+          enableRadial: true,
+        },
+        globalGraph: {
+          drag: true,
+          zoom: true,
+          depth: -1,
+          scale: 1.5,
+          repelForce: 0.5,
+          centerForce: 0.3,
+          linkDistance: 30,
+          fontSize: 0.6,
+          opacityScale: 1,
+          showTags: true,
+          removeTags: [],
+          focusOnHover: true,
+          enableRadial: true,
+        },
+      }),
       condition: (page) => page.fileData.slug === "index",
     }),
     Component.ConditionalRender({
@@ -45,7 +76,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.ConditionalRender({
+      component: Component.Graph(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

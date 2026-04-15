@@ -98,3 +98,20 @@
     font-size: 1.2rem;
   }
 }
+
+:root:has(article[data-slug="index"]) .graph-outer {
+  border: none !important;
+  box-shadow: none !important;
+  height: 75vh;
+  width: 100%;
+  background: transparent;
+}
+
+:root:has(article[data-slug="index"]) .graph {
+  width: 100%;
+
+  h3,
+  .global-graph-icon {
+    display: none;
+  }
+}

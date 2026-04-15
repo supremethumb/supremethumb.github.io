@@ -70,7 +70,6 @@ type TweenNode = {
 
 async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const slug = simplifySlug(fullSlug)
-  const visited = getVisited()
   removeAllChildren(graph)
 
   let {
@@ -193,16 +192,43 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     {} as Record<(typeof cssVars)[number], string>,
   )
 
+  const materialColors = ["#E57373", "#64B5F6", "#81C784", "#FFD54F", "#BA68C8", "#4DB6AC"]
+  // shuffle array
+  for (let i = materialColors.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[materialColors[i], materialColors[j]] = [materialColors[j], materialColors[i]]
+  }
+
+  const topicColorMap = new Map<string, string>()
+  let colorIndex = 0
+
+  function getTopic(d: NodeData): string | null {
+    if (d.id.startsWith("tags/")) return d.id
+    if (d.tags && d.tags.length > 0) return d.tags[0]
+    const parts = d.id.split("/")
+    if (parts.length > 1) {
+      return parts[0]
+    }
+    return null
+  }
+
   // calculate color
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
-      return computedStyleMap["--tertiary"]
-    } else {
-      return computedStyleMap["--gray"]
     }
+
+    const topic = getTopic(d)
+    if (topic) {
+      if (!topicColorMap.has(topic)) {
+        topicColorMap.set(topic, materialColors[colorIndex % materialColors.length])
+        colorIndex++
+      }
+      return topicColorMap.get(topic)!
+    }
+
+    return computedStyleMap["--gray"]
   }
 
   function nodeRadius(d: NodeData) {
@@ -291,17 +317,17 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
               alpha: 1,
               scale: { x: activeScale, y: activeScale },
             },
-            100,
+            250,
           ),
         )
       } else {
         tweenGroup.add(
           new Tweened<Text>(n.label).to(
             {
-              alpha: n.label.alpha,
+              alpha: 0,
               scale: { x: defaultScale, y: defaultScale },
             },
-            100,
+            250,
           ),
         )
       }
@@ -381,15 +407,14 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       alpha: 0,
       anchor: { x: 0.5, y: 1.2 },
       style: {
-        fontSize: fontSize * 15,
-        fill: computedStyleMap["--dark"],
+        fontSize: fontSize * 12,
+        fill: computedStyleMap["--gray"],
         fontFamily: computedStyleMap["--bodyFont"],
       },
       resolution: window.devicePixelRatio * 4,
     })
     label.scale.set(1 / scale)
 
-    let oldLabelOpacity = 0
     const isTagNode = nodeId.startsWith("tags/")
     const gfx = new Graphics({
       interactive: true,
@@ -402,14 +427,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       .fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
       .on("pointerover", (e) => {
         updateHoverInfo(e.target.label)
-        oldLabelOpacity = label.alpha
         if (!dragging) {
           renderPixiFromD3()
         }
       })
       .on("pointerleave", () => {
         updateHoverInfo(null)
-        label.alpha = oldLabelOpacity
         if (!dragging) {
           renderPixiFromD3()
         }
@@ -541,7 +564,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
       l.gfx
         .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
-        .stroke({ alpha: l.alpha, width: 1, color: l.color })
+        .stroke({ alpha: l.alpha * 0.3, width: 1, color: l.color })
     }
 
     tweens.forEach((t) => t.update(time))

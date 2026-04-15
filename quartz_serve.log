@@ -1,40 +1,22 @@
-
-> @jackyzha0/quartz@4.5.2 docs
-> npx quartz build --serve -d docs
-
-
- Quartz v4.5.2
-
-Cleaned output directory `public` in 57ms
-Found 76 input files from `docs` in 32ms
-Parsing input files using 1 threads
-Parsed 76 Markdown files in 4s
-Filtered out 1 files in 239μs
-Emitting files
-Emitted 110 files to `public` in 639ms
-Done processing 76 files in 4s
-Started a Quartz server listening at http://localhost:8080
-Error: listen EADDRINUSE: address already in use :::8080
-    at Server.setupListenHandle [as _listen2] (node:net:1940:16)[200] /
-[200] /index.css
-[200] /prescript.js
-[200] /postscript.js
-[200] /static/contentIndex.json
-Detected a source code change, doing a hard rebuild...
-Cleaned output directory `public` in 77ms
-Found 76 input files from `docs` in 17ms
-Parsing input files using 1 threads
-Parsed 76 Markdown files in 2s
-Filtered out 1 files in 207μs
-Emitting files
-Emitted 110 files to `public` in 536ms
-Done processing 76 files in 3s
-Detected a source code change, doing a hard rebuild...
-Cleaned output directory `public` in 39ms
-Found 76 input files from `docs` in 25ms
-Parsing input files using 1 threads
-Parsed 76 Markdown files in 2s
-Filtered out 1 files in 282μs
-Emitting files
-Emitted 110 files to `public` in 840ms
-Done processing 76 files in 3s
+npm warn exec The following package was not found and will be installed: serve@14.2.6
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  4/15/2026 8:59:11 AM ::1 GET /
+ HTTP  4/15/2026 8:59:11 AM ::1 Returned 200 in 45 ms
+ HTTP  4/15/2026 8:59:11 AM ::1 GET /index.css
+ HTTP  4/15/2026 8:59:11 AM ::1 GET /prescript.js
+ HTTP  4/15/2026 8:59:11 AM ::1 GET /postscript.js
+ HTTP  4/15/2026 8:59:11 AM ::1 Returned 200 in 7 ms
+ HTTP  4/15/2026 8:59:11 AM ::1 Returned 200 in 6 ms
+ HTTP  4/15/2026 8:59:11 AM ::1 Returned 200 in 23 ms
+ HTTP  4/15/2026 8:59:12 AM ::1 GET /static/contentIndex.json
+ HTTP  4/15/2026 8:59:12 AM ::1 Returned 200 in 8 ms
+ HTTP  4/15/2026 9:30:55 AM ::1 GET /
+ HTTP  4/15/2026 9:30:55 AM ::1 Returned 200 in 85 ms
+ HTTP  4/15/2026 9:30:55 AM ::1 GET /index.css
+ HTTP  4/15/2026 9:30:55 AM ::1 GET /prescript.js
+ HTTP  4/15/2026 9:30:55 AM ::1 GET /postscript.js
+ HTTP  4/15/2026 9:30:55 AM ::1 Returned 200 in 21 ms
+ HTTP  4/15/2026 9:30:55 AM ::1 Returned 200 in 20 ms
+ HTTP  4/15/2026 9:30:55 AM ::1 Returned 200 in 62 ms
+ HTTP  4/15/2026 9:30:56 AM ::1 GET /static/contentIndex.json
+ HTTP  4/15/2026 9:30:56 AM ::1 Returned 200 in 167 ms
