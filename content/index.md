@@ -7,10 +7,6 @@ title: Welcome to my Digital Garden
     <canvas id="hero-graph-canvas"></canvas>
   </div>
 
-  <div id="hero-loading" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--light); z-index: 10; transition: opacity 0.5s;">
-    <div class="loading-spinner"></div>
-  </div>
-
   <div id="hero-speech-bubble" style="position: absolute; opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.3s; transform: translate(-50%, -100%); z-index: 5; background: var(--secondary); color: var(--light); padding: 8px 16px; border-radius: 20px; font-size: 0.9em; box-shadow: 0 4px 12px rgba(0,0,0,0.1); white-space: nowrap;">
     <span id="speech-bubble-text"></span>
     <div style="position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid var(--secondary);"></div>
@@ -24,19 +20,6 @@ title: Welcome to my Digital Garden
 </div>
 
 <style>
-.loading-spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid var(--lightgray);
-  border-radius: 50%;
-  border-top-color: var(--tertiary);
-  animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
 #hero-graph-canvas {
   width: 100%;
   height: 100%;
@@ -55,7 +38,6 @@ let heroSimulation;
 let heroAnimationId;
 let autoFocusInterval;
 let resumeAutoFocusTimeout;
-let incrementalLoadTimeout;
 let isUserInteracting = false;
 let d3Transform = d3.zoomIdentity;
 
@@ -69,7 +51,6 @@ async function initHeroGraph() {
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
   const container = document.getElementById('hero-graph-container');
-  const loading = document.getElementById('hero-loading');
   const speechBubble = document.getElementById('hero-speech-bubble');
   const speechBubbleText = document.getElementById('speech-bubble-text');
 
@@ -89,7 +70,6 @@ async function initHeroGraph() {
     }
   } catch (e) {
     console.error("Failed to fetch graph data", e);
-    if(loading) loading.style.opacity = '0';
     return;
   }
 
@@ -117,66 +97,23 @@ async function initHeroGraph() {
     }
   }
 
-  const nodes = [];
-  const links = [];
-  const loadedNodeIds = new Set();
-
   // Set up Force Simulation
-  heroSimulation = d3.forceSimulation(nodes)
-    .force("link", d3.forceLink(links).id(d => d.id).distance(40))
+  heroSimulation = d3.forceSimulation(allNodes)
+    .force("link", d3.forceLink(allLinks).id(d => d.id).distance(40))
     .force("charge", d3.forceManyBody().strength(-30))
     .force("center", d3.forceCenter(width / 2, height / 2))
-    .force("collide", d3.forceCollide().radius(d => d.radius + 2).iterations(2))
-    .on("tick", ticked);
+    .force("collide", d3.forceCollide().radius(d => d.radius + 2).iterations(2));
 
-  let isFirstChunk = true;
+  // Pre-tick the simulation to avoid initial clumping
+  heroSimulation.tick(300);
 
-  function addNextChunk() {
-    const chunkSize = 20; // Load 20 nodes at a time
-    const newNodes = allNodes.splice(0, chunkSize);
+  // Set the tick event handler after pre-ticking to avoid unnecessary draws
+  heroSimulation.on("tick", ticked);
 
-    if (newNodes.length === 0) return; // All nodes loaded
+  // Manually trigger the first render immediately
+  ticked();
 
-    newNodes.forEach(node => {
-      nodes.push(node);
-      loadedNodeIds.add(node.id);
-    });
-
-    // Add links where both source and target are now loaded
-    const linksToAdd = [];
-    for (let i = allLinks.length - 1; i >= 0; i--) {
-      const link = allLinks[i];
-      if (loadedNodeIds.has(link.source) && loadedNodeIds.has(link.target)) {
-        linksToAdd.push(link);
-        allLinks.splice(i, 1);
-      }
-    }
-
-    linksToAdd.forEach(link => links.push(link));
-
-    // Update simulation
-    heroSimulation.nodes(nodes);
-    heroSimulation.force("link").links(links);
-    heroSimulation.alpha(0.1).restart(); // Small bump to incorporate new nodes smoothly
-
-    if (isFirstChunk) {
-      // Remove loading overlay immediately after first chunk
-      if(loading) {
-          loading.style.opacity = '0';
-          setTimeout(() => loading.style.display = 'none', 500);
-      }
-      // Start the auto focus loop once there are nodes to focus on
-      startAutoFocus();
-      isFirstChunk = false;
-    }
-
-    if (allNodes.length > 0) {
-      incrementalLoadTimeout = setTimeout(addNextChunk, 50); // Schedule next chunk
-    }
-  }
-
-  // Start incremental loading
-  addNextChunk();
+  startAutoFocus();
 
   // Zoom behavior
   const zoom = d3.zoom()
@@ -243,7 +180,7 @@ async function initHeroGraph() {
 
     // Draw links
     ctx.beginPath();
-    links.forEach(d => {
+    allLinks.forEach(d => {
       ctx.moveTo(d.source.x, d.source.y);
       ctx.lineTo(d.target.x, d.target.y);
     });
@@ -253,7 +190,7 @@ async function initHeroGraph() {
 
     // Draw nodes
     ctx.fillStyle = "rgba(40, 75, 99, 0.8)"; // Secondary color
-    nodes.forEach(d => {
+    allNodes.forEach(d => {
       ctx.beginPath();
       ctx.moveTo(d.x + d.radius, d.y);
       ctx.arc(d.x, d.y, d.radius, 0, 2 * Math.PI);
@@ -285,10 +222,10 @@ async function initHeroGraph() {
   }
 
   function focusRandomNode() {
-    if (isUserInteracting || nodes.length === 0) return;
+    if (isUserInteracting || allNodes.length === 0) return;
 
-    const randomIdx = Math.floor(Math.random() * nodes.length);
-    const targetNode = nodes[randomIdx];
+    const randomIdx = Math.floor(Math.random() * allNodes.length);
+    const targetNode = allNodes[randomIdx];
     currentFocusedNode = targetNode;
 
     // Calculate target transform to center the node
@@ -333,7 +270,6 @@ async function initHeroGraph() {
       if (heroSimulation) heroSimulation.stop();
       clearInterval(autoFocusInterval);
       clearTimeout(resumeAutoFocusTimeout);
-      clearTimeout(incrementalLoadTimeout);
       window.removeEventListener('resize', window.heroGraphResizeHandler);
       delete window.heroGraphCleanup;
   };
