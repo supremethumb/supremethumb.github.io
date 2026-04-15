@@ -99,19 +99,27 @@
   }
 }
 
-:root:has(article[data-slug="index"]) .graph-outer {
-  border: none !important;
-  box-shadow: none !important;
-  height: 75vh;
-  width: 100%;
-  background: transparent;
-}
+:root:has(article[data-slug="index"]) {
+  /* Hide the fallback "index" title completely */
+  .article-title {
+    display: none !important;
+  }
 
-:root:has(article[data-slug="index"]) .graph {
-  width: 100%;
+  /* Expand the graph container to fill the screen */
+  .graph-outer,
+  .graph {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
 
-  h3,
-  .global-graph-icon {
-    display: none;
+  .graph {
+    h3,
+    .global-graph-icon {
+      display: none;
+    }
   }
 }
