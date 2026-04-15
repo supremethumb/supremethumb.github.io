@@ -1,0 +1,19 @@
+
+ Quartz v4.5.2
+
+Cleaned output directory `public` in 68ms
+Found 572 input files from `content` in 75ms
+Parsing input files using 4 threads
+Parsed 572 Markdown files in 6s
+Filtered out 0 files in 585μs
+Emitting files
+Emitted 789 files to `public` in 3s
+Done processing 572 files in 9s
+Started a Quartz server listening at http://localhost:8080
+hint: exit with ctrl+c
+[200] /
+[200] /index.css
+[200] /prescript.js
+[200] /postscript.js
+[200] /static/contentIndex.json
+Terminated
