@@ -55,6 +55,7 @@ let heroSimulation;
 let heroAnimationId;
 let autoFocusInterval;
 let resumeAutoFocusTimeout;
+let incrementalLoadTimeout;
 let isUserInteracting = false;
 let d3Transform = d3.zoomIdentity;
 
@@ -93,13 +94,13 @@ async function initHeroGraph() {
   }
 
   // Parse data
-  const nodes = [];
-  const links = [];
+  const allNodes = [];
+  const allLinks = [];
   const validNodeIds = new Set();
 
   for (const [key, details] of Object.entries(rawData)) {
     validNodeIds.add(key);
-    nodes.push({
+    allNodes.push({
       id: key,
       title: details.title,
       radius: details.title === "supreme thumb's notes" ? 10 : 5 // Make index node bigger maybe?
@@ -110,11 +111,15 @@ async function initHeroGraph() {
     if (details.links) {
       for (const target of details.links) {
         if (validNodeIds.has(target)) {
-          links.push({ source: key, target: target });
+          allLinks.push({ source: key, target: target });
         }
       }
     }
   }
+
+  const nodes = [];
+  const links = [];
+  const loadedNodeIds = new Set();
 
   // Set up Force Simulation
   heroSimulation = d3.forceSimulation(nodes)
@@ -123,6 +128,55 @@ async function initHeroGraph() {
     .force("center", d3.forceCenter(width / 2, height / 2))
     .force("collide", d3.forceCollide().radius(d => d.radius + 2).iterations(2))
     .on("tick", ticked);
+
+  let isFirstChunk = true;
+
+  function addNextChunk() {
+    const chunkSize = 20; // Load 20 nodes at a time
+    const newNodes = allNodes.splice(0, chunkSize);
+
+    if (newNodes.length === 0) return; // All nodes loaded
+
+    newNodes.forEach(node => {
+      nodes.push(node);
+      loadedNodeIds.add(node.id);
+    });
+
+    // Add links where both source and target are now loaded
+    const linksToAdd = [];
+    for (let i = allLinks.length - 1; i >= 0; i--) {
+      const link = allLinks[i];
+      if (loadedNodeIds.has(link.source) && loadedNodeIds.has(link.target)) {
+        linksToAdd.push(link);
+        allLinks.splice(i, 1);
+      }
+    }
+
+    linksToAdd.forEach(link => links.push(link));
+
+    // Update simulation
+    heroSimulation.nodes(nodes);
+    heroSimulation.force("link").links(links);
+    heroSimulation.alpha(0.1).restart(); // Small bump to incorporate new nodes smoothly
+
+    if (isFirstChunk) {
+      // Remove loading overlay immediately after first chunk
+      if(loading) {
+          loading.style.opacity = '0';
+          setTimeout(() => loading.style.display = 'none', 500);
+      }
+      // Start the auto focus loop once there are nodes to focus on
+      startAutoFocus();
+      isFirstChunk = false;
+    }
+
+    if (allNodes.length > 0) {
+      incrementalLoadTimeout = setTimeout(addNextChunk, 50); // Schedule next chunk
+    }
+  }
+
+  // Start incremental loading
+  addNextChunk();
 
   // Zoom behavior
   const zoom = d3.zoom()
@@ -263,15 +317,6 @@ async function initHeroGraph() {
     setTimeout(focusRandomNode, 1000); // Initial focus shortly after start
   }
 
-  // Remove loading overlay
-  if(loading) {
-      loading.style.opacity = '0';
-      setTimeout(() => loading.style.display = 'none', 500);
-  }
-
-  // Start the auto focus loop
-  startAutoFocus();
-
   window.heroGraphResizeHandler = () => {
     if (!container || !canvas) return;
     width = container.clientWidth;
@@ -288,6 +333,7 @@ async function initHeroGraph() {
       if (heroSimulation) heroSimulation.stop();
       clearInterval(autoFocusInterval);
       clearTimeout(resumeAutoFocusTimeout);
+      clearTimeout(incrementalLoadTimeout);
       window.removeEventListener('resize', window.heroGraphResizeHandler);
       delete window.heroGraphCleanup;
   };
