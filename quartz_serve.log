@@ -1,19 +1,40 @@
 
+> @jackyzha0/quartz@4.5.2 docs
+> npx quartz build --serve -d docs
+
+
  Quartz v4.5.2
 
-Cleaned output directory `public` in 68ms
-Found 572 input files from `content` in 75ms
-Parsing input files using 4 threads
-Parsed 572 Markdown files in 6s
-Filtered out 0 files in 585μs
+Cleaned output directory `public` in 57ms
+Found 76 input files from `docs` in 32ms
+Parsing input files using 1 threads
+Parsed 76 Markdown files in 4s
+Filtered out 1 files in 239μs
 Emitting files
-Emitted 789 files to `public` in 3s
-Done processing 572 files in 9s
+Emitted 110 files to `public` in 639ms
+Done processing 76 files in 4s
 Started a Quartz server listening at http://localhost:8080
-hint: exit with ctrl+c
-[200] /
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)[200] /
 [200] /index.css
 [200] /prescript.js
 [200] /postscript.js
 [200] /static/contentIndex.json
-Terminated
+Detected a source code change, doing a hard rebuild...
+Cleaned output directory `public` in 77ms
+Found 76 input files from `docs` in 17ms
+Parsing input files using 1 threads
+Parsed 76 Markdown files in 2s
+Filtered out 1 files in 207μs
+Emitting files
+Emitted 110 files to `public` in 536ms
+Done processing 76 files in 3s
+Detected a source code change, doing a hard rebuild...
+Cleaned output directory `public` in 39ms
+Found 76 input files from `docs` in 25ms
+Parsing input files using 1 threads
+Parsed 76 Markdown files in 2s
+Filtered out 1 files in 282μs
+Emitting files
+Emitted 110 files to `public` in 840ms
+Done processing 76 files in 3s
