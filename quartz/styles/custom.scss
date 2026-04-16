@@ -103,14 +103,14 @@
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+  gap: 1.25rem;
   margin: 2rem 0;
 }
 
 .category-card {
   position: relative;
-  padding: 1.5rem;
-  border-radius: 10px;
+  padding: 1.8rem 1.8rem 1.5rem 2rem;
+  border-radius: 12px;
   border: 1px solid var(--lightgray);
   background: var(--light);
   transition: all 0.3s ease;
@@ -125,7 +125,7 @@
     left: 0;
     width: 4px;
     height: 100%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 12px 0 0 12px;
     transition: width 0.3s ease;
   }
 
@@ -150,32 +150,32 @@
 }
 
 .category-card .card-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
   display: block;
 }
 
 .category-card .card-title {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--dark);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
 }
 
 .category-card .card-desc {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--gray);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .category-card .card-count {
   display: inline-block;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   font-size: 0.75rem;
   font-family: var(--codeFont);
   color: var(--secondary);
   background: var(--highlight);
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 20px;
 }
 
@@ -246,12 +246,12 @@ body[data-slug="index"] {
   }
 
   .graph-outer {
-    height: 100vh !important;
+    height: calc(100vh - 125px) !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    border: none !important;
-    border-radius: 0 !important;
+    border: 1px solid var(--lightgray) !important;
+    border-radius: 12px !important;
   }
 
   .graph-container {
