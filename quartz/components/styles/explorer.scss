@@ -19,6 +19,7 @@
       background-color: var(--light);
       padding: 1rem 0 1rem 0;
       margin: 0;
+      overflow: hidden;
     }
 
     .hide-until-loaded ~ .explorer-content {
@@ -255,10 +256,18 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
         transform 200ms ease,
         visibility 200ms ease;
       overflow: hidden;
-      padding: 4rem 0 2rem 0;
+      overflow-y: auto;
+      padding: 4rem 1.5rem 2rem 1.5rem;
       height: 100dvh;
       max-height: 100dvh;
       visibility: hidden;
+
+      & ul li > a,
+      & .folder-container div > a,
+      & .folder-container div > button span {
+        word-break: break-word;
+        overflow-wrap: break-word;
+      }
     }
 
     .mobile-explorer {
