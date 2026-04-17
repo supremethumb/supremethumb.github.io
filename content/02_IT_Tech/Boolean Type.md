@@ -1,10 +1,42 @@
 ---
 title: "Boolean Type"
 date: 2026-04-13
-description: "조건이 참인지 거짓인지 판단하고자 할 때 사용"
+description: "Boolean Type은 참(true)과 거짓(false) 두 값만 가지는 가장 단순한 데이터 타입으로, 조건 분기와 논리 연산의 기반이 됩니다."
 tags: ["IT", "개발", "기술"]
 ---
 
 # Boolean Type
 
-조건이 참인지 거짓인지 판단하고자 할 때 사용
+Boolean Type(논리 자료형)은 *참(true)*과 *거짓(false)* 두 가지 값만 가지는 가장 기본적인 데이터 타입이다. 조지 불(George Boole)의 이름에서 따왔으며, 모든 조건 판단과 논리 흐름의 기초가 된다.
+
+## 기본 특성
+
+- 표현 가능한 값은 단 두 개: `true`, `false`
+- 메모리 사용량은 적지만 언어/컴파일러에 따라 1비트~1바이트 등 다양
+- 다른 타입과의 변환에서 0/1 또는 빈 값 여부로 매핑되는 경우가 많음
+
+## 주요 활용
+
+- **조건문**: `if`, `while` 등의 분기에서 평가식의 결과
+- **플래그 변수**: 상태(예: `isLoggedIn`, `isVisible`) 표현
+- **논리 연산**: AND(`&&`), OR(`||`), NOT(`!`) 조합으로 복합 조건 구성
+- **함수 반환**: "성공/실패", "포함/미포함" 같은 이분법적 결과
+
+## 언어별 표기
+
+| 언어 | 타입명 | 값 |
+| --- | --- | --- |
+| C/C++ | `bool` | `true`, `false` |
+| Java | `boolean` | `true`, `false` |
+| Python | `bool` | `True`, `False` |
+| JavaScript | (동적) | `true`, `false` |
+
+## 주의점
+
+- *Truthy/Falsy*: JavaScript, Python처럼 `0`, `""`, `null` 등을 거짓으로 취급하는 언어에서는 의도치 않은 분기가 발생할 수 있다.
+- 삼중 상태가 필요한 경우(예: "참/거짓/모름")에는 Boolean 대신 Enum 또는 Optional을 고려해야 한다.
+
+## 관련 노트
+
+- [[Data Type]]: 자료형 전체 개관
+- [[Int Type]] · [[Float Type]] · [[String Type]] · [[Char Type]]: 다른 기본 자료형
