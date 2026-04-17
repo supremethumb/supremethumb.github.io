@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/03_AI_ML/Episodic Memory.md",
-    "content/03_AI_ML/Feature Pyramid Network.md",
-    "content/03_AI_ML/Fine-Tuning.md",
-    "content/03_AI_ML/GAN.md",
-    "content/03_AI_ML/GPT-3.md",
-    "content/03_AI_ML/GradCAM.md",
-    "content/03_AI_ML/IoU.md",
-    "content/03_AI_ML/LIME.md",
-    "content/03_AI_ML/LRP.md",
-    "content/03_AI_ML/LSTM.md",
     "content/03_AI_ML/MNIST.md",
     "content/03_AI_ML/Network Dessection.md",
     "content/03_AI_ML/PQ.md",
@@ -512,7 +502,17 @@
     "content/03_AI_ML/Compound Scaling.md",
     "content/03_AI_ML/Contrastive Learning.md",
     "content/03_AI_ML/DSTC9.md",
-    "content/03_AI_ML/Downstream Task.md"
+    "content/03_AI_ML/Downstream Task.md",
+    "content/03_AI_ML/Episodic Memory.md",
+    "content/03_AI_ML/Feature Pyramid Network.md",
+    "content/03_AI_ML/Fine-Tuning.md",
+    "content/03_AI_ML/GAN.md",
+    "content/03_AI_ML/GPT-3.md",
+    "content/03_AI_ML/GradCAM.md",
+    "content/03_AI_ML/IoU.md",
+    "content/03_AI_ML/LIME.md",
+    "content/03_AI_ML/LRP.md",
+    "content/03_AI_ML/LSTM.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:33.615583Z"
+  "last_updated": "2026-04-17T15:30:34.014136Z"
 }
