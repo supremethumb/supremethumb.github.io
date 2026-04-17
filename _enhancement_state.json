@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/03_AI_ML/지도학습.md",
-    "content/03_AI_ML/지식 증류.md",
-    "content/03_AI_ML/지식그래프.md",
-    "content/03_AI_ML/집중 매커니즘.md",
-    "content/03_AI_ML/통계분석.md",
-    "content/03_AI_ML/표현 학습.md",
-    "content/03_AI_ML/퓨샷러닝.md",
-    "content/03_AI_ML/학습 역량.md",
-    "content/03_AI_ML/혼동 행렬.md",
-    "content/05_Marketing_Business/AAR 프레임.md",
     "content/05_Marketing_Business/AARRR.md",
     "content/05_Marketing_Business/AB Testing.md",
     "content/05_Marketing_Business/ARPPU.md",
@@ -512,7 +502,17 @@
     "content/03_AI_ML/적대적 공격.md",
     "content/03_AI_ML/전용 인공지능.md",
     "content/03_AI_ML/전이 학습.md",
-    "content/03_AI_ML/준지도학습.md"
+    "content/03_AI_ML/준지도학습.md",
+    "content/03_AI_ML/지도학습.md",
+    "content/03_AI_ML/지식 증류.md",
+    "content/03_AI_ML/지식그래프.md",
+    "content/03_AI_ML/집중 매커니즘.md",
+    "content/03_AI_ML/통계분석.md",
+    "content/03_AI_ML/표현 학습.md",
+    "content/03_AI_ML/퓨샷러닝.md",
+    "content/03_AI_ML/학습 역량.md",
+    "content/03_AI_ML/혼동 행렬.md",
+    "content/05_Marketing_Business/AAR 프레임.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:35.763948Z"
+  "last_updated": "2026-04-17T15:30:36.126017Z"
 }
