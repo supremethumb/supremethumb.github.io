@@ -40,6 +40,9 @@ FIFO(First In First Out, 선입선출)는 *가장 먼저 들어온 것을 가장
 
 ## 관련 노트
 
-- [[LRU]] · [[LFU]] · [[NUR]] · [[OPT]]: 다른 페이지 교체 알고리즘
-- [[작업]]: FIFO 로 처리될 수 있는 작업 단위
-- [[Kernel]]: 페이지 교체를 수행하는 OS 핵심
+- [[02_IT_Tech/LRU|LRU]] — 공유 키워드: `IT`, `LRU`, `가장`
+- [[02_IT_Tech/OPT|OPT]] — 공유 키워드: `IT`, `가장`, `교체`
+- [[02_IT_Tech/LFU|LFU]] — 공유 키워드: `IT`, `LRU`, `가장`
+- [[02_IT_Tech/NUR|NUR]] — 공유 키워드: `IT`, `교체`
+- [[02_IT_Tech/SCR|SCR]] — 공유 키워드: `FIFO`, `IT`
+
