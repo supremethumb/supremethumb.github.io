@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:43.057901Z",
+  "last_updated": "2026-04-17T15:33:43.402240Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -11055,6 +11055,16 @@
     "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
     "content/03_AI_ML/인공지능.md",
     "content/03_AI_ML/정량적 데이터.md",
-    "content/05_Marketing_Business/규칙 없음.md"
+    "content/05_Marketing_Business/규칙 없음.md",
+    "content/05_Marketing_Business/그로스 해킹.md",
+    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md",
+    "content/05_Marketing_Business/브랜드 3.0.md",
+    "content/05_Marketing_Business/업스트림.md",
+    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md",
+    "content/05_Marketing_Business/코호트.md",
+    "content/05_Marketing_Business/파이프라인.md",
+    "content/06_Philosophy_Humanities/Grit.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md"
   ]
 }
