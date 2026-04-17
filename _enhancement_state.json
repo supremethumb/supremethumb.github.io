@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/01_UX_Design/서비스 디자인 교과서.md",
-    "content/01_UX_Design/서비스 디자인.md",
-    "content/01_UX_Design/서비스.md",
-    "content/01_UX_Design/설문.md",
-    "content/01_UX_Design/쉐브론.md",
-    "content/01_UX_Design/스토리보드.md",
-    "content/01_UX_Design/스토리텔링.md",
-    "content/01_UX_Design/시스템 사용성 척도.md",
-    "content/01_UX_Design/시장 환경 조사.md",
-    "content/01_UX_Design/신타이포그래픽 디자인.md",
     "content/01_UX_Design/심성 모형.md",
     "content/01_UX_Design/앨런 쿠퍼.md",
     "content/01_UX_Design/앱 레이블의 팁.md",
@@ -512,7 +502,17 @@
     "content/01_UX_Design/사용자 리서치.md",
     "content/01_UX_Design/사용자 스토리.md",
     "content/01_UX_Design/사용자 중심 디자인.md",
-    "content/01_UX_Design/서비스 기획자.md"
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/01_UX_Design/서비스 디자인 교과서.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/서비스.md",
+    "content/01_UX_Design/설문.md",
+    "content/01_UX_Design/쉐브론.md",
+    "content/01_UX_Design/스토리보드.md",
+    "content/01_UX_Design/스토리텔링.md",
+    "content/01_UX_Design/시스템 사용성 척도.md",
+    "content/01_UX_Design/시장 환경 조사.md",
+    "content/01_UX_Design/신타이포그래픽 디자인.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:24.452884Z"
+  "last_updated": "2026-04-17T15:30:24.821601Z"
 }
