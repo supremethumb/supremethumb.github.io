@@ -19,3 +19,11 @@ description: "검증되지 않은 외부입력 데이터가 포함된 웹페이�
         - 이메일
     - DOM XSS
         - 브라우저를 대상으로 URL 을 이메일을 통해 발송하고 피해자가 URL 클릭 시 Document Object Model 공격 피해를 당하는 기법
+
+## 관련 노트
+
+- [[02_IT_Tech/DDOS|DDOS]] — 공유 키워드: `IT`, `공격`
+- [[02_IT_Tech/DOS|DOS]] — 공유 키워드: `IT`, `공격`
+- [[02_IT_Tech/DRDOS|DRDOS]] — 공유 키워드: `IT`, `공격`
+- [[02_IT_Tech/XML|XML]] — 공유 키워드: `HTML`, `IT`
+

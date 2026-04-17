@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:33.847757Z",
+  "last_updated": "2026-04-17T15:33:34.144643Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10735,6 +10735,16 @@
     "content/02_IT_Tech/TCP.md",
     "content/02_IT_Tech/Timeout.md",
     "content/02_IT_Tech/UML.md",
-    "content/02_IT_Tech/VAN.md"
+    "content/02_IT_Tech/VAN.md",
+    "content/02_IT_Tech/XML.md",
+    "content/02_IT_Tech/XSS.md",
+    "content/02_IT_Tech/가상물리시스템.md",
+    "content/02_IT_Tech/가상화.md",
+    "content/02_IT_Tech/가용성.md",
+    "content/02_IT_Tech/객체.md",
+    "content/02_IT_Tech/객체지향.md",
+    "content/02_IT_Tech/게이트웨이.md",
+    "content/02_IT_Tech/결합도.md",
+    "content/02_IT_Tech/경과시간.md"
   ]
 }
