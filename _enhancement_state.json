@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:34.421639Z",
+  "last_updated": "2026-04-17T15:33:34.736690Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10755,6 +10755,16 @@
     "content/02_IT_Tech/나씨-슈나이더만.md",
     "content/02_IT_Tech/네트워크 프로토콜.md",
     "content/02_IT_Tech/네트워크.md",
-    "content/02_IT_Tech/논리 주소.md"
+    "content/02_IT_Tech/논리 주소.md",
+    "content/02_IT_Tech/뉴모로픽 반도체.md",
+    "content/02_IT_Tech/다형성.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/02_IT_Tech/단위 테스트.md",
+    "content/02_IT_Tech/대칭키 암호화.md",
+    "content/02_IT_Tech/데이터 흐름도.md",
+    "content/02_IT_Tech/데이터베이스.md",
+    "content/02_IT_Tech/디스패치.md",
+    "content/02_IT_Tech/디자인 패턴.md",
+    "content/02_IT_Tech/디피헬만.md"
   ]
 }
