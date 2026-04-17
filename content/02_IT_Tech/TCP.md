@@ -22,3 +22,12 @@ description: "Transmission Control Protocol"
 - 
 - 
 -
+
+## 관련 노트
+
+- [[02_IT_Tech/ARP|ARP]] — 공유 키워드: `IP`, `IT`
+- [[02_IT_Tech/DDOS|DDOS]] — 공유 키워드: `IP`, `IT`
+- [[02_IT_Tech/DRDOS|DRDOS]] — 공유 키워드: `IP`, `IT`
+- [[02_IT_Tech/IP Sec|IP Sec]] — 공유 키워드: `IP`, `IT`
+- [[02_IT_Tech/IP|IP]] — 공유 키워드: `IP`, `IT`
+

@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:33.541616Z",
+  "last_updated": "2026-04-17T15:33:33.847757Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10725,6 +10725,16 @@
     "content/02_IT_Tech/SEED.md",
     "content/02_IT_Tech/SI.md",
     "content/02_IT_Tech/SM.md",
-    "content/02_IT_Tech/SPICE.md"
+    "content/02_IT_Tech/SPICE.md",
+    "content/02_IT_Tech/SQL Injection.md",
+    "content/02_IT_Tech/SQL 문법.md",
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/SSL-TLS.md",
+    "content/02_IT_Tech/Session.md",
+    "content/02_IT_Tech/String Type.md",
+    "content/02_IT_Tech/TCP.md",
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/UML.md",
+    "content/02_IT_Tech/VAN.md"
   ]
 }

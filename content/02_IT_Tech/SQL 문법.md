@@ -24,3 +24,12 @@ description: "데이터베이스를 접근하고 조작하는데 필요한 표�
             - DCL
         - 데이터 베이스 관리자가 데이터 보안, 무결성 유지, 병행제어, 회복을 위해 DBA 가 사용하는 제어용 언어
         - GRANTE, REVOKE 문이 있음
+
+## 관련 노트
+
+- [[02_IT_Tech/DDL|DDL]] — 공유 키워드: `DDL`, `IT`, `데이터`
+- [[02_IT_Tech/DCL|DCL]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/DML|DML]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/OLAP|OLAP]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/SQL 함수|SQL 함수]] — 공유 키워드: `IT`, `데이터`
+
