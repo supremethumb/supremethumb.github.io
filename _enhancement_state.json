@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/03_AI_ML/변동성.md",
-    "content/03_AI_ML/블랙박스 모델.md",
-    "content/03_AI_ML/비심볼릭 추론.md",
-    "content/03_AI_ML/비지도 학습.md",
-    "content/03_AI_ML/소프트맥스 정규화.md",
-    "content/03_AI_ML/수행 역량.md",
-    "content/03_AI_ML/심볼릭 추론.md",
-    "content/03_AI_ML/심화강화학습.md",
-    "content/03_AI_ML/연합학습.md",
-    "content/03_AI_ML/완전히 연결된 모델.md",
     "content/03_AI_ML/이미지넷.md",
     "content/03_AI_ML/이상 감지.md",
     "content/03_AI_ML/자기 지도 증강.md",
@@ -512,7 +502,17 @@
     "content/03_AI_ML/범용 인공지능.md",
     "content/03_AI_ML/베이즈 추론.md",
     "content/03_AI_ML/베이지안 딥러닝.md",
-    "content/03_AI_ML/베이지안 모델.md"
+    "content/03_AI_ML/베이지안 모델.md",
+    "content/03_AI_ML/변동성.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/비지도 학습.md",
+    "content/03_AI_ML/소프트맥스 정규화.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/심볼릭 추론.md",
+    "content/03_AI_ML/심화강화학습.md",
+    "content/03_AI_ML/연합학습.md",
+    "content/03_AI_ML/완전히 연결된 모델.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:35.058980Z"
+  "last_updated": "2026-04-17T15:30:35.408160Z"
 }
