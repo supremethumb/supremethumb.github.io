@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
-    "content/01_UX_Design/UX 디자인.md",
-    "content/01_UX_Design/UX 방법론.md",
-    "content/01_UX_Design/UX 품질 판단.md",
-    "content/01_UX_Design/UX 품질.md",
-    "content/01_UX_Design/UX 피라미드.md",
-    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
-    "content/01_UX_Design/User Flow.md",
-    "content/01_UX_Design/User Scenario.md",
-    "content/01_UX_Design/User.md",
     "content/01_UX_Design/user research basic.md",
     "content/01_UX_Design/감성.md",
     "content/01_UX_Design/개념적 모델.md",
@@ -512,7 +502,17 @@
     "content/01_UX_Design/TTFB.md",
     "content/01_UX_Design/UI.md",
     "content/01_UX_Design/UX 구성요소.md",
-    "content/01_UX_Design/UX 디자인 1.md"
+    "content/01_UX_Design/UX 디자인 1.md",
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
+    "content/01_UX_Design/UX 디자인.md",
+    "content/01_UX_Design/UX 방법론.md",
+    "content/01_UX_Design/UX 품질 판단.md",
+    "content/01_UX_Design/UX 품질.md",
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
+    "content/01_UX_Design/User Flow.md",
+    "content/01_UX_Design/User Scenario.md",
+    "content/01_UX_Design/User.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:22.518786Z"
+  "last_updated": "2026-04-17T15:30:22.899358Z"
 }
