@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:34.144643Z",
+  "last_updated": "2026-04-17T15:33:34.421639Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10745,6 +10745,16 @@
     "content/02_IT_Tech/객체지향.md",
     "content/02_IT_Tech/게이트웨이.md",
     "content/02_IT_Tech/결합도.md",
-    "content/02_IT_Tech/경과시간.md"
+    "content/02_IT_Tech/경과시간.md",
+    "content/02_IT_Tech/고립화 수준.md",
+    "content/02_IT_Tech/관계모형.md",
+    "content/02_IT_Tech/관계성.md",
+    "content/02_IT_Tech/교착상태.md",
+    "content/02_IT_Tech/기밀성.md",
+    "content/02_IT_Tech/깨움.md",
+    "content/02_IT_Tech/나씨-슈나이더만.md",
+    "content/02_IT_Tech/네트워크 프로토콜.md",
+    "content/02_IT_Tech/네트워크.md",
+    "content/02_IT_Tech/논리 주소.md"
   ]
 }
