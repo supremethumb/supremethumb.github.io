@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:38.795696Z",
+  "last_updated": "2026-04-17T15:33:39.056848Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10905,6 +10905,16 @@
     "content/03_AI_ML/심볼릭 추론.md",
     "content/03_AI_ML/심화강화학습.md",
     "content/03_AI_ML/연합학습.md",
-    "content/03_AI_ML/완전히 연결된 모델.md"
+    "content/03_AI_ML/완전히 연결된 모델.md",
+    "content/03_AI_ML/이미지넷.md",
+    "content/03_AI_ML/이상 감지.md",
+    "content/03_AI_ML/자기 지도 증강.md",
+    "content/03_AI_ML/자기 집중.md",
+    "content/03_AI_ML/자기지도학습.md",
+    "content/03_AI_ML/장면 그래프.md",
+    "content/03_AI_ML/적대적 공격.md",
+    "content/03_AI_ML/전용 인공지능.md",
+    "content/03_AI_ML/전이 학습.md",
+    "content/03_AI_ML/준지도학습.md"
   ]
 }
