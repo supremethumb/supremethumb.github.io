@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:29.896897Z",
+  "last_updated": "2026-04-17T15:33:30.195684Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10605,6 +10605,16 @@
     "content/01_UX_Design/사용자 리서치.md",
     "content/01_UX_Design/사용자 스토리.md",
     "content/01_UX_Design/사용자 중심 디자인.md",
-    "content/01_UX_Design/서비스 기획자.md"
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/01_UX_Design/서비스 디자인 교과서.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/서비스.md",
+    "content/01_UX_Design/설문.md",
+    "content/01_UX_Design/쉐브론.md",
+    "content/01_UX_Design/스토리보드.md",
+    "content/01_UX_Design/스토리텔링.md",
+    "content/01_UX_Design/시스템 사용성 척도.md",
+    "content/01_UX_Design/시장 환경 조사.md",
+    "content/01_UX_Design/신타이포그래픽 디자인.md"
   ]
 }
