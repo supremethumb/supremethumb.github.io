@@ -36,5 +36,8 @@ Boolean Type(논리 자료형)은 *참(true)*과 *거짓(false)* 두 가지 값�
 
 ## 관련 노트
 
-- [[Data Type]]: 자료형 전체 개관
-- [[Int Type]] · [[Float Type]] · [[String Type]] · [[Char Type]]: 다른 기본 자료형
+- [[02_IT_Tech/DML|DML]] — 공유 키워드: `IT`, `조건`
+- [[02_IT_Tech/논리 주소|논리 주소]] — 공유 키워드: `IT`, `논리`
+- [[02_IT_Tech/물리 주소|물리 주소]] — 공유 키워드: `IT`, `논리`
+- [[02_IT_Tech/웹 사이트 원리와 기본 용어|웹 사이트 원리와 기본 용어]] — 공유 키워드: `IT`, `기본`
+
