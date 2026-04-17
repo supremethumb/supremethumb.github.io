@@ -52,7 +52,7 @@ EDI(Electronic Data Interchange, *전자 데이터 교환*)는 기업 간 거래
 
 ## 관련 노트
 
-- [[네트워크]]: EDI 의 전송 기반
-- [[블록체인]]: 공급망 기록의 진화
-- [[시큐어 코딩]]: 전송·저장 보안
-- [[SDLC]]: EDI 시스템 구축 과정
+- [[02_IT_Tech/OPTIMIZER|OPTIMIZER]] — 공유 키워드: `IT`, `기반`
+- [[02_IT_Tech/OSI 7 Layer|OSI 7 Layer]] — 공유 키워드: `IT`, `전송`
+- [[02_IT_Tech/품질관리|품질관리]] — 공유 키워드: `IT`, `표준`
+
