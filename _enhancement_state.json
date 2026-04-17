@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/06_Philosophy_Humanities/길가메시.md",
-    "content/06_Philosophy_Humanities/녹서.md",
-    "content/06_Philosophy_Humanities/모던 타임즈.md",
-    "content/06_Philosophy_Humanities/무의식.md",
-    "content/06_Philosophy_Humanities/문화.md",
-    "content/06_Philosophy_Humanities/본질.md",
-    "content/06_Philosophy_Humanities/생명체.md",
-    "content/06_Philosophy_Humanities/아우라.md",
-    "content/06_Philosophy_Humanities/역사 관련.md",
-    "content/06_Philosophy_Humanities/영세중립국.md",
     "content/06_Philosophy_Humanities/영화 다큐멘터리.md",
     "content/06_Philosophy_Humanities/예술.md",
     "content/06_Philosophy_Humanities/이솝 우화.md",
@@ -512,7 +502,17 @@
     "content/06_Philosophy_Humanities/RNA.md",
     "content/06_Philosophy_Humanities/감정.md",
     "content/06_Philosophy_Humanities/국방 순위 2020.md",
-    "content/06_Philosophy_Humanities/기생충.md"
+    "content/06_Philosophy_Humanities/기생충.md",
+    "content/06_Philosophy_Humanities/길가메시.md",
+    "content/06_Philosophy_Humanities/녹서.md",
+    "content/06_Philosophy_Humanities/모던 타임즈.md",
+    "content/06_Philosophy_Humanities/무의식.md",
+    "content/06_Philosophy_Humanities/문화.md",
+    "content/06_Philosophy_Humanities/본질.md",
+    "content/06_Philosophy_Humanities/생명체.md",
+    "content/06_Philosophy_Humanities/아우라.md",
+    "content/06_Philosophy_Humanities/역사 관련.md",
+    "content/06_Philosophy_Humanities/영세중립국.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:37.917996Z"
+  "last_updated": "2026-04-17T15:30:38.282071Z"
 }
