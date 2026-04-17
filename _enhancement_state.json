@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:37.033286Z",
+  "last_updated": "2026-04-17T15:33:37.342411Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10845,6 +10845,16 @@
     "content/02_IT_Tech/형상 관리 도구.md",
     "content/02_IT_Tech/회복기법.md",
     "content/03_AI_ML/A.I. Guideline.md",
-    "content/03_AI_ML/AGI.md"
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/Active Learning.md",
+    "content/03_AI_ML/Annotation.md",
+    "content/03_AI_ML/Atros Convolution.md",
+    "content/03_AI_ML/Attention mechanism.md",
+    "content/03_AI_ML/BERT.md",
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/Compound Scaling.md",
+    "content/03_AI_ML/Contrastive Learning.md",
+    "content/03_AI_ML/DSTC9.md",
+    "content/03_AI_ML/Downstream Task.md"
   ]
 }
