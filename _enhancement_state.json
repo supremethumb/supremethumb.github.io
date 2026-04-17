@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/02_IT_Tech/라우터.md",
-    "content/02_IT_Tech/메모리 관리.md",
-    "content/02_IT_Tech/메모리 단편화.md",
-    "content/02_IT_Tech/멤리스터.md",
-    "content/02_IT_Tech/명령문.md",
-    "content/02_IT_Tech/모듈.md",
-    "content/02_IT_Tech/모듈화.md",
-    "content/02_IT_Tech/무결성.md",
-    "content/02_IT_Tech/물리 주소.md",
-    "content/02_IT_Tech/방화벽.md",
     "content/02_IT_Tech/배열.md",
     "content/02_IT_Tech/백본망.md",
     "content/02_IT_Tech/버퍼 오버 플로우.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/데이터베이스.md",
     "content/02_IT_Tech/디스패치.md",
     "content/02_IT_Tech/디자인 패턴.md",
-    "content/02_IT_Tech/디피헬만.md"
+    "content/02_IT_Tech/디피헬만.md",
+    "content/02_IT_Tech/라우터.md",
+    "content/02_IT_Tech/메모리 관리.md",
+    "content/02_IT_Tech/메모리 단편화.md",
+    "content/02_IT_Tech/멤리스터.md",
+    "content/02_IT_Tech/명령문.md",
+    "content/02_IT_Tech/모듈.md",
+    "content/02_IT_Tech/모듈화.md",
+    "content/02_IT_Tech/무결성.md",
+    "content/02_IT_Tech/물리 주소.md",
+    "content/02_IT_Tech/방화벽.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:30.338595Z"
+  "last_updated": "2026-04-17T15:30:30.671131Z"
 }
