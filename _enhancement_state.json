@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/01_UX_Design/본능적 디자인.md",
-    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md",
-    "content/01_UX_Design/사용성 계획.md",
-    "content/01_UX_Design/사용성 테스트.md",
-    "content/01_UX_Design/사용성.md",
-    "content/01_UX_Design/사용자 경험의 요소.md",
-    "content/01_UX_Design/사용자 리서치.md",
-    "content/01_UX_Design/사용자 스토리.md",
-    "content/01_UX_Design/사용자 중심 디자인.md",
-    "content/01_UX_Design/서비스 기획자.md",
     "content/01_UX_Design/서비스 디자인 교과서.md",
     "content/01_UX_Design/서비스 디자인.md",
     "content/01_UX_Design/서비스.md",
@@ -512,7 +502,17 @@
     "content/01_UX_Design/반성적 단계.md",
     "content/01_UX_Design/반성적 디자인.md",
     "content/01_UX_Design/변화 맹시.md",
-    "content/01_UX_Design/본능적 단계.md"
+    "content/01_UX_Design/본능적 단계.md",
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md",
+    "content/01_UX_Design/사용성 계획.md",
+    "content/01_UX_Design/사용성 테스트.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/01_UX_Design/사용자 리서치.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/서비스 기획자.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:24.064580Z"
+  "last_updated": "2026-04-17T15:30:24.452884Z"
 }
