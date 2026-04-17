@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/02_IT_Tech/Elgamel.md",
-    "content/02_IT_Tech/FIFO.md",
-    "content/02_IT_Tech/ICMP.md",
-    "content/02_IT_Tech/IGMP.md",
-    "content/02_IT_Tech/IP Sec.md",
-    "content/02_IT_Tech/IP.md",
-    "content/02_IT_Tech/IPv4.md",
-    "content/02_IT_Tech/IPv6.md",
-    "content/02_IT_Tech/JDBC.md",
-    "content/02_IT_Tech/JSON.md",
     "content/02_IT_Tech/KMS.md",
     "content/02_IT_Tech/Kernel.md",
     "content/02_IT_Tech/L2M.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/ECC.md",
     "content/02_IT_Tech/EDI.md",
     "content/02_IT_Tech/EDW.md",
-    "content/02_IT_Tech/Edge Device.md"
+    "content/02_IT_Tech/Edge Device.md",
+    "content/02_IT_Tech/Elgamel.md",
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/ICMP.md",
+    "content/02_IT_Tech/IGMP.md",
+    "content/02_IT_Tech/IP Sec.md",
+    "content/02_IT_Tech/IP.md",
+    "content/02_IT_Tech/IPv4.md",
+    "content/02_IT_Tech/IPv6.md",
+    "content/02_IT_Tech/JDBC.md",
+    "content/02_IT_Tech/JSON.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:27.369726Z"
+  "last_updated": "2026-04-17T15:30:27.716575Z"
 }
