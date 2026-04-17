@@ -1,13 +1,11 @@
-﻿---
+---
 title: "Insight, Key Finding, CJM, Touch Point"
 date: 2026-04-13
-description: "Insight, Key Finding, CJM, Touch Point"
 tags: ["UX", "디자인", "기획"]
+description: "Insight, Key Finding, CJM, Touch Point"
 ---
 
-# Insight, Key Finding, CJM, Touch Point
-
-Date: 2019년 4월 25일
+Date: 2019 년 4 월 25 일
 Tags: CJM, Insight Point, Key Finding, Touch Point
 
 ### Insight
@@ -33,11 +31,11 @@ Function/Menu
 
 Key Findings 작업 이후에는 그것으로 부터 시사점을 찾는 과정이 필요합니다. 하나의 염감이나 아이디어에 휘둘리지 않고, 큰 그림을 그리게 되면 보이지 않던 새로운 통찰이 발편됩니다. 이렇게 시사점을 찾는 과정을 모델링이라고 합니다.
 
-### 리서치 결과 = 핵심적인 발견 -> 시사점= 모델링 -> UX전략 ->디자인
+### 리서치 결과 = 핵심적인 발견 -> 시사점= 모델링 -> UX 전략 ->디자인
 
 ### 모델링
 
-Insight를 도출하기 위한 레이어
+Insight 를 도출하기 위한 레이어
 
 - 리서치 결과 + 유추/재해석
 - 리서치 결과 + 리서치 결과

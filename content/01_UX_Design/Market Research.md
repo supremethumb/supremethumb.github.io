@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Market Research"
 date: 2026-04-13
-description: "- 시장 세분화, 표적 시장 설정, 포지셔닝"
 tags: ["UX", "디자인", "기획"]
+description: "시장 세분화, 표적 시장 설정, 포지셔닝"
 ---
 
-# SWOT
+## SWOT
 
-# STP
+## STP
 
 - 개괄
     - 시장 세분화, 표적 시장 설정, 포지셔닝
@@ -42,7 +42,7 @@ tags: ["UX", "디자인", "기획"]
     - 포지셔닝 맵의 작성 절차 차원 수 결정 → 차원이름 결정 → 경쟁 제품 및 자사 제품 위치 확인 → 이상적 포지션 결정
     - 포지셔닝 맵의 전략적 유용성
         - 틈새시장, 자사 제품의 현재 위치, 경쟁사, ideal point 파악 기능, 마케팅 믹스의 효과 측정 가능
-- STP 추가 리서치https://www.smartinsights.com/digital-marketing-strategy/customer-segmentation-targeting/segmentation-targeting-and-positioning/
+- STP 추가 리서치 https://www.smartinsights.com/digital-marketing-strategy/customer-segmentation-targeting/segmentation-targeting-and-positioning/
     - Segmentation
         - Demographics 인구 통계
             - 소비자에 대한 이해
