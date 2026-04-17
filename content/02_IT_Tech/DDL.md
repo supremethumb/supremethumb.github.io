@@ -199,3 +199,12 @@ WHERE 성별 = 'M';
 DROP VIEW 뷰이름;
 ```text
         -
+
+## 관련 노트
+
+- [[02_IT_Tech/SQL 문법|SQL 문법]] — 공유 키워드: `DDL`, `IT`, `데이터`
+- [[02_IT_Tech/DCL|DCL]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/DML|DML]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/OLAP|OLAP]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/SQL 함수|SQL 함수]] — 공유 키워드: `IT`, `데이터`
+

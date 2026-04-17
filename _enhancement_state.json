@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:31.681239Z",
+  "last_updated": "2026-04-17T15:33:32.004238Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10665,6 +10665,16 @@
     "content/02_IT_Tech/CALS.md",
     "content/02_IT_Tech/CDO.md",
     "content/02_IT_Tech/CIO.md",
-    "content/02_IT_Tech/CMMI.md"
+    "content/02_IT_Tech/CMMI.md",
+    "content/02_IT_Tech/CRM.md",
+    "content/02_IT_Tech/CSRF.md",
+    "content/02_IT_Tech/Char Type.md",
+    "content/02_IT_Tech/DBMS.md",
+    "content/02_IT_Tech/DCL.md",
+    "content/02_IT_Tech/DDL.md",
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/DML.md",
+    "content/02_IT_Tech/DOS.md"
   ]
 }

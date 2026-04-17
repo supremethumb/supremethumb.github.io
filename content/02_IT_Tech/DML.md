@@ -172,3 +172,12 @@ FROM 테이블 1A [INNER] JOIN 테이블 2 ㅠ ON 조인 조건
         - MINUS
             - 첫 쿼리에 있고 두 번째에는 없는 집합
             - 비교 레코드 제
+
+## 관련 노트
+
+- [[02_IT_Tech/Boolean Type|Boolean Type]] — 공유 키워드: `IT`, `조건`
+- [[02_IT_Tech/DCL|DCL]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/DDL|DDL]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/OLAP|OLAP]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/SQL 문법|SQL 문법]] — 공유 키워드: `IT`, `데이터`
+

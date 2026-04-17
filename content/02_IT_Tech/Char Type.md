@@ -32,6 +32,5 @@ Char Type(Character Type, 문자형)은 *한 개의 문자*를 저장하기 위�
 
 ## 관련 노트
 
-- [[String Type]]: 문자열 자료형
-- [[Data Type]]: 자료형 전반
-- [[Int Type]] · [[Float Type]] · [[Boolean Type]]: 다른 기본 자료형
+- [[02_IT_Tech/String Type|String Type]] — 공유 키워드: `IT`, `UTF`, `문자`
+
