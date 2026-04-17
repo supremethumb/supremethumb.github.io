@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:40.485998Z",
+  "last_updated": "2026-04-17T15:33:40.766070Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10965,6 +10965,16 @@
     "content/05_Marketing_Business/이탈률.md",
     "content/05_Marketing_Business/인바운드 마케팅.md",
     "content/05_Marketing_Business/전환율.md",
-    "content/05_Marketing_Business/직접 유입.md"
+    "content/05_Marketing_Business/직접 유입.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/05_Marketing_Business/팬슈머.md",
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
+    "content/05_Marketing_Business/회사.md",
+    "content/06_Philosophy_Humanities/RNA.md",
+    "content/06_Philosophy_Humanities/감정.md",
+    "content/06_Philosophy_Humanities/국방 순위 2020.md",
+    "content/06_Philosophy_Humanities/기생충.md"
   ]
 }
