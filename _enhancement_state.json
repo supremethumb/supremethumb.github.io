@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/03_AI_ML/Active Learning.md",
-    "content/03_AI_ML/Annotation.md",
-    "content/03_AI_ML/Atros Convolution.md",
-    "content/03_AI_ML/Attention mechanism.md",
-    "content/03_AI_ML/BERT.md",
-    "content/03_AI_ML/CNN.md",
-    "content/03_AI_ML/Compound Scaling.md",
-    "content/03_AI_ML/Contrastive Learning.md",
-    "content/03_AI_ML/DSTC9.md",
-    "content/03_AI_ML/Downstream Task.md",
     "content/03_AI_ML/Episodic Memory.md",
     "content/03_AI_ML/Feature Pyramid Network.md",
     "content/03_AI_ML/Fine-Tuning.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/형상 관리 도구.md",
     "content/02_IT_Tech/회복기법.md",
     "content/03_AI_ML/A.I. Guideline.md",
-    "content/03_AI_ML/AGI.md"
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/Active Learning.md",
+    "content/03_AI_ML/Annotation.md",
+    "content/03_AI_ML/Atros Convolution.md",
+    "content/03_AI_ML/Attention mechanism.md",
+    "content/03_AI_ML/BERT.md",
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/Compound Scaling.md",
+    "content/03_AI_ML/Contrastive Learning.md",
+    "content/03_AI_ML/DSTC9.md",
+    "content/03_AI_ML/Downstream Task.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:33.236376Z"
+  "last_updated": "2026-04-17T15:30:33.615583Z"
 }
