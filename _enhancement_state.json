@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:34.736690Z",
+  "last_updated": "2026-04-17T15:33:35.013283Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10765,6 +10765,16 @@
     "content/02_IT_Tech/데이터베이스.md",
     "content/02_IT_Tech/디스패치.md",
     "content/02_IT_Tech/디자인 패턴.md",
-    "content/02_IT_Tech/디피헬만.md"
+    "content/02_IT_Tech/디피헬만.md",
+    "content/02_IT_Tech/라우터.md",
+    "content/02_IT_Tech/메모리 관리.md",
+    "content/02_IT_Tech/메모리 단편화.md",
+    "content/02_IT_Tech/멤리스터.md",
+    "content/02_IT_Tech/명령문.md",
+    "content/02_IT_Tech/모듈.md",
+    "content/02_IT_Tech/모듈화.md",
+    "content/02_IT_Tech/무결성.md",
+    "content/02_IT_Tech/물리 주소.md",
+    "content/02_IT_Tech/방화벽.md"
   ]
 }
