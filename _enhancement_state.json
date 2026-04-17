@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/00_Meta/강의.md",
-    "content/00_Meta/도서.md",
-    "content/00_Meta/제텔카스텐.md",
-    "content/01_UX_Design/ARIA.md",
-    "content/01_UX_Design/ATF.md",
-    "content/01_UX_Design/Affinity Diagram.md",
-    "content/01_UX_Design/Backchannels.md",
-    "content/01_UX_Design/Bridging.md",
-    "content/01_UX_Design/Custom CSS .md",
-    "content/01_UX_Design/Do it R.md",
     "content/01_UX_Design/Do it 웹 기획.md",
     "content/01_UX_Design/Document Sidebar.md",
     "content/01_UX_Design/FCP.md",
@@ -512,7 +502,18 @@
     "content/08_Insights/한계.md",
     "content/index.md"
   ],
-  "processed": [],
+  "processed": [
+    "content/00_Meta/강의.md",
+    "content/00_Meta/도서.md",
+    "content/00_Meta/제텔카스텐.md",
+    "content/01_UX_Design/ARIA.md",
+    "content/01_UX_Design/ATF.md",
+    "content/01_UX_Design/Affinity Diagram.md",
+    "content/01_UX_Design/Backchannels.md",
+    "content/01_UX_Design/Bridging.md",
+    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Do it R.md"
+  ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
     "content/01_UX_Design/USER RESEARCH.md",
@@ -5533,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:26:53.301114Z"
+  "last_updated": "2026-04-17T15:30:21.781193Z"
 }

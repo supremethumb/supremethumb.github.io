@@ -1,11 +1,9 @@
-﻿---
+---
 title: "Custom CSS "
 date: 2026-04-13
-description: "@import url('https://cdn"
 tags: ["UX", "디자인", "기획"]
+description: "@import url('https://cdn"
 ---
-
-# Custom CSS 
 
 - 
 - Template
@@ -117,6 +115,6 @@ document-sidebar {
 .document-sidebar__buttons {
 }
 
-```
+```text
 - 
 -
