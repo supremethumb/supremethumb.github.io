@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/02_IT_Tech/배열.md",
-    "content/02_IT_Tech/백본망.md",
-    "content/02_IT_Tech/버퍼 오버 플로우.md",
-    "content/02_IT_Tech/변수.md",
-    "content/02_IT_Tech/블록체인.md",
-    "content/02_IT_Tech/비대칭키 암호화.md",
-    "content/02_IT_Tech/비용산정 일정관리 모델.md",
-    "content/02_IT_Tech/비즈니스 연속성 계획.md",
-    "content/02_IT_Tech/빅데이터 분석 기사.md",
-    "content/02_IT_Tech/사이트간 위조공격.md",
     "content/02_IT_Tech/서버 접근 통제.md",
     "content/02_IT_Tech/서킷브레이커.md",
     "content/02_IT_Tech/성능 테스트 도구.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/모듈화.md",
     "content/02_IT_Tech/무결성.md",
     "content/02_IT_Tech/물리 주소.md",
-    "content/02_IT_Tech/방화벽.md"
+    "content/02_IT_Tech/방화벽.md",
+    "content/02_IT_Tech/배열.md",
+    "content/02_IT_Tech/백본망.md",
+    "content/02_IT_Tech/버퍼 오버 플로우.md",
+    "content/02_IT_Tech/변수.md",
+    "content/02_IT_Tech/블록체인.md",
+    "content/02_IT_Tech/비대칭키 암호화.md",
+    "content/02_IT_Tech/비용산정 일정관리 모델.md",
+    "content/02_IT_Tech/비즈니스 연속성 계획.md",
+    "content/02_IT_Tech/빅데이터 분석 기사.md",
+    "content/02_IT_Tech/사이트간 위조공격.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:30.671131Z"
+  "last_updated": "2026-04-17T15:30:31.021642Z"
 }
