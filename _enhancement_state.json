@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/05_Marketing_Business/브랜딩.md",
-    "content/05_Marketing_Business/브이노믹스.md",
-    "content/05_Marketing_Business/소셜 유입.md",
-    "content/05_Marketing_Business/소셜딜레마.md",
-    "content/05_Marketing_Business/언택트.md",
-    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md",
-    "content/05_Marketing_Business/이탈률.md",
-    "content/05_Marketing_Business/인바운드 마케팅.md",
-    "content/05_Marketing_Business/전환율.md",
-    "content/05_Marketing_Business/직접 유입.md",
     "content/05_Marketing_Business/추천 유입.md",
     "content/05_Marketing_Business/팬슈머.md",
     "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
@@ -512,7 +502,17 @@
     "content/05_Marketing_Business/마케팅의 역사.md",
     "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
     "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
-    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md"
+    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/05_Marketing_Business/브랜딩.md",
+    "content/05_Marketing_Business/브이노믹스.md",
+    "content/05_Marketing_Business/소셜 유입.md",
+    "content/05_Marketing_Business/소셜딜레마.md",
+    "content/05_Marketing_Business/언택트.md",
+    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md",
+    "content/05_Marketing_Business/이탈률.md",
+    "content/05_Marketing_Business/인바운드 마케팅.md",
+    "content/05_Marketing_Business/전환율.md",
+    "content/05_Marketing_Business/직접 유입.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:37.205889Z"
+  "last_updated": "2026-04-17T15:30:37.569170Z"
 }
