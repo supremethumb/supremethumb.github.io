@@ -36,5 +36,8 @@ LFU(Least Frequently Used)는 *가장 적게 참조된 페이지*를 우선 교�
 
 ## 관련 노트
 
-- [[LRU]] · [[NUR]] · [[FIFO]] · [[OPT]]: 다른 페이지 교체 알고리즘
-- [[논리 주소]] · [[물리 주소]]: 페이징 기반 개념
+- [[02_IT_Tech/FIFO|FIFO]] — 공유 키워드: `IT`, `LRU`, `가장`
+- [[02_IT_Tech/LRU|LRU]] — 공유 키워드: `IT`, `LRU`, `가장`
+- [[02_IT_Tech/Int Type|Int Type]] — 공유 키워드: `IT`, `자주`
+- [[02_IT_Tech/OPT|OPT]] — 공유 키워드: `IT`, `가장`
+

@@ -50,5 +50,9 @@ LRU(Least Recently Used)는 메모리가 부족할 때 *가장 오랫동안 사�
 
 ## 관련 노트
 
-- [[FIFO]] · [[NUR]] · [[LFU]] · [[OPT]]: 다른 페이지 교체 알고리즘
-- [[논리 주소]] · [[물리 주소]]: 페이징 기반 개념
+- [[02_IT_Tech/FIFO|FIFO]] — 공유 키워드: `IT`, `LRU`, `가장`
+- [[02_IT_Tech/LFU|LFU]] — 공유 키워드: `IT`, `LRU`, `가장`
+- [[02_IT_Tech/NUR|NUR]] — 공유 키워드: `IT`, `교체`, `참조`
+- [[02_IT_Tech/OPT|OPT]] — 공유 키워드: `IT`, `가장`, `교체`
+- [[02_IT_Tech/RBAC|RBAC]] — 공유 키워드: `IT`, `구현`
+

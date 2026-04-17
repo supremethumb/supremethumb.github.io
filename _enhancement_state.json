@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:32.626866Z",
+  "last_updated": "2026-04-17T15:33:32.945926Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10695,6 +10695,16 @@
     "content/02_IT_Tech/IPv4.md",
     "content/02_IT_Tech/IPv6.md",
     "content/02_IT_Tech/JDBC.md",
-    "content/02_IT_Tech/JSON.md"
+    "content/02_IT_Tech/JSON.md",
+    "content/02_IT_Tech/KMS.md",
+    "content/02_IT_Tech/Kernel.md",
+    "content/02_IT_Tech/L2M.md",
+    "content/02_IT_Tech/LAS.md",
+    "content/02_IT_Tech/LFU.md",
+    "content/02_IT_Tech/LRU.md",
+    "content/02_IT_Tech/Land Attack.md",
+    "content/02_IT_Tech/MAC.md",
+    "content/02_IT_Tech/MDC.md",
+    "content/02_IT_Tech/NAS.md"
   ]
 }
