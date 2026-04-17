@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/02_IT_Tech/DRDOS.md",
-    "content/02_IT_Tech/DSA.md",
-    "content/02_IT_Tech/Data Type.md",
-    "content/02_IT_Tech/Debugging.md",
-    "content/02_IT_Tech/EAI.md",
-    "content/02_IT_Tech/EAO.md",
-    "content/02_IT_Tech/ECC.md",
-    "content/02_IT_Tech/EDI.md",
-    "content/02_IT_Tech/EDW.md",
-    "content/02_IT_Tech/Edge Device.md",
     "content/02_IT_Tech/Elgamel.md",
     "content/02_IT_Tech/FIFO.md",
     "content/02_IT_Tech/ICMP.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/DDOS.md",
     "content/02_IT_Tech/DES.md",
     "content/02_IT_Tech/DML.md",
-    "content/02_IT_Tech/DOS.md"
+    "content/02_IT_Tech/DOS.md",
+    "content/02_IT_Tech/DRDOS.md",
+    "content/02_IT_Tech/DSA.md",
+    "content/02_IT_Tech/Data Type.md",
+    "content/02_IT_Tech/Debugging.md",
+    "content/02_IT_Tech/EAI.md",
+    "content/02_IT_Tech/EAO.md",
+    "content/02_IT_Tech/ECC.md",
+    "content/02_IT_Tech/EDI.md",
+    "content/02_IT_Tech/EDW.md",
+    "content/02_IT_Tech/Edge Device.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:27.021942Z"
+  "last_updated": "2026-04-17T15:30:27.369726Z"
 }
