@@ -44,8 +44,9 @@ Happy Path 만 그리면 현실 제품이 취약해진다. 대안·예외·실�
 
 ## 관련 노트
 
-- [[사용자 스토리]]: 더 짧은 형식의 관련 도구
-- [[스토리보드]]: 시나리오를 시각화한 버전
-- [[User Flow]]: 시나리오의 화면 흐름 표현
-- [[Insight, Key Finding, CJM, Touch Point]]: 시나리오의 재료
-- [[Prototype 방향성]]: 시나리오를 반영한 프로토타입 판단
+- [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/Insight, Key Finding, CJM, Touch Point|Insight, Key Finding, CJM, Touch Point]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/Proposing|Proposing]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/기획|기획]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/서비스 기획자|서비스 기획자]] — 공유 키워드: `CJM`, `UX`, `기획`
+

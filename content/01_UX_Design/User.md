@@ -34,3 +34,12 @@ description: "모양 차이보다는 색상 차이를 더 눈여겨 본다"
     - 전체를 놓고 보면 몇 가지 유형으로 구분할 수 있음 Persona
     - 이용 통계나 설문조사를 통해서 기본 정보 파악
     - 세부적인 경험은 직접 보거나 물어봐야 알 수 있음 #필드 리서치
+
+## 관련 노트
+
+- [[01_UX_Design/FCP|FCP]] — 공유 키워드: `UX`, `기준`, `기획`
+- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/ATF|ATF]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `UX`, `기획`, `디자인`
+
