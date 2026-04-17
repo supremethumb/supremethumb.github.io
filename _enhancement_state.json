@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:42.751004Z",
+  "last_updated": "2026-04-17T15:33:43.057901Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -11045,6 +11045,16 @@
     "content/01_UX_Design/서비스 기획 스쿨.md",
     "content/02_IT_Tech/DAC.md",
     "content/02_IT_Tech/Float Type.md",
-    "content/02_IT_Tech/Int Type.md"
+    "content/02_IT_Tech/Int Type.md",
+    "content/02_IT_Tech/OPT.md",
+    "content/02_IT_Tech/QOS.md",
+    "content/02_IT_Tech/RBAC.md",
+    "content/02_IT_Tech/상속성.md",
+    "content/02_IT_Tech/시큐어 코딩.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md",
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
+    "content/03_AI_ML/인공지능.md",
+    "content/03_AI_ML/정량적 데이터.md",
+    "content/05_Marketing_Business/규칙 없음.md"
   ]
 }

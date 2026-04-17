@@ -57,7 +57,9 @@ RBAC(Role Based Access Control, *역할기반 접근통제*)는 중앙 관리자
 
 ## 관련 노트
 
-- [[DAC]]: 비교 대상 접근통제
-- [[기밀성]] · [[무결성]]: RBAC가 보호하는 보안 속성
-- [[시큐어 코딩]]: 권한 제어 구현 시 주의
-- [[세션]]: 인증 후의 역할 매핑
+- [[02_IT_Tech/LRU|LRU]] — 공유 키워드: `IT`, `구현`
+- [[02_IT_Tech/OSI 7 Layer|OSI 7 Layer]] — 공유 키워드: `ISO`, `IT`
+- [[02_IT_Tech/POS|POS]] — 공유 키워드: `IA`, `IT`
+- [[02_IT_Tech/SPICE|SPICE]] — 공유 키워드: `ISO`, `IT`
+- [[02_IT_Tech/가용성|가용성]] — 공유 키워드: `IA`, `IT`
+

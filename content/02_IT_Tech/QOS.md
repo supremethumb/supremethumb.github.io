@@ -35,6 +35,9 @@ QoS(Quality of Service, 서비스 품질)는 한정된 네트워크 자원 안�
 
 ## 관련 노트
 
-- [[가용성]] · [[신뢰성]]: QoS가 보장하려는 품질 속성
-- [[네트워크]]: 기본 네트워크 개념
-- [[OSI 7 Layer]]: QoS 메커니즘이 적용되는 계층
+- [[02_IT_Tech/IPv4|IPv4]] — 공유 키워드: `IP`, `IT`, `QOS`
+- [[02_IT_Tech/IPv6|IPv6]] — 공유 키워드: `IP`, `IT`, `QOS`
+- [[02_IT_Tech/ARP|ARP]] — 공유 키워드: `IP`, `IT`
+- [[02_IT_Tech/DDOS|DDOS]] — 공유 키워드: `IP`, `IT`
+- [[02_IT_Tech/DRDOS|DRDOS]] — 공유 키워드: `IP`, `IT`
+
