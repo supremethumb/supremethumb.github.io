@@ -1,11 +1,9 @@
-﻿---
+---
 title: "MAC"
 date: 2026-04-13
-description: "- Mandatory Access Control"
 tags: ["IT", "개발", "기술"]
+description: "Mandatory Access Control"
 ---
-
-# MAC
 
 - Mandatory Access Control
     - 강제적 접근 통제
