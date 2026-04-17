@@ -22,3 +22,12 @@ description: "항상 서비스를 기획하고 디자인하면서 중요한 것�
 - **비교 분석**: 유사한 방법론·도구와 비교하며 장단점을 파악한다.
 - **참고 자료 탐색**: 공식 문서나 전문 서적을 통해 더 깊은 이해를 추구한다.
 - **사례 수집**: 실제 사례를 꾸준히 수집하여 이 노트를 발전시킨다.
+
+## 관련 노트
+
+- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Document Sidebar|Document Sidebar]] — 공유 키워드: `UX`, `기획`, `디자인`
+

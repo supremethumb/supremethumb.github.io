@@ -10524,5 +10524,17 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:32:41.401221Z"
+  "last_updated": "2026-04-17T15:33:27.808296Z",
+  "linking_processed": [
+    "content/00_Meta/강의.md",
+    "content/00_Meta/도서.md",
+    "content/00_Meta/제텔카스텐.md",
+    "content/01_UX_Design/ARIA.md",
+    "content/01_UX_Design/ATF.md",
+    "content/01_UX_Design/Affinity Diagram.md",
+    "content/01_UX_Design/Backchannels.md",
+    "content/01_UX_Design/Bridging.md",
+    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Do it R.md"
+  ]
 }

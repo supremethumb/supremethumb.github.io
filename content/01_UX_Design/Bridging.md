@@ -31,8 +31,9 @@ Proposing(제안하기)이 *무엇을 만들 것인가*를 말한다면, Bridgin
 
 ## 관련 노트
 
-- [[Proposing]]: Bridging 다음 단계의 제안하기
-- [[Insight, Key Finding, CJM, Touch Point]]: 인사이트 도출 프레임
-- [[사용자 리서치]]: Bridging 의 입력 단계
-- [[Affinity Diagram]]: Bridging 을 돕는 분석 도구
-- [[USER RESEARCH]]: 리서치 방법론 전반
+- [[01_UX_Design/Insight, Key Finding, CJM, Touch Point|Insight, Key Finding, CJM, Touch Point]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/ATF|ATF]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
+
