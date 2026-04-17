@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:37.635152Z",
+  "last_updated": "2026-04-17T15:33:37.943246Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10865,6 +10865,16 @@
     "content/03_AI_ML/IoU.md",
     "content/03_AI_ML/LIME.md",
     "content/03_AI_ML/LRP.md",
-    "content/03_AI_ML/LSTM.md"
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/MNIST.md",
+    "content/03_AI_ML/Network Dessection.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Pretext Task.md",
+    "content/03_AI_ML/Q러닝.md",
+    "content/03_AI_ML/RNN-T.md",
+    "content/03_AI_ML/RNN.md",
+    "content/03_AI_ML/ROC 곡선.md",
+    "content/03_AI_ML/RPN.md",
+    "content/03_AI_ML/Region Proposal.md"
   ]
 }

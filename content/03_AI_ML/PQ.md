@@ -15,3 +15,12 @@ description: "팬옵틱 분할의 성능을 평가하기 위한 지표 Segmentat
 - **비교 분석**: 유사한 방법론·도구와 비교하며 장단점을 파악한다.
 - **참고 자료 탐색**: 공식 문서나 전문 서적을 통해 더 깊은 이해를 추구한다.
 - **사례 수집**: 실제 사례를 꾸준히 수집하여 이 노트를 발전시킨다.
+
+## 관련 노트
+
+- [[03_AI_ML/AGI|AGI]] — 공유 키워드: `AI`, `딥러닝`, `머신러닝`
+- [[03_AI_ML/Atros Convolution|Atros Convolution]] — 공유 키워드: `AI`, `딥러닝`, `머신러닝`
+- [[03_AI_ML/Episodic Memory|Episodic Memory]] — 공유 키워드: `AI`, `딥러닝`, `머신러닝`
+- [[03_AI_ML/Feature Pyramid Network|Feature Pyramid Network]] — 공유 키워드: `AI`, `딥러닝`, `머신러닝`
+- [[03_AI_ML/Region Proposal|Region Proposal]] — 공유 키워드: `AI`, `딥러닝`, `머신러닝`
+

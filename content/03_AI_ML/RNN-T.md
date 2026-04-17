@@ -15,3 +15,12 @@ description: "실시간 거치에 사용되는 모델의 하나로 언어처리 
 - **비교 분석**: 유사한 방법론·도구와 비교하며 장단점을 파악한다.
 - **참고 자료 탐색**: 공식 문서나 전문 서적을 통해 더 깊은 이해를 추구한다.
 - **사례 수집**: 실제 사례를 꾸준히 수집하여 이 노트를 발전시킨다.
+
+## 관련 노트
+
+- [[03_AI_ML/LSTM|LSTM]] — 공유 키워드: `AI`, `RNN`, `딥러닝`
+- [[03_AI_ML/AGI|AGI]] — 공유 키워드: `AI`, `딥러닝`, `실제`
+- [[03_AI_ML/Active Learning|Active Learning]] — 공유 키워드: `AI`, `딥러닝`, `실제`
+- [[03_AI_ML/Annotation|Annotation]] — 공유 키워드: `AI`, `딥러닝`, `실제`
+- [[03_AI_ML/Atros Convolution|Atros Convolution]] — 공유 키워드: `AI`, `딥러닝`, `실제`
+
