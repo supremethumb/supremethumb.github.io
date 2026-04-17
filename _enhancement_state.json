@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:41.907537Z",
+  "last_updated": "2026-04-17T15:33:42.197528Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -11015,6 +11015,16 @@
     "content/07_Economics_Finance/배당금.md",
     "content/07_Economics_Finance/밸류 트랩.md",
     "content/07_Economics_Finance/보통주.md",
-    "content/07_Economics_Finance/액면가.md"
+    "content/07_Economics_Finance/액면가.md",
+    "content/07_Economics_Finance/우선주.md",
+    "content/07_Economics_Finance/위험.md",
+    "content/07_Economics_Finance/자본금.md",
+    "content/07_Economics_Finance/퇴직연금.md",
+    "content/07_Economics_Finance/현금없는 사회.md",
+    "content/08_Insights/뇌의 한계.md",
+    "content/08_Insights/사람들에게 반감을 사는 방법.md",
+    "content/08_Insights/사람의 특징.md",
+    "content/08_Insights/아집이 생기는 것에 대해서.md",
+    "content/08_Insights/제태크 수단에 대해서.md"
   ]
 }
