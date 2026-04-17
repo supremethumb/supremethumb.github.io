@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/01_UX_Design/대비.md",
-    "content/01_UX_Design/대응.md",
-    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md",
-    "content/01_UX_Design/디자인 까리하게 하기.md",
-    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md",
-    "content/01_UX_Design/디자인.md",
-    "content/01_UX_Design/디자인에서 중요한 것.md",
-    "content/01_UX_Design/디자인을 하는 순서.md",
-    "content/01_UX_Design/딥링크.md",
-    "content/01_UX_Design/라이트 박스.md",
     "content/01_UX_Design/룩앤필.md",
     "content/01_UX_Design/마법의 디자인.md",
     "content/01_UX_Design/마이크로카피 오려두기.md",
@@ -512,7 +502,17 @@
     "content/01_UX_Design/경험.md",
     "content/01_UX_Design/기획.md",
     "content/01_UX_Design/넓고 얕은 내비게이션.md",
-    "content/01_UX_Design/단계적 노출.md"
+    "content/01_UX_Design/단계적 노출.md",
+    "content/01_UX_Design/대비.md",
+    "content/01_UX_Design/대응.md",
+    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md",
+    "content/01_UX_Design/디자인 까리하게 하기.md",
+    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md",
+    "content/01_UX_Design/디자인.md",
+    "content/01_UX_Design/디자인에서 중요한 것.md",
+    "content/01_UX_Design/디자인을 하는 순서.md",
+    "content/01_UX_Design/딥링크.md",
+    "content/01_UX_Design/라이트 박스.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:23.332291Z"
+  "last_updated": "2026-04-17T15:30:23.701693Z"
 }
