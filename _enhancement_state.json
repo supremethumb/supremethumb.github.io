@@ -1,11 +1,12 @@
 {
   "version": 1,
   "total": 572,
-  "phase": "linking",
+  "phase": "done",
   "phases_done": [
     "quality_assessment",
     "enhancement",
-    "keyword_extraction"
+    "keyword_extraction",
+    "linking"
   ],
   "in_progress": null,
   "pending": [],
@@ -10524,7 +10525,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:44.572507Z",
+  "last_updated": "2026-04-17T15:33:44.816750Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
