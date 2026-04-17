@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:32.945926Z",
+  "last_updated": "2026-04-17T15:33:33.245883Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10705,6 +10705,16 @@
     "content/02_IT_Tech/Land Attack.md",
     "content/02_IT_Tech/MAC.md",
     "content/02_IT_Tech/MDC.md",
-    "content/02_IT_Tech/NAS.md"
+    "content/02_IT_Tech/NAS.md",
+    "content/02_IT_Tech/NFC.md",
+    "content/02_IT_Tech/NUR.md",
+    "content/02_IT_Tech/ODBC.md",
+    "content/02_IT_Tech/OLAP.md",
+    "content/02_IT_Tech/OLTP.md",
+    "content/02_IT_Tech/OMT.md",
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/02_IT_Tech/OSI 7 Layer.md",
+    "content/02_IT_Tech/POS.md",
+    "content/02_IT_Tech/Plug & Play.md"
   ]
 }

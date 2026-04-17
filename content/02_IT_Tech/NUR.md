@@ -34,6 +34,9 @@ NUR(Not Used Recently, 최근에 사용하지 않은 페이지 교체)은 참조
 
 ## 관련 노트
 
-- [[LRU]]: 정확하지만 비용이 큰 알고리즘
-- [[FIFO]] · [[LFU]] · [[OPT]]: 다른 페이지 교체 알고리즘
-- [[논리 주소]] · [[물리 주소]]: 페이징의 기반
+- [[02_IT_Tech/LRU|LRU]] — 공유 키워드: `IT`, `교체`, `참조`
+- [[02_IT_Tech/FIFO|FIFO]] — 공유 키워드: `IT`, `교체`
+- [[02_IT_Tech/Float Type|Float Type]] — 공유 키워드: `IT`, `비트`
+- [[02_IT_Tech/Int Type|Int Type]] — 공유 키워드: `IT`, `비트`
+- [[02_IT_Tech/OPT|OPT]] — 공유 키워드: `IT`, `교체`
+
