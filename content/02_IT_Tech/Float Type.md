@@ -36,6 +36,9 @@ Float Type(부동소수점형)은 소수점을 포함한 실수값을 저장하�
 
 ## 관련 노트
 
-- [[Data Type]]: 자료형 전반
-- [[Int Type]]: 정수형
-- [[Boolean Type]] · [[String Type]] · [[Char Type]]: 다른 기본 자료형
+- [[02_IT_Tech/Int Type|Int Type]] — 공유 키워드: `IT`, `범위`, `비트`
+- [[02_IT_Tech/NUR|NUR]] — 공유 키워드: `IT`, `비트`
+- [[02_IT_Tech/다형성|다형성]] — 공유 키워드: `IT`, `같은`
+- [[02_IT_Tech/대칭키 암호화|대칭키 암호화]] — 공유 키워드: `IT`, `같은`
+- [[02_IT_Tech/배열|배열]] — 공유 키워드: `IT`, `타입`
+

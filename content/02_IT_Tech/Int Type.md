@@ -38,5 +38,8 @@ Int Type(정수형)은 소수점 없는 정수값을 저장하기 위한 자료�
 
 ## 관련 노트
 
-- [[Data Type]]: 데이터 타입 전반
-- [[Float Type]] · [[Boolean Type]] · [[String Type]] · [[Char Type]]: 다른 기본 자료형
+- [[02_IT_Tech/Float Type|Float Type]] — 공유 키워드: `IT`, `범위`, `비트`
+- [[02_IT_Tech/LFU|LFU]] — 공유 키워드: `IT`, `자주`
+- [[02_IT_Tech/NUR|NUR]] — 공유 키워드: `IT`, `비트`
+- [[02_IT_Tech/VAN|VAN]] — 공유 키워드: `IT`, `부호`
+

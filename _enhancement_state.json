@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:42.467318Z",
+  "last_updated": "2026-04-17T15:33:42.751004Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -11035,6 +11035,16 @@
     "content/01_UX_Design/UX  불변의 법칙.md",
     "content/01_UX_Design/UX 기획의 기술.md",
     "content/01_UX_Design/감성 디자인.md",
-    "content/01_UX_Design/디자인과 인간심리.md"
+    "content/01_UX_Design/디자인과 인간심리.md",
+    "content/01_UX_Design/디자인씽킹.md",
+    "content/01_UX_Design/마음을 생각하는 디자인.md",
+    "content/01_UX_Design/마이크로카피.md",
+    "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md",
+    "content/01_UX_Design/모바일 결제 사례 리서치.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md",
+    "content/02_IT_Tech/DAC.md",
+    "content/02_IT_Tech/Float Type.md",
+    "content/02_IT_Tech/Int Type.md"
   ]
 }
