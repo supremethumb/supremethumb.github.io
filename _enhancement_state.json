@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/03_AI_ML/SHAP.md",
-    "content/03_AI_ML/Transformer.md",
-    "content/03_AI_ML/XAI.md",
-    "content/03_AI_ML/seq2seq.md",
-    "content/03_AI_ML/강화학습.md",
-    "content/03_AI_ML/거리함수.md",
-    "content/03_AI_ML/과적합.md",
-    "content/03_AI_ML/광학문자인식.md",
-    "content/03_AI_ML/데이터.md",
-    "content/03_AI_ML/딥러닝.md",
     "content/03_AI_ML/마르코프 결정 프로세스.md",
     "content/03_AI_ML/멀티에이전트 강화학습.md",
     "content/03_AI_ML/메타학습.md",
@@ -512,7 +502,17 @@
     "content/03_AI_ML/RNN.md",
     "content/03_AI_ML/ROC 곡선.md",
     "content/03_AI_ML/RPN.md",
-    "content/03_AI_ML/Region Proposal.md"
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/Transformer.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/과적합.md",
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/데이터.md",
+    "content/03_AI_ML/딥러닝.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:34.375396Z"
+  "last_updated": "2026-04-17T15:30:34.706488Z"
 }
