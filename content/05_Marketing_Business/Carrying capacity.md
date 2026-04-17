@@ -1,21 +1,19 @@
-﻿---
+---
 title: "Carrying capacity"
 date: 2026-04-13
-description: "Carrying Capacity는 '내 서비스가 도달할 최종적인 유저수'라고 할 수 있습니다"
 tags: ["PO", "active user", "마케팅", "비즈니스", "브랜드"]
-rating: 3
+description: "Carrying Capacity는 '내 서비스가 도달할 최종적인 유저수'라고 할 수 있습니다"
 ---
 
-# Carrying capacity
-Carrying Capacity는 '내 서비스가 도달할 최종적인 유저수'라고 할 수 있습니다. 이 값은 서비스를 운영하고 3 ~ 6개월 안에 알 수 있기 때문에, 제품의 성장을 미리 예측할 수 있다는 점에서 매우 중요합니다.
-결국 C.C에 영향을 주는 것은 Inflow(=New User + Ressurection)과 Churn Rate 두가지에 의해서 결정된다는 것이죠.
+Carrying Capacity 는 '내 서비스가 도달할 최종적인 유저수'라고 할 수 있습니다. 이 값은 서비스를 운영하고 3 ~ 6 개월 안에 알 수 있기 때문에, 제품의 성장을 미리 예측할 수 있다는 점에서 매우 중요합니다.
+결국 C.C 에 영향을 주는 것은 Inflow(=New User + Ressurection)과 Churn Rate 두가지에 의해서 결정된다는 것이죠.
 여기서 또 고려해야할 점은
-- 서비스의 Organic Inflow는 서비스의 특성에 따라 결정되며 일정한 숫자로 유지된다.
+- 서비스의 Organic Inflow 는 서비스의 특성에 따라 결정되며 일정한 숫자로 유지된다.
 - Churn Rate(1-Retention Rate)은 전체 유저에 대한 일정한 비율로 유지된다.
 Carrying Capacity = Of New Daily Customers / Custimers You Lost Each Day
-마케팅 활동을 통해 일시적으로 Inflow Boosting은 가능하지만 결국 광고를 끄면 그대로 다시 주저앉게 됩니다. Carrying Capacity가 변하지 않았기 때문이죠.
-결국 근본적인 Carrying Capacity의 향상은 재품 개선을 통한 Inflow와 Retention 향상, Churn 감소외에는 방법이 없고, 이것은 마케팅 활동으로 바뀔 수 없습니다.
-본질적인 UX를 개선하지 않는 한 이것을 향상 시키는 것은 불가능하다.
+마케팅 활동을 통해 일시적으로 Inflow Boosting 은 가능하지만 결국 광고를 끄면 그대로 다시 주저앉게 됩니다. Carrying Capacity 가 변하지 않았기 때문이죠.
+결국 근본적인 Carrying Capacity 의 향상은 재품 개선을 통한 Inflow 와 Retention 향상, Churn 감소외에는 방법이 없고, 이것은 마케팅 활동으로 바뀔 수 없습니다.
+본질적인 UX 를 개선하지 않는 한 이것을 향상 시키는 것은 불가능하다.
 
 Q1. You notice that your power users all have taken some action so you try to encourage all users to fill out their profile to get them more hooked on your product. Does this actually help?
 Q1. 귀하의 고급 사용자가 모두 일부 조치를 취한 것을 확인하여 모든 사용자가 귀하의 제품에 더 푹 빠지도록 자신의 프로필을 작성하도록 권장하려고 합니다. 이것이 실제로 도움이 되나요?
@@ -41,23 +39,23 @@ Q4. You turn on a new ad campaign and see your # of unique visitors per day star
 Q5. You start having email deliverability problems so you can’t notify users of new activity on the site. The # of unique visitors decreases slightly but you’re not too worried, should you be?
 -> This is similar to question 3, it may or may not be important but you'll quickly be able to tell by focusing on the core numbers. Increasing # of unique visitors per day does not necessarily lead to more total customers.
 
-# 데이터 그로스 모델링
-1. Total Customer는 New Customer Today와 Lost Customers Today, 단 두 가지 요소만 영향을 미친다.
+## 데이터 그로스 모델링
+1. Total Customer 는 New Customer Today 와 Lost Customers Today, 단 두 가지 요소만 영향을 미친다.
 
-2. Customer에 대한 정의
+2. Customer 에 대한 정의
 
-    A. active를 어떻게 정의하나.
+    A. active 를 어떻게 정의하나.
 
-        i. 95% 이상의 Visitor가 꼭 하게 되는 활동
+        i. 95% 이상의 Visitor 가 꼭 하게 되는 활동
 
-        ii. Page by Page, Repetable하고 Meaningful한 Action인가?
+        ii. Page by Page, Repetable 하고 Meaningful 한 Action 인가?
 
-    B. Churn은 어떻게 정의하나?  
-        i. 얼마를 안써야 안오는 거라고 정의할까? 1일? 4일?
+    B. Churn 은 어떻게 정의하나?  
+        i. 얼마를 안써야 안오는 거라고 정의할까? 1 일? 4 일?
 
         ii. 상식적으로 이 정도를 안썼으면 Loss 될 것 같다를 정한다 (나중에 바꾸면 안됨)
 
-            - ex. 샤잠 : 한 달에 한 번 쓰는 앱. 3개월을 Churn으로 정의
+            - ex. 샤잠 : 한 달에 한 번 쓰는 앱. 3 개월을 Churn 으로 정의
 
             - 토스 송금은? 30%가 이전달에 온 적이 없는 유저
 
@@ -65,24 +63,24 @@ Q5. You start having email deliverability problems so you can’t notify users o
 
 제품의 본질적인 체력(마케팅, 광고가 제외된)
 
-Q1 : 현재 MAU 10만, Carrying Capacity 75만, 광고를 해야할까?
+Q1 : 현재 MAU 10 만, Carrying Capacity 75 만, 광고를 해야할까?
 
-Q2 : 현재 MAU 70만, Carrying Capacity 75만, 광고를 해야할까?
+Q2 : 현재 MAU 70 만, Carrying Capacity 75 만, 광고를 해야할까?
 
-Q3 : 현재 MAU 100만, Carrying Capcity 75만, MAU는 떨어질까?
+Q3 : 현재 MAU 100 만, Carrying Capcity 75 만, MAU 는 떨어질까?
 
 
-마케팅 활동을 통해 일시적으로 Inflow Boosting은 가능하지만, 결국 광고를 끄면 그대로 다시 주저앉게 됩니다. Carrying Capacity가 변하지 않았기 때문이죠.
+마케팅 활동을 통해 일시적으로 Inflow Boosting 은 가능하지만, 결국 광고를 끄면 그대로 다시 주저앉게 됩니다. Carrying Capacity 가 변하지 않았기 때문이죠.
 
-결국 근본적인 Carrying Capacity의 향상은 제품 개선을 통한 Inflow와 Retention의 향상, Churn 감소 외에는 방법이 없고, 이것은 마케팅 활동으로는 바꿀 수 없습니다.
+결국 근본적인 Carrying Capacity 의 향상은 제품 개선을 통한 Inflow 와 Retention 의 향상, Churn 감소 외에는 방법이 없고, 이것은 마케팅 활동으로는 바꿀 수 없습니다.
 
-Carrying Capacity는 '내 서비스가 도달할 최종적인 유저수'라고 할 수 있습니다. 이 값은 서비스를 운영하고 3~6개월 안에 알 수 있기 때문에, 제품의 성장을 미리 예측할 수 있다는 점에서 매우 중요합니다.
+Carrying Capacity 는 '내 서비스가 도달할 최종적인 유저수'라고 할 수 있습니다. 이 값은 서비스를 운영하고 3~6 개월 안에 알 수 있기 때문에, 제품의 성장을 미리 예측할 수 있다는 점에서 매우 중요합니다.
 
-결국 C.C에 영향을 주는 것은 Inflow(=New User + Ressurrection)과 Churn Rate 두 가지에 의해서 결정된다는 것이죠.
+결국 C.C 에 영향을 주는 것은 Inflow(=New User + Ressurrection)과 Churn Rate 두 가지에 의해서 결정된다는 것이죠.
 
 여기서 또 고려해야 할 점은
 
-- 서비스의 Organic Inflow는 서비스의 특성에 따라 결정되며 일정한 숫자로 유지된다.
+- 서비스의 Organic Inflow 는 서비스의 특성에 따라 결정되며 일정한 숫자로 유지된다.
 
 - Churn Rate (1 - Retention Rate)은 전체 유저에 대해 일정한 비율로 유지된다.
 
