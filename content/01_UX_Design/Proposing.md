@@ -40,7 +40,9 @@ Bridging 이 다리를 놓고, Proposing 은 그 다리 너머로 걸어간다.
 
 ## 관련 노트
 
-- [[Bridging]]: Proposing 의 전 단계
-- [[Insight, Key Finding, CJM, Touch Point]]: Proposing 의 근거 재료
-- [[기획]]: Proposing 을 포함하는 넓은 활동
-- [[Requirement Specification]]: 승인된 제안의 다음 산출물
+- [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/Insight, Key Finding, CJM, Touch Point|Insight, Key Finding, CJM, Touch Point]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/Requirement Specification|Requirement Specification]] — 공유 키워드: `PRD`, `UX`, `기획`
+- [[01_UX_Design/User Scenario|User Scenario]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/기획|기획]] — 공유 키워드: `CJM`, `UX`, `기획`
+

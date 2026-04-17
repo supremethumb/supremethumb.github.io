@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:28.085297Z",
+  "last_updated": "2026-04-17T15:33:28.374802Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10545,6 +10545,16 @@
     "content/01_UX_Design/IA.md",
     "content/01_UX_Design/IT 좀 아는 사람.md",
     "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
-    "content/01_UX_Design/Market Research.md"
+    "content/01_UX_Design/Market Research.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/Proposing.md",
+    "content/01_UX_Design/Prototype 방향성.md",
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/01_UX_Design/SXG.md",
+    "content/01_UX_Design/Shell.md",
+    "content/01_UX_Design/TTFB.md",
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/UX 구성요소.md",
+    "content/01_UX_Design/UX 디자인 1.md"
   ]
 }

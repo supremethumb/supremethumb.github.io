@@ -59,3 +59,12 @@ description: "사용자들이 겪는 고충을 찾아서 해결합니다"
     - 니즈
 - 태도
 - 맥락
+
+## 관련 노트
+
+- [[01_UX_Design/경험|경험]] — 공유 키워드: `UI`, `UX`, `경험`
+- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UI`, `UX`, `기획`
+- [[01_UX_Design/Shell|Shell]] — 공유 키워드: `UI`, `UX`, `기획`
+- [[01_UX_Design/UI|UI]] — 공유 키워드: `UI`, `UX`, `기획`
+- [[01_UX_Design/단계적 노출|단계적 노출]] — 공유 키워드: `UI`, `UX`, `기획`
+
