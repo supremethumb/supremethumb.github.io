@@ -67,3 +67,12 @@ description: "절차형 SQL은 일반적인 개발 언어처럼 SQL언어에서�
     - while
     - case
     - loop
+
+## 관련 노트
+
+- [[02_IT_Tech/작업|작업]] — 공유 키워드: `IT`, `SQL`, `데이터`
+- [[02_IT_Tech/SQL 함수|SQL 함수]] — 공유 키워드: `IT`, `SQL`, `데이터`
+- [[02_IT_Tech/DCL|DCL]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/DDL|DDL]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/DML|DML]] — 공유 키워드: `IT`, `데이터`
+

@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:36.158703Z",
+  "last_updated": "2026-04-17T15:33:36.458199Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10815,6 +10815,16 @@
     "content/02_IT_Tech/자원사용율.md",
     "content/02_IT_Tech/작업.md",
     "content/02_IT_Tech/재사용.md",
-    "content/02_IT_Tech/저작권.md"
+    "content/02_IT_Tech/저작권.md",
+    "content/02_IT_Tech/절차형 SQL.md",
+    "content/02_IT_Tech/정보은닉.md",
+    "content/02_IT_Tech/정보처리기사.md",
+    "content/02_IT_Tech/정적 분석 도구.md",
+    "content/02_IT_Tech/처리량.md",
+    "content/02_IT_Tech/추상화.md",
+    "content/02_IT_Tech/캡슐화.md",
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md",
+    "content/02_IT_Tech/쿠키.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md"
   ]
 }
