@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/02_IT_Tech/RARP.md",
-    "content/02_IT_Tech/RFID.md",
-    "content/02_IT_Tech/Routing Protocol.md",
-    "content/02_IT_Tech/SCM.md",
-    "content/02_IT_Tech/SCR.md",
-    "content/02_IT_Tech/SDLC.md",
-    "content/02_IT_Tech/SEED.md",
-    "content/02_IT_Tech/SI.md",
-    "content/02_IT_Tech/SM.md",
-    "content/02_IT_Tech/SPICE.md",
     "content/02_IT_Tech/SQL Injection.md",
     "content/02_IT_Tech/SQL 문법.md",
     "content/02_IT_Tech/SQL 함수.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/OPTIMIZER.md",
     "content/02_IT_Tech/OSI 7 Layer.md",
     "content/02_IT_Tech/POS.md",
-    "content/02_IT_Tech/Plug & Play.md"
+    "content/02_IT_Tech/Plug & Play.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/RFID.md",
+    "content/02_IT_Tech/Routing Protocol.md",
+    "content/02_IT_Tech/SCM.md",
+    "content/02_IT_Tech/SCR.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/02_IT_Tech/SEED.md",
+    "content/02_IT_Tech/SI.md",
+    "content/02_IT_Tech/SM.md",
+    "content/02_IT_Tech/SPICE.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:28.402151Z"
+  "last_updated": "2026-04-17T15:30:28.743776Z"
 }
