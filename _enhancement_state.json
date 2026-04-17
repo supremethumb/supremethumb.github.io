@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:35.570331Z",
+  "last_updated": "2026-04-17T15:33:35.858700Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10795,6 +10795,16 @@
     "content/02_IT_Tech/스케줄링.md",
     "content/02_IT_Tech/스키마.md",
     "content/02_IT_Tech/시스템 테스트.md",
-    "content/02_IT_Tech/신뢰성.md"
+    "content/02_IT_Tech/신뢰성.md",
+    "content/02_IT_Tech/쓰레드.md",
+    "content/02_IT_Tech/안드로이드 마켓 등록.md",
+    "content/02_IT_Tech/알고리즘.md",
+    "content/02_IT_Tech/암호 알고리즘.md",
+    "content/02_IT_Tech/연산자.md",
+    "content/02_IT_Tech/외부 환경.md",
+    "content/02_IT_Tech/요구 사항 분석.md",
+    "content/02_IT_Tech/운영체제.md",
+    "content/02_IT_Tech/워터폴.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md"
   ]
 }
