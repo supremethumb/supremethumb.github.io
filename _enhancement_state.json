@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/01_UX_Design/Needs VS Wants.md",
-    "content/01_UX_Design/Proposing.md",
-    "content/01_UX_Design/Prototype 방향성.md",
-    "content/01_UX_Design/Requirement Specification.md",
-    "content/01_UX_Design/SXG.md",
-    "content/01_UX_Design/Shell.md",
-    "content/01_UX_Design/TTFB.md",
-    "content/01_UX_Design/UI.md",
-    "content/01_UX_Design/UX 구성요소.md",
-    "content/01_UX_Design/UX 디자인 1.md",
     "content/01_UX_Design/UX 디자인 7가지 비밀.md",
     "content/01_UX_Design/UX 디자인.md",
     "content/01_UX_Design/UX 방법론.md",
@@ -512,7 +502,17 @@
     "content/01_UX_Design/IA.md",
     "content/01_UX_Design/IT 좀 아는 사람.md",
     "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
-    "content/01_UX_Design/Market Research.md"
+    "content/01_UX_Design/Market Research.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/Proposing.md",
+    "content/01_UX_Design/Prototype 방향성.md",
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/01_UX_Design/SXG.md",
+    "content/01_UX_Design/Shell.md",
+    "content/01_UX_Design/TTFB.md",
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/UX 구성요소.md",
+    "content/01_UX_Design/UX 디자인 1.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:22.149419Z"
+  "last_updated": "2026-04-17T15:30:22.518786Z"
 }
