@@ -147,3 +147,12 @@ description: "----------------- Portal ---------------------"
         - 타이 로페즈
     - Links
         - 클라우드 서비스 이해하기 IaaS, PaaS, SaaS | 와탭 블로그 #2021-07-19 Mon
+
+## 관련 노트
+
+- [[00_Meta/강의|수강 기록 — 배움의 발자취]] — 공유 키워드: `UX`, `강의`, `디자인`
+- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/ATF|ATF]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `UX`, `기획`, `디자인`
+

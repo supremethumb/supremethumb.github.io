@@ -83,3 +83,12 @@ description: "시장 세분화, 표적 시장 설정, 포지셔닝"
         - Focus on different benefits: Different segments must need different benefits.
     - Product positioning
         -
+
+## 관련 노트
+
+- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/ATF|ATF]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
+

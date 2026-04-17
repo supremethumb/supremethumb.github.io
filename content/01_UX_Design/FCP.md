@@ -41,7 +41,9 @@ FCP 는 *첫 번째 콘텐츠가 나타난* 순간이고, LCP(Largest Contentful
 
 ## 관련 노트
 
-- [[TTFB]]: 첫 바이트 도달 시간
-- [[ATF]]: Above The Fold, 첫 화면 영역
-- [[응답시간]]: 체감 성능 전반
-- [[UX 품질]]: 성능이 UX 에 미치는 영향
+- [[01_UX_Design/User|User]] — 공유 키워드: `UX`, `기준`, `기획`
+- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/ATF|ATF]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `UX`, `기획`, `디자인`
+
