@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/05_Marketing_Business/ROAS.md",
-    "content/05_Marketing_Business/RTE.md",
-    "content/05_Marketing_Business/STP 전략.md",
-    "content/05_Marketing_Business/SWOT 분석.md",
-    "content/05_Marketing_Business/검색 유입.md",
-    "content/05_Marketing_Business/경로독점.md",
-    "content/05_Marketing_Business/경로의 저주.md",
-    "content/05_Marketing_Business/경로의존.md",
-    "content/05_Marketing_Business/고객 생애 가치.md",
-    "content/05_Marketing_Business/구글의 열가지 철학.md",
     "content/05_Marketing_Business/구별짓기.md",
     "content/05_Marketing_Business/내러티브 자본.md",
     "content/05_Marketing_Business/네트워크 효과.md",
@@ -512,7 +502,17 @@
     "content/05_Marketing_Business/Carrying capacity.md",
     "content/05_Marketing_Business/Digital Side Effect.md",
     "content/05_Marketing_Business/KPI.md",
-    "content/05_Marketing_Business/MVP.md"
+    "content/05_Marketing_Business/MVP.md",
+    "content/05_Marketing_Business/ROAS.md",
+    "content/05_Marketing_Business/RTE.md",
+    "content/05_Marketing_Business/STP 전략.md",
+    "content/05_Marketing_Business/SWOT 분석.md",
+    "content/05_Marketing_Business/검색 유입.md",
+    "content/05_Marketing_Business/경로독점.md",
+    "content/05_Marketing_Business/경로의 저주.md",
+    "content/05_Marketing_Business/경로의존.md",
+    "content/05_Marketing_Business/고객 생애 가치.md",
+    "content/05_Marketing_Business/구글의 열가지 철학.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:36.481680Z"
+  "last_updated": "2026-04-17T15:30:36.846038Z"
 }
