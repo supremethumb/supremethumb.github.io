@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/01_UX_Design/심성 모형.md",
-    "content/01_UX_Design/앨런 쿠퍼.md",
-    "content/01_UX_Design/앱 레이블의 팁.md",
-    "content/01_UX_Design/어포던스.md",
-    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md",
-    "content/01_UX_Design/오래가는 UX 디자인.md",
-    "content/01_UX_Design/와이어프레임.md",
-    "content/01_UX_Design/요구사항 정의서.md",
-    "content/01_UX_Design/유스케이스.md",
-    "content/01_UX_Design/유연성.md",
     "content/01_UX_Design/유용성.md",
     "content/01_UX_Design/유효성.md",
     "content/01_UX_Design/의미성.md",
@@ -512,7 +502,17 @@
     "content/01_UX_Design/스토리텔링.md",
     "content/01_UX_Design/시스템 사용성 척도.md",
     "content/01_UX_Design/시장 환경 조사.md",
-    "content/01_UX_Design/신타이포그래픽 디자인.md"
+    "content/01_UX_Design/신타이포그래픽 디자인.md",
+    "content/01_UX_Design/심성 모형.md",
+    "content/01_UX_Design/앨런 쿠퍼.md",
+    "content/01_UX_Design/앱 레이블의 팁.md",
+    "content/01_UX_Design/어포던스.md",
+    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md",
+    "content/01_UX_Design/오래가는 UX 디자인.md",
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/요구사항 정의서.md",
+    "content/01_UX_Design/유스케이스.md",
+    "content/01_UX_Design/유연성.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:24.821601Z"
+  "last_updated": "2026-04-17T15:30:25.175607Z"
 }
