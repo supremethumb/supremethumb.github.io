@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/02_IT_Tech/NFC.md",
-    "content/02_IT_Tech/NUR.md",
-    "content/02_IT_Tech/ODBC.md",
-    "content/02_IT_Tech/OLAP.md",
-    "content/02_IT_Tech/OLTP.md",
-    "content/02_IT_Tech/OMT.md",
-    "content/02_IT_Tech/OPTIMIZER.md",
-    "content/02_IT_Tech/OSI 7 Layer.md",
-    "content/02_IT_Tech/POS.md",
-    "content/02_IT_Tech/Plug & Play.md",
     "content/02_IT_Tech/RARP.md",
     "content/02_IT_Tech/RFID.md",
     "content/02_IT_Tech/Routing Protocol.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/Land Attack.md",
     "content/02_IT_Tech/MAC.md",
     "content/02_IT_Tech/MDC.md",
-    "content/02_IT_Tech/NAS.md"
+    "content/02_IT_Tech/NAS.md",
+    "content/02_IT_Tech/NFC.md",
+    "content/02_IT_Tech/NUR.md",
+    "content/02_IT_Tech/ODBC.md",
+    "content/02_IT_Tech/OLAP.md",
+    "content/02_IT_Tech/OLTP.md",
+    "content/02_IT_Tech/OMT.md",
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/02_IT_Tech/OSI 7 Layer.md",
+    "content/02_IT_Tech/POS.md",
+    "content/02_IT_Tech/Plug & Play.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:28.054324Z"
+  "last_updated": "2026-04-17T15:30:28.402151Z"
 }
