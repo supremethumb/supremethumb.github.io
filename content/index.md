@@ -35,3 +35,12 @@ description: "<div class="index-intro"> 위 그래프에서 노드를 클릭하�
 - **비교 분석**: 유사한 방법론·도구와 비교하며 장단점을 파악한다.
 - **참고 자료 탐색**: 공식 문서나 전문 서적을 통해 더 깊은 이해를 추구한다.
 - **사례 수집**: 실제 사례를 꾸준히 수집하여 이 노트를 발전시킨다.
+
+## 관련 노트
+
+- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `실제`, `이해를`
+- [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `실제`, `이해를`
+- [[01_UX_Design/Needs VS Wants|Needs VS Wants]] — 공유 키워드: `실제`, `이해를`
+- [[01_UX_Design/User Flow|User Flow]] — 공유 키워드: `실제`, `이해를`
+- [[01_UX_Design/개발 디스크립션|개발 디스크립션]] — 공유 키워드: `실제`, `이해를`
+

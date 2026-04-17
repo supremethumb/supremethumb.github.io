@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:42.197528Z",
+  "last_updated": "2026-04-17T15:33:42.467318Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -11025,6 +11025,16 @@
     "content/08_Insights/사람들에게 반감을 사는 방법.md",
     "content/08_Insights/사람의 특징.md",
     "content/08_Insights/아집이 생기는 것에 대해서.md",
-    "content/08_Insights/제태크 수단에 대해서.md"
+    "content/08_Insights/제태크 수단에 대해서.md",
+    "content/08_Insights/조커.md",
+    "content/08_Insights/타이 로페즈.md",
+    "content/08_Insights/한계.md",
+    "content/index.md",
+    "content/01_UX_Design/Data Driven UX.md",
+    "content/01_UX_Design/USER RESEARCH.md",
+    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/01_UX_Design/UX 기획의 기술.md",
+    "content/01_UX_Design/감성 디자인.md",
+    "content/01_UX_Design/디자인과 인간심리.md"
   ]
 }
