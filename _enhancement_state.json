@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:37.943246Z",
+  "last_updated": "2026-04-17T15:33:38.243082Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10875,6 +10875,16 @@
     "content/03_AI_ML/RNN.md",
     "content/03_AI_ML/ROC 곡선.md",
     "content/03_AI_ML/RPN.md",
-    "content/03_AI_ML/Region Proposal.md"
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/Transformer.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/과적합.md",
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/데이터.md",
+    "content/03_AI_ML/딥러닝.md"
   ]
 }
