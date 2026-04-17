@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:43.710438Z",
+  "last_updated": "2026-04-17T15:33:44.005462Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -11075,6 +11075,16 @@
     "content/06_Philosophy_Humanities/샤르트르.md",
     "content/06_Philosophy_Humanities/소쉬르.md",
     "content/06_Philosophy_Humanities/슈독.md",
-    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md"
+    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/06_Philosophy_Humanities/적정기술.md",
+    "content/06_Philosophy_Humanities/한비자.md",
+    "content/07_Economics_Finance/넛지.md",
+    "content/07_Economics_Finance/부의 시작.md",
+    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md",
+    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md",
+    "content/07_Economics_Finance/운의 알고리즘.md",
+    "content/07_Economics_Finance/인간 본성의 법칙.md",
+    "content/07_Economics_Finance/인간 욕망의 법칙.md"
   ]
 }
