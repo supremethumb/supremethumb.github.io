@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:35.296704Z",
+  "last_updated": "2026-04-17T15:33:35.570331Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10785,6 +10785,16 @@
     "content/02_IT_Tech/비용산정 일정관리 모델.md",
     "content/02_IT_Tech/비즈니스 연속성 계획.md",
     "content/02_IT_Tech/빅데이터 분석 기사.md",
-    "content/02_IT_Tech/사이트간 위조공격.md"
+    "content/02_IT_Tech/사이트간 위조공격.md",
+    "content/02_IT_Tech/서버 접근 통제.md",
+    "content/02_IT_Tech/서킷브레이커.md",
+    "content/02_IT_Tech/성능 테스트 도구.md",
+    "content/02_IT_Tech/세션.md",
+    "content/02_IT_Tech/소프트웨어 아키텍쳐.md",
+    "content/02_IT_Tech/스위치.md",
+    "content/02_IT_Tech/스케줄링.md",
+    "content/02_IT_Tech/스키마.md",
+    "content/02_IT_Tech/시스템 테스트.md",
+    "content/02_IT_Tech/신뢰성.md"
   ]
 }
