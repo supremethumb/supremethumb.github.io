@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:41.054865Z",
+  "last_updated": "2026-04-17T15:33:41.341415Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10985,6 +10985,16 @@
     "content/06_Philosophy_Humanities/생명체.md",
     "content/06_Philosophy_Humanities/아우라.md",
     "content/06_Philosophy_Humanities/역사 관련.md",
-    "content/06_Philosophy_Humanities/영세중립국.md"
+    "content/06_Philosophy_Humanities/영세중립국.md",
+    "content/06_Philosophy_Humanities/영화 다큐멘터리.md",
+    "content/06_Philosophy_Humanities/예술.md",
+    "content/06_Philosophy_Humanities/이솝 우화.md",
+    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/06_Philosophy_Humanities/자기동일성.md",
+    "content/06_Philosophy_Humanities/자기수용감각.md",
+    "content/06_Philosophy_Humanities/장자.md",
+    "content/06_Philosophy_Humanities/질병 분류표.md",
+    "content/06_Philosophy_Humanities/철학.md",
+    "content/06_Philosophy_Humanities/철학대철학.md"
   ]
 }
