@@ -44,7 +44,9 @@ SDLC(Software Development Life Cycle, 소프트웨어 생명주기)는 시스템
 
 ## 관련 노트
 
-- [[Agile]]: 가장 널리 쓰이는 반복형 SDLC
-- [[CMMI]] · [[SPICE]]: 프로세스 성숙도 모델
-- [[시스템 테스트]] · [[인수 테스트]] · [[Debugging]]: 검증 단계
-- [[소프트웨어 아키텍쳐]]: 설계 단계의 산출물
+- [[01_UX_Design/서비스 기획자|서비스 기획자]] — 공유 키워드: `단계`, `설계`
+- [[02_IT_Tech/CALS|CALS]] — 공유 키워드: `IT`, `설계`
+- [[02_IT_Tech/CMMI|CMMI]] — 공유 키워드: `IT`, `단계`
+- [[02_IT_Tech/Debugging|Debugging]] — 공유 키워드: `IT`, `테스트`
+- [[02_IT_Tech/네트워크|네트워크]] — 공유 키워드: `IT`, `모델`
+

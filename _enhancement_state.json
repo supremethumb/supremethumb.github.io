@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:33.245883Z",
+  "last_updated": "2026-04-17T15:33:33.541616Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10715,6 +10715,16 @@
     "content/02_IT_Tech/OPTIMIZER.md",
     "content/02_IT_Tech/OSI 7 Layer.md",
     "content/02_IT_Tech/POS.md",
-    "content/02_IT_Tech/Plug & Play.md"
+    "content/02_IT_Tech/Plug & Play.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/RFID.md",
+    "content/02_IT_Tech/Routing Protocol.md",
+    "content/02_IT_Tech/SCM.md",
+    "content/02_IT_Tech/SCR.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/02_IT_Tech/SEED.md",
+    "content/02_IT_Tech/SI.md",
+    "content/02_IT_Tech/SM.md",
+    "content/02_IT_Tech/SPICE.md"
   ]
 }
