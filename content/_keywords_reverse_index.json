@@ -1,0 +1,7044 @@
+{
+  "UI": [
+    "content/00_Meta/강의.md",
+    "content/00_Meta/도서.md",
+    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/GUI.md",
+    "content/01_UX_Design/Shell.md",
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/UX 구성요소.md",
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
+    "content/01_UX_Design/경험.md",
+    "content/01_UX_Design/단계적 노출.md",
+    "content/01_UX_Design/대비.md",
+    "content/01_UX_Design/딥링크.md",
+    "content/01_UX_Design/라이트 박스.md",
+    "content/01_UX_Design/룩앤필.md",
+    "content/01_UX_Design/모바일 다이렉트 액세스.md",
+    "content/01_UX_Design/쉐브론.md",
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/인터랙션.md",
+    "content/01_UX_Design/인터페이스.md",
+    "content/01_UX_Design/프로토타입.md",
+    "content/01_UX_Design/플로 다이어그램.md",
+    "content/01_UX_Design/학습성.md",
+    "content/01_UX_Design/허브 앤 스포크.md",
+    "content/02_IT_Tech/DBMS.md",
+    "content/02_IT_Tech/NFC.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/02_IT_Tech/스키마.md",
+    "content/02_IT_Tech/쓰레드.md",
+    "content/02_IT_Tech/운영체제.md",
+    "content/02_IT_Tech/트리.md",
+    "content/03_AI_ML/완전히 연결된 모델.md",
+    "content/05_Marketing_Business/MVP.md",
+    "content/05_Marketing_Business/전환율.md",
+    "content/01_UX_Design/마음을 생각하는 디자인.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md"
+  ],
+  "UX": [
+    "content/00_Meta/강의.md",
+    "content/00_Meta/도서.md",
+    "content/01_UX_Design/ARIA.md",
+    "content/01_UX_Design/ATF.md",
+    "content/01_UX_Design/Affinity Diagram.md",
+    "content/01_UX_Design/Backchannels.md",
+    "content/01_UX_Design/Bridging.md",
+    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Do it R.md",
+    "content/01_UX_Design/Do it 웹 기획.md",
+    "content/01_UX_Design/Document Sidebar.md",
+    "content/01_UX_Design/FCP.md",
+    "content/01_UX_Design/GUI.md",
+    "content/01_UX_Design/Header.md",
+    "content/01_UX_Design/IA.md",
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
+    "content/01_UX_Design/Market Research.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/Proposing.md",
+    "content/01_UX_Design/Prototype 방향성.md",
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/01_UX_Design/SXG.md",
+    "content/01_UX_Design/Shell.md",
+    "content/01_UX_Design/TTFB.md",
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/UX 구성요소.md",
+    "content/01_UX_Design/UX 디자인 1.md",
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
+    "content/01_UX_Design/UX 디자인.md",
+    "content/01_UX_Design/UX 방법론.md",
+    "content/01_UX_Design/UX 품질 판단.md",
+    "content/01_UX_Design/UX 품질.md",
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
+    "content/01_UX_Design/User Flow.md",
+    "content/01_UX_Design/User Scenario.md",
+    "content/01_UX_Design/User.md",
+    "content/01_UX_Design/감성.md",
+    "content/01_UX_Design/개념적 모델.md",
+    "content/01_UX_Design/개발 디스크립션.md",
+    "content/01_UX_Design/거터.md",
+    "content/01_UX_Design/결정 경험.md",
+    "content/01_UX_Design/경험.md",
+    "content/01_UX_Design/기획.md",
+    "content/01_UX_Design/넓고 얕은 내비게이션.md",
+    "content/01_UX_Design/단계적 노출.md",
+    "content/01_UX_Design/대비.md",
+    "content/01_UX_Design/대응.md",
+    "content/01_UX_Design/디자인 까리하게 하기.md",
+    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md",
+    "content/01_UX_Design/디자인.md",
+    "content/01_UX_Design/디자인에서 중요한 것.md",
+    "content/01_UX_Design/디자인을 하는 순서.md",
+    "content/01_UX_Design/딥링크.md",
+    "content/01_UX_Design/라이트 박스.md",
+    "content/01_UX_Design/룩앤필.md",
+    "content/01_UX_Design/마법의 디자인.md",
+    "content/01_UX_Design/마이크로카피 오려두기.md",
+    "content/01_UX_Design/맥락 인터뷰.md",
+    "content/01_UX_Design/모바일 다이렉트 액세스.md",
+    "content/01_UX_Design/무주의 맹시.md",
+    "content/01_UX_Design/반성적 단계.md",
+    "content/01_UX_Design/반성적 디자인.md",
+    "content/01_UX_Design/변화 맹시.md",
+    "content/01_UX_Design/본능적 단계.md",
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md",
+    "content/01_UX_Design/사용성 계획.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/01_UX_Design/사용자 리서치.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/01_UX_Design/서비스 디자인 교과서.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/서비스.md",
+    "content/01_UX_Design/쉐브론.md",
+    "content/01_UX_Design/스토리보드.md",
+    "content/01_UX_Design/스토리텔링.md",
+    "content/01_UX_Design/시장 환경 조사.md",
+    "content/01_UX_Design/신타이포그래픽 디자인.md",
+    "content/01_UX_Design/심성 모형.md",
+    "content/01_UX_Design/앨런 쿠퍼.md",
+    "content/01_UX_Design/앱 레이블의 팁.md",
+    "content/01_UX_Design/어포던스.md",
+    "content/01_UX_Design/오래가는 UX 디자인.md",
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/요구사항 정의서.md",
+    "content/01_UX_Design/유연성.md",
+    "content/01_UX_Design/유용성.md",
+    "content/01_UX_Design/유효성.md",
+    "content/01_UX_Design/의미성.md",
+    "content/01_UX_Design/인간을 위한 디자인.md",
+    "content/01_UX_Design/인터랙션.md",
+    "content/01_UX_Design/인터페이스.md",
+    "content/01_UX_Design/정보 구조 디자인.md",
+    "content/01_UX_Design/정성적 데이터.md",
+    "content/01_UX_Design/조형의 원리.md",
+    "content/01_UX_Design/좋은 UX란.md",
+    "content/01_UX_Design/중요한 디자인의 원리.md",
+    "content/01_UX_Design/지연 로딩.md",
+    "content/01_UX_Design/직관성.md",
+    "content/01_UX_Design/타이포그래픽 디자인.md",
+    "content/01_UX_Design/태스크 분석.md",
+    "content/01_UX_Design/터널 시각.md",
+    "content/01_UX_Design/퍼널.md",
+    "content/01_UX_Design/편의성.md",
+    "content/01_UX_Design/프로토타입.md",
+    "content/01_UX_Design/플로 다이어그램.md",
+    "content/01_UX_Design/피라미드 모델.md",
+    "content/01_UX_Design/학습성.md",
+    "content/01_UX_Design/행동적 단계.md",
+    "content/01_UX_Design/행동적 디자인.md",
+    "content/01_UX_Design/허브 앤 스포크.md",
+    "content/01_UX_Design/확증 편향.md",
+    "content/02_IT_Tech/NFC.md",
+    "content/02_IT_Tech/Session.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/02_IT_Tech/스키마.md",
+    "content/02_IT_Tech/응답시간.md",
+    "content/02_IT_Tech/쿠키.md",
+    "content/02_IT_Tech/트리.md",
+    "content/03_AI_ML/완전히 연결된 모델.md",
+    "content/05_Marketing_Business/Carrying capacity.md",
+    "content/05_Marketing_Business/검색 유입.md",
+    "content/05_Marketing_Business/소셜 유입.md",
+    "content/05_Marketing_Business/소셜딜레마.md",
+    "content/05_Marketing_Business/이탈률.md",
+    "content/05_Marketing_Business/인바운드 마케팅.md",
+    "content/05_Marketing_Business/전환율.md",
+    "content/05_Marketing_Business/직접 유입.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/06_Philosophy_Humanities/영화 다큐멘터리.md",
+    "content/06_Philosophy_Humanities/이솝 우화.md",
+    "content/06_Philosophy_Humanities/행복.md",
+    "content/01_UX_Design/Data Driven UX.md",
+    "content/01_UX_Design/USER RESEARCH.md",
+    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/01_UX_Design/UX 기획의 기술.md",
+    "content/01_UX_Design/감성 디자인.md",
+    "content/01_UX_Design/디자인과 인간심리.md",
+    "content/01_UX_Design/디자인씽킹.md",
+    "content/01_UX_Design/마음을 생각하는 디자인.md",
+    "content/01_UX_Design/마이크로카피.md",
+    "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md",
+    "content/01_UX_Design/모바일 결제 사례 리서치.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md",
+    "content/07_Economics_Finance/넛지.md"
+  ],
+  "강의": [
+    "content/00_Meta/강의.md",
+    "content/01_UX_Design/Document Sidebar.md"
+  ],
+  "핵심": [
+    "content/00_Meta/강의.md",
+    "content/00_Meta/도서.md",
+    "content/02_IT_Tech/다형성.md",
+    "content/05_Marketing_Business/KPI.md",
+    "content/05_Marketing_Business/브이노믹스.md",
+    "content/01_UX_Design/Data Driven UX.md",
+    "content/01_UX_Design/USER RESEARCH.md",
+    "content/01_UX_Design/UX 기획의 기술.md",
+    "content/01_UX_Design/마음을 생각하는 디자인.md",
+    "content/01_UX_Design/마이크로카피.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
+    "content/05_Marketing_Business/규칙 없음.md",
+    "content/05_Marketing_Business/브랜드 3.0.md",
+    "content/05_Marketing_Business/파이프라인.md",
+    "content/06_Philosophy_Humanities/마지막 몰입.md",
+    "content/07_Economics_Finance/부의 시작.md",
+    "content/08_Insights/면접 바이블.md",
+    "content/08_Insights/블로그 글쓰기.md"
+  ],
+  "디자인": [
+    "content/00_Meta/강의.md",
+    "content/00_Meta/도서.md",
+    "content/01_UX_Design/ARIA.md",
+    "content/01_UX_Design/ATF.md",
+    "content/01_UX_Design/Backchannels.md",
+    "content/01_UX_Design/Bridging.md",
+    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Document Sidebar.md",
+    "content/01_UX_Design/FCP.md",
+    "content/01_UX_Design/IA.md",
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
+    "content/01_UX_Design/Market Research.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/Prototype 방향성.md",
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/01_UX_Design/SXG.md",
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/UX 디자인 1.md",
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
+    "content/01_UX_Design/UX 디자인.md",
+    "content/01_UX_Design/UX 방법론.md",
+    "content/01_UX_Design/UX 품질.md",
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
+    "content/01_UX_Design/User Flow.md",
+    "content/01_UX_Design/User.md",
+    "content/01_UX_Design/user research basic.md",
+    "content/01_UX_Design/감성.md",
+    "content/01_UX_Design/개념적 모델.md",
+    "content/01_UX_Design/개발 디스크립션.md",
+    "content/01_UX_Design/거터.md",
+    "content/01_UX_Design/결정 경험.md",
+    "content/01_UX_Design/경험.md",
+    "content/01_UX_Design/대응.md",
+    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md",
+    "content/01_UX_Design/디자인 까리하게 하기.md",
+    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md",
+    "content/01_UX_Design/디자인.md",
+    "content/01_UX_Design/디자인에서 중요한 것.md",
+    "content/01_UX_Design/디자인을 하는 순서.md",
+    "content/01_UX_Design/딥링크.md",
+    "content/01_UX_Design/라이트 박스.md",
+    "content/01_UX_Design/마법의 디자인.md",
+    "content/01_UX_Design/모바일 다이렉트 액세스.md",
+    "content/01_UX_Design/무주의 맹시.md",
+    "content/01_UX_Design/반성적 단계.md",
+    "content/01_UX_Design/반성적 디자인.md",
+    "content/01_UX_Design/본능적 단계.md",
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md",
+    "content/01_UX_Design/사용성 계획.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/01_UX_Design/사용자 리서치.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/설문.md",
+    "content/01_UX_Design/스토리보드.md",
+    "content/01_UX_Design/스토리텔링.md",
+    "content/01_UX_Design/심성 모형.md",
+    "content/01_UX_Design/앱 레이블의 팁.md",
+    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md",
+    "content/01_UX_Design/오래가는 UX 디자인.md",
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/요구사항 정의서.md",
+    "content/01_UX_Design/유연성.md",
+    "content/01_UX_Design/유용성.md",
+    "content/01_UX_Design/유효성.md",
+    "content/01_UX_Design/의미성.md",
+    "content/01_UX_Design/인간을 위한 디자인.md",
+    "content/01_UX_Design/인터랙션.md",
+    "content/01_UX_Design/인터페이스.md",
+    "content/01_UX_Design/정보 구조 디자인.md",
+    "content/01_UX_Design/정성적 데이터.md",
+    "content/01_UX_Design/중요한 디자인의 원리.md",
+    "content/01_UX_Design/지연 로딩.md",
+    "content/01_UX_Design/직관성.md",
+    "content/01_UX_Design/태스크 분석.md",
+    "content/01_UX_Design/터널 시각.md",
+    "content/01_UX_Design/퍼널.md",
+    "content/01_UX_Design/편의성.md",
+    "content/01_UX_Design/평행 디자인.md",
+    "content/01_UX_Design/프로토타입.md",
+    "content/01_UX_Design/플로 다이어그램.md",
+    "content/01_UX_Design/피라미드 모델.md",
+    "content/01_UX_Design/학습성.md",
+    "content/01_UX_Design/행동적 단계.md",
+    "content/01_UX_Design/행동적 디자인.md",
+    "content/01_UX_Design/확증 편향.md",
+    "content/02_IT_Tech/Agile.md",
+    "content/02_IT_Tech/디자인 패턴.md",
+    "content/02_IT_Tech/워터폴.md",
+    "content/05_Marketing_Business/경로의 저주.md",
+    "content/05_Marketing_Business/구글의 열가지 철학.md",
+    "content/05_Marketing_Business/마진.md",
+    "content/05_Marketing_Business/마케팅의 역사.md",
+    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/05_Marketing_Business/브랜딩.md",
+    "content/05_Marketing_Business/소셜딜레마.md",
+    "content/06_Philosophy_Humanities/예술.md",
+    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/01_UX_Design/UX 기획의 기술.md",
+    "content/01_UX_Design/감성 디자인.md",
+    "content/01_UX_Design/디자인과 인간심리.md",
+    "content/01_UX_Design/마음을 생각하는 디자인.md",
+    "content/01_UX_Design/마이크로카피.md",
+    "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md"
+  ],
+  "리서치": [
+    "content/00_Meta/강의.md",
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
+    "content/01_UX_Design/사용자 리서치.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/USER RESEARCH.md",
+    "content/05_Marketing_Business/코호트.md"
+  ],
+  "브랜드": [
+    "content/00_Meta/강의.md",
+    "content/05_Marketing_Business/AARRR.md",
+    "content/05_Marketing_Business/ARPU.md",
+    "content/05_Marketing_Business/STP 전략.md",
+    "content/05_Marketing_Business/SWOT 분석.md",
+    "content/05_Marketing_Business/검색 유입.md",
+    "content/05_Marketing_Business/경로독점.md",
+    "content/05_Marketing_Business/경로의 저주.md",
+    "content/05_Marketing_Business/경로의존.md",
+    "content/05_Marketing_Business/구글의 열가지 철학.md",
+    "content/05_Marketing_Business/롱테일.md",
+    "content/05_Marketing_Business/리텐션.md",
+    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
+    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/05_Marketing_Business/브랜딩.md",
+    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md",
+    "content/05_Marketing_Business/이탈률.md",
+    "content/05_Marketing_Business/인바운드 마케팅.md",
+    "content/05_Marketing_Business/전환율.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/05_Marketing_Business/팬슈머.md",
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/05_Marketing_Business/그로스 해킹.md",
+    "content/05_Marketing_Business/업스트림.md",
+    "content/05_Marketing_Business/코호트.md",
+    "content/05_Marketing_Business/파이프라인.md"
+  ],
+  "가지": [
+    "content/00_Meta/도서.md",
+    "content/01_UX_Design/개념적 모델.md",
+    "content/06_Philosophy_Humanities/화석연료.md",
+    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md",
+    "content/06_Philosophy_Humanities/동물농장.md",
+    "content/08_Insights/인간관계론.md"
+  ],
+  "독서": [
+    "content/00_Meta/도서.md",
+    "content/06_Philosophy_Humanities/RNA.md",
+    "content/06_Philosophy_Humanities/감정.md",
+    "content/06_Philosophy_Humanities/국방 순위 2020.md",
+    "content/06_Philosophy_Humanities/기생충.md",
+    "content/06_Philosophy_Humanities/길가메시.md",
+    "content/06_Philosophy_Humanities/녹서.md",
+    "content/06_Philosophy_Humanities/모던 타임즈.md",
+    "content/06_Philosophy_Humanities/무의식.md",
+    "content/06_Philosophy_Humanities/문화.md",
+    "content/06_Philosophy_Humanities/본질.md",
+    "content/06_Philosophy_Humanities/생명체.md",
+    "content/06_Philosophy_Humanities/아우라.md",
+    "content/06_Philosophy_Humanities/역사 관련.md",
+    "content/06_Philosophy_Humanities/영세중립국.md",
+    "content/06_Philosophy_Humanities/영화 다큐멘터리.md",
+    "content/06_Philosophy_Humanities/예술.md",
+    "content/06_Philosophy_Humanities/이솝 우화.md",
+    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/06_Philosophy_Humanities/자기동일성.md",
+    "content/06_Philosophy_Humanities/자기수용감각.md",
+    "content/06_Philosophy_Humanities/질병 분류표.md",
+    "content/06_Philosophy_Humanities/철학.md",
+    "content/06_Philosophy_Humanities/철학대철학.md",
+    "content/06_Philosophy_Humanities/칸트.md",
+    "content/06_Philosophy_Humanities/칼의 노래.md",
+    "content/06_Philosophy_Humanities/파르테논 신전.md",
+    "content/06_Philosophy_Humanities/평등.md",
+    "content/06_Philosophy_Humanities/표상.md",
+    "content/06_Philosophy_Humanities/행복.md",
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md",
+    "content/06_Philosophy_Humanities/화석연료.md",
+    "content/08_Insights/뇌의 한계.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/06_Philosophy_Humanities/동물농장.md",
+    "content/06_Philosophy_Humanities/마지막 몰입.md",
+    "content/06_Philosophy_Humanities/비트겐슈타인.md",
+    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md",
+    "content/06_Philosophy_Humanities/사피엔스.md",
+    "content/06_Philosophy_Humanities/생각의 탄생.md",
+    "content/06_Philosophy_Humanities/샤르트르.md",
+    "content/06_Philosophy_Humanities/소쉬르.md",
+    "content/06_Philosophy_Humanities/슈독.md",
+    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/06_Philosophy_Humanities/적정기술.md",
+    "content/06_Philosophy_Humanities/한비자.md",
+    "content/08_Insights/블로그 글쓰기.md",
+    "content/08_Insights/인간관계론.md",
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
+    "content/08_Insights/자기관리론.md"
+  ],
+  "도서명": [
+    "content/00_Meta/도서.md"
+  ],
+  "제텔카스텐": [
+    "content/00_Meta/제텔카스텐.md"
+  ],
+  "메모": [
+    "content/00_Meta/제텔카스텐.md"
+  ],
+  "한다": [
+    "content/00_Meta/제텔카스텐.md",
+    "content/01_UX_Design/Affinity Diagram.md",
+    "content/01_UX_Design/IT 좀 아는 사람.md",
+    "content/01_UX_Design/UX 방법론.md",
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
+    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/서비스 디자인 교과서.md",
+    "content/01_UX_Design/신타이포그래픽 디자인.md",
+    "content/01_UX_Design/조형의 원리.md",
+    "content/01_UX_Design/타이포그래픽 디자인.md",
+    "content/01_UX_Design/행동적 디자인.md",
+    "content/02_IT_Tech/무결성.md",
+    "content/05_Marketing_Business/KPI.md",
+    "content/06_Philosophy_Humanities/문화.md",
+    "content/06_Philosophy_Humanities/영세중립국.md",
+    "content/06_Philosophy_Humanities/표상.md",
+    "content/07_Economics_Finance/기준금리.md",
+    "content/07_Economics_Finance/배당금.md",
+    "content/08_Insights/아집이 생기는 것에 대해서.md",
+    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/01_UX_Design/디자인과 인간심리.md",
+    "content/03_AI_ML/정량적 데이터.md",
+    "content/05_Marketing_Business/업스트림.md",
+    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+  ],
+  "메모를": [
+    "content/00_Meta/제텔카스텐.md"
+  ],
+  "메모에": [
+    "content/00_Meta/제텔카스텐.md"
+  ],
+  "메모의": [
+    "content/00_Meta/제텔카스텐.md"
+  ],
+  "ARIA": [
+    "content/01_UX_Design/ARIA.md"
+  ],
+  "IA": [
+    "content/01_UX_Design/ARIA.md",
+    "content/01_UX_Design/Do it 웹 기획.md",
+    "content/01_UX_Design/IA.md",
+    "content/01_UX_Design/기획.md",
+    "content/01_UX_Design/넓고 얕은 내비게이션.md",
+    "content/01_UX_Design/단계적 노출.md",
+    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md",
+    "content/01_UX_Design/정보 구조 디자인.md",
+    "content/02_IT_Tech/POS.md",
+    "content/02_IT_Tech/가용성.md",
+    "content/02_IT_Tech/기밀성.md",
+    "content/02_IT_Tech/비즈니스 연속성 계획.md",
+    "content/02_IT_Tech/암호 알고리즘.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
+    "content/02_IT_Tech/RBAC.md"
+  ],
+  "기획": [
+    "content/01_UX_Design/ARIA.md",
+    "content/01_UX_Design/ATF.md",
+    "content/01_UX_Design/Affinity Diagram.md",
+    "content/01_UX_Design/Backchannels.md",
+    "content/01_UX_Design/Bridging.md",
+    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Do it R.md",
+    "content/01_UX_Design/Do it 웹 기획.md",
+    "content/01_UX_Design/Document Sidebar.md",
+    "content/01_UX_Design/FCP.md",
+    "content/01_UX_Design/Header.md",
+    "content/01_UX_Design/IA.md",
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
+    "content/01_UX_Design/Market Research.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/Proposing.md",
+    "content/01_UX_Design/Prototype 방향성.md",
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/01_UX_Design/SXG.md",
+    "content/01_UX_Design/Shell.md",
+    "content/01_UX_Design/TTFB.md",
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/UX 구성요소.md",
+    "content/01_UX_Design/UX 디자인 1.md",
+    "content/01_UX_Design/UX 디자인.md",
+    "content/01_UX_Design/UX 방법론.md",
+    "content/01_UX_Design/UX 품질 판단.md",
+    "content/01_UX_Design/UX 품질.md",
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
+    "content/01_UX_Design/User Flow.md",
+    "content/01_UX_Design/User Scenario.md",
+    "content/01_UX_Design/User.md",
+    "content/01_UX_Design/감성.md",
+    "content/01_UX_Design/개념적 모델.md",
+    "content/01_UX_Design/개발 디스크립션.md",
+    "content/01_UX_Design/거터.md",
+    "content/01_UX_Design/결정 경험.md",
+    "content/01_UX_Design/경험.md",
+    "content/01_UX_Design/기획.md",
+    "content/01_UX_Design/넓고 얕은 내비게이션.md",
+    "content/01_UX_Design/단계적 노출.md",
+    "content/01_UX_Design/대비.md",
+    "content/01_UX_Design/대응.md",
+    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md",
+    "content/01_UX_Design/디자인.md",
+    "content/01_UX_Design/디자인에서 중요한 것.md",
+    "content/01_UX_Design/디자인을 하는 순서.md",
+    "content/01_UX_Design/딥링크.md",
+    "content/01_UX_Design/라이트 박스.md",
+    "content/01_UX_Design/룩앤필.md",
+    "content/01_UX_Design/마법의 디자인.md",
+    "content/01_UX_Design/마이크로카피 오려두기.md",
+    "content/01_UX_Design/모바일 다이렉트 액세스.md",
+    "content/01_UX_Design/무주의 맹시.md",
+    "content/01_UX_Design/반성적 단계.md",
+    "content/01_UX_Design/반성적 디자인.md",
+    "content/01_UX_Design/변화 맹시.md",
+    "content/01_UX_Design/본능적 단계.md",
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md",
+    "content/01_UX_Design/사용성 계획.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/01_UX_Design/사용자 리서치.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/01_UX_Design/서비스 디자인 교과서.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/서비스.md",
+    "content/01_UX_Design/쉐브론.md",
+    "content/01_UX_Design/스토리보드.md",
+    "content/01_UX_Design/스토리텔링.md",
+    "content/01_UX_Design/시장 환경 조사.md",
+    "content/01_UX_Design/신타이포그래픽 디자인.md",
+    "content/01_UX_Design/심성 모형.md",
+    "content/01_UX_Design/앨런 쿠퍼.md",
+    "content/01_UX_Design/앱 레이블의 팁.md",
+    "content/01_UX_Design/어포던스.md",
+    "content/01_UX_Design/오래가는 UX 디자인.md",
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/요구사항 정의서.md",
+    "content/01_UX_Design/유연성.md",
+    "content/01_UX_Design/유용성.md",
+    "content/01_UX_Design/유효성.md",
+    "content/01_UX_Design/의미성.md",
+    "content/01_UX_Design/인간을 위한 디자인.md",
+    "content/01_UX_Design/인터랙션.md",
+    "content/01_UX_Design/인터페이스.md",
+    "content/01_UX_Design/정보 구조 디자인.md",
+    "content/01_UX_Design/정성적 데이터.md",
+    "content/01_UX_Design/조형의 원리.md",
+    "content/01_UX_Design/좋은 UX란.md",
+    "content/01_UX_Design/중요한 디자인의 원리.md",
+    "content/01_UX_Design/지연 로딩.md",
+    "content/01_UX_Design/직관성.md",
+    "content/01_UX_Design/타이포그래픽 디자인.md",
+    "content/01_UX_Design/터널 시각.md",
+    "content/01_UX_Design/퍼널.md",
+    "content/01_UX_Design/편의성.md",
+    "content/01_UX_Design/프로토타입.md",
+    "content/01_UX_Design/플로 다이어그램.md",
+    "content/01_UX_Design/피라미드 모델.md",
+    "content/01_UX_Design/학습성.md",
+    "content/01_UX_Design/행동적 단계.md",
+    "content/01_UX_Design/행동적 디자인.md",
+    "content/01_UX_Design/허브 앤 스포크.md",
+    "content/01_UX_Design/확증 편향.md",
+    "content/02_IT_Tech/워터폴.md",
+    "content/01_UX_Design/UX 기획의 기술.md",
+    "content/01_UX_Design/디자인씽킹.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md"
+  ],
+  "실제": [
+    "content/01_UX_Design/ARIA.md",
+    "content/01_UX_Design/Backchannels.md",
+    "content/01_UX_Design/Do it R.md",
+    "content/01_UX_Design/GUI.md",
+    "content/01_UX_Design/Header.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/Prototype 방향성.md",
+    "content/01_UX_Design/Shell.md",
+    "content/01_UX_Design/User Flow.md",
+    "content/01_UX_Design/개발 디스크립션.md",
+    "content/01_UX_Design/결정 경험.md",
+    "content/01_UX_Design/딥링크.md",
+    "content/01_UX_Design/라이트 박스.md",
+    "content/01_UX_Design/반성적 단계.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/심성 모형.md",
+    "content/01_UX_Design/앱 레이블의 팁.md",
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/요구사항 정의서.md",
+    "content/01_UX_Design/유연성.md",
+    "content/01_UX_Design/유용성.md",
+    "content/01_UX_Design/의미성.md",
+    "content/01_UX_Design/인간을 위한 디자인.md",
+    "content/01_UX_Design/정보 구조 디자인.md",
+    "content/01_UX_Design/좋은 UX란.md",
+    "content/01_UX_Design/지연 로딩.md",
+    "content/01_UX_Design/터널 시각.md",
+    "content/01_UX_Design/퍼널.md",
+    "content/01_UX_Design/편의성.md",
+    "content/01_UX_Design/플로 다이어그램.md",
+    "content/01_UX_Design/피라미드 모델.md",
+    "content/01_UX_Design/행동적 단계.md",
+    "content/02_IT_Tech/AES.md",
+    "content/02_IT_Tech/AJAX.md",
+    "content/02_IT_Tech/ARP.md",
+    "content/02_IT_Tech/CDO.md",
+    "content/02_IT_Tech/CIO.md",
+    "content/02_IT_Tech/CRM.md",
+    "content/02_IT_Tech/CSRF.md",
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/DRDOS.md",
+    "content/02_IT_Tech/Data Type.md",
+    "content/02_IT_Tech/EAI.md",
+    "content/02_IT_Tech/EAO.md",
+    "content/02_IT_Tech/ECC.md",
+    "content/02_IT_Tech/Edge Device.md",
+    "content/02_IT_Tech/Elgamel.md",
+    "content/02_IT_Tech/ICMP.md",
+    "content/02_IT_Tech/IGMP.md",
+    "content/02_IT_Tech/IP Sec.md",
+    "content/02_IT_Tech/IP.md",
+    "content/02_IT_Tech/JDBC.md",
+    "content/02_IT_Tech/JSON.md",
+    "content/02_IT_Tech/Kernel.md",
+    "content/02_IT_Tech/L2M.md",
+    "content/02_IT_Tech/LAS.md",
+    "content/02_IT_Tech/Land Attack.md",
+    "content/02_IT_Tech/MDC.md",
+    "content/02_IT_Tech/NAS.md",
+    "content/02_IT_Tech/ODBC.md",
+    "content/02_IT_Tech/OMT.md",
+    "content/02_IT_Tech/Plug & Play.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/Routing Protocol.md",
+    "content/02_IT_Tech/SCM.md",
+    "content/02_IT_Tech/SCR.md",
+    "content/02_IT_Tech/SEED.md",
+    "content/02_IT_Tech/SI.md",
+    "content/02_IT_Tech/SM.md",
+    "content/02_IT_Tech/SPICE.md",
+    "content/02_IT_Tech/SQL Injection.md",
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/SSL-TLS.md",
+    "content/02_IT_Tech/Session.md",
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/가상물리시스템.md",
+    "content/02_IT_Tech/객체.md",
+    "content/02_IT_Tech/게이트웨이.md",
+    "content/02_IT_Tech/경과시간.md",
+    "content/02_IT_Tech/관계성.md",
+    "content/02_IT_Tech/깨움.md",
+    "content/02_IT_Tech/네트워크 프로토콜.md",
+    "content/02_IT_Tech/논리 주소.md",
+    "content/02_IT_Tech/뉴모로픽 반도체.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/02_IT_Tech/단위 테스트.md",
+    "content/02_IT_Tech/데이터베이스.md",
+    "content/02_IT_Tech/디스패치.md",
+    "content/02_IT_Tech/디피헬만.md",
+    "content/02_IT_Tech/멤리스터.md",
+    "content/02_IT_Tech/명령문.md",
+    "content/02_IT_Tech/방화벽.md",
+    "content/02_IT_Tech/백본망.md",
+    "content/02_IT_Tech/빅데이터 분석 기사.md",
+    "content/02_IT_Tech/사이트간 위조공격.md",
+    "content/02_IT_Tech/서킷브레이커.md",
+    "content/02_IT_Tech/스키마.md",
+    "content/02_IT_Tech/안드로이드 마켓 등록.md",
+    "content/02_IT_Tech/알고리즘.md",
+    "content/02_IT_Tech/외부 환경.md",
+    "content/02_IT_Tech/워터폴.md",
+    "content/02_IT_Tech/인스턴스.md",
+    "content/02_IT_Tech/입출력발생.md",
+    "content/02_IT_Tech/자원사용율.md",
+    "content/02_IT_Tech/재사용.md",
+    "content/02_IT_Tech/정보은닉.md",
+    "content/02_IT_Tech/정보처리기사.md",
+    "content/02_IT_Tech/처리량.md",
+    "content/02_IT_Tech/캡슐화.md",
+    "content/02_IT_Tech/쿠키.md",
+    "content/02_IT_Tech/트리.md",
+    "content/02_IT_Tech/프레임워크.md",
+    "content/02_IT_Tech/프로세스 관리.md",
+    "content/02_IT_Tech/프로세스 제어 블록.md",
+    "content/02_IT_Tech/프로토콜.md",
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/Active Learning.md",
+    "content/03_AI_ML/Annotation.md",
+    "content/03_AI_ML/Atros Convolution.md",
+    "content/03_AI_ML/Attention mechanism.md",
+    "content/03_AI_ML/BERT.md",
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/Compound Scaling.md",
+    "content/03_AI_ML/Contrastive Learning.md",
+    "content/03_AI_ML/DSTC9.md",
+    "content/03_AI_ML/Downstream Task.md",
+    "content/03_AI_ML/Episodic Memory.md",
+    "content/03_AI_ML/Feature Pyramid Network.md",
+    "content/03_AI_ML/Fine-Tuning.md",
+    "content/03_AI_ML/GAN.md",
+    "content/03_AI_ML/GPT-3.md",
+    "content/03_AI_ML/GradCAM.md",
+    "content/03_AI_ML/IoU.md",
+    "content/03_AI_ML/LIME.md",
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/MNIST.md",
+    "content/03_AI_ML/Network Dessection.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Pretext Task.md",
+    "content/03_AI_ML/Q러닝.md",
+    "content/03_AI_ML/RNN-T.md",
+    "content/03_AI_ML/RNN.md",
+    "content/03_AI_ML/RPN.md",
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/Transformer.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/과적합.md",
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/마르코프 결정 프로세스.md",
+    "content/03_AI_ML/멀티에이전트 강화학습.md",
+    "content/03_AI_ML/메타학습.md",
+    "content/03_AI_ML/모델 구조.md",
+    "content/03_AI_ML/모방 강화학습.md",
+    "content/03_AI_ML/범용 인공지능.md",
+    "content/03_AI_ML/베이지안 딥러닝.md",
+    "content/03_AI_ML/베이지안 모델.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/비지도 학습.md",
+    "content/03_AI_ML/소프트맥스 정규화.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/심볼릭 추론.md",
+    "content/03_AI_ML/심화강화학습.md",
+    "content/03_AI_ML/완전히 연결된 모델.md",
+    "content/03_AI_ML/이미지넷.md",
+    "content/03_AI_ML/이상 감지.md",
+    "content/03_AI_ML/자기 지도 증강.md",
+    "content/03_AI_ML/자기 집중.md",
+    "content/03_AI_ML/자기지도학습.md",
+    "content/03_AI_ML/장면 그래프.md",
+    "content/03_AI_ML/준지도학습.md",
+    "content/03_AI_ML/지도학습.md",
+    "content/03_AI_ML/지식 증류.md",
+    "content/03_AI_ML/지식그래프.md",
+    "content/03_AI_ML/집중 매커니즘.md",
+    "content/03_AI_ML/표현 학습.md",
+    "content/03_AI_ML/퓨샷러닝.md",
+    "content/03_AI_ML/학습 역량.md",
+    "content/03_AI_ML/혼동 행렬.md",
+    "content/05_Marketing_Business/AAR 프레임.md",
+    "content/05_Marketing_Business/AARRR.md",
+    "content/05_Marketing_Business/ARPU.md",
+    "content/05_Marketing_Business/MVP.md",
+    "content/05_Marketing_Business/RTE.md",
+    "content/05_Marketing_Business/STP 전략.md",
+    "content/05_Marketing_Business/SWOT 분석.md",
+    "content/05_Marketing_Business/검색 유입.md",
+    "content/05_Marketing_Business/경로의존.md",
+    "content/05_Marketing_Business/소셜 유입.md",
+    "content/05_Marketing_Business/언택트.md",
+    "content/05_Marketing_Business/이탈률.md",
+    "content/05_Marketing_Business/인바운드 마케팅.md",
+    "content/05_Marketing_Business/전환율.md",
+    "content/05_Marketing_Business/직접 유입.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/05_Marketing_Business/팬슈머.md",
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/06_Philosophy_Humanities/감정.md",
+    "content/06_Philosophy_Humanities/길가메시.md",
+    "content/06_Philosophy_Humanities/녹서.md",
+    "content/06_Philosophy_Humanities/자기수용감각.md",
+    "content/06_Philosophy_Humanities/질병 분류표.md",
+    "content/06_Philosophy_Humanities/화석연료.md",
+    "content/07_Economics_Finance/EBITDA.md",
+    "content/07_Economics_Finance/PEG.md",
+    "content/07_Economics_Finance/보통주.md",
+    "content/07_Economics_Finance/우선주.md",
+    "content/07_Economics_Finance/현금없는 사회.md",
+    "content/08_Insights/뇌의 한계.md",
+    "content/08_Insights/사람의 특징.md",
+    "content/index.md"
+  ],
+  "이해를": [
+    "content/01_UX_Design/ARIA.md",
+    "content/01_UX_Design/Backchannels.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/User Flow.md",
+    "content/01_UX_Design/개발 디스크립션.md",
+    "content/01_UX_Design/결정 경험.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/심성 모형.md",
+    "content/01_UX_Design/앱 레이블의 팁.md",
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/요구사항 정의서.md",
+    "content/01_UX_Design/유연성.md",
+    "content/01_UX_Design/유용성.md",
+    "content/01_UX_Design/의미성.md",
+    "content/01_UX_Design/인간을 위한 디자인.md",
+    "content/01_UX_Design/지연 로딩.md",
+    "content/01_UX_Design/퍼널.md",
+    "content/01_UX_Design/편의성.md",
+    "content/01_UX_Design/피라미드 모델.md",
+    "content/02_IT_Tech/AES.md",
+    "content/02_IT_Tech/AJAX.md",
+    "content/02_IT_Tech/ARP.md",
+    "content/02_IT_Tech/CDO.md",
+    "content/02_IT_Tech/CIO.md",
+    "content/02_IT_Tech/CRM.md",
+    "content/02_IT_Tech/CSRF.md",
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/Data Type.md",
+    "content/02_IT_Tech/EAI.md",
+    "content/02_IT_Tech/EAO.md",
+    "content/02_IT_Tech/ECC.md",
+    "content/02_IT_Tech/Edge Device.md",
+    "content/02_IT_Tech/Elgamel.md",
+    "content/02_IT_Tech/ICMP.md",
+    "content/02_IT_Tech/IGMP.md",
+    "content/02_IT_Tech/IP Sec.md",
+    "content/02_IT_Tech/IP.md",
+    "content/02_IT_Tech/JDBC.md",
+    "content/02_IT_Tech/JSON.md",
+    "content/02_IT_Tech/L2M.md",
+    "content/02_IT_Tech/LAS.md",
+    "content/02_IT_Tech/Land Attack.md",
+    "content/02_IT_Tech/MDC.md",
+    "content/02_IT_Tech/ODBC.md",
+    "content/02_IT_Tech/OMT.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/Routing Protocol.md",
+    "content/02_IT_Tech/SCM.md",
+    "content/02_IT_Tech/SCR.md",
+    "content/02_IT_Tech/SEED.md",
+    "content/02_IT_Tech/SI.md",
+    "content/02_IT_Tech/SM.md",
+    "content/02_IT_Tech/SPICE.md",
+    "content/02_IT_Tech/SQL Injection.md",
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/SSL-TLS.md",
+    "content/02_IT_Tech/Session.md",
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/가상물리시스템.md",
+    "content/02_IT_Tech/객체.md",
+    "content/02_IT_Tech/경과시간.md",
+    "content/02_IT_Tech/관계성.md",
+    "content/02_IT_Tech/깨움.md",
+    "content/02_IT_Tech/네트워크 프로토콜.md",
+    "content/02_IT_Tech/뉴모로픽 반도체.md",
+    "content/02_IT_Tech/디스패치.md",
+    "content/02_IT_Tech/멤리스터.md",
+    "content/02_IT_Tech/명령문.md",
+    "content/02_IT_Tech/백본망.md",
+    "content/02_IT_Tech/사이트간 위조공격.md",
+    "content/02_IT_Tech/서킷브레이커.md",
+    "content/02_IT_Tech/스키마.md",
+    "content/02_IT_Tech/외부 환경.md",
+    "content/02_IT_Tech/워터폴.md",
+    "content/02_IT_Tech/인스턴스.md",
+    "content/02_IT_Tech/입출력발생.md",
+    "content/02_IT_Tech/자원사용율.md",
+    "content/02_IT_Tech/정보은닉.md",
+    "content/02_IT_Tech/정보처리기사.md",
+    "content/02_IT_Tech/처리량.md",
+    "content/02_IT_Tech/캡슐화.md",
+    "content/02_IT_Tech/쿠키.md",
+    "content/02_IT_Tech/프레임워크.md",
+    "content/02_IT_Tech/프로세스 관리.md",
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/Active Learning.md",
+    "content/03_AI_ML/Annotation.md",
+    "content/03_AI_ML/Atros Convolution.md",
+    "content/03_AI_ML/Attention mechanism.md",
+    "content/03_AI_ML/BERT.md",
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/Compound Scaling.md",
+    "content/03_AI_ML/Contrastive Learning.md",
+    "content/03_AI_ML/DSTC9.md",
+    "content/03_AI_ML/Downstream Task.md",
+    "content/03_AI_ML/Episodic Memory.md",
+    "content/03_AI_ML/Feature Pyramid Network.md",
+    "content/03_AI_ML/Fine-Tuning.md",
+    "content/03_AI_ML/GAN.md",
+    "content/03_AI_ML/GPT-3.md",
+    "content/03_AI_ML/IoU.md",
+    "content/03_AI_ML/LIME.md",
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/MNIST.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Pretext Task.md",
+    "content/03_AI_ML/Q러닝.md",
+    "content/03_AI_ML/RNN-T.md",
+    "content/03_AI_ML/RPN.md",
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/과적합.md",
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/마르코프 결정 프로세스.md",
+    "content/03_AI_ML/메타학습.md",
+    "content/03_AI_ML/모방 강화학습.md",
+    "content/03_AI_ML/범용 인공지능.md",
+    "content/03_AI_ML/베이지안 모델.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/비지도 학습.md",
+    "content/03_AI_ML/소프트맥스 정규화.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/심화강화학습.md",
+    "content/03_AI_ML/이미지넷.md",
+    "content/03_AI_ML/이상 감지.md",
+    "content/03_AI_ML/자기 집중.md",
+    "content/03_AI_ML/자기지도학습.md",
+    "content/03_AI_ML/준지도학습.md",
+    "content/03_AI_ML/지도학습.md",
+    "content/03_AI_ML/지식그래프.md",
+    "content/03_AI_ML/표현 학습.md",
+    "content/03_AI_ML/퓨샷러닝.md",
+    "content/03_AI_ML/학습 역량.md",
+    "content/05_Marketing_Business/AAR 프레임.md",
+    "content/05_Marketing_Business/AARRR.md",
+    "content/05_Marketing_Business/STP 전략.md",
+    "content/05_Marketing_Business/SWOT 분석.md",
+    "content/05_Marketing_Business/경로의존.md",
+    "content/05_Marketing_Business/언택트.md",
+    "content/05_Marketing_Business/이탈률.md",
+    "content/05_Marketing_Business/인바운드 마케팅.md",
+    "content/05_Marketing_Business/전환율.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/06_Philosophy_Humanities/질병 분류표.md",
+    "content/07_Economics_Finance/보통주.md",
+    "content/07_Economics_Finance/우선주.md",
+    "content/index.md"
+  ],
+  "ATF": [
+    "content/01_UX_Design/ATF.md"
+  ],
+  "두번째": [
+    "content/01_UX_Design/ATF.md"
+  ],
+  "있었다": [
+    "content/01_UX_Design/ATF.md"
+  ],
+  "중요한": [
+    "content/01_UX_Design/ATF.md",
+    "content/03_AI_ML/Attention mechanism.md"
+  ],
+  "Affinity Diagram": [
+    "content/01_UX_Design/Affinity Diagram.md"
+  ],
+  "가장": [
+    "content/01_UX_Design/Affinity Diagram.md",
+    "content/01_UX_Design/퍼소나.md",
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/LFU.md",
+    "content/02_IT_Tech/LRU.md",
+    "content/02_IT_Tech/OPT.md",
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/06_Philosophy_Humanities/생각의 탄생.md",
+    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md",
+    "content/07_Economics_Finance/존리의 부자되기 습관.md",
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+  ],
+  "개괄": [
+    "content/01_UX_Design/Affinity Diagram.md"
+  ],
+  "다양한": [
+    "content/01_UX_Design/Affinity Diagram.md",
+    "content/01_UX_Design/Do it R.md",
+    "content/03_AI_ML/LIME.md"
+  ],
+  "Backchannels": [
+    "content/01_UX_Design/Backchannels.md"
+  ],
+  "인공지능": [
+    "content/01_UX_Design/Backchannels.md",
+    "content/02_IT_Tech/EAO.md",
+    "content/02_IT_Tech/L2M.md",
+    "content/02_IT_Tech/LAS.md",
+    "content/02_IT_Tech/멤리스터.md",
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/Atros Convolution.md",
+    "content/03_AI_ML/BERT.md",
+    "content/03_AI_ML/Episodic Memory.md",
+    "content/03_AI_ML/Feature Pyramid Network.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/딥러닝.md",
+    "content/03_AI_ML/마르코프 결정 프로세스.md",
+    "content/03_AI_ML/범용 인공지능.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/이미지넷.md",
+    "content/03_AI_ML/지식그래프.md",
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
+    "content/03_AI_ML/인공지능.md"
+  ],
+  "Bridging": [
+    "content/01_UX_Design/Bridging.md"
+  ],
+  "결제": [
+    "content/01_UX_Design/Bridging.md",
+    "content/02_IT_Tech/NFC.md",
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/01_UX_Design/모바일 결제 사례 리서치.md"
+  ],
+  "예시": [
+    "content/01_UX_Design/Bridging.md",
+    "content/03_AI_ML/전용 인공지능.md"
+  ],
+  "CJM": [
+    "content/01_UX_Design/Bridging.md",
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
+    "content/01_UX_Design/Proposing.md",
+    "content/01_UX_Design/User Scenario.md",
+    "content/01_UX_Design/기획.md",
+    "content/01_UX_Design/서비스 기획자.md"
+  ],
+  "Custom CSS ": [
+    "content/01_UX_Design/Custom CSS .md"
+  ],
+  "KR": [
+    "content/01_UX_Design/Custom CSS .md"
+  ],
+  "SD": [
+    "content/01_UX_Design/Custom CSS .md"
+  ],
+  "Do it R": [
+    "content/01_UX_Design/Do it R.md"
+  ],
+  "전문": [
+    "content/01_UX_Design/Do it R.md"
+  ],
+  "데이터": [
+    "content/01_UX_Design/Do it R.md",
+    "content/01_UX_Design/정성적 데이터.md",
+    "content/02_IT_Tech/DCL.md",
+    "content/02_IT_Tech/DDL.md",
+    "content/02_IT_Tech/DML.md",
+    "content/02_IT_Tech/OLAP.md",
+    "content/02_IT_Tech/SQL 문법.md",
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/객체지향.md",
+    "content/02_IT_Tech/데이터 흐름도.md",
+    "content/02_IT_Tech/데이터베이스.md",
+    "content/02_IT_Tech/라우터.md",
+    "content/02_IT_Tech/스위치.md",
+    "content/02_IT_Tech/작업.md",
+    "content/02_IT_Tech/절차형 SQL.md",
+    "content/03_AI_ML/Contrastive Learning.md",
+    "content/03_AI_ML/데이터.md",
+    "content/03_AI_ML/변동성.md",
+    "content/01_UX_Design/Data Driven UX.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md",
+    "content/03_AI_ML/인공지능.md"
+  ],
+  "Do it 웹 기획": [
+    "content/01_UX_Design/Do it 웹 기획.md"
+  ],
+  "설계": [
+    "content/01_UX_Design/Do it 웹 기획.md",
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/02_IT_Tech/CALS.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/02_IT_Tech/디자인 패턴.md"
+  ],
+  "어떤": [
+    "content/01_UX_Design/Do it 웹 기획.md",
+    "content/01_UX_Design/어포던스.md",
+    "content/01_UX_Design/유용성.md",
+    "content/06_Philosophy_Humanities/본질.md",
+    "content/06_Philosophy_Humanities/철학.md",
+    "content/06_Philosophy_Humanities/동물농장.md",
+    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/07_Economics_Finance/넛지.md"
+  ],
+  "요구": [
+    "content/01_UX_Design/Do it 웹 기획.md",
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/02_IT_Tech/요구 사항 분석.md"
+  ],
+  "Document Sidebar": [
+    "content/01_UX_Design/Document Sidebar.md"
+  ],
+  "개발": [
+    "content/01_UX_Design/Document Sidebar.md",
+    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md",
+    "content/02_IT_Tech/Agile.md",
+    "content/02_IT_Tech/CALS.md"
+  ],
+  "기술": [
+    "content/01_UX_Design/Document Sidebar.md",
+    "content/02_IT_Tech/가상화.md",
+    "content/02_IT_Tech/요구 사항 분석.md",
+    "content/01_UX_Design/모바일 결제 사례 리서치.md",
+    "content/06_Philosophy_Humanities/적정기술.md"
+  ],
+  "FCP": [
+    "content/01_UX_Design/FCP.md",
+    "content/02_IT_Tech/응답시간.md"
+  ],
+  "기준": [
+    "content/01_UX_Design/FCP.md",
+    "content/01_UX_Design/TTFB.md",
+    "content/01_UX_Design/User.md",
+    "content/02_IT_Tech/인수 테스트.md"
+  ],
+  "이하": [
+    "content/01_UX_Design/FCP.md"
+  ],
+  "SVG": [
+    "content/01_UX_Design/FCP.md"
+  ],
+  "FGI": [
+    "content/01_UX_Design/FGI.md",
+    "content/01_UX_Design/user research basic.md",
+    "content/02_IT_Tech/관계모형.md"
+  ],
+  "ux": [
+    "content/01_UX_Design/FGI.md",
+    "content/01_UX_Design/GUI.md",
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
+    "content/01_UX_Design/맥락 인터뷰.md",
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md"
+  ],
+  "질문": [
+    "content/01_UX_Design/FGI.md"
+  ],
+  "마케팅": [
+    "content/01_UX_Design/FGI.md",
+    "content/01_UX_Design/UX 디자인.md",
+    "content/01_UX_Design/오래가는 UX 디자인.md",
+    "content/01_UX_Design/확증 편향.md",
+    "content/02_IT_Tech/CRM.md",
+    "content/05_Marketing_Business/AARRR.md",
+    "content/05_Marketing_Business/ARPU.md",
+    "content/05_Marketing_Business/Acqusition.md",
+    "content/05_Marketing_Business/CAC.md",
+    "content/05_Marketing_Business/Carrying capacity.md",
+    "content/05_Marketing_Business/Digital Side Effect.md",
+    "content/05_Marketing_Business/KPI.md",
+    "content/05_Marketing_Business/MVP.md",
+    "content/05_Marketing_Business/STP 전략.md",
+    "content/05_Marketing_Business/SWOT 분석.md",
+    "content/05_Marketing_Business/검색 유입.md",
+    "content/05_Marketing_Business/경로독점.md",
+    "content/05_Marketing_Business/경로의 저주.md",
+    "content/05_Marketing_Business/경로의존.md",
+    "content/05_Marketing_Business/구글의 열가지 철학.md",
+    "content/05_Marketing_Business/구별짓기.md",
+    "content/05_Marketing_Business/내러티브 자본.md",
+    "content/05_Marketing_Business/롱테일.md",
+    "content/05_Marketing_Business/리텐션.md",
+    "content/05_Marketing_Business/마진.md",
+    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
+    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/05_Marketing_Business/브랜딩.md",
+    "content/05_Marketing_Business/브이노믹스.md",
+    "content/05_Marketing_Business/소셜 유입.md",
+    "content/05_Marketing_Business/소셜딜레마.md",
+    "content/05_Marketing_Business/언택트.md",
+    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md",
+    "content/05_Marketing_Business/이탈률.md",
+    "content/05_Marketing_Business/인바운드 마케팅.md",
+    "content/05_Marketing_Business/전환율.md",
+    "content/05_Marketing_Business/직접 유입.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/05_Marketing_Business/팬슈머.md",
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
+    "content/01_UX_Design/감성 디자인.md",
+    "content/05_Marketing_Business/그로스 해킹.md",
+    "content/05_Marketing_Business/업스트림.md",
+    "content/05_Marketing_Business/코호트.md",
+    "content/05_Marketing_Business/파이프라인.md",
+    "content/08_Insights/블로그 글쓰기.md"
+  ],
+  "사용성": [
+    "content/01_UX_Design/FGI.md",
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/01_UX_Design/사용성 테스트.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/유효성.md",
+    "content/01_UX_Design/직관성.md"
+  ],
+  "상황별": [
+    "content/01_UX_Design/FGI.md",
+    "content/01_UX_Design/맥락 인터뷰.md"
+  ],
+  "포커스": [
+    "content/01_UX_Design/FGI.md"
+  ],
+  "GUI": [
+    "content/01_UX_Design/GUI.md",
+    "content/01_UX_Design/Shell.md"
+  ],
+  "ui": [
+    "content/01_UX_Design/GUI.md"
+  ],
+  "같은": [
+    "content/01_UX_Design/GUI.md",
+    "content/01_UX_Design/룩앤필.md",
+    "content/02_IT_Tech/다형성.md",
+    "content/02_IT_Tech/대칭키 암호화.md",
+    "content/03_AI_ML/RNN.md",
+    "content/06_Philosophy_Humanities/자기동일성.md",
+    "content/02_IT_Tech/Float Type.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md",
+    "content/05_Marketing_Business/업스트림.md"
+  ],
+  "Header": [
+    "content/01_UX_Design/Header.md"
+  ],
+  "H1": [
+    "content/01_UX_Design/Header.md"
+  ],
+  "H2": [
+    "content/01_UX_Design/Header.md"
+  ],
+  "H3": [
+    "content/01_UX_Design/Header.md"
+  ],
+  "검색": [
+    "content/01_UX_Design/IA.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/05_Marketing_Business/Acqusition.md",
+    "content/05_Marketing_Business/검색 유입.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md"
+  ],
+  "범위를": [
+    "content/01_UX_Design/IA.md",
+    "content/02_IT_Tech/요구 사항 분석.md"
+  ],
+  "정보의": [
+    "content/01_UX_Design/IA.md",
+    "content/01_UX_Design/디자인을 하는 순서.md"
+  ],
+  "IT 좀 아는 사람": [
+    "content/01_UX_Design/IT 좀 아는 사람.md"
+  ],
+  "it": [
+    "content/01_UX_Design/IT 좀 아는 사람.md"
+  ],
+  "구글": [
+    "content/01_UX_Design/IT 좀 아는 사람.md"
+  ],
+  "다른": [
+    "content/01_UX_Design/IT 좀 아는 사람.md",
+    "content/01_UX_Design/무주의 맹시.md",
+    "content/01_UX_Design/변화 맹시.md",
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/01_UX_Design/어포던스.md",
+    "content/01_UX_Design/확증 편향.md",
+    "content/02_IT_Tech/DBMS.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md",
+    "content/03_AI_ML/표현 학습.md",
+    "content/06_Philosophy_Humanities/RNA.md",
+    "content/06_Philosophy_Humanities/철학대철학.md",
+    "content/07_Economics_Finance/민영화.md",
+    "content/06_Philosophy_Humanities/소쉬르.md"
+  ],
+  "많이": [
+    "content/01_UX_Design/IT 좀 아는 사람.md",
+    "content/07_Economics_Finance/민영화.md"
+  ],
+  "추천": [
+    "content/01_UX_Design/IT 좀 아는 사람.md"
+  ],
+  "발견": [
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md"
+  ],
+  "과정을": [
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md"
+  ],
+  "Market Research": [
+    "content/01_UX_Design/Market Research.md"
+  ],
+  "시장": [
+    "content/01_UX_Design/Market Research.md"
+  ],
+  "전략": [
+    "content/01_UX_Design/Market Research.md",
+    "content/05_Marketing_Business/구별짓기.md",
+    "content/05_Marketing_Business/브랜드 3.0.md"
+  ],
+  "STP": [
+    "content/01_UX_Design/Market Research.md",
+    "content/05_Marketing_Business/STP 전략.md"
+  ],
+  "Needs VS Wants": [
+    "content/01_UX_Design/Needs VS Wants.md"
+  ],
+  "등이": [
+    "content/01_UX_Design/Needs VS Wants.md"
+  ],
+  "Proposing": [
+    "content/01_UX_Design/Proposing.md"
+  ],
+  "근거": [
+    "content/01_UX_Design/Proposing.md"
+  ],
+  "PRD": [
+    "content/01_UX_Design/Proposing.md",
+    "content/01_UX_Design/Requirement Specification.md"
+  ],
+  "RFC": [
+    "content/01_UX_Design/Proposing.md"
+  ],
+  "Prototype 방향성": [
+    "content/01_UX_Design/Prototype 방향성.md"
+  ],
+  "약물": [
+    "content/01_UX_Design/Prototype 방향성.md"
+  ],
+  "방향성": [
+    "content/01_UX_Design/Prototype 방향성.md"
+  ],
+  "QA": [
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/02_IT_Tech/시스템 테스트.md",
+    "content/02_IT_Tech/품질관리.md"
+  ],
+  "MVP": [
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/01_UX_Design/서비스.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/05_Marketing_Business/MVP.md",
+    "content/01_UX_Design/디자인씽킹.md"
+  ],
+  "무엇을": [
+    "content/01_UX_Design/Requirement Specification.md"
+  ],
+  "SXG": [
+    "content/01_UX_Design/SXG.md"
+  ],
+  "전달": [
+    "content/01_UX_Design/SXG.md"
+  ],
+  "전달된": [
+    "content/01_UX_Design/SXG.md"
+  ],
+  "관계없이": [
+    "content/01_UX_Design/SXG.md"
+  ],
+  "Shell": [
+    "content/01_UX_Design/Shell.md"
+  ],
+  "CLI": [
+    "content/01_UX_Design/Shell.md",
+    "content/02_IT_Tech/DBMS.md",
+    "content/02_IT_Tech/운영체제.md"
+  ],
+  "TTFB": [
+    "content/01_UX_Design/TTFB.md"
+  ],
+  "서버": [
+    "content/01_UX_Design/TTFB.md",
+    "content/02_IT_Tech/세션.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md"
+  ],
+  "속도": [
+    "content/01_UX_Design/TTFB.md",
+    "content/01_UX_Design/룩앤필.md"
+  ],
+  "시간": [
+    "content/01_UX_Design/TTFB.md",
+    "content/02_IT_Tech/비즈니스 연속성 계획.md",
+    "content/02_IT_Tech/스케줄링.md",
+    "content/02_IT_Tech/신뢰성.md",
+    "content/02_IT_Tech/응답시간.md",
+    "content/02_IT_Tech/프로세스.md",
+    "content/07_Economics_Finance/하버드 시간관리.md",
+    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+  ],
+  "이것이": [
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/UX 디자인 1.md"
+  ],
+  "작성중": [
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/UX 디자인 1.md"
+  ],
+  "정보를": [
+    "content/01_UX_Design/UI.md",
+    "content/02_IT_Tech/RFID.md",
+    "content/02_IT_Tech/VAN.md",
+    "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md"
+  ],
+  "UX 구성요소": [
+    "content/01_UX_Design/UX 구성요소.md"
+  ],
+  "경험": [
+    "content/01_UX_Design/UX 구성요소.md",
+    "content/01_UX_Design/경험.md",
+    "content/01_UX_Design/서비스.md",
+    "content/01_UX_Design/오래가는 UX 디자인.md",
+    "content/08_Insights/면접 바이블.md"
+  ],
+  "동기": [
+    "content/01_UX_Design/UX 구성요소.md"
+  ],
+  "맥락": [
+    "content/01_UX_Design/UX 구성요소.md"
+  ],
+  "UX 디자인 1": [
+    "content/01_UX_Design/UX 디자인 1.md"
+  ],
+  "새롭게": [
+    "content/01_UX_Design/UX 디자인 1.md"
+  ],
+  "UX 디자인 7가지 비밀": [
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md"
+  ],
+  "모든": [
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
+    "content/01_UX_Design/신타이포그래픽 디자인.md",
+    "content/01_UX_Design/타이포그래픽 디자인.md",
+    "content/05_Marketing_Business/구글의 열가지 철학.md",
+    "content/06_Philosophy_Humanities/철학.md",
+    "content/06_Philosophy_Humanities/행복.md",
+    "content/01_UX_Design/마이크로카피.md",
+    "content/06_Philosophy_Humanities/동물농장.md"
+  ],
+  "태스크": [
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md"
+  ],
+  "UX 디자인": [
+    "content/01_UX_Design/UX 디자인.md"
+  ],
+  "경험을": [
+    "content/01_UX_Design/UX 디자인.md"
+  ],
+  "사용자": [
+    "content/01_UX_Design/UX 디자인.md",
+    "content/01_UX_Design/user research basic.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/퍼소나.md",
+    "content/02_IT_Tech/관계모형.md",
+    "content/02_IT_Tech/시스템 테스트.md",
+    "content/02_IT_Tech/작업.md",
+    "content/01_UX_Design/USER RESEARCH.md",
+    "content/01_UX_Design/UX 기획의 기술.md"
+  ],
+  "UX 방법론": [
+    "content/01_UX_Design/UX 방법론.md"
+  ],
+  "문제를": [
+    "content/01_UX_Design/UX 방법론.md",
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md",
+    "content/03_AI_ML/연합학습.md",
+    "content/05_Marketing_Business/업스트림.md",
+    "content/08_Insights/블로그 글쓰기.md"
+  ],
+  "방법을": [
+    "content/01_UX_Design/UX 방법론.md"
+  ],
+  "UX 품질 판단": [
+    "content/01_UX_Design/UX 품질 판단.md"
+  ],
+  "낫다": [
+    "content/01_UX_Design/UX 품질 판단.md"
+  ],
+  "서로": [
+    "content/01_UX_Design/UX 품질 판단.md",
+    "content/01_UX_Design/신타이포그래픽 디자인.md",
+    "content/01_UX_Design/타이포그래픽 디자인.md",
+    "content/02_IT_Tech/DBMS.md"
+  ],
+  "선택": [
+    "content/01_UX_Design/UX 품질 판단.md",
+    "content/01_UX_Design/UX 품질.md",
+    "content/02_IT_Tech/나씨-슈나이더만.md",
+    "content/07_Economics_Finance/넛지.md"
+  ],
+  "이게": [
+    "content/01_UX_Design/UX 품질 판단.md"
+  ],
+  "UX 품질": [
+    "content/01_UX_Design/UX 품질.md"
+  ],
+  "어느": [
+    "content/01_UX_Design/UX 품질.md"
+  ],
+  "따라서": [
+    "content/01_UX_Design/UX 품질.md"
+  ],
+  "UX 피라미드": [
+    "content/01_UX_Design/UX 피라미드.md"
+  ],
+  "감성": [
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/01_UX_Design/감성.md"
+  ],
+  "신뢰성": [
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/02_IT_Tech/신뢰성.md"
+  ],
+  "UXUI의 10가지 심리학 법칙": [
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md"
+  ],
+  "법칙": [
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
+    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/01_UX_Design/UX  불변의 법칙.md"
+  ],
+  "비슷한": [
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md"
+  ],
+  "User Flow": [
+    "content/01_UX_Design/User Flow.md"
+  ],
+  "업무": [
+    "content/01_UX_Design/User Flow.md",
+    "content/02_IT_Tech/비즈니스 연속성 계획.md",
+    "content/07_Economics_Finance/하버드 시간관리.md",
+    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+  ],
+  "User Scenario": [
+    "content/01_UX_Design/User Scenario.md"
+  ],
+  "목표": [
+    "content/01_UX_Design/User Scenario.md",
+    "content/01_UX_Design/마음을 생각하는 디자인.md"
+  ],
+  "성공": [
+    "content/01_UX_Design/User Scenario.md"
+  ],
+  "확인": [
+    "content/01_UX_Design/User Scenario.md"
+  ],
+  "User": [
+    "content/01_UX_Design/User.md"
+  ],
+  "성향": [
+    "content/01_UX_Design/User.md"
+  ],
+  "있음": [
+    "content/01_UX_Design/User.md",
+    "content/01_UX_Design/시장 환경 조사.md"
+  ],
+  "user research basic": [
+    "content/01_UX_Design/user research basic.md"
+  ],
+  "대한": [
+    "content/01_UX_Design/user research basic.md",
+    "content/01_UX_Design/반성적 디자인.md",
+    "content/01_UX_Design/행동적 디자인.md",
+    "content/02_IT_Tech/고립화 수준.md",
+    "content/02_IT_Tech/관계모형.md",
+    "content/02_IT_Tech/절차형 SQL.md",
+    "content/03_AI_ML/지도학습.md",
+    "content/05_Marketing_Business/AB Testing.md",
+    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md",
+    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+  ],
+  "SUS": [
+    "content/01_UX_Design/user research basic.md",
+    "content/01_UX_Design/시스템 사용성 척도.md"
+  ],
+  "수행할": [
+    "content/01_UX_Design/user research basic.md"
+  ],
+  "감성을": [
+    "content/01_UX_Design/감성.md"
+  ],
+  "감성이": [
+    "content/01_UX_Design/감성.md"
+  ],
+  "피라미드": [
+    "content/01_UX_Design/감성.md"
+  ],
+  "개념적 모델": [
+    "content/01_UX_Design/개념적 모델.md"
+  ],
+  "모델": [
+    "content/01_UX_Design/개념적 모델.md",
+    "content/01_UX_Design/프로토타입.md",
+    "content/01_UX_Design/피라미드 모델.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/02_IT_Tech/네트워크.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/02_IT_Tech/서버 접근 통제.md",
+    "content/03_AI_ML/A.I. Guideline.md",
+    "content/03_AI_ML/ROC 곡선.md",
+    "content/03_AI_ML/Transformer.md",
+    "content/03_AI_ML/모델 프리.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/완전히 연결된 모델.md"
+  ],
+  "개념적": [
+    "content/01_UX_Design/개념적 모델.md"
+  ],
+  "개발 디스크립션": [
+    "content/01_UX_Design/개발 디스크립션.md"
+  ],
+  "와이어프레임": [
+    "content/01_UX_Design/개발 디스크립션.md",
+    "content/01_UX_Design/스토리보드.md",
+    "content/01_UX_Design/와이어프레임.md"
+  ],
+  "거터": [
+    "content/01_UX_Design/거터.md"
+  ],
+  "마진": [
+    "content/01_UX_Design/거터.md",
+    "content/05_Marketing_Business/마진.md"
+  ],
+  "콘텐츠": [
+    "content/01_UX_Design/거터.md",
+    "content/02_IT_Tech/저작권.md",
+    "content/01_UX_Design/UX 기획의 기술.md"
+  ],
+  "콘텐츠와": [
+    "content/01_UX_Design/거터.md"
+  ],
+  "결정 경험": [
+    "content/01_UX_Design/결정 경험.md"
+  ],
+  "해야": [
+    "content/01_UX_Design/기획.md"
+  ],
+  "KPI": [
+    "content/01_UX_Design/기획.md",
+    "content/02_IT_Tech/세션.md",
+    "content/05_Marketing_Business/ARPPU.md",
+    "content/05_Marketing_Business/KPI.md",
+    "content/05_Marketing_Business/마진.md",
+    "content/05_Marketing_Business/브이노믹스.md",
+    "content/05_Marketing_Business/코호트.md"
+  ],
+  "것인가": [
+    "content/01_UX_Design/기획.md",
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md"
+  ],
+  "넓고 얕은 내비게이션": [
+    "content/01_UX_Design/넓고 얕은 내비게이션.md"
+  ],
+  "구조": [
+    "content/01_UX_Design/넓고 얕은 내비게이션.md",
+    "content/01_UX_Design/정보 구조 디자인.md",
+    "content/02_IT_Tech/디자인 패턴.md",
+    "content/03_AI_ML/모델 구조.md",
+    "content/05_Marketing_Business/내러티브 자본.md"
+  ],
+  "넓고": [
+    "content/01_UX_Design/넓고 얕은 내비게이션.md"
+  ],
+  "번에": [
+    "content/01_UX_Design/넓고 얕은 내비게이션.md",
+    "content/01_UX_Design/단계적 노출.md"
+  ],
+  "단계적 노출": [
+    "content/01_UX_Design/단계적 노출.md"
+  ],
+  "노출": [
+    "content/01_UX_Design/단계적 노출.md"
+  ],
+  "대비": [
+    "content/01_UX_Design/대비.md",
+    "content/05_Marketing_Business/ROAS.md"
+  ],
+  "AA": [
+    "content/01_UX_Design/대비.md"
+  ],
+  "맹시": [
+    "content/01_UX_Design/대비.md",
+    "content/01_UX_Design/무주의 맹시.md",
+    "content/01_UX_Design/변화 맹시.md"
+  ],
+  "명도": [
+    "content/01_UX_Design/대비.md"
+  ],
+  "대응": [
+    "content/01_UX_Design/대응.md"
+  ],
+  "관한": [
+    "content/01_UX_Design/대응.md"
+  ],
+  "눈에": [
+    "content/01_UX_Design/대응.md"
+  ],
+  "있지": [
+    "content/01_UX_Design/대응.md"
+  ],
+  "PC": [
+    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md",
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/형상 관리 도구.md"
+  ],
+  "CSS": [
+    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md"
+  ],
+  "글꼴을": [
+    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md"
+  ],
+  "마크업": [
+    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md"
+  ],
+  "이미지": [
+    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md",
+    "content/03_AI_ML/GradCAM.md"
+  ],
+  "합니다": [
+    "content/01_UX_Design/디자이너가 묻고 개발자가 답하는 웹 이야기.md",
+    "content/01_UX_Design/사용성 테스트.md"
+  ],
+  "디자인 까리하게 하기": [
+    "content/01_UX_Design/디자인 까리하게 하기.md"
+  ],
+  "설정": [
+    "content/01_UX_Design/디자인 까리하게 하기.md",
+    "content/01_UX_Design/디자인을 하는 순서.md",
+    "content/01_UX_Design/마법의 디자인.md"
+  ],
+  "조형": [
+    "content/01_UX_Design/디자인 까리하게 하기.md"
+  ],
+  "POP": [
+    "content/01_UX_Design/디자인 까리하게 하기.md",
+    "content/01_UX_Design/마법의 디자인.md"
+  ],
+  "여백의": [
+    "content/01_UX_Design/디자인 까리하게 하기.md",
+    "content/01_UX_Design/마법의 디자인.md"
+  ],
+  "디자인 선택하는 방법 및 만족": [
+    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md"
+  ],
+  "만족": [
+    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md"
+  ],
+  "이름": [
+    "content/01_UX_Design/디자인 선택하는 방법 및 만족.md"
+  ],
+  "기쁨을": [
+    "content/01_UX_Design/디자인.md"
+  ],
+  "이상의": [
+    "content/01_UX_Design/디자인.md"
+  ],
+  "전달할": [
+    "content/01_UX_Design/디자인.md"
+  ],
+  "하거나": [
+    "content/01_UX_Design/디자인.md"
+  ],
+  "디자인에서 중요한 것": [
+    "content/01_UX_Design/디자인에서 중요한 것.md"
+  ],
+  "SM": [
+    "content/01_UX_Design/디자인에서 중요한 것.md",
+    "content/02_IT_Tech/SM.md"
+  ],
+  "했다": [
+    "content/01_UX_Design/디자인에서 중요한 것.md"
+  ],
+  "새로운": [
+    "content/01_UX_Design/디자인에서 중요한 것.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+  ],
+  "디자인을 하는 순서": [
+    "content/01_UX_Design/디자인을 하는 순서.md"
+  ],
+  "CHECK": [
+    "content/01_UX_Design/디자인을 하는 순서.md",
+    "content/01_UX_Design/중요한 디자인의 원리.md"
+  ],
+  "딥링크": [
+    "content/01_UX_Design/딥링크.md"
+  ],
+  "URL": [
+    "content/01_UX_Design/딥링크.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md",
+    "content/05_Marketing_Business/직접 유입.md"
+  ],
+  "라이트 박스": [
+    "content/01_UX_Design/라이트 박스.md"
+  ],
+  "박스": [
+    "content/01_UX_Design/라이트 박스.md"
+  ],
+  "룩앤필": [
+    "content/01_UX_Design/룩앤필.md"
+  ],
+  "반응": [
+    "content/01_UX_Design/룩앤필.md"
+  ],
+  "마법의 디자인": [
+    "content/01_UX_Design/마법의 디자인.md"
+  ],
+  "마이크로카피 오려두기": [
+    "content/01_UX_Design/마이크로카피 오려두기.md"
+  ],
+  "또는": [
+    "content/01_UX_Design/마이크로카피 오려두기.md",
+    "content/01_UX_Design/사용성 테스트.md",
+    "content/01_UX_Design/어포던스.md",
+    "content/02_IT_Tech/결합도.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/연합학습.md",
+    "content/05_Marketing_Business/AB Testing.md",
+    "content/05_Marketing_Business/고객 생애 가치.md"
+  ],
+  "입력": [
+    "content/01_UX_Design/마이크로카피 오려두기.md",
+    "content/03_AI_ML/GradCAM.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/모델 구조.md",
+    "content/03_AI_ML/집중 매커니즘.md"
+  ],
+  "폼에": [
+    "content/01_UX_Design/마이크로카피 오려두기.md"
+  ],
+  "WOW": [
+    "content/01_UX_Design/마이크로카피 오려두기.md"
+  ],
+  "맥락 인터뷰": [
+    "content/01_UX_Design/맥락 인터뷰.md"
+  ],
+  "자신의": [
+    "content/01_UX_Design/맥락 인터뷰.md",
+    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/07_Economics_Finance/인간 본성의 법칙.md"
+  ],
+  "작업을": [
+    "content/01_UX_Design/맥락 인터뷰.md",
+    "content/01_UX_Design/첫 클릭 테스트.md"
+  ],
+  "사용자가": [
+    "content/01_UX_Design/맥락 인터뷰.md"
+  ],
+  "모바일 다이렉트 액세스": [
+    "content/01_UX_Design/모바일 다이렉트 액세스.md"
+  ],
+  "직접": [
+    "content/01_UX_Design/모바일 다이렉트 액세스.md",
+    "content/02_IT_Tech/DRDOS.md",
+    "content/02_IT_Tech/Plug & Play.md",
+    "content/05_Marketing_Business/언택트.md",
+    "content/05_Marketing_Business/직접 유입.md",
+    "content/05_Marketing_Business/팬슈머.md",
+    "content/07_Economics_Finance/퇴직연금.md"
+  ],
+  "모바일": [
+    "content/01_UX_Design/모바일 다이렉트 액세스.md"
+  ],
+  "무주의 맹시": [
+    "content/01_UX_Design/무주의 맹시.md"
+  ],
+  "인지": [
+    "content/01_UX_Design/무주의 맹시.md",
+    "content/01_UX_Design/변화 맹시.md"
+  ],
+  "반성적 단계": [
+    "content/01_UX_Design/반성적 단계.md"
+  ],
+  "단계": [
+    "content/01_UX_Design/반성적 단계.md",
+    "content/01_UX_Design/본능적 단계.md",
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/01_UX_Design/행동적 단계.md",
+    "content/02_IT_Tech/CMMI.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/01_UX_Design/디자인씽킹.md"
+  ],
+  "반성적": [
+    "content/01_UX_Design/반성적 단계.md",
+    "content/01_UX_Design/반성적 디자인.md",
+    "content/01_UX_Design/감성 디자인.md"
+  ],
+  "반성적 디자인": [
+    "content/01_UX_Design/반성적 디자인.md"
+  ],
+  "제품을": [
+    "content/01_UX_Design/반성적 디자인.md"
+  ],
+  "변화 맹시": [
+    "content/01_UX_Design/변화 맹시.md"
+  ],
+  "변화": [
+    "content/01_UX_Design/변화 맹시.md"
+  ],
+  "본능적 단계": [
+    "content/01_UX_Design/본능적 단계.md"
+  ],
+  "단계는": [
+    "content/01_UX_Design/본능적 단계.md"
+  ],
+  "본능적": [
+    "content/01_UX_Design/본능적 단계.md",
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/01_UX_Design/감성 디자인.md"
+  ],
+  "본능적 디자인": [
+    "content/01_UX_Design/본능적 디자인.md"
+  ],
+  "이러한": [
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/03_AI_ML/모델 프리.md"
+  ],
+  "사람들에게 쉬운 것이 오래간다": [
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md"
+  ],
+  "말을": [
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md"
+  ],
+  "쉬운": [
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md"
+  ],
+  "오래간다": [
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md"
+  ],
+  "사용성 계획": [
+    "content/01_UX_Design/사용성 계획.md"
+  ],
+  "계획을": [
+    "content/01_UX_Design/사용성 계획.md"
+  ],
+  "목표를": [
+    "content/01_UX_Design/사용성 계획.md",
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+  ],
+  "연구의": [
+    "content/01_UX_Design/사용성 계획.md"
+  ],
+  "사용성 테스트": [
+    "content/01_UX_Design/사용성 테스트.md"
+  ],
+  "테스트": [
+    "content/01_UX_Design/사용성 테스트.md",
+    "content/01_UX_Design/직관성.md",
+    "content/02_IT_Tech/Debugging.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/02_IT_Tech/단위 테스트.md",
+    "content/02_IT_Tech/테스트 실행 도구.md",
+    "content/02_IT_Tech/테스트 통제 도구.md",
+    "content/02_IT_Tech/테스트 하네스.md",
+    "content/02_IT_Tech/통합 테스트.md",
+    "content/01_UX_Design/USER RESEARCH.md"
+  ],
+  "user": [
+    "content/01_UX_Design/사용성 테스트.md",
+    "content/01_UX_Design/설문.md",
+    "content/01_UX_Design/시스템 사용성 척도.md",
+    "content/01_UX_Design/유스케이스.md",
+    "content/01_UX_Design/인터뷰.md",
+    "content/01_UX_Design/첫 클릭 테스트.md",
+    "content/01_UX_Design/카드 소팅.md",
+    "content/01_UX_Design/퍼소나.md",
+    "content/01_UX_Design/평행 디자인.md"
+  ],
+  "테스트를": [
+    "content/01_UX_Design/사용성 테스트.md"
+  ],
+  "사용자 경험의 요소": [
+    "content/01_UX_Design/사용자 경험의 요소.md"
+  ],
+  "정의": [
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/02_IT_Tech/절차형 SQL.md"
+  ],
+  "퍼소나": [
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/01_UX_Design/퍼소나.md"
+  ],
+  "사용자 리서치": [
+    "content/01_UX_Design/사용자 리서치.md"
+  ],
+  "태도": [
+    "content/01_UX_Design/사용자 리서치.md",
+    "content/07_Economics_Finance/운의 알고리즘.md"
+  ],
+  "필드": [
+    "content/01_UX_Design/사용자 리서치.md"
+  ],
+  "사용자 스토리": [
+    "content/01_UX_Design/사용자 스토리.md"
+  ],
+  "사용자 중심 디자인": [
+    "content/01_UX_Design/사용자 중심 디자인.md"
+  ],
+  "중심": [
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/오래가는 UX 디자인.md",
+    "content/05_Marketing_Business/브랜드 3.0.md"
+  ],
+  "서비스 기획자": [
+    "content/01_UX_Design/서비스 기획자.md"
+  ],
+  "문제": [
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md"
+  ],
+  "서비스 디자인 교과서": [
+    "content/01_UX_Design/서비스 디자인 교과서.md"
+  ],
+  "NL": [
+    "content/01_UX_Design/서비스 디자인 교과서.md"
+  ],
+  "제품": [
+    "content/01_UX_Design/서비스 디자인 교과서.md",
+    "content/01_UX_Design/서비스.md",
+    "content/02_IT_Tech/관계모형.md",
+    "content/05_Marketing_Business/MVP.md",
+    "content/05_Marketing_Business/그로스 해킹.md"
+  ],
+  "ONE": [
+    "content/01_UX_Design/서비스 디자인 교과서.md"
+  ],
+  "서비스 디자인": [
+    "content/01_UX_Design/서비스 디자인.md"
+  ],
+  "서비스": [
+    "content/01_UX_Design/서비스.md",
+    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md",
+    "content/02_IT_Tech/DOS.md",
+    "content/02_IT_Tech/클라우드 컴퓨팅.md"
+  ],
+  "SW": [
+    "content/01_UX_Design/서비스.md",
+    "content/02_IT_Tech/클라우드 컴퓨팅.md"
+  ],
+  "설문": [
+    "content/01_UX_Design/설문.md",
+    "content/01_UX_Design/인터뷰.md"
+  ],
+  "대해": [
+    "content/01_UX_Design/설문.md"
+  ],
+  "OMB": [
+    "content/01_UX_Design/설문.md"
+  ],
+  "PRA": [
+    "content/01_UX_Design/설문.md"
+  ],
+  "온라인": [
+    "content/01_UX_Design/설문.md"
+  ],
+  "쉐브론": [
+    "content/01_UX_Design/쉐브론.md"
+  ],
+  "방향": [
+    "content/01_UX_Design/쉐브론.md"
+  ],
+  "이동": [
+    "content/01_UX_Design/쉐브론.md"
+  ],
+  "지시": [
+    "content/01_UX_Design/쉐브론.md"
+  ],
+  "스토리보드": [
+    "content/01_UX_Design/스토리보드.md"
+  ],
+  "포함된": [
+    "content/01_UX_Design/스토리보드.md",
+    "content/02_IT_Tech/XSS.md"
+  ],
+  "산출물로": [
+    "content/01_UX_Design/스토리보드.md"
+  ],
+  "스토리텔링": [
+    "content/01_UX_Design/스토리텔링.md"
+  ],
+  "일이": [
+    "content/01_UX_Design/스토리텔링.md"
+  ],
+  "좋은": [
+    "content/01_UX_Design/스토리텔링.md",
+    "content/01_UX_Design/좋은 UX란.md",
+    "content/03_AI_ML/지식 증류.md",
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+  ],
+  "중간": [
+    "content/01_UX_Design/스토리텔링.md"
+  ],
+  "시스템 사용성 척도": [
+    "content/01_UX_Design/시스템 사용성 척도.md"
+  ],
+  "매우": [
+    "content/01_UX_Design/시스템 사용성 척도.md",
+    "content/02_IT_Tech/Float Type.md"
+  ],
+  "사용할": [
+    "content/01_UX_Design/시스템 사용성 척도.md",
+    "content/02_IT_Tech/Plug & Play.md",
+    "content/01_UX_Design/마음을 생각하는 디자인.md"
+  ],
+  "점수를": [
+    "content/01_UX_Design/시스템 사용성 척도.md"
+  ],
+  "시스템을": [
+    "content/01_UX_Design/시스템 사용성 척도.md",
+    "content/02_IT_Tech/가상물리시스템.md"
+  ],
+  "시장 환경 조사": [
+    "content/01_UX_Design/시장 환경 조사.md"
+  ],
+  "경쟁": [
+    "content/01_UX_Design/시장 환경 조사.md"
+  ],
+  "산업": [
+    "content/01_UX_Design/시장 환경 조사.md"
+  ],
+  "3CS": [
+    "content/01_UX_Design/시장 환경 조사.md"
+  ],
+  "신타이포그래픽 디자인": [
+    "content/01_UX_Design/신타이포그래픽 디자인.md"
+  ],
+  "활자": [
+    "content/01_UX_Design/신타이포그래픽 디자인.md",
+    "content/01_UX_Design/타이포그래픽 디자인.md"
+  ],
+  "심성 모형": [
+    "content/01_UX_Design/심성 모형.md"
+  ],
+  "앨런 쿠퍼": [
+    "content/01_UX_Design/앨런 쿠퍼.md"
+  ],
+  "EC": [
+    "content/01_UX_Design/앨런 쿠퍼.md",
+    "content/05_Marketing_Business/AB Testing.md",
+    "content/06_Philosophy_Humanities/감정.md",
+    "content/06_Philosophy_Humanities/길가메시.md",
+    "content/08_Insights/타이 로페즈.md"
+  ],
+  "앨런": [
+    "content/01_UX_Design/앨런 쿠퍼.md"
+  ],
+  "쿠퍼": [
+    "content/01_UX_Design/앨런 쿠퍼.md"
+  ],
+  "API": [
+    "content/01_UX_Design/앨런 쿠퍼.md",
+    "content/01_UX_Design/인터페이스.md",
+    "content/02_IT_Tech/추상화.md",
+    "content/05_Marketing_Business/Digital Side Effect.md"
+  ],
+  "앱 레이블의 팁": [
+    "content/01_UX_Design/앱 레이블의 팁.md"
+  ],
+  "레이블의": [
+    "content/01_UX_Design/앱 레이블의 팁.md"
+  ],
+  "어포던스": [
+    "content/01_UX_Design/어포던스.md"
+  ],
+  "개체": [
+    "content/01_UX_Design/어포던스.md"
+  ],
+  "오늘도 개발자가 안된다고 했다": [
+    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md"
+  ],
+  "개발자": [
+    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md"
+  ],
+  "경우다": [
+    "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md"
+  ],
+  "오래가는 UX 디자인": [
+    "content/01_UX_Design/오래가는 UX 디자인.md"
+  ],
+  "요구사항 정의서": [
+    "content/01_UX_Design/요구사항 정의서.md"
+  ],
+  "정의서": [
+    "content/01_UX_Design/요구사항 정의서.md"
+  ],
+  "유스케이스": [
+    "content/01_UX_Design/유스케이스.md"
+  ],
+  "흐름": [
+    "content/01_UX_Design/유스케이스.md",
+    "content/02_IT_Tech/데이터 흐름도.md"
+  ],
+  "SUD": [
+    "content/01_UX_Design/유스케이스.md"
+  ],
+  "그녀는": [
+    "content/01_UX_Design/유스케이스.md"
+  ],
+  "세탁물을": [
+    "content/01_UX_Design/유스케이스.md"
+  ],
+  "세탁물이": [
+    "content/01_UX_Design/유스케이스.md"
+  ],
+  "유연성": [
+    "content/01_UX_Design/유연성.md"
+  ],
+  "유용성": [
+    "content/01_UX_Design/유용성.md"
+  ],
+  "유효성": [
+    "content/01_UX_Design/유효성.md"
+  ],
+  "품질": [
+    "content/01_UX_Design/유효성.md",
+    "content/01_UX_Design/직관성.md",
+    "content/02_IT_Tech/소프트웨어 아키텍쳐.md",
+    "content/02_IT_Tech/품질관리.md",
+    "content/02_IT_Tech/QOS.md"
+  ],
+  "얼마나": [
+    "content/01_UX_Design/유효성.md",
+    "content/01_UX_Design/학습성.md"
+  ],
+  "의미성": [
+    "content/01_UX_Design/의미성.md"
+  ],
+  "인간을 위한 디자인": [
+    "content/01_UX_Design/인간을 위한 디자인.md"
+  ],
+  "인간을": [
+    "content/01_UX_Design/인간을 위한 디자인.md"
+  ],
+  "인터랙션": [
+    "content/01_UX_Design/인터랙션.md"
+  ],
+  "동적인": [
+    "content/01_UX_Design/인터랙션.md"
+  ],
+  "정적인": [
+    "content/01_UX_Design/인터랙션.md"
+  ],
+  "인터뷰": [
+    "content/01_UX_Design/인터뷰.md"
+  ],
+  "개별": [
+    "content/01_UX_Design/인터뷰.md",
+    "content/03_AI_ML/Network Dessection.md",
+    "content/07_Economics_Finance/부의 시작.md"
+  ],
+  "인터뷰를": [
+    "content/01_UX_Design/인터뷰.md"
+  ],
+  "있습니다": [
+    "content/01_UX_Design/인터뷰.md",
+    "content/01_UX_Design/첫 클릭 테스트.md",
+    "content/01_UX_Design/카드 소팅.md"
+  ],
+  "사용자 조사": [
+    "content/01_UX_Design/인터뷰.md"
+  ],
+  "인터페이스": [
+    "content/01_UX_Design/인터페이스.md",
+    "content/02_IT_Tech/통합 테스트.md"
+  ],
+  "만나는": [
+    "content/01_UX_Design/인터페이스.md"
+  ],
+  "정보 구조 디자인": [
+    "content/01_UX_Design/정보 구조 디자인.md"
+  ],
+  "정성적 데이터": [
+    "content/01_UX_Design/정성적 데이터.md"
+  ],
+  "깊은": [
+    "content/01_UX_Design/정성적 데이터.md"
+  ],
+  "내용에": [
+    "content/01_UX_Design/정성적 데이터.md"
+  ],
+  "조형의 원리": [
+    "content/01_UX_Design/조형의 원리.md"
+  ],
+  "공간": [
+    "content/01_UX_Design/조형의 원리.md"
+  ],
+  "반복": [
+    "content/01_UX_Design/조형의 원리.md"
+  ],
+  "요소": [
+    "content/01_UX_Design/조형의 원리.md",
+    "content/02_IT_Tech/가용성.md",
+    "content/02_IT_Tech/기밀성.md",
+    "content/02_IT_Tech/무결성.md",
+    "content/02_IT_Tech/소프트웨어 아키텍쳐.md"
+  ],
+  "좋은 UX란": [
+    "content/01_UX_Design/좋은 UX란.md"
+  ],
+  "대상": [
+    "content/01_UX_Design/좋은 UX란.md",
+    "content/02_IT_Tech/테스트 하네스.md"
+  ],
+  "도구와": [
+    "content/01_UX_Design/좋은 UX란.md"
+  ],
+  "중요한 디자인의 원리": [
+    "content/01_UX_Design/중요한 디자인의 원리.md"
+  ],
+  "지연 로딩": [
+    "content/01_UX_Design/지연 로딩.md"
+  ],
+  "UXUI": [
+    "content/01_UX_Design/지연 로딩.md",
+    "content/02_IT_Tech/스키마.md"
+  ],
+  "직관성": [
+    "content/01_UX_Design/직관성.md"
+  ],
+  "첫 클릭 테스트": [
+    "content/01_UX_Design/첫 클릭 테스트.md"
+  ],
+  "번째": [
+    "content/01_UX_Design/첫 클릭 테스트.md"
+  ],
+  "클릭": [
+    "content/01_UX_Design/첫 클릭 테스트.md"
+  ],
+  "방법론": [
+    "content/01_UX_Design/첫 클릭 테스트.md",
+    "content/03_AI_ML/심볼릭 추론.md"
+  ],
+  "카드 소팅": [
+    "content/01_UX_Design/카드 소팅.md"
+  ],
+  "카드": [
+    "content/01_UX_Design/카드 소팅.md"
+  ],
+  "카드를": [
+    "content/01_UX_Design/카드 소팅.md"
+  ],
+  "참가자가": [
+    "content/01_UX_Design/카드 소팅.md"
+  ],
+  "기술 선택": [
+    "content/01_UX_Design/카드 소팅.md"
+  ],
+  "타이포그래픽 디자인": [
+    "content/01_UX_Design/타이포그래픽 디자인.md"
+  ],
+  "태스크 분석": [
+    "content/01_UX_Design/태스크 분석.md"
+  ],
+  "예": [
+    "content/01_UX_Design/태스크 분석.md"
+  ],
+  "작업": [
+    "content/01_UX_Design/태스크 분석.md",
+    "content/02_IT_Tech/작업.md"
+  ],
+  "하위": [
+    "content/01_UX_Design/태스크 분석.md"
+  ],
+  "분석은": [
+    "content/01_UX_Design/태스크 분석.md"
+  ],
+  "터널 시각": [
+    "content/01_UX_Design/터널 시각.md"
+  ],
+  "시각": [
+    "content/01_UX_Design/터널 시각.md"
+  ],
+  "터널": [
+    "content/01_UX_Design/터널 시각.md"
+  ],
+  "퍼널": [
+    "content/01_UX_Design/퍼널.md"
+  ],
+  "주요": [
+    "content/01_UX_Design/퍼소나.md"
+  ],
+  "ERS": [
+    "content/01_UX_Design/퍼소나.md"
+  ],
+  "USDA": [
+    "content/01_UX_Design/퍼소나.md"
+  ],
+  "편의성": [
+    "content/01_UX_Design/편의성.md"
+  ],
+  "기대를": [
+    "content/01_UX_Design/편의성.md"
+  ],
+  "평행 디자인": [
+    "content/01_UX_Design/평행 디자인.md"
+  ],
+  "병렬": [
+    "content/01_UX_Design/평행 디자인.md"
+  ],
+  "사이트": [
+    "content/01_UX_Design/평행 디자인.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md"
+  ],
+  "설계를": [
+    "content/01_UX_Design/평행 디자인.md"
+  ],
+  "아이디어를": [
+    "content/01_UX_Design/평행 디자인.md"
+  ],
+  "프로토타입": [
+    "content/01_UX_Design/프로토타입.md"
+  ],
+  "만들": [
+    "content/01_UX_Design/프로토타입.md"
+  ],
+  "플로 다이어그램": [
+    "content/01_UX_Design/플로 다이어그램.md"
+  ],
+  "플로": [
+    "content/01_UX_Design/플로 다이어그램.md"
+  ],
+  "피라미드 모델": [
+    "content/01_UX_Design/피라미드 모델.md"
+  ],
+  "학습성": [
+    "content/01_UX_Design/학습성.md"
+  ],
+  "고급": [
+    "content/01_UX_Design/학습성.md"
+  ],
+  "행동적 단계": [
+    "content/01_UX_Design/행동적 단계.md"
+  ],
+  "행동적": [
+    "content/01_UX_Design/행동적 단계.md"
+  ],
+  "행동적 디자인": [
+    "content/01_UX_Design/행동적 디자인.md"
+  ],
+  "제품에": [
+    "content/01_UX_Design/행동적 디자인.md"
+  ],
+  "허브 앤 스포크": [
+    "content/01_UX_Design/허브 앤 스포크.md"
+  ],
+  "앱의": [
+    "content/01_UX_Design/허브 앤 스포크.md"
+  ],
+  "허브": [
+    "content/01_UX_Design/허브 앤 스포크.md"
+  ],
+  "화면": [
+    "content/01_UX_Design/허브 앤 스포크.md"
+  ],
+  "확증 편향": [
+    "content/01_UX_Design/확증 편향.md"
+  ],
+  "A6": [
+    "content/01_UX_Design/확증 편향.md"
+  ],
+  "AES": [
+    "content/02_IT_Tech/AES.md",
+    "content/02_IT_Tech/기밀성.md",
+    "content/02_IT_Tech/대칭키 암호화.md"
+  ],
+  "IT": [
+    "content/02_IT_Tech/AES.md",
+    "content/02_IT_Tech/AJAX.md",
+    "content/02_IT_Tech/ARP.md",
+    "content/02_IT_Tech/Agile.md",
+    "content/02_IT_Tech/Boolean Type.md",
+    "content/02_IT_Tech/CALS.md",
+    "content/02_IT_Tech/CDO.md",
+    "content/02_IT_Tech/CIO.md",
+    "content/02_IT_Tech/CMMI.md",
+    "content/02_IT_Tech/CRM.md",
+    "content/02_IT_Tech/CSRF.md",
+    "content/02_IT_Tech/Char Type.md",
+    "content/02_IT_Tech/DBMS.md",
+    "content/02_IT_Tech/DCL.md",
+    "content/02_IT_Tech/DDL.md",
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/DML.md",
+    "content/02_IT_Tech/DOS.md",
+    "content/02_IT_Tech/DRDOS.md",
+    "content/02_IT_Tech/DSA.md",
+    "content/02_IT_Tech/Data Type.md",
+    "content/02_IT_Tech/Debugging.md",
+    "content/02_IT_Tech/EAI.md",
+    "content/02_IT_Tech/EAO.md",
+    "content/02_IT_Tech/ECC.md",
+    "content/02_IT_Tech/EDI.md",
+    "content/02_IT_Tech/EDW.md",
+    "content/02_IT_Tech/Edge Device.md",
+    "content/02_IT_Tech/Elgamel.md",
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/ICMP.md",
+    "content/02_IT_Tech/IGMP.md",
+    "content/02_IT_Tech/IP Sec.md",
+    "content/02_IT_Tech/IP.md",
+    "content/02_IT_Tech/IPv4.md",
+    "content/02_IT_Tech/IPv6.md",
+    "content/02_IT_Tech/JDBC.md",
+    "content/02_IT_Tech/JSON.md",
+    "content/02_IT_Tech/KMS.md",
+    "content/02_IT_Tech/Kernel.md",
+    "content/02_IT_Tech/L2M.md",
+    "content/02_IT_Tech/LAS.md",
+    "content/02_IT_Tech/LFU.md",
+    "content/02_IT_Tech/LRU.md",
+    "content/02_IT_Tech/Land Attack.md",
+    "content/02_IT_Tech/MAC.md",
+    "content/02_IT_Tech/MDC.md",
+    "content/02_IT_Tech/NAS.md",
+    "content/02_IT_Tech/NFC.md",
+    "content/02_IT_Tech/NUR.md",
+    "content/02_IT_Tech/ODBC.md",
+    "content/02_IT_Tech/OLAP.md",
+    "content/02_IT_Tech/OLTP.md",
+    "content/02_IT_Tech/OMT.md",
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/02_IT_Tech/OSI 7 Layer.md",
+    "content/02_IT_Tech/POS.md",
+    "content/02_IT_Tech/Plug & Play.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/RFID.md",
+    "content/02_IT_Tech/Routing Protocol.md",
+    "content/02_IT_Tech/SCM.md",
+    "content/02_IT_Tech/SCR.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/02_IT_Tech/SEED.md",
+    "content/02_IT_Tech/SI.md",
+    "content/02_IT_Tech/SM.md",
+    "content/02_IT_Tech/SPICE.md",
+    "content/02_IT_Tech/SQL Injection.md",
+    "content/02_IT_Tech/SQL 문법.md",
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/SSL-TLS.md",
+    "content/02_IT_Tech/Session.md",
+    "content/02_IT_Tech/String Type.md",
+    "content/02_IT_Tech/TCP.md",
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/UML.md",
+    "content/02_IT_Tech/VAN.md",
+    "content/02_IT_Tech/XML.md",
+    "content/02_IT_Tech/XSS.md",
+    "content/02_IT_Tech/가상물리시스템.md",
+    "content/02_IT_Tech/가상화.md",
+    "content/02_IT_Tech/가용성.md",
+    "content/02_IT_Tech/객체.md",
+    "content/02_IT_Tech/객체지향.md",
+    "content/02_IT_Tech/게이트웨이.md",
+    "content/02_IT_Tech/결합도.md",
+    "content/02_IT_Tech/경과시간.md",
+    "content/02_IT_Tech/고립화 수준.md",
+    "content/02_IT_Tech/관계모형.md",
+    "content/02_IT_Tech/관계성.md",
+    "content/02_IT_Tech/교착상태.md",
+    "content/02_IT_Tech/기밀성.md",
+    "content/02_IT_Tech/깨움.md",
+    "content/02_IT_Tech/나씨-슈나이더만.md",
+    "content/02_IT_Tech/네트워크 프로토콜.md",
+    "content/02_IT_Tech/네트워크.md",
+    "content/02_IT_Tech/논리 주소.md",
+    "content/02_IT_Tech/뉴모로픽 반도체.md",
+    "content/02_IT_Tech/다형성.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/02_IT_Tech/단위 테스트.md",
+    "content/02_IT_Tech/대칭키 암호화.md",
+    "content/02_IT_Tech/데이터 흐름도.md",
+    "content/02_IT_Tech/데이터베이스.md",
+    "content/02_IT_Tech/디스패치.md",
+    "content/02_IT_Tech/디자인 패턴.md",
+    "content/02_IT_Tech/디피헬만.md",
+    "content/02_IT_Tech/라우터.md",
+    "content/02_IT_Tech/메모리 관리.md",
+    "content/02_IT_Tech/메모리 단편화.md",
+    "content/02_IT_Tech/멤리스터.md",
+    "content/02_IT_Tech/명령문.md",
+    "content/02_IT_Tech/모듈.md",
+    "content/02_IT_Tech/모듈화.md",
+    "content/02_IT_Tech/무결성.md",
+    "content/02_IT_Tech/물리 주소.md",
+    "content/02_IT_Tech/방화벽.md",
+    "content/02_IT_Tech/배열.md",
+    "content/02_IT_Tech/백본망.md",
+    "content/02_IT_Tech/버퍼 오버 플로우.md",
+    "content/02_IT_Tech/변수.md",
+    "content/02_IT_Tech/블록체인.md",
+    "content/02_IT_Tech/비대칭키 암호화.md",
+    "content/02_IT_Tech/비용산정 일정관리 모델.md",
+    "content/02_IT_Tech/비즈니스 연속성 계획.md",
+    "content/02_IT_Tech/빅데이터 분석 기사.md",
+    "content/02_IT_Tech/사이트간 위조공격.md",
+    "content/02_IT_Tech/서버 접근 통제.md",
+    "content/02_IT_Tech/서킷브레이커.md",
+    "content/02_IT_Tech/성능 테스트 도구.md",
+    "content/02_IT_Tech/세션.md",
+    "content/02_IT_Tech/소프트웨어 아키텍쳐.md",
+    "content/02_IT_Tech/스위치.md",
+    "content/02_IT_Tech/스케줄링.md",
+    "content/02_IT_Tech/스키마.md",
+    "content/02_IT_Tech/시스템 테스트.md",
+    "content/02_IT_Tech/신뢰성.md",
+    "content/02_IT_Tech/쓰레드.md",
+    "content/02_IT_Tech/안드로이드 마켓 등록.md",
+    "content/02_IT_Tech/알고리즘.md",
+    "content/02_IT_Tech/암호 알고리즘.md",
+    "content/02_IT_Tech/연산자.md",
+    "content/02_IT_Tech/외부 환경.md",
+    "content/02_IT_Tech/요구 사항 분석.md",
+    "content/02_IT_Tech/운영체제.md",
+    "content/02_IT_Tech/워터폴.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md",
+    "content/02_IT_Tech/응답시간.md",
+    "content/02_IT_Tech/응집도.md",
+    "content/02_IT_Tech/인수 테스트.md",
+    "content/02_IT_Tech/인스턴스.md",
+    "content/02_IT_Tech/입출력발생.md",
+    "content/02_IT_Tech/자료 사전.md",
+    "content/02_IT_Tech/자원사용율.md",
+    "content/02_IT_Tech/작업.md",
+    "content/02_IT_Tech/재사용.md",
+    "content/02_IT_Tech/저작권.md",
+    "content/02_IT_Tech/절차형 SQL.md",
+    "content/02_IT_Tech/정보은닉.md",
+    "content/02_IT_Tech/정보처리기사.md",
+    "content/02_IT_Tech/정적 분석 도구.md",
+    "content/02_IT_Tech/처리량.md",
+    "content/02_IT_Tech/추상화.md",
+    "content/02_IT_Tech/캡슐화.md",
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md",
+    "content/02_IT_Tech/쿠키.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md",
+    "content/02_IT_Tech/클라우드 컴퓨팅.md",
+    "content/02_IT_Tech/클래스.md",
+    "content/02_IT_Tech/테스트 실행 도구.md",
+    "content/02_IT_Tech/테스트 통제 도구.md",
+    "content/02_IT_Tech/테스트 하네스.md",
+    "content/02_IT_Tech/통합 테스트.md",
+    "content/02_IT_Tech/트랜잭션.md",
+    "content/02_IT_Tech/트리.md",
+    "content/02_IT_Tech/품질관리.md",
+    "content/02_IT_Tech/프레임워크.md",
+    "content/02_IT_Tech/프로세스 관리.md",
+    "content/02_IT_Tech/프로세스 제어 블록.md",
+    "content/02_IT_Tech/프로세스.md",
+    "content/02_IT_Tech/프로시저.md",
+    "content/02_IT_Tech/프로토콜.md",
+    "content/02_IT_Tech/형상 관리 도구.md",
+    "content/02_IT_Tech/회복기법.md",
+    "content/02_IT_Tech/DAC.md",
+    "content/02_IT_Tech/Float Type.md",
+    "content/02_IT_Tech/Int Type.md",
+    "content/02_IT_Tech/OPT.md",
+    "content/02_IT_Tech/QOS.md",
+    "content/02_IT_Tech/RBAC.md",
+    "content/02_IT_Tech/상속성.md",
+    "content/02_IT_Tech/시큐어 코딩.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md"
+  ],
+  "NIST": [
+    "content/02_IT_Tech/AES.md",
+    "content/02_IT_Tech/DES.md"
+  ],
+  "AJAX": [
+    "content/02_IT_Tech/AJAX.md"
+  ],
+  "XML": [
+    "content/02_IT_Tech/AJAX.md",
+    "content/02_IT_Tech/XML.md",
+    "content/01_UX_Design/마이크로카피.md"
+  ],
+  "ARP": [
+    "content/02_IT_Tech/ARP.md"
+  ],
+  "IP": [
+    "content/02_IT_Tech/ARP.md",
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/DRDOS.md",
+    "content/02_IT_Tech/IP Sec.md",
+    "content/02_IT_Tech/IP.md",
+    "content/02_IT_Tech/IPv4.md",
+    "content/02_IT_Tech/IPv6.md",
+    "content/02_IT_Tech/Land Attack.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/TCP.md",
+    "content/02_IT_Tech/네트워크.md",
+    "content/02_IT_Tech/QOS.md"
+  ],
+  "MAC": [
+    "content/02_IT_Tech/ARP.md",
+    "content/02_IT_Tech/MAC.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/스위치.md"
+  ],
+  "Agile": [
+    "content/02_IT_Tech/Agile.md"
+  ],
+  "XP": [
+    "content/02_IT_Tech/Agile.md"
+  ],
+  "원리": [
+    "content/02_IT_Tech/Agile.md"
+  ],
+  "피드백": [
+    "content/02_IT_Tech/Agile.md"
+  ],
+  "Boolean Type": [
+    "content/02_IT_Tech/Boolean Type.md"
+  ],
+  "거짓": [
+    "content/02_IT_Tech/Boolean Type.md"
+  ],
+  "기본": [
+    "content/02_IT_Tech/Boolean Type.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md"
+  ],
+  "논리": [
+    "content/02_IT_Tech/Boolean Type.md",
+    "content/02_IT_Tech/논리 주소.md",
+    "content/02_IT_Tech/물리 주소.md"
+  ],
+  "조건": [
+    "content/02_IT_Tech/Boolean Type.md",
+    "content/02_IT_Tech/DML.md",
+    "content/03_AI_ML/정량적 데이터.md"
+  ],
+  "AND": [
+    "content/02_IT_Tech/Boolean Type.md"
+  ],
+  "CALS": [
+    "content/02_IT_Tech/CALS.md"
+  ],
+  "유통": [
+    "content/02_IT_Tech/CALS.md"
+  ],
+  "제품의": [
+    "content/02_IT_Tech/CALS.md"
+  ],
+  "생산에서": [
+    "content/02_IT_Tech/CALS.md"
+  ],
+  "CDO": [
+    "content/02_IT_Tech/CDO.md"
+  ],
+  "CIO": [
+    "content/02_IT_Tech/CIO.md"
+  ],
+  "CMMI": [
+    "content/02_IT_Tech/CMMI.md"
+  ],
+  "정량적": [
+    "content/02_IT_Tech/CMMI.md"
+  ],
+  "관리단계": [
+    "content/02_IT_Tech/CMMI.md"
+  ],
+  "프로세스": [
+    "content/02_IT_Tech/CMMI.md",
+    "content/02_IT_Tech/프로세스 관리.md",
+    "content/02_IT_Tech/프로세스.md"
+  ],
+  "프로젝트": [
+    "content/02_IT_Tech/CMMI.md"
+  ],
+  "CRM": [
+    "content/02_IT_Tech/CRM.md",
+    "content/02_IT_Tech/EDW.md",
+    "content/05_Marketing_Business/RTE.md"
+  ],
+  "CSRF": [
+    "content/02_IT_Tech/CSRF.md",
+    "content/02_IT_Tech/사이트간 위조공격.md"
+  ],
+  "GET": [
+    "content/02_IT_Tech/CSRF.md"
+  ],
+  "POST": [
+    "content/02_IT_Tech/CSRF.md"
+  ],
+  "Char Type": [
+    "content/02_IT_Tech/Char Type.md"
+  ],
+  "글자": [
+    "content/02_IT_Tech/Char Type.md"
+  ],
+  "문자": [
+    "content/02_IT_Tech/Char Type.md",
+    "content/02_IT_Tech/String Type.md"
+  ],
+  "코드": [
+    "content/02_IT_Tech/Char Type.md"
+  ],
+  "UTF": [
+    "content/02_IT_Tech/Char Type.md",
+    "content/02_IT_Tech/String Type.md"
+  ],
+  "바이트": [
+    "content/02_IT_Tech/Char Type.md",
+    "content/02_IT_Tech/String Type.md"
+  ],
+  "DBMS": [
+    "content/02_IT_Tech/DBMS.md"
+  ],
+  "성질": [
+    "content/02_IT_Tech/DBMS.md"
+  ],
+  "DCL": [
+    "content/02_IT_Tech/DCL.md"
+  ],
+  "취소": [
+    "content/02_IT_Tech/DCL.md"
+  ],
+  "TCL": [
+    "content/02_IT_Tech/DCL.md",
+    "content/02_IT_Tech/트랜잭션.md"
+  ],
+  "명령어": [
+    "content/02_IT_Tech/DCL.md"
+  ],
+  "트랜잭션": [
+    "content/02_IT_Tech/DCL.md",
+    "content/02_IT_Tech/트랜잭션.md",
+    "content/02_IT_Tech/프로시저.md"
+  ],
+  "DDL": [
+    "content/02_IT_Tech/DDL.md",
+    "content/02_IT_Tech/SQL 문법.md"
+  ],
+  "PK": [
+    "content/02_IT_Tech/DDL.md"
+  ],
+  "컬럼": [
+    "content/02_IT_Tech/DDL.md"
+  ],
+  "인덱스": [
+    "content/02_IT_Tech/DDL.md"
+  ],
+  "컬럼명": [
+    "content/02_IT_Tech/DDL.md"
+  ],
+  "DDOS": [
+    "content/02_IT_Tech/DDOS.md"
+  ],
+  "공격": [
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/DOS.md",
+    "content/02_IT_Tech/DRDOS.md",
+    "content/02_IT_Tech/XSS.md",
+    "content/03_AI_ML/적대적 공격.md"
+  ],
+  "보안": [
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/기밀성.md",
+    "content/02_IT_Tech/서버 접근 통제.md",
+    "content/02_IT_Tech/세션.md",
+    "content/02_IT_Tech/시큐어 코딩.md"
+  ],
+  "DES": [
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/대칭키 암호화.md"
+  ],
+  "블록": [
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/블록체인.md",
+    "content/02_IT_Tech/암호 알고리즘.md",
+    "content/02_IT_Tech/프로세스 제어 블록.md"
+  ],
+  "DML": [
+    "content/02_IT_Tech/DML.md"
+  ],
+  "조인": [
+    "content/02_IT_Tech/DML.md"
+  ],
+  "쿼리": [
+    "content/02_IT_Tech/DML.md"
+  ],
+  "속성명": [
+    "content/02_IT_Tech/DML.md"
+  ],
+  "DOS": [
+    "content/02_IT_Tech/DOS.md",
+    "content/02_IT_Tech/Plug & Play.md"
+  ],
+  "가용": [
+    "content/02_IT_Tech/DOS.md"
+  ],
+  "SYN": [
+    "content/02_IT_Tech/DOS.md"
+  ],
+  "UDP": [
+    "content/02_IT_Tech/DOS.md"
+  ],
+  "DRDOS": [
+    "content/02_IT_Tech/DRDOS.md"
+  ],
+  "반사": [
+    "content/02_IT_Tech/DRDOS.md"
+  ],
+  "DSA": [
+    "content/02_IT_Tech/DSA.md"
+  ],
+  "서명": [
+    "content/02_IT_Tech/DSA.md"
+  ],
+  "공개키": [
+    "content/02_IT_Tech/DSA.md",
+    "content/02_IT_Tech/비대칭키 암호화.md"
+  ],
+  "디지털": [
+    "content/02_IT_Tech/DSA.md",
+    "content/02_IT_Tech/저작권.md",
+    "content/06_Philosophy_Humanities/마지막 몰입.md"
+  ],
+  "메시지": [
+    "content/02_IT_Tech/DSA.md"
+  ],
+  "FIPS": [
+    "content/02_IT_Tech/DSA.md"
+  ],
+  "Data Type": [
+    "content/02_IT_Tech/Data Type.md"
+  ],
+  "Debugging": [
+    "content/02_IT_Tech/Debugging.md"
+  ],
+  "검증": [
+    "content/02_IT_Tech/Debugging.md"
+  ],
+  "수정": [
+    "content/02_IT_Tech/Debugging.md"
+  ],
+  "가설을": [
+    "content/02_IT_Tech/Debugging.md"
+  ],
+  "원인을": [
+    "content/02_IT_Tech/Debugging.md"
+  ],
+  "EAI": [
+    "content/02_IT_Tech/EAI.md"
+  ],
+  "관리": [
+    "content/02_IT_Tech/EAI.md",
+    "content/02_IT_Tech/Kernel.md",
+    "content/02_IT_Tech/POS.md",
+    "content/02_IT_Tech/운영체제.md",
+    "content/02_IT_Tech/테스트 통제 도구.md",
+    "content/02_IT_Tech/프로세스 관리.md"
+  ],
+  "통합": [
+    "content/02_IT_Tech/EAI.md",
+    "content/02_IT_Tech/메모리 단편화.md",
+    "content/02_IT_Tech/통합 테스트.md"
+  ],
+  "EAO": [
+    "content/02_IT_Tech/EAO.md"
+  ],
+  "추적": [
+    "content/02_IT_Tech/EAO.md"
+  ],
+  "기술의": [
+    "content/02_IT_Tech/EAO.md"
+  ],
+  "ECC": [
+    "content/02_IT_Tech/ECC.md"
+  ],
+  "곡선": [
+    "content/02_IT_Tech/ECC.md",
+    "content/03_AI_ML/ROC 곡선.md"
+  ],
+  "타원": [
+    "content/02_IT_Tech/ECC.md"
+  ],
+  "EDI": [
+    "content/02_IT_Tech/EDI.md"
+  ],
+  "기반": [
+    "content/02_IT_Tech/EDI.md",
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/03_AI_ML/인공지능.md"
+  ],
+  "양식": [
+    "content/02_IT_Tech/EDI.md"
+  ],
+  "전송": [
+    "content/02_IT_Tech/EDI.md",
+    "content/02_IT_Tech/OSI 7 Layer.md"
+  ],
+  "표준": [
+    "content/02_IT_Tech/EDI.md",
+    "content/02_IT_Tech/품질관리.md"
+  ],
+  "X12": [
+    "content/02_IT_Tech/EDI.md"
+  ],
+  "EDW": [
+    "content/02_IT_Tech/EDW.md"
+  ],
+  "DW": [
+    "content/02_IT_Tech/EDW.md"
+  ],
+  "기존": [
+    "content/02_IT_Tech/EDW.md",
+    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+  ],
+  "BPR": [
+    "content/02_IT_Tech/EDW.md"
+  ],
+  "모델로": [
+    "content/02_IT_Tech/EDW.md"
+  ],
+  "Edge Device": [
+    "content/02_IT_Tech/Edge Device.md"
+  ],
+  "Elgamel": [
+    "content/02_IT_Tech/Elgamel.md"
+  ],
+  "RSA": [
+    "content/02_IT_Tech/Elgamel.md"
+  ],
+  "FIFO": [
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/SCR.md"
+  ],
+  "교체": [
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/LRU.md",
+    "content/02_IT_Tech/NUR.md",
+    "content/02_IT_Tech/OPT.md"
+  ],
+  "먼저": [
+    "content/02_IT_Tech/FIFO.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md",
+    "content/08_Insights/면접 바이블.md",
+    "content/08_Insights/인간관계론.md"
+  ],
+  "LRU": [
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/LFU.md",
+    "content/02_IT_Tech/LRU.md"
+  ],
+  "페이지": [
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/OPT.md"
+  ],
+  "ICMP": [
+    "content/02_IT_Tech/ICMP.md"
+  ],
+  "IGMP": [
+    "content/02_IT_Tech/IGMP.md"
+  ],
+  "그룹": [
+    "content/02_IT_Tech/IGMP.md"
+  ],
+  "IP Sec": [
+    "content/02_IT_Tech/IP Sec.md"
+  ],
+  "IKE": [
+    "content/02_IT_Tech/IP Sec.md"
+  ],
+  "보장하는": [
+    "content/02_IT_Tech/IP Sec.md"
+  ],
+  "IPv4": [
+    "content/02_IT_Tech/IPv4.md"
+  ],
+  "곤란": [
+    "content/02_IT_Tech/IPv4.md"
+  ],
+  "보강": [
+    "content/02_IT_Tech/IPv4.md"
+  ],
+  "할당": [
+    "content/02_IT_Tech/IPv4.md",
+    "content/02_IT_Tech/IPv6.md",
+    "content/02_IT_Tech/메모리 관리.md"
+  ],
+  "QOS": [
+    "content/02_IT_Tech/IPv4.md",
+    "content/02_IT_Tech/IPv6.md",
+    "content/02_IT_Tech/QOS.md"
+  ],
+  "IPv6": [
+    "content/02_IT_Tech/IPv6.md"
+  ],
+  "주소": [
+    "content/02_IT_Tech/IPv6.md",
+    "content/02_IT_Tech/네트워크.md",
+    "content/02_IT_Tech/논리 주소.md",
+    "content/02_IT_Tech/물리 주소.md",
+    "content/02_IT_Tech/버퍼 오버 플로우.md",
+    "content/02_IT_Tech/스위치.md",
+    "content/02_IT_Tech/운영체제.md"
+  ],
+  "등급별": [
+    "content/02_IT_Tech/IPv6.md"
+  ],
+  "JDBC": [
+    "content/02_IT_Tech/JDBC.md"
+  ],
+  "응용": [
+    "content/02_IT_Tech/JDBC.md",
+    "content/02_IT_Tech/ODBC.md",
+    "content/03_AI_ML/Active Learning.md"
+  ],
+  "JSON": [
+    "content/02_IT_Tech/JSON.md"
+  ],
+  "KMS": [
+    "content/02_IT_Tech/KMS.md"
+  ],
+  "주로": [
+    "content/02_IT_Tech/KMS.md"
+  ],
+  "기업의": [
+    "content/02_IT_Tech/KMS.md",
+    "content/07_Economics_Finance/PER.md",
+    "content/07_Economics_Finance/가치투자.md"
+  ],
+  "물품을": [
+    "content/02_IT_Tech/KMS.md"
+  ],
+  "환경이": [
+    "content/02_IT_Tech/KMS.md"
+  ],
+  "의미하며": [
+    "content/02_IT_Tech/KMS.md"
+  ],
+  "Kernel": [
+    "content/02_IT_Tech/Kernel.md"
+  ],
+  "장치": [
+    "content/02_IT_Tech/Kernel.md"
+  ],
+  "커널": [
+    "content/02_IT_Tech/Kernel.md"
+  ],
+  "L2M": [
+    "content/02_IT_Tech/L2M.md"
+  ],
+  "목표로": [
+    "content/02_IT_Tech/L2M.md"
+  ],
+  "DARPA": [
+    "content/02_IT_Tech/L2M.md"
+  ],
+  "LAS": [
+    "content/02_IT_Tech/LAS.md"
+  ],
+  "역할을": [
+    "content/02_IT_Tech/LAS.md"
+  ],
+  "LSTM": [
+    "content/02_IT_Tech/LAS.md",
+    "content/03_AI_ML/LSTM.md"
+  ],
+  "LFU": [
+    "content/02_IT_Tech/LFU.md"
+  ],
+  "빈도": [
+    "content/02_IT_Tech/LFU.md"
+  ],
+  "자주": [
+    "content/02_IT_Tech/LFU.md",
+    "content/02_IT_Tech/Int Type.md"
+  ],
+  "카운터": [
+    "content/02_IT_Tech/LFU.md"
+  ],
+  "구현": [
+    "content/02_IT_Tech/LRU.md",
+    "content/02_IT_Tech/RBAC.md"
+  ],
+  "적재": [
+    "content/02_IT_Tech/LRU.md"
+  ],
+  "참조": [
+    "content/02_IT_Tech/LRU.md",
+    "content/02_IT_Tech/NUR.md"
+  ],
+  "Land Attack": [
+    "content/02_IT_Tech/Land Attack.md"
+  ],
+  "인증": [
+    "content/02_IT_Tech/MAC.md"
+  ],
+  "접근": [
+    "content/02_IT_Tech/MAC.md",
+    "content/02_IT_Tech/서버 접근 통제.md",
+    "content/02_IT_Tech/테스트 실행 도구.md"
+  ],
+  "HMAC": [
+    "content/02_IT_Tech/MAC.md"
+  ],
+  "NMAC": [
+    "content/02_IT_Tech/MAC.md"
+  ],
+  "MDC": [
+    "content/02_IT_Tech/MDC.md"
+  ],
+  "MD5": [
+    "content/02_IT_Tech/MDC.md",
+    "content/02_IT_Tech/암호 알고리즘.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md"
+  ],
+  "SHA": [
+    "content/02_IT_Tech/MDC.md",
+    "content/02_IT_Tech/암호 알고리즘.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md"
+  ],
+  "NAS": [
+    "content/02_IT_Tech/NAS.md"
+  ],
+  "GPU": [
+    "content/02_IT_Tech/NAS.md"
+  ],
+  "딥러닝": [
+    "content/02_IT_Tech/NAS.md",
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/Active Learning.md",
+    "content/03_AI_ML/Annotation.md",
+    "content/03_AI_ML/Atros Convolution.md",
+    "content/03_AI_ML/Attention mechanism.md",
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/Compound Scaling.md",
+    "content/03_AI_ML/Contrastive Learning.md",
+    "content/03_AI_ML/DSTC9.md",
+    "content/03_AI_ML/Downstream Task.md",
+    "content/03_AI_ML/Episodic Memory.md",
+    "content/03_AI_ML/Feature Pyramid Network.md",
+    "content/03_AI_ML/Fine-Tuning.md",
+    "content/03_AI_ML/GAN.md",
+    "content/03_AI_ML/GPT-3.md",
+    "content/03_AI_ML/GradCAM.md",
+    "content/03_AI_ML/IoU.md",
+    "content/03_AI_ML/LIME.md",
+    "content/03_AI_ML/LRP.md",
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/MNIST.md",
+    "content/03_AI_ML/Network Dessection.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Pretext Task.md",
+    "content/03_AI_ML/Q러닝.md",
+    "content/03_AI_ML/RNN-T.md",
+    "content/03_AI_ML/RNN.md",
+    "content/03_AI_ML/RPN.md",
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/과적합.md",
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/데이터.md",
+    "content/03_AI_ML/딥러닝.md",
+    "content/03_AI_ML/마르코프 결정 프로세스.md",
+    "content/03_AI_ML/멀티에이전트 강화학습.md",
+    "content/03_AI_ML/메타학습.md",
+    "content/03_AI_ML/모델 프리.md",
+    "content/03_AI_ML/모방 강화학습.md",
+    "content/03_AI_ML/범용 인공지능.md",
+    "content/03_AI_ML/베이지안 딥러닝.md",
+    "content/03_AI_ML/베이지안 모델.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/비지도 학습.md",
+    "content/03_AI_ML/소프트맥스 정규화.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/심볼릭 추론.md",
+    "content/03_AI_ML/심화강화학습.md",
+    "content/03_AI_ML/연합학습.md",
+    "content/03_AI_ML/완전히 연결된 모델.md",
+    "content/03_AI_ML/이상 감지.md",
+    "content/03_AI_ML/자기 지도 증강.md",
+    "content/03_AI_ML/자기 집중.md",
+    "content/03_AI_ML/자기지도학습.md",
+    "content/03_AI_ML/장면 그래프.md",
+    "content/03_AI_ML/적대적 공격.md",
+    "content/03_AI_ML/전이 학습.md",
+    "content/03_AI_ML/준지도학습.md",
+    "content/03_AI_ML/지도학습.md",
+    "content/03_AI_ML/지식 증류.md",
+    "content/03_AI_ML/지식그래프.md",
+    "content/03_AI_ML/집중 매커니즘.md",
+    "content/03_AI_ML/통계분석.md",
+    "content/03_AI_ML/표현 학습.md",
+    "content/03_AI_ML/퓨샷러닝.md",
+    "content/03_AI_ML/학습 역량.md",
+    "content/03_AI_ML/인공지능.md"
+  ],
+  "신경망": [
+    "content/02_IT_Tech/NAS.md",
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/RNN.md",
+    "content/03_AI_ML/딥러닝.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/심화강화학습.md",
+    "content/03_AI_ML/연합학습.md",
+    "content/06_Philosophy_Humanities/사피엔스.md"
+  ],
+  "최소의": [
+    "content/02_IT_Tech/NAS.md"
+  ],
+  "NFC": [
+    "content/02_IT_Tech/NFC.md",
+    "content/01_UX_Design/모바일 결제 사례 리서치.md"
+  ],
+  "단말기": [
+    "content/02_IT_Tech/NFC.md"
+  ],
+  "본격적인": [
+    "content/02_IT_Tech/NFC.md"
+  ],
+  "NUR": [
+    "content/02_IT_Tech/NUR.md"
+  ],
+  "동작": [
+    "content/02_IT_Tech/NUR.md"
+  ],
+  "변형": [
+    "content/02_IT_Tech/NUR.md"
+  ],
+  "비트": [
+    "content/02_IT_Tech/NUR.md",
+    "content/02_IT_Tech/Float Type.md",
+    "content/02_IT_Tech/Int Type.md"
+  ],
+  "ODBC": [
+    "content/02_IT_Tech/ODBC.md"
+  ],
+  "OLAP": [
+    "content/02_IT_Tech/OLAP.md"
+  ],
+  "조회": [
+    "content/02_IT_Tech/OLAP.md"
+  ],
+  "위주의": [
+    "content/02_IT_Tech/OLAP.md"
+  ],
+  "처리를": [
+    "content/02_IT_Tech/OLAP.md"
+  ],
+  "OLTP": [
+    "content/02_IT_Tech/OLAP.md",
+    "content/02_IT_Tech/OLTP.md"
+  ],
+  "여러": [
+    "content/02_IT_Tech/OLTP.md",
+    "content/06_Philosophy_Humanities/표상.md"
+  ],
+  "보내온": [
+    "content/02_IT_Tech/OLTP.md"
+  ],
+  "호스트": [
+    "content/02_IT_Tech/OLTP.md"
+  ],
+  "단말에서": [
+    "content/02_IT_Tech/OLTP.md"
+  ],
+  "메시지에": [
+    "content/02_IT_Tech/OLTP.md"
+  ],
+  "OMT": [
+    "content/02_IT_Tech/OMT.md"
+  ],
+  "표현": [
+    "content/02_IT_Tech/OMT.md",
+    "content/02_IT_Tech/UML.md",
+    "content/02_IT_Tech/나씨-슈나이더만.md"
+  ],
+  "모델링": [
+    "content/02_IT_Tech/OMT.md"
+  ],
+  "OPTIMIZER": [
+    "content/02_IT_Tech/OPTIMIZER.md"
+  ],
+  "실행": [
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/02_IT_Tech/명령문.md",
+    "content/02_IT_Tech/쓰레드.md",
+    "content/02_IT_Tech/입출력발생.md",
+    "content/02_IT_Tech/작업.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md",
+    "content/02_IT_Tech/테스트 실행 도구.md",
+    "content/02_IT_Tech/프로시저.md"
+  ],
+  "SQL": [
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/02_IT_Tech/SQL Injection.md",
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/작업.md",
+    "content/02_IT_Tech/절차형 SQL.md",
+    "content/02_IT_Tech/추상화.md",
+    "content/02_IT_Tech/프로시저.md",
+    "content/02_IT_Tech/시큐어 코딩.md"
+  ],
+  "경로를": [
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/02_IT_Tech/라우터.md"
+  ],
+  "최적의": [
+    "content/02_IT_Tech/OPTIMIZER.md"
+  ],
+  "OSI 7 Layer": [
+    "content/02_IT_Tech/OSI 7 Layer.md"
+  ],
+  "계층": [
+    "content/02_IT_Tech/OSI 7 Layer.md"
+  ],
+  "물리": [
+    "content/02_IT_Tech/OSI 7 Layer.md",
+    "content/02_IT_Tech/논리 주소.md",
+    "content/02_IT_Tech/물리 주소.md"
+  ],
+  "FTP": [
+    "content/02_IT_Tech/OSI 7 Layer.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md"
+  ],
+  "ISO": [
+    "content/02_IT_Tech/OSI 7 Layer.md",
+    "content/02_IT_Tech/SPICE.md",
+    "content/02_IT_Tech/RBAC.md"
+  ],
+  "POS": [
+    "content/02_IT_Tech/POS.md",
+    "content/01_UX_Design/모바일 결제 사례 리서치.md"
+  ],
+  "국산": [
+    "content/02_IT_Tech/POS.md"
+  ],
+  "기기": [
+    "content/02_IT_Tech/POS.md"
+  ],
+  "함께": [
+    "content/02_IT_Tech/POS.md"
+  ],
+  "Plug & Play": [
+    "content/02_IT_Tech/Plug & Play.md"
+  ],
+  "해도": [
+    "content/02_IT_Tech/Plug & Play.md"
+  ],
+  "RARP": [
+    "content/02_IT_Tech/RARP.md"
+  ],
+  "주소를": [
+    "content/02_IT_Tech/RARP.md"
+  ],
+  "RFID": [
+    "content/02_IT_Tech/RFID.md"
+  ],
+  "RF": [
+    "content/02_IT_Tech/RFID.md"
+  ],
+  "일명": [
+    "content/02_IT_Tech/RFID.md"
+  ],
+  "이용해": [
+    "content/02_IT_Tech/RFID.md"
+  ],
+  "식별하는": [
+    "content/02_IT_Tech/RFID.md"
+  ],
+  "Routing Protocol": [
+    "content/02_IT_Tech/Routing Protocol.md"
+  ],
+  "프로토콜": [
+    "content/02_IT_Tech/Routing Protocol.md",
+    "content/02_IT_Tech/디피헬만.md",
+    "content/02_IT_Tech/프로토콜.md"
+  ],
+  "SCM": [
+    "content/02_IT_Tech/SCM.md",
+    "content/05_Marketing_Business/RTE.md"
+  ],
+  "SCR": [
+    "content/02_IT_Tech/SCR.md"
+  ],
+  "SDLC": [
+    "content/02_IT_Tech/SDLC.md"
+  ],
+  "SEED": [
+    "content/02_IT_Tech/SEED.md"
+  ],
+  "KISA": [
+    "content/02_IT_Tech/SEED.md"
+  ],
+  "SI": [
+    "content/02_IT_Tech/SI.md",
+    "content/02_IT_Tech/인수 테스트.md"
+  ],
+  "시스템": [
+    "content/02_IT_Tech/SI.md"
+  ],
+  "SPICE": [
+    "content/02_IT_Tech/SPICE.md"
+  ],
+  "SQL Injection": [
+    "content/02_IT_Tech/SQL Injection.md"
+  ],
+  "DB": [
+    "content/02_IT_Tech/SQL Injection.md",
+    "content/02_IT_Tech/무결성.md",
+    "content/02_IT_Tech/트랜잭션.md",
+    "content/07_Economics_Finance/퇴직연금.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md"
+  ],
+  "삽입": [
+    "content/02_IT_Tech/SQL Injection.md"
+  ],
+  "SQL 문법": [
+    "content/02_IT_Tech/SQL 문법.md"
+  ],
+  "언어": [
+    "content/02_IT_Tech/SQL 문법.md",
+    "content/06_Philosophy_Humanities/비트겐슈타인.md"
+  ],
+  "ALTER": [
+    "content/02_IT_Tech/SQL 문법.md"
+  ],
+  "CREATE": [
+    "content/02_IT_Tech/SQL 문법.md"
+  ],
+  "SQL 함수": [
+    "content/02_IT_Tech/SQL 함수.md"
+  ],
+  "함수": [
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/추상화.md",
+    "content/03_AI_ML/Q러닝.md"
+  ],
+  "SSL-TLS": [
+    "content/02_IT_Tech/SSL-TLS.md"
+  ],
+  "SSL": [
+    "content/02_IT_Tech/SSL-TLS.md"
+  ],
+  "TLS": [
+    "content/02_IT_Tech/SSL-TLS.md"
+  ],
+  "Session": [
+    "content/02_IT_Tech/Session.md"
+  ],
+  "String Type": [
+    "content/02_IT_Tech/String Type.md"
+  ],
+  "불변": [
+    "content/02_IT_Tech/String Type.md"
+  ],
+  "인코딩": [
+    "content/02_IT_Tech/String Type.md"
+  ],
+  "TCP": [
+    "content/02_IT_Tech/TCP.md"
+  ],
+  "근거리": [
+    "content/02_IT_Tech/TCP.md"
+  ],
+  "순서대로": [
+    "content/02_IT_Tech/TCP.md"
+  ],
+  "에러없이": [
+    "content/02_IT_Tech/TCP.md"
+  ],
+  "인트라넷": [
+    "content/02_IT_Tech/TCP.md"
+  ],
+  "Timeout": [
+    "content/02_IT_Tech/Timeout.md"
+  ],
+  "저장": [
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/파티션.md"
+  ],
+  "CPU": [
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/논리 주소.md",
+    "content/02_IT_Tech/디스패치.md",
+    "content/02_IT_Tech/쓰레드.md",
+    "content/02_IT_Tech/입출력발생.md",
+    "content/02_IT_Tech/자원사용율.md",
+    "content/02_IT_Tech/프로세스.md"
+  ],
+  "PCB": [
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/프로세스 제어 블록.md"
+  ],
+  "UML": [
+    "content/02_IT_Tech/UML.md"
+  ],
+  "객체": [
+    "content/02_IT_Tech/UML.md",
+    "content/02_IT_Tech/객체.md",
+    "content/02_IT_Tech/객체지향.md",
+    "content/02_IT_Tech/디자인 패턴.md",
+    "content/03_AI_ML/IoU.md"
+  ],
+  "사물": [
+    "content/02_IT_Tech/UML.md"
+  ],
+  "클래스": [
+    "content/02_IT_Tech/UML.md",
+    "content/02_IT_Tech/클래스.md"
+  ],
+  "다이어그램": [
+    "content/02_IT_Tech/UML.md"
+  ],
+  "VAN": [
+    "content/02_IT_Tech/VAN.md"
+  ],
+  "각종": [
+    "content/02_IT_Tech/VAN.md"
+  ],
+  "부호": [
+    "content/02_IT_Tech/VAN.md",
+    "content/02_IT_Tech/Int Type.md"
+  ],
+  "독자적인": [
+    "content/02_IT_Tech/VAN.md"
+  ],
+  "네트워크로": [
+    "content/02_IT_Tech/VAN.md"
+  ],
+  "순서": [
+    "content/02_IT_Tech/XML.md"
+  ],
+  "태크": [
+    "content/02_IT_Tech/XML.md"
+  ],
+  "단점을": [
+    "content/02_IT_Tech/XML.md"
+  ],
+  "여닫는": [
+    "content/02_IT_Tech/XML.md"
+  ],
+  "HTML": [
+    "content/02_IT_Tech/XML.md",
+    "content/02_IT_Tech/XSS.md"
+  ],
+  "XSS": [
+    "content/02_IT_Tech/XSS.md"
+  ],
+  "특수문자": [
+    "content/02_IT_Tech/XSS.md"
+  ],
+  "가상물리시스템": [
+    "content/02_IT_Tech/가상물리시스템.md"
+  ],
+  "실제의": [
+    "content/02_IT_Tech/가상물리시스템.md"
+  ],
+  "유사한": [
+    "content/02_IT_Tech/가상물리시스템.md",
+    "content/03_AI_ML/모델 프리.md",
+    "content/03_AI_ML/지도학습.md"
+  ],
+  "가상화": [
+    "content/02_IT_Tech/가상화.md"
+  ],
+  "VM": [
+    "content/02_IT_Tech/가상화.md"
+  ],
+  "NFV": [
+    "content/02_IT_Tech/가상화.md"
+  ],
+  "SDN": [
+    "content/02_IT_Tech/가상화.md"
+  ],
+  "보이게": [
+    "content/02_IT_Tech/가상화.md"
+  ],
+  "가용성": [
+    "content/02_IT_Tech/가용성.md",
+    "content/02_IT_Tech/소프트웨어 아키텍쳐.md",
+    "content/02_IT_Tech/신뢰성.md"
+  ],
+  "자동": [
+    "content/02_IT_Tech/가용성.md"
+  ],
+  "장애": [
+    "content/02_IT_Tech/가용성.md",
+    "content/02_IT_Tech/회복기법.md"
+  ],
+  "측정": [
+    "content/02_IT_Tech/가용성.md",
+    "content/02_IT_Tech/정적 분석 도구.md",
+    "content/05_Marketing_Business/KPI.md"
+  ],
+  "객체지향": [
+    "content/02_IT_Tech/객체지향.md"
+  ],
+  "OOP": [
+    "content/02_IT_Tech/객체지향.md",
+    "content/02_IT_Tech/다형성.md",
+    "content/02_IT_Tech/인스턴스.md",
+    "content/02_IT_Tech/추상화.md"
+  ],
+  "메서드": [
+    "content/02_IT_Tech/객체지향.md"
+  ],
+  "추상화": [
+    "content/02_IT_Tech/객체지향.md",
+    "content/02_IT_Tech/추상화.md"
+  ],
+  "게이트웨이": [
+    "content/02_IT_Tech/게이트웨이.md"
+  ],
+  "장비": [
+    "content/02_IT_Tech/게이트웨이.md"
+  ],
+  "네트워크": [
+    "content/02_IT_Tech/게이트웨이.md",
+    "content/02_IT_Tech/네트워크.md",
+    "content/02_IT_Tech/백본망.md",
+    "content/02_IT_Tech/스위치.md",
+    "content/02_IT_Tech/프로토콜.md"
+  ],
+  "결합도": [
+    "content/02_IT_Tech/결합도.md"
+  ],
+  "모듈간의": [
+    "content/02_IT_Tech/결합도.md"
+  ],
+  "전달되는": [
+    "content/02_IT_Tech/결합도.md"
+  ],
+  "인터페이스로": [
+    "content/02_IT_Tech/결합도.md"
+  ],
+  "경과시간": [
+    "content/02_IT_Tech/경과시간.md",
+    "content/02_IT_Tech/성능 테스트 도구.md"
+  ],
+  "고립화 수준": [
+    "content/02_IT_Tech/고립화 수준.md"
+  ],
+  "수준": [
+    "content/02_IT_Tech/고립화 수준.md"
+  ],
+  "연산": [
+    "content/02_IT_Tech/고립화 수준.md"
+  ],
+  "데이터에": [
+    "content/02_IT_Tech/고립화 수준.md",
+    "content/03_AI_ML/준지도학습.md"
+  ],
+  "트랜잭션이": [
+    "content/02_IT_Tech/고립화 수준.md"
+  ],
+  "관계모형": [
+    "content/02_IT_Tech/관계모형.md"
+  ],
+  "관계를": [
+    "content/02_IT_Tech/관계모형.md"
+  ],
+  "관계성": [
+    "content/02_IT_Tech/관계성.md"
+  ],
+  "상속": [
+    "content/02_IT_Tech/관계성.md",
+    "content/02_IT_Tech/상속성.md"
+  ],
+  "1. 연관화": [
+    "content/02_IT_Tech/관계성.md"
+  ],
+  "2. 집단화": [
+    "content/02_IT_Tech/관계성.md"
+  ],
+  "교착상태": [
+    "content/02_IT_Tech/교착상태.md"
+  ],
+  "감시": [
+    "content/02_IT_Tech/교착상태.md"
+  ],
+  "발생": [
+    "content/02_IT_Tech/교착상태.md"
+  ],
+  "자원": [
+    "content/02_IT_Tech/교착상태.md",
+    "content/02_IT_Tech/DAC.md"
+  ],
+  "상태를": [
+    "content/02_IT_Tech/교착상태.md"
+  ],
+  "기밀성": [
+    "content/02_IT_Tech/기밀성.md"
+  ],
+  "CIA": [
+    "content/02_IT_Tech/기밀성.md"
+  ],
+  "깨움": [
+    "content/02_IT_Tech/깨움.md"
+  ],
+  "나씨-슈나이더만": [
+    "content/02_IT_Tech/나씨-슈나이더만.md"
+  ],
+  "NS": [
+    "content/02_IT_Tech/나씨-슈나이더만.md"
+  ],
+  "차트": [
+    "content/02_IT_Tech/나씨-슈나이더만.md"
+  ],
+  "구조적": [
+    "content/02_IT_Tech/나씨-슈나이더만.md"
+  ],
+  "네트워크 프로토콜": [
+    "content/02_IT_Tech/네트워크 프로토콜.md"
+  ],
+  "ATM": [
+    "content/02_IT_Tech/네트워크 프로토콜.md",
+    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md",
+    "content/08_Insights/블로그 글쓰기.md"
+  ],
+  "PPP": [
+    "content/02_IT_Tech/네트워크 프로토콜.md"
+  ],
+  "HDLC": [
+    "content/02_IT_Tech/네트워크 프로토콜.md"
+  ],
+  "분류": [
+    "content/02_IT_Tech/네트워크.md",
+    "content/03_AI_ML/ROC 곡선.md",
+    "content/03_AI_ML/혼동 행렬.md"
+  ],
+  "통신": [
+    "content/02_IT_Tech/네트워크.md"
+  ],
+  "논리 주소": [
+    "content/02_IT_Tech/논리 주소.md"
+  ],
+  "뉴모로픽 반도체": [
+    "content/02_IT_Tech/뉴모로픽 반도체.md"
+  ],
+  "기능을": [
+    "content/02_IT_Tech/뉴모로픽 반도체.md",
+    "content/02_IT_Tech/모듈.md",
+    "content/02_IT_Tech/응집도.md",
+    "content/02_IT_Tech/재사용.md"
+  ],
+  "반도체": [
+    "content/02_IT_Tech/뉴모로픽 반도체.md"
+  ],
+  "인간의": [
+    "content/02_IT_Tech/뉴모로픽 반도체.md",
+    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+  ],
+  "다형성": [
+    "content/02_IT_Tech/다형성.md"
+  ],
+  "호출": [
+    "content/02_IT_Tech/다형성.md",
+    "content/02_IT_Tech/프로시저.md"
+  ],
+  "OCP": [
+    "content/02_IT_Tech/다형성.md"
+  ],
+  "단계별 모델": [
+    "content/02_IT_Tech/단계별 모델.md"
+  ],
+  "단위 테스트": [
+    "content/02_IT_Tech/단위 테스트.md"
+  ],
+  "단위": [
+    "content/02_IT_Tech/단위 테스트.md"
+  ],
+  "자료": [
+    "content/02_IT_Tech/단위 테스트.md",
+    "content/02_IT_Tech/데이터 흐름도.md",
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md"
+  ],
+  "대칭키 암호화": [
+    "content/02_IT_Tech/대칭키 암호화.md"
+  ],
+  "방식": [
+    "content/02_IT_Tech/대칭키 암호화.md",
+    "content/02_IT_Tech/무결성.md",
+    "content/02_IT_Tech/비대칭키 암호화.md",
+    "content/02_IT_Tech/통합 테스트.md",
+    "content/02_IT_Tech/형상 관리 도구.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md"
+  ],
+  "평문": [
+    "content/02_IT_Tech/대칭키 암호화.md"
+  ],
+  "데이터 흐름도": [
+    "content/02_IT_Tech/데이터 흐름도.md"
+  ],
+  "DFD": [
+    "content/02_IT_Tech/데이터 흐름도.md"
+  ],
+  "에서는": [
+    "content/02_IT_Tech/데이터 흐름도.md"
+  ],
+  "데이터베이스": [
+    "content/02_IT_Tech/데이터베이스.md"
+  ],
+  "공용": [
+    "content/02_IT_Tech/데이터베이스.md"
+  ],
+  "HDBMS": [
+    "content/02_IT_Tech/데이터베이스.md"
+  ],
+  "NDBMS": [
+    "content/02_IT_Tech/데이터베이스.md"
+  ],
+  "디스패치": [
+    "content/02_IT_Tech/디스패치.md"
+  ],
+  "디자인 패턴": [
+    "content/02_IT_Tech/디자인 패턴.md"
+  ],
+  "패턴": [
+    "content/02_IT_Tech/디자인 패턴.md"
+  ],
+  "디피헬만": [
+    "content/02_IT_Tech/디피헬만.md"
+  ],
+  "개념을": [
+    "content/02_IT_Tech/디피헬만.md",
+    "content/03_AI_ML/자기 지도 증강.md"
+  ],
+  "라우터": [
+    "content/02_IT_Tech/라우터.md"
+  ],
+  "패킷을": [
+    "content/02_IT_Tech/라우터.md"
+  ],
+  "메모리 관리": [
+    "content/02_IT_Tech/메모리 관리.md"
+  ],
+  "기법": [
+    "content/02_IT_Tech/메모리 관리.md",
+    "content/02_IT_Tech/모듈.md",
+    "content/02_IT_Tech/트랜잭션.md",
+    "content/02_IT_Tech/회복기법.md"
+  ],
+  "반입": [
+    "content/02_IT_Tech/메모리 관리.md"
+  ],
+  "유형": [
+    "content/02_IT_Tech/메모리 관리.md"
+  ],
+  "적합": [
+    "content/02_IT_Tech/메모리 관리.md"
+  ],
+  "메모리 단편화": [
+    "content/02_IT_Tech/메모리 단편화.md"
+  ],
+  "압축": [
+    "content/02_IT_Tech/메모리 단편화.md"
+  ],
+  "단편화": [
+    "content/02_IT_Tech/메모리 단편화.md"
+  ],
+  "메모리": [
+    "content/02_IT_Tech/메모리 단편화.md"
+  ],
+  "멤리스터": [
+    "content/02_IT_Tech/멤리스터.md"
+  ],
+  "명령문": [
+    "content/02_IT_Tech/명령문.md"
+  ],
+  "모듈": [
+    "content/02_IT_Tech/모듈.md",
+    "content/02_IT_Tech/모듈화.md",
+    "content/02_IT_Tech/응집도.md",
+    "content/02_IT_Tech/테스트 하네스.md"
+  ],
+  "루틴": [
+    "content/02_IT_Tech/모듈.md"
+  ],
+  "메인": [
+    "content/02_IT_Tech/모듈.md",
+    "content/02_IT_Tech/트리.md"
+  ],
+  "서브": [
+    "content/02_IT_Tech/모듈.md",
+    "content/02_IT_Tech/트리.md"
+  ],
+  "모듈화": [
+    "content/02_IT_Tech/모듈화.md"
+  ],
+  "의존": [
+    "content/02_IT_Tech/모듈화.md"
+  ],
+  "작은": [
+    "content/02_IT_Tech/모듈화.md"
+  ],
+  "DDD": [
+    "content/02_IT_Tech/모듈화.md"
+  ],
+  "SRP": [
+    "content/02_IT_Tech/모듈화.md"
+  ],
+  "무결성": [
+    "content/02_IT_Tech/무결성.md"
+  ],
+  "위협": [
+    "content/02_IT_Tech/무결성.md"
+  ],
+  "물리 주소": [
+    "content/02_IT_Tech/물리 주소.md"
+  ],
+  "가상": [
+    "content/02_IT_Tech/물리 주소.md"
+  ],
+  "MMU": [
+    "content/02_IT_Tech/물리 주소.md"
+  ],
+  "방화벽": [
+    "content/02_IT_Tech/방화벽.md"
+  ],
+  "불법": [
+    "content/02_IT_Tech/방화벽.md"
+  ],
+  "유출": [
+    "content/02_IT_Tech/방화벽.md"
+  ],
+  "배열": [
+    "content/02_IT_Tech/배열.md"
+  ],
+  "값이": [
+    "content/02_IT_Tech/배열.md"
+  ],
+  "초기": [
+    "content/02_IT_Tech/배열.md"
+  ],
+  "타입": [
+    "content/02_IT_Tech/배열.md",
+    "content/02_IT_Tech/Float Type.md"
+  ],
+  "배열명": [
+    "content/02_IT_Tech/배열.md"
+  ],
+  "배열수": [
+    "content/02_IT_Tech/배열.md"
+  ],
+  "백본망": [
+    "content/02_IT_Tech/백본망.md"
+  ],
+  "LAN": [
+    "content/02_IT_Tech/백본망.md"
+  ],
+  "버퍼 오버 플로우": [
+    "content/02_IT_Tech/버퍼 오버 플로우.md"
+  ],
+  "OS": [
+    "content/02_IT_Tech/버퍼 오버 플로우.md",
+    "content/02_IT_Tech/시스템 테스트.md",
+    "content/02_IT_Tech/운영체제.md"
+  ],
+  "리턴": [
+    "content/02_IT_Tech/버퍼 오버 플로우.md"
+  ],
+  "버퍼": [
+    "content/02_IT_Tech/버퍼 오버 플로우.md"
+  ],
+  "종류": [
+    "content/02_IT_Tech/버퍼 오버 플로우.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md",
+    "content/02_IT_Tech/클라우드 컴퓨팅.md",
+    "content/05_Marketing_Business/네트워크 효과.md"
+  ],
+  "변수": [
+    "content/02_IT_Tech/변수.md",
+    "content/05_Marketing_Business/AB Testing.md"
+  ],
+  "숫자": [
+    "content/02_IT_Tech/변수.md"
+  ],
+  "안됨": [
+    "content/02_IT_Tech/변수.md"
+  ],
+  "대소문자": [
+    "content/02_IT_Tech/변수.md"
+  ],
+  "블록체인": [
+    "content/02_IT_Tech/블록체인.md"
+  ],
+  "거래": [
+    "content/02_IT_Tech/블록체인.md"
+  ],
+  "분산": [
+    "content/02_IT_Tech/블록체인.md",
+    "content/03_AI_ML/변동성.md"
+  ],
+  "해시": [
+    "content/02_IT_Tech/블록체인.md",
+    "content/02_IT_Tech/파티션.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md"
+  ],
+  "DID": [
+    "content/02_IT_Tech/블록체인.md"
+  ],
+  "비대칭키 암호화": [
+    "content/02_IT_Tech/비대칭키 암호화.md"
+  ],
+  "공개": [
+    "content/02_IT_Tech/비대칭키 암호화.md"
+  ],
+  "PKI": [
+    "content/02_IT_Tech/비대칭키 암호화.md"
+  ],
+  "기반구조": [
+    "content/02_IT_Tech/비대칭키 암호화.md"
+  ],
+  "비용산정 일정관리 모델": [
+    "content/02_IT_Tech/비용산정 일정관리 모델.md"
+  ],
+  "비용": [
+    "content/02_IT_Tech/비용산정 일정관리 모델.md",
+    "content/05_Marketing_Business/CAC.md"
+  ],
+  "산정": [
+    "content/02_IT_Tech/비용산정 일정관리 모델.md"
+  ],
+  "LOC": [
+    "content/02_IT_Tech/비용산정 일정관리 모델.md"
+  ],
+  "비용을": [
+    "content/02_IT_Tech/비용산정 일정관리 모델.md"
+  ],
+  "산정하는": [
+    "content/02_IT_Tech/비용산정 일정관리 모델.md"
+  ],
+  "비즈니스 연속성 계획": [
+    "content/02_IT_Tech/비즈니스 연속성 계획.md"
+  ],
+  "복구": [
+    "content/02_IT_Tech/비즈니스 연속성 계획.md"
+  ],
+  "재해": [
+    "content/02_IT_Tech/비즈니스 연속성 계획.md"
+  ],
+  "빅데이터 분석 기사": [
+    "content/02_IT_Tech/빅데이터 분석 기사.md"
+  ],
+  "기사": [
+    "content/02_IT_Tech/빅데이터 분석 기사.md"
+  ],
+  "빅데이터": [
+    "content/02_IT_Tech/빅데이터 분석 기사.md"
+  ],
+  "빅데이터의": [
+    "content/02_IT_Tech/빅데이터 분석 기사.md"
+  ],
+  "사이트간 위조공격": [
+    "content/02_IT_Tech/사이트간 위조공격.md"
+  ],
+  "사이트간": [
+    "content/02_IT_Tech/사이트간 위조공격.md"
+  ],
+  "위조공격": [
+    "content/02_IT_Tech/사이트간 위조공격.md"
+  ],
+  "서버 접근 통제": [
+    "content/02_IT_Tech/서버 접근 통제.md"
+  ],
+  "통제": [
+    "content/02_IT_Tech/서버 접근 통제.md",
+    "content/02_IT_Tech/테스트 통제 도구.md"
+  ],
+  "DAC": [
+    "content/02_IT_Tech/서버 접근 통제.md",
+    "content/02_IT_Tech/DAC.md"
+  ],
+  "서킷브레이커": [
+    "content/02_IT_Tech/서킷브레이커.md"
+  ],
+  "성능 테스트 도구": [
+    "content/02_IT_Tech/성능 테스트 도구.md"
+  ],
+  "도구": [
+    "content/02_IT_Tech/성능 테스트 도구.md",
+    "content/02_IT_Tech/정적 분석 도구.md",
+    "content/02_IT_Tech/테스트 실행 도구.md",
+    "content/02_IT_Tech/테스트 통제 도구.md"
+  ],
+  "성능": [
+    "content/02_IT_Tech/성능 테스트 도구.md"
+  ],
+  "처리량": [
+    "content/02_IT_Tech/성능 테스트 도구.md",
+    "content/02_IT_Tech/처리량.md"
+  ],
+  "응답시간": [
+    "content/02_IT_Tech/성능 테스트 도구.md",
+    "content/02_IT_Tech/응답시간.md"
+  ],
+  "세션": [
+    "content/02_IT_Tech/세션.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md"
+  ],
+  "쿠키": [
+    "content/02_IT_Tech/세션.md",
+    "content/02_IT_Tech/쿠키.md"
+  ],
+  "HTTP": [
+    "content/02_IT_Tech/세션.md"
+  ],
+  "소프트웨어 아키텍쳐": [
+    "content/02_IT_Tech/소프트웨어 아키텍쳐.md"
+  ],
+  "속성": [
+    "content/02_IT_Tech/소프트웨어 아키텍쳐.md"
+  ],
+  "RDB": [
+    "content/02_IT_Tech/소프트웨어 아키텍쳐.md"
+  ],
+  "스위치": [
+    "content/02_IT_Tech/스위치.md"
+  ],
+  "프레임": [
+    "content/02_IT_Tech/스위치.md"
+  ],
+  "스케줄링": [
+    "content/02_IT_Tech/스케줄링.md",
+    "content/02_IT_Tech/프로세스.md"
+  ],
+  "대기시간": [
+    "content/02_IT_Tech/스케줄링.md"
+  ],
+  "반환시간": [
+    "content/02_IT_Tech/스케줄링.md"
+  ],
+  "스키마": [
+    "content/02_IT_Tech/스키마.md"
+  ],
+  "시스템 테스트": [
+    "content/02_IT_Tech/시스템 테스트.md"
+  ],
+  "인수": [
+    "content/02_IT_Tech/시스템 테스트.md",
+    "content/02_IT_Tech/인수 테스트.md"
+  ],
+  "전체": [
+    "content/02_IT_Tech/시스템 테스트.md",
+    "content/05_Marketing_Business/ARPPU.md"
+  ],
+  "평균": [
+    "content/02_IT_Tech/신뢰성.md"
+  ],
+  "확률": [
+    "content/02_IT_Tech/신뢰성.md",
+    "content/03_AI_ML/베이지안 딥러닝.md"
+  ],
+  "MTBF": [
+    "content/02_IT_Tech/신뢰성.md"
+  ],
+  "쓰레드": [
+    "content/02_IT_Tech/쓰레드.md"
+  ],
+  "공유": [
+    "content/02_IT_Tech/쓰레드.md",
+    "content/02_IT_Tech/형상 관리 도구.md"
+  ],
+  "IPC": [
+    "content/02_IT_Tech/쓰레드.md"
+  ],
+  "안드로이드 마켓 등록": [
+    "content/02_IT_Tech/안드로이드 마켓 등록.md"
+  ],
+  "등록": [
+    "content/02_IT_Tech/안드로이드 마켓 등록.md"
+  ],
+  "마켓": [
+    "content/02_IT_Tech/안드로이드 마켓 등록.md"
+  ],
+  "안드로이드": [
+    "content/02_IT_Tech/안드로이드 마켓 등록.md"
+  ],
+  "알고리즘": [
+    "content/02_IT_Tech/알고리즘.md"
+  ],
+  "알고리듬이란": [
+    "content/02_IT_Tech/알고리즘.md"
+  ],
+  "정보처리기사": [
+    "content/02_IT_Tech/알고리즘.md",
+    "content/02_IT_Tech/정보처리기사.md",
+    "content/02_IT_Tech/파티션.md"
+  ],
+  "암호 알고리즘": [
+    "content/02_IT_Tech/암호 알고리즘.md"
+  ],
+  "MD4": [
+    "content/02_IT_Tech/암호 알고리즘.md"
+  ],
+  "연산자": [
+    "content/02_IT_Tech/연산자.md"
+  ],
+  "값을": [
+    "content/02_IT_Tech/연산자.md"
+  ],
+  "관계": [
+    "content/02_IT_Tech/연산자.md",
+    "content/06_Philosophy_Humanities/국방 순위 2020.md",
+    "content/02_IT_Tech/상속성.md",
+    "content/06_Philosophy_Humanities/샤르트르.md"
+  ],
+  "사이의": [
+    "content/02_IT_Tech/연산자.md",
+    "content/03_AI_ML/IoU.md"
+  ],
+  "피연산자": [
+    "content/02_IT_Tech/연산자.md"
+  ],
+  "외부 환경": [
+    "content/02_IT_Tech/외부 환경.md"
+  ],
+  "외부": [
+    "content/02_IT_Tech/외부 환경.md"
+  ],
+  "환경": [
+    "content/02_IT_Tech/외부 환경.md"
+  ],
+  "요구 사항 분석": [
+    "content/02_IT_Tech/요구 사항 분석.md"
+  ],
+  "사항": [
+    "content/02_IT_Tech/요구 사항 분석.md"
+  ],
+  "요구사항": [
+    "content/02_IT_Tech/요구 사항 분석.md"
+  ],
+  "운영체제": [
+    "content/02_IT_Tech/운영체제.md"
+  ],
+  "워터폴": [
+    "content/02_IT_Tech/워터폴.md"
+  ],
+  "웹 사이트 원리와 기본 용어": [
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md"
+  ],
+  "처리": [
+    "content/02_IT_Tech/응답시간.md",
+    "content/02_IT_Tech/작업.md",
+    "content/02_IT_Tech/절차형 SQL.md"
+  ],
+  "RTT": [
+    "content/02_IT_Tech/응답시간.md"
+  ],
+  "응집도": [
+    "content/02_IT_Tech/응집도.md"
+  ],
+  "수행": [
+    "content/02_IT_Tech/응집도.md"
+  ],
+  "하나의": [
+    "content/02_IT_Tech/응집도.md",
+    "content/03_AI_ML/멀티에이전트 강화학습.md",
+    "content/06_Philosophy_Humanities/Grit.md"
+  ],
+  "인수 테스트": [
+    "content/02_IT_Tech/인수 테스트.md"
+  ],
+  "최종": [
+    "content/02_IT_Tech/인수 테스트.md"
+  ],
+  "OAT": [
+    "content/02_IT_Tech/인수 테스트.md"
+  ],
+  "인스턴스": [
+    "content/02_IT_Tech/인스턴스.md"
+  ],
+  "입출력발생": [
+    "content/02_IT_Tech/입출력발생.md"
+  ],
+  "자료 사전": [
+    "content/02_IT_Tech/자료 사전.md"
+  ],
+  "+": [
+    "content/02_IT_Tech/자료 사전.md"
+  ],
+  "=": [
+    "content/02_IT_Tech/자료 사전.md"
+  ],
+  "()": [
+    "content/02_IT_Tech/자료 사전.md"
+  ],
+  "{}": [
+    "content/02_IT_Tech/자료 사전.md"
+  ],
+  "기호": [
+    "content/02_IT_Tech/자료 사전.md",
+    "content/06_Philosophy_Humanities/소쉬르.md"
+  ],
+  "자원사용율": [
+    "content/02_IT_Tech/자원사용율.md"
+  ],
+  "사용량": [
+    "content/02_IT_Tech/자원사용율.md"
+  ],
+  "재사용": [
+    "content/02_IT_Tech/재사용.md"
+  ],
+  "컴포넌트": [
+    "content/02_IT_Tech/재사용.md"
+  ],
+  "저작권": [
+    "content/02_IT_Tech/저작권.md"
+  ],
+  "DRM": [
+    "content/02_IT_Tech/저작권.md"
+  ],
+  "콘텐츠를": [
+    "content/02_IT_Tech/저작권.md"
+  ],
+  "절차형 SQL": [
+    "content/02_IT_Tech/절차형 SQL.md"
+  ],
+  "정보은닉": [
+    "content/02_IT_Tech/정보은닉.md"
+  ],
+  "A5": [
+    "content/02_IT_Tech/정보처리기사.md"
+  ],
+  "E1": [
+    "content/02_IT_Tech/정보처리기사.md"
+  ],
+  "필기": [
+    "content/02_IT_Tech/정보처리기사.md"
+  ],
+  "정적 분석 도구": [
+    "content/02_IT_Tech/정적 분석 도구.md"
+  ],
+  "정적": [
+    "content/02_IT_Tech/정적 분석 도구.md"
+  ],
+  "복잡도": [
+    "content/02_IT_Tech/정적 분석 도구.md"
+  ],
+  "복잡한": [
+    "content/02_IT_Tech/추상화.md"
+  ],
+  "캡슐화": [
+    "content/02_IT_Tech/캡슐화.md"
+  ],
+  "낮음": [
+    "content/02_IT_Tech/캡슐화.md"
+  ],
+  "컴퓨팅적 사고능력": [
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md"
+  ],
+  "사고": [
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md",
+    "content/06_Philosophy_Humanities/생각의 탄생.md"
+  ],
+  "컴퓨팅적": [
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md"
+  ],
+  "크로스 사이트 스크립팅": [
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md"
+  ],
+  "클라우드 컴퓨팅": [
+    "content/02_IT_Tech/클라우드 컴퓨팅.md"
+  ],
+  "컴퓨팅": [
+    "content/02_IT_Tech/클라우드 컴퓨팅.md"
+  ],
+  "컴퓨터가": [
+    "content/02_IT_Tech/클라우드 컴퓨팅.md"
+  ],
+  "추상": [
+    "content/02_IT_Tech/클래스.md"
+  ],
+  "해당": [
+    "content/02_IT_Tech/클래스.md",
+    "content/07_Economics_Finance/PER.md"
+  ],
+  "객체가": [
+    "content/02_IT_Tech/클래스.md"
+  ],
+  "변수와": [
+    "content/02_IT_Tech/클래스.md"
+  ],
+  "메서드를": [
+    "content/02_IT_Tech/클래스.md"
+  ],
+  "테스트 실행 도구": [
+    "content/02_IT_Tech/테스트 실행 도구.md"
+  ],
+  "주도": [
+    "content/02_IT_Tech/테스트 실행 도구.md"
+  ],
+  "테스트 통제 도구": [
+    "content/02_IT_Tech/테스트 통제 도구.md"
+  ],
+  "테스트 하네스": [
+    "content/02_IT_Tech/테스트 하네스.md"
+  ],
+  "집합": [
+    "content/02_IT_Tech/테스트 하네스.md"
+  ],
+  "수행하는": [
+    "content/02_IT_Tech/테스트 하네스.md"
+  ],
+  "통합 테스트": [
+    "content/02_IT_Tech/통합 테스트.md"
+  ],
+  "오류": [
+    "content/02_IT_Tech/통합 테스트.md",
+    "content/01_UX_Design/디자인과 인간심리.md"
+  ],
+  "로킹": [
+    "content/02_IT_Tech/트랜잭션.md"
+  ],
+  "MVCC": [
+    "content/02_IT_Tech/트랜잭션.md"
+  ],
+  "트리": [
+    "content/02_IT_Tech/트리.md"
+  ],
+  "파티션": [
+    "content/02_IT_Tech/파티션.md"
+  ],
+  "분할": [
+    "content/02_IT_Tech/파티션.md"
+  ],
+  "파티셔닝": [
+    "content/02_IT_Tech/파티션.md"
+  ],
+  "파티션의 장점": [
+    "content/02_IT_Tech/파티션.md"
+  ],
+  "품질관리": [
+    "content/02_IT_Tech/품질관리.md"
+  ],
+  "QC": [
+    "content/02_IT_Tech/품질관리.md"
+  ],
+  "결함": [
+    "content/02_IT_Tech/품질관리.md"
+  ],
+  "프레임워크": [
+    "content/02_IT_Tech/프레임워크.md"
+  ],
+  "프로세스 관리": [
+    "content/02_IT_Tech/프로세스 관리.md"
+  ],
+  "프로세스 제어 블록": [
+    "content/02_IT_Tech/프로세스 제어 블록.md"
+  ],
+  "제어": [
+    "content/02_IT_Tech/프로세스 제어 블록.md"
+  ],
+  "PID": [
+    "content/02_IT_Tech/프로세스 제어 블록.md"
+  ],
+  "대기": [
+    "content/02_IT_Tech/프로세스.md"
+  ],
+  "프로세스가": [
+    "content/02_IT_Tech/프로세스.md"
+  ],
+  "프로시저": [
+    "content/02_IT_Tech/프로시저.md"
+  ],
+  "반환": [
+    "content/02_IT_Tech/프로시저.md"
+  ],
+  "규정": [
+    "content/02_IT_Tech/프로토콜.md"
+  ],
+  "형상 관리 도구": [
+    "content/02_IT_Tech/형상 관리 도구.md"
+  ],
+  "로컬": [
+    "content/02_IT_Tech/형상 관리 도구.md"
+  ],
+  "RCS": [
+    "content/02_IT_Tech/형상 관리 도구.md"
+  ],
+  "회복기법": [
+    "content/02_IT_Tech/회복기법.md"
+  ],
+  "갱신": [
+    "content/02_IT_Tech/회복기법.md"
+  ],
+  "회복": [
+    "content/02_IT_Tech/회복기법.md",
+    "content/05_Marketing_Business/브이노믹스.md"
+  ],
+  "회복 기법": [
+    "content/02_IT_Tech/회복기법.md"
+  ],
+  "A.I. Guideline": [
+    "content/03_AI_ML/A.I. Guideline.md"
+  ],
+  "AI": [
+    "content/03_AI_ML/A.I. Guideline.md",
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/Active Learning.md",
+    "content/03_AI_ML/Annotation.md",
+    "content/03_AI_ML/Atros Convolution.md",
+    "content/03_AI_ML/Attention mechanism.md",
+    "content/03_AI_ML/BERT.md",
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/Compound Scaling.md",
+    "content/03_AI_ML/Contrastive Learning.md",
+    "content/03_AI_ML/DSTC9.md",
+    "content/03_AI_ML/Downstream Task.md",
+    "content/03_AI_ML/Episodic Memory.md",
+    "content/03_AI_ML/Feature Pyramid Network.md",
+    "content/03_AI_ML/Fine-Tuning.md",
+    "content/03_AI_ML/GAN.md",
+    "content/03_AI_ML/GPT-3.md",
+    "content/03_AI_ML/GradCAM.md",
+    "content/03_AI_ML/IoU.md",
+    "content/03_AI_ML/LIME.md",
+    "content/03_AI_ML/LRP.md",
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/MNIST.md",
+    "content/03_AI_ML/Network Dessection.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Pretext Task.md",
+    "content/03_AI_ML/Q러닝.md",
+    "content/03_AI_ML/RNN-T.md",
+    "content/03_AI_ML/RNN.md",
+    "content/03_AI_ML/ROC 곡선.md",
+    "content/03_AI_ML/RPN.md",
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/Transformer.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/과적합.md",
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/데이터.md",
+    "content/03_AI_ML/딥러닝.md",
+    "content/03_AI_ML/마르코프 결정 프로세스.md",
+    "content/03_AI_ML/멀티에이전트 강화학습.md",
+    "content/03_AI_ML/메타학습.md",
+    "content/03_AI_ML/모델 구조.md",
+    "content/03_AI_ML/모델 프리.md",
+    "content/03_AI_ML/모방 강화학습.md",
+    "content/03_AI_ML/범용 인공지능.md",
+    "content/03_AI_ML/베이즈 추론.md",
+    "content/03_AI_ML/베이지안 딥러닝.md",
+    "content/03_AI_ML/베이지안 모델.md",
+    "content/03_AI_ML/변동성.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/비지도 학습.md",
+    "content/03_AI_ML/소프트맥스 정규화.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/심볼릭 추론.md",
+    "content/03_AI_ML/심화강화학습.md",
+    "content/03_AI_ML/연합학습.md",
+    "content/03_AI_ML/완전히 연결된 모델.md",
+    "content/03_AI_ML/이미지넷.md",
+    "content/03_AI_ML/이상 감지.md",
+    "content/03_AI_ML/자기 지도 증강.md",
+    "content/03_AI_ML/자기 집중.md",
+    "content/03_AI_ML/자기지도학습.md",
+    "content/03_AI_ML/장면 그래프.md",
+    "content/03_AI_ML/적대적 공격.md",
+    "content/03_AI_ML/전용 인공지능.md",
+    "content/03_AI_ML/전이 학습.md",
+    "content/03_AI_ML/준지도학습.md",
+    "content/03_AI_ML/지도학습.md",
+    "content/03_AI_ML/지식 증류.md",
+    "content/03_AI_ML/지식그래프.md",
+    "content/03_AI_ML/집중 매커니즘.md",
+    "content/03_AI_ML/통계분석.md",
+    "content/03_AI_ML/표현 학습.md",
+    "content/03_AI_ML/퓨샷러닝.md",
+    "content/03_AI_ML/학습 역량.md",
+    "content/03_AI_ML/혼동 행렬.md",
+    "content/01_UX_Design/감성 디자인.md",
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
+    "content/03_AI_ML/인공지능.md",
+    "content/03_AI_ML/정량적 데이터.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+  ],
+  "예측": [
+    "content/03_AI_ML/A.I. Guideline.md",
+    "content/03_AI_ML/혼동 행렬.md"
+  ],
+  "책임": [
+    "content/03_AI_ML/A.I. Guideline.md"
+  ],
+  "XAI": [
+    "content/03_AI_ML/A.I. Guideline.md",
+    "content/03_AI_ML/XAI.md"
+  ],
+  "공정성": [
+    "content/03_AI_ML/A.I. Guideline.md"
+  ],
+  "AGI": [
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/인공지능.md"
+  ],
+  "머신러닝": [
+    "content/03_AI_ML/AGI.md",
+    "content/03_AI_ML/Active Learning.md",
+    "content/03_AI_ML/Annotation.md",
+    "content/03_AI_ML/Atros Convolution.md",
+    "content/03_AI_ML/Attention mechanism.md",
+    "content/03_AI_ML/BERT.md",
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/Compound Scaling.md",
+    "content/03_AI_ML/Downstream Task.md",
+    "content/03_AI_ML/Episodic Memory.md",
+    "content/03_AI_ML/Feature Pyramid Network.md",
+    "content/03_AI_ML/Fine-Tuning.md",
+    "content/03_AI_ML/GAN.md",
+    "content/03_AI_ML/GPT-3.md",
+    "content/03_AI_ML/LRP.md",
+    "content/03_AI_ML/MNIST.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Pretext Task.md",
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/데이터.md",
+    "content/03_AI_ML/딥러닝.md",
+    "content/03_AI_ML/마르코프 결정 프로세스.md",
+    "content/03_AI_ML/멀티에이전트 강화학습.md",
+    "content/03_AI_ML/메타학습.md",
+    "content/03_AI_ML/모방 강화학습.md",
+    "content/03_AI_ML/범용 인공지능.md",
+    "content/03_AI_ML/베이지안 딥러닝.md",
+    "content/03_AI_ML/베이지안 모델.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/비지도 학습.md",
+    "content/03_AI_ML/소프트맥스 정규화.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/자기 집중.md",
+    "content/03_AI_ML/자기지도학습.md",
+    "content/03_AI_ML/준지도학습.md",
+    "content/03_AI_ML/지식 증류.md",
+    "content/03_AI_ML/지식그래프.md",
+    "content/03_AI_ML/통계분석.md",
+    "content/03_AI_ML/표현 학습.md",
+    "content/03_AI_ML/학습 역량.md"
+  ],
+  "Active Learning": [
+    "content/03_AI_ML/Active Learning.md"
+  ],
+  "Annotation": [
+    "content/03_AI_ML/Annotation.md"
+  ],
+  "설명정보": [
+    "content/03_AI_ML/Annotation.md"
+  ],
+  "Atros Convolution": [
+    "content/03_AI_ML/Atros Convolution.md"
+  ],
+  "Attention mechanism": [
+    "content/03_AI_ML/Attention mechanism.md"
+  ],
+  "BERT": [
+    "content/03_AI_ML/BERT.md"
+  ],
+  "ai": [
+    "content/03_AI_ML/BERT.md",
+    "content/03_AI_ML/이미지넷.md",
+    "content/03_AI_ML/전이 학습.md"
+  ],
+  "CNN": [
+    "content/03_AI_ML/CNN.md",
+    "content/03_AI_ML/GradCAM.md",
+    "content/03_AI_ML/RPN.md"
+  ],
+  "Compound Scaling": [
+    "content/03_AI_ML/Compound Scaling.md"
+  ],
+  "Contrastive Learning": [
+    "content/03_AI_ML/Contrastive Learning.md"
+  ],
+  "방향의": [
+    "content/03_AI_ML/Contrastive Learning.md"
+  ],
+  "DSTC9": [
+    "content/03_AI_ML/DSTC9.md"
+  ],
+  "대화": [
+    "content/03_AI_ML/DSTC9.md"
+  ],
+  "AAAI": [
+    "content/03_AI_ML/DSTC9.md"
+  ],
+  "Downstream Task": [
+    "content/03_AI_ML/Downstream Task.md"
+  ],
+  "Episodic Memory": [
+    "content/03_AI_ML/Episodic Memory.md"
+  ],
+  "Fine-Tuning": [
+    "content/03_AI_ML/Fine-Tuning.md"
+  ],
+  "GAN": [
+    "content/03_AI_ML/GAN.md"
+  ],
+  "데이터를": [
+    "content/03_AI_ML/GAN.md"
+  ],
+  "GPT-3": [
+    "content/03_AI_ML/GPT-3.md"
+  ],
+  "GPT": [
+    "content/03_AI_ML/GPT-3.md",
+    "content/03_AI_ML/Transformer.md",
+    "content/03_AI_ML/집중 매커니즘.md"
+  ],
+  "GradCAM": [
+    "content/03_AI_ML/GradCAM.md"
+  ],
+  "IoU": [
+    "content/03_AI_ML/IoU.md"
+  ],
+  "LIME": [
+    "content/03_AI_ML/LIME.md"
+  ],
+  "SVM": [
+    "content/03_AI_ML/LIME.md"
+  ],
+  "LRP": [
+    "content/03_AI_ML/LRP.md"
+  ],
+  "모델의": [
+    "content/03_AI_ML/LRP.md"
+  ],
+  "형태로": [
+    "content/03_AI_ML/LRP.md"
+  ],
+  "기여도를": [
+    "content/03_AI_ML/LRP.md"
+  ],
+  "RNN": [
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/RNN-T.md",
+    "content/03_AI_ML/RNN.md",
+    "content/03_AI_ML/Transformer.md"
+  ],
+  "MNIST": [
+    "content/03_AI_ML/MNIST.md"
+  ],
+  "개의": [
+    "content/03_AI_ML/MNIST.md",
+    "content/06_Philosophy_Humanities/RNA.md"
+  ],
+  "Network Dessection": [
+    "content/03_AI_ML/Network Dessection.md"
+  ],
+  "뉴런": [
+    "content/03_AI_ML/Network Dessection.md"
+  ],
+  "사람이": [
+    "content/03_AI_ML/Network Dessection.md"
+  ],
+  "PQ": [
+    "content/03_AI_ML/PQ.md"
+  ],
+  "Pretext Task": [
+    "content/03_AI_ML/Pretext Task.md"
+  ],
+  "특징을": [
+    "content/03_AI_ML/Pretext Task.md"
+  ],
+  "Q러닝": [
+    "content/03_AI_ML/Q러닝.md"
+  ],
+  "강화학습": [
+    "content/03_AI_ML/Q러닝.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/멀티에이전트 강화학습.md",
+    "content/03_AI_ML/모방 강화학습.md",
+    "content/03_AI_ML/퓨샷러닝.md"
+  ],
+  "RNN-T": [
+    "content/03_AI_ML/RNN-T.md"
+  ],
+  "CTC": [
+    "content/03_AI_ML/RNN-T.md"
+  ],
+  "연결이": [
+    "content/03_AI_ML/RNN.md"
+  ],
+  "ROC 곡선": [
+    "content/03_AI_ML/ROC 곡선.md"
+  ],
+  "축은": [
+    "content/03_AI_ML/ROC 곡선.md"
+  ],
+  "행렬": [
+    "content/03_AI_ML/ROC 곡선.md"
+  ],
+  "RPN": [
+    "content/03_AI_ML/RPN.md"
+  ],
+  "빠른": [
+    "content/03_AI_ML/RPN.md",
+    "content/05_Marketing_Business/RTE.md"
+  ],
+  "Region Proposal": [
+    "content/03_AI_ML/Region Proposal.md"
+  ],
+  "SHAP": [
+    "content/03_AI_ML/SHAP.md"
+  ],
+  "가능성을": [
+    "content/03_AI_ML/SHAP.md"
+  ],
+  "Transformer": [
+    "content/03_AI_ML/Transformer.md"
+  ],
+  "번역": [
+    "content/03_AI_ML/Transformer.md"
+  ],
+  "설명할": [
+    "content/03_AI_ML/XAI.md"
+  ],
+  "seq2seq": [
+    "content/03_AI_ML/seq2seq.md"
+  ],
+  "거리함수": [
+    "content/03_AI_ML/거리함수.md"
+  ],
+  "과적합": [
+    "content/03_AI_ML/과적합.md"
+  ],
+  "오차가": [
+    "content/03_AI_ML/과적합.md"
+  ],
+  "대해서는": [
+    "content/03_AI_ML/과적합.md"
+  ],
+  "광학문자인식": [
+    "content/03_AI_ML/광학문자인식.md"
+  ],
+  "활동": [
+    "content/03_AI_ML/데이터.md"
+  ],
+  "획득": [
+    "content/03_AI_ML/데이터.md"
+  ],
+  "라벨링": [
+    "content/03_AI_ML/데이터.md"
+  ],
+  "쉽게": [
+    "content/03_AI_ML/딥러닝.md",
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md"
+  ],
+  "비즈니스": [
+    "content/03_AI_ML/딥러닝.md",
+    "content/05_Marketing_Business/AARRR.md",
+    "content/05_Marketing_Business/STP 전략.md",
+    "content/05_Marketing_Business/SWOT 분석.md",
+    "content/05_Marketing_Business/경로의존.md",
+    "content/05_Marketing_Business/롱테일.md",
+    "content/05_Marketing_Business/리텐션.md",
+    "content/05_Marketing_Business/언택트.md",
+    "content/05_Marketing_Business/이탈률.md",
+    "content/05_Marketing_Business/인바운드 마케팅.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
+    "content/05_Marketing_Business/업스트림.md",
+    "content/05_Marketing_Business/파이프라인.md"
+  ],
+  "마르코프 결정 프로세스": [
+    "content/03_AI_ML/마르코프 결정 프로세스.md"
+  ],
+  "멀티에이전트 강화학습": [
+    "content/03_AI_ML/멀티에이전트 강화학습.md"
+  ],
+  "메타학습": [
+    "content/03_AI_ML/메타학습.md"
+  ],
+  "학습하는": [
+    "content/03_AI_ML/메타학습.md"
+  ],
+  "모델 구조": [
+    "content/03_AI_ML/모델 구조.md"
+  ],
+  "실수": [
+    "content/03_AI_ML/모델 구조.md"
+  ],
+  "출력": [
+    "content/03_AI_ML/모델 구조.md",
+    "content/03_AI_ML/베이지안 딥러닝.md",
+    "content/03_AI_ML/소프트맥스 정규화.md"
+  ],
+  "모델 프리": [
+    "content/03_AI_ML/모델 프리.md"
+  ],
+  "보상을": [
+    "content/03_AI_ML/모델 프리.md"
+  ],
+  "모방 강화학습": [
+    "content/03_AI_ML/모방 강화학습.md"
+  ],
+  "범용 인공지능": [
+    "content/03_AI_ML/범용 인공지능.md"
+  ],
+  "베이즈 추론": [
+    "content/03_AI_ML/베이즈 추론.md"
+  ],
+  "추론": [
+    "content/03_AI_ML/베이즈 추론.md",
+    "content/03_AI_ML/심볼릭 추론.md"
+  ],
+  "통계": [
+    "content/03_AI_ML/베이즈 추론.md"
+  ],
+  "베이즈": [
+    "content/03_AI_ML/베이즈 추론.md"
+  ],
+  "최적화": [
+    "content/03_AI_ML/베이즈 추론.md"
+  ],
+  "도구에서": [
+    "content/03_AI_ML/베이즈 추론.md"
+  ],
+  "베이지안 딥러닝": [
+    "content/03_AI_ML/베이지안 딥러닝.md"
+  ],
+  "베이지안 모델": [
+    "content/03_AI_ML/베이지안 모델.md"
+  ],
+  "베이지안": [
+    "content/03_AI_ML/베이지안 모델.md"
+  ],
+  "변동성": [
+    "content/03_AI_ML/변동성.md"
+  ],
+  "CV": [
+    "content/03_AI_ML/변동성.md"
+  ],
+  "자산": [
+    "content/03_AI_ML/변동성.md",
+    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md"
+  ],
+  "ROC": [
+    "content/03_AI_ML/변동성.md",
+    "content/03_AI_ML/정량적 데이터.md"
+  ],
+  "블랙박스 모델": [
+    "content/03_AI_ML/블랙박스 모델.md"
+  ],
+  "비심볼릭 추론": [
+    "content/03_AI_ML/비심볼릭 추론.md"
+  ],
+  "비지도 학습": [
+    "content/03_AI_ML/비지도 학습.md"
+  ],
+  "방법으로": [
+    "content/03_AI_ML/비지도 학습.md"
+  ],
+  "소프트맥스 정규화": [
+    "content/03_AI_ML/소프트맥스 정규화.md"
+  ],
+  "수행 역량": [
+    "content/03_AI_ML/수행 역량.md"
+  ],
+  "심볼릭 추론": [
+    "content/03_AI_ML/심볼릭 추론.md"
+  ],
+  "심볼릭": [
+    "content/03_AI_ML/심볼릭 추론.md"
+  ],
+  "심화강화학습": [
+    "content/03_AI_ML/심화강화학습.md"
+  ],
+  "심층": [
+    "content/03_AI_ML/심화강화학습.md"
+  ],
+  "연합학습": [
+    "content/03_AI_ML/연합학습.md"
+  ],
+  "기계학습": [
+    "content/03_AI_ML/연합학습.md"
+  ],
+  "완전히 연결된 모델": [
+    "content/03_AI_ML/완전히 연결된 모델.md"
+  ],
+  "이미지넷": [
+    "content/03_AI_ML/이미지넷.md"
+  ],
+  "이상 감지": [
+    "content/03_AI_ML/이상 감지.md"
+  ],
+  "감지": [
+    "content/03_AI_ML/이상 감지.md"
+  ],
+  "이상": [
+    "content/03_AI_ML/이상 감지.md"
+  ],
+  "자기 지도 증강": [
+    "content/03_AI_ML/자기 지도 증강.md"
+  ],
+  "내부": [
+    "content/03_AI_ML/자기 지도 증강.md"
+  ],
+  "지도": [
+    "content/03_AI_ML/자기 지도 증강.md"
+  ],
+  "자기 집중": [
+    "content/03_AI_ML/자기 집중.md"
+  ],
+  "자기": [
+    "content/03_AI_ML/자기 집중.md",
+    "content/06_Philosophy_Humanities/자기동일성.md",
+    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+  ],
+  "자기지도학습": [
+    "content/03_AI_ML/자기지도학습.md"
+  ],
+  "스스로": [
+    "content/03_AI_ML/자기지도학습.md"
+  ],
+  "장면 그래프": [
+    "content/03_AI_ML/장면 그래프.md"
+  ],
+  "장면": [
+    "content/03_AI_ML/장면 그래프.md"
+  ],
+  "지식": [
+    "content/03_AI_ML/장면 그래프.md"
+  ],
+  "사람과": [
+    "content/03_AI_ML/장면 그래프.md"
+  ],
+  "적대적 공격": [
+    "content/03_AI_ML/적대적 공격.md"
+  ],
+  "결과를": [
+    "content/03_AI_ML/적대적 공격.md"
+  ],
+  "잘못된": [
+    "content/03_AI_ML/적대적 공격.md",
+    "content/05_Marketing_Business/경로의 저주.md"
+  ],
+  "노이즈를": [
+    "content/03_AI_ML/적대적 공격.md"
+  ],
+  "전용 인공지능": [
+    "content/03_AI_ML/전용 인공지능.md"
+  ],
+  "과제": [
+    "content/03_AI_ML/전용 인공지능.md"
+  ],
+  "인식": [
+    "content/03_AI_ML/전용 인공지능.md"
+  ],
+  "전용": [
+    "content/03_AI_ML/전용 인공지능.md",
+    "content/03_AI_ML/인공지능.md"
+  ],
+  "특정": [
+    "content/03_AI_ML/전용 인공지능.md",
+    "content/03_AI_ML/통계분석.md",
+    "content/05_Marketing_Business/ARPU.md"
+  ],
+  "전이 학습": [
+    "content/03_AI_ML/전이 학습.md"
+  ],
+  "전이": [
+    "content/03_AI_ML/전이 학습.md"
+  ],
+  "기술을": [
+    "content/03_AI_ML/전이 학습.md"
+  ],
+  "특징점": [
+    "content/03_AI_ML/전이 학습.md"
+  ],
+  "준지도학습": [
+    "content/03_AI_ML/준지도학습.md"
+  ],
+  "지도학습": [
+    "content/03_AI_ML/지도학습.md"
+  ],
+  "지식 증류": [
+    "content/03_AI_ML/지식 증류.md"
+  ],
+  "성능이": [
+    "content/03_AI_ML/지식 증류.md"
+  ],
+  "지식그래프": [
+    "content/03_AI_ML/지식그래프.md"
+  ],
+  "집중 매커니즘": [
+    "content/03_AI_ML/집중 매커니즘.md"
+  ],
+  "집중": [
+    "content/03_AI_ML/집중 매커니즘.md"
+  ],
+  "통계분석": [
+    "content/03_AI_ML/통계분석.md"
+  ],
+  "표현 학습": [
+    "content/03_AI_ML/표현 학습.md"
+  ],
+  "퓨샷러닝": [
+    "content/03_AI_ML/퓨샷러닝.md"
+  ],
+  "퓨샷": [
+    "content/03_AI_ML/퓨샷러닝.md"
+  ],
+  "학습 역량": [
+    "content/03_AI_ML/학습 역량.md"
+  ],
+  "학습된": [
+    "content/03_AI_ML/학습 역량.md"
+  ],
+  "혼동 행렬": [
+    "content/03_AI_ML/혼동 행렬.md"
+  ],
+  "FP": [
+    "content/03_AI_ML/혼동 행렬.md"
+  ],
+  "TP": [
+    "content/03_AI_ML/혼동 행렬.md"
+  ],
+  "AAR 프레임": [
+    "content/05_Marketing_Business/AAR 프레임.md"
+  ],
+  "리뷰": [
+    "content/05_Marketing_Business/AAR 프레임.md"
+  ],
+  "반성": [
+    "content/05_Marketing_Business/AAR 프레임.md"
+  ],
+  "AAR": [
+    "content/05_Marketing_Business/AAR 프레임.md",
+    "content/08_Insights/면접 바이블.md"
+  ],
+  "학습능력": [
+    "content/05_Marketing_Business/AAR 프레임.md"
+  ],
+  "AARRR": [
+    "content/05_Marketing_Business/AARRR.md"
+  ],
+  "리텐션": [
+    "content/05_Marketing_Business/AARRR.md",
+    "content/05_Marketing_Business/고객 생애 가치.md",
+    "content/05_Marketing_Business/리텐션.md",
+    "content/05_Marketing_Business/코호트.md"
+  ],
+  "AB Testing": [
+    "content/05_Marketing_Business/AB Testing.md"
+  ],
+  "A4": [
+    "content/05_Marketing_Business/AB Testing.md"
+  ],
+  "ED": [
+    "content/05_Marketing_Business/AB Testing.md"
+  ],
+  "ARPPU": [
+    "content/05_Marketing_Business/ARPPU.md"
+  ],
+  "가치": [
+    "content/05_Marketing_Business/ARPPU.md",
+    "content/05_Marketing_Business/CAC.md",
+    "content/05_Marketing_Business/네트워크 효과.md",
+    "content/07_Economics_Finance/가치투자.md"
+  ],
+  "매출": [
+    "content/05_Marketing_Business/ARPPU.md",
+    "content/05_Marketing_Business/ARPU.md",
+    "content/05_Marketing_Business/ROAS.md",
+    "content/05_Marketing_Business/마진.md"
+  ],
+  "결제자": [
+    "content/05_Marketing_Business/ARPPU.md"
+  ],
+  "계산식": [
+    "content/05_Marketing_Business/ARPPU.md",
+    "content/05_Marketing_Business/CAC.md",
+    "content/05_Marketing_Business/ROAS.md"
+  ],
+  "ARPU": [
+    "content/05_Marketing_Business/ARPU.md"
+  ],
+  "시점의": [
+    "content/05_Marketing_Business/ARPU.md"
+  ],
+  "Acqusition": [
+    "content/05_Marketing_Business/Acqusition.md"
+  ],
+  "광고": [
+    "content/05_Marketing_Business/Acqusition.md"
+  ],
+  "유입": [
+    "content/05_Marketing_Business/Acqusition.md",
+    "content/05_Marketing_Business/검색 유입.md",
+    "content/05_Marketing_Business/소셜 유입.md",
+    "content/05_Marketing_Business/직접 유입.md",
+    "content/01_UX_Design/Data Driven UX.md"
+  ],
+  "채널": [
+    "content/05_Marketing_Business/Acqusition.md"
+  ],
+  "SNS": [
+    "content/05_Marketing_Business/Acqusition.md",
+    "content/05_Marketing_Business/Digital Side Effect.md",
+    "content/05_Marketing_Business/네트워크 효과.md",
+    "content/05_Marketing_Business/소셜 유입.md",
+    "content/05_Marketing_Business/팬슈머.md",
+    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md",
+    "content/06_Philosophy_Humanities/동물농장.md",
+    "content/06_Philosophy_Humanities/인간 불평등 기원론.md"
+  ],
+  "CAC": [
+    "content/05_Marketing_Business/CAC.md",
+    "content/05_Marketing_Business/네트워크 효과.md",
+    "content/05_Marketing_Business/마진.md"
+  ],
+  "고객": [
+    "content/05_Marketing_Business/CAC.md",
+    "content/05_Marketing_Business/ROAS.md",
+    "content/05_Marketing_Business/고객 생애 가치.md"
+  ],
+  "지표": [
+    "content/05_Marketing_Business/CAC.md",
+    "content/05_Marketing_Business/KPI.md",
+    "content/05_Marketing_Business/ROAS.md"
+  ],
+  "Carrying capacity": [
+    "content/05_Marketing_Business/Carrying capacity.md"
+  ],
+  "PO": [
+    "content/05_Marketing_Business/Carrying capacity.md"
+  ],
+  "Q1": [
+    "content/05_Marketing_Business/Carrying capacity.md"
+  ],
+  "결국": [
+    "content/05_Marketing_Business/Carrying capacity.md"
+  ],
+  "일정한": [
+    "content/05_Marketing_Business/Carrying capacity.md"
+  ],
+  "Digital Side Effect": [
+    "content/05_Marketing_Business/Digital Side Effect.md"
+  ],
+  "CA": [
+    "content/05_Marketing_Business/Digital Side Effect.md"
+  ],
+  "감정": [
+    "content/05_Marketing_Business/Digital Side Effect.md",
+    "content/06_Philosophy_Humanities/감정.md"
+  ],
+  "천만": [
+    "content/05_Marketing_Business/Digital Side Effect.md"
+  ],
+  "조직": [
+    "content/05_Marketing_Business/KPI.md"
+  ],
+  "가설이": [
+    "content/05_Marketing_Business/MVP.md"
+  ],
+  "만들어": [
+    "content/05_Marketing_Business/MVP.md"
+  ],
+  "ROAS": [
+    "content/05_Marketing_Business/ROAS.md"
+  ],
+  "광고비": [
+    "content/05_Marketing_Business/ROAS.md"
+  ],
+  "RTE": [
+    "content/05_Marketing_Business/RTE.md"
+  ],
+  "한발": [
+    "content/05_Marketing_Business/RTE.md"
+  ],
+  "ERP": [
+    "content/05_Marketing_Business/RTE.md"
+  ],
+  "STP 전략": [
+    "content/05_Marketing_Business/STP 전략.md"
+  ],
+  "SWOT 분석": [
+    "content/05_Marketing_Business/SWOT 분석.md"
+  ],
+  "SWOT": [
+    "content/05_Marketing_Business/SWOT 분석.md"
+  ],
+  "검색 유입": [
+    "content/05_Marketing_Business/검색 유입.md"
+  ],
+  "경로독점": [
+    "content/05_Marketing_Business/경로독점.md"
+  ],
+  "판결": [
+    "content/05_Marketing_Business/경로독점.md"
+  ],
+  "미확정": [
+    "content/05_Marketing_Business/경로독점.md"
+  ],
+  "판결문": [
+    "content/05_Marketing_Business/경로독점.md"
+  ],
+  "때문이다": [
+    "content/05_Marketing_Business/경로독점.md"
+  ],
+  "경로의 저주": [
+    "content/05_Marketing_Business/경로의 저주.md"
+  ],
+  "가는": [
+    "content/05_Marketing_Business/경로의 저주.md"
+  ],
+  "만든다": [
+    "content/05_Marketing_Business/경로의 저주.md"
+  ],
+  "경로의존": [
+    "content/05_Marketing_Business/경로의존.md"
+  ],
+  "신문을": [
+    "content/05_Marketing_Business/경로의존.md"
+  ],
+  "고객 생애 가치": [
+    "content/05_Marketing_Business/고객 생애 가치.md"
+  ],
+  "단기": [
+    "content/05_Marketing_Business/고객 생애 가치.md"
+  ],
+  "CLV": [
+    "content/05_Marketing_Business/고객 생애 가치.md"
+  ],
+  "LTV": [
+    "content/05_Marketing_Business/고객 생애 가치.md"
+  ],
+  "구글의 열가지 철학": [
+    "content/05_Marketing_Business/구글의 열가지 철학.md"
+  ],
+  "광고는": [
+    "content/05_Marketing_Business/구글의 열가지 철학.md"
+  ],
+  "명확하게": [
+    "content/05_Marketing_Business/구글의 열가지 철학.md"
+  ],
+  "구별짓기": [
+    "content/05_Marketing_Business/구별짓기.md"
+  ],
+  "과시": [
+    "content/05_Marketing_Business/구별짓기.md"
+  ],
+  "시대": [
+    "content/05_Marketing_Business/구별짓기.md",
+    "content/05_Marketing_Business/마케팅의 역사.md"
+  ],
+  "잉크": [
+    "content/05_Marketing_Business/구별짓기.md"
+  ],
+  "과시의": [
+    "content/05_Marketing_Business/구별짓기.md"
+  ],
+  "내러티브 자본": [
+    "content/05_Marketing_Business/내러티브 자본.md"
+  ],
+  "주가": [
+    "content/05_Marketing_Business/내러티브 자본.md"
+  ],
+  "PDR": [
+    "content/05_Marketing_Business/내러티브 자본.md",
+    "content/07_Economics_Finance/PDR.md"
+  ],
+  "PER": [
+    "content/05_Marketing_Business/내러티브 자본.md",
+    "content/07_Economics_Finance/PBR.md",
+    "content/07_Economics_Finance/PDR.md",
+    "content/07_Economics_Finance/PER.md",
+    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+  ],
+  "끝나는": [
+    "content/05_Marketing_Business/내러티브 자본.md"
+  ],
+  "네트워크 효과": [
+    "content/05_Marketing_Business/네트워크 효과.md"
+  ],
+  "약점": [
+    "content/05_Marketing_Business/네트워크 효과.md"
+  ],
+  "효과": [
+    "content/05_Marketing_Business/네트워크 효과.md"
+  ],
+  "롱테일": [
+    "content/05_Marketing_Business/롱테일.md"
+  ],
+  "부분을": [
+    "content/05_Marketing_Business/롱테일.md"
+  ],
+  "크리스": [
+    "content/05_Marketing_Business/롱테일.md"
+  ],
+  "파레토": [
+    "content/05_Marketing_Business/롱테일.md"
+  ],
+  "꾸준히": [
+    "content/05_Marketing_Business/리텐션.md"
+  ],
+  "그래프의": [
+    "content/05_Marketing_Business/리텐션.md"
+  ],
+  "기울기가": [
+    "content/05_Marketing_Business/리텐션.md"
+  ],
+  "마진이": [
+    "content/05_Marketing_Business/마진.md"
+  ],
+  "마케팅의 역사": [
+    "content/05_Marketing_Business/마케팅의 역사.md"
+  ],
+  "과잉": [
+    "content/05_Marketing_Business/마케팅의 역사.md"
+  ],
+  "년대": [
+    "content/05_Marketing_Business/마케팅의 역사.md"
+  ],
+  "속에": [
+    "content/05_Marketing_Business/마케팅의 역사.md"
+  ],
+  "USP": [
+    "content/05_Marketing_Business/마케팅의 역사.md"
+  ],
+  "브랜드 좋아 보이는 것들의 비밀": [
+    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md"
+  ],
+  "BI": [
+    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/05_Marketing_Business/브랜드 3.0.md"
+  ],
+  "네임을": [
+    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/05_Marketing_Business/브랜딩.md"
+  ],
+  "브랜딩": [
+    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
+    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/05_Marketing_Business/브랜딩.md"
+  ],
+  "브랜드 커뮤니케이션": [
+    "content/05_Marketing_Business/브랜드 커뮤니케이션.md"
+  ],
+  "네임과": [
+    "content/05_Marketing_Business/브랜드 커뮤니케이션.md"
+  ],
+  "소비자": [
+    "content/05_Marketing_Business/브랜드 커뮤니케이션.md"
+  ],
+  "브랜드는": [
+    "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
+    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/05_Marketing_Business/브랜딩.md"
+  ],
+  "브랜딩 역사, 특성, 법칙": [
+    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md"
+  ],
+  "브랜드의": [
+    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md"
+  ],
+  "만들어라": [
+    "content/05_Marketing_Business/브랜딩.md"
+  ],
+  "브이노믹스": [
+    "content/05_Marketing_Business/브이노믹스.md"
+  ],
+  "보일": [
+    "content/05_Marketing_Business/브이노믹스.md"
+  ],
+  "트렌트": [
+    "content/05_Marketing_Business/브이노믹스.md"
+  ],
+  "소셜 유입": [
+    "content/05_Marketing_Business/소셜 유입.md"
+  ],
+  "소셜": [
+    "content/05_Marketing_Business/소셜 유입.md",
+    "content/05_Marketing_Business/소셜딜레마.md",
+    "content/06_Philosophy_Humanities/영화 다큐멘터리.md"
+  ],
+  "소셜딜레마": [
+    "content/05_Marketing_Business/소셜딜레마.md"
+  ],
+  "가짜": [
+    "content/05_Marketing_Business/소셜딜레마.md",
+    "content/06_Philosophy_Humanities/영화 다큐멘터리.md"
+  ],
+  "뉴스": [
+    "content/05_Marketing_Business/소셜딜레마.md"
+  ],
+  "언택트": [
+    "content/05_Marketing_Business/언택트.md"
+  ],
+  "트렌드": [
+    "content/05_Marketing_Business/언택트.md"
+  ],
+  "VR": [
+    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md"
+  ],
+  "삼성": [
+    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md"
+  ],
+  "같아요": [
+    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md"
+  ],
+  "타조는": [
+    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md"
+  ],
+  "이탈률": [
+    "content/05_Marketing_Business/이탈률.md"
+  ],
+  "인바운드 마케팅": [
+    "content/05_Marketing_Business/인바운드 마케팅.md"
+  ],
+  "전환율": [
+    "content/05_Marketing_Business/전환율.md",
+    "content/01_UX_Design/Data Driven UX.md",
+    "content/01_UX_Design/USER RESEARCH.md"
+  ],
+  "직접 유입": [
+    "content/05_Marketing_Business/직접 유입.md"
+  ],
+  "추천 유입": [
+    "content/05_Marketing_Business/추천 유입.md"
+  ],
+  "팬슈머": [
+    "content/05_Marketing_Business/팬슈머.md"
+  ],
+  "MD": [
+    "content/05_Marketing_Business/팬슈머.md"
+  ],
+  "편의점에서 구매할 수 있는 기프트카드": [
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
+  ],
+  "더욱": [
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
+  ],
+  "된다": [
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
+  ],
+  "플랫폼": [
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/05_Marketing_Business/파이프라인.md"
+  ],
+  "피터 드러커의 자기경영노트": [
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+  ],
+  "경영": [
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
+    "content/05_Marketing_Business/규칙 없음.md",
+    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+  ],
+  "시간을": [
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+  ],
+  "달성하는": [
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+  ],
+  "목표달성": [
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+  ],
+  "회사": [
+    "content/05_Marketing_Business/회사.md"
+  ],
+  "기업": [
+    "content/05_Marketing_Business/회사.md",
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
+    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+  ],
+  "돈을": [
+    "content/05_Marketing_Business/회사.md",
+    "content/08_Insights/제태크 수단에 대해서.md",
+    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md"
+  ],
+  "투자": [
+    "content/05_Marketing_Business/회사.md",
+    "content/07_Economics_Finance/EBITDA.md",
+    "content/07_Economics_Finance/PBR.md",
+    "content/07_Economics_Finance/PDR.md",
+    "content/07_Economics_Finance/PEG.md",
+    "content/07_Economics_Finance/PER.md",
+    "content/07_Economics_Finance/가치투자.md",
+    "content/07_Economics_Finance/기준금리.md",
+    "content/07_Economics_Finance/민영화.md",
+    "content/07_Economics_Finance/배당금.md",
+    "content/07_Economics_Finance/밸류 트랩.md",
+    "content/07_Economics_Finance/보통주.md",
+    "content/07_Economics_Finance/액면가.md",
+    "content/07_Economics_Finance/우선주.md",
+    "content/07_Economics_Finance/위험.md",
+    "content/07_Economics_Finance/자본금.md",
+    "content/07_Economics_Finance/퇴직연금.md",
+    "content/07_Economics_Finance/현금없는 사회.md",
+    "content/07_Economics_Finance/부의 시작.md",
+    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md",
+    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md",
+    "content/07_Economics_Finance/존리의 금융문맹 탈출.md",
+    "content/07_Economics_Finance/존리의 부자되기 습관.md",
+    "content/07_Economics_Finance/주식 공부 5일 완성.md",
+    "content/07_Economics_Finance/하버드 시간관리.md",
+    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md",
+    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+  ],
+  "LTD": [
+    "content/05_Marketing_Business/회사.md"
+  ],
+  "수익을": [
+    "content/05_Marketing_Business/회사.md"
+  ],
+  "책임을": [
+    "content/05_Marketing_Business/회사.md"
+  ],
+  "RNA": [
+    "content/06_Philosophy_Humanities/RNA.md"
+  ],
+  "철학": [
+    "content/06_Philosophy_Humanities/RNA.md",
+    "content/06_Philosophy_Humanities/감정.md",
+    "content/06_Philosophy_Humanities/기생충.md",
+    "content/06_Philosophy_Humanities/길가메시.md",
+    "content/06_Philosophy_Humanities/녹서.md",
+    "content/06_Philosophy_Humanities/무의식.md",
+    "content/06_Philosophy_Humanities/문화.md",
+    "content/06_Philosophy_Humanities/본질.md",
+    "content/06_Philosophy_Humanities/생명체.md",
+    "content/06_Philosophy_Humanities/아우라.md",
+    "content/06_Philosophy_Humanities/역사 관련.md",
+    "content/06_Philosophy_Humanities/영세중립국.md",
+    "content/06_Philosophy_Humanities/영화 다큐멘터리.md",
+    "content/06_Philosophy_Humanities/예술.md",
+    "content/06_Philosophy_Humanities/이솝 우화.md",
+    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/06_Philosophy_Humanities/자기동일성.md",
+    "content/06_Philosophy_Humanities/자기수용감각.md",
+    "content/06_Philosophy_Humanities/장자.md",
+    "content/06_Philosophy_Humanities/질병 분류표.md",
+    "content/06_Philosophy_Humanities/철학.md",
+    "content/06_Philosophy_Humanities/칸트.md",
+    "content/06_Philosophy_Humanities/칼의 노래.md",
+    "content/06_Philosophy_Humanities/파르테논 신전.md",
+    "content/06_Philosophy_Humanities/평등.md",
+    "content/06_Philosophy_Humanities/표상.md",
+    "content/06_Philosophy_Humanities/행복.md",
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md",
+    "content/06_Philosophy_Humanities/화석연료.md",
+    "content/06_Philosophy_Humanities/Grit.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/06_Philosophy_Humanities/동물농장.md",
+    "content/06_Philosophy_Humanities/비트겐슈타인.md",
+    "content/06_Philosophy_Humanities/사피엔스.md",
+    "content/06_Philosophy_Humanities/생각의 탄생.md",
+    "content/06_Philosophy_Humanities/샤르트르.md",
+    "content/06_Philosophy_Humanities/소쉬르.md",
+    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/06_Philosophy_Humanities/적정기술.md",
+    "content/06_Philosophy_Humanities/한비자.md"
+  ],
+  "혹스": [
+    "content/06_Philosophy_Humanities/RNA.md"
+  ],
+  "DNA": [
+    "content/06_Philosophy_Humanities/RNA.md",
+    "content/06_Philosophy_Humanities/생명체.md"
+  ],
+  "B0": [
+    "content/06_Philosophy_Humanities/감정.md"
+  ],
+  "EA": [
+    "content/06_Philosophy_Humanities/감정.md",
+    "content/06_Philosophy_Humanities/모던 타임즈.md",
+    "content/08_Insights/타이 로페즈.md"
+  ],
+  "국방 순위 2020": [
+    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+  ],
+  "국가": [
+    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+  ],
+  "동맹": [
+    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+  ],
+  "상위": [
+    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+  ],
+  "참고": [
+    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+  ],
+  "기생충": [
+    "content/06_Philosophy_Humanities/기생충.md"
+  ],
+  "이야기": [
+    "content/06_Philosophy_Humanities/기생충.md"
+  ],
+  "인문학": [
+    "content/06_Philosophy_Humanities/기생충.md",
+    "content/06_Philosophy_Humanities/녹서.md",
+    "content/06_Philosophy_Humanities/무의식.md",
+    "content/06_Philosophy_Humanities/철학.md",
+    "content/06_Philosophy_Humanities/칸트.md",
+    "content/06_Philosophy_Humanities/파르테논 신전.md",
+    "content/06_Philosophy_Humanities/표상.md",
+    "content/06_Philosophy_Humanities/화석연료.md",
+    "content/06_Philosophy_Humanities/Grit.md",
+    "content/06_Philosophy_Humanities/마지막 몰입.md",
+    "content/06_Philosophy_Humanities/비트겐슈타인.md",
+    "content/06_Philosophy_Humanities/사피엔스.md",
+    "content/06_Philosophy_Humanities/생각의 탄생.md",
+    "content/06_Philosophy_Humanities/샤르트르.md",
+    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/06_Philosophy_Humanities/한비자.md",
+    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+  ],
+  "바퀴벌레": [
+    "content/06_Philosophy_Humanities/기생충.md"
+  ],
+  "영화이다": [
+    "content/06_Philosophy_Humanities/기생충.md"
+  ],
+  "길가메시": [
+    "content/06_Philosophy_Humanities/길가메시.md"
+  ],
+  "A9": [
+    "content/06_Philosophy_Humanities/길가메시.md"
+  ],
+  "EB": [
+    "content/06_Philosophy_Humanities/길가메시.md"
+  ],
+  "녹서": [
+    "content/06_Philosophy_Humanities/녹서.md"
+  ],
+  "녹서는": [
+    "content/06_Philosophy_Humanities/녹서.md"
+  ],
+  "정책을": [
+    "content/06_Philosophy_Humanities/녹서.md"
+  ],
+  "모던 타임즈": [
+    "content/06_Philosophy_Humanities/모던 타임즈.md"
+  ],
+  "B3": [
+    "content/06_Philosophy_Humanities/모던 타임즈.md"
+  ],
+  "B5": [
+    "content/06_Philosophy_Humanities/모던 타임즈.md"
+  ],
+  "다시": [
+    "content/06_Philosophy_Humanities/모던 타임즈.md"
+  ],
+  "영화": [
+    "content/06_Philosophy_Humanities/모던 타임즈.md"
+  ],
+  "무의식": [
+    "content/06_Philosophy_Humanities/무의식.md"
+  ],
+  "의식적": [
+    "content/06_Philosophy_Humanities/무의식.md"
+  ],
+  "자신이": [
+    "content/06_Philosophy_Humanities/무의식.md"
+  ],
+  "정신적": [
+    "content/06_Philosophy_Humanities/무의식.md"
+  ],
+  "문화": [
+    "content/06_Philosophy_Humanities/문화.md",
+    "content/06_Philosophy_Humanities/적정기술.md"
+  ],
+  "문화는": [
+    "content/06_Philosophy_Humanities/문화.md"
+  ],
+  "문화를": [
+    "content/06_Philosophy_Humanities/문화.md"
+  ],
+  "문화의": [
+    "content/06_Philosophy_Humanities/문화.md"
+  ],
+  "본질": [
+    "content/06_Philosophy_Humanities/본질.md",
+    "content/06_Philosophy_Humanities/샤르트르.md"
+  ],
+  "자체": [
+    "content/06_Philosophy_Humanities/본질.md"
+  ],
+  "본질을": [
+    "content/06_Philosophy_Humanities/본질.md"
+  ],
+  "우리는": [
+    "content/06_Philosophy_Humanities/본질.md"
+  ],
+  "생명체": [
+    "content/06_Philosophy_Humanities/생명체.md"
+  ],
+  "동물": [
+    "content/06_Philosophy_Humanities/생명체.md"
+  ],
+  "세포": [
+    "content/06_Philosophy_Humanities/생명체.md"
+  ],
+  "식물": [
+    "content/06_Philosophy_Humanities/생명체.md"
+  ],
+  "아우라": [
+    "content/06_Philosophy_Humanities/아우라.md"
+  ],
+  "바로": [
+    "content/06_Philosophy_Humanities/아우라.md"
+  ],
+  "가까이": [
+    "content/06_Philosophy_Humanities/아우라.md"
+  ],
+  "대중이": [
+    "content/06_Philosophy_Humanities/아우라.md"
+  ],
+  "복제를": [
+    "content/06_Philosophy_Humanities/아우라.md"
+  ],
+  "역사 관련": [
+    "content/06_Philosophy_Humanities/역사 관련.md"
+  ],
+  "역사": [
+    "content/06_Philosophy_Humanities/역사 관련.md",
+    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md"
+  ],
+  "힘이": [
+    "content/06_Philosophy_Humanities/역사 관련.md"
+  ],
+  "되었다": [
+    "content/06_Philosophy_Humanities/역사 관련.md"
+  ],
+  "우리가": [
+    "content/06_Philosophy_Humanities/역사 관련.md"
+  ],
+  "영세중립국": [
+    "content/06_Philosophy_Humanities/영세중립국.md"
+  ],
+  "국방": [
+    "content/06_Philosophy_Humanities/영세중립국.md"
+  ],
+  "먹을": [
+    "content/06_Philosophy_Humanities/영세중립국.md"
+  ],
+  "순위": [
+    "content/06_Philosophy_Humanities/영세중립국.md"
+  ],
+  "영화 다큐멘터리": [
+    "content/06_Philosophy_Humanities/영화 다큐멘터리.md"
+  ],
+  "우리": [
+    "content/06_Philosophy_Humanities/영화 다큐멘터리.md"
+  ],
+  "예술": [
+    "content/06_Philosophy_Humanities/예술.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+  ],
+  "목적": [
+    "content/06_Philosophy_Humanities/예술.md"
+  ],
+  "예술은": [
+    "content/06_Philosophy_Humanities/예술.md"
+  ],
+  "예술의": [
+    "content/06_Philosophy_Humanities/예술.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+  ],
+  "이솝 우화": [
+    "content/06_Philosophy_Humanities/이솝 우화.md"
+  ],
+  "QR": [
+    "content/06_Philosophy_Humanities/이솝 우화.md"
+  ],
+  "마라": [
+    "content/06_Philosophy_Humanities/이솝 우화.md"
+  ],
+  "포도": [
+    "content/06_Philosophy_Humanities/이솝 우화.md"
+  ],
+  "인간은 보여야지 믿는다": [
+    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md"
+  ],
+  "물자체": [
+    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md"
+  ],
+  "믿는다": [
+    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md"
+  ],
+  "자기동일성": [
+    "content/06_Philosophy_Humanities/자기동일성.md"
+  ],
+  "않는": [
+    "content/06_Philosophy_Humanities/자기동일성.md"
+  ],
+  "변하지": [
+    "content/06_Philosophy_Humanities/자기동일성.md"
+  ],
+  "자기수용감각": [
+    "content/06_Philosophy_Humanities/자기수용감각.md"
+  ],
+  "근육": [
+    "content/06_Philosophy_Humanities/자기수용감각.md"
+  ],
+  "몸의": [
+    "content/06_Philosophy_Humanities/자기수용감각.md"
+  ],
+  "관절의": [
+    "content/06_Philosophy_Humanities/자기수용감각.md"
+  ],
+  "장자": [
+    "content/06_Philosophy_Humanities/장자.md"
+  ],
+  "고전": [
+    "content/06_Philosophy_Humanities/장자.md"
+  ],
+  "대붕": [
+    "content/06_Philosophy_Humanities/장자.md"
+  ],
+  "칼을": [
+    "content/06_Philosophy_Humanities/장자.md"
+  ],
+  "사람은": [
+    "content/06_Philosophy_Humanities/장자.md"
+  ],
+  "소요유": [
+    "content/06_Philosophy_Humanities/장자.md"
+  ],
+  "질병 분류표": [
+    "content/06_Philosophy_Humanities/질병 분류표.md"
+  ],
+  "질병": [
+    "content/06_Philosophy_Humanities/질병 분류표.md"
+  ],
+  "분류표": [
+    "content/06_Philosophy_Humanities/질병 분류표.md"
+  ],
+  "칸트": [
+    "content/06_Philosophy_Humanities/철학.md",
+    "content/06_Philosophy_Humanities/칸트.md"
+  ],
+  "플라톤": [
+    "content/06_Philosophy_Humanities/철학.md"
+  ],
+  "철학대철학": [
+    "content/06_Philosophy_Humanities/철학대철학.md"
+  ],
+  "경향": [
+    "content/06_Philosophy_Humanities/철학대철학.md"
+  ],
+  "동양": [
+    "content/06_Philosophy_Humanities/철학대철학.md"
+  ],
+  "서양": [
+    "content/06_Philosophy_Humanities/철학대철학.md"
+  ],
+  "주체": [
+    "content/06_Philosophy_Humanities/철학대철학.md"
+  ],
+  "비판": [
+    "content/06_Philosophy_Humanities/칸트.md"
+  ],
+  "초월": [
+    "content/06_Philosophy_Humanities/칸트.md"
+  ],
+  "칸트가": [
+    "content/06_Philosophy_Humanities/칸트.md"
+  ],
+  "칼의 노래": [
+    "content/06_Philosophy_Humanities/칼의 노래.md"
+  ],
+  "노래": [
+    "content/06_Philosophy_Humanities/칼의 노래.md"
+  ],
+  "이길": [
+    "content/06_Philosophy_Humanities/칼의 노래.md"
+  ],
+  "있을": [
+    "content/06_Philosophy_Humanities/칼의 노래.md"
+  ],
+  "칼의": [
+    "content/06_Philosophy_Humanities/칼의 노래.md"
+  ],
+  "파르테논 신전": [
+    "content/06_Philosophy_Humanities/파르테논 신전.md"
+  ],
+  "기둥": [
+    "content/06_Philosophy_Humanities/파르테논 신전.md"
+  ],
+  "신전": [
+    "content/06_Philosophy_Humanities/파르테논 신전.md"
+  ],
+  "황금": [
+    "content/06_Philosophy_Humanities/파르테논 신전.md"
+  ],
+  "평등": [
+    "content/06_Philosophy_Humanities/평등.md"
+  ],
+  "OK": [
+    "content/06_Philosophy_Humanities/평등.md"
+  ],
+  "가령": [
+    "content/06_Philosophy_Humanities/평등.md"
+  ],
+  "기회": [
+    "content/06_Philosophy_Humanities/평등.md"
+  ],
+  "기회의": [
+    "content/06_Philosophy_Humanities/평등.md"
+  ],
+  "표상": [
+    "content/06_Philosophy_Humanities/표상.md"
+  ],
+  "지각": [
+    "content/06_Philosophy_Humanities/표상.md"
+  ],
+  "행복": [
+    "content/06_Philosophy_Humanities/행복.md"
+  ],
+  "그들의": [
+    "content/06_Philosophy_Humanities/행복.md"
+  ],
+  "신체와": [
+    "content/06_Philosophy_Humanities/행복.md"
+  ],
+  "화, 이해하면 사라진다.": [
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+  ],
+  "아는": [
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+  ],
+  "대상은": [
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+  ],
+  "대상을": [
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+  ],
+  "마음이": [
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+  ],
+  "화석연료": [
+    "content/06_Philosophy_Humanities/화석연료.md"
+  ],
+  "에너지": [
+    "content/06_Philosophy_Humanities/화석연료.md"
+  ],
+  "EBITDA": [
+    "content/07_Economics_Finance/EBITDA.md"
+  ],
+  "EV": [
+    "content/07_Economics_Finance/EBITDA.md"
+  ],
+  "경제": [
+    "content/07_Economics_Finance/EBITDA.md",
+    "content/07_Economics_Finance/PBR.md",
+    "content/07_Economics_Finance/PDR.md",
+    "content/07_Economics_Finance/PEG.md",
+    "content/07_Economics_Finance/PER.md",
+    "content/07_Economics_Finance/기준금리.md",
+    "content/07_Economics_Finance/민영화.md",
+    "content/07_Economics_Finance/배당금.md",
+    "content/07_Economics_Finance/밸류 트랩.md",
+    "content/07_Economics_Finance/보통주.md",
+    "content/07_Economics_Finance/액면가.md",
+    "content/07_Economics_Finance/우선주.md",
+    "content/07_Economics_Finance/위험.md",
+    "content/07_Economics_Finance/자본금.md",
+    "content/07_Economics_Finance/퇴직연금.md",
+    "content/07_Economics_Finance/현금없는 사회.md",
+    "content/07_Economics_Finance/넛지.md",
+    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md",
+    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md",
+    "content/07_Economics_Finance/운의 알고리즘.md",
+    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md",
+    "content/07_Economics_Finance/존리의 금융문맹 탈출.md",
+    "content/07_Economics_Finance/존리의 부자되기 습관.md",
+    "content/07_Economics_Finance/하버드 시간관리.md",
+    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md",
+    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+  ],
+  "금융": [
+    "content/07_Economics_Finance/EBITDA.md",
+    "content/07_Economics_Finance/PBR.md",
+    "content/07_Economics_Finance/PDR.md",
+    "content/07_Economics_Finance/PEG.md",
+    "content/07_Economics_Finance/PER.md",
+    "content/07_Economics_Finance/기준금리.md",
+    "content/07_Economics_Finance/민영화.md",
+    "content/07_Economics_Finance/배당금.md",
+    "content/07_Economics_Finance/밸류 트랩.md",
+    "content/07_Economics_Finance/보통주.md",
+    "content/07_Economics_Finance/액면가.md",
+    "content/07_Economics_Finance/우선주.md",
+    "content/07_Economics_Finance/위험.md",
+    "content/07_Economics_Finance/자본금.md",
+    "content/07_Economics_Finance/퇴직연금.md",
+    "content/07_Economics_Finance/현금없는 사회.md",
+    "content/07_Economics_Finance/넛지.md",
+    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md",
+    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md",
+    "content/07_Economics_Finance/운의 알고리즘.md",
+    "content/07_Economics_Finance/존리의 금융문맹 탈출.md",
+    "content/07_Economics_Finance/존리의 부자되기 습관.md",
+    "content/07_Economics_Finance/하버드 시간관리.md",
+    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+  ],
+  "더한": [
+    "content/07_Economics_Finance/EBITDA.md"
+  ],
+  "PBR": [
+    "content/07_Economics_Finance/PBR.md"
+  ],
+  "높은": [
+    "content/07_Economics_Finance/PBR.md"
+  ],
+  "주식": [
+    "content/07_Economics_Finance/PBR.md",
+    "content/07_Economics_Finance/PER.md",
+    "content/07_Economics_Finance/가치투자.md",
+    "content/07_Economics_Finance/배당금.md",
+    "content/07_Economics_Finance/액면가.md",
+    "content/07_Economics_Finance/부의 시작.md",
+    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md",
+    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+  ],
+  "미래": [
+    "content/07_Economics_Finance/PDR.md"
+  ],
+  "이란": [
+    "content/07_Economics_Finance/PDR.md"
+  ],
+  "PEG": [
+    "content/07_Economics_Finance/PEG.md"
+  ],
+  "값은": [
+    "content/07_Economics_Finance/PEG.md"
+  ],
+  "보통": [
+    "content/07_Economics_Finance/PEG.md"
+  ],
+  "가치투자": [
+    "content/07_Economics_Finance/가치투자.md"
+  ],
+  "두는": [
+    "content/07_Economics_Finance/가치투자.md"
+  ],
+  "재테크": [
+    "content/07_Economics_Finance/가치투자.md",
+    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+  ],
+  "기준금리": [
+    "content/07_Economics_Finance/기준금리.md"
+  ],
+  "RP": [
+    "content/07_Economics_Finance/기준금리.md"
+  ],
+  "일물": [
+    "content/07_Economics_Finance/기준금리.md"
+  ],
+  "민영화": [
+    "content/07_Economics_Finance/민영화.md"
+  ],
+  "맞다": [
+    "content/07_Economics_Finance/민영화.md"
+  ],
+  "배당금": [
+    "content/07_Economics_Finance/배당금.md"
+  ],
+  "배당부": [
+    "content/07_Economics_Finance/배당금.md"
+  ],
+  "밸류 트랩": [
+    "content/07_Economics_Finance/밸류 트랩.md"
+  ],
+  "밸류": [
+    "content/07_Economics_Finance/밸류 트랩.md"
+  ],
+  "트랩": [
+    "content/07_Economics_Finance/밸류 트랩.md"
+  ],
+  "한국": [
+    "content/07_Economics_Finance/밸류 트랩.md"
+  ],
+  "보통주": [
+    "content/07_Economics_Finance/보통주.md"
+  ],
+  "액면가": [
+    "content/07_Economics_Finance/액면가.md"
+  ],
+  "가격": [
+    "content/07_Economics_Finance/액면가.md"
+  ],
+  "발행": [
+    "content/07_Economics_Finance/액면가.md"
+  ],
+  "우선주": [
+    "content/07_Economics_Finance/우선주.md"
+  ],
+  "위험": [
+    "content/07_Economics_Finance/위험.md"
+  ],
+  "변동": [
+    "content/07_Economics_Finance/위험.md"
+  ],
+  "손실": [
+    "content/07_Economics_Finance/위험.md"
+  ],
+  "MDD": [
+    "content/07_Economics_Finance/위험.md"
+  ],
+  "자본금": [
+    "content/07_Economics_Finance/자본금.md"
+  ],
+  "범위": [
+    "content/07_Economics_Finance/자본금.md",
+    "content/02_IT_Tech/Float Type.md",
+    "content/02_IT_Tech/Int Type.md"
+  ],
+  "증자할": [
+    "content/07_Economics_Finance/자본금.md"
+  ],
+  "구성된다": [
+    "content/07_Economics_Finance/자본금.md"
+  ],
+  "퇴직연금": [
+    "content/07_Economics_Finance/퇴직연금.md"
+  ],
+  "DC": [
+    "content/07_Economics_Finance/퇴직연금.md"
+  ],
+  "현금없는 사회": [
+    "content/07_Economics_Finance/현금없는 사회.md"
+  ],
+  "사회": [
+    "content/07_Economics_Finance/현금없는 사회.md"
+  ],
+  "사회가": [
+    "content/07_Economics_Finance/현금없는 사회.md"
+  ],
+  "뇌의 한계": [
+    "content/08_Insights/뇌의 한계.md"
+  ],
+  "뇌의": [
+    "content/08_Insights/뇌의 한계.md"
+  ],
+  "한계": [
+    "content/08_Insights/뇌의 한계.md",
+    "content/08_Insights/한계.md",
+    "content/01_UX_Design/디자인씽킹.md"
+  ],
+  "한계가": [
+    "content/08_Insights/뇌의 한계.md"
+  ],
+  "인사이트": [
+    "content/08_Insights/뇌의 한계.md",
+    "content/08_Insights/사람들에게 반감을 사는 방법.md",
+    "content/08_Insights/사람의 특징.md",
+    "content/08_Insights/아집이 생기는 것에 대해서.md",
+    "content/08_Insights/제태크 수단에 대해서.md",
+    "content/08_Insights/조커.md",
+    "content/08_Insights/한계.md",
+    "content/08_Insights/인간관계론.md",
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
+    "content/08_Insights/자기관리론.md"
+  ],
+  "사람들에게 반감을 사는 방법": [
+    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+  ],
+  "그냥": [
+    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+  ],
+  "하지": [
+    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+  ],
+  "정치적": [
+    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+  ],
+  "주장이": [
+    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+  ],
+  "사람의 특징": [
+    "content/08_Insights/사람의 특징.md"
+  ],
+  "알고": [
+    "content/08_Insights/사람의 특징.md"
+  ],
+  "특징": [
+    "content/08_Insights/사람의 특징.md"
+  ],
+  "사람의": [
+    "content/08_Insights/사람의 특징.md"
+  ],
+  "자기개발": [
+    "content/08_Insights/사람의 특징.md",
+    "content/08_Insights/조커.md",
+    "content/08_Insights/한계.md"
+  ],
+  "아집이 생기는 것에 대해서": [
+    "content/08_Insights/아집이 생기는 것에 대해서.md"
+  ],
+  "믿음이": [
+    "content/08_Insights/아집이 생기는 것에 대해서.md"
+  ],
+  "있어야": [
+    "content/08_Insights/아집이 생기는 것에 대해서.md"
+  ],
+  "주장을": [
+    "content/08_Insights/아집이 생기는 것에 대해서.md"
+  ],
+  "과학자의": [
+    "content/08_Insights/아집이 생기는 것에 대해서.md"
+  ],
+  "제태크 수단에 대해서": [
+    "content/08_Insights/제태크 수단에 대해서.md"
+  ],
+  "내가": [
+    "content/08_Insights/제태크 수단에 대해서.md",
+    "content/08_Insights/한계.md",
+    "content/08_Insights/자기관리론.md"
+  ],
+  "만원": [
+    "content/08_Insights/제태크 수단에 대해서.md"
+  ],
+  "매년": [
+    "content/08_Insights/제태크 수단에 대해서.md"
+  ],
+  "만원씩": [
+    "content/08_Insights/제태크 수단에 대해서.md"
+  ],
+  "조커": [
+    "content/08_Insights/조커.md"
+  ],
+  "순수": [
+    "content/08_Insights/조커.md"
+  ],
+  "웃음": [
+    "content/08_Insights/조커.md"
+  ],
+  "사연이": [
+    "content/08_Insights/조커.md"
+  ],
+  "조커는": [
+    "content/08_Insights/조커.md"
+  ],
+  "타이 로페즈": [
+    "content/08_Insights/타이 로페즈.md"
+  ],
+  "B1": [
+    "content/08_Insights/타이 로페즈.md"
+  ],
+  "보게": [
+    "content/08_Insights/타이 로페즈.md"
+  ],
+  "절대": [
+    "content/08_Insights/타이 로페즈.md"
+  ],
+  "당신의": [
+    "content/08_Insights/타이 로페즈.md"
+  ],
+  "현재": [
+    "content/08_Insights/한계.md"
+  ],
+  "약점이": [
+    "content/08_Insights/한계.md"
+  ],
+  "index": [
+    "content/index.md"
+  ],
+  "파악": [
+    "content/01_UX_Design/Data Driven UX.md"
+  ],
+  "행동": [
+    "content/01_UX_Design/Data Driven UX.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md"
+  ],
+  "유저": [
+    "content/01_UX_Design/USER RESEARCH.md"
+  ],
+  "측면": [
+    "content/01_UX_Design/UX  불변의 법칙.md"
+  ],
+  "RAE": [
+    "content/01_UX_Design/UX  불변의 법칙.md"
+  ],
+  "스타트업": [
+    "content/01_UX_Design/UX 기획의 기술.md",
+    "content/05_Marketing_Business/파이프라인.md"
+  ],
+  "즐거움": [
+    "content/01_UX_Design/감성 디자인.md"
+  ],
+  "심성": [
+    "content/01_UX_Design/디자인과 인간심리.md"
+  ],
+  "제약": [
+    "content/01_UX_Design/디자인과 인간심리.md"
+  ],
+  "책 소개": [
+    "content/01_UX_Design/디자인과 인간심리.md",
+    "content/06_Philosophy_Humanities/마지막 몰입.md",
+    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+  ],
+  "디자인씽킹": [
+    "content/01_UX_Design/디자인씽킹.md"
+  ],
+  "공감": [
+    "content/01_UX_Design/디자인씽킹.md"
+  ],
+  "규칙을": [
+    "content/01_UX_Design/마음을 생각하는 디자인.md"
+  ],
+  "문구": [
+    "content/01_UX_Design/마이크로카피.md"
+  ],
+  "에러": [
+    "content/01_UX_Design/마이크로카피.md"
+  ],
+  "멘탈": [
+    "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md"
+  ],
+  "보상": [
+    "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md"
+  ],
+  "FFA": [
+    "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md"
+  ],
+  "소개": [
+    "content/01_UX_Design/모바일 결제 사례 리서치.md"
+  ],
+  "페이": [
+    "content/01_UX_Design/모바일 결제 사례 리서치.md"
+  ],
+  "PM": [
+    "content/01_UX_Design/서비스 기획 스쿨.md"
+  ],
+  "권한": [
+    "content/02_IT_Tech/DAC.md",
+    "content/02_IT_Tech/RBAC.md"
+  ],
+  "권한을": [
+    "content/02_IT_Tech/DAC.md"
+  ],
+  "소유자": [
+    "content/02_IT_Tech/DAC.md"
+  ],
+  "NTFS": [
+    "content/02_IT_Tech/DAC.md"
+  ],
+  "Float Type": [
+    "content/02_IT_Tech/Float Type.md"
+  ],
+  "Int Type": [
+    "content/02_IT_Tech/Int Type.md"
+  ],
+  "특성": [
+    "content/02_IT_Tech/Int Type.md"
+  ],
+  "OPT": [
+    "content/02_IT_Tech/OPT.md"
+  ],
+  "최적": [
+    "content/02_IT_Tech/OPT.md"
+  ],
+  "동작 방식": [
+    "content/02_IT_Tech/OPT.md"
+  ],
+  "패킷": [
+    "content/02_IT_Tech/QOS.md"
+  ],
+  "QoS": [
+    "content/02_IT_Tech/QOS.md"
+  ],
+  "WFQ": [
+    "content/02_IT_Tech/QOS.md"
+  ],
+  "RBAC": [
+    "content/02_IT_Tech/RBAC.md"
+  ],
+  "역할": [
+    "content/02_IT_Tech/RBAC.md"
+  ],
+  "상속성": [
+    "content/02_IT_Tech/상속성.md"
+  ],
+  "부모": [
+    "content/02_IT_Tech/상속성.md"
+  ],
+  "합성": [
+    "content/02_IT_Tech/상속성.md"
+  ],
+  "LSP": [
+    "content/02_IT_Tech/상속성.md"
+  ],
+  "시큐어 코딩": [
+    "content/02_IT_Tech/시큐어 코딩.md"
+  ],
+  "코딩": [
+    "content/02_IT_Tech/시큐어 코딩.md"
+  ],
+  "시큐어": [
+    "content/02_IT_Tech/시큐어 코딩.md"
+  ],
+  "안전한": [
+    "content/02_IT_Tech/시큐어 코딩.md"
+  ],
+  "일방향 암호화 방식": [
+    "content/02_IT_Tech/일방향 암호화 방식.md"
+  ],
+  "국내": [
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md"
+  ],
+  "NLP": [
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md"
+  ],
+  "정량적 데이터": [
+    "content/03_AI_ML/정량적 데이터.md"
+  ],
+  "차이": [
+    "content/03_AI_ML/정량적 데이터.md"
+  ],
+  "척도": [
+    "content/03_AI_ML/정량적 데이터.md"
+  ],
+  "밀도": [
+    "content/05_Marketing_Business/규칙 없음.md"
+  ],
+  "없음": [
+    "content/05_Marketing_Business/규칙 없음.md"
+  ],
+  "인재": [
+    "content/05_Marketing_Business/규칙 없음.md"
+  ],
+  "CEO": [
+    "content/05_Marketing_Business/규칙 없음.md"
+  ],
+  "리더십": [
+    "content/05_Marketing_Business/규칙 없음.md"
+  ],
+  "PMF": [
+    "content/05_Marketing_Business/그로스 해킹.md"
+  ],
+  "그로스": [
+    "content/05_Marketing_Business/그로스 해킹.md"
+  ],
+  "성장을": [
+    "content/05_Marketing_Business/그로스 해킹.md"
+  ],
+  "아니라": [
+    "content/05_Marketing_Business/그로스 해킹.md",
+    "content/06_Philosophy_Humanities/Grit.md",
+    "content/06_Philosophy_Humanities/동물농장.md",
+    "content/06_Philosophy_Humanities/생각의 탄생.md",
+    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/07_Economics_Finance/인간 본성의 법칙.md",
+    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+  ],
+  "공식": [
+    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+  ],
+  "사업": [
+    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+  ],
+  "원형": [
+    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+  ],
+  "캐시": [
+    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+  ],
+  "블로그": [
+    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+  ],
+  "CI": [
+    "content/05_Marketing_Business/브랜드 3.0.md"
+  ],
+  "B2B": [
+    "content/05_Marketing_Business/브랜드 3.0.md"
+  ],
+  "꼬리표": [
+    "content/05_Marketing_Business/브랜드 3.0.md"
+  ],
+  "문제가": [
+    "content/05_Marketing_Business/업스트림.md"
+  ],
+  "TV": [
+    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+  ],
+  "신뢰": [
+    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+  ],
+  "일관": [
+    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+  ],
+  "장수": [
+    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+  ],
+  "IBC": [
+    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+  ],
+  "기업이": [
+    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md",
+    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md"
+  ],
+  "코호트": [
+    "content/05_Marketing_Business/코호트.md"
+  ],
+  "가입": [
+    "content/05_Marketing_Business/코호트.md"
+  ],
+  "가치를": [
+    "content/05_Marketing_Business/파이프라인.md"
+  ],
+  "그릿이": [
+    "content/06_Philosophy_Humanities/Grit.md"
+  ],
+  "의도적": [
+    "content/06_Philosophy_Humanities/Grit.md"
+  ],
+  "Grit": [
+    "content/06_Philosophy_Humanities/Grit.md"
+  ],
+  "복제": [
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+  ],
+  "현대": [
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md"
+  ],
+  "NAD": [
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md"
+  ],
+  "인류는": [
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/06_Philosophy_Humanities/사피엔스.md"
+  ],
+  "뇌는": [
+    "content/06_Philosophy_Humanities/마지막 몰입.md"
+  ],
+  "뇌를": [
+    "content/06_Philosophy_Humanities/마지막 몰입.md"
+  ],
+  "세계의": [
+    "content/06_Philosophy_Humanities/비트겐슈타인.md"
+  ],
+  "언어를": [
+    "content/06_Philosophy_Humanities/비트겐슈타인.md"
+  ],
+  "언어의": [
+    "content/06_Philosophy_Humanities/비트겐슈타인.md"
+  ],
+  "그린": [
+    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+  ],
+  "CCS": [
+    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+  ],
+  "GMO": [
+    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+  ],
+  "SMR": [
+    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+  ],
+  "개인의": [
+    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+  ],
+  "유발": [
+    "content/06_Philosophy_Humanities/사피엔스.md"
+  ],
+  "던지는": [
+    "content/06_Philosophy_Humanities/사피엔스.md"
+  ],
+  "능력": [
+    "content/06_Philosophy_Humanities/생각의 탄생.md"
+  ],
+  "샤르트르": [
+    "content/06_Philosophy_Humanities/샤르트르.md"
+  ],
+  "본질에": [
+    "content/06_Philosophy_Humanities/샤르트르.md"
+  ],
+  "소쉬르": [
+    "content/06_Philosophy_Humanities/소쉬르.md"
+  ],
+  "기의": [
+    "content/06_Philosophy_Humanities/소쉬르.md"
+  ],
+  "기표": [
+    "content/06_Philosophy_Humanities/소쉬르.md"
+  ],
+  "미친": [
+    "content/06_Philosophy_Humanities/슈독.md"
+  ],
+  "슈독": [
+    "content/06_Philosophy_Humanities/슈독.md"
+  ],
+  "창업": [
+    "content/06_Philosophy_Humanities/슈독.md"
+  ],
+  "IPO": [
+    "content/06_Philosophy_Humanities/슈독.md"
+  ],
+  "MBA": [
+    "content/06_Philosophy_Humanities/슈독.md"
+  ],
+  "나이키": [
+    "content/06_Philosophy_Humanities/슈독.md"
+  ],
+  "역사란": [
+    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md"
+  ],
+  "루소는": [
+    "content/06_Philosophy_Humanities/인간 불평등 기원론.md"
+  ],
+  "루소의": [
+    "content/06_Philosophy_Humanities/인간 불평등 기원론.md"
+  ],
+  "적정기술": [
+    "content/06_Philosophy_Humanities/적정기술.md"
+  ],
+  "지속": [
+    "content/06_Philosophy_Humanities/적정기술.md"
+  ],
+  "펌프": [
+    "content/06_Philosophy_Humanities/적정기술.md"
+  ],
+  "한비자": [
+    "content/06_Philosophy_Humanities/한비자.md"
+  ],
+  "그의": [
+    "content/06_Philosophy_Humanities/한비자.md"
+  ],
+  "법가": [
+    "content/06_Philosophy_Humanities/한비자.md"
+  ],
+  "인간관": [
+    "content/06_Philosophy_Humanities/한비자.md"
+  ],
+  "넛지 — 선택을 설계하는 기술": [
+    "content/07_Economics_Finance/넛지.md"
+  ],
+  "넛지": [
+    "content/07_Economics_Finance/넛지.md"
+  ],
+  "일반": [
+    "content/07_Economics_Finance/부의 시작.md"
+  ],
+  "종목": [
+    "content/07_Economics_Finance/부의 시작.md"
+  ],
+  "ETF": [
+    "content/07_Economics_Finance/부의 시작.md",
+    "content/07_Economics_Finance/존리의 금융문맹 탈출.md"
+  ],
+  "부자": [
+    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md"
+  ],
+  "아빠": [
+    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md"
+  ],
+  "가난한": [
+    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md"
+  ],
+  "경제학": [
+    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+  ],
+  "이유다": [
+    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+  ],
+  "합리적": [
+    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+  ],
+  "바꿀": [
+    "content/07_Economics_Finance/운의 알고리즘.md"
+  ],
+  "운세": [
+    "content/07_Economics_Finance/운의 알고리즘.md"
+  ],
+  "운을": [
+    "content/07_Economics_Finance/운의 알고리즘.md"
+  ],
+  "운의": [
+    "content/07_Economics_Finance/운의 알고리즘.md"
+  ],
+  "인간": [
+    "content/07_Economics_Finance/인간 본성의 법칙.md"
+  ],
+  "인문": [
+    "content/07_Economics_Finance/인간 본성의 법칙.md"
+  ],
+  "처세": [
+    "content/07_Economics_Finance/인간 본성의 법칙.md"
+  ],
+  "로버트": [
+    "content/07_Economics_Finance/인간 본성의 법칙.md"
+  ],
+  "사람을": [
+    "content/07_Economics_Finance/인간 본성의 법칙.md",
+    "content/08_Insights/인간관계론.md"
+  ],
+  "권력": [
+    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+  ],
+  "정치": [
+    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+  ],
+  "권력의": [
+    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+  ],
+  "심리학": [
+    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+  ],
+  "초보": [
+    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md"
+  ],
+  "TDF": [
+    "content/07_Economics_Finance/존리의 금융문맹 탈출.md"
+  ],
+  "방식을": [
+    "content/07_Economics_Finance/존리의 금융문맹 탈출.md"
+  ],
+  "아니다": [
+    "content/07_Economics_Finance/존리의 금융문맹 탈출.md"
+  ],
+  "되지": [
+    "content/07_Economics_Finance/존리의 부자되기 습관.md"
+  ],
+  "리가": [
+    "content/07_Economics_Finance/존리의 부자되기 습관.md"
+  ],
+  "부자가": [
+    "content/07_Economics_Finance/존리의 부자되기 습관.md"
+  ],
+  "기초": [
+    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+  ],
+  "주식을": [
+    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+  ],
+  "않은": [
+    "content/07_Economics_Finance/하버드 시간관리.md",
+    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+  ],
+  "일을": [
+    "content/07_Economics_Finance/하버드 시간관리.md",
+    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+  ],
+  "망할": [
+    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+  ],
+  "버블": [
+    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+  ],
+  "기업을": [
+    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+  ],
+  "면접": [
+    "content/08_Insights/면접 바이블.md"
+  ],
+  "이직": [
+    "content/08_Insights/면접 바이블.md"
+  ],
+  "직무": [
+    "content/08_Insights/면접 바이블.md"
+  ],
+  "독자가": [
+    "content/08_Insights/블로그 글쓰기.md"
+  ],
+  "읽히는": [
+    "content/08_Insights/블로그 글쓰기.md"
+  ],
+  "상대방의": [
+    "content/08_Insights/인간관계론.md"
+  ],
+  "상대방이": [
+    "content/08_Insights/인간관계론.md"
+  ],
+  "예비": [
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+  ],
+  "임신": [
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+  ],
+  "아빠가": [
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+  ],
+  "지금": [
+    "content/08_Insights/자기관리론.md"
+  ],
+  "CBT": [
+    "content/08_Insights/자기관리론.md"
+  ],
+  "걱정을": [
+    "content/08_Insights/자기관리론.md"
+  ],
+  "구체적인": [
+    "content/08_Insights/자기관리론.md"
+  ]
+}

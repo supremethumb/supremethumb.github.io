@@ -34,6 +34,8 @@ OPT(Optimal Page Replacement, 최적 페이지 교체)는 가상 메모리 시�
 
 ## 관련 노트
 
-- [[FIFO]] · [[LRU]] · [[NUR]] · [[LFU]]: 실용적인 대체 알고리즘
-- [[논리 주소]] · [[물리 주소]]: 페이징의 기반 개념
-- [[Kernel]]: 페이지 교체를 수행하는 운영체제
+- [[02_IT_Tech/FIFO|FIFO]] — 공유 키워드: `IT`, `가장`, `교체`
+- [[02_IT_Tech/LRU|LRU]] — 공유 키워드: `IT`, `가장`, `교체`
+- [[02_IT_Tech/LFU|LFU]] — 공유 키워드: `IT`, `가장`
+- [[02_IT_Tech/NUR|NUR]] — 공유 키워드: `IT`, `교체`
+

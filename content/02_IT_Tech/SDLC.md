@@ -1,11 +1,9 @@
 ---
 title: "SDLC"
 date: 2026-04-13
-description: "SDLC(Software Development Life Cycle)는 요구분석부터 유지보수까지 소프트웨어 개발의 전 공정을 체계화한 표준 절차입니다."
 tags: ["IT", "개발", "기술"]
+description: "SDLC(Software Development Life Cycle)는 요구분석부터 유지보수까지 소프트웨어 개발의 전 공정을 체계화한 표준 절차입니다."
 ---
-
-# SDLC
 
 SDLC(Software Development Life Cycle, 소프트웨어 생명주기)는 시스템의 *요구분석부터 폐기까지*의 전 과정을 단계별로 체계화한 절차다. 어떤 방법론을 따르든 이 단계들을 *어떻게 배치하고 반복할 것인가*가 차이일 뿐, 본질은 동일하다.
 
@@ -46,7 +44,9 @@ SDLC(Software Development Life Cycle, 소프트웨어 생명주기)는 시스템
 
 ## 관련 노트
 
-- [[Agile]]: 가장 널리 쓰이는 반복형 SDLC
-- [[CMMI]] · [[SPICE]]: 프로세스 성숙도 모델
-- [[시스템 테스트]] · [[인수 테스트]] · [[Debugging]]: 검증 단계
-- [[소프트웨어 아키텍쳐]]: 설계 단계의 산출물
+- [[01_UX_Design/서비스 기획자|서비스 기획자]] — 공유 키워드: `단계`, `설계`
+- [[02_IT_Tech/CALS|CALS]] — 공유 키워드: `IT`, `설계`
+- [[02_IT_Tech/CMMI|CMMI]] — 공유 키워드: `IT`, `단계`
+- [[02_IT_Tech/Debugging|Debugging]] — 공유 키워드: `IT`, `테스트`
+- [[02_IT_Tech/네트워크|네트워크]] — 공유 키워드: `IT`, `모델`
+

@@ -1,11 +1,11 @@
 ---
 title: "Acqusition"
 date: 2026-04-13
-description: "Acquisition은 사용자가 서비스로 유입되는 단계와 채널을 분석하고 분류하는 그로스 마케팅의 출발점입니다."
 tags: ["마케팅", "비즈니스", "브랜드"]
+description: "Acquisition은 사용자가 서비스로 유입되는 단계와 채널을 분석하고 분류하는 그로스 마케팅의 출발점입니다."
 ---
 
-# Acquisition
+## Acquisition
 
 Acquisition(획득)은 [[AARRR]] 깔때기에서 가장 윗단으로, *사용자가 어떻게 우리 서비스로 들어오는가*를 다룬다. 채널을 정확히 식별해야 어디에 더 투자할지, 어디서 새는지를 판단할 수 있다.
 
@@ -40,7 +40,9 @@ Acquisition(획득)은 [[AARRR]] 깔때기에서 가장 윗단으로, *사용자
 
 ## 관련 노트
 
-- [[AARRR]]: Acquisition을 포함한 그로스 깔때기 전체
-- [[검색 유입]] · [[소셜 유입]] · [[직접 유입]] · [[추천 유입]]: 채널별 상세
-- [[그로스 해킹]]: 채널 실험을 통한 성장
-- [[CAC]] · [[ROAS]]: 채널 효율 평가
+- [[05_Marketing_Business/검색 유입|검색 유입]] — 공유 키워드: `검색`, `마케팅`, `유입`
+- [[05_Marketing_Business/소셜 유입|소셜 유입]] — 공유 키워드: `SNS`, `마케팅`, `유입`
+- [[05_Marketing_Business/Digital Side Effect|Digital Side Effect]] — 공유 키워드: `SNS`, `마케팅`
+- [[05_Marketing_Business/직접 유입|직접 유입]] — 공유 키워드: `마케팅`, `유입`
+- [[05_Marketing_Business/팬슈머|팬슈머]] — 공유 키워드: `SNS`, `마케팅`
+

@@ -1,11 +1,9 @@
-﻿---
+---
 title: "DDL"
 date: 2026-04-13
-description: "- 데이터를 정의하는 언어로서 데이터를 담는 그릇을 정의하는 언어"
 tags: ["IT", "개발", "기술"]
+description: "데이터를 정의하는 언어로서 데이터를 담는 그릇을 정의하는 언어"
 ---
-
-# DDL
 
 - 데이터를 정의하는 언어로서 데이터를 담는 그릇을 정의하는 언어
 - 대상
@@ -74,15 +72,15 @@ tags: ["IT", "개발", "기술"]
         - 인덱스 생성
             - ```sql
 CREATE [UNIQUE] INDEX 인덱스명 ON 테이블명(컬럼명);
-```
+```text
         - 인덱스 삭제
             - ```sql
 DROP INDEX 인덱스명;
-```
+```text
         - 인덱스 변경
             - ```sql
 ALTER [UNIQUE] INDEX 인덱스명 ON 테이블명(컬럼명);
-```
+```text
     - 인덱스 스캔 방식
         - 범위
             - 인덱스 루트 블록에서 리프 블록까지 수직적으로 탐색한 후에 리프 블록을 필요한 범위만 스캔
@@ -108,27 +106,27 @@ ALTER [UNIQUE] INDEX 인덱스명 ON 테이블명(컬럼명);
 CREATE VIEW W_A AS
 SELECT *
 FROM A;
-```
+```text
         - 테이블 A 아무 컬럼
             - ```sql
 CREATE VIEW VW_B AS
 SELECT *
 FROM A, B
 WHERE A. 컬럼 1 = B. 컬럼 2; 
-```
+```text
         - 테이블 A와 테이블 B 조인 결과
             - ```sql
 CREATE VIEW VW_C AS
 SELECT *
 FROM A, B
 WHERE A. 컬럼 1 = B. 컬럼 2;
-```
+```text
         - 뷰 삭제/변경
             - 뷰는 정의 자체를 변경하지 못함
             - 삭제와 재생성을 통해 뷰에 대한 정의 변경이 가능
             - ```sql
 DROP VIEW 뷰이름;
-```
+```text
             - 뷰를 통해 접근 가능한 데이터에 대한 변경이 가능하다.
             - 모든 경우에 데이터의 변경이 가능한 것이 아니라 일부 제약이 존재한다.
 - 명령어
@@ -143,7 +141,7 @@ UNIQUE (속성명1, 속성명2, ...),
 FOREIGN KEY(외래키) REFERENCES 참조테이블(기본키),
 CONSTRAINT 제약조건명 CHECK(조건식)
 );
-```
+```text
         - 속성
             - PRIMARY KEY
                 - 테이블의 기본키를 정의, 유일하게 테이블의 각 행을 식별
@@ -164,31 +162,31 @@ CONSTRAINT 제약조건명 CHECK(조건식)
             - ADD: 컬럼 추가
                 - ```sql
 ALTER TABLE 테이블명 ADD 컬럼명 데이터타입;
-```
+```text
             - MODIFY: 컬럼 수정
                 - ```sql
 ALTER TABLE 테이블명 MODIFY 컬럼명 데이터타입[DEFAULT 값][NOT NULL];
-```
+```text
             - DROP: 컬럼 삭제
                 - ```sql
 ALTER TABLE 테이블명 DROP 컬럼명;
-```
+```text
             - RENAME: 컬럼명 수정
                 - ```sql
 ALTER TABLE 테이블명 RENAME COLUMN 변경전_컬럼명 TO 변경후_컬럼명;
-```
+```text
     - DROP
         - 테이블 삭제
             - CASCADE | RESTRICT
-                - CASCADE는 참조하는 테이블까지 연쇄적으로 제거하는 옵션
-                - RESTRICT는 다른 테이블이 삭제할 테이블을 참조중이면 제거하지 않는 옵션
+                - CASCADE 는 참조하는 테이블까지 연쇄적으로 제거하는 옵션
+                - RESTRICT 는 다른 테이블이 삭제할 테이블을 참조중이면 제거하지 않는 옵션
             - ```sql
 DROP TABLE 데이터 명;
-```
+```text
     - TRUNCATE
         - ```sql
 TRUNCATE TABLE 명령어;
-```
+```text
         - 테이블 내의 데이터들을 삭제하는 명령
     - VIEW
         - ```sql
@@ -196,8 +194,17 @@ CREATE VIEW 뷰이름 AS
 SELECT 사번
 FROM 사원
 WHERE 성별 = 'M';
-```
+```text
         - ```sql
 DROP VIEW 뷰이름;
-```
+```text
         -
+
+## 관련 노트
+
+- [[02_IT_Tech/SQL 문법|SQL 문법]] — 공유 키워드: `DDL`, `IT`, `데이터`
+- [[02_IT_Tech/DCL|DCL]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/DML|DML]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/OLAP|OLAP]] — 공유 키워드: `IT`, `데이터`
+- [[02_IT_Tech/SQL 함수|SQL 함수]] — 공유 키워드: `IT`, `데이터`
+

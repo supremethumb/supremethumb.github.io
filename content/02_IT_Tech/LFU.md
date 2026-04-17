@@ -1,11 +1,9 @@
 ---
 title: "LFU"
 date: 2026-04-13
-description: "LFU(Least Frequently Used)는 가장 적게 참조된 페이지를 교체하는 알고리즘으로, 참조 빈도의 지역성을 활용합니다."
 tags: ["IT", "개발", "기술"]
+description: "LFU(Least Frequently Used)는 가장 적게 참조된 페이지를 교체하는 알고리즘으로, 참조 빈도의 지역성을 활용합니다."
 ---
-
-# LFU
 
 LFU(Least Frequently Used)는 *가장 적게 참조된 페이지*를 우선 교체하는 페이지 교체 알고리즘이다. "자주 사용되는 페이지는 앞으로도 자주 쓰일 것"이라는 *빈도 지역성(Frequency Locality)*에 기반한다.
 
@@ -38,5 +36,8 @@ LFU(Least Frequently Used)는 *가장 적게 참조된 페이지*를 우선 교�
 
 ## 관련 노트
 
-- [[LRU]] · [[NUR]] · [[FIFO]] · [[OPT]]: 다른 페이지 교체 알고리즘
-- [[논리 주소]] · [[물리 주소]]: 페이징 기반 개념
+- [[02_IT_Tech/FIFO|FIFO]] — 공유 키워드: `IT`, `LRU`, `가장`
+- [[02_IT_Tech/LRU|LRU]] — 공유 키워드: `IT`, `LRU`, `가장`
+- [[02_IT_Tech/Int Type|Int Type]] — 공유 키워드: `IT`, `자주`
+- [[02_IT_Tech/OPT|OPT]] — 공유 키워드: `IT`, `가장`
+

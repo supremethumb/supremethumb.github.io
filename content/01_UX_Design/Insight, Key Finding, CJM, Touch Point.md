@@ -1,13 +1,11 @@
-﻿---
+---
 title: "Insight, Key Finding, CJM, Touch Point"
 date: 2026-04-13
-description: "Insight, Key Finding, CJM, Touch Point"
 tags: ["UX", "디자인", "기획"]
+description: "Insight, Key Finding, CJM, Touch Point"
 ---
 
-# Insight, Key Finding, CJM, Touch Point
-
-Date: 2019년 4월 25일
+Date: 2019 년 4 월 25 일
 Tags: CJM, Insight Point, Key Finding, Touch Point
 
 ### Insight
@@ -33,11 +31,11 @@ Function/Menu
 
 Key Findings 작업 이후에는 그것으로 부터 시사점을 찾는 과정이 필요합니다. 하나의 염감이나 아이디어에 휘둘리지 않고, 큰 그림을 그리게 되면 보이지 않던 새로운 통찰이 발편됩니다. 이렇게 시사점을 찾는 과정을 모델링이라고 합니다.
 
-### 리서치 결과 = 핵심적인 발견 -> 시사점= 모델링 -> UX전략 ->디자인
+### 리서치 결과 = 핵심적인 발견 -> 시사점= 모델링 -> UX 전략 ->디자인
 
 ### 모델링
 
-Insight를 도출하기 위한 레이어
+Insight 를 도출하기 위한 레이어
 
 - 리서치 결과 + 유추/재해석
 - 리서치 결과 + 리서치 결과
@@ -59,3 +57,12 @@ Insight를 도출하기 위한 레이어
 ### Touch Point
 
 터치포인트(touchpoint)는 고객이 기업과 서비스를 만나는 과정에서 거치는 물리적인 것, 인적 상호작용, 커뮤니케이션 등의 모든 것을 말한다. 터치포인트를 파악하는 것은 서비스를 제공하면서 사용할 수 있는 자원이나 만들어야 할 자원들을 이해할 수 있게 한다. 물리적 위치, 장소의 특정 구역, 광고판, 오브젝트, 웹사이트, 메일링(이메일과 우편), 대면 커뮤니케이션, 인쇄, 커뮤니케이션(영수증, 지도, 티켓 등) 애플리케이션 등이 대표적인 터치포인트라 할 수 있다.
+
+## 관련 노트
+
+- [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `CJM`, `UX`, `기획`
+- [[01_UX_Design/사용자 리서치|사용자 리서치]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/서비스 디자인|서비스 디자인]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[00_Meta/강의|수강 기록 — 배움의 발자취]] — 공유 키워드: `UX`, `디자인`, `리서치`
+- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `UX`, `기획`, `디자인`
+

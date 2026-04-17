@@ -1,11 +1,9 @@
-﻿---
+---
 title: "Custom CSS "
 date: 2026-04-13
-description: "@import url('https://cdn"
 tags: ["UX", "디자인", "기획"]
+description: "@import url('https://cdn"
 ---
-
-# Custom CSS 
 
 - 
 - Template
@@ -117,6 +115,15 @@ document-sidebar {
 .document-sidebar__buttons {
 }
 
-```
+```text
 - 
 -
+
+## 관련 노트
+
+- [[01_UX_Design/UI|UI]] — 공유 키워드: `UI`, `UX`, `기획`
+- [[01_UX_Design/경험|경험]] — 공유 키워드: `UI`, `UX`, `기획`
+- [[01_UX_Design/딥링크|딥링크]] — 공유 키워드: `UI`, `UX`, `기획`
+- [[01_UX_Design/라이트 박스|라이트 박스]] — 공유 키워드: `UI`, `UX`, `기획`
+- [[01_UX_Design/모바일 다이렉트 액세스|모바일 다이렉트 액세스]] — 공유 키워드: `UI`, `UX`, `기획`
+

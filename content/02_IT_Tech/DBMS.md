@@ -1,11 +1,9 @@
-﻿---
+---
 title: "DBMS"
 date: 2026-04-13
-description: "- Data Base Management System"
 tags: ["IT", "개발", "기술"]
+description: "Data Base Management System"
 ---
-
-# DBMS
 
 - Data Base Management System
 - 데이터 관리의 복잡성을 해결하는 동시에 데이터 추가, 변경, 검색, 삭제 및 백업, 복구, 보안 등의 기능을 지원하는 소프트웨어
@@ -39,3 +37,12 @@ tags: ["IT", "개발", "기술"]
     - 무결성에 관한 제약조건을 정의/검사하는 기능 제공
 - 백업 및 회복
     - 데이터베이스 장애 발생 시 데이터의 보존 기능 제공
+
+## 관련 노트
+
+- [[02_IT_Tech/운영체제|운영체제]] — 공유 키워드: `CLI`, `IT`, `UI`
+- [[01_UX_Design/Shell|Shell]] — 공유 키워드: `CLI`, `UI`
+- [[02_IT_Tech/NFC|NFC]] — 공유 키워드: `IT`, `UI`
+- [[02_IT_Tech/단계별 모델|단계별 모델]] — 공유 키워드: `IT`, `UI`
+- [[02_IT_Tech/스키마|스키마]] — 공유 키워드: `IT`, `UI`
+
