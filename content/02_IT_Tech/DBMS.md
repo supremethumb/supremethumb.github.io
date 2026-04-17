@@ -1,11 +1,9 @@
-﻿---
+---
 title: "DBMS"
 date: 2026-04-13
-description: "- Data Base Management System"
 tags: ["IT", "개발", "기술"]
+description: "Data Base Management System"
 ---
-
-# DBMS
 
 - Data Base Management System
 - 데이터 관리의 복잡성을 해결하는 동시에 데이터 추가, 변경, 검색, 삭제 및 백업, 복구, 보안 등의 기능을 지원하는 소프트웨어

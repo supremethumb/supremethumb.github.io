@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/02_IT_Tech/CRM.md",
-    "content/02_IT_Tech/CSRF.md",
-    "content/02_IT_Tech/Char Type.md",
-    "content/02_IT_Tech/DBMS.md",
-    "content/02_IT_Tech/DCL.md",
-    "content/02_IT_Tech/DDL.md",
-    "content/02_IT_Tech/DDOS.md",
-    "content/02_IT_Tech/DES.md",
-    "content/02_IT_Tech/DML.md",
-    "content/02_IT_Tech/DOS.md",
     "content/02_IT_Tech/DRDOS.md",
     "content/02_IT_Tech/DSA.md",
     "content/02_IT_Tech/Data Type.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/CALS.md",
     "content/02_IT_Tech/CDO.md",
     "content/02_IT_Tech/CIO.md",
-    "content/02_IT_Tech/CMMI.md"
+    "content/02_IT_Tech/CMMI.md",
+    "content/02_IT_Tech/CRM.md",
+    "content/02_IT_Tech/CSRF.md",
+    "content/02_IT_Tech/Char Type.md",
+    "content/02_IT_Tech/DBMS.md",
+    "content/02_IT_Tech/DCL.md",
+    "content/02_IT_Tech/DDL.md",
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/DML.md",
+    "content/02_IT_Tech/DOS.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:26.653189Z"
+  "last_updated": "2026-04-17T15:30:27.021942Z"
 }
