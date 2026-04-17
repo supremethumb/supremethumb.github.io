@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/02_IT_Tech/프레임워크.md",
-    "content/02_IT_Tech/프로세스 관리.md",
-    "content/02_IT_Tech/프로세스 제어 블록.md",
-    "content/02_IT_Tech/프로세스.md",
-    "content/02_IT_Tech/프로시저.md",
-    "content/02_IT_Tech/프로토콜.md",
-    "content/02_IT_Tech/형상 관리 도구.md",
-    "content/02_IT_Tech/회복기법.md",
-    "content/03_AI_ML/A.I. Guideline.md",
-    "content/03_AI_ML/AGI.md",
     "content/03_AI_ML/Active Learning.md",
     "content/03_AI_ML/Annotation.md",
     "content/03_AI_ML/Atros Convolution.md",
@@ -512,7 +502,17 @@
     "content/02_IT_Tech/트랜잭션.md",
     "content/02_IT_Tech/트리.md",
     "content/02_IT_Tech/파티션.md",
-    "content/02_IT_Tech/품질관리.md"
+    "content/02_IT_Tech/품질관리.md",
+    "content/02_IT_Tech/프레임워크.md",
+    "content/02_IT_Tech/프로세스 관리.md",
+    "content/02_IT_Tech/프로세스 제어 블록.md",
+    "content/02_IT_Tech/프로세스.md",
+    "content/02_IT_Tech/프로시저.md",
+    "content/02_IT_Tech/프로토콜.md",
+    "content/02_IT_Tech/형상 관리 도구.md",
+    "content/02_IT_Tech/회복기법.md",
+    "content/03_AI_ML/A.I. Guideline.md",
+    "content/03_AI_ML/AGI.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:32.849590Z"
+  "last_updated": "2026-04-17T15:30:33.236376Z"
 }
