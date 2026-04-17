@@ -40,7 +40,9 @@ Acquisition(획득)은 [[AARRR]] 깔때기에서 가장 윗단으로, *사용자
 
 ## 관련 노트
 
-- [[AARRR]]: Acquisition 을 포함한 그로스 깔때기 전체
-- [[검색 유입]] · [[소셜 유입]] · [[직접 유입]] · [[추천 유입]]: 채널별 상세
-- [[그로스 해킹]]: 채널 실험을 통한 성장
-- [[CAC]] · [[ROAS]]: 채널 효율 평가
+- [[05_Marketing_Business/검색 유입|검색 유입]] — 공유 키워드: `검색`, `마케팅`, `유입`
+- [[05_Marketing_Business/소셜 유입|소셜 유입]] — 공유 키워드: `SNS`, `마케팅`, `유입`
+- [[05_Marketing_Business/Digital Side Effect|Digital Side Effect]] — 공유 키워드: `SNS`, `마케팅`
+- [[05_Marketing_Business/직접 유입|직접 유입]] — 공유 키워드: `마케팅`, `유입`
+- [[05_Marketing_Business/팬슈머|팬슈머]] — 공유 키워드: `SNS`, `마케팅`
+

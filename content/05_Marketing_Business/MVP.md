@@ -36,8 +36,9 @@ MVP(Minimum Viable Product, 최소 기능 제품)는 제품에 대한 가설을 
 
 ## 관련 노트
 
-- [[그로스 해킹]]: MVP 이후 빠른 성장 실험
-- [[AARRR]]: MVP 단계에서 측정할 그로스 지표
-- [[KPI]]: 가설 검증의 성공 기준
-- [[사용자 리서치]]: MVP 결과 해석을 보강
-- [[Prototype 방향성]]: MVP 형태의 프로토타이핑 결정
+- [[05_Marketing_Business/전환율|전환율]] — 공유 키워드: `UI`, `마케팅`, `실제`
+- [[01_UX_Design/GUI|GUI]] — 공유 키워드: `UI`, `실제`
+- [[01_UX_Design/Shell|Shell]] — 공유 키워드: `UI`, `실제`
+- [[01_UX_Design/딥링크|딥링크]] — 공유 키워드: `UI`, `실제`
+- [[01_UX_Design/라이트 박스|라이트 박스]] — 공유 키워드: `UI`, `실제`
+

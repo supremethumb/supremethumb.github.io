@@ -36,7 +36,9 @@ KPI(Key Performance Indicator, 핵심 성과 지표)는 조직, 팀, 개인이 �
 
 ## 관련 노트
 
-- [[AARRR]]: 그로스 단계별 핵심 지표 프레임
-- [[그로스 해킹]]: 데이터 기반 성장 전략
-- [[CAC]] · [[ROAS]] · [[ARPU]]: 마케팅 효율 측정 지표
-- [[고객 생애 가치]]: 장기적 고객 가치 측정
+- [[05_Marketing_Business/브이노믹스|브이노믹스]] — 공유 키워드: `KPI`, `마케팅`, `핵심`
+- [[05_Marketing_Business/CAC|CAC]] — 공유 키워드: `마케팅`, `지표`
+- [[05_Marketing_Business/마진|마진]] — 공유 키워드: `KPI`, `마케팅`
+- [[05_Marketing_Business/업스트림|업스트림 — 문제를 해결하지 말고 문제를 없애라]] — 공유 키워드: `마케팅`, `한다`
+- [[05_Marketing_Business/코호트|코호트]] — 공유 키워드: `KPI`, `마케팅`
+

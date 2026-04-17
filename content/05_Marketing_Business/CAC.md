@@ -38,8 +38,9 @@ CAC = (특정 기간의 마케팅·세일즈 총비용) / (해당 기간의 신�
 
 ## 관련 노트
 
-- [[ROAS]]: 광고비 대비 매출 효율
-- [[고객 생애 가치]]: CAC 와 짝을 이루는 장기 가치 지표
-- [[Acqusition]]: 사용자 유입 채널 분류
-- [[AARRR]]: 그로스 단계별 지표 프레임
-- [[리텐션]]: 유지율이 LTV 를 결정한다
+- [[05_Marketing_Business/ROAS|ROAS]] — 공유 키워드: `계산식`, `고객`, `지표`
+- [[05_Marketing_Business/ARPPU|ARPPU]] — 공유 키워드: `가치`, `계산식`
+- [[05_Marketing_Business/KPI|KPI]] — 공유 키워드: `마케팅`, `지표`
+- [[05_Marketing_Business/네트워크 효과|네트워크 효과]] — 공유 키워드: `CAC`, `가치`
+- [[05_Marketing_Business/마진|마진]] — 공유 키워드: `CAC`, `마케팅`
+

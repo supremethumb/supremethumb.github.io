@@ -10524,7 +10524,7 @@
     ]
   },
   "errors": {},
-  "last_updated": "2026-04-17T15:33:39.341774Z",
+  "last_updated": "2026-04-17T15:33:39.631718Z",
   "linking_processed": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -10925,6 +10925,16 @@
     "content/03_AI_ML/퓨샷러닝.md",
     "content/03_AI_ML/학습 역량.md",
     "content/03_AI_ML/혼동 행렬.md",
-    "content/05_Marketing_Business/AAR 프레임.md"
+    "content/05_Marketing_Business/AAR 프레임.md",
+    "content/05_Marketing_Business/AARRR.md",
+    "content/05_Marketing_Business/AB Testing.md",
+    "content/05_Marketing_Business/ARPPU.md",
+    "content/05_Marketing_Business/ARPU.md",
+    "content/05_Marketing_Business/Acqusition.md",
+    "content/05_Marketing_Business/CAC.md",
+    "content/05_Marketing_Business/Carrying capacity.md",
+    "content/05_Marketing_Business/Digital Side Effect.md",
+    "content/05_Marketing_Business/KPI.md",
+    "content/05_Marketing_Business/MVP.md"
   ]
 }

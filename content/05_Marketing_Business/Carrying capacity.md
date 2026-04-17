@@ -86,3 +86,12 @@ Carrying Capacity 는 '내 서비스가 도달할 최종적인 유저수'라고 
 
 https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=20648680
 린 스타트업
+
+## 관련 노트
+
+- [[01_UX_Design/UX 디자인|UX 디자인]] — 공유 키워드: `UX`, `마케팅`
+- [[01_UX_Design/오래가는 UX 디자인|오래가는 UX 디자인]] — 공유 키워드: `UX`, `마케팅`
+- [[01_UX_Design/확증 편향|확증 편향]] — 공유 키워드: `UX`, `마케팅`
+- [[05_Marketing_Business/검색 유입|검색 유입]] — 공유 키워드: `UX`, `마케팅`
+- [[05_Marketing_Business/소셜 유입|소셜 유입]] — 공유 키워드: `UX`, `마케팅`
+
