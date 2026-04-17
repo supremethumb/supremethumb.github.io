@@ -7,16 +7,6 @@
   ],
   "in_progress": null,
   "pending": [
-    "content/01_UX_Design/퍼소나.md",
-    "content/01_UX_Design/편의성.md",
-    "content/01_UX_Design/평행 디자인.md",
-    "content/01_UX_Design/프로토타입.md",
-    "content/01_UX_Design/플로 다이어그램.md",
-    "content/01_UX_Design/피라미드 모델.md",
-    "content/01_UX_Design/학습성.md",
-    "content/01_UX_Design/행동적 단계.md",
-    "content/01_UX_Design/행동적 디자인.md",
-    "content/01_UX_Design/허브 앤 스포크.md",
     "content/01_UX_Design/확증 편향.md",
     "content/02_IT_Tech/AES.md",
     "content/02_IT_Tech/AJAX.md",
@@ -512,7 +502,17 @@
     "content/01_UX_Design/타이포그래픽 디자인.md",
     "content/01_UX_Design/태스크 분석.md",
     "content/01_UX_Design/터널 시각.md",
-    "content/01_UX_Design/퍼널.md"
+    "content/01_UX_Design/퍼널.md",
+    "content/01_UX_Design/퍼소나.md",
+    "content/01_UX_Design/편의성.md",
+    "content/01_UX_Design/평행 디자인.md",
+    "content/01_UX_Design/프로토타입.md",
+    "content/01_UX_Design/플로 다이어그램.md",
+    "content/01_UX_Design/피라미드 모델.md",
+    "content/01_UX_Design/학습성.md",
+    "content/01_UX_Design/행동적 단계.md",
+    "content/01_UX_Design/행동적 디자인.md",
+    "content/01_UX_Design/허브 앤 스포크.md"
   ],
   "skipped": [
     "content/01_UX_Design/Data Driven UX.md",
@@ -5534,5 +5534,5 @@
   },
   "keywords_index": {},
   "errors": {},
-  "last_updated": "2026-04-17T15:30:25.928603Z"
+  "last_updated": "2026-04-17T15:30:26.299447Z"
 }
