@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/ECC.md",
-    "content/02_IT_Tech/EDI.md",
-    "content/02_IT_Tech/EDW.md",
-    "content/02_IT_Tech/Edge Device.md",
-    "content/02_IT_Tech/Elgamel.md",
-    "content/02_IT_Tech/FIFO.md",
-    "content/02_IT_Tech/Float Type.md",
-    "content/02_IT_Tech/ICMP.md",
-    "content/02_IT_Tech/IGMP.md",
-    "content/02_IT_Tech/IP Sec.md",
     "content/02_IT_Tech/IP.md",
     "content/02_IT_Tech/IPv4.md",
     "content/02_IT_Tech/IPv6.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/Data Type.md",
     "content/02_IT_Tech/Debugging.md",
     "content/02_IT_Tech/EAI.md",
-    "content/02_IT_Tech/EAO.md"
+    "content/02_IT_Tech/EAO.md",
+    "content/02_IT_Tech/ECC.md",
+    "content/02_IT_Tech/EDI.md",
+    "content/02_IT_Tech/EDW.md",
+    "content/02_IT_Tech/Edge Device.md",
+    "content/02_IT_Tech/Elgamel.md",
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/Float Type.md",
+    "content/02_IT_Tech/ICMP.md",
+    "content/02_IT_Tech/IGMP.md",
+    "content/02_IT_Tech/IP Sec.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -749,7 +749,17 @@
     "content/02_IT_Tech/Data Type.md",
     "content/02_IT_Tech/Debugging.md",
     "content/02_IT_Tech/EAI.md",
-    "content/02_IT_Tech/EAO.md"
+    "content/02_IT_Tech/EAO.md",
+    "content/02_IT_Tech/ECC.md",
+    "content/02_IT_Tech/EDI.md",
+    "content/02_IT_Tech/EDW.md",
+    "content/02_IT_Tech/Edge Device.md",
+    "content/02_IT_Tech/Elgamel.md",
+    "content/02_IT_Tech/FIFO.md",
+    "content/02_IT_Tech/Float Type.md",
+    "content/02_IT_Tech/ICMP.md",
+    "content/02_IT_Tech/IGMP.md",
+    "content/02_IT_Tech/IP Sec.md"
   ],
-  "last_updated": "2026-04-18T03:46:02.966135Z"
+  "last_updated": "2026-04-18T03:46:03.175777Z"
 }
