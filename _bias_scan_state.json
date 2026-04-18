@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/신뢰성.md",
-    "content/02_IT_Tech/쓰레드.md",
-    "content/02_IT_Tech/안드로이드 마켓 등록.md",
-    "content/02_IT_Tech/알고리즘.md",
-    "content/02_IT_Tech/암호 알고리즘.md",
-    "content/02_IT_Tech/연산자.md",
-    "content/02_IT_Tech/외부 환경.md",
-    "content/02_IT_Tech/요구 사항 분석.md",
-    "content/02_IT_Tech/운영체제.md",
-    "content/02_IT_Tech/워터폴.md",
     "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md",
     "content/02_IT_Tech/응답시간.md",
     "content/02_IT_Tech/응집도.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/스케줄링.md",
     "content/02_IT_Tech/스키마.md",
     "content/02_IT_Tech/시스템 테스트.md",
-    "content/02_IT_Tech/시큐어 코딩.md"
+    "content/02_IT_Tech/시큐어 코딩.md",
+    "content/02_IT_Tech/신뢰성.md",
+    "content/02_IT_Tech/쓰레드.md",
+    "content/02_IT_Tech/안드로이드 마켓 등록.md",
+    "content/02_IT_Tech/알고리즘.md",
+    "content/02_IT_Tech/암호 알고리즘.md",
+    "content/02_IT_Tech/연산자.md",
+    "content/02_IT_Tech/외부 환경.md",
+    "content/02_IT_Tech/요구 사항 분석.md",
+    "content/02_IT_Tech/운영체제.md",
+    "content/02_IT_Tech/워터폴.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -869,7 +869,17 @@
     "content/02_IT_Tech/스케줄링.md",
     "content/02_IT_Tech/스키마.md",
     "content/02_IT_Tech/시스템 테스트.md",
-    "content/02_IT_Tech/시큐어 코딩.md"
+    "content/02_IT_Tech/시큐어 코딩.md",
+    "content/02_IT_Tech/신뢰성.md",
+    "content/02_IT_Tech/쓰레드.md",
+    "content/02_IT_Tech/안드로이드 마켓 등록.md",
+    "content/02_IT_Tech/알고리즘.md",
+    "content/02_IT_Tech/암호 알고리즘.md",
+    "content/02_IT_Tech/연산자.md",
+    "content/02_IT_Tech/외부 환경.md",
+    "content/02_IT_Tech/요구 사항 분석.md",
+    "content/02_IT_Tech/운영체제.md",
+    "content/02_IT_Tech/워터폴.md"
   ],
-  "last_updated": "2026-04-18T03:46:05.553710Z"
+  "last_updated": "2026-04-18T03:46:05.769937Z"
 }
