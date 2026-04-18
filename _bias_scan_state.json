@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/01_UX_Design/요구사항 정의서.md",
-    "content/01_UX_Design/유스케이스.md",
-    "content/01_UX_Design/유연성.md",
-    "content/01_UX_Design/유용성.md",
-    "content/01_UX_Design/유효성.md",
-    "content/01_UX_Design/의미성.md",
-    "content/01_UX_Design/인간을 위한 디자인.md",
-    "content/01_UX_Design/인터랙션.md",
-    "content/01_UX_Design/인터뷰.md",
-    "content/01_UX_Design/인터페이스.md",
     "content/01_UX_Design/정보 구조 디자인.md",
     "content/01_UX_Design/정성적 데이터.md",
     "content/01_UX_Design/조형의 원리.md",
@@ -575,7 +565,17 @@
     "content/01_UX_Design/어포던스.md",
     "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md",
     "content/01_UX_Design/오래가는 UX 디자인.md",
-    "content/01_UX_Design/와이어프레임.md"
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/요구사항 정의서.md",
+    "content/01_UX_Design/유스케이스.md",
+    "content/01_UX_Design/유연성.md",
+    "content/01_UX_Design/유용성.md",
+    "content/01_UX_Design/유효성.md",
+    "content/01_UX_Design/의미성.md",
+    "content/01_UX_Design/인간을 위한 디자인.md",
+    "content/01_UX_Design/인터랙션.md",
+    "content/01_UX_Design/인터뷰.md",
+    "content/01_UX_Design/인터페이스.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -689,7 +689,17 @@
     "content/01_UX_Design/어포던스.md",
     "content/01_UX_Design/오늘도 개발자가 안된다고 했다.md",
     "content/01_UX_Design/오래가는 UX 디자인.md",
-    "content/01_UX_Design/와이어프레임.md"
+    "content/01_UX_Design/와이어프레임.md",
+    "content/01_UX_Design/요구사항 정의서.md",
+    "content/01_UX_Design/유스케이스.md",
+    "content/01_UX_Design/유연성.md",
+    "content/01_UX_Design/유용성.md",
+    "content/01_UX_Design/유효성.md",
+    "content/01_UX_Design/의미성.md",
+    "content/01_UX_Design/인간을 위한 디자인.md",
+    "content/01_UX_Design/인터랙션.md",
+    "content/01_UX_Design/인터뷰.md",
+    "content/01_UX_Design/인터페이스.md"
   ],
-  "last_updated": "2026-04-18T03:46:01.556120Z"
+  "last_updated": "2026-04-18T03:46:01.790107Z"
 }
