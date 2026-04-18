@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
-    "content/01_UX_Design/서비스 기획 스쿨.md",
-    "content/01_UX_Design/서비스 기획자.md",
-    "content/01_UX_Design/서비스 디자인 교과서.md",
-    "content/01_UX_Design/서비스 디자인.md",
-    "content/01_UX_Design/서비스.md",
-    "content/01_UX_Design/설문.md",
-    "content/01_UX_Design/쉐브론.md",
-    "content/01_UX_Design/스토리보드.md",
-    "content/01_UX_Design/스토리텔링.md",
     "content/01_UX_Design/시스템 사용성 척도.md",
     "content/01_UX_Design/시장 환경 조사.md",
     "content/01_UX_Design/신타이포그래픽 디자인.md",
@@ -575,7 +565,17 @@
     "content/01_UX_Design/사용자 경험의 요소.md",
     "content/01_UX_Design/사용자 리서치.md",
     "content/01_UX_Design/사용자 스토리.md",
-    "content/01_UX_Design/사용자 중심 디자인.md"
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md",
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/01_UX_Design/서비스 디자인 교과서.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/서비스.md",
+    "content/01_UX_Design/설문.md",
+    "content/01_UX_Design/쉐브론.md",
+    "content/01_UX_Design/스토리보드.md",
+    "content/01_UX_Design/스토리텔링.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -669,7 +669,17 @@
     "content/01_UX_Design/사용자 경험의 요소.md",
     "content/01_UX_Design/사용자 리서치.md",
     "content/01_UX_Design/사용자 스토리.md",
-    "content/01_UX_Design/사용자 중심 디자인.md"
+    "content/01_UX_Design/사용자 중심 디자인.md",
+    "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
+    "content/01_UX_Design/서비스 기획 스쿨.md",
+    "content/01_UX_Design/서비스 기획자.md",
+    "content/01_UX_Design/서비스 디자인 교과서.md",
+    "content/01_UX_Design/서비스 디자인.md",
+    "content/01_UX_Design/서비스.md",
+    "content/01_UX_Design/설문.md",
+    "content/01_UX_Design/쉐브론.md",
+    "content/01_UX_Design/스토리보드.md",
+    "content/01_UX_Design/스토리텔링.md"
   ],
-  "last_updated": "2026-04-18T03:46:01.126987Z"
+  "last_updated": "2026-04-18T03:46:01.340818Z"
 }
