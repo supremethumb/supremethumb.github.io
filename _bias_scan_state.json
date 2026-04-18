@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/쿠키.md",
-    "content/02_IT_Tech/크로스 사이트 스크립팅.md",
-    "content/02_IT_Tech/클라우드 컴퓨팅.md",
-    "content/02_IT_Tech/클래스.md",
-    "content/02_IT_Tech/테스트 실행 도구.md",
-    "content/02_IT_Tech/테스트 통제 도구.md",
-    "content/02_IT_Tech/테스트 하네스.md",
-    "content/02_IT_Tech/통합 테스트.md",
-    "content/02_IT_Tech/트랜잭션.md",
-    "content/02_IT_Tech/트리.md",
     "content/02_IT_Tech/파티션.md",
     "content/02_IT_Tech/품질관리.md",
     "content/02_IT_Tech/프레임워크.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/처리량.md",
     "content/02_IT_Tech/추상화.md",
     "content/02_IT_Tech/캡슐화.md",
-    "content/02_IT_Tech/컴퓨팅적 사고능력.md"
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md",
+    "content/02_IT_Tech/쿠키.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md",
+    "content/02_IT_Tech/클라우드 컴퓨팅.md",
+    "content/02_IT_Tech/클래스.md",
+    "content/02_IT_Tech/테스트 실행 도구.md",
+    "content/02_IT_Tech/테스트 통제 도구.md",
+    "content/02_IT_Tech/테스트 하네스.md",
+    "content/02_IT_Tech/통합 테스트.md",
+    "content/02_IT_Tech/트랜잭션.md",
+    "content/02_IT_Tech/트리.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -899,7 +899,17 @@
     "content/02_IT_Tech/처리량.md",
     "content/02_IT_Tech/추상화.md",
     "content/02_IT_Tech/캡슐화.md",
-    "content/02_IT_Tech/컴퓨팅적 사고능력.md"
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md",
+    "content/02_IT_Tech/쿠키.md",
+    "content/02_IT_Tech/크로스 사이트 스크립팅.md",
+    "content/02_IT_Tech/클라우드 컴퓨팅.md",
+    "content/02_IT_Tech/클래스.md",
+    "content/02_IT_Tech/테스트 실행 도구.md",
+    "content/02_IT_Tech/테스트 통제 도구.md",
+    "content/02_IT_Tech/테스트 하네스.md",
+    "content/02_IT_Tech/통합 테스트.md",
+    "content/02_IT_Tech/트랜잭션.md",
+    "content/02_IT_Tech/트리.md"
   ],
-  "last_updated": "2026-04-18T03:46:06.202214Z"
+  "last_updated": "2026-04-18T03:46:06.445853Z"
 }
