@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/03_AI_ML/RPN.md",
-    "content/03_AI_ML/Region Proposal.md",
-    "content/03_AI_ML/SHAP.md",
-    "content/03_AI_ML/Transformer.md",
-    "content/03_AI_ML/XAI.md",
-    "content/03_AI_ML/seq2seq.md",
-    "content/03_AI_ML/강화학습.md",
-    "content/03_AI_ML/거리함수.md",
-    "content/03_AI_ML/과적합.md",
-    "content/03_AI_ML/광학문자인식.md",
     "content/03_AI_ML/데이터.md",
     "content/03_AI_ML/딥러닝.md",
     "content/03_AI_ML/마르코프 결정 프로세스.md",
@@ -575,7 +565,17 @@
     "content/03_AI_ML/Q러닝.md",
     "content/03_AI_ML/RNN-T.md",
     "content/03_AI_ML/RNN.md",
-    "content/03_AI_ML/ROC 곡선.md"
+    "content/03_AI_ML/ROC 곡선.md",
+    "content/03_AI_ML/RPN.md",
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/Transformer.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/과적합.md",
+    "content/03_AI_ML/광학문자인식.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -949,7 +949,17 @@
     "content/03_AI_ML/Q러닝.md",
     "content/03_AI_ML/RNN-T.md",
     "content/03_AI_ML/RNN.md",
-    "content/03_AI_ML/ROC 곡선.md"
+    "content/03_AI_ML/ROC 곡선.md",
+    "content/03_AI_ML/RPN.md",
+    "content/03_AI_ML/Region Proposal.md",
+    "content/03_AI_ML/SHAP.md",
+    "content/03_AI_ML/Transformer.md",
+    "content/03_AI_ML/XAI.md",
+    "content/03_AI_ML/seq2seq.md",
+    "content/03_AI_ML/강화학습.md",
+    "content/03_AI_ML/거리함수.md",
+    "content/03_AI_ML/과적합.md",
+    "content/03_AI_ML/광학문자인식.md"
   ],
-  "last_updated": "2026-04-18T03:46:07.342016Z"
+  "last_updated": "2026-04-18T03:46:07.579432Z"
 }
