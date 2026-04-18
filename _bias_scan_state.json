@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/03_AI_ML/베이지안 딥러닝.md",
-    "content/03_AI_ML/베이지안 모델.md",
-    "content/03_AI_ML/변동성.md",
-    "content/03_AI_ML/블랙박스 모델.md",
-    "content/03_AI_ML/비심볼릭 추론.md",
-    "content/03_AI_ML/비지도 학습.md",
-    "content/03_AI_ML/소프트맥스 정규화.md",
-    "content/03_AI_ML/수행 역량.md",
-    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
-    "content/03_AI_ML/심볼릭 추론.md",
     "content/03_AI_ML/심화강화학습.md",
     "content/03_AI_ML/연합학습.md",
     "content/03_AI_ML/완전히 연결된 모델.md",
@@ -575,7 +565,17 @@
     "content/03_AI_ML/모델 프리.md",
     "content/03_AI_ML/모방 강화학습.md",
     "content/03_AI_ML/범용 인공지능.md",
-    "content/03_AI_ML/베이즈 추론.md"
+    "content/03_AI_ML/베이즈 추론.md",
+    "content/03_AI_ML/베이지안 딥러닝.md",
+    "content/03_AI_ML/베이지안 모델.md",
+    "content/03_AI_ML/변동성.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/비지도 학습.md",
+    "content/03_AI_ML/소프트맥스 정규화.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
+    "content/03_AI_ML/심볼릭 추론.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -969,7 +969,17 @@
     "content/03_AI_ML/모델 프리.md",
     "content/03_AI_ML/모방 강화학습.md",
     "content/03_AI_ML/범용 인공지능.md",
-    "content/03_AI_ML/베이즈 추론.md"
+    "content/03_AI_ML/베이즈 추론.md",
+    "content/03_AI_ML/베이지안 딥러닝.md",
+    "content/03_AI_ML/베이지안 모델.md",
+    "content/03_AI_ML/변동성.md",
+    "content/03_AI_ML/블랙박스 모델.md",
+    "content/03_AI_ML/비심볼릭 추론.md",
+    "content/03_AI_ML/비지도 학습.md",
+    "content/03_AI_ML/소프트맥스 정규화.md",
+    "content/03_AI_ML/수행 역량.md",
+    "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
+    "content/03_AI_ML/심볼릭 추론.md"
   ],
-  "last_updated": "2026-04-18T03:46:07.823782Z"
+  "last_updated": "2026-04-18T03:46:08.037101Z"
 }
