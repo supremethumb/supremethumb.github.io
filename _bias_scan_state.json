@@ -1,10 +1,7 @@
 {
   "version": 1,
   "total": 572,
-  "pending": [
-    "content/08_Insights/한계.md",
-    "content/index.md"
-  ],
+  "pending": [],
   "scanned": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
@@ -575,7 +572,9 @@
     "content/08_Insights/자기관리론.md",
     "content/08_Insights/제태크 수단에 대해서.md",
     "content/08_Insights/조커.md",
-    "content/08_Insights/타이 로페즈.md"
+    "content/08_Insights/타이 로페즈.md",
+    "content/08_Insights/한계.md",
+    "content/index.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -1149,7 +1148,9 @@
     "content/08_Insights/자기관리론.md",
     "content/08_Insights/제태크 수단에 대해서.md",
     "content/08_Insights/조커.md",
-    "content/08_Insights/타이 로페즈.md"
+    "content/08_Insights/타이 로페즈.md",
+    "content/08_Insights/한계.md",
+    "content/index.md"
   ],
-  "last_updated": "2026-04-18T03:46:11.777549Z"
+  "last_updated": "2026-04-18T03:46:11.994422Z"
 }
