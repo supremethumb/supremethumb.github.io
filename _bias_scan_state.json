@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/01_UX_Design/Market Research.md",
-    "content/01_UX_Design/Needs VS Wants.md",
-    "content/01_UX_Design/Proposing.md",
-    "content/01_UX_Design/Prototype 방향성.md",
-    "content/01_UX_Design/Requirement Specification.md",
-    "content/01_UX_Design/SXG.md",
-    "content/01_UX_Design/Shell.md",
-    "content/01_UX_Design/TTFB.md",
-    "content/01_UX_Design/UI.md",
-    "content/01_UX_Design/USER RESEARCH.md",
     "content/01_UX_Design/UX  불변의 법칙.md",
     "content/01_UX_Design/UX 구성요소.md",
     "content/01_UX_Design/UX 기획의 기술.md",
@@ -575,7 +565,17 @@
     "content/01_UX_Design/Header.md",
     "content/01_UX_Design/IA.md",
     "content/01_UX_Design/IT 좀 아는 사람.md",
-    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md"
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
+    "content/01_UX_Design/Market Research.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/Proposing.md",
+    "content/01_UX_Design/Prototype 방향성.md",
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/01_UX_Design/SXG.md",
+    "content/01_UX_Design/Shell.md",
+    "content/01_UX_Design/TTFB.md",
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/USER RESEARCH.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -599,7 +599,17 @@
     "content/01_UX_Design/Header.md",
     "content/01_UX_Design/IA.md",
     "content/01_UX_Design/IT 좀 아는 사람.md",
-    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md"
+    "content/01_UX_Design/Insight, Key Finding, CJM, Touch Point.md",
+    "content/01_UX_Design/Market Research.md",
+    "content/01_UX_Design/Needs VS Wants.md",
+    "content/01_UX_Design/Proposing.md",
+    "content/01_UX_Design/Prototype 방향성.md",
+    "content/01_UX_Design/Requirement Specification.md",
+    "content/01_UX_Design/SXG.md",
+    "content/01_UX_Design/Shell.md",
+    "content/01_UX_Design/TTFB.md",
+    "content/01_UX_Design/UI.md",
+    "content/01_UX_Design/USER RESEARCH.md"
   ],
-  "last_updated": "2026-04-18T03:45:59.569639Z"
+  "last_updated": "2026-04-18T03:45:59.811659Z"
 }
