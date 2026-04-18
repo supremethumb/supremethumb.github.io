@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/CDO.md",
-    "content/02_IT_Tech/CIO.md",
-    "content/02_IT_Tech/CMMI.md",
-    "content/02_IT_Tech/CRM.md",
-    "content/02_IT_Tech/CSRF.md",
-    "content/02_IT_Tech/Char Type.md",
-    "content/02_IT_Tech/DAC.md",
-    "content/02_IT_Tech/DBMS.md",
-    "content/02_IT_Tech/DCL.md",
-    "content/02_IT_Tech/DDL.md",
     "content/02_IT_Tech/DDOS.md",
     "content/02_IT_Tech/DES.md",
     "content/02_IT_Tech/DML.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/ARP.md",
     "content/02_IT_Tech/Agile.md",
     "content/02_IT_Tech/Boolean Type.md",
-    "content/02_IT_Tech/CALS.md"
+    "content/02_IT_Tech/CALS.md",
+    "content/02_IT_Tech/CDO.md",
+    "content/02_IT_Tech/CIO.md",
+    "content/02_IT_Tech/CMMI.md",
+    "content/02_IT_Tech/CRM.md",
+    "content/02_IT_Tech/CSRF.md",
+    "content/02_IT_Tech/Char Type.md",
+    "content/02_IT_Tech/DAC.md",
+    "content/02_IT_Tech/DBMS.md",
+    "content/02_IT_Tech/DCL.md",
+    "content/02_IT_Tech/DDL.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -729,7 +729,17 @@
     "content/02_IT_Tech/ARP.md",
     "content/02_IT_Tech/Agile.md",
     "content/02_IT_Tech/Boolean Type.md",
-    "content/02_IT_Tech/CALS.md"
+    "content/02_IT_Tech/CALS.md",
+    "content/02_IT_Tech/CDO.md",
+    "content/02_IT_Tech/CIO.md",
+    "content/02_IT_Tech/CMMI.md",
+    "content/02_IT_Tech/CRM.md",
+    "content/02_IT_Tech/CSRF.md",
+    "content/02_IT_Tech/Char Type.md",
+    "content/02_IT_Tech/DAC.md",
+    "content/02_IT_Tech/DBMS.md",
+    "content/02_IT_Tech/DCL.md",
+    "content/02_IT_Tech/DDL.md"
   ],
-  "last_updated": "2026-04-18T03:46:02.528987Z"
+  "last_updated": "2026-04-18T03:46:02.738713Z"
 }
