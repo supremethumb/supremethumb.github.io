@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/03_AI_ML/데이터.md",
-    "content/03_AI_ML/딥러닝.md",
-    "content/03_AI_ML/마르코프 결정 프로세스.md",
-    "content/03_AI_ML/멀티에이전트 강화학습.md",
-    "content/03_AI_ML/메타학습.md",
-    "content/03_AI_ML/모델 구조.md",
-    "content/03_AI_ML/모델 프리.md",
-    "content/03_AI_ML/모방 강화학습.md",
-    "content/03_AI_ML/범용 인공지능.md",
-    "content/03_AI_ML/베이즈 추론.md",
     "content/03_AI_ML/베이지안 딥러닝.md",
     "content/03_AI_ML/베이지안 모델.md",
     "content/03_AI_ML/변동성.md",
@@ -575,7 +565,17 @@
     "content/03_AI_ML/강화학습.md",
     "content/03_AI_ML/거리함수.md",
     "content/03_AI_ML/과적합.md",
-    "content/03_AI_ML/광학문자인식.md"
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/데이터.md",
+    "content/03_AI_ML/딥러닝.md",
+    "content/03_AI_ML/마르코프 결정 프로세스.md",
+    "content/03_AI_ML/멀티에이전트 강화학습.md",
+    "content/03_AI_ML/메타학습.md",
+    "content/03_AI_ML/모델 구조.md",
+    "content/03_AI_ML/모델 프리.md",
+    "content/03_AI_ML/모방 강화학습.md",
+    "content/03_AI_ML/범용 인공지능.md",
+    "content/03_AI_ML/베이즈 추론.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -959,7 +959,17 @@
     "content/03_AI_ML/강화학습.md",
     "content/03_AI_ML/거리함수.md",
     "content/03_AI_ML/과적합.md",
-    "content/03_AI_ML/광학문자인식.md"
+    "content/03_AI_ML/광학문자인식.md",
+    "content/03_AI_ML/데이터.md",
+    "content/03_AI_ML/딥러닝.md",
+    "content/03_AI_ML/마르코프 결정 프로세스.md",
+    "content/03_AI_ML/멀티에이전트 강화학습.md",
+    "content/03_AI_ML/메타학습.md",
+    "content/03_AI_ML/모델 구조.md",
+    "content/03_AI_ML/모델 프리.md",
+    "content/03_AI_ML/모방 강화학습.md",
+    "content/03_AI_ML/범용 인공지능.md",
+    "content/03_AI_ML/베이즈 추론.md"
   ],
-  "last_updated": "2026-04-18T03:46:07.579432Z"
+  "last_updated": "2026-04-18T03:46:07.823782Z"
 }
