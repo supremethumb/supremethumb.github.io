@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/SQL 문법.md",
-    "content/02_IT_Tech/SQL 함수.md",
-    "content/02_IT_Tech/SSL-TLS.md",
-    "content/02_IT_Tech/Session.md",
-    "content/02_IT_Tech/String Type.md",
-    "content/02_IT_Tech/TCP.md",
-    "content/02_IT_Tech/Timeout.md",
-    "content/02_IT_Tech/UML.md",
-    "content/02_IT_Tech/VAN.md",
-    "content/02_IT_Tech/XML.md",
     "content/02_IT_Tech/XSS.md",
     "content/02_IT_Tech/가상물리시스템.md",
     "content/02_IT_Tech/가상화.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/SI.md",
     "content/02_IT_Tech/SM.md",
     "content/02_IT_Tech/SPICE.md",
-    "content/02_IT_Tech/SQL Injection.md"
+    "content/02_IT_Tech/SQL Injection.md",
+    "content/02_IT_Tech/SQL 문법.md",
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/SSL-TLS.md",
+    "content/02_IT_Tech/Session.md",
+    "content/02_IT_Tech/String Type.md",
+    "content/02_IT_Tech/TCP.md",
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/UML.md",
+    "content/02_IT_Tech/VAN.md",
+    "content/02_IT_Tech/XML.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -799,7 +799,17 @@
     "content/02_IT_Tech/SI.md",
     "content/02_IT_Tech/SM.md",
     "content/02_IT_Tech/SPICE.md",
-    "content/02_IT_Tech/SQL Injection.md"
+    "content/02_IT_Tech/SQL Injection.md",
+    "content/02_IT_Tech/SQL 문법.md",
+    "content/02_IT_Tech/SQL 함수.md",
+    "content/02_IT_Tech/SSL-TLS.md",
+    "content/02_IT_Tech/Session.md",
+    "content/02_IT_Tech/String Type.md",
+    "content/02_IT_Tech/TCP.md",
+    "content/02_IT_Tech/Timeout.md",
+    "content/02_IT_Tech/UML.md",
+    "content/02_IT_Tech/VAN.md",
+    "content/02_IT_Tech/XML.md"
   ],
-  "last_updated": "2026-04-18T03:46:04.030538Z"
+  "last_updated": "2026-04-18T03:46:04.240289Z"
 }
