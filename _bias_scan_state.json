@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/다형성.md",
-    "content/02_IT_Tech/단계별 모델.md",
-    "content/02_IT_Tech/단위 테스트.md",
-    "content/02_IT_Tech/대칭키 암호화.md",
-    "content/02_IT_Tech/데이터 흐름도.md",
-    "content/02_IT_Tech/데이터베이스.md",
-    "content/02_IT_Tech/디스패치.md",
-    "content/02_IT_Tech/디자인 패턴.md",
-    "content/02_IT_Tech/디피헬만.md",
-    "content/02_IT_Tech/라우터.md",
     "content/02_IT_Tech/메모리 관리.md",
     "content/02_IT_Tech/메모리 단편화.md",
     "content/02_IT_Tech/멤리스터.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/네트워크 프로토콜.md",
     "content/02_IT_Tech/네트워크.md",
     "content/02_IT_Tech/논리 주소.md",
-    "content/02_IT_Tech/뉴모로픽 반도체.md"
+    "content/02_IT_Tech/뉴모로픽 반도체.md",
+    "content/02_IT_Tech/다형성.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/02_IT_Tech/단위 테스트.md",
+    "content/02_IT_Tech/대칭키 암호화.md",
+    "content/02_IT_Tech/데이터 흐름도.md",
+    "content/02_IT_Tech/데이터베이스.md",
+    "content/02_IT_Tech/디스패치.md",
+    "content/02_IT_Tech/디자인 패턴.md",
+    "content/02_IT_Tech/디피헬만.md",
+    "content/02_IT_Tech/라우터.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -829,7 +829,17 @@
     "content/02_IT_Tech/네트워크 프로토콜.md",
     "content/02_IT_Tech/네트워크.md",
     "content/02_IT_Tech/논리 주소.md",
-    "content/02_IT_Tech/뉴모로픽 반도체.md"
+    "content/02_IT_Tech/뉴모로픽 반도체.md",
+    "content/02_IT_Tech/다형성.md",
+    "content/02_IT_Tech/단계별 모델.md",
+    "content/02_IT_Tech/단위 테스트.md",
+    "content/02_IT_Tech/대칭키 암호화.md",
+    "content/02_IT_Tech/데이터 흐름도.md",
+    "content/02_IT_Tech/데이터베이스.md",
+    "content/02_IT_Tech/디스패치.md",
+    "content/02_IT_Tech/디자인 패턴.md",
+    "content/02_IT_Tech/디피헬만.md",
+    "content/02_IT_Tech/라우터.md"
   ],
-  "last_updated": "2026-04-18T03:46:04.686595Z"
+  "last_updated": "2026-04-18T03:46:04.902530Z"
 }
