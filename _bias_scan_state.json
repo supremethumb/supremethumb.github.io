@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/재사용.md",
-    "content/02_IT_Tech/저작권.md",
-    "content/02_IT_Tech/절차형 SQL.md",
-    "content/02_IT_Tech/정보은닉.md",
-    "content/02_IT_Tech/정보처리기사.md",
-    "content/02_IT_Tech/정적 분석 도구.md",
-    "content/02_IT_Tech/처리량.md",
-    "content/02_IT_Tech/추상화.md",
-    "content/02_IT_Tech/캡슐화.md",
-    "content/02_IT_Tech/컴퓨팅적 사고능력.md",
     "content/02_IT_Tech/쿠키.md",
     "content/02_IT_Tech/크로스 사이트 스크립팅.md",
     "content/02_IT_Tech/클라우드 컴퓨팅.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/입출력발생.md",
     "content/02_IT_Tech/자료 사전.md",
     "content/02_IT_Tech/자원사용율.md",
-    "content/02_IT_Tech/작업.md"
+    "content/02_IT_Tech/작업.md",
+    "content/02_IT_Tech/재사용.md",
+    "content/02_IT_Tech/저작권.md",
+    "content/02_IT_Tech/절차형 SQL.md",
+    "content/02_IT_Tech/정보은닉.md",
+    "content/02_IT_Tech/정보처리기사.md",
+    "content/02_IT_Tech/정적 분석 도구.md",
+    "content/02_IT_Tech/처리량.md",
+    "content/02_IT_Tech/추상화.md",
+    "content/02_IT_Tech/캡슐화.md",
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -889,7 +889,17 @@
     "content/02_IT_Tech/입출력발생.md",
     "content/02_IT_Tech/자료 사전.md",
     "content/02_IT_Tech/자원사용율.md",
-    "content/02_IT_Tech/작업.md"
+    "content/02_IT_Tech/작업.md",
+    "content/02_IT_Tech/재사용.md",
+    "content/02_IT_Tech/저작권.md",
+    "content/02_IT_Tech/절차형 SQL.md",
+    "content/02_IT_Tech/정보은닉.md",
+    "content/02_IT_Tech/정보처리기사.md",
+    "content/02_IT_Tech/정적 분석 도구.md",
+    "content/02_IT_Tech/처리량.md",
+    "content/02_IT_Tech/추상화.md",
+    "content/02_IT_Tech/캡슐화.md",
+    "content/02_IT_Tech/컴퓨팅적 사고능력.md"
   ],
-  "last_updated": "2026-04-18T03:46:05.995765Z"
+  "last_updated": "2026-04-18T03:46:06.202214Z"
 }
