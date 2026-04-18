@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/DDOS.md",
-    "content/02_IT_Tech/DES.md",
-    "content/02_IT_Tech/DML.md",
-    "content/02_IT_Tech/DOS.md",
-    "content/02_IT_Tech/DRDOS.md",
-    "content/02_IT_Tech/DSA.md",
-    "content/02_IT_Tech/Data Type.md",
-    "content/02_IT_Tech/Debugging.md",
-    "content/02_IT_Tech/EAI.md",
-    "content/02_IT_Tech/EAO.md",
     "content/02_IT_Tech/ECC.md",
     "content/02_IT_Tech/EDI.md",
     "content/02_IT_Tech/EDW.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/DAC.md",
     "content/02_IT_Tech/DBMS.md",
     "content/02_IT_Tech/DCL.md",
-    "content/02_IT_Tech/DDL.md"
+    "content/02_IT_Tech/DDL.md",
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/DML.md",
+    "content/02_IT_Tech/DOS.md",
+    "content/02_IT_Tech/DRDOS.md",
+    "content/02_IT_Tech/DSA.md",
+    "content/02_IT_Tech/Data Type.md",
+    "content/02_IT_Tech/Debugging.md",
+    "content/02_IT_Tech/EAI.md",
+    "content/02_IT_Tech/EAO.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -739,7 +739,17 @@
     "content/02_IT_Tech/DAC.md",
     "content/02_IT_Tech/DBMS.md",
     "content/02_IT_Tech/DCL.md",
-    "content/02_IT_Tech/DDL.md"
+    "content/02_IT_Tech/DDL.md",
+    "content/02_IT_Tech/DDOS.md",
+    "content/02_IT_Tech/DES.md",
+    "content/02_IT_Tech/DML.md",
+    "content/02_IT_Tech/DOS.md",
+    "content/02_IT_Tech/DRDOS.md",
+    "content/02_IT_Tech/DSA.md",
+    "content/02_IT_Tech/Data Type.md",
+    "content/02_IT_Tech/Debugging.md",
+    "content/02_IT_Tech/EAI.md",
+    "content/02_IT_Tech/EAO.md"
   ],
-  "last_updated": "2026-04-18T03:46:02.738713Z"
+  "last_updated": "2026-04-18T03:46:02.966135Z"
 }
