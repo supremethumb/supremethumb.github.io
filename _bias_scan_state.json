@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/01_UX_Design/정보 구조 디자인.md",
-    "content/01_UX_Design/정성적 데이터.md",
-    "content/01_UX_Design/조형의 원리.md",
-    "content/01_UX_Design/좋은 UX란.md",
-    "content/01_UX_Design/중요한 디자인의 원리.md",
-    "content/01_UX_Design/지연 로딩.md",
-    "content/01_UX_Design/직관성.md",
-    "content/01_UX_Design/첫 클릭 테스트.md",
-    "content/01_UX_Design/카드 소팅.md",
-    "content/01_UX_Design/타이포그래픽 디자인.md",
     "content/01_UX_Design/태스크 분석.md",
     "content/01_UX_Design/터널 시각.md",
     "content/01_UX_Design/퍼널.md",
@@ -575,7 +565,17 @@
     "content/01_UX_Design/인간을 위한 디자인.md",
     "content/01_UX_Design/인터랙션.md",
     "content/01_UX_Design/인터뷰.md",
-    "content/01_UX_Design/인터페이스.md"
+    "content/01_UX_Design/인터페이스.md",
+    "content/01_UX_Design/정보 구조 디자인.md",
+    "content/01_UX_Design/정성적 데이터.md",
+    "content/01_UX_Design/조형의 원리.md",
+    "content/01_UX_Design/좋은 UX란.md",
+    "content/01_UX_Design/중요한 디자인의 원리.md",
+    "content/01_UX_Design/지연 로딩.md",
+    "content/01_UX_Design/직관성.md",
+    "content/01_UX_Design/첫 클릭 테스트.md",
+    "content/01_UX_Design/카드 소팅.md",
+    "content/01_UX_Design/타이포그래픽 디자인.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -699,7 +699,17 @@
     "content/01_UX_Design/인간을 위한 디자인.md",
     "content/01_UX_Design/인터랙션.md",
     "content/01_UX_Design/인터뷰.md",
-    "content/01_UX_Design/인터페이스.md"
+    "content/01_UX_Design/인터페이스.md",
+    "content/01_UX_Design/정보 구조 디자인.md",
+    "content/01_UX_Design/정성적 데이터.md",
+    "content/01_UX_Design/조형의 원리.md",
+    "content/01_UX_Design/좋은 UX란.md",
+    "content/01_UX_Design/중요한 디자인의 원리.md",
+    "content/01_UX_Design/지연 로딩.md",
+    "content/01_UX_Design/직관성.md",
+    "content/01_UX_Design/첫 클릭 테스트.md",
+    "content/01_UX_Design/카드 소팅.md",
+    "content/01_UX_Design/타이포그래픽 디자인.md"
   ],
-  "last_updated": "2026-04-18T03:46:01.790107Z"
+  "last_updated": "2026-04-18T03:46:02.049302Z"
 }
