@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
-    "content/01_UX_Design/User Flow.md",
-    "content/01_UX_Design/User Scenario.md",
-    "content/01_UX_Design/User.md",
-    "content/01_UX_Design/user research basic.md",
-    "content/01_UX_Design/감성 디자인.md",
-    "content/01_UX_Design/감성.md",
-    "content/01_UX_Design/개념적 모델.md",
-    "content/01_UX_Design/개발 디스크립션.md",
-    "content/01_UX_Design/거터.md",
     "content/01_UX_Design/결정 경험.md",
     "content/01_UX_Design/경험.md",
     "content/01_UX_Design/기획.md",
@@ -575,7 +565,17 @@
     "content/01_UX_Design/UX 방법론.md",
     "content/01_UX_Design/UX 품질 판단.md",
     "content/01_UX_Design/UX 품질.md",
-    "content/01_UX_Design/UX 피라미드.md"
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
+    "content/01_UX_Design/User Flow.md",
+    "content/01_UX_Design/User Scenario.md",
+    "content/01_UX_Design/User.md",
+    "content/01_UX_Design/user research basic.md",
+    "content/01_UX_Design/감성 디자인.md",
+    "content/01_UX_Design/감성.md",
+    "content/01_UX_Design/개념적 모델.md",
+    "content/01_UX_Design/개발 디스크립션.md",
+    "content/01_UX_Design/거터.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -619,7 +619,17 @@
     "content/01_UX_Design/UX 방법론.md",
     "content/01_UX_Design/UX 품질 판단.md",
     "content/01_UX_Design/UX 품질.md",
-    "content/01_UX_Design/UX 피라미드.md"
+    "content/01_UX_Design/UX 피라미드.md",
+    "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
+    "content/01_UX_Design/User Flow.md",
+    "content/01_UX_Design/User Scenario.md",
+    "content/01_UX_Design/User.md",
+    "content/01_UX_Design/user research basic.md",
+    "content/01_UX_Design/감성 디자인.md",
+    "content/01_UX_Design/감성.md",
+    "content/01_UX_Design/개념적 모델.md",
+    "content/01_UX_Design/개발 디스크립션.md",
+    "content/01_UX_Design/거터.md"
   ],
-  "last_updated": "2026-04-18T03:46:00.033782Z"
+  "last_updated": "2026-04-18T03:46:00.253353Z"
 }
