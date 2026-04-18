@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/01_UX_Design/본능적 단계.md",
-    "content/01_UX_Design/본능적 디자인.md",
-    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md",
-    "content/01_UX_Design/사용성 계획.md",
-    "content/01_UX_Design/사용성 테스트.md",
-    "content/01_UX_Design/사용성.md",
-    "content/01_UX_Design/사용자 경험의 요소.md",
-    "content/01_UX_Design/사용자 리서치.md",
-    "content/01_UX_Design/사용자 스토리.md",
-    "content/01_UX_Design/사용자 중심 디자인.md",
     "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
     "content/01_UX_Design/서비스 기획 스쿨.md",
     "content/01_UX_Design/서비스 기획자.md",
@@ -575,7 +565,17 @@
     "content/01_UX_Design/무주의 맹시.md",
     "content/01_UX_Design/반성적 단계.md",
     "content/01_UX_Design/반성적 디자인.md",
-    "content/01_UX_Design/변화 맹시.md"
+    "content/01_UX_Design/변화 맹시.md",
+    "content/01_UX_Design/본능적 단계.md",
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md",
+    "content/01_UX_Design/사용성 계획.md",
+    "content/01_UX_Design/사용성 테스트.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/01_UX_Design/사용자 리서치.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/사용자 중심 디자인.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -659,7 +659,17 @@
     "content/01_UX_Design/무주의 맹시.md",
     "content/01_UX_Design/반성적 단계.md",
     "content/01_UX_Design/반성적 디자인.md",
-    "content/01_UX_Design/변화 맹시.md"
+    "content/01_UX_Design/변화 맹시.md",
+    "content/01_UX_Design/본능적 단계.md",
+    "content/01_UX_Design/본능적 디자인.md",
+    "content/01_UX_Design/사람들에게 쉬운 것이 오래간다.md",
+    "content/01_UX_Design/사용성 계획.md",
+    "content/01_UX_Design/사용성 테스트.md",
+    "content/01_UX_Design/사용성.md",
+    "content/01_UX_Design/사용자 경험의 요소.md",
+    "content/01_UX_Design/사용자 리서치.md",
+    "content/01_UX_Design/사용자 스토리.md",
+    "content/01_UX_Design/사용자 중심 디자인.md"
   ],
-  "last_updated": "2026-04-18T03:46:00.905063Z"
+  "last_updated": "2026-04-18T03:46:01.126987Z"
 }
