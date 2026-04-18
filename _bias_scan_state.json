@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/RFID.md",
-    "content/02_IT_Tech/Routing Protocol.md",
-    "content/02_IT_Tech/SCM.md",
-    "content/02_IT_Tech/SCR.md",
-    "content/02_IT_Tech/SDLC.md",
-    "content/02_IT_Tech/SEED.md",
-    "content/02_IT_Tech/SI.md",
-    "content/02_IT_Tech/SM.md",
-    "content/02_IT_Tech/SPICE.md",
-    "content/02_IT_Tech/SQL Injection.md",
     "content/02_IT_Tech/SQL 문법.md",
     "content/02_IT_Tech/SQL 함수.md",
     "content/02_IT_Tech/SSL-TLS.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/Plug & Play.md",
     "content/02_IT_Tech/QOS.md",
     "content/02_IT_Tech/RARP.md",
-    "content/02_IT_Tech/RBAC.md"
+    "content/02_IT_Tech/RBAC.md",
+    "content/02_IT_Tech/RFID.md",
+    "content/02_IT_Tech/Routing Protocol.md",
+    "content/02_IT_Tech/SCM.md",
+    "content/02_IT_Tech/SCR.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/02_IT_Tech/SEED.md",
+    "content/02_IT_Tech/SI.md",
+    "content/02_IT_Tech/SM.md",
+    "content/02_IT_Tech/SPICE.md",
+    "content/02_IT_Tech/SQL Injection.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -789,7 +789,17 @@
     "content/02_IT_Tech/Plug & Play.md",
     "content/02_IT_Tech/QOS.md",
     "content/02_IT_Tech/RARP.md",
-    "content/02_IT_Tech/RBAC.md"
+    "content/02_IT_Tech/RBAC.md",
+    "content/02_IT_Tech/RFID.md",
+    "content/02_IT_Tech/Routing Protocol.md",
+    "content/02_IT_Tech/SCM.md",
+    "content/02_IT_Tech/SCR.md",
+    "content/02_IT_Tech/SDLC.md",
+    "content/02_IT_Tech/SEED.md",
+    "content/02_IT_Tech/SI.md",
+    "content/02_IT_Tech/SM.md",
+    "content/02_IT_Tech/SPICE.md",
+    "content/02_IT_Tech/SQL Injection.md"
   ],
-  "last_updated": "2026-04-18T03:46:03.814832Z"
+  "last_updated": "2026-04-18T03:46:04.030538Z"
 }
