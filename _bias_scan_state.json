@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/08_Insights/블로그 글쓰기.md",
-    "content/08_Insights/사람들에게 반감을 사는 방법.md",
-    "content/08_Insights/사람의 특징.md",
-    "content/08_Insights/아집이 생기는 것에 대해서.md",
-    "content/08_Insights/인간관계론.md",
-    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
-    "content/08_Insights/자기관리론.md",
-    "content/08_Insights/제태크 수단에 대해서.md",
-    "content/08_Insights/조커.md",
-    "content/08_Insights/타이 로페즈.md",
     "content/08_Insights/한계.md",
     "content/index.md"
   ],
@@ -575,7 +565,17 @@
     "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md",
     "content/07_Economics_Finance/현금없는 사회.md",
     "content/08_Insights/뇌의 한계.md",
-    "content/08_Insights/면접 바이블.md"
+    "content/08_Insights/면접 바이블.md",
+    "content/08_Insights/블로그 글쓰기.md",
+    "content/08_Insights/사람들에게 반감을 사는 방법.md",
+    "content/08_Insights/사람의 특징.md",
+    "content/08_Insights/아집이 생기는 것에 대해서.md",
+    "content/08_Insights/인간관계론.md",
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
+    "content/08_Insights/자기관리론.md",
+    "content/08_Insights/제태크 수단에 대해서.md",
+    "content/08_Insights/조커.md",
+    "content/08_Insights/타이 로페즈.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -1139,7 +1139,17 @@
     "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md",
     "content/07_Economics_Finance/현금없는 사회.md",
     "content/08_Insights/뇌의 한계.md",
-    "content/08_Insights/면접 바이블.md"
+    "content/08_Insights/면접 바이블.md",
+    "content/08_Insights/블로그 글쓰기.md",
+    "content/08_Insights/사람들에게 반감을 사는 방법.md",
+    "content/08_Insights/사람의 특징.md",
+    "content/08_Insights/아집이 생기는 것에 대해서.md",
+    "content/08_Insights/인간관계론.md",
+    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
+    "content/08_Insights/자기관리론.md",
+    "content/08_Insights/제태크 수단에 대해서.md",
+    "content/08_Insights/조커.md",
+    "content/08_Insights/타이 로페즈.md"
   ],
-  "last_updated": "2026-04-18T03:46:11.555755Z"
+  "last_updated": "2026-04-18T03:46:11.777549Z"
 }
