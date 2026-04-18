@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/05_Marketing_Business/직접 유입.md",
-    "content/05_Marketing_Business/추천 유입.md",
-    "content/05_Marketing_Business/코호트.md",
-    "content/05_Marketing_Business/파이프라인.md",
-    "content/05_Marketing_Business/팬슈머.md",
-    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
-    "content/05_Marketing_Business/플랫폼.md",
-    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
-    "content/05_Marketing_Business/회사.md",
-    "content/06_Philosophy_Humanities/Grit.md",
     "content/06_Philosophy_Humanities/RNA.md",
     "content/06_Philosophy_Humanities/감정.md",
     "content/06_Philosophy_Humanities/국방 순위 2020.md",
@@ -575,7 +565,17 @@
     "content/05_Marketing_Business/이탈률.md",
     "content/05_Marketing_Business/인바운드 마케팅.md",
     "content/05_Marketing_Business/장수 브랜드의 성공 비결.md",
-    "content/05_Marketing_Business/전환율.md"
+    "content/05_Marketing_Business/전환율.md",
+    "content/05_Marketing_Business/직접 유입.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/05_Marketing_Business/코호트.md",
+    "content/05_Marketing_Business/파이프라인.md",
+    "content/05_Marketing_Business/팬슈머.md",
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
+    "content/05_Marketing_Business/회사.md",
+    "content/06_Philosophy_Humanities/Grit.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -1049,7 +1049,17 @@
     "content/05_Marketing_Business/이탈률.md",
     "content/05_Marketing_Business/인바운드 마케팅.md",
     "content/05_Marketing_Business/장수 브랜드의 성공 비결.md",
-    "content/05_Marketing_Business/전환율.md"
+    "content/05_Marketing_Business/전환율.md",
+    "content/05_Marketing_Business/직접 유입.md",
+    "content/05_Marketing_Business/추천 유입.md",
+    "content/05_Marketing_Business/코호트.md",
+    "content/05_Marketing_Business/파이프라인.md",
+    "content/05_Marketing_Business/팬슈머.md",
+    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/05_Marketing_Business/플랫폼.md",
+    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
+    "content/05_Marketing_Business/회사.md",
+    "content/06_Philosophy_Humanities/Grit.md"
   ],
-  "last_updated": "2026-04-18T03:46:09.552889Z"
+  "last_updated": "2026-04-18T03:46:09.782350Z"
 }
