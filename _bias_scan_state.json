@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/01_UX_Design/UX  불변의 법칙.md",
-    "content/01_UX_Design/UX 구성요소.md",
-    "content/01_UX_Design/UX 기획의 기술.md",
-    "content/01_UX_Design/UX 디자인 1.md",
-    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
-    "content/01_UX_Design/UX 디자인.md",
-    "content/01_UX_Design/UX 방법론.md",
-    "content/01_UX_Design/UX 품질 판단.md",
-    "content/01_UX_Design/UX 품질.md",
-    "content/01_UX_Design/UX 피라미드.md",
     "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
     "content/01_UX_Design/User Flow.md",
     "content/01_UX_Design/User Scenario.md",
@@ -575,7 +565,17 @@
     "content/01_UX_Design/Shell.md",
     "content/01_UX_Design/TTFB.md",
     "content/01_UX_Design/UI.md",
-    "content/01_UX_Design/USER RESEARCH.md"
+    "content/01_UX_Design/USER RESEARCH.md",
+    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/01_UX_Design/UX 구성요소.md",
+    "content/01_UX_Design/UX 기획의 기술.md",
+    "content/01_UX_Design/UX 디자인 1.md",
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
+    "content/01_UX_Design/UX 디자인.md",
+    "content/01_UX_Design/UX 방법론.md",
+    "content/01_UX_Design/UX 품질 판단.md",
+    "content/01_UX_Design/UX 품질.md",
+    "content/01_UX_Design/UX 피라미드.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -609,7 +609,17 @@
     "content/01_UX_Design/Shell.md",
     "content/01_UX_Design/TTFB.md",
     "content/01_UX_Design/UI.md",
-    "content/01_UX_Design/USER RESEARCH.md"
+    "content/01_UX_Design/USER RESEARCH.md",
+    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/01_UX_Design/UX 구성요소.md",
+    "content/01_UX_Design/UX 기획의 기술.md",
+    "content/01_UX_Design/UX 디자인 1.md",
+    "content/01_UX_Design/UX 디자인 7가지 비밀.md",
+    "content/01_UX_Design/UX 디자인.md",
+    "content/01_UX_Design/UX 방법론.md",
+    "content/01_UX_Design/UX 품질 판단.md",
+    "content/01_UX_Design/UX 품질.md",
+    "content/01_UX_Design/UX 피라미드.md"
   ],
-  "last_updated": "2026-04-18T03:45:59.811659Z"
+  "last_updated": "2026-04-18T03:46:00.033782Z"
 }
