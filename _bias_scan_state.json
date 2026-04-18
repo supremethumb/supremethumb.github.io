@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/03_AI_ML/심화강화학습.md",
-    "content/03_AI_ML/연합학습.md",
-    "content/03_AI_ML/완전히 연결된 모델.md",
-    "content/03_AI_ML/이미지넷.md",
-    "content/03_AI_ML/이상 감지.md",
-    "content/03_AI_ML/인공지능.md",
-    "content/03_AI_ML/자기 지도 증강.md",
-    "content/03_AI_ML/자기 집중.md",
-    "content/03_AI_ML/자기지도학습.md",
-    "content/03_AI_ML/장면 그래프.md",
     "content/03_AI_ML/적대적 공격.md",
     "content/03_AI_ML/전용 인공지능.md",
     "content/03_AI_ML/전이 학습.md",
@@ -575,7 +565,17 @@
     "content/03_AI_ML/소프트맥스 정규화.md",
     "content/03_AI_ML/수행 역량.md",
     "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
-    "content/03_AI_ML/심볼릭 추론.md"
+    "content/03_AI_ML/심볼릭 추론.md",
+    "content/03_AI_ML/심화강화학습.md",
+    "content/03_AI_ML/연합학습.md",
+    "content/03_AI_ML/완전히 연결된 모델.md",
+    "content/03_AI_ML/이미지넷.md",
+    "content/03_AI_ML/이상 감지.md",
+    "content/03_AI_ML/인공지능.md",
+    "content/03_AI_ML/자기 지도 증강.md",
+    "content/03_AI_ML/자기 집중.md",
+    "content/03_AI_ML/자기지도학습.md",
+    "content/03_AI_ML/장면 그래프.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -979,7 +979,17 @@
     "content/03_AI_ML/소프트맥스 정규화.md",
     "content/03_AI_ML/수행 역량.md",
     "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
-    "content/03_AI_ML/심볼릭 추론.md"
+    "content/03_AI_ML/심볼릭 추론.md",
+    "content/03_AI_ML/심화강화학습.md",
+    "content/03_AI_ML/연합학습.md",
+    "content/03_AI_ML/완전히 연결된 모델.md",
+    "content/03_AI_ML/이미지넷.md",
+    "content/03_AI_ML/이상 감지.md",
+    "content/03_AI_ML/인공지능.md",
+    "content/03_AI_ML/자기 지도 증강.md",
+    "content/03_AI_ML/자기 집중.md",
+    "content/03_AI_ML/자기지도학습.md",
+    "content/03_AI_ML/장면 그래프.md"
   ],
-  "last_updated": "2026-04-18T03:46:08.037101Z"
+  "last_updated": "2026-04-18T03:46:08.248852Z"
 }
