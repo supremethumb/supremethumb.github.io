@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/03_AI_ML/LRP.md",
-    "content/03_AI_ML/LSTM.md",
-    "content/03_AI_ML/MNIST.md",
-    "content/03_AI_ML/Network Dessection.md",
-    "content/03_AI_ML/PQ.md",
-    "content/03_AI_ML/Pretext Task.md",
-    "content/03_AI_ML/Q러닝.md",
-    "content/03_AI_ML/RNN-T.md",
-    "content/03_AI_ML/RNN.md",
-    "content/03_AI_ML/ROC 곡선.md",
     "content/03_AI_ML/RPN.md",
     "content/03_AI_ML/Region Proposal.md",
     "content/03_AI_ML/SHAP.md",
@@ -575,7 +565,17 @@
     "content/03_AI_ML/GPT-3.md",
     "content/03_AI_ML/GradCAM.md",
     "content/03_AI_ML/IoU.md",
-    "content/03_AI_ML/LIME.md"
+    "content/03_AI_ML/LIME.md",
+    "content/03_AI_ML/LRP.md",
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/MNIST.md",
+    "content/03_AI_ML/Network Dessection.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Pretext Task.md",
+    "content/03_AI_ML/Q러닝.md",
+    "content/03_AI_ML/RNN-T.md",
+    "content/03_AI_ML/RNN.md",
+    "content/03_AI_ML/ROC 곡선.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -939,7 +939,17 @@
     "content/03_AI_ML/GPT-3.md",
     "content/03_AI_ML/GradCAM.md",
     "content/03_AI_ML/IoU.md",
-    "content/03_AI_ML/LIME.md"
+    "content/03_AI_ML/LIME.md",
+    "content/03_AI_ML/LRP.md",
+    "content/03_AI_ML/LSTM.md",
+    "content/03_AI_ML/MNIST.md",
+    "content/03_AI_ML/Network Dessection.md",
+    "content/03_AI_ML/PQ.md",
+    "content/03_AI_ML/Pretext Task.md",
+    "content/03_AI_ML/Q러닝.md",
+    "content/03_AI_ML/RNN-T.md",
+    "content/03_AI_ML/RNN.md",
+    "content/03_AI_ML/ROC 곡선.md"
   ],
-  "last_updated": "2026-04-18T03:46:07.108384Z"
+  "last_updated": "2026-04-18T03:46:07.342016Z"
 }
