@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/OLTP.md",
-    "content/02_IT_Tech/OMT.md",
-    "content/02_IT_Tech/OPT.md",
-    "content/02_IT_Tech/OPTIMIZER.md",
-    "content/02_IT_Tech/OSI 7 Layer.md",
-    "content/02_IT_Tech/POS.md",
-    "content/02_IT_Tech/Plug & Play.md",
-    "content/02_IT_Tech/QOS.md",
-    "content/02_IT_Tech/RARP.md",
-    "content/02_IT_Tech/RBAC.md",
     "content/02_IT_Tech/RFID.md",
     "content/02_IT_Tech/Routing Protocol.md",
     "content/02_IT_Tech/SCM.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/NFC.md",
     "content/02_IT_Tech/NUR.md",
     "content/02_IT_Tech/ODBC.md",
-    "content/02_IT_Tech/OLAP.md"
+    "content/02_IT_Tech/OLAP.md",
+    "content/02_IT_Tech/OLTP.md",
+    "content/02_IT_Tech/OMT.md",
+    "content/02_IT_Tech/OPT.md",
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/02_IT_Tech/OSI 7 Layer.md",
+    "content/02_IT_Tech/POS.md",
+    "content/02_IT_Tech/Plug & Play.md",
+    "content/02_IT_Tech/QOS.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/RBAC.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -779,7 +779,17 @@
     "content/02_IT_Tech/NFC.md",
     "content/02_IT_Tech/NUR.md",
     "content/02_IT_Tech/ODBC.md",
-    "content/02_IT_Tech/OLAP.md"
+    "content/02_IT_Tech/OLAP.md",
+    "content/02_IT_Tech/OLTP.md",
+    "content/02_IT_Tech/OMT.md",
+    "content/02_IT_Tech/OPT.md",
+    "content/02_IT_Tech/OPTIMIZER.md",
+    "content/02_IT_Tech/OSI 7 Layer.md",
+    "content/02_IT_Tech/POS.md",
+    "content/02_IT_Tech/Plug & Play.md",
+    "content/02_IT_Tech/QOS.md",
+    "content/02_IT_Tech/RARP.md",
+    "content/02_IT_Tech/RBAC.md"
   ],
-  "last_updated": "2026-04-18T03:46:03.604331Z"
+  "last_updated": "2026-04-18T03:46:03.814832Z"
 }
