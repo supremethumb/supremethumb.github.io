@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md",
-    "content/02_IT_Tech/응답시간.md",
-    "content/02_IT_Tech/응집도.md",
-    "content/02_IT_Tech/인수 테스트.md",
-    "content/02_IT_Tech/인스턴스.md",
-    "content/02_IT_Tech/일방향 암호화 방식.md",
-    "content/02_IT_Tech/입출력발생.md",
-    "content/02_IT_Tech/자료 사전.md",
-    "content/02_IT_Tech/자원사용율.md",
-    "content/02_IT_Tech/작업.md",
     "content/02_IT_Tech/재사용.md",
     "content/02_IT_Tech/저작권.md",
     "content/02_IT_Tech/절차형 SQL.md",
@@ -575,7 +565,17 @@
     "content/02_IT_Tech/외부 환경.md",
     "content/02_IT_Tech/요구 사항 분석.md",
     "content/02_IT_Tech/운영체제.md",
-    "content/02_IT_Tech/워터폴.md"
+    "content/02_IT_Tech/워터폴.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md",
+    "content/02_IT_Tech/응답시간.md",
+    "content/02_IT_Tech/응집도.md",
+    "content/02_IT_Tech/인수 테스트.md",
+    "content/02_IT_Tech/인스턴스.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md",
+    "content/02_IT_Tech/입출력발생.md",
+    "content/02_IT_Tech/자료 사전.md",
+    "content/02_IT_Tech/자원사용율.md",
+    "content/02_IT_Tech/작업.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -879,7 +879,17 @@
     "content/02_IT_Tech/외부 환경.md",
     "content/02_IT_Tech/요구 사항 분석.md",
     "content/02_IT_Tech/운영체제.md",
-    "content/02_IT_Tech/워터폴.md"
+    "content/02_IT_Tech/워터폴.md",
+    "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md",
+    "content/02_IT_Tech/응답시간.md",
+    "content/02_IT_Tech/응집도.md",
+    "content/02_IT_Tech/인수 테스트.md",
+    "content/02_IT_Tech/인스턴스.md",
+    "content/02_IT_Tech/일방향 암호화 방식.md",
+    "content/02_IT_Tech/입출력발생.md",
+    "content/02_IT_Tech/자료 사전.md",
+    "content/02_IT_Tech/자원사용율.md",
+    "content/02_IT_Tech/작업.md"
   ],
-  "last_updated": "2026-04-18T03:46:05.769937Z"
+  "last_updated": "2026-04-18T03:46:05.995765Z"
 }
