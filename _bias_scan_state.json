@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/06_Philosophy_Humanities/파르테논 신전.md",
-    "content/06_Philosophy_Humanities/평등.md",
-    "content/06_Philosophy_Humanities/표상.md",
-    "content/06_Philosophy_Humanities/한비자.md",
-    "content/06_Philosophy_Humanities/행복.md",
-    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md",
-    "content/06_Philosophy_Humanities/화석연료.md",
-    "content/07_Economics_Finance/EBITDA.md",
-    "content/07_Economics_Finance/PBR.md",
-    "content/07_Economics_Finance/PDR.md",
     "content/07_Economics_Finance/PEG.md",
     "content/07_Economics_Finance/PER.md",
     "content/07_Economics_Finance/가치투자.md",
@@ -575,7 +565,17 @@
     "content/06_Philosophy_Humanities/철학.md",
     "content/06_Philosophy_Humanities/철학대철학.md",
     "content/06_Philosophy_Humanities/칸트.md",
-    "content/06_Philosophy_Humanities/칼의 노래.md"
+    "content/06_Philosophy_Humanities/칼의 노래.md",
+    "content/06_Philosophy_Humanities/파르테논 신전.md",
+    "content/06_Philosophy_Humanities/평등.md",
+    "content/06_Philosophy_Humanities/표상.md",
+    "content/06_Philosophy_Humanities/한비자.md",
+    "content/06_Philosophy_Humanities/행복.md",
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md",
+    "content/06_Philosophy_Humanities/화석연료.md",
+    "content/07_Economics_Finance/EBITDA.md",
+    "content/07_Economics_Finance/PBR.md",
+    "content/07_Economics_Finance/PDR.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -1099,7 +1099,17 @@
     "content/06_Philosophy_Humanities/철학.md",
     "content/06_Philosophy_Humanities/철학대철학.md",
     "content/06_Philosophy_Humanities/칸트.md",
-    "content/06_Philosophy_Humanities/칼의 노래.md"
+    "content/06_Philosophy_Humanities/칼의 노래.md",
+    "content/06_Philosophy_Humanities/파르테논 신전.md",
+    "content/06_Philosophy_Humanities/평등.md",
+    "content/06_Philosophy_Humanities/표상.md",
+    "content/06_Philosophy_Humanities/한비자.md",
+    "content/06_Philosophy_Humanities/행복.md",
+    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md",
+    "content/06_Philosophy_Humanities/화석연료.md",
+    "content/07_Economics_Finance/EBITDA.md",
+    "content/07_Economics_Finance/PBR.md",
+    "content/07_Economics_Finance/PDR.md"
   ],
-  "last_updated": "2026-04-18T03:46:10.664220Z"
+  "last_updated": "2026-04-18T03:46:10.898135Z"
 }
