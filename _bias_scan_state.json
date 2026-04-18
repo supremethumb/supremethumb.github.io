@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/06_Philosophy_Humanities/RNA.md",
-    "content/06_Philosophy_Humanities/감정.md",
-    "content/06_Philosophy_Humanities/국방 순위 2020.md",
-    "content/06_Philosophy_Humanities/기생충.md",
-    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
-    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
-    "content/06_Philosophy_Humanities/길가메시.md",
-    "content/06_Philosophy_Humanities/녹서.md",
-    "content/06_Philosophy_Humanities/동물농장.md",
-    "content/06_Philosophy_Humanities/마지막 몰입.md",
     "content/06_Philosophy_Humanities/모던 타임즈.md",
     "content/06_Philosophy_Humanities/무의식.md",
     "content/06_Philosophy_Humanities/문화.md",
@@ -575,7 +565,17 @@
     "content/05_Marketing_Business/플랫폼.md",
     "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
     "content/05_Marketing_Business/회사.md",
-    "content/06_Philosophy_Humanities/Grit.md"
+    "content/06_Philosophy_Humanities/Grit.md",
+    "content/06_Philosophy_Humanities/RNA.md",
+    "content/06_Philosophy_Humanities/감정.md",
+    "content/06_Philosophy_Humanities/국방 순위 2020.md",
+    "content/06_Philosophy_Humanities/기생충.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/06_Philosophy_Humanities/길가메시.md",
+    "content/06_Philosophy_Humanities/녹서.md",
+    "content/06_Philosophy_Humanities/동물농장.md",
+    "content/06_Philosophy_Humanities/마지막 몰입.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -1059,7 +1059,17 @@
     "content/05_Marketing_Business/플랫폼.md",
     "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
     "content/05_Marketing_Business/회사.md",
-    "content/06_Philosophy_Humanities/Grit.md"
+    "content/06_Philosophy_Humanities/Grit.md",
+    "content/06_Philosophy_Humanities/RNA.md",
+    "content/06_Philosophy_Humanities/감정.md",
+    "content/06_Philosophy_Humanities/국방 순위 2020.md",
+    "content/06_Philosophy_Humanities/기생충.md",
+    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
+    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/06_Philosophy_Humanities/길가메시.md",
+    "content/06_Philosophy_Humanities/녹서.md",
+    "content/06_Philosophy_Humanities/동물농장.md",
+    "content/06_Philosophy_Humanities/마지막 몰입.md"
   ],
-  "last_updated": "2026-04-18T03:46:09.782350Z"
+  "last_updated": "2026-04-18T03:46:10.003685Z"
 }
