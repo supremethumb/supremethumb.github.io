@@ -2,16 +2,6 @@
   "version": 1,
   "total": 572,
   "pending": [
-    "content/01_UX_Design/행동적 단계.md",
-    "content/01_UX_Design/행동적 디자인.md",
-    "content/01_UX_Design/허브 앤 스포크.md",
-    "content/01_UX_Design/확증 편향.md",
-    "content/02_IT_Tech/AES.md",
-    "content/02_IT_Tech/AJAX.md",
-    "content/02_IT_Tech/ARP.md",
-    "content/02_IT_Tech/Agile.md",
-    "content/02_IT_Tech/Boolean Type.md",
-    "content/02_IT_Tech/CALS.md",
     "content/02_IT_Tech/CDO.md",
     "content/02_IT_Tech/CIO.md",
     "content/02_IT_Tech/CMMI.md",
@@ -575,7 +565,17 @@
     "content/01_UX_Design/프로토타입.md",
     "content/01_UX_Design/플로 다이어그램.md",
     "content/01_UX_Design/피라미드 모델.md",
-    "content/01_UX_Design/학습성.md"
+    "content/01_UX_Design/학습성.md",
+    "content/01_UX_Design/행동적 단계.md",
+    "content/01_UX_Design/행동적 디자인.md",
+    "content/01_UX_Design/허브 앤 스포크.md",
+    "content/01_UX_Design/확증 편향.md",
+    "content/02_IT_Tech/AES.md",
+    "content/02_IT_Tech/AJAX.md",
+    "content/02_IT_Tech/ARP.md",
+    "content/02_IT_Tech/Agile.md",
+    "content/02_IT_Tech/Boolean Type.md",
+    "content/02_IT_Tech/CALS.md"
   ],
   "quarantined": [],
   "review_needed": [],
@@ -719,7 +719,17 @@
     "content/01_UX_Design/프로토타입.md",
     "content/01_UX_Design/플로 다이어그램.md",
     "content/01_UX_Design/피라미드 모델.md",
-    "content/01_UX_Design/학습성.md"
+    "content/01_UX_Design/학습성.md",
+    "content/01_UX_Design/행동적 단계.md",
+    "content/01_UX_Design/행동적 디자인.md",
+    "content/01_UX_Design/허브 앤 스포크.md",
+    "content/01_UX_Design/확증 편향.md",
+    "content/02_IT_Tech/AES.md",
+    "content/02_IT_Tech/AJAX.md",
+    "content/02_IT_Tech/ARP.md",
+    "content/02_IT_Tech/Agile.md",
+    "content/02_IT_Tech/Boolean Type.md",
+    "content/02_IT_Tech/CALS.md"
   ],
-  "last_updated": "2026-04-18T03:46:02.294492Z"
+  "last_updated": "2026-04-18T03:46:02.528987Z"
 }
