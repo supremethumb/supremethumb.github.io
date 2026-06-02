@@ -11,11 +11,17 @@ export const Static: QuartzEmitterPlugin = () => ({
     const fps = await glob("**", staticPath, cfg.configuration.ignorePatterns)
     const outputStaticPath = joinSegments(argv.output, "static")
     await fs.promises.mkdir(outputStaticPath, { recursive: true })
-    for (const fp of fps) {
+    const copyPromises = fps.map(async (fp) => {
       const src = joinSegments(staticPath, fp) as FilePath
       const dest = joinSegments(outputStaticPath, fp) as FilePath
-      await fs.promises.mkdir(dirname(dest), { recursive: true })
+      const dir = dirname(dest) as FilePath
+      await fs.promises.mkdir(dir, { recursive: true })
       await fs.promises.copyFile(src, dest)
+      return dest
+    })
+
+    const dests = await Promise.all(copyPromises)
+    for (const dest of dests) {
       yield dest
     }
   },
