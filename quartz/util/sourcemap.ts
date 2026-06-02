@@ -7,7 +7,16 @@ export const options: sourceMapSupport.Options = {
   // import cache busting
   retrieveSourceMap(source) {
     if (source.includes(".quartz-cache")) {
-      let realSource = fileURLToPath(source.split("?", 2)[0] + ".map")
+      let realSource = source.split("?", 2)[0]
+      if (realSource.startsWith("file://")) {
+        realSource = fileURLToPath(realSource)
+      }
+      realSource += ".map"
+
+      if (!fs.existsSync(realSource)) {
+        return null
+      }
+
       return {
         map: fs.readFileSync(realSource, "utf8"),
       }
