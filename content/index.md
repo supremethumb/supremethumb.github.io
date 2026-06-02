@@ -2,7 +2,7 @@
 title: "index"
 date: 2026-03-28
 tags: ["일반"]
-description: "<div class="index-intro"> 위 그래프에서 노드를 클릭하면 각 노트로 이동할 수 있습니다. 색상은 주제별 분류를 나타냅니다."
+description: "<div class=\"index-intro\"> 위 그래프에서 노드를 클릭하면 각 노트로 이동할 수 있습니다. 색상은 주제별 분류를 나타냅니다."
 ---
 
 <div class="index-intro">
