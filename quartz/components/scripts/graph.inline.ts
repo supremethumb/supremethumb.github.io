@@ -150,13 +150,16 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       tags: data.get(url)?.tags ?? [],
     }
   })
+  const idToNodeMap = new Map<string, NodeData>()
+  nodes.forEach((n) => idToNodeMap.set(n.id, n))
+
   const graphData: { nodes: NodeData[]; links: LinkData[] } = {
     nodes,
     links: links
       .filter((l) => neighbourhood.has(l.source) && neighbourhood.has(l.target))
       .map((l) => ({
-        source: nodes.find((n) => n.id === l.source)!,
-        target: nodes.find((n) => n.id === l.target)!,
+        source: idToNodeMap.get(l.source)!,
+        target: idToNodeMap.get(l.target)!,
       })),
   }
 
