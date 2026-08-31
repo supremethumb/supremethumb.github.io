@@ -28,6 +28,6 @@ description: "항상 서비스를 기획하고 디자인하면서 중요한 것�
 - [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `UX`, `기획`, `디자인`
 - [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
 - [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `UX`, `기획`, `디자인`
-- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Custom CSS|Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
 - [[01_UX_Design/Document Sidebar|Document Sidebar]] — 공유 키워드: `UX`, `기획`, `디자인`
 

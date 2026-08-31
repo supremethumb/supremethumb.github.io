@@ -67,7 +67,7 @@ description: "넓은 의미에서 사용자와 시스템 사이에서 의사소�
 ## 관련 노트
 
 - [[01_UX_Design/UX 디자인 1|UX 디자인 1]] — 공유 키워드: `UX`, `기획`, `디자인`
-- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UI`, `UX`, `기획`
+- [[01_UX_Design/Custom CSS|Custom CSS]] — 공유 키워드: `UI`, `UX`, `기획`
 - [[01_UX_Design/경험|경험]] — 공유 키워드: `UI`, `UX`, `기획`
 - [[01_UX_Design/딥링크|딥링크]] — 공유 키워드: `UI`, `UX`, `기획`
 - [[01_UX_Design/라이트 박스|라이트 박스]] — 공유 키워드: `UI`, `UX`, `기획`

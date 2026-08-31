@@ -2,7 +2,7 @@
   "UI": [
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
-    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Custom CSS.md",
     "content/01_UX_Design/GUI.md",
     "content/01_UX_Design/Shell.md",
     "content/01_UX_Design/UI.md",
@@ -31,8 +31,8 @@
     "content/02_IT_Tech/운영체제.md",
     "content/02_IT_Tech/트리.md",
     "content/03_AI_ML/완전히 연결된 모델.md",
-    "content/05_Marketing_Business/MVP.md",
-    "content/05_Marketing_Business/전환율.md",
+    "content/04_Marketing_Business/MVP.md",
+    "content/04_Marketing_Business/전환율.md",
     "content/01_UX_Design/마음을 생각하는 디자인.md",
     "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
     "content/01_UX_Design/서비스 기획 스쿨.md"
@@ -45,7 +45,7 @@
     "content/01_UX_Design/Affinity Diagram.md",
     "content/01_UX_Design/Backchannels.md",
     "content/01_UX_Design/Bridging.md",
-    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Custom CSS.md",
     "content/01_UX_Design/Do it R.md",
     "content/01_UX_Design/Do it 웹 기획.md",
     "content/01_UX_Design/Document Sidebar.md",
@@ -162,21 +162,21 @@
     "content/02_IT_Tech/쿠키.md",
     "content/02_IT_Tech/트리.md",
     "content/03_AI_ML/완전히 연결된 모델.md",
-    "content/05_Marketing_Business/Carrying capacity.md",
-    "content/05_Marketing_Business/검색 유입.md",
-    "content/05_Marketing_Business/소셜 유입.md",
-    "content/05_Marketing_Business/소셜딜레마.md",
-    "content/05_Marketing_Business/이탈률.md",
-    "content/05_Marketing_Business/인바운드 마케팅.md",
-    "content/05_Marketing_Business/전환율.md",
-    "content/05_Marketing_Business/직접 유입.md",
-    "content/05_Marketing_Business/추천 유입.md",
-    "content/06_Philosophy_Humanities/영화 다큐멘터리.md",
-    "content/06_Philosophy_Humanities/이솝 우화.md",
-    "content/06_Philosophy_Humanities/행복.md",
+    "content/04_Marketing_Business/Carrying capacity.md",
+    "content/04_Marketing_Business/검색 유입.md",
+    "content/04_Marketing_Business/소셜 유입.md",
+    "content/04_Marketing_Business/소셜딜레마.md",
+    "content/04_Marketing_Business/이탈률.md",
+    "content/04_Marketing_Business/인바운드 마케팅.md",
+    "content/04_Marketing_Business/전환율.md",
+    "content/04_Marketing_Business/직접 유입.md",
+    "content/04_Marketing_Business/추천 유입.md",
+    "content/05_Philosophy_Humanities/영화 다큐멘터리.md",
+    "content/05_Philosophy_Humanities/이솝 우화.md",
+    "content/05_Philosophy_Humanities/행복.md",
     "content/01_UX_Design/Data Driven UX.md",
     "content/01_UX_Design/USER RESEARCH.md",
-    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/01_UX_Design/UX 불변의 법칙.md",
     "content/01_UX_Design/UX 기획의 기술.md",
     "content/01_UX_Design/감성 디자인.md",
     "content/01_UX_Design/디자인과 인간심리.md",
@@ -187,7 +187,7 @@
     "content/01_UX_Design/모바일 결제 사례 리서치.md",
     "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
     "content/01_UX_Design/서비스 기획 스쿨.md",
-    "content/07_Economics_Finance/넛지.md"
+    "content/06_Economics_Finance/넛지.md"
   ],
   "강의": [
     "content/00_Meta/강의.md",
@@ -197,21 +197,21 @@
     "content/00_Meta/강의.md",
     "content/00_Meta/도서.md",
     "content/02_IT_Tech/다형성.md",
-    "content/05_Marketing_Business/KPI.md",
-    "content/05_Marketing_Business/브이노믹스.md",
+    "content/04_Marketing_Business/KPI.md",
+    "content/04_Marketing_Business/브이노믹스.md",
     "content/01_UX_Design/Data Driven UX.md",
     "content/01_UX_Design/USER RESEARCH.md",
     "content/01_UX_Design/UX 기획의 기술.md",
     "content/01_UX_Design/마음을 생각하는 디자인.md",
     "content/01_UX_Design/마이크로카피.md",
     "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md",
-    "content/05_Marketing_Business/규칙 없음.md",
-    "content/05_Marketing_Business/브랜드 3.0.md",
-    "content/05_Marketing_Business/파이프라인.md",
-    "content/06_Philosophy_Humanities/마지막 몰입.md",
-    "content/07_Economics_Finance/부의 시작.md",
-    "content/08_Insights/면접 바이블.md",
-    "content/08_Insights/블로그 글쓰기.md"
+    "content/04_Marketing_Business/규칙 없음.md",
+    "content/04_Marketing_Business/브랜드 3.0.md",
+    "content/04_Marketing_Business/파이프라인.md",
+    "content/05_Philosophy_Humanities/마지막 몰입.md",
+    "content/06_Economics_Finance/부의 시작.md",
+    "content/07_Insights/면접 바이블.md",
+    "content/07_Insights/블로그 글쓰기.md"
   ],
   "디자인": [
     "content/00_Meta/강의.md",
@@ -220,7 +220,7 @@
     "content/01_UX_Design/ATF.md",
     "content/01_UX_Design/Backchannels.md",
     "content/01_UX_Design/Bridging.md",
-    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Custom CSS.md",
     "content/01_UX_Design/Document Sidebar.md",
     "content/01_UX_Design/FCP.md",
     "content/01_UX_Design/IA.md",
@@ -307,16 +307,16 @@
     "content/02_IT_Tech/Agile.md",
     "content/02_IT_Tech/디자인 패턴.md",
     "content/02_IT_Tech/워터폴.md",
-    "content/05_Marketing_Business/경로의 저주.md",
-    "content/05_Marketing_Business/구글의 열가지 철학.md",
-    "content/05_Marketing_Business/마진.md",
-    "content/05_Marketing_Business/마케팅의 역사.md",
-    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
-    "content/05_Marketing_Business/브랜딩.md",
-    "content/05_Marketing_Business/소셜딜레마.md",
-    "content/06_Philosophy_Humanities/예술.md",
-    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
-    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/04_Marketing_Business/경로의 저주.md",
+    "content/04_Marketing_Business/구글의 열가지 철학.md",
+    "content/04_Marketing_Business/마진.md",
+    "content/04_Marketing_Business/마케팅의 역사.md",
+    "content/04_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/04_Marketing_Business/브랜딩.md",
+    "content/04_Marketing_Business/소셜딜레마.md",
+    "content/05_Philosophy_Humanities/예술.md",
+    "content/05_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/01_UX_Design/UX 불변의 법칙.md",
     "content/01_UX_Design/UX 기획의 기술.md",
     "content/01_UX_Design/감성 디자인.md",
     "content/01_UX_Design/디자인과 인간심리.md",
@@ -330,100 +330,100 @@
     "content/01_UX_Design/사용자 리서치.md",
     "content/01_UX_Design/서비스 디자인.md",
     "content/01_UX_Design/USER RESEARCH.md",
-    "content/05_Marketing_Business/코호트.md"
+    "content/04_Marketing_Business/코호트.md"
   ],
   "브랜드": [
     "content/00_Meta/강의.md",
-    "content/05_Marketing_Business/AARRR.md",
-    "content/05_Marketing_Business/ARPU.md",
-    "content/05_Marketing_Business/STP 전략.md",
-    "content/05_Marketing_Business/SWOT 분석.md",
-    "content/05_Marketing_Business/검색 유입.md",
-    "content/05_Marketing_Business/경로독점.md",
-    "content/05_Marketing_Business/경로의 저주.md",
-    "content/05_Marketing_Business/경로의존.md",
-    "content/05_Marketing_Business/구글의 열가지 철학.md",
-    "content/05_Marketing_Business/롱테일.md",
-    "content/05_Marketing_Business/리텐션.md",
-    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
-    "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
-    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
-    "content/05_Marketing_Business/브랜딩.md",
-    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md",
-    "content/05_Marketing_Business/이탈률.md",
-    "content/05_Marketing_Business/인바운드 마케팅.md",
-    "content/05_Marketing_Business/전환율.md",
-    "content/05_Marketing_Business/추천 유입.md",
-    "content/05_Marketing_Business/팬슈머.md",
-    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
-    "content/05_Marketing_Business/플랫폼.md",
-    "content/05_Marketing_Business/그로스 해킹.md",
-    "content/05_Marketing_Business/업스트림.md",
-    "content/05_Marketing_Business/코호트.md",
-    "content/05_Marketing_Business/파이프라인.md"
+    "content/04_Marketing_Business/AARRR.md",
+    "content/04_Marketing_Business/ARPU.md",
+    "content/04_Marketing_Business/STP 전략.md",
+    "content/04_Marketing_Business/SWOT 분석.md",
+    "content/04_Marketing_Business/검색 유입.md",
+    "content/04_Marketing_Business/경로독점.md",
+    "content/04_Marketing_Business/경로의 저주.md",
+    "content/04_Marketing_Business/경로의존.md",
+    "content/04_Marketing_Business/구글의 열가지 철학.md",
+    "content/04_Marketing_Business/롱테일.md",
+    "content/04_Marketing_Business/리텐션.md",
+    "content/04_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/04_Marketing_Business/브랜드 커뮤니케이션.md",
+    "content/04_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/04_Marketing_Business/브랜딩.md",
+    "content/04_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성.md",
+    "content/04_Marketing_Business/이탈률.md",
+    "content/04_Marketing_Business/인바운드 마케팅.md",
+    "content/04_Marketing_Business/전환율.md",
+    "content/04_Marketing_Business/추천 유입.md",
+    "content/04_Marketing_Business/팬슈머.md",
+    "content/04_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/04_Marketing_Business/플랫폼.md",
+    "content/04_Marketing_Business/그로스 해킹.md",
+    "content/04_Marketing_Business/업스트림.md",
+    "content/04_Marketing_Business/코호트.md",
+    "content/04_Marketing_Business/파이프라인.md"
   ],
   "가지": [
     "content/00_Meta/도서.md",
     "content/01_UX_Design/개념적 모델.md",
-    "content/06_Philosophy_Humanities/화석연료.md",
-    "content/01_UX_Design/UX  불변의 법칙.md",
-    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md",
-    "content/06_Philosophy_Humanities/동물농장.md",
-    "content/08_Insights/인간관계론.md"
+    "content/05_Philosophy_Humanities/화석연료.md",
+    "content/01_UX_Design/UX 불변의 법칙.md",
+    "content/04_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md",
+    "content/05_Philosophy_Humanities/동물농장.md",
+    "content/07_Insights/인간관계론.md"
   ],
   "독서": [
     "content/00_Meta/도서.md",
-    "content/06_Philosophy_Humanities/RNA.md",
-    "content/06_Philosophy_Humanities/감정.md",
-    "content/06_Philosophy_Humanities/국방 순위 2020.md",
-    "content/06_Philosophy_Humanities/기생충.md",
-    "content/06_Philosophy_Humanities/길가메시.md",
-    "content/06_Philosophy_Humanities/녹서.md",
-    "content/06_Philosophy_Humanities/모던 타임즈.md",
-    "content/06_Philosophy_Humanities/무의식.md",
-    "content/06_Philosophy_Humanities/문화.md",
-    "content/06_Philosophy_Humanities/본질.md",
-    "content/06_Philosophy_Humanities/생명체.md",
-    "content/06_Philosophy_Humanities/아우라.md",
-    "content/06_Philosophy_Humanities/역사 관련.md",
-    "content/06_Philosophy_Humanities/영세중립국.md",
-    "content/06_Philosophy_Humanities/영화 다큐멘터리.md",
-    "content/06_Philosophy_Humanities/예술.md",
-    "content/06_Philosophy_Humanities/이솝 우화.md",
-    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
-    "content/06_Philosophy_Humanities/자기동일성.md",
-    "content/06_Philosophy_Humanities/자기수용감각.md",
-    "content/06_Philosophy_Humanities/질병 분류표.md",
-    "content/06_Philosophy_Humanities/철학.md",
-    "content/06_Philosophy_Humanities/철학대철학.md",
-    "content/06_Philosophy_Humanities/칸트.md",
-    "content/06_Philosophy_Humanities/칼의 노래.md",
-    "content/06_Philosophy_Humanities/파르테논 신전.md",
-    "content/06_Philosophy_Humanities/평등.md",
-    "content/06_Philosophy_Humanities/표상.md",
-    "content/06_Philosophy_Humanities/행복.md",
-    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md",
-    "content/06_Philosophy_Humanities/화석연료.md",
-    "content/08_Insights/뇌의 한계.md",
-    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
-    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
-    "content/06_Philosophy_Humanities/동물농장.md",
-    "content/06_Philosophy_Humanities/마지막 몰입.md",
-    "content/06_Philosophy_Humanities/비트겐슈타인.md",
-    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md",
-    "content/06_Philosophy_Humanities/사피엔스.md",
-    "content/06_Philosophy_Humanities/생각의 탄생.md",
-    "content/06_Philosophy_Humanities/샤르트르.md",
-    "content/06_Philosophy_Humanities/소쉬르.md",
-    "content/06_Philosophy_Humanities/슈독.md",
-    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
-    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
-    "content/06_Philosophy_Humanities/적정기술.md",
-    "content/06_Philosophy_Humanities/한비자.md",
-    "content/08_Insights/블로그 글쓰기.md",
-    "content/08_Insights/인간관계론.md",
-    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
-    "content/08_Insights/자기관리론.md"
+    "content/05_Philosophy_Humanities/RNA.md",
+    "content/05_Philosophy_Humanities/감정.md",
+    "content/05_Philosophy_Humanities/국방 순위 2020.md",
+    "content/05_Philosophy_Humanities/기생충.md",
+    "content/05_Philosophy_Humanities/길가메시.md",
+    "content/05_Philosophy_Humanities/녹서.md",
+    "content/05_Philosophy_Humanities/모던 타임즈.md",
+    "content/05_Philosophy_Humanities/무의식.md",
+    "content/05_Philosophy_Humanities/문화.md",
+    "content/05_Philosophy_Humanities/본질.md",
+    "content/05_Philosophy_Humanities/생명체.md",
+    "content/05_Philosophy_Humanities/아우라.md",
+    "content/05_Philosophy_Humanities/역사 관련.md",
+    "content/05_Philosophy_Humanities/영세중립국.md",
+    "content/05_Philosophy_Humanities/영화 다큐멘터리.md",
+    "content/05_Philosophy_Humanities/예술.md",
+    "content/05_Philosophy_Humanities/이솝 우화.md",
+    "content/05_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/05_Philosophy_Humanities/자기동일성.md",
+    "content/05_Philosophy_Humanities/자기수용감각.md",
+    "content/05_Philosophy_Humanities/질병 분류표.md",
+    "content/05_Philosophy_Humanities/철학.md",
+    "content/05_Philosophy_Humanities/철학대철학.md",
+    "content/05_Philosophy_Humanities/칸트.md",
+    "content/05_Philosophy_Humanities/칼의 노래.md",
+    "content/05_Philosophy_Humanities/파르테논 신전.md",
+    "content/05_Philosophy_Humanities/평등.md",
+    "content/05_Philosophy_Humanities/표상.md",
+    "content/05_Philosophy_Humanities/행복.md",
+    "content/05_Philosophy_Humanities/화, 이해하면 사라진다.md",
+    "content/05_Philosophy_Humanities/화석연료.md",
+    "content/07_Insights/뇌의 한계.md",
+    "content/05_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
+    "content/05_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/05_Philosophy_Humanities/동물농장.md",
+    "content/05_Philosophy_Humanities/마지막 몰입.md",
+    "content/05_Philosophy_Humanities/비트겐슈타인.md",
+    "content/05_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md",
+    "content/05_Philosophy_Humanities/사피엔스.md",
+    "content/05_Philosophy_Humanities/생각의 탄생.md",
+    "content/05_Philosophy_Humanities/샤르트르.md",
+    "content/05_Philosophy_Humanities/소쉬르.md",
+    "content/05_Philosophy_Humanities/슈독.md",
+    "content/05_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/05_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/05_Philosophy_Humanities/적정기술.md",
+    "content/05_Philosophy_Humanities/한비자.md",
+    "content/07_Insights/블로그 글쓰기.md",
+    "content/07_Insights/인간관계론.md",
+    "content/07_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
+    "content/07_Insights/자기관리론.md"
   ],
   "도서명": [
     "content/00_Meta/도서.md"
@@ -448,18 +448,18 @@
     "content/01_UX_Design/타이포그래픽 디자인.md",
     "content/01_UX_Design/행동적 디자인.md",
     "content/02_IT_Tech/무결성.md",
-    "content/05_Marketing_Business/KPI.md",
-    "content/06_Philosophy_Humanities/문화.md",
-    "content/06_Philosophy_Humanities/영세중립국.md",
-    "content/06_Philosophy_Humanities/표상.md",
-    "content/07_Economics_Finance/기준금리.md",
-    "content/07_Economics_Finance/배당금.md",
-    "content/08_Insights/아집이 생기는 것에 대해서.md",
-    "content/01_UX_Design/UX  불변의 법칙.md",
+    "content/04_Marketing_Business/KPI.md",
+    "content/05_Philosophy_Humanities/문화.md",
+    "content/05_Philosophy_Humanities/영세중립국.md",
+    "content/05_Philosophy_Humanities/표상.md",
+    "content/06_Economics_Finance/기준금리.md",
+    "content/06_Economics_Finance/배당금.md",
+    "content/07_Insights/아집이 생기는 것에 대해서.md",
+    "content/01_UX_Design/UX 불변의 법칙.md",
     "content/01_UX_Design/디자인과 인간심리.md",
     "content/03_AI_ML/정량적 데이터.md",
-    "content/05_Marketing_Business/업스트림.md",
-    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+    "content/04_Marketing_Business/업스트림.md",
+    "content/06_Economics_Finance/인간 욕망의 법칙.md"
   ],
   "메모를": [
     "content/00_Meta/제텔카스텐.md"
@@ -496,7 +496,7 @@
     "content/01_UX_Design/Affinity Diagram.md",
     "content/01_UX_Design/Backchannels.md",
     "content/01_UX_Design/Bridging.md",
-    "content/01_UX_Design/Custom CSS .md",
+    "content/01_UX_Design/Custom CSS.md",
     "content/01_UX_Design/Do it R.md",
     "content/01_UX_Design/Do it 웹 기획.md",
     "content/01_UX_Design/Document Sidebar.md",
@@ -792,37 +792,37 @@
     "content/03_AI_ML/퓨샷러닝.md",
     "content/03_AI_ML/학습 역량.md",
     "content/03_AI_ML/혼동 행렬.md",
-    "content/05_Marketing_Business/AAR 프레임.md",
-    "content/05_Marketing_Business/AARRR.md",
-    "content/05_Marketing_Business/ARPU.md",
-    "content/05_Marketing_Business/MVP.md",
-    "content/05_Marketing_Business/RTE.md",
-    "content/05_Marketing_Business/STP 전략.md",
-    "content/05_Marketing_Business/SWOT 분석.md",
-    "content/05_Marketing_Business/검색 유입.md",
-    "content/05_Marketing_Business/경로의존.md",
-    "content/05_Marketing_Business/소셜 유입.md",
-    "content/05_Marketing_Business/언택트.md",
-    "content/05_Marketing_Business/이탈률.md",
-    "content/05_Marketing_Business/인바운드 마케팅.md",
-    "content/05_Marketing_Business/전환율.md",
-    "content/05_Marketing_Business/직접 유입.md",
-    "content/05_Marketing_Business/추천 유입.md",
-    "content/05_Marketing_Business/팬슈머.md",
-    "content/05_Marketing_Business/플랫폼.md",
-    "content/06_Philosophy_Humanities/감정.md",
-    "content/06_Philosophy_Humanities/길가메시.md",
-    "content/06_Philosophy_Humanities/녹서.md",
-    "content/06_Philosophy_Humanities/자기수용감각.md",
-    "content/06_Philosophy_Humanities/질병 분류표.md",
-    "content/06_Philosophy_Humanities/화석연료.md",
-    "content/07_Economics_Finance/EBITDA.md",
-    "content/07_Economics_Finance/PEG.md",
-    "content/07_Economics_Finance/보통주.md",
-    "content/07_Economics_Finance/우선주.md",
-    "content/07_Economics_Finance/현금없는 사회.md",
-    "content/08_Insights/뇌의 한계.md",
-    "content/08_Insights/사람의 특징.md",
+    "content/04_Marketing_Business/AAR 프레임.md",
+    "content/04_Marketing_Business/AARRR.md",
+    "content/04_Marketing_Business/ARPU.md",
+    "content/04_Marketing_Business/MVP.md",
+    "content/04_Marketing_Business/RTE.md",
+    "content/04_Marketing_Business/STP 전략.md",
+    "content/04_Marketing_Business/SWOT 분석.md",
+    "content/04_Marketing_Business/검색 유입.md",
+    "content/04_Marketing_Business/경로의존.md",
+    "content/04_Marketing_Business/소셜 유입.md",
+    "content/04_Marketing_Business/언택트.md",
+    "content/04_Marketing_Business/이탈률.md",
+    "content/04_Marketing_Business/인바운드 마케팅.md",
+    "content/04_Marketing_Business/전환율.md",
+    "content/04_Marketing_Business/직접 유입.md",
+    "content/04_Marketing_Business/추천 유입.md",
+    "content/04_Marketing_Business/팬슈머.md",
+    "content/04_Marketing_Business/플랫폼.md",
+    "content/05_Philosophy_Humanities/감정.md",
+    "content/05_Philosophy_Humanities/길가메시.md",
+    "content/05_Philosophy_Humanities/녹서.md",
+    "content/05_Philosophy_Humanities/자기수용감각.md",
+    "content/05_Philosophy_Humanities/질병 분류표.md",
+    "content/05_Philosophy_Humanities/화석연료.md",
+    "content/06_Economics_Finance/EBITDA.md",
+    "content/06_Economics_Finance/PEG.md",
+    "content/06_Economics_Finance/보통주.md",
+    "content/06_Economics_Finance/우선주.md",
+    "content/06_Economics_Finance/현금없는 사회.md",
+    "content/07_Insights/뇌의 한계.md",
+    "content/07_Insights/사람의 특징.md",
     "content/index.md"
   ],
   "이해를": [
@@ -964,20 +964,20 @@
     "content/03_AI_ML/표현 학습.md",
     "content/03_AI_ML/퓨샷러닝.md",
     "content/03_AI_ML/학습 역량.md",
-    "content/05_Marketing_Business/AAR 프레임.md",
-    "content/05_Marketing_Business/AARRR.md",
-    "content/05_Marketing_Business/STP 전략.md",
-    "content/05_Marketing_Business/SWOT 분석.md",
-    "content/05_Marketing_Business/경로의존.md",
-    "content/05_Marketing_Business/언택트.md",
-    "content/05_Marketing_Business/이탈률.md",
-    "content/05_Marketing_Business/인바운드 마케팅.md",
-    "content/05_Marketing_Business/전환율.md",
-    "content/05_Marketing_Business/추천 유입.md",
-    "content/05_Marketing_Business/플랫폼.md",
-    "content/06_Philosophy_Humanities/질병 분류표.md",
-    "content/07_Economics_Finance/보통주.md",
-    "content/07_Economics_Finance/우선주.md",
+    "content/04_Marketing_Business/AAR 프레임.md",
+    "content/04_Marketing_Business/AARRR.md",
+    "content/04_Marketing_Business/STP 전략.md",
+    "content/04_Marketing_Business/SWOT 분석.md",
+    "content/04_Marketing_Business/경로의존.md",
+    "content/04_Marketing_Business/언택트.md",
+    "content/04_Marketing_Business/이탈률.md",
+    "content/04_Marketing_Business/인바운드 마케팅.md",
+    "content/04_Marketing_Business/전환율.md",
+    "content/04_Marketing_Business/추천 유입.md",
+    "content/04_Marketing_Business/플랫폼.md",
+    "content/05_Philosophy_Humanities/질병 분류표.md",
+    "content/06_Economics_Finance/보통주.md",
+    "content/06_Economics_Finance/우선주.md",
     "content/index.md"
   ],
   "ATF": [
@@ -1003,11 +1003,11 @@
     "content/02_IT_Tech/LFU.md",
     "content/02_IT_Tech/LRU.md",
     "content/02_IT_Tech/OPT.md",
-    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
-    "content/06_Philosophy_Humanities/생각의 탄생.md",
-    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md",
-    "content/07_Economics_Finance/존리의 부자되기 습관.md",
-    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+    "content/05_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/05_Philosophy_Humanities/생각의 탄생.md",
+    "content/06_Economics_Finance/저는 주식투자가 처음인데요.md",
+    "content/06_Economics_Finance/존리의 부자되기 습관.md",
+    "content/07_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
   ],
   "개괄": [
     "content/01_UX_Design/Affinity Diagram.md"
@@ -1052,7 +1052,7 @@
   "결제": [
     "content/01_UX_Design/Bridging.md",
     "content/02_IT_Tech/NFC.md",
-    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/04_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
     "content/01_UX_Design/모바일 결제 사례 리서치.md"
   ],
   "예시": [
@@ -1068,13 +1068,13 @@
     "content/01_UX_Design/서비스 기획자.md"
   ],
   "Custom CSS ": [
-    "content/01_UX_Design/Custom CSS .md"
+    "content/01_UX_Design/Custom CSS.md"
   ],
   "KR": [
-    "content/01_UX_Design/Custom CSS .md"
+    "content/01_UX_Design/Custom CSS.md"
   ],
   "SD": [
-    "content/01_UX_Design/Custom CSS .md"
+    "content/01_UX_Design/Custom CSS.md"
   ],
   "Do it R": [
     "content/01_UX_Design/Do it R.md"
@@ -1119,11 +1119,11 @@
     "content/01_UX_Design/Do it 웹 기획.md",
     "content/01_UX_Design/어포던스.md",
     "content/01_UX_Design/유용성.md",
-    "content/06_Philosophy_Humanities/본질.md",
-    "content/06_Philosophy_Humanities/철학.md",
-    "content/06_Philosophy_Humanities/동물농장.md",
-    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
-    "content/07_Economics_Finance/넛지.md"
+    "content/05_Philosophy_Humanities/본질.md",
+    "content/05_Philosophy_Humanities/철학.md",
+    "content/05_Philosophy_Humanities/동물농장.md",
+    "content/05_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/06_Economics_Finance/넛지.md"
   ],
   "요구": [
     "content/01_UX_Design/Do it 웹 기획.md",
@@ -1144,7 +1144,7 @@
     "content/02_IT_Tech/가상화.md",
     "content/02_IT_Tech/요구 사항 분석.md",
     "content/01_UX_Design/모바일 결제 사례 리서치.md",
-    "content/06_Philosophy_Humanities/적정기술.md"
+    "content/05_Philosophy_Humanities/적정기술.md"
   ],
   "FCP": [
     "content/01_UX_Design/FCP.md",
@@ -1184,50 +1184,50 @@
     "content/01_UX_Design/오래가는 UX 디자인.md",
     "content/01_UX_Design/확증 편향.md",
     "content/02_IT_Tech/CRM.md",
-    "content/05_Marketing_Business/AARRR.md",
-    "content/05_Marketing_Business/ARPU.md",
-    "content/05_Marketing_Business/Acqusition.md",
-    "content/05_Marketing_Business/CAC.md",
-    "content/05_Marketing_Business/Carrying capacity.md",
-    "content/05_Marketing_Business/Digital Side Effect.md",
-    "content/05_Marketing_Business/KPI.md",
-    "content/05_Marketing_Business/MVP.md",
-    "content/05_Marketing_Business/STP 전략.md",
-    "content/05_Marketing_Business/SWOT 분석.md",
-    "content/05_Marketing_Business/검색 유입.md",
-    "content/05_Marketing_Business/경로독점.md",
-    "content/05_Marketing_Business/경로의 저주.md",
-    "content/05_Marketing_Business/경로의존.md",
-    "content/05_Marketing_Business/구글의 열가지 철학.md",
-    "content/05_Marketing_Business/구별짓기.md",
-    "content/05_Marketing_Business/내러티브 자본.md",
-    "content/05_Marketing_Business/롱테일.md",
-    "content/05_Marketing_Business/리텐션.md",
-    "content/05_Marketing_Business/마진.md",
-    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
-    "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
-    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
-    "content/05_Marketing_Business/브랜딩.md",
-    "content/05_Marketing_Business/브이노믹스.md",
-    "content/05_Marketing_Business/소셜 유입.md",
-    "content/05_Marketing_Business/소셜딜레마.md",
-    "content/05_Marketing_Business/언택트.md",
-    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md",
-    "content/05_Marketing_Business/이탈률.md",
-    "content/05_Marketing_Business/인바운드 마케팅.md",
-    "content/05_Marketing_Business/전환율.md",
-    "content/05_Marketing_Business/직접 유입.md",
-    "content/05_Marketing_Business/추천 유입.md",
-    "content/05_Marketing_Business/팬슈머.md",
-    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
-    "content/05_Marketing_Business/플랫폼.md",
-    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
+    "content/04_Marketing_Business/AARRR.md",
+    "content/04_Marketing_Business/ARPU.md",
+    "content/04_Marketing_Business/Acqusition.md",
+    "content/04_Marketing_Business/CAC.md",
+    "content/04_Marketing_Business/Carrying capacity.md",
+    "content/04_Marketing_Business/Digital Side Effect.md",
+    "content/04_Marketing_Business/KPI.md",
+    "content/04_Marketing_Business/MVP.md",
+    "content/04_Marketing_Business/STP 전략.md",
+    "content/04_Marketing_Business/SWOT 분석.md",
+    "content/04_Marketing_Business/검색 유입.md",
+    "content/04_Marketing_Business/경로독점.md",
+    "content/04_Marketing_Business/경로의 저주.md",
+    "content/04_Marketing_Business/경로의존.md",
+    "content/04_Marketing_Business/구글의 열가지 철학.md",
+    "content/04_Marketing_Business/구별짓기.md",
+    "content/04_Marketing_Business/내러티브 자본.md",
+    "content/04_Marketing_Business/롱테일.md",
+    "content/04_Marketing_Business/리텐션.md",
+    "content/04_Marketing_Business/마진.md",
+    "content/04_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/04_Marketing_Business/브랜드 커뮤니케이션.md",
+    "content/04_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/04_Marketing_Business/브랜딩.md",
+    "content/04_Marketing_Business/브이노믹스.md",
+    "content/04_Marketing_Business/소셜 유입.md",
+    "content/04_Marketing_Business/소셜딜레마.md",
+    "content/04_Marketing_Business/언택트.md",
+    "content/04_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성.md",
+    "content/04_Marketing_Business/이탈률.md",
+    "content/04_Marketing_Business/인바운드 마케팅.md",
+    "content/04_Marketing_Business/전환율.md",
+    "content/04_Marketing_Business/직접 유입.md",
+    "content/04_Marketing_Business/추천 유입.md",
+    "content/04_Marketing_Business/팬슈머.md",
+    "content/04_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/04_Marketing_Business/플랫폼.md",
+    "content/04_Marketing_Business/피터 드러커의 자기경영노트.md",
     "content/01_UX_Design/감성 디자인.md",
-    "content/05_Marketing_Business/그로스 해킹.md",
-    "content/05_Marketing_Business/업스트림.md",
-    "content/05_Marketing_Business/코호트.md",
-    "content/05_Marketing_Business/파이프라인.md",
-    "content/08_Insights/블로그 글쓰기.md"
+    "content/04_Marketing_Business/그로스 해킹.md",
+    "content/04_Marketing_Business/업스트림.md",
+    "content/04_Marketing_Business/코호트.md",
+    "content/04_Marketing_Business/파이프라인.md",
+    "content/07_Insights/블로그 글쓰기.md"
   ],
   "사용성": [
     "content/01_UX_Design/FGI.md",
@@ -1257,10 +1257,10 @@
     "content/02_IT_Tech/다형성.md",
     "content/02_IT_Tech/대칭키 암호화.md",
     "content/03_AI_ML/RNN.md",
-    "content/06_Philosophy_Humanities/자기동일성.md",
+    "content/05_Philosophy_Humanities/자기동일성.md",
     "content/02_IT_Tech/Float Type.md",
     "content/02_IT_Tech/일방향 암호화 방식.md",
-    "content/05_Marketing_Business/업스트림.md"
+    "content/04_Marketing_Business/업스트림.md"
   ],
   "Header": [
     "content/01_UX_Design/Header.md"
@@ -1277,8 +1277,8 @@
   "검색": [
     "content/01_UX_Design/IA.md",
     "content/02_IT_Tech/단계별 모델.md",
-    "content/05_Marketing_Business/Acqusition.md",
-    "content/05_Marketing_Business/검색 유입.md",
+    "content/04_Marketing_Business/Acqusition.md",
+    "content/04_Marketing_Business/검색 유입.md",
     "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md"
   ],
   "범위를": [
@@ -1308,14 +1308,14 @@
     "content/02_IT_Tech/DBMS.md",
     "content/02_IT_Tech/크로스 사이트 스크립팅.md",
     "content/03_AI_ML/표현 학습.md",
-    "content/06_Philosophy_Humanities/RNA.md",
-    "content/06_Philosophy_Humanities/철학대철학.md",
-    "content/07_Economics_Finance/민영화.md",
-    "content/06_Philosophy_Humanities/소쉬르.md"
+    "content/05_Philosophy_Humanities/RNA.md",
+    "content/05_Philosophy_Humanities/철학대철학.md",
+    "content/06_Economics_Finance/민영화.md",
+    "content/05_Philosophy_Humanities/소쉬르.md"
   ],
   "많이": [
     "content/01_UX_Design/IT 좀 아는 사람.md",
-    "content/07_Economics_Finance/민영화.md"
+    "content/06_Economics_Finance/민영화.md"
   ],
   "추천": [
     "content/01_UX_Design/IT 좀 아는 사람.md"
@@ -1334,12 +1334,12 @@
   ],
   "전략": [
     "content/01_UX_Design/Market Research.md",
-    "content/05_Marketing_Business/구별짓기.md",
-    "content/05_Marketing_Business/브랜드 3.0.md"
+    "content/04_Marketing_Business/구별짓기.md",
+    "content/04_Marketing_Business/브랜드 3.0.md"
   ],
   "STP": [
     "content/01_UX_Design/Market Research.md",
-    "content/05_Marketing_Business/STP 전략.md"
+    "content/04_Marketing_Business/STP 전략.md"
   ],
   "Needs VS Wants": [
     "content/01_UX_Design/Needs VS Wants.md"
@@ -1378,7 +1378,7 @@
     "content/01_UX_Design/Requirement Specification.md",
     "content/01_UX_Design/서비스.md",
     "content/02_IT_Tech/SDLC.md",
-    "content/05_Marketing_Business/MVP.md",
+    "content/04_Marketing_Business/MVP.md",
     "content/01_UX_Design/디자인씽킹.md"
   ],
   "무엇을": [
@@ -1423,8 +1423,8 @@
     "content/02_IT_Tech/신뢰성.md",
     "content/02_IT_Tech/응답시간.md",
     "content/02_IT_Tech/프로세스.md",
-    "content/07_Economics_Finance/하버드 시간관리.md",
-    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+    "content/06_Economics_Finance/하버드 시간관리.md",
+    "content/06_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
   ],
   "이것이": [
     "content/01_UX_Design/UI.md",
@@ -1448,7 +1448,7 @@
     "content/01_UX_Design/경험.md",
     "content/01_UX_Design/서비스.md",
     "content/01_UX_Design/오래가는 UX 디자인.md",
-    "content/08_Insights/면접 바이블.md"
+    "content/07_Insights/면접 바이블.md"
   ],
   "동기": [
     "content/01_UX_Design/UX 구성요소.md"
@@ -1469,11 +1469,11 @@
     "content/01_UX_Design/UX 디자인 7가지 비밀.md",
     "content/01_UX_Design/신타이포그래픽 디자인.md",
     "content/01_UX_Design/타이포그래픽 디자인.md",
-    "content/05_Marketing_Business/구글의 열가지 철학.md",
-    "content/06_Philosophy_Humanities/철학.md",
-    "content/06_Philosophy_Humanities/행복.md",
+    "content/04_Marketing_Business/구글의 열가지 철학.md",
+    "content/05_Philosophy_Humanities/철학.md",
+    "content/05_Philosophy_Humanities/행복.md",
     "content/01_UX_Design/마이크로카피.md",
-    "content/06_Philosophy_Humanities/동물농장.md"
+    "content/05_Philosophy_Humanities/동물농장.md"
   ],
   "태스크": [
     "content/01_UX_Design/UX 디자인 7가지 비밀.md"
@@ -1503,8 +1503,8 @@
     "content/01_UX_Design/UX 방법론.md",
     "content/02_IT_Tech/컴퓨팅적 사고능력.md",
     "content/03_AI_ML/연합학습.md",
-    "content/05_Marketing_Business/업스트림.md",
-    "content/08_Insights/블로그 글쓰기.md"
+    "content/04_Marketing_Business/업스트림.md",
+    "content/07_Insights/블로그 글쓰기.md"
   ],
   "방법을": [
     "content/01_UX_Design/UX 방법론.md"
@@ -1525,7 +1525,7 @@
     "content/01_UX_Design/UX 품질 판단.md",
     "content/01_UX_Design/UX 품질.md",
     "content/02_IT_Tech/나씨-슈나이더만.md",
-    "content/07_Economics_Finance/넛지.md"
+    "content/06_Economics_Finance/넛지.md"
   ],
   "이게": [
     "content/01_UX_Design/UX 품질 판단.md"
@@ -1555,8 +1555,8 @@
   ],
   "법칙": [
     "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md",
-    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
-    "content/01_UX_Design/UX  불변의 법칙.md"
+    "content/04_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/01_UX_Design/UX 불변의 법칙.md"
   ],
   "비슷한": [
     "content/01_UX_Design/UXUI의 10가지 심리학 법칙.md"
@@ -1567,8 +1567,8 @@
   "업무": [
     "content/01_UX_Design/User Flow.md",
     "content/02_IT_Tech/비즈니스 연속성 계획.md",
-    "content/07_Economics_Finance/하버드 시간관리.md",
-    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+    "content/06_Economics_Finance/하버드 시간관리.md",
+    "content/06_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
   ],
   "User Scenario": [
     "content/01_UX_Design/User Scenario.md"
@@ -1604,10 +1604,10 @@
     "content/02_IT_Tech/관계모형.md",
     "content/02_IT_Tech/절차형 SQL.md",
     "content/03_AI_ML/지도학습.md",
-    "content/05_Marketing_Business/AB Testing.md",
-    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/04_Marketing_Business/AB Testing.md",
+    "content/05_Philosophy_Humanities/인간은 보여야지 믿는다.md",
     "content/01_UX_Design/모든 기획자와 디자이너가 알아야 할 사람에 대한 100가지 진실.md",
-    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+    "content/05_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
   ],
   "SUS": [
     "content/01_UX_Design/user research basic.md",
@@ -1659,7 +1659,7 @@
   ],
   "마진": [
     "content/01_UX_Design/거터.md",
-    "content/05_Marketing_Business/마진.md"
+    "content/04_Marketing_Business/마진.md"
   ],
   "콘텐츠": [
     "content/01_UX_Design/거터.md",
@@ -1678,15 +1678,15 @@
   "KPI": [
     "content/01_UX_Design/기획.md",
     "content/02_IT_Tech/세션.md",
-    "content/05_Marketing_Business/ARPPU.md",
-    "content/05_Marketing_Business/KPI.md",
-    "content/05_Marketing_Business/마진.md",
-    "content/05_Marketing_Business/브이노믹스.md",
-    "content/05_Marketing_Business/코호트.md"
+    "content/04_Marketing_Business/ARPPU.md",
+    "content/04_Marketing_Business/KPI.md",
+    "content/04_Marketing_Business/마진.md",
+    "content/04_Marketing_Business/브이노믹스.md",
+    "content/04_Marketing_Business/코호트.md"
   ],
   "것인가": [
     "content/01_UX_Design/기획.md",
-    "content/06_Philosophy_Humanities/길가메시 프로젝트.md"
+    "content/05_Philosophy_Humanities/길가메시 프로젝트.md"
   ],
   "넓고 얕은 내비게이션": [
     "content/01_UX_Design/넓고 얕은 내비게이션.md"
@@ -1696,7 +1696,7 @@
     "content/01_UX_Design/정보 구조 디자인.md",
     "content/02_IT_Tech/디자인 패턴.md",
     "content/03_AI_ML/모델 구조.md",
-    "content/05_Marketing_Business/내러티브 자본.md"
+    "content/04_Marketing_Business/내러티브 자본.md"
   ],
   "넓고": [
     "content/01_UX_Design/넓고 얕은 내비게이션.md"
@@ -1713,7 +1713,7 @@
   ],
   "대비": [
     "content/01_UX_Design/대비.md",
-    "content/05_Marketing_Business/ROAS.md"
+    "content/04_Marketing_Business/ROAS.md"
   ],
   "AA": [
     "content/01_UX_Design/대비.md"
@@ -1813,8 +1813,8 @@
   "새로운": [
     "content/01_UX_Design/디자인에서 중요한 것.md",
     "content/01_UX_Design/서비스 디자인.md",
-    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md",
-    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+    "content/04_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성.md",
+    "content/05_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
   ],
   "디자인을 하는 순서": [
     "content/01_UX_Design/디자인을 하는 순서.md"
@@ -1830,7 +1830,7 @@
     "content/01_UX_Design/딥링크.md",
     "content/02_IT_Tech/웹 사이트 원리와 기본 용어.md",
     "content/02_IT_Tech/크로스 사이트 스크립팅.md",
-    "content/05_Marketing_Business/직접 유입.md"
+    "content/04_Marketing_Business/직접 유입.md"
   ],
   "라이트 박스": [
     "content/01_UX_Design/라이트 박스.md"
@@ -1857,8 +1857,8 @@
     "content/02_IT_Tech/결합도.md",
     "content/03_AI_ML/비심볼릭 추론.md",
     "content/03_AI_ML/연합학습.md",
-    "content/05_Marketing_Business/AB Testing.md",
-    "content/05_Marketing_Business/고객 생애 가치.md"
+    "content/04_Marketing_Business/AB Testing.md",
+    "content/04_Marketing_Business/고객 생애 가치.md"
   ],
   "입력": [
     "content/01_UX_Design/마이크로카피 오려두기.md",
@@ -1878,8 +1878,8 @@
   ],
   "자신의": [
     "content/01_UX_Design/맥락 인터뷰.md",
-    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
-    "content/07_Economics_Finance/인간 본성의 법칙.md"
+    "content/05_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/06_Economics_Finance/인간 본성의 법칙.md"
   ],
   "작업을": [
     "content/01_UX_Design/맥락 인터뷰.md",
@@ -1895,10 +1895,10 @@
     "content/01_UX_Design/모바일 다이렉트 액세스.md",
     "content/02_IT_Tech/DRDOS.md",
     "content/02_IT_Tech/Plug & Play.md",
-    "content/05_Marketing_Business/언택트.md",
-    "content/05_Marketing_Business/직접 유입.md",
-    "content/05_Marketing_Business/팬슈머.md",
-    "content/07_Economics_Finance/퇴직연금.md"
+    "content/04_Marketing_Business/언택트.md",
+    "content/04_Marketing_Business/직접 유입.md",
+    "content/04_Marketing_Business/팬슈머.md",
+    "content/06_Economics_Finance/퇴직연금.md"
   ],
   "모바일": [
     "content/01_UX_Design/모바일 다이렉트 액세스.md"
@@ -1977,7 +1977,7 @@
   ],
   "목표를": [
     "content/01_UX_Design/사용성 계획.md",
-    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+    "content/04_Marketing_Business/피터 드러커의 자기경영노트.md"
   ],
   "연구의": [
     "content/01_UX_Design/사용성 계획.md"
@@ -2027,7 +2027,7 @@
   ],
   "태도": [
     "content/01_UX_Design/사용자 리서치.md",
-    "content/07_Economics_Finance/운의 알고리즘.md"
+    "content/06_Economics_Finance/운의 알고리즘.md"
   ],
   "필드": [
     "content/01_UX_Design/사용자 리서치.md"
@@ -2041,7 +2041,7 @@
   "중심": [
     "content/01_UX_Design/사용자 중심 디자인.md",
     "content/01_UX_Design/오래가는 UX 디자인.md",
-    "content/05_Marketing_Business/브랜드 3.0.md"
+    "content/04_Marketing_Business/브랜드 3.0.md"
   ],
   "서비스 기획자": [
     "content/01_UX_Design/서비스 기획자.md"
@@ -2060,8 +2060,8 @@
     "content/01_UX_Design/서비스 디자인 교과서.md",
     "content/01_UX_Design/서비스.md",
     "content/02_IT_Tech/관계모형.md",
-    "content/05_Marketing_Business/MVP.md",
-    "content/05_Marketing_Business/그로스 해킹.md"
+    "content/04_Marketing_Business/MVP.md",
+    "content/04_Marketing_Business/그로스 해킹.md"
   ],
   "ONE": [
     "content/01_UX_Design/서비스 디자인 교과서.md"
@@ -2127,7 +2127,7 @@
     "content/01_UX_Design/스토리텔링.md",
     "content/01_UX_Design/좋은 UX란.md",
     "content/03_AI_ML/지식 증류.md",
-    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+    "content/07_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
   ],
   "중간": [
     "content/01_UX_Design/스토리텔링.md"
@@ -2178,10 +2178,10 @@
   ],
   "EC": [
     "content/01_UX_Design/앨런 쿠퍼.md",
-    "content/05_Marketing_Business/AB Testing.md",
-    "content/06_Philosophy_Humanities/감정.md",
-    "content/06_Philosophy_Humanities/길가메시.md",
-    "content/08_Insights/타이 로페즈.md"
+    "content/04_Marketing_Business/AB Testing.md",
+    "content/05_Philosophy_Humanities/감정.md",
+    "content/05_Philosophy_Humanities/길가메시.md",
+    "content/07_Insights/타이 로페즈.md"
   ],
   "앨런": [
     "content/01_UX_Design/앨런 쿠퍼.md"
@@ -2193,7 +2193,7 @@
     "content/01_UX_Design/앨런 쿠퍼.md",
     "content/01_UX_Design/인터페이스.md",
     "content/02_IT_Tech/추상화.md",
-    "content/05_Marketing_Business/Digital Side Effect.md"
+    "content/04_Marketing_Business/Digital Side Effect.md"
   ],
   "앱 레이블의 팁": [
     "content/01_UX_Design/앱 레이블의 팁.md"
@@ -2288,7 +2288,7 @@
   "개별": [
     "content/01_UX_Design/인터뷰.md",
     "content/03_AI_ML/Network Dessection.md",
-    "content/07_Economics_Finance/부의 시작.md"
+    "content/06_Economics_Finance/부의 시작.md"
   ],
   "인터뷰를": [
     "content/01_UX_Design/인터뷰.md"
@@ -2810,7 +2810,7 @@
   "CRM": [
     "content/02_IT_Tech/CRM.md",
     "content/02_IT_Tech/EDW.md",
-    "content/05_Marketing_Business/RTE.md"
+    "content/04_Marketing_Business/RTE.md"
   ],
   "CSRF": [
     "content/02_IT_Tech/CSRF.md",
@@ -2954,7 +2954,7 @@
   "디지털": [
     "content/02_IT_Tech/DSA.md",
     "content/02_IT_Tech/저작권.md",
-    "content/06_Philosophy_Humanities/마지막 몰입.md"
+    "content/05_Philosophy_Humanities/마지막 몰입.md"
   ],
   "메시지": [
     "content/02_IT_Tech/DSA.md"
@@ -3045,7 +3045,7 @@
   ],
   "기존": [
     "content/02_IT_Tech/EDW.md",
-    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+    "content/06_Economics_Finance/주식 공부 5일 완성.md"
   ],
   "BPR": [
     "content/02_IT_Tech/EDW.md"
@@ -3075,8 +3075,8 @@
   "먼저": [
     "content/02_IT_Tech/FIFO.md",
     "content/01_UX_Design/서비스 기획 스쿨.md",
-    "content/08_Insights/면접 바이블.md",
-    "content/08_Insights/인간관계론.md"
+    "content/07_Insights/면접 바이블.md",
+    "content/07_Insights/인간관계론.md"
   ],
   "LRU": [
     "content/02_IT_Tech/FIFO.md",
@@ -3158,8 +3158,8 @@
   ],
   "기업의": [
     "content/02_IT_Tech/KMS.md",
-    "content/07_Economics_Finance/PER.md",
-    "content/07_Economics_Finance/가치투자.md"
+    "content/06_Economics_Finance/PER.md",
+    "content/06_Economics_Finance/가치투자.md"
   ],
   "물품을": [
     "content/02_IT_Tech/KMS.md"
@@ -3342,7 +3342,7 @@
     "content/03_AI_ML/비심볼릭 추론.md",
     "content/03_AI_ML/심화강화학습.md",
     "content/03_AI_ML/연합학습.md",
-    "content/06_Philosophy_Humanities/사피엔스.md"
+    "content/05_Philosophy_Humanities/사피엔스.md"
   ],
   "최소의": [
     "content/02_IT_Tech/NAS.md"
@@ -3392,7 +3392,7 @@
   ],
   "여러": [
     "content/02_IT_Tech/OLTP.md",
-    "content/06_Philosophy_Humanities/표상.md"
+    "content/05_Philosophy_Humanities/표상.md"
   ],
   "보내온": [
     "content/02_IT_Tech/OLTP.md"
@@ -3517,7 +3517,7 @@
   ],
   "SCM": [
     "content/02_IT_Tech/SCM.md",
-    "content/05_Marketing_Business/RTE.md"
+    "content/04_Marketing_Business/RTE.md"
   ],
   "SCR": [
     "content/02_IT_Tech/SCR.md"
@@ -3548,7 +3548,7 @@
     "content/02_IT_Tech/SQL Injection.md",
     "content/02_IT_Tech/무결성.md",
     "content/02_IT_Tech/트랜잭션.md",
-    "content/07_Economics_Finance/퇴직연금.md",
+    "content/06_Economics_Finance/퇴직연금.md",
     "content/01_UX_Design/사용자를 끌어들이는 UXUI의 비밀.md"
   ],
   "삽입": [
@@ -3559,7 +3559,7 @@
   ],
   "언어": [
     "content/02_IT_Tech/SQL 문법.md",
-    "content/06_Philosophy_Humanities/비트겐슈타인.md"
+    "content/05_Philosophy_Humanities/비트겐슈타인.md"
   ],
   "ALTER": [
     "content/02_IT_Tech/SQL 문법.md"
@@ -3730,7 +3730,7 @@
   "측정": [
     "content/02_IT_Tech/가용성.md",
     "content/02_IT_Tech/정적 분석 도구.md",
-    "content/05_Marketing_Business/KPI.md"
+    "content/04_Marketing_Business/KPI.md"
   ],
   "객체지향": [
     "content/02_IT_Tech/객체지향.md"
@@ -3854,8 +3854,8 @@
   ],
   "ATM": [
     "content/02_IT_Tech/네트워크 프로토콜.md",
-    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md",
-    "content/08_Insights/블로그 글쓰기.md"
+    "content/04_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md",
+    "content/07_Insights/블로그 글쓰기.md"
   ],
   "PPP": [
     "content/02_IT_Tech/네트워크 프로토콜.md"
@@ -3888,7 +3888,7 @@
   ],
   "인간의": [
     "content/02_IT_Tech/뉴모로픽 반도체.md",
-    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+    "content/06_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
   ],
   "다형성": [
     "content/02_IT_Tech/다형성.md"
@@ -4106,11 +4106,11 @@
     "content/02_IT_Tech/버퍼 오버 플로우.md",
     "content/02_IT_Tech/크로스 사이트 스크립팅.md",
     "content/02_IT_Tech/클라우드 컴퓨팅.md",
-    "content/05_Marketing_Business/네트워크 효과.md"
+    "content/04_Marketing_Business/네트워크 효과.md"
   ],
   "변수": [
     "content/02_IT_Tech/변수.md",
-    "content/05_Marketing_Business/AB Testing.md"
+    "content/04_Marketing_Business/AB Testing.md"
   ],
   "숫자": [
     "content/02_IT_Tech/변수.md"
@@ -4156,7 +4156,7 @@
   ],
   "비용": [
     "content/02_IT_Tech/비용산정 일정관리 모델.md",
-    "content/05_Marketing_Business/CAC.md"
+    "content/04_Marketing_Business/CAC.md"
   ],
   "산정": [
     "content/02_IT_Tech/비용산정 일정관리 모델.md"
@@ -4282,7 +4282,7 @@
   ],
   "전체": [
     "content/02_IT_Tech/시스템 테스트.md",
-    "content/05_Marketing_Business/ARPPU.md"
+    "content/04_Marketing_Business/ARPPU.md"
   ],
   "평균": [
     "content/02_IT_Tech/신뢰성.md"
@@ -4341,9 +4341,9 @@
   ],
   "관계": [
     "content/02_IT_Tech/연산자.md",
-    "content/06_Philosophy_Humanities/국방 순위 2020.md",
+    "content/05_Philosophy_Humanities/국방 순위 2020.md",
     "content/02_IT_Tech/상속성.md",
-    "content/06_Philosophy_Humanities/샤르트르.md"
+    "content/05_Philosophy_Humanities/샤르트르.md"
   ],
   "사이의": [
     "content/02_IT_Tech/연산자.md",
@@ -4396,7 +4396,7 @@
   "하나의": [
     "content/02_IT_Tech/응집도.md",
     "content/03_AI_ML/멀티에이전트 강화학습.md",
-    "content/06_Philosophy_Humanities/Grit.md"
+    "content/05_Philosophy_Humanities/Grit.md"
   ],
   "인수 테스트": [
     "content/02_IT_Tech/인수 테스트.md"
@@ -4430,7 +4430,7 @@
   ],
   "기호": [
     "content/02_IT_Tech/자료 사전.md",
-    "content/06_Philosophy_Humanities/소쉬르.md"
+    "content/05_Philosophy_Humanities/소쉬르.md"
   ],
   "자원사용율": [
     "content/02_IT_Tech/자원사용율.md"
@@ -4491,7 +4491,7 @@
   ],
   "사고": [
     "content/02_IT_Tech/컴퓨팅적 사고능력.md",
-    "content/06_Philosophy_Humanities/생각의 탄생.md"
+    "content/05_Philosophy_Humanities/생각의 탄생.md"
   ],
   "컴퓨팅적": [
     "content/02_IT_Tech/컴퓨팅적 사고능력.md"
@@ -4513,7 +4513,7 @@
   ],
   "해당": [
     "content/02_IT_Tech/클래스.md",
-    "content/07_Economics_Finance/PER.md"
+    "content/06_Economics_Finance/PER.md"
   ],
   "객체가": [
     "content/02_IT_Tech/클래스.md"
@@ -4626,7 +4626,7 @@
   ],
   "회복": [
     "content/02_IT_Tech/회복기법.md",
-    "content/05_Marketing_Business/브이노믹스.md"
+    "content/04_Marketing_Business/브이노믹스.md"
   ],
   "회복 기법": [
     "content/02_IT_Tech/회복기법.md"
@@ -4720,7 +4720,7 @@
     "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
     "content/03_AI_ML/인공지능.md",
     "content/03_AI_ML/정량적 데이터.md",
-    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+    "content/05_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
   ],
   "예측": [
     "content/03_AI_ML/A.I. Guideline.md",
@@ -4891,7 +4891,7 @@
   ],
   "개의": [
     "content/03_AI_ML/MNIST.md",
-    "content/06_Philosophy_Humanities/RNA.md"
+    "content/05_Philosophy_Humanities/RNA.md"
   ],
   "Network Dessection": [
     "content/03_AI_ML/Network Dessection.md"
@@ -4944,7 +4944,7 @@
   ],
   "빠른": [
     "content/03_AI_ML/RPN.md",
-    "content/05_Marketing_Business/RTE.md"
+    "content/04_Marketing_Business/RTE.md"
   ],
   "Region Proposal": [
     "content/03_AI_ML/Region Proposal.md"
@@ -4993,25 +4993,25 @@
   ],
   "쉽게": [
     "content/03_AI_ML/딥러닝.md",
-    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
+    "content/04_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md",
     "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md"
   ],
   "비즈니스": [
     "content/03_AI_ML/딥러닝.md",
-    "content/05_Marketing_Business/AARRR.md",
-    "content/05_Marketing_Business/STP 전략.md",
-    "content/05_Marketing_Business/SWOT 분석.md",
-    "content/05_Marketing_Business/경로의존.md",
-    "content/05_Marketing_Business/롱테일.md",
-    "content/05_Marketing_Business/리텐션.md",
-    "content/05_Marketing_Business/언택트.md",
-    "content/05_Marketing_Business/이탈률.md",
-    "content/05_Marketing_Business/인바운드 마케팅.md",
-    "content/05_Marketing_Business/추천 유입.md",
-    "content/05_Marketing_Business/플랫폼.md",
+    "content/04_Marketing_Business/AARRR.md",
+    "content/04_Marketing_Business/STP 전략.md",
+    "content/04_Marketing_Business/SWOT 분석.md",
+    "content/04_Marketing_Business/경로의존.md",
+    "content/04_Marketing_Business/롱테일.md",
+    "content/04_Marketing_Business/리텐션.md",
+    "content/04_Marketing_Business/언택트.md",
+    "content/04_Marketing_Business/이탈률.md",
+    "content/04_Marketing_Business/인바운드 마케팅.md",
+    "content/04_Marketing_Business/추천 유입.md",
+    "content/04_Marketing_Business/플랫폼.md",
     "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
-    "content/05_Marketing_Business/업스트림.md",
-    "content/05_Marketing_Business/파이프라인.md"
+    "content/04_Marketing_Business/업스트림.md",
+    "content/04_Marketing_Business/파이프라인.md"
   ],
   "마르코프 결정 프로세스": [
     "content/03_AI_ML/마르코프 결정 프로세스.md"
@@ -5084,7 +5084,7 @@
   ],
   "자산": [
     "content/03_AI_ML/변동성.md",
-    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md"
+    "content/06_Economics_Finance/저는 주식투자가 처음인데요.md"
   ],
   "ROC": [
     "content/03_AI_ML/변동성.md",
@@ -5155,8 +5155,8 @@
   ],
   "자기": [
     "content/03_AI_ML/자기 집중.md",
-    "content/06_Philosophy_Humanities/자기동일성.md",
-    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+    "content/05_Philosophy_Humanities/자기동일성.md",
+    "content/07_Insights/사람들에게 반감을 사는 방법.md"
   ],
   "자기지도학습": [
     "content/03_AI_ML/자기지도학습.md"
@@ -5184,7 +5184,7 @@
   ],
   "잘못된": [
     "content/03_AI_ML/적대적 공격.md",
-    "content/05_Marketing_Business/경로의 저주.md"
+    "content/04_Marketing_Business/경로의 저주.md"
   ],
   "노이즈를": [
     "content/03_AI_ML/적대적 공격.md"
@@ -5205,7 +5205,7 @@
   "특정": [
     "content/03_AI_ML/전용 인공지능.md",
     "content/03_AI_ML/통계분석.md",
-    "content/05_Marketing_Business/ARPU.md"
+    "content/04_Marketing_Business/ARPU.md"
   ],
   "전이 학습": [
     "content/03_AI_ML/전이 학습.md"
@@ -5268,1248 +5268,1248 @@
     "content/03_AI_ML/혼동 행렬.md"
   ],
   "AAR 프레임": [
-    "content/05_Marketing_Business/AAR 프레임.md"
+    "content/04_Marketing_Business/AAR 프레임.md"
   ],
   "리뷰": [
-    "content/05_Marketing_Business/AAR 프레임.md"
+    "content/04_Marketing_Business/AAR 프레임.md"
   ],
   "반성": [
-    "content/05_Marketing_Business/AAR 프레임.md"
+    "content/04_Marketing_Business/AAR 프레임.md"
   ],
   "AAR": [
-    "content/05_Marketing_Business/AAR 프레임.md",
-    "content/08_Insights/면접 바이블.md"
+    "content/04_Marketing_Business/AAR 프레임.md",
+    "content/07_Insights/면접 바이블.md"
   ],
   "학습능력": [
-    "content/05_Marketing_Business/AAR 프레임.md"
+    "content/04_Marketing_Business/AAR 프레임.md"
   ],
   "AARRR": [
-    "content/05_Marketing_Business/AARRR.md"
+    "content/04_Marketing_Business/AARRR.md"
   ],
   "리텐션": [
-    "content/05_Marketing_Business/AARRR.md",
-    "content/05_Marketing_Business/고객 생애 가치.md",
-    "content/05_Marketing_Business/리텐션.md",
-    "content/05_Marketing_Business/코호트.md"
+    "content/04_Marketing_Business/AARRR.md",
+    "content/04_Marketing_Business/고객 생애 가치.md",
+    "content/04_Marketing_Business/리텐션.md",
+    "content/04_Marketing_Business/코호트.md"
   ],
   "AB Testing": [
-    "content/05_Marketing_Business/AB Testing.md"
+    "content/04_Marketing_Business/AB Testing.md"
   ],
   "A4": [
-    "content/05_Marketing_Business/AB Testing.md"
+    "content/04_Marketing_Business/AB Testing.md"
   ],
   "ED": [
-    "content/05_Marketing_Business/AB Testing.md"
+    "content/04_Marketing_Business/AB Testing.md"
   ],
   "ARPPU": [
-    "content/05_Marketing_Business/ARPPU.md"
+    "content/04_Marketing_Business/ARPPU.md"
   ],
   "가치": [
-    "content/05_Marketing_Business/ARPPU.md",
-    "content/05_Marketing_Business/CAC.md",
-    "content/05_Marketing_Business/네트워크 효과.md",
-    "content/07_Economics_Finance/가치투자.md"
+    "content/04_Marketing_Business/ARPPU.md",
+    "content/04_Marketing_Business/CAC.md",
+    "content/04_Marketing_Business/네트워크 효과.md",
+    "content/06_Economics_Finance/가치투자.md"
   ],
   "매출": [
-    "content/05_Marketing_Business/ARPPU.md",
-    "content/05_Marketing_Business/ARPU.md",
-    "content/05_Marketing_Business/ROAS.md",
-    "content/05_Marketing_Business/마진.md"
+    "content/04_Marketing_Business/ARPPU.md",
+    "content/04_Marketing_Business/ARPU.md",
+    "content/04_Marketing_Business/ROAS.md",
+    "content/04_Marketing_Business/마진.md"
   ],
   "결제자": [
-    "content/05_Marketing_Business/ARPPU.md"
+    "content/04_Marketing_Business/ARPPU.md"
   ],
   "계산식": [
-    "content/05_Marketing_Business/ARPPU.md",
-    "content/05_Marketing_Business/CAC.md",
-    "content/05_Marketing_Business/ROAS.md"
+    "content/04_Marketing_Business/ARPPU.md",
+    "content/04_Marketing_Business/CAC.md",
+    "content/04_Marketing_Business/ROAS.md"
   ],
   "ARPU": [
-    "content/05_Marketing_Business/ARPU.md"
+    "content/04_Marketing_Business/ARPU.md"
   ],
   "시점의": [
-    "content/05_Marketing_Business/ARPU.md"
+    "content/04_Marketing_Business/ARPU.md"
   ],
   "Acqusition": [
-    "content/05_Marketing_Business/Acqusition.md"
+    "content/04_Marketing_Business/Acqusition.md"
   ],
   "광고": [
-    "content/05_Marketing_Business/Acqusition.md"
+    "content/04_Marketing_Business/Acqusition.md"
   ],
   "유입": [
-    "content/05_Marketing_Business/Acqusition.md",
-    "content/05_Marketing_Business/검색 유입.md",
-    "content/05_Marketing_Business/소셜 유입.md",
-    "content/05_Marketing_Business/직접 유입.md",
+    "content/04_Marketing_Business/Acqusition.md",
+    "content/04_Marketing_Business/검색 유입.md",
+    "content/04_Marketing_Business/소셜 유입.md",
+    "content/04_Marketing_Business/직접 유입.md",
     "content/01_UX_Design/Data Driven UX.md"
   ],
   "채널": [
-    "content/05_Marketing_Business/Acqusition.md"
+    "content/04_Marketing_Business/Acqusition.md"
   ],
   "SNS": [
-    "content/05_Marketing_Business/Acqusition.md",
-    "content/05_Marketing_Business/Digital Side Effect.md",
-    "content/05_Marketing_Business/네트워크 효과.md",
-    "content/05_Marketing_Business/소셜 유입.md",
-    "content/05_Marketing_Business/팬슈머.md",
-    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md",
-    "content/06_Philosophy_Humanities/동물농장.md",
-    "content/06_Philosophy_Humanities/인간 불평등 기원론.md"
+    "content/04_Marketing_Business/Acqusition.md",
+    "content/04_Marketing_Business/Digital Side Effect.md",
+    "content/04_Marketing_Business/네트워크 효과.md",
+    "content/04_Marketing_Business/소셜 유입.md",
+    "content/04_Marketing_Business/팬슈머.md",
+    "content/04_Marketing_Business/장수 브랜드의 성공 비결.md",
+    "content/05_Philosophy_Humanities/동물농장.md",
+    "content/05_Philosophy_Humanities/인간 불평등 기원론.md"
   ],
   "CAC": [
-    "content/05_Marketing_Business/CAC.md",
-    "content/05_Marketing_Business/네트워크 효과.md",
-    "content/05_Marketing_Business/마진.md"
+    "content/04_Marketing_Business/CAC.md",
+    "content/04_Marketing_Business/네트워크 효과.md",
+    "content/04_Marketing_Business/마진.md"
   ],
   "고객": [
-    "content/05_Marketing_Business/CAC.md",
-    "content/05_Marketing_Business/ROAS.md",
-    "content/05_Marketing_Business/고객 생애 가치.md"
+    "content/04_Marketing_Business/CAC.md",
+    "content/04_Marketing_Business/ROAS.md",
+    "content/04_Marketing_Business/고객 생애 가치.md"
   ],
   "지표": [
-    "content/05_Marketing_Business/CAC.md",
-    "content/05_Marketing_Business/KPI.md",
-    "content/05_Marketing_Business/ROAS.md"
+    "content/04_Marketing_Business/CAC.md",
+    "content/04_Marketing_Business/KPI.md",
+    "content/04_Marketing_Business/ROAS.md"
   ],
   "Carrying capacity": [
-    "content/05_Marketing_Business/Carrying capacity.md"
+    "content/04_Marketing_Business/Carrying capacity.md"
   ],
   "PO": [
-    "content/05_Marketing_Business/Carrying capacity.md"
+    "content/04_Marketing_Business/Carrying capacity.md"
   ],
   "Q1": [
-    "content/05_Marketing_Business/Carrying capacity.md"
+    "content/04_Marketing_Business/Carrying capacity.md"
   ],
   "결국": [
-    "content/05_Marketing_Business/Carrying capacity.md"
+    "content/04_Marketing_Business/Carrying capacity.md"
   ],
   "일정한": [
-    "content/05_Marketing_Business/Carrying capacity.md"
+    "content/04_Marketing_Business/Carrying capacity.md"
   ],
   "Digital Side Effect": [
-    "content/05_Marketing_Business/Digital Side Effect.md"
+    "content/04_Marketing_Business/Digital Side Effect.md"
   ],
   "CA": [
-    "content/05_Marketing_Business/Digital Side Effect.md"
+    "content/04_Marketing_Business/Digital Side Effect.md"
   ],
   "감정": [
-    "content/05_Marketing_Business/Digital Side Effect.md",
-    "content/06_Philosophy_Humanities/감정.md"
+    "content/04_Marketing_Business/Digital Side Effect.md",
+    "content/05_Philosophy_Humanities/감정.md"
   ],
   "천만": [
-    "content/05_Marketing_Business/Digital Side Effect.md"
+    "content/04_Marketing_Business/Digital Side Effect.md"
   ],
   "조직": [
-    "content/05_Marketing_Business/KPI.md"
+    "content/04_Marketing_Business/KPI.md"
   ],
   "가설이": [
-    "content/05_Marketing_Business/MVP.md"
+    "content/04_Marketing_Business/MVP.md"
   ],
   "만들어": [
-    "content/05_Marketing_Business/MVP.md"
+    "content/04_Marketing_Business/MVP.md"
   ],
   "ROAS": [
-    "content/05_Marketing_Business/ROAS.md"
+    "content/04_Marketing_Business/ROAS.md"
   ],
   "광고비": [
-    "content/05_Marketing_Business/ROAS.md"
+    "content/04_Marketing_Business/ROAS.md"
   ],
   "RTE": [
-    "content/05_Marketing_Business/RTE.md"
+    "content/04_Marketing_Business/RTE.md"
   ],
   "한발": [
-    "content/05_Marketing_Business/RTE.md"
+    "content/04_Marketing_Business/RTE.md"
   ],
   "ERP": [
-    "content/05_Marketing_Business/RTE.md"
+    "content/04_Marketing_Business/RTE.md"
   ],
   "STP 전략": [
-    "content/05_Marketing_Business/STP 전략.md"
+    "content/04_Marketing_Business/STP 전략.md"
   ],
   "SWOT 분석": [
-    "content/05_Marketing_Business/SWOT 분석.md"
+    "content/04_Marketing_Business/SWOT 분석.md"
   ],
   "SWOT": [
-    "content/05_Marketing_Business/SWOT 분석.md"
+    "content/04_Marketing_Business/SWOT 분석.md"
   ],
   "검색 유입": [
-    "content/05_Marketing_Business/검색 유입.md"
+    "content/04_Marketing_Business/검색 유입.md"
   ],
   "경로독점": [
-    "content/05_Marketing_Business/경로독점.md"
+    "content/04_Marketing_Business/경로독점.md"
   ],
   "판결": [
-    "content/05_Marketing_Business/경로독점.md"
+    "content/04_Marketing_Business/경로독점.md"
   ],
   "미확정": [
-    "content/05_Marketing_Business/경로독점.md"
+    "content/04_Marketing_Business/경로독점.md"
   ],
   "판결문": [
-    "content/05_Marketing_Business/경로독점.md"
+    "content/04_Marketing_Business/경로독점.md"
   ],
   "때문이다": [
-    "content/05_Marketing_Business/경로독점.md"
+    "content/04_Marketing_Business/경로독점.md"
   ],
   "경로의 저주": [
-    "content/05_Marketing_Business/경로의 저주.md"
+    "content/04_Marketing_Business/경로의 저주.md"
   ],
   "가는": [
-    "content/05_Marketing_Business/경로의 저주.md"
+    "content/04_Marketing_Business/경로의 저주.md"
   ],
   "만든다": [
-    "content/05_Marketing_Business/경로의 저주.md"
+    "content/04_Marketing_Business/경로의 저주.md"
   ],
   "경로의존": [
-    "content/05_Marketing_Business/경로의존.md"
+    "content/04_Marketing_Business/경로의존.md"
   ],
   "신문을": [
-    "content/05_Marketing_Business/경로의존.md"
+    "content/04_Marketing_Business/경로의존.md"
   ],
   "고객 생애 가치": [
-    "content/05_Marketing_Business/고객 생애 가치.md"
+    "content/04_Marketing_Business/고객 생애 가치.md"
   ],
   "단기": [
-    "content/05_Marketing_Business/고객 생애 가치.md"
+    "content/04_Marketing_Business/고객 생애 가치.md"
   ],
   "CLV": [
-    "content/05_Marketing_Business/고객 생애 가치.md"
+    "content/04_Marketing_Business/고객 생애 가치.md"
   ],
   "LTV": [
-    "content/05_Marketing_Business/고객 생애 가치.md"
+    "content/04_Marketing_Business/고객 생애 가치.md"
   ],
   "구글의 열가지 철학": [
-    "content/05_Marketing_Business/구글의 열가지 철학.md"
+    "content/04_Marketing_Business/구글의 열가지 철학.md"
   ],
   "광고는": [
-    "content/05_Marketing_Business/구글의 열가지 철학.md"
+    "content/04_Marketing_Business/구글의 열가지 철학.md"
   ],
   "명확하게": [
-    "content/05_Marketing_Business/구글의 열가지 철학.md"
+    "content/04_Marketing_Business/구글의 열가지 철학.md"
   ],
   "구별짓기": [
-    "content/05_Marketing_Business/구별짓기.md"
+    "content/04_Marketing_Business/구별짓기.md"
   ],
   "과시": [
-    "content/05_Marketing_Business/구별짓기.md"
+    "content/04_Marketing_Business/구별짓기.md"
   ],
   "시대": [
-    "content/05_Marketing_Business/구별짓기.md",
-    "content/05_Marketing_Business/마케팅의 역사.md"
+    "content/04_Marketing_Business/구별짓기.md",
+    "content/04_Marketing_Business/마케팅의 역사.md"
   ],
   "잉크": [
-    "content/05_Marketing_Business/구별짓기.md"
+    "content/04_Marketing_Business/구별짓기.md"
   ],
   "과시의": [
-    "content/05_Marketing_Business/구별짓기.md"
+    "content/04_Marketing_Business/구별짓기.md"
   ],
   "내러티브 자본": [
-    "content/05_Marketing_Business/내러티브 자본.md"
+    "content/04_Marketing_Business/내러티브 자본.md"
   ],
   "주가": [
-    "content/05_Marketing_Business/내러티브 자본.md"
+    "content/04_Marketing_Business/내러티브 자본.md"
   ],
   "PDR": [
-    "content/05_Marketing_Business/내러티브 자본.md",
-    "content/07_Economics_Finance/PDR.md"
+    "content/04_Marketing_Business/내러티브 자본.md",
+    "content/06_Economics_Finance/PDR.md"
   ],
   "PER": [
-    "content/05_Marketing_Business/내러티브 자본.md",
-    "content/07_Economics_Finance/PBR.md",
-    "content/07_Economics_Finance/PDR.md",
-    "content/07_Economics_Finance/PER.md",
-    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+    "content/04_Marketing_Business/내러티브 자본.md",
+    "content/06_Economics_Finance/PBR.md",
+    "content/06_Economics_Finance/PDR.md",
+    "content/06_Economics_Finance/PER.md",
+    "content/06_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
   ],
   "끝나는": [
-    "content/05_Marketing_Business/내러티브 자본.md"
+    "content/04_Marketing_Business/내러티브 자본.md"
   ],
   "네트워크 효과": [
-    "content/05_Marketing_Business/네트워크 효과.md"
+    "content/04_Marketing_Business/네트워크 효과.md"
   ],
   "약점": [
-    "content/05_Marketing_Business/네트워크 효과.md"
+    "content/04_Marketing_Business/네트워크 효과.md"
   ],
   "효과": [
-    "content/05_Marketing_Business/네트워크 효과.md"
+    "content/04_Marketing_Business/네트워크 효과.md"
   ],
   "롱테일": [
-    "content/05_Marketing_Business/롱테일.md"
+    "content/04_Marketing_Business/롱테일.md"
   ],
   "부분을": [
-    "content/05_Marketing_Business/롱테일.md"
+    "content/04_Marketing_Business/롱테일.md"
   ],
   "크리스": [
-    "content/05_Marketing_Business/롱테일.md"
+    "content/04_Marketing_Business/롱테일.md"
   ],
   "파레토": [
-    "content/05_Marketing_Business/롱테일.md"
+    "content/04_Marketing_Business/롱테일.md"
   ],
   "꾸준히": [
-    "content/05_Marketing_Business/리텐션.md"
+    "content/04_Marketing_Business/리텐션.md"
   ],
   "그래프의": [
-    "content/05_Marketing_Business/리텐션.md"
+    "content/04_Marketing_Business/리텐션.md"
   ],
   "기울기가": [
-    "content/05_Marketing_Business/리텐션.md"
+    "content/04_Marketing_Business/리텐션.md"
   ],
   "마진이": [
-    "content/05_Marketing_Business/마진.md"
+    "content/04_Marketing_Business/마진.md"
   ],
   "마케팅의 역사": [
-    "content/05_Marketing_Business/마케팅의 역사.md"
+    "content/04_Marketing_Business/마케팅의 역사.md"
   ],
   "과잉": [
-    "content/05_Marketing_Business/마케팅의 역사.md"
+    "content/04_Marketing_Business/마케팅의 역사.md"
   ],
   "년대": [
-    "content/05_Marketing_Business/마케팅의 역사.md"
+    "content/04_Marketing_Business/마케팅의 역사.md"
   ],
   "속에": [
-    "content/05_Marketing_Business/마케팅의 역사.md"
+    "content/04_Marketing_Business/마케팅의 역사.md"
   ],
   "USP": [
-    "content/05_Marketing_Business/마케팅의 역사.md"
+    "content/04_Marketing_Business/마케팅의 역사.md"
   ],
   "브랜드 좋아 보이는 것들의 비밀": [
-    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md"
+    "content/04_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md"
   ],
   "BI": [
-    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
-    "content/05_Marketing_Business/브랜드 3.0.md"
+    "content/04_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/04_Marketing_Business/브랜드 3.0.md"
   ],
   "네임을": [
-    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
-    "content/05_Marketing_Business/브랜딩.md"
+    "content/04_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/04_Marketing_Business/브랜딩.md"
   ],
   "브랜딩": [
-    "content/05_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
-    "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
-    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
-    "content/05_Marketing_Business/브랜딩.md"
+    "content/04_Marketing_Business/브랜드 좋아 보이는 것들의 비밀.md",
+    "content/04_Marketing_Business/브랜드 커뮤니케이션.md",
+    "content/04_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/04_Marketing_Business/브랜딩.md"
   ],
   "브랜드 커뮤니케이션": [
-    "content/05_Marketing_Business/브랜드 커뮤니케이션.md"
+    "content/04_Marketing_Business/브랜드 커뮤니케이션.md"
   ],
   "네임과": [
-    "content/05_Marketing_Business/브랜드 커뮤니케이션.md"
+    "content/04_Marketing_Business/브랜드 커뮤니케이션.md"
   ],
   "소비자": [
-    "content/05_Marketing_Business/브랜드 커뮤니케이션.md"
+    "content/04_Marketing_Business/브랜드 커뮤니케이션.md"
   ],
   "브랜드는": [
-    "content/05_Marketing_Business/브랜드 커뮤니케이션.md",
-    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
-    "content/05_Marketing_Business/브랜딩.md"
+    "content/04_Marketing_Business/브랜드 커뮤니케이션.md",
+    "content/04_Marketing_Business/브랜딩 역사, 특성, 법칙.md",
+    "content/04_Marketing_Business/브랜딩.md"
   ],
   "브랜딩 역사, 특성, 법칙": [
-    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md"
+    "content/04_Marketing_Business/브랜딩 역사, 특성, 법칙.md"
   ],
   "브랜드의": [
-    "content/05_Marketing_Business/브랜딩 역사, 특성, 법칙.md"
+    "content/04_Marketing_Business/브랜딩 역사, 특성, 법칙.md"
   ],
   "만들어라": [
-    "content/05_Marketing_Business/브랜딩.md"
+    "content/04_Marketing_Business/브랜딩.md"
   ],
   "브이노믹스": [
-    "content/05_Marketing_Business/브이노믹스.md"
+    "content/04_Marketing_Business/브이노믹스.md"
   ],
   "보일": [
-    "content/05_Marketing_Business/브이노믹스.md"
+    "content/04_Marketing_Business/브이노믹스.md"
   ],
   "트렌트": [
-    "content/05_Marketing_Business/브이노믹스.md"
+    "content/04_Marketing_Business/브이노믹스.md"
   ],
   "소셜 유입": [
-    "content/05_Marketing_Business/소셜 유입.md"
+    "content/04_Marketing_Business/소셜 유입.md"
   ],
   "소셜": [
-    "content/05_Marketing_Business/소셜 유입.md",
-    "content/05_Marketing_Business/소셜딜레마.md",
-    "content/06_Philosophy_Humanities/영화 다큐멘터리.md"
+    "content/04_Marketing_Business/소셜 유입.md",
+    "content/04_Marketing_Business/소셜딜레마.md",
+    "content/05_Philosophy_Humanities/영화 다큐멘터리.md"
   ],
   "소셜딜레마": [
-    "content/05_Marketing_Business/소셜딜레마.md"
+    "content/04_Marketing_Business/소셜딜레마.md"
   ],
   "가짜": [
-    "content/05_Marketing_Business/소셜딜레마.md",
-    "content/06_Philosophy_Humanities/영화 다큐멘터리.md"
+    "content/04_Marketing_Business/소셜딜레마.md",
+    "content/05_Philosophy_Humanities/영화 다큐멘터리.md"
   ],
   "뉴스": [
-    "content/05_Marketing_Business/소셜딜레마.md"
+    "content/04_Marketing_Business/소셜딜레마.md"
   ],
   "언택트": [
-    "content/05_Marketing_Business/언택트.md"
+    "content/04_Marketing_Business/언택트.md"
   ],
   "트렌드": [
-    "content/05_Marketing_Business/언택트.md"
+    "content/04_Marketing_Business/언택트.md"
   ],
   "VR": [
-    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md"
+    "content/04_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성.md"
   ],
   "삼성": [
-    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md"
+    "content/04_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성.md"
   ],
   "같아요": [
-    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md"
+    "content/04_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성.md"
   ],
   "타조는": [
-    "content/05_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성,.md"
+    "content/04_Marketing_Business/영상제작에 영감을주는 광고 3가지 - 삼성.md"
   ],
   "이탈률": [
-    "content/05_Marketing_Business/이탈률.md"
+    "content/04_Marketing_Business/이탈률.md"
   ],
   "인바운드 마케팅": [
-    "content/05_Marketing_Business/인바운드 마케팅.md"
+    "content/04_Marketing_Business/인바운드 마케팅.md"
   ],
   "전환율": [
-    "content/05_Marketing_Business/전환율.md",
+    "content/04_Marketing_Business/전환율.md",
     "content/01_UX_Design/Data Driven UX.md",
     "content/01_UX_Design/USER RESEARCH.md"
   ],
   "직접 유입": [
-    "content/05_Marketing_Business/직접 유입.md"
+    "content/04_Marketing_Business/직접 유입.md"
   ],
   "추천 유입": [
-    "content/05_Marketing_Business/추천 유입.md"
+    "content/04_Marketing_Business/추천 유입.md"
   ],
   "팬슈머": [
-    "content/05_Marketing_Business/팬슈머.md"
+    "content/04_Marketing_Business/팬슈머.md"
   ],
   "MD": [
-    "content/05_Marketing_Business/팬슈머.md"
+    "content/04_Marketing_Business/팬슈머.md"
   ],
   "편의점에서 구매할 수 있는 기프트카드": [
-    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
+    "content/04_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
   ],
   "더욱": [
-    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
+    "content/04_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
   ],
   "된다": [
-    "content/05_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
+    "content/04_Marketing_Business/편의점에서 구매할 수 있는 기프트카드.md"
   ],
   "플랫폼": [
-    "content/05_Marketing_Business/플랫폼.md",
-    "content/05_Marketing_Business/파이프라인.md"
+    "content/04_Marketing_Business/플랫폼.md",
+    "content/04_Marketing_Business/파이프라인.md"
   ],
   "피터 드러커의 자기경영노트": [
-    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+    "content/04_Marketing_Business/피터 드러커의 자기경영노트.md"
   ],
   "경영": [
-    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md",
-    "content/05_Marketing_Business/규칙 없음.md",
-    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+    "content/04_Marketing_Business/피터 드러커의 자기경영노트.md",
+    "content/04_Marketing_Business/규칙 없음.md",
+    "content/06_Economics_Finance/인간 욕망의 법칙.md"
   ],
   "시간을": [
-    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+    "content/04_Marketing_Business/피터 드러커의 자기경영노트.md"
   ],
   "달성하는": [
-    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+    "content/04_Marketing_Business/피터 드러커의 자기경영노트.md"
   ],
   "목표달성": [
-    "content/05_Marketing_Business/피터 드러커의 자기경영노트.md"
+    "content/04_Marketing_Business/피터 드러커의 자기경영노트.md"
   ],
   "회사": [
-    "content/05_Marketing_Business/회사.md"
+    "content/04_Marketing_Business/회사.md"
   ],
   "기업": [
-    "content/05_Marketing_Business/회사.md",
+    "content/04_Marketing_Business/회사.md",
     "content/03_AI_ML/쉽게 활용하는 인공지능 비즈니스.md",
-    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+    "content/06_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
   ],
   "돈을": [
-    "content/05_Marketing_Business/회사.md",
-    "content/08_Insights/제태크 수단에 대해서.md",
-    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md"
+    "content/04_Marketing_Business/회사.md",
+    "content/07_Insights/제태크 수단에 대해서.md",
+    "content/06_Economics_Finance/부자 아빠 가난한 아빠.md"
   ],
   "투자": [
-    "content/05_Marketing_Business/회사.md",
-    "content/07_Economics_Finance/EBITDA.md",
-    "content/07_Economics_Finance/PBR.md",
-    "content/07_Economics_Finance/PDR.md",
-    "content/07_Economics_Finance/PEG.md",
-    "content/07_Economics_Finance/PER.md",
-    "content/07_Economics_Finance/가치투자.md",
-    "content/07_Economics_Finance/기준금리.md",
-    "content/07_Economics_Finance/민영화.md",
-    "content/07_Economics_Finance/배당금.md",
-    "content/07_Economics_Finance/밸류 트랩.md",
-    "content/07_Economics_Finance/보통주.md",
-    "content/07_Economics_Finance/액면가.md",
-    "content/07_Economics_Finance/우선주.md",
-    "content/07_Economics_Finance/위험.md",
-    "content/07_Economics_Finance/자본금.md",
-    "content/07_Economics_Finance/퇴직연금.md",
-    "content/07_Economics_Finance/현금없는 사회.md",
-    "content/07_Economics_Finance/부의 시작.md",
-    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md",
-    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md",
-    "content/07_Economics_Finance/존리의 금융문맹 탈출.md",
-    "content/07_Economics_Finance/존리의 부자되기 습관.md",
-    "content/07_Economics_Finance/주식 공부 5일 완성.md",
-    "content/07_Economics_Finance/하버드 시간관리.md",
-    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md",
-    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+    "content/04_Marketing_Business/회사.md",
+    "content/06_Economics_Finance/EBITDA.md",
+    "content/06_Economics_Finance/PBR.md",
+    "content/06_Economics_Finance/PDR.md",
+    "content/06_Economics_Finance/PEG.md",
+    "content/06_Economics_Finance/PER.md",
+    "content/06_Economics_Finance/가치투자.md",
+    "content/06_Economics_Finance/기준금리.md",
+    "content/06_Economics_Finance/민영화.md",
+    "content/06_Economics_Finance/배당금.md",
+    "content/06_Economics_Finance/밸류 트랩.md",
+    "content/06_Economics_Finance/보통주.md",
+    "content/06_Economics_Finance/액면가.md",
+    "content/06_Economics_Finance/우선주.md",
+    "content/06_Economics_Finance/위험.md",
+    "content/06_Economics_Finance/자본금.md",
+    "content/06_Economics_Finance/퇴직연금.md",
+    "content/06_Economics_Finance/현금없는 사회.md",
+    "content/06_Economics_Finance/부의 시작.md",
+    "content/06_Economics_Finance/부자 아빠 가난한 아빠.md",
+    "content/06_Economics_Finance/저는 주식투자가 처음인데요.md",
+    "content/06_Economics_Finance/존리의 금융문맹 탈출.md",
+    "content/06_Economics_Finance/존리의 부자되기 습관.md",
+    "content/06_Economics_Finance/주식 공부 5일 완성.md",
+    "content/06_Economics_Finance/하버드 시간관리.md",
+    "content/06_Economics_Finance/하버드 첫 강의 시간관리 수업.md",
+    "content/06_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
   ],
   "LTD": [
-    "content/05_Marketing_Business/회사.md"
+    "content/04_Marketing_Business/회사.md"
   ],
   "수익을": [
-    "content/05_Marketing_Business/회사.md"
+    "content/04_Marketing_Business/회사.md"
   ],
   "책임을": [
-    "content/05_Marketing_Business/회사.md"
+    "content/04_Marketing_Business/회사.md"
   ],
   "RNA": [
-    "content/06_Philosophy_Humanities/RNA.md"
+    "content/05_Philosophy_Humanities/RNA.md"
   ],
   "철학": [
-    "content/06_Philosophy_Humanities/RNA.md",
-    "content/06_Philosophy_Humanities/감정.md",
-    "content/06_Philosophy_Humanities/기생충.md",
-    "content/06_Philosophy_Humanities/길가메시.md",
-    "content/06_Philosophy_Humanities/녹서.md",
-    "content/06_Philosophy_Humanities/무의식.md",
-    "content/06_Philosophy_Humanities/문화.md",
-    "content/06_Philosophy_Humanities/본질.md",
-    "content/06_Philosophy_Humanities/생명체.md",
-    "content/06_Philosophy_Humanities/아우라.md",
-    "content/06_Philosophy_Humanities/역사 관련.md",
-    "content/06_Philosophy_Humanities/영세중립국.md",
-    "content/06_Philosophy_Humanities/영화 다큐멘터리.md",
-    "content/06_Philosophy_Humanities/예술.md",
-    "content/06_Philosophy_Humanities/이솝 우화.md",
-    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md",
-    "content/06_Philosophy_Humanities/자기동일성.md",
-    "content/06_Philosophy_Humanities/자기수용감각.md",
-    "content/06_Philosophy_Humanities/장자.md",
-    "content/06_Philosophy_Humanities/질병 분류표.md",
-    "content/06_Philosophy_Humanities/철학.md",
-    "content/06_Philosophy_Humanities/칸트.md",
-    "content/06_Philosophy_Humanities/칼의 노래.md",
-    "content/06_Philosophy_Humanities/파르테논 신전.md",
-    "content/06_Philosophy_Humanities/평등.md",
-    "content/06_Philosophy_Humanities/표상.md",
-    "content/06_Philosophy_Humanities/행복.md",
-    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md",
-    "content/06_Philosophy_Humanities/화석연료.md",
-    "content/06_Philosophy_Humanities/Grit.md",
-    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
-    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
-    "content/06_Philosophy_Humanities/동물농장.md",
-    "content/06_Philosophy_Humanities/비트겐슈타인.md",
-    "content/06_Philosophy_Humanities/사피엔스.md",
-    "content/06_Philosophy_Humanities/생각의 탄생.md",
-    "content/06_Philosophy_Humanities/샤르트르.md",
-    "content/06_Philosophy_Humanities/소쉬르.md",
-    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
-    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
-    "content/06_Philosophy_Humanities/적정기술.md",
-    "content/06_Philosophy_Humanities/한비자.md"
+    "content/05_Philosophy_Humanities/RNA.md",
+    "content/05_Philosophy_Humanities/감정.md",
+    "content/05_Philosophy_Humanities/기생충.md",
+    "content/05_Philosophy_Humanities/길가메시.md",
+    "content/05_Philosophy_Humanities/녹서.md",
+    "content/05_Philosophy_Humanities/무의식.md",
+    "content/05_Philosophy_Humanities/문화.md",
+    "content/05_Philosophy_Humanities/본질.md",
+    "content/05_Philosophy_Humanities/생명체.md",
+    "content/05_Philosophy_Humanities/아우라.md",
+    "content/05_Philosophy_Humanities/역사 관련.md",
+    "content/05_Philosophy_Humanities/영세중립국.md",
+    "content/05_Philosophy_Humanities/영화 다큐멘터리.md",
+    "content/05_Philosophy_Humanities/예술.md",
+    "content/05_Philosophy_Humanities/이솝 우화.md",
+    "content/05_Philosophy_Humanities/인간은 보여야지 믿는다.md",
+    "content/05_Philosophy_Humanities/자기동일성.md",
+    "content/05_Philosophy_Humanities/자기수용감각.md",
+    "content/05_Philosophy_Humanities/장자.md",
+    "content/05_Philosophy_Humanities/질병 분류표.md",
+    "content/05_Philosophy_Humanities/철학.md",
+    "content/05_Philosophy_Humanities/칸트.md",
+    "content/05_Philosophy_Humanities/칼의 노래.md",
+    "content/05_Philosophy_Humanities/파르테논 신전.md",
+    "content/05_Philosophy_Humanities/평등.md",
+    "content/05_Philosophy_Humanities/표상.md",
+    "content/05_Philosophy_Humanities/행복.md",
+    "content/05_Philosophy_Humanities/화, 이해하면 사라진다.md",
+    "content/05_Philosophy_Humanities/화석연료.md",
+    "content/05_Philosophy_Humanities/Grit.md",
+    "content/05_Philosophy_Humanities/기술 복제 시대의 예술작품.md",
+    "content/05_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/05_Philosophy_Humanities/동물농장.md",
+    "content/05_Philosophy_Humanities/비트겐슈타인.md",
+    "content/05_Philosophy_Humanities/사피엔스.md",
+    "content/05_Philosophy_Humanities/생각의 탄생.md",
+    "content/05_Philosophy_Humanities/샤르트르.md",
+    "content/05_Philosophy_Humanities/소쉬르.md",
+    "content/05_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/05_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/05_Philosophy_Humanities/적정기술.md",
+    "content/05_Philosophy_Humanities/한비자.md"
   ],
   "혹스": [
-    "content/06_Philosophy_Humanities/RNA.md"
+    "content/05_Philosophy_Humanities/RNA.md"
   ],
   "DNA": [
-    "content/06_Philosophy_Humanities/RNA.md",
-    "content/06_Philosophy_Humanities/생명체.md"
+    "content/05_Philosophy_Humanities/RNA.md",
+    "content/05_Philosophy_Humanities/생명체.md"
   ],
   "B0": [
-    "content/06_Philosophy_Humanities/감정.md"
+    "content/05_Philosophy_Humanities/감정.md"
   ],
   "EA": [
-    "content/06_Philosophy_Humanities/감정.md",
-    "content/06_Philosophy_Humanities/모던 타임즈.md",
-    "content/08_Insights/타이 로페즈.md"
+    "content/05_Philosophy_Humanities/감정.md",
+    "content/05_Philosophy_Humanities/모던 타임즈.md",
+    "content/07_Insights/타이 로페즈.md"
   ],
   "국방 순위 2020": [
-    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+    "content/05_Philosophy_Humanities/국방 순위 2020.md"
   ],
   "국가": [
-    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+    "content/05_Philosophy_Humanities/국방 순위 2020.md"
   ],
   "동맹": [
-    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+    "content/05_Philosophy_Humanities/국방 순위 2020.md"
   ],
   "상위": [
-    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+    "content/05_Philosophy_Humanities/국방 순위 2020.md"
   ],
   "참고": [
-    "content/06_Philosophy_Humanities/국방 순위 2020.md"
+    "content/05_Philosophy_Humanities/국방 순위 2020.md"
   ],
   "기생충": [
-    "content/06_Philosophy_Humanities/기생충.md"
+    "content/05_Philosophy_Humanities/기생충.md"
   ],
   "이야기": [
-    "content/06_Philosophy_Humanities/기생충.md"
+    "content/05_Philosophy_Humanities/기생충.md"
   ],
   "인문학": [
-    "content/06_Philosophy_Humanities/기생충.md",
-    "content/06_Philosophy_Humanities/녹서.md",
-    "content/06_Philosophy_Humanities/무의식.md",
-    "content/06_Philosophy_Humanities/철학.md",
-    "content/06_Philosophy_Humanities/칸트.md",
-    "content/06_Philosophy_Humanities/파르테논 신전.md",
-    "content/06_Philosophy_Humanities/표상.md",
-    "content/06_Philosophy_Humanities/화석연료.md",
-    "content/06_Philosophy_Humanities/Grit.md",
-    "content/06_Philosophy_Humanities/마지막 몰입.md",
-    "content/06_Philosophy_Humanities/비트겐슈타인.md",
-    "content/06_Philosophy_Humanities/사피엔스.md",
-    "content/06_Philosophy_Humanities/생각의 탄생.md",
-    "content/06_Philosophy_Humanities/샤르트르.md",
-    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
-    "content/06_Philosophy_Humanities/인간 불평등 기원론.md",
-    "content/06_Philosophy_Humanities/한비자.md",
-    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+    "content/05_Philosophy_Humanities/기생충.md",
+    "content/05_Philosophy_Humanities/녹서.md",
+    "content/05_Philosophy_Humanities/무의식.md",
+    "content/05_Philosophy_Humanities/철학.md",
+    "content/05_Philosophy_Humanities/칸트.md",
+    "content/05_Philosophy_Humanities/파르테논 신전.md",
+    "content/05_Philosophy_Humanities/표상.md",
+    "content/05_Philosophy_Humanities/화석연료.md",
+    "content/05_Philosophy_Humanities/Grit.md",
+    "content/05_Philosophy_Humanities/마지막 몰입.md",
+    "content/05_Philosophy_Humanities/비트겐슈타인.md",
+    "content/05_Philosophy_Humanities/사피엔스.md",
+    "content/05_Philosophy_Humanities/생각의 탄생.md",
+    "content/05_Philosophy_Humanities/샤르트르.md",
+    "content/05_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/05_Philosophy_Humanities/인간 불평등 기원론.md",
+    "content/05_Philosophy_Humanities/한비자.md",
+    "content/06_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
   ],
   "바퀴벌레": [
-    "content/06_Philosophy_Humanities/기생충.md"
+    "content/05_Philosophy_Humanities/기생충.md"
   ],
   "영화이다": [
-    "content/06_Philosophy_Humanities/기생충.md"
+    "content/05_Philosophy_Humanities/기생충.md"
   ],
   "길가메시": [
-    "content/06_Philosophy_Humanities/길가메시.md"
+    "content/05_Philosophy_Humanities/길가메시.md"
   ],
   "A9": [
-    "content/06_Philosophy_Humanities/길가메시.md"
+    "content/05_Philosophy_Humanities/길가메시.md"
   ],
   "EB": [
-    "content/06_Philosophy_Humanities/길가메시.md"
+    "content/05_Philosophy_Humanities/길가메시.md"
   ],
   "녹서": [
-    "content/06_Philosophy_Humanities/녹서.md"
+    "content/05_Philosophy_Humanities/녹서.md"
   ],
   "녹서는": [
-    "content/06_Philosophy_Humanities/녹서.md"
+    "content/05_Philosophy_Humanities/녹서.md"
   ],
   "정책을": [
-    "content/06_Philosophy_Humanities/녹서.md"
+    "content/05_Philosophy_Humanities/녹서.md"
   ],
   "모던 타임즈": [
-    "content/06_Philosophy_Humanities/모던 타임즈.md"
+    "content/05_Philosophy_Humanities/모던 타임즈.md"
   ],
   "B3": [
-    "content/06_Philosophy_Humanities/모던 타임즈.md"
+    "content/05_Philosophy_Humanities/모던 타임즈.md"
   ],
   "B5": [
-    "content/06_Philosophy_Humanities/모던 타임즈.md"
+    "content/05_Philosophy_Humanities/모던 타임즈.md"
   ],
   "다시": [
-    "content/06_Philosophy_Humanities/모던 타임즈.md"
+    "content/05_Philosophy_Humanities/모던 타임즈.md"
   ],
   "영화": [
-    "content/06_Philosophy_Humanities/모던 타임즈.md"
+    "content/05_Philosophy_Humanities/모던 타임즈.md"
   ],
   "무의식": [
-    "content/06_Philosophy_Humanities/무의식.md"
+    "content/05_Philosophy_Humanities/무의식.md"
   ],
   "의식적": [
-    "content/06_Philosophy_Humanities/무의식.md"
+    "content/05_Philosophy_Humanities/무의식.md"
   ],
   "자신이": [
-    "content/06_Philosophy_Humanities/무의식.md"
+    "content/05_Philosophy_Humanities/무의식.md"
   ],
   "정신적": [
-    "content/06_Philosophy_Humanities/무의식.md"
+    "content/05_Philosophy_Humanities/무의식.md"
   ],
   "문화": [
-    "content/06_Philosophy_Humanities/문화.md",
-    "content/06_Philosophy_Humanities/적정기술.md"
+    "content/05_Philosophy_Humanities/문화.md",
+    "content/05_Philosophy_Humanities/적정기술.md"
   ],
   "문화는": [
-    "content/06_Philosophy_Humanities/문화.md"
+    "content/05_Philosophy_Humanities/문화.md"
   ],
   "문화를": [
-    "content/06_Philosophy_Humanities/문화.md"
+    "content/05_Philosophy_Humanities/문화.md"
   ],
   "문화의": [
-    "content/06_Philosophy_Humanities/문화.md"
+    "content/05_Philosophy_Humanities/문화.md"
   ],
   "본질": [
-    "content/06_Philosophy_Humanities/본질.md",
-    "content/06_Philosophy_Humanities/샤르트르.md"
+    "content/05_Philosophy_Humanities/본질.md",
+    "content/05_Philosophy_Humanities/샤르트르.md"
   ],
   "자체": [
-    "content/06_Philosophy_Humanities/본질.md"
+    "content/05_Philosophy_Humanities/본질.md"
   ],
   "본질을": [
-    "content/06_Philosophy_Humanities/본질.md"
+    "content/05_Philosophy_Humanities/본질.md"
   ],
   "우리는": [
-    "content/06_Philosophy_Humanities/본질.md"
+    "content/05_Philosophy_Humanities/본질.md"
   ],
   "생명체": [
-    "content/06_Philosophy_Humanities/생명체.md"
+    "content/05_Philosophy_Humanities/생명체.md"
   ],
   "동물": [
-    "content/06_Philosophy_Humanities/생명체.md"
+    "content/05_Philosophy_Humanities/생명체.md"
   ],
   "세포": [
-    "content/06_Philosophy_Humanities/생명체.md"
+    "content/05_Philosophy_Humanities/생명체.md"
   ],
   "식물": [
-    "content/06_Philosophy_Humanities/생명체.md"
+    "content/05_Philosophy_Humanities/생명체.md"
   ],
   "아우라": [
-    "content/06_Philosophy_Humanities/아우라.md"
+    "content/05_Philosophy_Humanities/아우라.md"
   ],
   "바로": [
-    "content/06_Philosophy_Humanities/아우라.md"
+    "content/05_Philosophy_Humanities/아우라.md"
   ],
   "가까이": [
-    "content/06_Philosophy_Humanities/아우라.md"
+    "content/05_Philosophy_Humanities/아우라.md"
   ],
   "대중이": [
-    "content/06_Philosophy_Humanities/아우라.md"
+    "content/05_Philosophy_Humanities/아우라.md"
   ],
   "복제를": [
-    "content/06_Philosophy_Humanities/아우라.md"
+    "content/05_Philosophy_Humanities/아우라.md"
   ],
   "역사 관련": [
-    "content/06_Philosophy_Humanities/역사 관련.md"
+    "content/05_Philosophy_Humanities/역사 관련.md"
   ],
   "역사": [
-    "content/06_Philosophy_Humanities/역사 관련.md",
-    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md"
+    "content/05_Philosophy_Humanities/역사 관련.md",
+    "content/05_Philosophy_Humanities/역사란 무엇인가 1.md"
   ],
   "힘이": [
-    "content/06_Philosophy_Humanities/역사 관련.md"
+    "content/05_Philosophy_Humanities/역사 관련.md"
   ],
   "되었다": [
-    "content/06_Philosophy_Humanities/역사 관련.md"
+    "content/05_Philosophy_Humanities/역사 관련.md"
   ],
   "우리가": [
-    "content/06_Philosophy_Humanities/역사 관련.md"
+    "content/05_Philosophy_Humanities/역사 관련.md"
   ],
   "영세중립국": [
-    "content/06_Philosophy_Humanities/영세중립국.md"
+    "content/05_Philosophy_Humanities/영세중립국.md"
   ],
   "국방": [
-    "content/06_Philosophy_Humanities/영세중립국.md"
+    "content/05_Philosophy_Humanities/영세중립국.md"
   ],
   "먹을": [
-    "content/06_Philosophy_Humanities/영세중립국.md"
+    "content/05_Philosophy_Humanities/영세중립국.md"
   ],
   "순위": [
-    "content/06_Philosophy_Humanities/영세중립국.md"
+    "content/05_Philosophy_Humanities/영세중립국.md"
   ],
   "영화 다큐멘터리": [
-    "content/06_Philosophy_Humanities/영화 다큐멘터리.md"
+    "content/05_Philosophy_Humanities/영화 다큐멘터리.md"
   ],
   "우리": [
-    "content/06_Philosophy_Humanities/영화 다큐멘터리.md"
+    "content/05_Philosophy_Humanities/영화 다큐멘터리.md"
   ],
   "예술": [
-    "content/06_Philosophy_Humanities/예술.md",
-    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+    "content/05_Philosophy_Humanities/예술.md",
+    "content/05_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
   ],
   "목적": [
-    "content/06_Philosophy_Humanities/예술.md"
+    "content/05_Philosophy_Humanities/예술.md"
   ],
   "예술은": [
-    "content/06_Philosophy_Humanities/예술.md"
+    "content/05_Philosophy_Humanities/예술.md"
   ],
   "예술의": [
-    "content/06_Philosophy_Humanities/예술.md",
-    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+    "content/05_Philosophy_Humanities/예술.md",
+    "content/05_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
   ],
   "이솝 우화": [
-    "content/06_Philosophy_Humanities/이솝 우화.md"
+    "content/05_Philosophy_Humanities/이솝 우화.md"
   ],
   "QR": [
-    "content/06_Philosophy_Humanities/이솝 우화.md"
+    "content/05_Philosophy_Humanities/이솝 우화.md"
   ],
   "마라": [
-    "content/06_Philosophy_Humanities/이솝 우화.md"
+    "content/05_Philosophy_Humanities/이솝 우화.md"
   ],
   "포도": [
-    "content/06_Philosophy_Humanities/이솝 우화.md"
+    "content/05_Philosophy_Humanities/이솝 우화.md"
   ],
   "인간은 보여야지 믿는다": [
-    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md"
+    "content/05_Philosophy_Humanities/인간은 보여야지 믿는다.md"
   ],
   "물자체": [
-    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md"
+    "content/05_Philosophy_Humanities/인간은 보여야지 믿는다.md"
   ],
   "믿는다": [
-    "content/06_Philosophy_Humanities/인간은 보여야지 믿는다.md"
+    "content/05_Philosophy_Humanities/인간은 보여야지 믿는다.md"
   ],
   "자기동일성": [
-    "content/06_Philosophy_Humanities/자기동일성.md"
+    "content/05_Philosophy_Humanities/자기동일성.md"
   ],
   "않는": [
-    "content/06_Philosophy_Humanities/자기동일성.md"
+    "content/05_Philosophy_Humanities/자기동일성.md"
   ],
   "변하지": [
-    "content/06_Philosophy_Humanities/자기동일성.md"
+    "content/05_Philosophy_Humanities/자기동일성.md"
   ],
   "자기수용감각": [
-    "content/06_Philosophy_Humanities/자기수용감각.md"
+    "content/05_Philosophy_Humanities/자기수용감각.md"
   ],
   "근육": [
-    "content/06_Philosophy_Humanities/자기수용감각.md"
+    "content/05_Philosophy_Humanities/자기수용감각.md"
   ],
   "몸의": [
-    "content/06_Philosophy_Humanities/자기수용감각.md"
+    "content/05_Philosophy_Humanities/자기수용감각.md"
   ],
   "관절의": [
-    "content/06_Philosophy_Humanities/자기수용감각.md"
+    "content/05_Philosophy_Humanities/자기수용감각.md"
   ],
   "장자": [
-    "content/06_Philosophy_Humanities/장자.md"
+    "content/05_Philosophy_Humanities/장자.md"
   ],
   "고전": [
-    "content/06_Philosophy_Humanities/장자.md"
+    "content/05_Philosophy_Humanities/장자.md"
   ],
   "대붕": [
-    "content/06_Philosophy_Humanities/장자.md"
+    "content/05_Philosophy_Humanities/장자.md"
   ],
   "칼을": [
-    "content/06_Philosophy_Humanities/장자.md"
+    "content/05_Philosophy_Humanities/장자.md"
   ],
   "사람은": [
-    "content/06_Philosophy_Humanities/장자.md"
+    "content/05_Philosophy_Humanities/장자.md"
   ],
   "소요유": [
-    "content/06_Philosophy_Humanities/장자.md"
+    "content/05_Philosophy_Humanities/장자.md"
   ],
   "질병 분류표": [
-    "content/06_Philosophy_Humanities/질병 분류표.md"
+    "content/05_Philosophy_Humanities/질병 분류표.md"
   ],
   "질병": [
-    "content/06_Philosophy_Humanities/질병 분류표.md"
+    "content/05_Philosophy_Humanities/질병 분류표.md"
   ],
   "분류표": [
-    "content/06_Philosophy_Humanities/질병 분류표.md"
+    "content/05_Philosophy_Humanities/질병 분류표.md"
   ],
   "칸트": [
-    "content/06_Philosophy_Humanities/철학.md",
-    "content/06_Philosophy_Humanities/칸트.md"
+    "content/05_Philosophy_Humanities/철학.md",
+    "content/05_Philosophy_Humanities/칸트.md"
   ],
   "플라톤": [
-    "content/06_Philosophy_Humanities/철학.md"
+    "content/05_Philosophy_Humanities/철학.md"
   ],
   "철학대철학": [
-    "content/06_Philosophy_Humanities/철학대철학.md"
+    "content/05_Philosophy_Humanities/철학대철학.md"
   ],
   "경향": [
-    "content/06_Philosophy_Humanities/철학대철학.md"
+    "content/05_Philosophy_Humanities/철학대철학.md"
   ],
   "동양": [
-    "content/06_Philosophy_Humanities/철학대철학.md"
+    "content/05_Philosophy_Humanities/철학대철학.md"
   ],
   "서양": [
-    "content/06_Philosophy_Humanities/철학대철학.md"
+    "content/05_Philosophy_Humanities/철학대철학.md"
   ],
   "주체": [
-    "content/06_Philosophy_Humanities/철학대철학.md"
+    "content/05_Philosophy_Humanities/철학대철학.md"
   ],
   "비판": [
-    "content/06_Philosophy_Humanities/칸트.md"
+    "content/05_Philosophy_Humanities/칸트.md"
   ],
   "초월": [
-    "content/06_Philosophy_Humanities/칸트.md"
+    "content/05_Philosophy_Humanities/칸트.md"
   ],
   "칸트가": [
-    "content/06_Philosophy_Humanities/칸트.md"
+    "content/05_Philosophy_Humanities/칸트.md"
   ],
   "칼의 노래": [
-    "content/06_Philosophy_Humanities/칼의 노래.md"
+    "content/05_Philosophy_Humanities/칼의 노래.md"
   ],
   "노래": [
-    "content/06_Philosophy_Humanities/칼의 노래.md"
+    "content/05_Philosophy_Humanities/칼의 노래.md"
   ],
   "이길": [
-    "content/06_Philosophy_Humanities/칼의 노래.md"
+    "content/05_Philosophy_Humanities/칼의 노래.md"
   ],
   "있을": [
-    "content/06_Philosophy_Humanities/칼의 노래.md"
+    "content/05_Philosophy_Humanities/칼의 노래.md"
   ],
   "칼의": [
-    "content/06_Philosophy_Humanities/칼의 노래.md"
+    "content/05_Philosophy_Humanities/칼의 노래.md"
   ],
   "파르테논 신전": [
-    "content/06_Philosophy_Humanities/파르테논 신전.md"
+    "content/05_Philosophy_Humanities/파르테논 신전.md"
   ],
   "기둥": [
-    "content/06_Philosophy_Humanities/파르테논 신전.md"
+    "content/05_Philosophy_Humanities/파르테논 신전.md"
   ],
   "신전": [
-    "content/06_Philosophy_Humanities/파르테논 신전.md"
+    "content/05_Philosophy_Humanities/파르테논 신전.md"
   ],
   "황금": [
-    "content/06_Philosophy_Humanities/파르테논 신전.md"
+    "content/05_Philosophy_Humanities/파르테논 신전.md"
   ],
   "평등": [
-    "content/06_Philosophy_Humanities/평등.md"
+    "content/05_Philosophy_Humanities/평등.md"
   ],
   "OK": [
-    "content/06_Philosophy_Humanities/평등.md"
+    "content/05_Philosophy_Humanities/평등.md"
   ],
   "가령": [
-    "content/06_Philosophy_Humanities/평등.md"
+    "content/05_Philosophy_Humanities/평등.md"
   ],
   "기회": [
-    "content/06_Philosophy_Humanities/평등.md"
+    "content/05_Philosophy_Humanities/평등.md"
   ],
   "기회의": [
-    "content/06_Philosophy_Humanities/평등.md"
+    "content/05_Philosophy_Humanities/평등.md"
   ],
   "표상": [
-    "content/06_Philosophy_Humanities/표상.md"
+    "content/05_Philosophy_Humanities/표상.md"
   ],
   "지각": [
-    "content/06_Philosophy_Humanities/표상.md"
+    "content/05_Philosophy_Humanities/표상.md"
   ],
   "행복": [
-    "content/06_Philosophy_Humanities/행복.md"
+    "content/05_Philosophy_Humanities/행복.md"
   ],
   "그들의": [
-    "content/06_Philosophy_Humanities/행복.md"
+    "content/05_Philosophy_Humanities/행복.md"
   ],
   "신체와": [
-    "content/06_Philosophy_Humanities/행복.md"
+    "content/05_Philosophy_Humanities/행복.md"
   ],
   "화, 이해하면 사라진다.": [
-    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+    "content/05_Philosophy_Humanities/화, 이해하면 사라진다.md"
   ],
   "아는": [
-    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+    "content/05_Philosophy_Humanities/화, 이해하면 사라진다.md"
   ],
   "대상은": [
-    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+    "content/05_Philosophy_Humanities/화, 이해하면 사라진다.md"
   ],
   "대상을": [
-    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+    "content/05_Philosophy_Humanities/화, 이해하면 사라진다.md"
   ],
   "마음이": [
-    "content/06_Philosophy_Humanities/화, 이해하면 사라진다..md"
+    "content/05_Philosophy_Humanities/화, 이해하면 사라진다.md"
   ],
   "화석연료": [
-    "content/06_Philosophy_Humanities/화석연료.md"
+    "content/05_Philosophy_Humanities/화석연료.md"
   ],
   "에너지": [
-    "content/06_Philosophy_Humanities/화석연료.md"
+    "content/05_Philosophy_Humanities/화석연료.md"
   ],
   "EBITDA": [
-    "content/07_Economics_Finance/EBITDA.md"
+    "content/06_Economics_Finance/EBITDA.md"
   ],
   "EV": [
-    "content/07_Economics_Finance/EBITDA.md"
+    "content/06_Economics_Finance/EBITDA.md"
   ],
   "경제": [
-    "content/07_Economics_Finance/EBITDA.md",
-    "content/07_Economics_Finance/PBR.md",
-    "content/07_Economics_Finance/PDR.md",
-    "content/07_Economics_Finance/PEG.md",
-    "content/07_Economics_Finance/PER.md",
-    "content/07_Economics_Finance/기준금리.md",
-    "content/07_Economics_Finance/민영화.md",
-    "content/07_Economics_Finance/배당금.md",
-    "content/07_Economics_Finance/밸류 트랩.md",
-    "content/07_Economics_Finance/보통주.md",
-    "content/07_Economics_Finance/액면가.md",
-    "content/07_Economics_Finance/우선주.md",
-    "content/07_Economics_Finance/위험.md",
-    "content/07_Economics_Finance/자본금.md",
-    "content/07_Economics_Finance/퇴직연금.md",
-    "content/07_Economics_Finance/현금없는 사회.md",
-    "content/07_Economics_Finance/넛지.md",
-    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md",
-    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md",
-    "content/07_Economics_Finance/운의 알고리즘.md",
-    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md",
-    "content/07_Economics_Finance/존리의 금융문맹 탈출.md",
-    "content/07_Economics_Finance/존리의 부자되기 습관.md",
-    "content/07_Economics_Finance/하버드 시간관리.md",
-    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md",
-    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+    "content/06_Economics_Finance/EBITDA.md",
+    "content/06_Economics_Finance/PBR.md",
+    "content/06_Economics_Finance/PDR.md",
+    "content/06_Economics_Finance/PEG.md",
+    "content/06_Economics_Finance/PER.md",
+    "content/06_Economics_Finance/기준금리.md",
+    "content/06_Economics_Finance/민영화.md",
+    "content/06_Economics_Finance/배당금.md",
+    "content/06_Economics_Finance/밸류 트랩.md",
+    "content/06_Economics_Finance/보통주.md",
+    "content/06_Economics_Finance/액면가.md",
+    "content/06_Economics_Finance/우선주.md",
+    "content/06_Economics_Finance/위험.md",
+    "content/06_Economics_Finance/자본금.md",
+    "content/06_Economics_Finance/퇴직연금.md",
+    "content/06_Economics_Finance/현금없는 사회.md",
+    "content/06_Economics_Finance/넛지.md",
+    "content/06_Economics_Finance/부자 아빠 가난한 아빠.md",
+    "content/06_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md",
+    "content/06_Economics_Finance/운의 알고리즘.md",
+    "content/06_Economics_Finance/저는 주식투자가 처음인데요.md",
+    "content/06_Economics_Finance/존리의 금융문맹 탈출.md",
+    "content/06_Economics_Finance/존리의 부자되기 습관.md",
+    "content/06_Economics_Finance/하버드 시간관리.md",
+    "content/06_Economics_Finance/하버드 첫 강의 시간관리 수업.md",
+    "content/06_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
   ],
   "금융": [
-    "content/07_Economics_Finance/EBITDA.md",
-    "content/07_Economics_Finance/PBR.md",
-    "content/07_Economics_Finance/PDR.md",
-    "content/07_Economics_Finance/PEG.md",
-    "content/07_Economics_Finance/PER.md",
-    "content/07_Economics_Finance/기준금리.md",
-    "content/07_Economics_Finance/민영화.md",
-    "content/07_Economics_Finance/배당금.md",
-    "content/07_Economics_Finance/밸류 트랩.md",
-    "content/07_Economics_Finance/보통주.md",
-    "content/07_Economics_Finance/액면가.md",
-    "content/07_Economics_Finance/우선주.md",
-    "content/07_Economics_Finance/위험.md",
-    "content/07_Economics_Finance/자본금.md",
-    "content/07_Economics_Finance/퇴직연금.md",
-    "content/07_Economics_Finance/현금없는 사회.md",
-    "content/07_Economics_Finance/넛지.md",
-    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md",
-    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md",
-    "content/07_Economics_Finance/운의 알고리즘.md",
-    "content/07_Economics_Finance/존리의 금융문맹 탈출.md",
-    "content/07_Economics_Finance/존리의 부자되기 습관.md",
-    "content/07_Economics_Finance/하버드 시간관리.md",
-    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+    "content/06_Economics_Finance/EBITDA.md",
+    "content/06_Economics_Finance/PBR.md",
+    "content/06_Economics_Finance/PDR.md",
+    "content/06_Economics_Finance/PEG.md",
+    "content/06_Economics_Finance/PER.md",
+    "content/06_Economics_Finance/기준금리.md",
+    "content/06_Economics_Finance/민영화.md",
+    "content/06_Economics_Finance/배당금.md",
+    "content/06_Economics_Finance/밸류 트랩.md",
+    "content/06_Economics_Finance/보통주.md",
+    "content/06_Economics_Finance/액면가.md",
+    "content/06_Economics_Finance/우선주.md",
+    "content/06_Economics_Finance/위험.md",
+    "content/06_Economics_Finance/자본금.md",
+    "content/06_Economics_Finance/퇴직연금.md",
+    "content/06_Economics_Finance/현금없는 사회.md",
+    "content/06_Economics_Finance/넛지.md",
+    "content/06_Economics_Finance/부자 아빠 가난한 아빠.md",
+    "content/06_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md",
+    "content/06_Economics_Finance/운의 알고리즘.md",
+    "content/06_Economics_Finance/존리의 금융문맹 탈출.md",
+    "content/06_Economics_Finance/존리의 부자되기 습관.md",
+    "content/06_Economics_Finance/하버드 시간관리.md",
+    "content/06_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
   ],
   "더한": [
-    "content/07_Economics_Finance/EBITDA.md"
+    "content/06_Economics_Finance/EBITDA.md"
   ],
   "PBR": [
-    "content/07_Economics_Finance/PBR.md"
+    "content/06_Economics_Finance/PBR.md"
   ],
   "높은": [
-    "content/07_Economics_Finance/PBR.md"
+    "content/06_Economics_Finance/PBR.md"
   ],
   "주식": [
-    "content/07_Economics_Finance/PBR.md",
-    "content/07_Economics_Finance/PER.md",
-    "content/07_Economics_Finance/가치투자.md",
-    "content/07_Economics_Finance/배당금.md",
-    "content/07_Economics_Finance/액면가.md",
-    "content/07_Economics_Finance/부의 시작.md",
-    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md",
-    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+    "content/06_Economics_Finance/PBR.md",
+    "content/06_Economics_Finance/PER.md",
+    "content/06_Economics_Finance/가치투자.md",
+    "content/06_Economics_Finance/배당금.md",
+    "content/06_Economics_Finance/액면가.md",
+    "content/06_Economics_Finance/부의 시작.md",
+    "content/06_Economics_Finance/저는 주식투자가 처음인데요.md",
+    "content/06_Economics_Finance/주식 공부 5일 완성.md"
   ],
   "미래": [
-    "content/07_Economics_Finance/PDR.md"
+    "content/06_Economics_Finance/PDR.md"
   ],
   "이란": [
-    "content/07_Economics_Finance/PDR.md"
+    "content/06_Economics_Finance/PDR.md"
   ],
   "PEG": [
-    "content/07_Economics_Finance/PEG.md"
+    "content/06_Economics_Finance/PEG.md"
   ],
   "값은": [
-    "content/07_Economics_Finance/PEG.md"
+    "content/06_Economics_Finance/PEG.md"
   ],
   "보통": [
-    "content/07_Economics_Finance/PEG.md"
+    "content/06_Economics_Finance/PEG.md"
   ],
   "가치투자": [
-    "content/07_Economics_Finance/가치투자.md"
+    "content/06_Economics_Finance/가치투자.md"
   ],
   "두는": [
-    "content/07_Economics_Finance/가치투자.md"
+    "content/06_Economics_Finance/가치투자.md"
   ],
   "재테크": [
-    "content/07_Economics_Finance/가치투자.md",
-    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+    "content/06_Economics_Finance/가치투자.md",
+    "content/06_Economics_Finance/주식 공부 5일 완성.md"
   ],
   "기준금리": [
-    "content/07_Economics_Finance/기준금리.md"
+    "content/06_Economics_Finance/기준금리.md"
   ],
   "RP": [
-    "content/07_Economics_Finance/기준금리.md"
+    "content/06_Economics_Finance/기준금리.md"
   ],
   "일물": [
-    "content/07_Economics_Finance/기준금리.md"
+    "content/06_Economics_Finance/기준금리.md"
   ],
   "민영화": [
-    "content/07_Economics_Finance/민영화.md"
+    "content/06_Economics_Finance/민영화.md"
   ],
   "맞다": [
-    "content/07_Economics_Finance/민영화.md"
+    "content/06_Economics_Finance/민영화.md"
   ],
   "배당금": [
-    "content/07_Economics_Finance/배당금.md"
+    "content/06_Economics_Finance/배당금.md"
   ],
   "배당부": [
-    "content/07_Economics_Finance/배당금.md"
+    "content/06_Economics_Finance/배당금.md"
   ],
   "밸류 트랩": [
-    "content/07_Economics_Finance/밸류 트랩.md"
+    "content/06_Economics_Finance/밸류 트랩.md"
   ],
   "밸류": [
-    "content/07_Economics_Finance/밸류 트랩.md"
+    "content/06_Economics_Finance/밸류 트랩.md"
   ],
   "트랩": [
-    "content/07_Economics_Finance/밸류 트랩.md"
+    "content/06_Economics_Finance/밸류 트랩.md"
   ],
   "한국": [
-    "content/07_Economics_Finance/밸류 트랩.md"
+    "content/06_Economics_Finance/밸류 트랩.md"
   ],
   "보통주": [
-    "content/07_Economics_Finance/보통주.md"
+    "content/06_Economics_Finance/보통주.md"
   ],
   "액면가": [
-    "content/07_Economics_Finance/액면가.md"
+    "content/06_Economics_Finance/액면가.md"
   ],
   "가격": [
-    "content/07_Economics_Finance/액면가.md"
+    "content/06_Economics_Finance/액면가.md"
   ],
   "발행": [
-    "content/07_Economics_Finance/액면가.md"
+    "content/06_Economics_Finance/액면가.md"
   ],
   "우선주": [
-    "content/07_Economics_Finance/우선주.md"
+    "content/06_Economics_Finance/우선주.md"
   ],
   "위험": [
-    "content/07_Economics_Finance/위험.md"
+    "content/06_Economics_Finance/위험.md"
   ],
   "변동": [
-    "content/07_Economics_Finance/위험.md"
+    "content/06_Economics_Finance/위험.md"
   ],
   "손실": [
-    "content/07_Economics_Finance/위험.md"
+    "content/06_Economics_Finance/위험.md"
   ],
   "MDD": [
-    "content/07_Economics_Finance/위험.md"
+    "content/06_Economics_Finance/위험.md"
   ],
   "자본금": [
-    "content/07_Economics_Finance/자본금.md"
+    "content/06_Economics_Finance/자본금.md"
   ],
   "범위": [
-    "content/07_Economics_Finance/자본금.md",
+    "content/06_Economics_Finance/자본금.md",
     "content/02_IT_Tech/Float Type.md",
     "content/02_IT_Tech/Int Type.md"
   ],
   "증자할": [
-    "content/07_Economics_Finance/자본금.md"
+    "content/06_Economics_Finance/자본금.md"
   ],
   "구성된다": [
-    "content/07_Economics_Finance/자본금.md"
+    "content/06_Economics_Finance/자본금.md"
   ],
   "퇴직연금": [
-    "content/07_Economics_Finance/퇴직연금.md"
+    "content/06_Economics_Finance/퇴직연금.md"
   ],
   "DC": [
-    "content/07_Economics_Finance/퇴직연금.md"
+    "content/06_Economics_Finance/퇴직연금.md"
   ],
   "현금없는 사회": [
-    "content/07_Economics_Finance/현금없는 사회.md"
+    "content/06_Economics_Finance/현금없는 사회.md"
   ],
   "사회": [
-    "content/07_Economics_Finance/현금없는 사회.md"
+    "content/06_Economics_Finance/현금없는 사회.md"
   ],
   "사회가": [
-    "content/07_Economics_Finance/현금없는 사회.md"
+    "content/06_Economics_Finance/현금없는 사회.md"
   ],
   "뇌의 한계": [
-    "content/08_Insights/뇌의 한계.md"
+    "content/07_Insights/뇌의 한계.md"
   ],
   "뇌의": [
-    "content/08_Insights/뇌의 한계.md"
+    "content/07_Insights/뇌의 한계.md"
   ],
   "한계": [
-    "content/08_Insights/뇌의 한계.md",
-    "content/08_Insights/한계.md",
+    "content/07_Insights/뇌의 한계.md",
+    "content/07_Insights/한계.md",
     "content/01_UX_Design/디자인씽킹.md"
   ],
   "한계가": [
-    "content/08_Insights/뇌의 한계.md"
+    "content/07_Insights/뇌의 한계.md"
   ],
   "인사이트": [
-    "content/08_Insights/뇌의 한계.md",
-    "content/08_Insights/사람들에게 반감을 사는 방법.md",
-    "content/08_Insights/사람의 특징.md",
-    "content/08_Insights/아집이 생기는 것에 대해서.md",
-    "content/08_Insights/제태크 수단에 대해서.md",
-    "content/08_Insights/조커.md",
-    "content/08_Insights/한계.md",
-    "content/08_Insights/인간관계론.md",
-    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
-    "content/08_Insights/자기관리론.md"
+    "content/07_Insights/뇌의 한계.md",
+    "content/07_Insights/사람들에게 반감을 사는 방법.md",
+    "content/07_Insights/사람의 특징.md",
+    "content/07_Insights/아집이 생기는 것에 대해서.md",
+    "content/07_Insights/제태크 수단에 대해서.md",
+    "content/07_Insights/조커.md",
+    "content/07_Insights/한계.md",
+    "content/07_Insights/인간관계론.md",
+    "content/07_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md",
+    "content/07_Insights/자기관리론.md"
   ],
   "사람들에게 반감을 사는 방법": [
-    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+    "content/07_Insights/사람들에게 반감을 사는 방법.md"
   ],
   "그냥": [
-    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+    "content/07_Insights/사람들에게 반감을 사는 방법.md"
   ],
   "하지": [
-    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+    "content/07_Insights/사람들에게 반감을 사는 방법.md"
   ],
   "정치적": [
-    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+    "content/07_Insights/사람들에게 반감을 사는 방법.md"
   ],
   "주장이": [
-    "content/08_Insights/사람들에게 반감을 사는 방법.md"
+    "content/07_Insights/사람들에게 반감을 사는 방법.md"
   ],
   "사람의 특징": [
-    "content/08_Insights/사람의 특징.md"
+    "content/07_Insights/사람의 특징.md"
   ],
   "알고": [
-    "content/08_Insights/사람의 특징.md"
+    "content/07_Insights/사람의 특징.md"
   ],
   "특징": [
-    "content/08_Insights/사람의 특징.md"
+    "content/07_Insights/사람의 특징.md"
   ],
   "사람의": [
-    "content/08_Insights/사람의 특징.md"
+    "content/07_Insights/사람의 특징.md"
   ],
   "자기개발": [
-    "content/08_Insights/사람의 특징.md",
-    "content/08_Insights/조커.md",
-    "content/08_Insights/한계.md"
+    "content/07_Insights/사람의 특징.md",
+    "content/07_Insights/조커.md",
+    "content/07_Insights/한계.md"
   ],
   "아집이 생기는 것에 대해서": [
-    "content/08_Insights/아집이 생기는 것에 대해서.md"
+    "content/07_Insights/아집이 생기는 것에 대해서.md"
   ],
   "믿음이": [
-    "content/08_Insights/아집이 생기는 것에 대해서.md"
+    "content/07_Insights/아집이 생기는 것에 대해서.md"
   ],
   "있어야": [
-    "content/08_Insights/아집이 생기는 것에 대해서.md"
+    "content/07_Insights/아집이 생기는 것에 대해서.md"
   ],
   "주장을": [
-    "content/08_Insights/아집이 생기는 것에 대해서.md"
+    "content/07_Insights/아집이 생기는 것에 대해서.md"
   ],
   "과학자의": [
-    "content/08_Insights/아집이 생기는 것에 대해서.md"
+    "content/07_Insights/아집이 생기는 것에 대해서.md"
   ],
   "제태크 수단에 대해서": [
-    "content/08_Insights/제태크 수단에 대해서.md"
+    "content/07_Insights/제태크 수단에 대해서.md"
   ],
   "내가": [
-    "content/08_Insights/제태크 수단에 대해서.md",
-    "content/08_Insights/한계.md",
-    "content/08_Insights/자기관리론.md"
+    "content/07_Insights/제태크 수단에 대해서.md",
+    "content/07_Insights/한계.md",
+    "content/07_Insights/자기관리론.md"
   ],
   "만원": [
-    "content/08_Insights/제태크 수단에 대해서.md"
+    "content/07_Insights/제태크 수단에 대해서.md"
   ],
   "매년": [
-    "content/08_Insights/제태크 수단에 대해서.md"
+    "content/07_Insights/제태크 수단에 대해서.md"
   ],
   "만원씩": [
-    "content/08_Insights/제태크 수단에 대해서.md"
+    "content/07_Insights/제태크 수단에 대해서.md"
   ],
   "조커": [
-    "content/08_Insights/조커.md"
+    "content/07_Insights/조커.md"
   ],
   "순수": [
-    "content/08_Insights/조커.md"
+    "content/07_Insights/조커.md"
   ],
   "웃음": [
-    "content/08_Insights/조커.md"
+    "content/07_Insights/조커.md"
   ],
   "사연이": [
-    "content/08_Insights/조커.md"
+    "content/07_Insights/조커.md"
   ],
   "조커는": [
-    "content/08_Insights/조커.md"
+    "content/07_Insights/조커.md"
   ],
   "타이 로페즈": [
-    "content/08_Insights/타이 로페즈.md"
+    "content/07_Insights/타이 로페즈.md"
   ],
   "B1": [
-    "content/08_Insights/타이 로페즈.md"
+    "content/07_Insights/타이 로페즈.md"
   ],
   "보게": [
-    "content/08_Insights/타이 로페즈.md"
+    "content/07_Insights/타이 로페즈.md"
   ],
   "절대": [
-    "content/08_Insights/타이 로페즈.md"
+    "content/07_Insights/타이 로페즈.md"
   ],
   "당신의": [
-    "content/08_Insights/타이 로페즈.md"
+    "content/07_Insights/타이 로페즈.md"
   ],
   "현재": [
-    "content/08_Insights/한계.md"
+    "content/07_Insights/한계.md"
   ],
   "약점이": [
-    "content/08_Insights/한계.md"
+    "content/07_Insights/한계.md"
   ],
   "index": [
     "content/index.md"
@@ -6525,14 +6525,14 @@
     "content/01_UX_Design/USER RESEARCH.md"
   ],
   "측면": [
-    "content/01_UX_Design/UX  불변의 법칙.md"
+    "content/01_UX_Design/UX 불변의 법칙.md"
   ],
   "RAE": [
-    "content/01_UX_Design/UX  불변의 법칙.md"
+    "content/01_UX_Design/UX 불변의 법칙.md"
   ],
   "스타트업": [
     "content/01_UX_Design/UX 기획의 기술.md",
-    "content/05_Marketing_Business/파이프라인.md"
+    "content/04_Marketing_Business/파이프라인.md"
   ],
   "즐거움": [
     "content/01_UX_Design/감성 디자인.md"
@@ -6545,8 +6545,8 @@
   ],
   "책 소개": [
     "content/01_UX_Design/디자인과 인간심리.md",
-    "content/06_Philosophy_Humanities/마지막 몰입.md",
-    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+    "content/05_Philosophy_Humanities/마지막 몰입.md",
+    "content/06_Economics_Finance/주식 공부 5일 완성.md"
   ],
   "디자인씽킹": [
     "content/01_UX_Design/디자인씽킹.md"
@@ -6670,375 +6670,375 @@
     "content/03_AI_ML/정량적 데이터.md"
   ],
   "밀도": [
-    "content/05_Marketing_Business/규칙 없음.md"
+    "content/04_Marketing_Business/규칙 없음.md"
   ],
   "없음": [
-    "content/05_Marketing_Business/규칙 없음.md"
+    "content/04_Marketing_Business/규칙 없음.md"
   ],
   "인재": [
-    "content/05_Marketing_Business/규칙 없음.md"
+    "content/04_Marketing_Business/규칙 없음.md"
   ],
   "CEO": [
-    "content/05_Marketing_Business/규칙 없음.md"
+    "content/04_Marketing_Business/규칙 없음.md"
   ],
   "리더십": [
-    "content/05_Marketing_Business/규칙 없음.md"
+    "content/04_Marketing_Business/규칙 없음.md"
   ],
   "PMF": [
-    "content/05_Marketing_Business/그로스 해킹.md"
+    "content/04_Marketing_Business/그로스 해킹.md"
   ],
   "그로스": [
-    "content/05_Marketing_Business/그로스 해킹.md"
+    "content/04_Marketing_Business/그로스 해킹.md"
   ],
   "성장을": [
-    "content/05_Marketing_Business/그로스 해킹.md"
+    "content/04_Marketing_Business/그로스 해킹.md"
   ],
   "아니라": [
-    "content/05_Marketing_Business/그로스 해킹.md",
-    "content/06_Philosophy_Humanities/Grit.md",
-    "content/06_Philosophy_Humanities/동물농장.md",
-    "content/06_Philosophy_Humanities/생각의 탄생.md",
-    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md",
-    "content/07_Economics_Finance/인간 본성의 법칙.md",
-    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+    "content/04_Marketing_Business/그로스 해킹.md",
+    "content/05_Philosophy_Humanities/Grit.md",
+    "content/05_Philosophy_Humanities/동물농장.md",
+    "content/05_Philosophy_Humanities/생각의 탄생.md",
+    "content/05_Philosophy_Humanities/역사란 무엇인가 1.md",
+    "content/06_Economics_Finance/인간 본성의 법칙.md",
+    "content/06_Economics_Finance/인간 욕망의 법칙.md"
   ],
   "공식": [
-    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+    "content/04_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
   ],
   "사업": [
-    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+    "content/04_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
   ],
   "원형": [
-    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+    "content/04_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
   ],
   "캐시": [
-    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+    "content/04_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
   ],
   "블로그": [
-    "content/05_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
+    "content/04_Marketing_Business/무자본으로 부의 추월차선 콘텐츠 만들기.md"
   ],
   "CI": [
-    "content/05_Marketing_Business/브랜드 3.0.md"
+    "content/04_Marketing_Business/브랜드 3.0.md"
   ],
   "B2B": [
-    "content/05_Marketing_Business/브랜드 3.0.md"
+    "content/04_Marketing_Business/브랜드 3.0.md"
   ],
   "꼬리표": [
-    "content/05_Marketing_Business/브랜드 3.0.md"
+    "content/04_Marketing_Business/브랜드 3.0.md"
   ],
   "문제가": [
-    "content/05_Marketing_Business/업스트림.md"
+    "content/04_Marketing_Business/업스트림.md"
   ],
   "TV": [
-    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+    "content/04_Marketing_Business/장수 브랜드의 성공 비결.md"
   ],
   "신뢰": [
-    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+    "content/04_Marketing_Business/장수 브랜드의 성공 비결.md"
   ],
   "일관": [
-    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+    "content/04_Marketing_Business/장수 브랜드의 성공 비결.md"
   ],
   "장수": [
-    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+    "content/04_Marketing_Business/장수 브랜드의 성공 비결.md"
   ],
   "IBC": [
-    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md"
+    "content/04_Marketing_Business/장수 브랜드의 성공 비결.md"
   ],
   "기업이": [
-    "content/05_Marketing_Business/장수 브랜드의 성공 비결.md",
-    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md"
+    "content/04_Marketing_Business/장수 브랜드의 성공 비결.md",
+    "content/06_Economics_Finance/저는 주식투자가 처음인데요.md"
   ],
   "코호트": [
-    "content/05_Marketing_Business/코호트.md"
+    "content/04_Marketing_Business/코호트.md"
   ],
   "가입": [
-    "content/05_Marketing_Business/코호트.md"
+    "content/04_Marketing_Business/코호트.md"
   ],
   "가치를": [
-    "content/05_Marketing_Business/파이프라인.md"
+    "content/04_Marketing_Business/파이프라인.md"
   ],
   "그릿이": [
-    "content/06_Philosophy_Humanities/Grit.md"
+    "content/05_Philosophy_Humanities/Grit.md"
   ],
   "의도적": [
-    "content/06_Philosophy_Humanities/Grit.md"
+    "content/05_Philosophy_Humanities/Grit.md"
   ],
   "Grit": [
-    "content/06_Philosophy_Humanities/Grit.md"
+    "content/05_Philosophy_Humanities/Grit.md"
   ],
   "복제": [
-    "content/06_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
+    "content/05_Philosophy_Humanities/기술 복제 시대의 예술작품.md"
   ],
   "현대": [
-    "content/06_Philosophy_Humanities/길가메시 프로젝트.md"
+    "content/05_Philosophy_Humanities/길가메시 프로젝트.md"
   ],
   "NAD": [
-    "content/06_Philosophy_Humanities/길가메시 프로젝트.md"
+    "content/05_Philosophy_Humanities/길가메시 프로젝트.md"
   ],
   "인류는": [
-    "content/06_Philosophy_Humanities/길가메시 프로젝트.md",
-    "content/06_Philosophy_Humanities/사피엔스.md"
+    "content/05_Philosophy_Humanities/길가메시 프로젝트.md",
+    "content/05_Philosophy_Humanities/사피엔스.md"
   ],
   "뇌는": [
-    "content/06_Philosophy_Humanities/마지막 몰입.md"
+    "content/05_Philosophy_Humanities/마지막 몰입.md"
   ],
   "뇌를": [
-    "content/06_Philosophy_Humanities/마지막 몰입.md"
+    "content/05_Philosophy_Humanities/마지막 몰입.md"
   ],
   "세계의": [
-    "content/06_Philosophy_Humanities/비트겐슈타인.md"
+    "content/05_Philosophy_Humanities/비트겐슈타인.md"
   ],
   "언어를": [
-    "content/06_Philosophy_Humanities/비트겐슈타인.md"
+    "content/05_Philosophy_Humanities/비트겐슈타인.md"
   ],
   "언어의": [
-    "content/06_Philosophy_Humanities/비트겐슈타인.md"
+    "content/05_Philosophy_Humanities/비트겐슈타인.md"
   ],
   "그린": [
-    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+    "content/05_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
   ],
   "CCS": [
-    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+    "content/05_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
   ],
   "GMO": [
-    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+    "content/05_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
   ],
   "SMR": [
-    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+    "content/05_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
   ],
   "개인의": [
-    "content/06_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
+    "content/05_Philosophy_Humanities/빌 게이츠, 기후재앙을 피하는 법.md"
   ],
   "유발": [
-    "content/06_Philosophy_Humanities/사피엔스.md"
+    "content/05_Philosophy_Humanities/사피엔스.md"
   ],
   "던지는": [
-    "content/06_Philosophy_Humanities/사피엔스.md"
+    "content/05_Philosophy_Humanities/사피엔스.md"
   ],
   "능력": [
-    "content/06_Philosophy_Humanities/생각의 탄생.md"
+    "content/05_Philosophy_Humanities/생각의 탄생.md"
   ],
   "샤르트르": [
-    "content/06_Philosophy_Humanities/샤르트르.md"
+    "content/05_Philosophy_Humanities/샤르트르.md"
   ],
   "본질에": [
-    "content/06_Philosophy_Humanities/샤르트르.md"
+    "content/05_Philosophy_Humanities/샤르트르.md"
   ],
   "소쉬르": [
-    "content/06_Philosophy_Humanities/소쉬르.md"
+    "content/05_Philosophy_Humanities/소쉬르.md"
   ],
   "기의": [
-    "content/06_Philosophy_Humanities/소쉬르.md"
+    "content/05_Philosophy_Humanities/소쉬르.md"
   ],
   "기표": [
-    "content/06_Philosophy_Humanities/소쉬르.md"
+    "content/05_Philosophy_Humanities/소쉬르.md"
   ],
   "미친": [
-    "content/06_Philosophy_Humanities/슈독.md"
+    "content/05_Philosophy_Humanities/슈독.md"
   ],
   "슈독": [
-    "content/06_Philosophy_Humanities/슈독.md"
+    "content/05_Philosophy_Humanities/슈독.md"
   ],
   "창업": [
-    "content/06_Philosophy_Humanities/슈독.md"
+    "content/05_Philosophy_Humanities/슈독.md"
   ],
   "IPO": [
-    "content/06_Philosophy_Humanities/슈독.md"
+    "content/05_Philosophy_Humanities/슈독.md"
   ],
   "MBA": [
-    "content/06_Philosophy_Humanities/슈독.md"
+    "content/05_Philosophy_Humanities/슈독.md"
   ],
   "나이키": [
-    "content/06_Philosophy_Humanities/슈독.md"
+    "content/05_Philosophy_Humanities/슈독.md"
   ],
   "역사란": [
-    "content/06_Philosophy_Humanities/역사란 무엇인가 1.md"
+    "content/05_Philosophy_Humanities/역사란 무엇인가 1.md"
   ],
   "루소는": [
-    "content/06_Philosophy_Humanities/인간 불평등 기원론.md"
+    "content/05_Philosophy_Humanities/인간 불평등 기원론.md"
   ],
   "루소의": [
-    "content/06_Philosophy_Humanities/인간 불평등 기원론.md"
+    "content/05_Philosophy_Humanities/인간 불평등 기원론.md"
   ],
   "적정기술": [
-    "content/06_Philosophy_Humanities/적정기술.md"
+    "content/05_Philosophy_Humanities/적정기술.md"
   ],
   "지속": [
-    "content/06_Philosophy_Humanities/적정기술.md"
+    "content/05_Philosophy_Humanities/적정기술.md"
   ],
   "펌프": [
-    "content/06_Philosophy_Humanities/적정기술.md"
+    "content/05_Philosophy_Humanities/적정기술.md"
   ],
   "한비자": [
-    "content/06_Philosophy_Humanities/한비자.md"
+    "content/05_Philosophy_Humanities/한비자.md"
   ],
   "그의": [
-    "content/06_Philosophy_Humanities/한비자.md"
+    "content/05_Philosophy_Humanities/한비자.md"
   ],
   "법가": [
-    "content/06_Philosophy_Humanities/한비자.md"
+    "content/05_Philosophy_Humanities/한비자.md"
   ],
   "인간관": [
-    "content/06_Philosophy_Humanities/한비자.md"
+    "content/05_Philosophy_Humanities/한비자.md"
   ],
   "넛지 — 선택을 설계하는 기술": [
-    "content/07_Economics_Finance/넛지.md"
+    "content/06_Economics_Finance/넛지.md"
   ],
   "넛지": [
-    "content/07_Economics_Finance/넛지.md"
+    "content/06_Economics_Finance/넛지.md"
   ],
   "일반": [
-    "content/07_Economics_Finance/부의 시작.md"
+    "content/06_Economics_Finance/부의 시작.md"
   ],
   "종목": [
-    "content/07_Economics_Finance/부의 시작.md"
+    "content/06_Economics_Finance/부의 시작.md"
   ],
   "ETF": [
-    "content/07_Economics_Finance/부의 시작.md",
-    "content/07_Economics_Finance/존리의 금융문맹 탈출.md"
+    "content/06_Economics_Finance/부의 시작.md",
+    "content/06_Economics_Finance/존리의 금융문맹 탈출.md"
   ],
   "부자": [
-    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md"
+    "content/06_Economics_Finance/부자 아빠 가난한 아빠.md"
   ],
   "아빠": [
-    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md"
+    "content/06_Economics_Finance/부자 아빠 가난한 아빠.md"
   ],
   "가난한": [
-    "content/07_Economics_Finance/부자 아빠 가난한 아빠.md"
+    "content/06_Economics_Finance/부자 아빠 가난한 아빠.md"
   ],
   "경제학": [
-    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+    "content/06_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
   ],
   "이유다": [
-    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+    "content/06_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
   ],
   "합리적": [
-    "content/07_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
+    "content/06_Economics_Finance/삶의 무기가 되는 쓸모있는 경제학.md"
   ],
   "바꿀": [
-    "content/07_Economics_Finance/운의 알고리즘.md"
+    "content/06_Economics_Finance/운의 알고리즘.md"
   ],
   "운세": [
-    "content/07_Economics_Finance/운의 알고리즘.md"
+    "content/06_Economics_Finance/운의 알고리즘.md"
   ],
   "운을": [
-    "content/07_Economics_Finance/운의 알고리즘.md"
+    "content/06_Economics_Finance/운의 알고리즘.md"
   ],
   "운의": [
-    "content/07_Economics_Finance/운의 알고리즘.md"
+    "content/06_Economics_Finance/운의 알고리즘.md"
   ],
   "인간": [
-    "content/07_Economics_Finance/인간 본성의 법칙.md"
+    "content/06_Economics_Finance/인간 본성의 법칙.md"
   ],
   "인문": [
-    "content/07_Economics_Finance/인간 본성의 법칙.md"
+    "content/06_Economics_Finance/인간 본성의 법칙.md"
   ],
   "처세": [
-    "content/07_Economics_Finance/인간 본성의 법칙.md"
+    "content/06_Economics_Finance/인간 본성의 법칙.md"
   ],
   "로버트": [
-    "content/07_Economics_Finance/인간 본성의 법칙.md"
+    "content/06_Economics_Finance/인간 본성의 법칙.md"
   ],
   "사람을": [
-    "content/07_Economics_Finance/인간 본성의 법칙.md",
-    "content/08_Insights/인간관계론.md"
+    "content/06_Economics_Finance/인간 본성의 법칙.md",
+    "content/07_Insights/인간관계론.md"
   ],
   "권력": [
-    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+    "content/06_Economics_Finance/인간 욕망의 법칙.md"
   ],
   "정치": [
-    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+    "content/06_Economics_Finance/인간 욕망의 법칙.md"
   ],
   "권력의": [
-    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+    "content/06_Economics_Finance/인간 욕망의 법칙.md"
   ],
   "심리학": [
-    "content/07_Economics_Finance/인간 욕망의 법칙.md"
+    "content/06_Economics_Finance/인간 욕망의 법칙.md"
   ],
   "초보": [
-    "content/07_Economics_Finance/저는 주식투자가 처음인데요.md"
+    "content/06_Economics_Finance/저는 주식투자가 처음인데요.md"
   ],
   "TDF": [
-    "content/07_Economics_Finance/존리의 금융문맹 탈출.md"
+    "content/06_Economics_Finance/존리의 금융문맹 탈출.md"
   ],
   "방식을": [
-    "content/07_Economics_Finance/존리의 금융문맹 탈출.md"
+    "content/06_Economics_Finance/존리의 금융문맹 탈출.md"
   ],
   "아니다": [
-    "content/07_Economics_Finance/존리의 금융문맹 탈출.md"
+    "content/06_Economics_Finance/존리의 금융문맹 탈출.md"
   ],
   "되지": [
-    "content/07_Economics_Finance/존리의 부자되기 습관.md"
+    "content/06_Economics_Finance/존리의 부자되기 습관.md"
   ],
   "리가": [
-    "content/07_Economics_Finance/존리의 부자되기 습관.md"
+    "content/06_Economics_Finance/존리의 부자되기 습관.md"
   ],
   "부자가": [
-    "content/07_Economics_Finance/존리의 부자되기 습관.md"
+    "content/06_Economics_Finance/존리의 부자되기 습관.md"
   ],
   "기초": [
-    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+    "content/06_Economics_Finance/주식 공부 5일 완성.md"
   ],
   "주식을": [
-    "content/07_Economics_Finance/주식 공부 5일 완성.md"
+    "content/06_Economics_Finance/주식 공부 5일 완성.md"
   ],
   "않은": [
-    "content/07_Economics_Finance/하버드 시간관리.md",
-    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+    "content/06_Economics_Finance/하버드 시간관리.md",
+    "content/06_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
   ],
   "일을": [
-    "content/07_Economics_Finance/하버드 시간관리.md",
-    "content/07_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
+    "content/06_Economics_Finance/하버드 시간관리.md",
+    "content/06_Economics_Finance/하버드 첫 강의 시간관리 수업.md"
   ],
   "망할": [
-    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+    "content/06_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
   ],
   "버블": [
-    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+    "content/06_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
   ],
   "기업을": [
-    "content/07_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
+    "content/06_Economics_Finance/한 권으로 끝내는 테마주 투자.md"
   ],
   "면접": [
-    "content/08_Insights/면접 바이블.md"
+    "content/07_Insights/면접 바이블.md"
   ],
   "이직": [
-    "content/08_Insights/면접 바이블.md"
+    "content/07_Insights/면접 바이블.md"
   ],
   "직무": [
-    "content/08_Insights/면접 바이블.md"
+    "content/07_Insights/면접 바이블.md"
   ],
   "독자가": [
-    "content/08_Insights/블로그 글쓰기.md"
+    "content/07_Insights/블로그 글쓰기.md"
   ],
   "읽히는": [
-    "content/08_Insights/블로그 글쓰기.md"
+    "content/07_Insights/블로그 글쓰기.md"
   ],
   "상대방의": [
-    "content/08_Insights/인간관계론.md"
+    "content/07_Insights/인간관계론.md"
   ],
   "상대방이": [
-    "content/08_Insights/인간관계론.md"
+    "content/07_Insights/인간관계론.md"
   ],
   "예비": [
-    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+    "content/07_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
   ],
   "임신": [
-    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+    "content/07_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
   ],
   "아빠가": [
-    "content/08_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
+    "content/07_Insights/임신한 아내를 위한 좋은 남편 프로젝트.md"
   ],
   "지금": [
-    "content/08_Insights/자기관리론.md"
+    "content/07_Insights/자기관리론.md"
   ],
   "CBT": [
-    "content/08_Insights/자기관리론.md"
+    "content/07_Insights/자기관리론.md"
   ],
   "걱정을": [
-    "content/08_Insights/자기관리론.md"
+    "content/07_Insights/자기관리론.md"
   ],
   "구체적인": [
-    "content/08_Insights/자기관리론.md"
+    "content/07_Insights/자기관리론.md"
   ]
 }

@@ -1,20 +1,20 @@
 ---
-title: "index"
-date: 2026-03-28
-tags: ["일반"]
-description: "<div class="index-intro"> 위 그래프에서 노드를 클릭하면 각 노트로 이동할 수 있습니다. 색상은 주제별 분류를 나타냅니다."
+title: "Supreme Note"
+date: 2026-08-31
+tags: ["일반", "meta"]
+description: "Supreme Note 디지털 가든에 오신 것을 환영합니다. 7대 지식 도메인과 590여 개의 상호 연결된 지식 노트를 탐색하세요."
 ---
 
 <div class="index-intro">
 
-**Welcome to my digital garden.** 생각의 씨앗을 심고, 연결하고, 키워가는 공간입니다.<br/>
-위 그래프에서 노드를 클릭하면 각 노트로 이동할 수 있습니다. 색상은 주제별 분류를 나타냅니다.
+**Welcome to Supreme Note Digital Garden.** 생각의 씨앗을 심고, 연결하고, 키워가는 지식 정원입니다.<br/>
+상단 그래프에서 노드를 클릭하거나 아래 카테고리별 핵심 노트를 통해 탐색할 수 있습니다.
 
 </div>
 
 <div class="stats-bar">
   <div class="stat-item">
-    <span class="stat-number">572</span>
+    <span class="stat-number">596</span>
     <span class="stat-label">Notes</span>
   </div>
   <div class="stat-item">
@@ -26,21 +26,25 @@ description: "<div class="index-intro"> 위 그래프에서 노드를 클릭하�
     <span class="stat-label">Domains</span>
   </div>
 </div>
-> ⚠️ 검증 필요: index 관련 실무 예시 보강 필요
 
-## 활용 및 발전방향
+## 📚 7대 지식 도메인
 
-- **실무 적용**: index 개념을 실제 프로젝트나 업무 상황에 직접 적용해 이해를 심화한다.
-- **연관 개념 학습**: 관련 노트와 연결하여 맥락을 넓히고 응용 범위를 확장한다.
-- **비교 분석**: 유사한 방법론·도구와 비교하며 장단점을 파악한다.
-- **참고 자료 탐색**: 공식 문서나 전문 서적을 통해 더 깊은 이해를 추구한다.
-- **사례 수집**: 실제 사례를 꾸준히 수집하여 이 노트를 발전시킨다.
+| 도메인 | 주요 주제 | 노트 수 |
+|---|---|:---:|
+| **[[01_UX_Design/UI|01. UX & UI 디자인]]** | UX/UI 설계, 서비스 기획, 사용자 리서치, 디자인 심리학 | 141 |
+| **[[02_IT_Tech/네트워크|02. IT & 테크]]** | 소프트웨어 공학, 아키텍처, 네트워크, 보안, 정보관리기술사 | 217 |
+| **[[03_AI_ML/딥러닝|03. AI & 머신러닝]]** | 머신러닝, 딥러닝, LLM, RAG, 생성형 AI, 멀티에이전트 | 84 |
+| **[[04_Marketing_Business/그로스 해킹|04. 마케팅 & 비즈니스]]** | 그로스 해킹, AARRR, 브랜딩, 비즈니스 모델, 마케팅 전략 | 55 |
+| **[[05_Philosophy_Humanities/사피엔스|05. 철학 & 인문학]]** | 서양/동양 철학, 인문학, 독서, 역사, 심리학 | 48 |
+| **[[06_Economics_Finance/가치투자|06. 경제 & 금융]]** | 가치투자, 거시경제, 재테크, 주식, 금융 지식 | 31 |
+| **[[07_Insights/인간관계론|07. 인사이트]]** | 자기개발, 생산성, 커뮤니케이션, 리더십 | 13 |
+| **[[00_Meta/Tags|00. 메타 & 색인]]** | 지식 관리(제텔카스텐), 태그 인덱스, 독서·강의 기록, 템플릿 | 6 |
 
-## 관련 노트
+---
 
-- [[01_UX_Design/ARIA|ARIA]] — 공유 키워드: `실제`, `이해를`
-- [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `실제`, `이해를`
-- [[01_UX_Design/Needs VS Wants|Needs VS Wants]] — 공유 키워드: `실제`, `이해를`
-- [[01_UX_Design/User Flow|User Flow]] — 공유 키워드: `실제`, `이해를`
-- [[01_UX_Design/개발 디스크립션|개발 디스크립션]] — 공유 키워드: `실제`, `이해를`
+## 🏷️ 빠른 탐색
 
+- [[00_Meta/Tags|🏷️ 태그 인덱스로 탐색하기]]
+- [[00_Meta/제텔카스텐|🧠 제텔카스텐 지식 관리 원칙]]
+- [[00_Meta/도서|📚 추천 도서 목록]]
+- [[00_Meta/강의|🎓 수강 강의 요약]]

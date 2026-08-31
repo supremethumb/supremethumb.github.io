@@ -130,3 +130,21 @@ pre {
     }
   }
 }
+
+/* Pretendard font for Mermaid diagrams */
+.mermaid,
+.mermaid svg,
+.mermaid text,
+.mermaid tspan,
+.mermaid .node text,
+.mermaid .nodeLabel,
+.mermaid .edgeLabel,
+.mermaid .label,
+.mermaid .cluster-label,
+.mermaid .cluster text,
+.mermaid .title-text,
+.mermaid-content svg,
+.mermaid-content text {
+  font-family: var(--bodyFont) !important;
+}
+

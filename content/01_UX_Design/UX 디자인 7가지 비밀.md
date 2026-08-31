@@ -213,7 +213,7 @@ description: "시스템 관점에서 UX 디자인을 넓게 본다"
 
 - [[00_Meta/강의|수강 기록 — 배움의 발자취]] — 공유 키워드: `UI`, `UX`, `디자인`
 - [[00_Meta/도서|읽은 책 목록 — 나를 만든 독서 아카이브]] — 공유 키워드: `UI`, `UX`, `디자인`
-- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UI`, `UX`, `디자인`
+- [[01_UX_Design/Custom CSS|Custom CSS]] — 공유 키워드: `UI`, `UX`, `디자인`
 - [[01_UX_Design/GUI|GUI]] — 공유 키워드: `UI`, `UX`, `ux`
 - [[01_UX_Design/UI|UI]] — 공유 키워드: `UI`, `UX`, `디자인`
 

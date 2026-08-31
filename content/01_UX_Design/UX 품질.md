@@ -23,5 +23,5 @@ description: "충돌하는 두 가지 중 더 나은 선택"
 - [[01_UX_Design/ATF|ATF]] — 공유 키워드: `UX`, `기획`, `디자인`
 - [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
 - [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `UX`, `기획`, `디자인`
-- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Custom CSS|Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
 

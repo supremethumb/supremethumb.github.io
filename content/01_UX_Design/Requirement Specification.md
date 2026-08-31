@@ -53,5 +53,5 @@ description: "요구사항 명세(Requirement Specification)는 사용자·이�
 - [[01_UX_Design/ATF|ATF]] — 공유 키워드: `UX`, `기획`, `디자인`
 - [[01_UX_Design/Backchannels|Backchannels]] — 공유 키워드: `UX`, `기획`, `디자인`
 - [[01_UX_Design/Bridging|Bridging]] — 공유 키워드: `UX`, `기획`, `디자인`
-- [[01_UX_Design/Custom CSS |Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
+- [[01_UX_Design/Custom CSS|Custom CSS]] — 공유 키워드: `UX`, `기획`, `디자인`
 

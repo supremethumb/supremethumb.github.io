@@ -181,6 +181,8 @@ const cssVars = [
   "--highlight",
   "--dark",
   "--darkgray",
+  "--bodyFont",
+  "--headerFont",
   "--codeFont",
 ] as const
 
@@ -225,7 +227,7 @@ document.addEventListener("nav", async () => {
       securityLevel: "loose",
       theme: darkMode ? "dark" : "base",
       themeVariables: {
-        fontFamily: computedStyleMap["--codeFont"],
+        fontFamily: computedStyleMap["--bodyFont"] || "Pretendard, system-ui, sans-serif",
         primaryColor: computedStyleMap["--light"],
         primaryTextColor: computedStyleMap["--darkgray"],
         primaryBorderColor: computedStyleMap["--tertiary"],
