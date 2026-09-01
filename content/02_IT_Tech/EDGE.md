@@ -2,7 +2,7 @@
 title: " edge"
 date: 2026-08-28
 tags:
-  - ca
+  - 컴퓨터아키텍처
   - digitalservice
 draft: false
 aliases:

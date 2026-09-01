@@ -2,7 +2,7 @@
 title: CXL (Compute Express Link)
 date: 2026-08-24
 tags:
-  - ca
+  - 컴퓨터아키텍처
 draft: false
 ---
 # CXL (Compute Express Link)

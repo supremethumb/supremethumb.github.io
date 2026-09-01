@@ -2,7 +2,7 @@
 title: GPU
 date: 2026-08-24
 tags:
-  - ca
+  - 컴퓨터아키텍처
   - ai
 draft: false
 ---

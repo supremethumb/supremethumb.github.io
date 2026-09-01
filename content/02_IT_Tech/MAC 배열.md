@@ -4,7 +4,7 @@ date: 2026-08-28
 tags:
   - ai
   - architecture
-  - ca
+  - 컴퓨터아키텍처
 draft: false
 ---
 # MAC 배열

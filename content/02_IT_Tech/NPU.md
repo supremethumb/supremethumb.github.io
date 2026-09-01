@@ -3,7 +3,7 @@ title: NPU(Neural Processing Unit)
 date: 2026-08-24
 tags:
   - ai
-  - ca
+  - 컴퓨터아키텍처
 draft: false
 aliases:
 ---
