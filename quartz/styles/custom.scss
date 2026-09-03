@@ -139,14 +139,30 @@
     }
   }
 
-  &.cat-ux::before { background: #E57373; }
-  &.cat-tech::before { background: #64B5F6; }
-  &.cat-ai::before { background: #81C784; }
-  &.cat-biz::before { background: #FFD54F; }
-  &.cat-phil::before { background: #BA68C8; }
-  &.cat-econ::before { background: #4DB6AC; }
-  &.cat-insight::before { background: #FF8A65; }
-  &.cat-meta::before { background: #90A4AE; }
+  &.cat-ux::before {
+    background: #e57373;
+  }
+  &.cat-tech::before {
+    background: #64b5f6;
+  }
+  &.cat-ai::before {
+    background: #81c784;
+  }
+  &.cat-biz::before {
+    background: #ffd54f;
+  }
+  &.cat-phil::before {
+    background: #ba68c8;
+  }
+  &.cat-econ::before {
+    background: #4db6ac;
+  }
+  &.cat-insight::before {
+    background: #ff8a65;
+  }
+  &.cat-meta::before {
+    background: #90a4ae;
+  }
 }
 
 .category-card .card-icon {
@@ -228,34 +244,131 @@
 }
 
 body[data-slug="index"] {
-  /* Hide the fallback "index" title completely */
-  .article-title {
+  /* Hide default title, meta, tags on main page */
+  .article-title,
+  .content-meta,
+  .tags {
     display: none !important;
   }
 
-  /* Expand the graph container to fill the screen */
+  /* Full-page Background Graph */
   .graph {
-    width: 100% !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    z-index: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
+    overflow: hidden !important;
+    pointer-events: auto !important;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
 
     h3,
     .global-graph-icon {
-      display: none;
+      display: none !important;
+    }
+
+    .global-graph-outer:not(.active) {
+      display: none !important;
     }
   }
 
   .graph-outer {
-    height: calc(100vh - 400px) !important;
-    width: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
     margin: 0 !important;
     padding: 0 !important;
-    border: 1px solid var(--lightgray) !important;
-    border-radius: 12px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    overflow: hidden !important;
   }
 
   .graph-container {
-    height: 100% !important;
-    width: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block !important;
+    }
+  }
+
+  /* Page content layer above background graph */
+  #quartz-root {
+    position: relative;
+    z-index: 1;
+    pointer-events: none; /* Let clicks on empty space pass through to the background graph */
+  }
+
+  /* Enable interaction and enhance readability for content elements */
+  .left.sidebar,
+  .right.sidebar,
+  .center article > *,
+  .center .page-header > *:not(.popover-hint),
+  .page-footer,
+  footer,
+  a,
+  button,
+  input,
+  table {
+    pointer-events: auto;
+  }
+
+  /* Frosted glass cards over background graph for enhanced readability */
+  .index-intro {
+    background: color-mix(in srgb, var(--light) 85%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid color-mix(in srgb, var(--lightgray) 80%, transparent);
+    border-radius: 12px;
+    padding: 1.4rem 1.6rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  .stats-bar {
+    background: color-mix(in srgb, var(--light) 85%, transparent) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid color-mix(in srgb, var(--lightgray) 80%, transparent) !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  .table-container {
+    background: color-mix(in srgb, var(--light) 85%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid color-mix(in srgb, var(--lightgray) 80%, transparent);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    padding: 0.5rem 1rem;
+  }
+}
+
+:root[saved-theme="dark"] body[data-slug="index"] {
+  .graph {
+    opacity: 0.7;
+  }
+
+  .index-intro,
+  .stats-bar,
+  .table-container {
+    background: color-mix(in srgb, var(--light) 75%, transparent) !important;
+    border-color: color-mix(in srgb, var(--lightgray) 40%, transparent) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
 }

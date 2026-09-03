@@ -21,12 +21,12 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Graph({
         localGraph: {
           drag: true,
-          zoom: true,
+          zoom: false,
           depth: -1,
-          scale: 1.5,
+          scale: 1.4,
           repelForce: 0.5,
-          centerForce: 0.3,
-          linkDistance: 30,
+          centerForce: 0.25,
+          linkDistance: 35,
           fontSize: 0.6,
           opacityScale: 1,
           showTags: true,
