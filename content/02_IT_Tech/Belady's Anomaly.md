@@ -21,50 +21,43 @@ draft: false
 ## II. Belady's Anomaly 발생 메커니즘 비교
 
 ### 가. Belady's Anomaly 발생 증명
-<svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 680px; height: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" style="max-width: 680px; width: 100%; height: auto; display: block; margin: 1.5rem auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
     <!-- 화살표 마커 -->
     <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" opacity="0.6"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4B5563"/>
     </marker>
   </defs>
-
+  <!-- 배경 카드 -->
+  <rect width="680" height="260" fill="#F9FAFB" rx="8" stroke="#E5E7EB" stroke-width="1"/>
   <!-- ================= [1. 예상 Page Fault] ================= -->
   <g transform="translate(10, 10)">
     <!-- 제목 -->
-    <text x="140" y="20" text-anchor="middle" font-weight="bold" font-size="14" fill="currentColor">[예상 Page Fault]</text>
-    
+    <text x="140" y="20" text-anchor="middle" font-weight="bold" font-size="14" fill="#1F2937">[예상 Page Fault]</text>
     <!-- 축 라벨 -->
-    <text x="45" y="45" font-size="11" fill="currentColor" opacity="0.8">Page Fault</text>
-    <text x="280" y="215" font-size="11" fill="currentColor" opacity="0.8">Frame 수</text>
-
+    <text x="45" y="45" font-size="11" fill="#4B5563">Page Fault</text>
+    <text x="280" y="215" font-size="11" fill="#4B5563">Frame 수</text>
     <!-- 좌표축 -->
-    <path d="M 50 55 L 50 195 L 270 195" fill="none" stroke="currentColor" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" opacity="0.6"/>
-
+    <path d="M 50 55 L 50 195 L 270 195" fill="none" stroke="#4B5563" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
     <!-- 예상 곡선 (단조 감소) -->
     <path d="M 70 80 Q 120 160 240 175" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
     <text x="150" y="125" font-size="11" fill="#3b82f6" font-weight="600">프레임 증가 시 감소</text>
   </g>
-
   <!-- ================= [2. 실제 Page Fault] ================= -->
   <g transform="translate(350, 10)">
     <!-- 제목 -->
-    <text x="140" y="20" text-anchor="middle" font-weight="bold" font-size="14" fill="currentColor">[실제 Page Fault (FIFO)]</text>
-    
+    <text x="140" y="20" text-anchor="middle" font-weight="bold" font-size="14" fill="#1F2937">[실제 Page Fault (FIFO)]</text>
     <!-- 축 라벨 -->
-    <text x="45" y="45" font-size="11" fill="currentColor" opacity="0.8">Page Fault</text>
-    <text x="280" y="215" font-size="11" fill="currentColor" opacity="0.8">Frame 수</text>
-
+    <text x="45" y="45" font-size="11" fill="#4B5563">Page Fault</text>
+    <text x="280" y="215" font-size="11" fill="#4B5563">Frame 수</text>
     <!-- 좌표축 -->
-    <path d="M 50 55 L 50 195 L 270 195" fill="none" stroke="currentColor" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" opacity="0.6"/>
-
+    <path d="M 50 55 L 50 195 L 270 195" fill="none" stroke="#4B5563" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
     <!-- 실제 꺾은선 (이상현상 포함) -->
     <path d="M 70 80 L 120 150 L 165 110 L 240 175" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-
     <!-- 이상현상 지점 포인트 및 주석 -->
     <circle cx="165" cy="110" r="4" fill="#ef4444" />
     <text x="175" y="105" font-size="12" fill="#ef4444" font-weight="bold">★ 벨레이디의 이상현상</text>
-    <text x="180" y="122" font-size="10" fill="currentColor" opacity="0.7">(Belady's Anomaly)</text>
+    <text x="180" y="122" font-size="10" fill="#6B7280">(Belady's Anomaly)</text>
   </g>
 </svg>
 

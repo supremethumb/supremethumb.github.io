@@ -20,27 +20,54 @@ aliases:
 
 ### 가. PEFT의 개념도 및 동작 원리
 
-<svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 620 320" width="100%" height="auto"> <defs> <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"> <polygon points="0 0, 8 3, 0 6" fill="#2563EB" /> </marker> <marker id="arrow-emerald" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"> <polygon points="0 0, 8 3, 0 6" fill="#059669" /> </marker> <marker id="arrow-indigo" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"> <polygon points="0 0, 8 3, 0 6" fill="#4F46E5" /> </marker> </defs>
-
-<!-- 배경 카드 --> <rect width="620" height="320" fill="#F9FAFB" rx="8" stroke="#E5E7EB" stroke-width="1"/>
-
-<!-- 상단: 입력 데이터 박스 --> <rect x="180" y="18" width="260" height="36" rx="6" fill="#F3F4F6" stroke="#4B5563" stroke-width="1.5"/> <text x="310" y="41" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">입력 데이터 x (텍스트 / 이미지)</text>
-
-<!-- 분기 화살표 (좌측: Pre-trained, 우측: PEFT) --> <path d="M 270 54 L 160 82" fill="none" stroke="#2563EB" stroke-width="1.5" marker-end="url(#arrow-blue)"/> <path d="M 350 54 L 460 82" fill="none" stroke="#059669" stroke-width="1.5" marker-end="url(#arrow-emerald)"/>
-
-<!-- 좌측: 사전학습 가중치 (Frozen) --> <rect x="40" y="88" width="240" height="64" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/> <text x="160" y="110" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1E40AF" text-anchor="middle">사전학습 가중치 (Frozen)</text> <text x="160" y="128" font-family="system-ui, sans-serif" font-size="12" fill="#1E3A8A" text-anchor="middle">Pre-trained Weight (W)</text> <text x="160" y="144" font-family="system-ui, sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">d × k 행렬 (고정)</text>
-
-<!-- 우측: PEFT 학습 가중치 (Trainable) --> <rect x="340" y="88" width="240" height="64" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/> <text x="460" y="110" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#065F46" text-anchor="middle">PEFT 학습 가중치 (Trainable)</text> <text x="460" y="128" font-family="system-ui, sans-serif" font-size="12" fill="#064E3B" text-anchor="middle">PEFT Learned Weight (ΔW)</text> <text x="460" y="144" font-family="system-ui, sans-serif" font-size="11" fill="#047857" text-anchor="middle">저차원 어댑터 / 파라미터 갱신</text>
-
-<!-- 하향 화살표 --> <line x1="160" y1="152" x2="160" y2="178" stroke="#2563EB" stroke-width="1.5" marker-end="url(#arrow-blue)"/> <line x1="460" y1="152" x2="460" y2="178" stroke="#059669" stroke-width="1.5" marker-end="url(#arrow-emerald)"/>
-
-<!-- 좌측 연산 결과 (W·x) --> <rect x="70" y="180" width="180" height="32" rx="4" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.2"/> <text x="160" y="201" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">W · x</text>
-
-<!-- 우측 연산 결과 (ΔW·x) --> <rect x="370" y="180" width="180" height="32" rx="4" fill="#D1FAE5" stroke="#059669" stroke-width="1.2"/> <text x="460" y="201" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#064E3B" text-anchor="middle">ΔW · x</text>
-
-<!-- 하단 병합 화살표 --> <path d="M 160 212 L 160 236 Q 160 242 170 242 L 210 242" fill="none" stroke="#4F46E5" stroke-width="1.5"/> <path d="M 460 212 L 460 236 Q 460 242 450 242 L 410 242" fill="none" stroke="#4F46E5" stroke-width="1.5"/> <line x1="310" y1="225" x2="310" y2="246" stroke="#4F46E5" stroke-width="1.5" marker-end="url(#arrow-indigo)"/>
-
-<!-- 하단 병합 박스 --> <rect x="170" y="250" width="280" height="48" rx="6" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5"/> <text x="310" y="271" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#3730A3" text-anchor="middle">학습 병합 가산 (합산 출력)</text> <text x="310" y="289" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#4338CA" text-anchor="middle">h = W·x + ΔW·x (W_final = W + ΔW)</text> </svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 320" width="100%" height="auto" style="max-width: 620px; width: 100%; height: auto; display: block; margin: 1.5rem auto;">
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2563EB" />
+    </marker>
+    <marker id="arrow-emerald" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#059669" />
+    </marker>
+    <marker id="arrow-indigo" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4F46E5" />
+    </marker>
+  </defs>
+  <!-- 배경 카드 -->
+  <rect width="620" height="320" fill="#F9FAFB" rx="8" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- 상단: 입력 데이터 박스 -->
+  <rect x="180" y="18" width="260" height="36" rx="6" fill="#F3F4F6" stroke="#4B5563" stroke-width="1.5"/>
+  <text x="310" y="41" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">입력 데이터 x (텍스트 / 이미지)</text>
+  <!-- 분기 화살표 (좌측: Pre-trained, 우측: PEFT) -->
+  <path d="M 270 54 L 160 82" fill="none" stroke="#2563EB" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 350 54 L 460 82" fill="none" stroke="#059669" stroke-width="1.5" marker-end="url(#arrow-emerald)"/>
+  <!-- 좌측: 사전학습 가중치 (Frozen) -->
+  <rect x="40" y="88" width="240" height="64" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="160" y="110" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1E40AF" text-anchor="middle">사전학습 가중치 (Frozen)</text>
+  <text x="160" y="128" font-family="system-ui, sans-serif" font-size="12" fill="#1E3A8A" text-anchor="middle">Pre-trained Weight (W)</text>
+  <text x="160" y="144" font-family="system-ui, sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">d × k 행렬 (고정)</text>
+  <!-- 우측: PEFT 학습 가중치 (Trainable) -->
+  <rect x="340" y="88" width="240" height="64" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="460" y="110" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#065F46" text-anchor="middle">PEFT 학습 가중치 (Trainable)</text>
+  <text x="460" y="128" font-family="system-ui, sans-serif" font-size="12" fill="#064E3B" text-anchor="middle">PEFT Learned Weight (ΔW)</text>
+  <text x="460" y="144" font-family="system-ui, sans-serif" font-size="11" fill="#047857" text-anchor="middle">저차원 어댑터 / 파라미터 갱신</text>
+  <!-- 하향 화살표 -->
+  <line x1="160" y1="152" x2="160" y2="178" stroke="#2563EB" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <line x1="460" y1="152" x2="460" y2="178" stroke="#059669" stroke-width="1.5" marker-end="url(#arrow-emerald)"/>
+  <!-- 좌측 연산 결과 (W·x) -->
+  <rect x="70" y="180" width="180" height="32" rx="4" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.2"/>
+  <text x="160" y="201" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">W · x</text>
+  <!-- 우측 연산 결과 (ΔW·x) -->
+  <rect x="370" y="180" width="180" height="32" rx="4" fill="#D1FAE5" stroke="#059669" stroke-width="1.2"/>
+  <text x="460" y="201" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#064E3B" text-anchor="middle">ΔW · x</text>
+  <!-- 하단 병합 화살표 -->
+  <path d="M 160 212 L 160 236 Q 160 242 170 242 L 210 242" fill="none" stroke="#4F46E5" stroke-width="1.5"/>
+  <path d="M 460 212 L 460 236 Q 460 242 450 242 L 410 242" fill="none" stroke="#4F46E5" stroke-width="1.5"/>
+  <line x1="310" y1="225" x2="310" y2="246" stroke="#4F46E5" stroke-width="1.5" marker-end="url(#arrow-indigo)"/>
+  <!-- 하단 병합 박스 -->
+  <rect x="170" y="250" width="280" height="48" rx="6" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5"/>
+  <text x="310" y="271" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#3730A3" text-anchor="middle">학습 병합 가산 (합산 출력)</text>
+  <text x="310" y="289" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#4338CA" text-anchor="middle">h = W·x + ΔW·x (W_final = W + ΔW)</text>
+</svg>
 
 - 원본 거대 모델의 사전학습 가중치는 완전히 보존(동결)하고, 추가된 가중치 변화량(\Delta W)만을 학습·조절하여 효율적으로 미세조정을 수행함
 
