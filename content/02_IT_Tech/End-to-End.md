@@ -1,9 +1,8 @@
 ---
-title: "[템플릿] 1교시 단답형 (10점형)"
+title: End-to-End
 date: 2026-08-24
 tags:
-  - template
-  - exam/1교시
+  - 개념
 draft: false
 ---
 # End-to-End (E2E)
@@ -22,9 +21,6 @@ draft: false
           
         
     - **글로벌 최적화(Global Optimization)**: 국소 최적화(Local Optima) 한계를 극복하고 목적 함수(Loss Function) 기반의 단일 종단 간 역전파 및 피드백 수행
-        
-          
-        
     - **특징**: 단순화된 파이프라인(Simplicity), 수작업 엔지니어링 최소화, 고성능 컴퓨팅 및 대규모 데이터셋 기반 통합 처리
         
           
