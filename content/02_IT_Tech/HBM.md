@@ -81,7 +81,7 @@ draft: false
   <text x="307" y="278" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1F2937" text-anchor="middle">메인기판 (PCB Substrate)</text>
 </svg>
 
-- 여러 겹의 DRAM을 수직 적층한 후 실리콘 인터포저 상에서 GPU와 함께 2.5D 수평 배치
+- 여러 겹의 DRAM을 수직 적층한 후 실리콘 인터포저 상에서 [[GPU]]와 함께 2.5D 수평 배치
 
 ### 나. HBM의 핵심 기술요소
 
@@ -107,6 +107,6 @@ draft: false
 |**적층 단수**|**8-Hi / 12-Hi**|**16-Hi (초고밀도 적층)**|
 |**핵심 기술**|방열 제어 최적화 (Advanced MR-MUF)|Custom Base Die (파운드리 첨단 로직 공정 결합)|
 
-- **커스텀 HBM 시대 도래**: 고객 맞춤형 Custom Base Die 적용으로 GPU·NPU 시스템 최적화 가속
+- **커스텀 HBM 시대 도래**: 고객 맞춤형 Custom Base Die 적용으로 GPU·[[NPU]] 시스템 최적화 가속
 - **하이브리드 본딩(Hybrid Bonding) 수율 안정화**: 범프리스(Bumpless) 패키징을 통한 적층 두께 한계 극복
-- **PIM(Processing-In-Memory)으로의 융합 가속**: 메모리 내부 연산 기능 탑재를 통한 폰 노이만 병목의 원천 해소
+- **[[PIM]](Processing-In-Memory)으로의 융합 가속**: 메모리 내부 연산 기능 탑재를 통한 폰 노이만 병목의 원천 해소

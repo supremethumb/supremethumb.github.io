@@ -65,7 +65,7 @@ flowchart LR
 |**구성 요소**|Event Consumer|브로커로부터 이벤트를 구독하여 실제 비즈니스 로직을 수행하는 서비스|
 |**설계 패턴**|Event Sourcing|데이터의 현재 상태가 아닌, 상태 변경을 일으킨 모든 이벤트의 이력을 순차적으로 저장|
 |**설계 패턴**|CQRS|시스템의 상태를 변경하는 명령(Command)과 조회(Query)의 책임을 분리하는 패턴|
-|**설계 패턴**|Choreography Saga|중앙 통제(Orchestrator) 없이 이벤트를 교환하며 분산 트랜잭션을 관리하는 기법|
+|**설계 패턴**|Choreography Saga|중앙 통제(Orchestrator) 없이 이벤트를 교환하며 분산 [[트랜잭션]]을 관리하는 기법|
 |**표준화**|CloudEvents|클라우드 환경에서 플랫폼 간 호환성을 위해 CNCF가 제정한 이벤트 데이터 메타데이터 표준|
 |**데이터 처리**|Stream Processing|끊임없이 생성되는 이벤트 스트림 데이터를 실시간으로 수집, 분석, 처리 (Flink, Spark)|
 
@@ -91,4 +91,4 @@ flowchart LR
     
       
     
-- **결과적 일관성(Eventual Consistency) 극복 과제**: 분산 트랜잭션의 신뢰성 보장을 위해 Saga 패턴 및 Outbox 패턴의 프레임워크 수준 지원(예: Debezium CDC 연동) 지속 확대 중
+- **결과적 일관성(Eventual Consistency) 극복 과제**: 분산 트랜잭션의 신뢰성 보장을 위해 Saga 패턴 및 Outbox 패턴의 [[프레임워크]] 수준 지원(예: Debezium CDC 연동) 지속 확대 중

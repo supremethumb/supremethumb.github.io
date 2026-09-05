@@ -10,7 +10,7 @@ draft: false
 
 ## I. 점대점(Point-to-Point) 직렬 고속 인터커넥트, PCIe의 개요
 
-- **정의**: 컴퓨팅 시스템 내 CPU, GPU, NVMe SSD 등 주요 고성능 주변장치를 **직렬(Serial) 차동 신호 방식**으로 점대점 연결하여 고대역폭·초저지연 데이터 통신을 제공하는 3계층 구조의 표준 인터커넥트 기술
+- **정의**: 컴퓨팅 시스템 내 CPU, [[GPU]], NVMe SSD 등 주요 고성능 주변장치를 **직렬(Serial) 차동 신호 방식**으로 점대점 연결하여 고대역폭·초저지연 데이터 통신을 제공하는 3계층 구조의 표준 인터커넥트 기술
     
       
     
@@ -28,7 +28,7 @@ draft: false
 
 ## I. 고속 직렬 점대점 인터커넥트, PCIe(Peripheral Component Interconnect Express)의 개요
 
-- **정의**: CPU, GPU, 스토리지 및 AI 가속기 간 고속 데이터 전송을 위해 점대점(Point-to-Point) 직렬 통신과 계층형 프로토콜을 채택한 표준 확장 버스 인터페이스
+- **정의**: CPU, GPU, 스토리지 및 AI 가속기 간 고속 데이터 전송을 위해 점대점([[Point-to-Point]]) 직렬 통신과 계층형 [[프로토콜]]을 채택한 표준 확장 버스 인터페이스
     
       
     
@@ -91,7 +91,7 @@ flowchart TB
 
 |**구분**|**핵심 기술(키워드)**|**세부 설명**|
 |---|---|---|
-|**계층 구조**|Transaction Layer|분할 트랜잭션(Split Transaction), 크레딧 기반 흐름 제어(Credit-based Flow Control), TLP 패킷 생성|
+|**계층 구조**|Transaction Layer|분할 [[트랜잭션]](Split Transaction), 크레딧 기반 흐름 제어(Credit-based Flow Control), TLP 패킷 생성|
 |**계층 구조**|Data Link Layer|DLLP 패킷 관리, LCRC(Link CRC-32) 무결성 검증, ACK/NAK 기반 손실 패킷 재전송 메커니즘|
 |**계층 구조**|Physical Layer|SerDes 기반 병렬-직렬 변환, 차동 신호(Differential Signaling), 클록 데이터 복원(CDR)|
 |**신호 변조**|PAM4 (Gen 6/7)|4단계 전압 준위를 통해 심볼당 2비트를 전송하는 펄스 진폭 변조 방식 (NRZ 대비 대역폭 2배)|
@@ -115,7 +115,7 @@ flowchart TB
 
 ### 나. 향후 전망 및 기술적 시사점
 
-- **CXL(Compute Express Link) 기반 확장**: PCIe 5.0/6.0 물리 계층을 공유하여 이종 프로세서(CPU-GPU-NPU) 간 캐시 일관성(Cache Coherency) 및 메모리 풀링(Memory Pooling) 구현
+- **[[CXL]](Compute Express Link) 기반 확장**: PCIe 5.0/6.0 물리 계층을 공유하여 이종 프로세서(CPU-GPU-[[NPU]]) 간 캐시 일관성(Cache Coherency) 및 메모리 풀링(Memory Pooling) 구현
     
       
     

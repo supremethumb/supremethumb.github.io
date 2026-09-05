@@ -26,7 +26,7 @@ EDI(Electronic Data Interchange, *전자 데이터 교환*)는 기업 간 거래
 ## 전송 방식
 
 - **VAN (Value-Added Network)**: 전용 네트워크 서비스. 전통 EDI
-- **AS2/AS4**: 인터넷 기반 보안 프로토콜
+- **AS2/AS4**: 인터넷 기반 보안 [[프로토콜]]
 - **SFTP**: 안전한 파일 전송
 - **API 기반 EDI**: REST API 로 실시간 교환
 - **웹 EDI**: 브라우저 양식 기반 중소기업용
@@ -35,7 +35,7 @@ EDI(Electronic Data Interchange, *전자 데이터 교환*)는 기업 간 거래
 
 1. ERP 에서 주문서 생성
 2. EDI 변환기가 *표준 양식*으로 변환
-3. 암호화·서명 후 거래처에 전송
+3. [[암호화]]·서명 후 거래처에 전송
 4. 거래처 EDI 가 수신·역변환해 자사 시스템에 입력
 5. 수신 확인(ACK) 반환
 
@@ -46,7 +46,7 @@ EDI(Electronic Data Interchange, *전자 데이터 교환*)는 기업 간 거래
 
 ## 현대의 변화
 
-- **API-First**: 표준 EDI 대신 JSON·REST API 로 통합
+- **API-First**: 표준 EDI 대신 [[JSON]]·REST API 로 통합
 - **클라우드 EDI**: SaaS 로 구독, 도입 장벽 낮춤
 - **[[블록체인]] 기반 공급망**: 변조 방지와 투명성 강화
 

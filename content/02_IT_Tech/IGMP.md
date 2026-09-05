@@ -7,7 +7,7 @@ description: "Internet Group Management Protocol"
 
 Internet Group Management Protocol
 
-인터넷 그룹 관리 프로토콜은 호스트 컴퓨터와 인접 라우터가 멀티캐스트 그룹 멤버쉽을 구성하는데 사용
+인터넷 그룹 관리 [[프로토콜]]은 호스트 컴퓨터와 인접 [[라우터]]가 멀티캐스트 그룹 멤버쉽을 구성하는데 사용
 > ⚠️ 검증 필요: IGMP 관련 실무 예시 보강 필요
 
 ## 활용 및 발전방향

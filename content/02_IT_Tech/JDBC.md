@@ -7,7 +7,7 @@ description: "Java  Database Connectivity"
 
 Java  Database Connectivity
 
-자바(Java )에서 데이터베이스를 사용할 수 있도록 연결해주는 응용 프로그램 인터페이스이다.
+자바(Java )에서 [[데이터베이스]]를 사용할 수 있도록 연결해주는 응용 프로그램 인터페이스이다.
 > ⚠️ 검증 필요: JDBC 관련 실무 예시 보강 필요
 
 ## 활용 및 발전방향

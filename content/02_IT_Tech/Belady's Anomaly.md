@@ -70,8 +70,8 @@ draft: false
 |**핵심원리**|큐를 단순 시퀀스 기반 교체|참조 특성을 반영한 교체|
 |**포함성 원리**|M(n) \not\subset M(n+1) (미충족)|M(n) \subset M(n+1) (항상 충족)|
 |**이상현상**|Belady's Anomaly 발생|Belady's Anomaly 미발생|
-|**해당 알고리즘**|FIFO, Second Chance 등|LRU, LFU, Optimal 등|
-|**비교**|구현이 단순하나 최적화 불가능|현대 OS 가상 메모리 표준|
+|**해당 알고리즘**|[[FIFO]], Second Chance 등|[[LRU]], [[LFU]], Optimal 등|
+|**비교**|구현이 단순하나 최적화 불가능|현대 OS [[가상메모리의 페이징과 세그멘테이션|가상 메모리]] 표준|
 - _M(n): n개의 프레임을 가질 때 특정 시점의 메모리 적재 및 페이지 집합_
 
 ---

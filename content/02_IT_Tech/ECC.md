@@ -10,14 +10,14 @@ draft: false
 
 ## I. 이산대수 기반 경량·고강도 공개키 암호, ECC의 개요
 
-- **정의**: 유한체(Finite Field) 상의 타원곡선 이산대수 문제(ECDLP, Elliptic Curve Discrete Logarithm Problem)의 계산적 난해성에 기반하여, 적은 비트 수로 초고강도 보안성을 제공하는 비대칭키(공개키) 암호화 알고리즘
+- **정의**: 유한체(Finite Field) 상의 타원곡선 이산대수 문제(ECDLP, Elliptic Curve Discrete Logarithm Problem)의 계산적 난해성에 기반하여, 적은 비트 수로 초고강도 보안성을 제공하는 비대칭키(공개키) [[암호화]] 알고리즘
     
       
     
 - **등장배경 및 특징**:
     
       
-    - **RSA 키 길이 한계 극복**: 소인수분해 난이도 하락에 따른 RSA 키 길이 증가(3072-bit 이상)로 인한 연산 부하 및 메모리 병목 해소
+    - **[[RSA]] 키 길이 한계 극복**: 소인수분해 난이도 하락에 따른 RSA 키 길이 증가(3072-bit 이상)로 인한 연산 부하 및 메모리 병목 해소
         
           
         
@@ -75,10 +75,10 @@ flowchart TB
 |**수학적 기반**|**ECDLP**|$Q = d \cdot G$에서 점 $G, Q$를 알 때 스칼라 값 $d$(개인키)를 구하는 이산대수 역산의 난해성|
 |**기본 연산**|**Point Addition / Doubling**|기하학적 접선 및 교점 계산을 유한체 모듈러 연산으로 치환하여 군(Abelian Group) 형성|
 |**기본 연산**|**Scalar Multiplication**|Double-and-Add, Montgomery Ladder 기법을 적용한 $k \cdot P$ 연산 가속화 및 부채널 공격 방어|
-|**암호 프로토콜**|**ECDH / X25519**|Diffie-Hellman 원리를 타원곡선에 적용한 고속 세션키 교환 프로토콜 (TLS 1.3 표준)|
+|**암호 [[프로토콜]]**|**ECDH / X25519**|Diffie-Hellman 원리를 타원곡선에 적용한 고속 세션키 교환 프로토콜 ([[TLS]] 1.3 표준)|
 |**암호 프로토콜**|**ECDSA / EdDSA**|타원곡선 기반 전자서명 알고리즘 (Ed25519: 슈노르 서명 결합, 부채널 내성 및 고속 검증)|
-|**표준 곡선**|**NIST Curves & secp256k1**|NIST P-256(범용), secp256k1(Koblitz 곡선 기반 블록체인 서명), Curve25519(고속/안전 곡선)|
-|**하이브리드 암호**|**ECIES**|타원곡선 기반 공개키 암호와 대칭키(AES) 및 메시지 인증코드(MAC)를 결합한 암·복호화 기법|
+|**표준 곡선**|**NIST Curves & secp256k1**|NIST P-256(범용), secp256k1(Koblitz 곡선 기반 [[블록체인]] 서명), Curve25519(고속/안전 곡선)|
+|**하이브리드 암호**|**ECIES**|타원곡선 기반 공개키 암호와 대칭키([[AES]]) 및 메시지 인증코드(MAC)를 결합한 암·복호화 기법|
 
 ## III. ECC vs RSA 비교 및 향후 전망
 
@@ -98,4 +98,4 @@ flowchart TB
     
       
     
-- **하이브리드 PQC(Post-Quantum Cryptography) 마이그레이션**: 과도기적 안정성 확보를 위해 격자 기반 PQC(ML-KEM/Kyber, ML-DSA/Dilithium)와 고속 ECC(X25519/Ed25519)를 이중 결합하는 하이브리드 암호화 표준(Composite Crypto)으로 진화 중
+- **하이브리드 PQC([[양자내성암호|Post-Quantum Cryptography]]) 마이그레이션**: 과도기적 안정성 확보를 위해 격자 기반 PQC(ML-KEM/Kyber, ML-[[DSA]]/Dilithium)와 고속 ECC(X25519/Ed25519)를 이중 결합하는 하이브리드 암호화 표준(Composite Crypto)으로 진화 중

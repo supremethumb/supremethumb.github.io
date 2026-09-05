@@ -9,7 +9,7 @@ draft: false
 
 ## I. 차세대 메모리 공유 인터커넥트 표준, CXL의 개요
 
-- **정의**: PCIe 물리 계층을 기반으로 CPU, GPU, 가속기, 메모리 확장 장치 간 캐시 일관성(Cache Coherency)을 유지하며 초저지연·초고대역폭 데이터 통신을 지원하는 개방형 인터커넥트 표준
+- **정의**: [[PCIe]] 물리 계층을 기반으로 CPU, [[GPU]], 가속기, 메모리 확장 장치 간 캐시 일관성(Cache Coherency)을 유지하며 초저지연·초고대역폭 데이터 통신을 지원하는 개방형 인터커넥트 표준
     
       
     
@@ -82,11 +82,11 @@ flowchart TB
 
 |**구분**|**핵심 기술/요소**|**세부 설명**|
 |---|---|---|
-|**프로토콜**|**CXL.io**|필수 프로토콜, 장치 열거(Enumeration), 초기화, DMA 및 비일관성 레지스터 I/O 처리|
+|**[[프로토콜]]**|**CXL.io**|필수 프로토콜, 장치 열거(Enumeration), 초기화, DMA 및 비일관성 레지스터 I/O 처리|
 |**프로토콜**|**CXL.cache**|가속기가 호스트 CPU의 시스템 메모리를 저지연 캐시 일관성으로 직접 참조·캐싱|
 |**프로토콜**|**CXL.mem**|호스트 CPU가 디바이스 부착 메모리(HDM)를 로컬 메모리처럼 바이트 단위 Load/Store 접근|
 |**장치 유형**|**Type 1 Device**|자체 로컬 메모리 없이 호스트 메모리 캐싱 위주로 동작하는 가속기 (SmartNIC, PGAS NIC)|
-|**장치 유형**|**Type 2 Device**|자체 고속 메모리(HBM/GDDR)를 보유하고 호스트-디바이스 간 양방향 캐시 일관성 유지 (GPU, FPGA)|
+|**장치 유형**|**Type 2 Device**|자체 고속 메모리([[HBM]]/GDDR)를 보유하고 호스트-디바이스 간 양방향 캐시 일관성 유지 (GPU, FPGA)|
 |**장치 유형**|**Type 3 Device**|호스트에 추가 메모리 용량을 확장·제공하는 메모리 버퍼 장치 (CXL DRAM Expander, MLD)|
 |**토폴로지**|**MLD & Fabric**|Multi-Logical Device 기반 메모리 풀링 및 다단계 스위칭(Multi-level Switch, Mesh/Leaf-Spine) 지원|
 |**일관성 제어**|**Back Invalidation (BI)**|CXL 3.0+ 하드웨어 기반 캐시 무효화 기술로 복수 호스트 간 진정한 메모리 공유(Sharing) 구현|
@@ -110,4 +110,4 @@ flowchart TB
     
       
     
-- **칩렛(Chiplet) 및 표준화 확장**: UCIe(Universal Chiplet Interconnect Express)와 CXL의 결합을 통해 패키지 내부 및 랙 스케일(Rack-scale) 전반의 통일된 캐시 일관성 생태계 완성
+- **[[칩렛]](Chiplet) 및 표준화 확장**: UCIe(Universal Chiplet Interconnect Express)와 CXL의 결합을 통해 패키지 내부 및 랙 스케일(Rack-scale) 전반의 통일된 캐시 일관성 생태계 완성

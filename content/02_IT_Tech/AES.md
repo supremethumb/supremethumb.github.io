@@ -7,7 +7,7 @@ description: "Advanced Encryption Standard"
 
 Advanced Encryption Standard
 
-2001 년 미국 표준기술 연구소 NIST 에서 발표한 블록 암호화 알고리즘
+2001 년 미국 표준기술 연구소 NIST 에서 발표한 블록 [[암호화]] 알고리즘
 
 AES 의 라운드 수는 10, 12, 14 라운드로 분류되어 한 라운드는 bab Bytes, Shift Rows, Mix Columns, Add Round Key 의 4 가지 계층 구성
 > ⚠️ 검증 필요: AES 관련 실무 예시 보강 필요

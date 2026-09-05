@@ -6,7 +6,7 @@ description: "Open Database Connectivity"
 ---
 
 - Open Database Connectivity
-- 데이터베이스를 액세스하기 위한 표준 개방형 응용 프로그램 인터페이
+- [[데이터베이스]]를 액세스하기 위한 표준 개방형 응용 프로그램 인터페이
 -
 > ⚠️ 검증 필요: ODBC 관련 실무 예시 보강 필요
 

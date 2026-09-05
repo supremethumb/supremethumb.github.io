@@ -54,11 +54,11 @@ graph LR
 | **연산 코어**    | **SIMD Engine**          | 벡터 데이터 및 텐서 행렬-벡터 곱셈(GEMV)을 단일 사이클로 처리하는 병렬 유닛               |
 | **제어/명령**    | **PIM Sequencer**            | Host 표준 커맨드(JEDEC) 사이에 PIM 연산 명령을 디코딩하여 내부 파이프라인 제어          |
 | **제어/명령**    | **Instruction Buffer & SFR** | PIM 전용 연산 매크로 명령 및 가중치/상태 레지스터(Special Function Register) 저장 |
-| **도메인 분류**   | **Digital PIM**              | Sense-Amp 후단 디지털 신호 기반 연산, 공정 수율 및 신뢰성 우수 (예: HBM-PIM, AiM)  |
+| **도메인 분류**   | **Digital PIM**              | Sense-Amp 후단 디지털 신호 기반 연산, 공정 수율 및 신뢰성 우수 (예: [[HBM]]-PIM, AiM)  |
 | **도메인 분류**   | **Analog PIM**               | Sense-Amp 전단 크로스바(Crossbar) 어레이에서 옴·키르히호프 법칙 기반 초저전력 연산      |
 | **인터커넥트**    | **TSV / Local Bus**          | HBM Core Die 적층 구조 내 수직 전송 채널(TSV) 및 뱅크 간 고속 내부 전송 경로        |
 | **소프트웨어 스택** | **PIM Compiler / Framework** | PyTorch, TensorFlow 모델의 연산 그래프 중 메모리 바운드 연산을 자동 분할·오프로딩      |
-| **표준화/확장**   | **JEDEC PIM / CXL 연동**       | 표준 DRAM 타이밍 호환 규격 및 CXL(Compute Express Link) 기반 메모리 풀링 연계   |
+| **표준화/확장**   | **JEDEC PIM / [[CXL]] 연동**       | 표준 DRAM 타이밍 호환 규격 및 CXL(Compute Express Link) 기반 메모리 풀링 연계   |
 
 ---
 ## III. PIM vs PNM 비교 및 향후 전망

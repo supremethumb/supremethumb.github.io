@@ -13,10 +13,10 @@ description: "표시방법: 8비트 씩 4부분으로 나뉜 10진수"
     - 비효율적
 - 품질제어
     - 보강
-- QOS
+- [[QOS]]
     - Best Effort 보장 곤란
 - 보안 기능
-    - IP SEC 프로토콜 별도 설치
+    - IP SEC [[프로토콜]] 별도 설치
 - [Plug & Play](Plug & Play.md)
     - 지원 안함
 - 모바일 IP

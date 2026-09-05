@@ -7,7 +7,7 @@ description: "Address Resolution Protocol"
 
 Address Resolution Protocol
 
-IP 네트워크상에서 IP 주소를 MAC 주소로 변환하는 프로토콜
+IP 네트워크상에서 IP 주소를 MAC 주소로 변환하는 [[프로토콜]]
 > ⚠️ 검증 필요: ARP 관련 실무 예시 보강 필요
 
 ## 활용 및 발전방향

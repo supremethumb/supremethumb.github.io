@@ -8,7 +8,7 @@ description: "Customer Relationship Management"
 - Customer Relationship Management
 - 고객관계관리
 - 최근
-    - 데이터베이스 마케팅
+    - [[데이터베이스]] 마케팅
     - 일대일 마케팅
     - 관계 마케팅
 - 신규 고객 획득

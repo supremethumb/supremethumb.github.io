@@ -7,7 +7,7 @@ description: "Data Encryption Standard"
 
 Data Encryption Standard
 
-1975 년 미국연방 표준국 NIST 에서 발표한 대칭키 기반 블록 암호화 알고리즘
+1975 년 미국연방 표준국 NIST 에서 발표한 대칭키 기반 블록 [[암호화]] 알고리즘
 
 블록 크기는 64bit 키 길이는 56bit 인 페이스텔 Feistel 구조
 > ⚠️ 검증 필요: DES 관련 실무 예시 보강 필요
