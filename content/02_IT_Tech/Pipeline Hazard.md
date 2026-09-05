@@ -20,17 +20,14 @@ draft: false
 ### 가. 파이프라인 해저드 발생 개념도 및 분류
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="100%" height="auto" style="max-width: 760px; width: 100%; height: auto; display: block; margin: 1.5rem auto;">
   <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <marker id="pipe-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <polygon points="0 0, 8 3, 0 6" fill="#374151" />
     </marker>
   </defs>
-
   <!-- 배경 카드 -->
   <rect width="760" height="480" fill="#F9FAFB" rx="12" stroke="#E5E7EB" stroke-width="1"/>
-
   <!-- ==================== Section 1: 데이터 해저드에 의한 지연 ==================== -->
   <text x="380" y="45" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#111827" text-anchor="middle">[ 데이터 해저드에 의한 지연 ]</text>
-
   <!-- Row 1 -->
   <!-- IF -->
   <rect x="80" y="70" width="70" height="36" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
@@ -47,7 +44,6 @@ draft: false
   <!-- WB -->
   <rect x="360" y="70" width="70" height="36" fill="#F3E8FF" stroke="#9333EA" stroke-width="1.5"/>
   <text x="395" y="94" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#581C87" text-anchor="middle">WB</text>
-
   <!-- Row 2 (Offset by 1) -->
   <!-- IF -->
   <rect x="150" y="106" width="70" height="36" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
@@ -70,7 +66,6 @@ draft: false
   <!-- WB -->
   <rect x="570" y="106" width="70" height="36" fill="#F3E8FF" stroke="#9333EA" stroke-width="1.5"/>
   <text x="605" y="130" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#581C87" text-anchor="middle">WB</text>
-
   <!-- Row 3 (Pipeline Register States / Bubbles) -->
   <!-- IF/ID (Spans IF & ID) -->
   <rect x="150" y="142" width="140" height="36" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.5"/>
@@ -87,13 +82,10 @@ draft: false
   <!-- Bubble -->
   <rect x="570" y="142" width="70" height="36" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.5"/>
   <text x="605" y="166" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#4B5563" text-anchor="middle">Bubble</text>
-
   <!-- 구분선 -->
   <line x1="40" y1="215" x2="720" y2="215" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" />
-
   <!-- ==================== Section 2: 데이터 포워딩 ==================== -->
   <text x="380" y="260" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#111827" text-anchor="middle">[ 데이터 포워딩 ]</text>
-
   <!-- Row 1 (Top Data Path) -->
   <!-- IF -->
   <rect x="130" y="280" width="100" height="46" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
@@ -110,7 +102,6 @@ draft: false
   <!-- WB -->
   <rect x="530" y="280" width="100" height="46" fill="#F3E8FF" stroke="#9333EA" stroke-width="1.5"/>
   <text x="580" y="309" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#581C87" text-anchor="middle">WB</text>
-
   <!-- Row 2 (Bottom Data Path) -->
   <!-- IF -->
   <rect x="130" y="380" width="100" height="46" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
@@ -127,16 +118,14 @@ draft: false
   <!-- WB -->
   <rect x="530" y="380" width="100" height="46" fill="#F3E8FF" stroke="#9333EA" stroke-width="1.5"/>
   <text x="580" y="409" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#581C87" text-anchor="middle">WB</text>
-
   <!-- Forwarding Arrows -->
   <!-- EX to EX Arrow -->
-  <line x1="380" y1="326" x2="380" y2="375" stroke="#374151" stroke-width="2" marker-end="url(#arrow)" />
-  
+  <line x1="380" y1="326" x2="380" y2="375" stroke="#374151" stroke-width="2" marker-end="url(#pipe-arrow)" />
   <!-- EX/MEM to EX/MEM Arrow -->
-  <line x1="430" y1="326" x2="430" y2="375" stroke="#374151" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="430" y1="326" x2="430" y2="375" stroke="#374151" stroke-width="2" marker-end="url(#pipe-arrow)" />
   <text x="442" y="357" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#374151" text-anchor="start">전용 포워딩 경로</text>
-
 </svg>
+
 - 데이터 포워딩, 스톨 및 포워딩 사용으로 문제 해소
 
 ### 나. 파이프라인 해저드 세부 유형 및 핵심 해결방안
