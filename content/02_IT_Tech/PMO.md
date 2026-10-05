@@ -1,5 +1,5 @@
 ---
-title: (E)PMO
+title: PMO
 date: 2026-04-22
 tags:
   - 프로젝트관리

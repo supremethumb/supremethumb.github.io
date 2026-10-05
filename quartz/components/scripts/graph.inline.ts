@@ -222,7 +222,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const topic = getTopic(d)
     if (topic) {
       if (!topicColorMap.has(topic)) {
-        topicColorMap.set(topic, materialColors[colorIndex % materialColors.length])
+        const monotonePal = [
+          computedStyleMap["--secondary"],
+          computedStyleMap["--darkgray"],
+          computedStyleMap["--gray"],
+          computedStyleMap["--tertiary"],
+        ]
+        topicColorMap.set(topic, monotonePal[colorIndex % monotonePal.length])
         colorIndex++
       }
       return topicColorMap.get(topic)!
