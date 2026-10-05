@@ -1,8 +1,12 @@
 ---
-title: "KMS"
+title: KMS
 date: 2026-04-13
-tags: ["IT", "개발", "기술"]
-description: "Knowledge Management System"
+tags:
+  - 경영전략
+---
+
+# KMS
+
 ---
 
 **KMS**은(는) 이 노트에서 다루는 핵심 개념이다.
@@ -19,3 +23,16 @@ description: "Knowledge Management System"
 - **비교 분석**: 유사한 방법론·도구와 비교하며 장단점을 파악한다.
 - **참고 자료 탐색**: 공식 문서나 전문 서적을 통해 더 깊은 이해를 추구한다.
 - **사례 수집**: 실제 사례를 꾸준히 수집하여 이 노트를 발전시킨다.
+
+---
+
+### 🔗 연관 토픽
+
+- **소속 도메인**: [[00_경영전략_MOC|📈 경영전략]]
+- **세부 분류**: `4. 기업 핵심 정보시스템 (ERP · CRM · SCM)`
+- **핵심 연관 토픽**:
+  - [[암호화|암호화 (Encryption)]]
+  - [[양자 암호|양자 암호(Quantum Cryptography)]]
+  - [[클라우드 감리|클라우드 감리 (Cloud Audit)]]
+  - [[SOS랩 (Solution in Our Society Lab)]]
+  - [[Lehman의 Software 변화의 원리]]

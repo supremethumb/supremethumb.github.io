@@ -1,183 +1,100 @@
 ---
-title: "DML"
+title: DML
 date: 2026-04-13
-tags: ["IT", "개발", "기술"]
-description: "데이터베이스에 저장된 자료들을 입력, 수정, 삭제, 조회하는 언어"
+tags:
+  - 데이터베이스
+---
+# DML (Data Manipulation Language)
+
 ---
 
-- [[데이터베이스]]에 저장된 자료들을 입력, 수정, 삭제, 조회하는 언어
-- 유형
-    - SELECT
-    - INSERT
-    - UPDATE
-    - DELETE
-- 문법
-    - SELECT 명령문
-        - SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY
-    - SELECT 문
-        - ```sql
-SELECT* | {[DISTINCT]출력할 컬럼명 | 표현식, ...}
-FROM 검색할 테이블명;
-[WHERE 조건절들]
-[ORDER BY {컬럼명, 표현식}[ASC|DESC]];
-```text
-        - SELECT 절
-            - 검색하고자 하는 속성명, 계산식
-            - 2개 이상 테이블을 대상으로 검색할 때는 '테이블 명, 속성명'으로 표현
-            - 술어 부분을 ALL 이 기본 값
-            - ALL
-                - 모든 튜플을 검색할 때 사용
-                - SELECT 뒤에 명시하지 않을 경우 ALL 로 인식
-            - DISTRICT
-                - 중복된 속성이 조회될 경우 그 중 한개만 검색
-            - DISTINCT ROW SELECT
-                - 뒤에 속성들과 상관없이 튜플 전체가 중복된 튜플을 제거
-        - FROM 절
-            - 질의에 의해 검색된 데이터들을 포함하는 테이블 명을 기술
-        - WHERE 절
-            - 검색할 조건을 기술
-        - GROUP BY 절
-            - 속성 값을 그룹으로 분류하고자 할 때 사용
-        - HAVING 절
-            - GROUP BY에 의해 분류한 후 그룹에 대한 조건 기술
-        - ORDER BY 절
-            - 속성 값을 정령하고자할 때 사용
-            - ASC(오름차순) DESC(내림차순)키워드 생략시 오름차순으로 정렬
-    - WHERE 조건
-        - WHERE 절에서 조건이 상수인 경우: 상하 조건인 경우 숫자를 그대로 입력하여 비교가능
-            - ```sql
-SELECT 사원번호, 이름, 부서번호
-FROM 사원
-WHERE 부서번호 = 90;
-```text
-        - WHERE 절에서 조건이 문자열인 경우: 문자열 조건인 경우 작은 따옴표('')가 필요하며, 대소문자를 구별함
-            - ```sql
-SELECT 이름, 학번, 교실
-FROM 학생
-WHERE 이름 = 'GILDONG'; 
-```text
-        - WHERE 절에서 날짜 데이터의 경우: 작은 따옴표
-            - ```sql
-SELECT 이름
-FROM 사원
-WHERE 입사일 = '17. FEB. 96';
-```text
-            - 대소문자 구분 안함
-            - 검색 형식 다르게 하면 검색 안됨
-            - 날짜 데이터 문자열 형식의 입력 조건: 'DD-MM-YY'
-        - 비교
-            - =, <>/!=/^, <, <=, >, >=
-        - 범위
-            - BETWEEN
-        - 집합
-            - IN
-            - NOT IN
-        - 패턴
-            - LIKE
-        - 복합조건
-            - AND
-            - OR
-            - NOT
-        - 와일드 문자
-            - +: 문자열 연결
-            - %: 0 개 이상의 문자열과 일치
-            - []: N 개 이상의 문자와 일치
-            - [^]: 1 개 이상의 문자와 불일치
-            - _: 1 개의 문자와 일
-    - INSERT 명령어
-        - 데이터의 내용을 삽입할 때 사용하는 명령어
-        - 속성명 데이터 개수, 데이터 타입이 일치해야 함
-        - 속성명 생략 가능
-        - ```sql
-INSERT INTO 테이블명(속성명 1, ...)
-VALUE(데이터 1, ...);
-```text
-    - UPDATE 명령
-        - 데이터의 내용을 변경할 때 사용하는 명령어
-        - UPDATE 명령문을 WHERE 절을 통해 어떤 조건이 만족할 경우에만 특정 컬럼의 값을 수정하는 용도로 자주 사용됨
-        - ```sql
-UPDATE 테이블명
-SET 속성명 = 데이터, ...
-WHERE 조건;
-```text
-    - DELETE 명령
-        - 데이터의 내용을 삭제할 때 사용하는 명령어
-        - ```sql
-DELETE FROM 테이블명
-WHERE 조건;
-```text
-- 조인
-    - 조인은 두개 이상의 테이블을 연결하여 데이터를 검색하는 방법
-    - 논리적 조인
-        - 내부 조인
-            - [Aliases](~/Aliases.md) Aliases
-                - Inner Join
-            - 공통 존재 컬럼의 값이 같은 경우 추출하는 기법
-            - ```sql
-SELECT A. 컬럼1, A. 컬럼2 ... , B. 컬럼1, B.컬럼2 ...
-FROM 테이블 1A [INNER] JOIN 테이블 2 ㅠ ON 조인 조건
-[WHERE 검색 조건];
-```text
-        - 외부 조인
-            - [Aliases](~/Aliases.md) Aliases
-                - Outer Join
-            - 외부 조인의 종류로는 왼쪽 외부 조인, 오른쪽 외부 조인, 완전 외부 조인
-        - 교차 조인
-            - [Aliases](~/Aliases.md) Aliases
-                - Cross Join
-            - 조인 조건이 없는 모든 데이터 포함을 추출하는 기법
-        - 셀프 조인
-            - [Aliases](~/Aliases.md) Aliases
-                - Self Join
-            - 자기 자신에게 별칭을 지정한 후 다시 조인하는 기법
-    - 물리적 조인
-        - Nested-Loop
-            - [Aliases](~/Aliases.md) Aliases
-                - 중첩 반복 조인
-            - 2 개 이상의 테이블에서 하나의 집합을 기준으로 순차적으로 상대방 ROW 를 결합하여 원하는 결과를 조합하는 조인 방식
-        - Sort-Merge
-            - [Aliases](~/Aliases.md) Aliases
-                - 정렬 합병 조인
-            - 조인의 대상 범위가 넓을 경우 발생하는 임의 접근을 줄이기 위한 경우나 연결 고리에 마땅한 인덱스가 존재하지 않을 경우 해결하기 위한 조인 방식
-        - Hash
-            - [Aliases](~/Aliases.md) Aliases
-                - 해시 조인
-            - 해시 조인은 해싱 함수를 활용하여 테이블간 조인을 수행하는 방
-- 서브 쿼리
-    - 서브 쿼리는 SQL 문 안에 포함된 또 다른 SQL 문을 의미
-    - 유형
-        - SELECT 절 서브 쿼리
-            - 서브쿼리가 SELECT 절 안에 들어가 있는 형태
-            - 스칼라 서브 쿼리라고도 불림
-            - SELECT 절에 오는 서브쿼리는 반드시 단일 행을 리턴해야 함
-        - FROM 절 서브 쿼리
-            - 서브쿼리가 FROM 절 안에 들어있는 형태
-            - 인라인 뷰라고도 불림
-            - 뷰 처럼 결과가 동적으로 생성된 테이블 형태로 사용할 수 있음
-        - WHERE 절 서브 쿼리
-            - 서브쿼리가 WHERE 절 안에 들어있는 형태
-            - 중첩 서브쿼리라고도 불림
-- 집합 연산자
-    - 두개 이상의 테이블에서 여러개의 질의의 결과를 연결하여 하나로 결합하는 연산자
-    - 유형
-        - UNION
-            - 중복행이 제거된 쿼리 결과 집합
-            - 중복레코드 제외
-        - UNION ALL
-            - 중복행이 제거되지 않은 쿼리 결과 집합
-            - 중복레코드 허용
-        - INTERSECT
-            - 두 쿼리 결과에 공통적으로 존재하는 집합
-            - 중복 레코드만 포함
-        - MINUS
-            - 첫 쿼리에 있고 두 번째에는 없는 집합
-            - 비교 레코드 제
+## I. 관계형 데이터베이스 데이터 조작의 핵심, DML의 개요
 
-## 관련 노트
+* **정의**: [[데이터베이스]] 관리 시스템([[DBMS]])에서 사용자 또는 응용 프로그램이 테이블(Table) 내의 실질적인 데이터를 검색, 삽입, 수정, 삭제하기 위해 사용하는 데이터 조작 언어
+* **특징**:
+* **[[트랜잭션]](Transaction) 연계**: 실행 후 데이터베이스에 영구 반영하기 위해 반드시 `COMMIT`, 취소 시 `ROLLBACK` 등 TCL(Transaction Control Language)과 연계가 필요함 (Auto-Commit 아님)
+* **선언적 언어(Declarative)**: 사용자가 원하는 결과셋(What)만 명시하면, 접근 경로 및 처리 방법(How)은 DBMS의 [[옵티마이저]]([[OPTIMIZER|Optimizer]])가 결정
+* **레코드 단위 처리**: 릴레이션(테이블)의 튜플(Tuple/Row) 단위로 데이터를 조작하며 [[무결성]] 제약조건을 준수함
 
-- [[02_IT_Tech/Boolean Type|Boolean Type]] — 공유 키워드: `IT`, `조건`
-- [[02_IT_Tech/DCL|DCL]] — 공유 키워드: `IT`, `데이터`
-- [[02_IT_Tech/DDL|DDL]] — 공유 키워드: `IT`, `데이터`
-- [[02_IT_Tech/OLAP|OLAP]] — 공유 키워드: `IT`, `데이터`
-- [[02_IT_Tech/SQL 문법|SQL 문법]] — 공유 키워드: `IT`, `데이터`
 
+
+---
+
+## II. DML의 처리 메커니즘 및 핵심 명령어
+
+### 가. DML의 처리 메커니즘 및 동작 원리
+
+```mermaid
+flowchart TD
+    User["사용자 및 어플리케이션"]
+    
+    subgraph DBMS_Engine ["DBMS 내부 엔진 (Query Processing)"]
+        direction TB
+        Parser["Query Parser<br/>(문법 검사 및 파싱 트리 생성)"]
+        Optimizer["Query Optimizer<br/>(최적의 실행 계획 도출)"]
+        Executor["Execution Engine<br/>(실행 계획 기반 데이터 접근)"]
+        Parser --> Optimizer --> Executor
+    end
+    
+    subgraph Storage_Memory ["메모리 및 스토리지 영역"]
+        direction LR
+        Buffer["DB Buffer Cache<br/>(메모리 상주 데이터 변경)"]
+        Undo["Undo Segment<br/>(읽기 일관성 및 롤백 대비)"]
+        Redo["Redo Log Buffer<br/>(장애 복구/트랜잭션 로그 기록)"]
+    end
+
+    User -- "DML 쿼리 요청<br/>(UPDATE 등)" --> Parser
+    Executor == "데이터 쓰기/읽기" === Buffer
+    Executor -. "이전 값 저장" .-> Undo
+    Executor -. "변경 로그 기록" .-> Redo
+
+```
+
+* 사용자로부터 DML(예: UPDATE)이 인입되면 파싱과 최적화 단계를 거쳐 실행 계획(Execution Plan)이 생성됨
+* 동시성 제어와 장애 복구를 위해 디스크 원본 수정 전 Buffer Cache에서 데이터를 변경하며, Undo(롤백용) 및 Redo(복구용) 영역에 기록을 동시 수행함
+
+### 나. DML의 핵심 명령어 및 기능 요소
+
+| 구분 | 명령어(키워드) | 세부 설명 |
+| --- | --- | --- |
+| **데이터 검색** | `SELECT` | 테이블에서 조건에 맞는 데이터를 조회 (질의어 기능이 커서 DQL로 별도 분류하기도 함) |
+| **데이터 삽입** | `INSERT` | 새로운 튜플(레코드)을 테이블에 추가 (단일 행 또는 Subquery를 통한 다중 행 삽입) |
+| **데이터 수정** | `UPDATE` | 기존 테이블에 저장된 튜플의 특정 컬럼 값을 조건(`WHERE`)에 따라 변경 |
+| **데이터 삭제** | `DELETE` | 조건에 맞는 튜플을 삭제하며, 테이블 구조는 유지됨 (트랜잭션 로그 기록으로 복구 가능) |
+| **데이터 병합** | `MERGE` | 데이터 존재 여부에 따라 `INSERT` 또는 `UPDATE`를 한 번의 쿼리로 분기하여 수행 (Upsert 기능) |
+| **동시성 제어** | Lock (잠금) | DML 수행 시 정합성 보장을 위해 행 수준(Row-Level) 배타적 잠금(Exclusive Lock) 발생 |
+| **무결성 보장** | Constraint | DML 실행 시 기본키(PK), 외래키(FK) 등 사전에 정의된 데이터 무결성 제약조건 위배 여부 확인 |
+| **접근 경로** | Execution Plan | 옵티마이저가 생성하는 DML 처리 경로(Table Full Scan, [[RDBMS 인덱스(index)|Index]] Range Scan 등) |
+
+---
+
+## III. SQL 언어 그룹 간 비교 및 DML 성능 최적화 방안
+
+### 가. SQL 그룹별 비교 (DML vs DDL vs DCL)
+
+| 비교 항목 | DML (조작어) | [[DDL]] (정의어) | [[DCL]] (제어어) |
+| --- | --- | --- | --- |
+| **주요 목적** | 데이터(레코드) 조회, 추가, 수정, 삭제 | 객체(테이블, 인덱스 등) 구조의 생성, 변경, 삭제 | 데이터베이스 접근 권한 부여 및 회수 |
+| **적용 대상** | 테이블 내의 **튜플(Row)** | 데이터베이스 **[[스키마]](Schema) 및 객체** | 사용자(User) 및 롤(Role) |
+| **트랜잭션(Commit)** | 명시적 제어 필요 (수동 Commit) | 실행 즉시 자동 반영 (Auto-Commit) | 실행 즉시 자동 반영 (Auto-Commit) |
+| **주요 명령어** | `SELECT`, `INSERT`, `UPDATE`, `DELETE` | `CREATE`, `ALTER`, `DROP`, `TRUNCATE` | `GRANT`, `REVOKE` |
+| **로그 기록량** | 튜플 단위 전체 로그 기록 (대량 발생) | 메타데이터 변경 로그만 기록 (소량) | 딕셔너리 변경 로그 기록 (소량) |
+
+### 나. 대용량 DML 처리 시 성능 최적화(Tuning) 방안
+
+* **인덱스(Index) 전략 고려**: 무분별한 인덱스는 `INSERT`, `UPDATE`, `DELETE` 시 오버헤드를 발생시키므로 조회를 위한 최소한의 최적화된 인덱스만 구성
+* **힌트(Hint) 및 배열 처리(Array Processing) 적용**: 대용량 데이터 DML 시 옵티마이저의 접근 경로를 힌트로 유도하고, 반복적인 쿼리는 Array Binding(다중 행 일괄 처리)을 통해 네트워크 및 [[CPU]] 파싱 오버헤드를 최소화
+* **[[파티셔닝]](Partitioning) 활용**: 이력 데이터 대량 삭제 시 `DELETE` DML 대신 파티션 `DROP` 또는 `TRUNCATE` DDL을 활용하여 시스템 부하와 언두(Undo) 로그 생성을 원천 차단
+
+---
+
+### 🔗 연관 토픽
+
+- **소속 도메인**: [[00_데이터베이스_MOC|🗄️ 데이터베이스]]
+- **세부 분류**: `2. 트랜잭션 & 동시성 제어 (Concurrency)`
+- **핵심 연관 토픽**:
+  - [[무결성]]
+  - [[트랜잭션]]
+  - [[DDL]]
+  - [[DCL]]
+  - [[RDBMS 인덱스(index)]]

@@ -2,19 +2,20 @@
 title: EDA (Event-Driven Architecture)
 date: 2026-08-24
 tags:
-  - template
-  - exam/1교시
-draft: false
+  - 소프트웨어공학
 ---
+
 # EDA (Event-Driven Architecture)
+
+---
 
 ## I. 느슨한 결합 기반의 비동기 분산 아키텍처, EDA의 개요
 
-- **정의**: 시스템 내 상태 변화(Event)를 감지하여 비동기적으로 메시지를 발행(Publish)하고, 이를 구독(Subscribe)하는 서비스가 반응하여 비즈니스 로직을 처리하는 소프트웨어 아키텍처
+- **정의**: 시스템 내 상태 변화(Event)를 감지하여 비동기적으로 메시지를 발행(Publish)하고, 이를 구독(Subscribe)하는 서비스가 반응하여 비즈니스 로직을 처리하는 [[소프트웨어 아키텍처]]
     
       
     
-- MSA(Microservices Architecture) 및 클라우드 네이티브 환경에서 서비스 간 의존성을 최소화하고 유연성을 확보하기 위한 핵심 패턴
+- [[MSA (Micro Service Architecture)|MSA]](Microservices Architecture) 및 [[클라우드 네이티브]] 환경에서 서비스 간 의존성을 최소화하고 유연성을 확보하기 위한 핵심 패턴
     
       
     
@@ -22,6 +23,8 @@ draft: false
     
       
     
+
+---
 
 ## II. EDA의 개념도 및 핵심 기술 요소
 
@@ -69,6 +72,8 @@ flowchart LR
 |**표준화**|CloudEvents|클라우드 환경에서 플랫폼 간 호환성을 위해 CNCF가 제정한 이벤트 데이터 메타데이터 표준|
 |**데이터 처리**|Stream Processing|끊임없이 생성되는 이벤트 스트림 데이터를 실시간으로 수집, 분석, 처리 (Flink, Spark)|
 
+---
+
 ## III. EDA와 기존 아키텍처(Request-Driven) 비교 및 향후 전망
 
 ### 가. EDA vs Request-Driven Architecture(RDA) 비교
@@ -76,7 +81,7 @@ flowchart LR
 |**비교 항목**|**Request-Driven (API 기반)**|**Event-Driven (EDA 기반)**|
 |---|---|---|
 |**통신 패러다임**|동기식(Synchronous) P2P 호출|비동기식(Asynchronous) Pub/Sub|
-|**결합도(Coupling)**|강결합 (서비스 간 물리적/논리적 의존성 높음)|느슨한 결합 (브로커를 통한 논리적 분리)|
+|**[[결합도]](Coupling)**|강결합 (서비스 간 물리적/논리적 의존성 높음)|느슨한 결합 (브로커를 통한 논리적 분리)|
 |**장애 격리성**|타 서비스 장애 시 연쇄 장애(Cascading Failure) 발생 위험|큐잉/버퍼링을 통해 장애 격리(Isolation) 우수|
 |**트래픽 대응**|트래픽 폭증 시 병목 현상 발생 (스케일 아웃 복잡)|브로커에서 트래픽 완충(Buffering), 독립적 확장 용이|
 |**데이터 일관성**|2PC 등 강한 일관성(Strong Consistency) 확보 유리|결과적 일관성(Eventual Consistency) 모델 수용 필요|
@@ -91,4 +96,17 @@ flowchart LR
     
       
     
-- **결과적 일관성(Eventual Consistency) 극복 과제**: 분산 트랜잭션의 신뢰성 보장을 위해 Saga 패턴 및 Outbox 패턴의 [[프레임워크]] 수준 지원(예: Debezium CDC 연동) 지속 확대 중
+- **결과적 일관성(Eventual Consistency) 극복 과제**: 분산 트랜잭션의 [[신뢰성]] 보장을 위해 Saga 패턴 및 Outbox 패턴의 [[프레임워크]] 수준 지원(예: Debezium CDC 연동) 지속 확대 중
+
+---
+
+### 🔗 연관 토픽
+
+- **소속 도메인**: [[00_소프트웨어공학_MOC|🏗️ 소프트웨어공학]]
+- **세부 분류**: `4. 아키텍처 스타일 & 객체지향 설계 원리`
+- **핵심 연관 토픽**:
+  - [[결합도]]
+  - [[프레임워크]]
+  - [[MSA (Micro Service Architecture)]]
+  - [[DDD (Domain Driven Design)]]
+  - [[소프트웨어 아키텍처|소프트웨어 아키텍쳐]]

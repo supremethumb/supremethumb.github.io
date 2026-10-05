@@ -2,11 +2,9 @@
 title: MAC 배열
 date: 2026-08-28
 tags:
-  - ai
-  - architecture
-  - 컴퓨터아키텍처
-draft: false
+  - 컴퓨터구조
 ---
+
 # MAC 배열
 
 ---
@@ -73,19 +71,32 @@ graph TD
 | **연산 코어**             | **CSA (Carry-Save Adder)**   | 다중 덧셈 연산 속도를 가속하는 회로              |
 | **데이터플로우 (Dataflow)** | **Weight Stationary (WS)**   | 재사용하는 방식                          |
 | **데이터플로우 (Dataflow)** | **Output Stationary (OS)**   | 메모리 쓰기 대역폭을 최소화하는 구조              |
-| **데이터플로우 (Dataflow)** | **Row Stationary (RS)**      | 행 단위로 매핑하여 재사용                    |
+| **데이터플로우 (Dataflow)** | **Row Stationary (RS)**      | 행 단위로 매핑하여 [[재사용]]                    |
 | **정밀도 및 가속**          | **혼합 정밀도 (Mixed Precision)** | 누적하여 연산 속도와 정확도 동시 확보             |
 | **정밀도 및 가속**          | **희소성 가속 (Sparsity Engine)** | 연산 및 데이터 이동을 스킵                   |
-| **차세대 인터커넥트**         | **CIM Crossbar Array**       | 옴의 법칙 및 키르히호프 법칙을 이용한 아날로그 MAC 배열 |
+| **차세대 인터커넥트**         | **CIM Crossbar Array**       | 옴의 법칙 및 키르히호프 법칙을 이용한 아날로그 [[MAC]] 배열 |
 
 ---
 ## III. MAC 배열 vs 범용 ALU 배열 비교 및 발전 전망
 
-| **비교 항목**     | **MAC 배열 (AI / [[NPU]] 가속기)**                           | **범용 ALU 배열 (CPU / 일반 코어)**              |
+| **비교 항목**     | **MAC 배열 (AI / [[NPU]] 가속기)**                           | **범용 ALU 배열 ([[CPU]] / 일반 코어)**              |
 | ------------- | --------------------------------------------------- | ---------------------------------------- |
 | **연산 특화도**    | **행렬 곱셈·누산($A \times B + C$) 전용 구조**                | **사칙연산, 논리연산, 분기 등 범용 연산 수행**            |
 | **데이터 공유 방식** | **PE 간 직접 연결(Systolic / Mesh)을 통한 데이터 재사용**         | **중앙 레지스터 파일 및 공유 캐시 경유**                |
 | **제어 오버헤드**   | 단순한 제어 로직, 높은 면적 대비 연산 집적도                          | 복잡한 명령어 디코더, 분기 예측기(Branch Predictor) 필요 |
 | **에너지 효율성**   | 극도로 높음 (TOPS/W 최적화)                                 | 범용성으로 인해 상대적으로 낮음                        |
-| **대표 적용 사례**  | **Google TPU Matrix Unit, NVIDIA Tensor Core, NPU** | **x86 CPU 코어, ARM Cortex-A ALU**         |
+| **대표 적용 사례**  | **Google [[TPU (Tensor Processing Unit)|TPU]] Matrix Unit, NVIDIA Tensor Core, [[NPU]]** | **x86 CPU 코어, ARM Cortex-A ALU**         |
 - 초저정밀도 포맷 도입, 3D 적층 및 [[PIM]](Processing-In-Memory) 결합
+
+---
+
+### 🔗 연관 토픽
+
+- **소속 도메인**: [[00_컴퓨터구조_MOC|💻 컴퓨터구조]]
+- **세부 분류**: `2. 캐시 & 메모리 계층 구조 · 스토리지`
+- **핵심 연관 토픽**:
+  - [[PIM|PIM(Processing-In-Memory)]]
+  - [[TPU (Tensor Processing Unit)]]
+  - [[CPU]]
+  - [[GPU]]
+  - [[NPU|NPU(Neural Processing Unit)]]

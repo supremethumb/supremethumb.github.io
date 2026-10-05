@@ -13,3 +13,4 @@ private/
 replit.nix
 .tmp.driveupload
 **/.tmp.driveupload
+**/.backup*

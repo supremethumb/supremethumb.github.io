@@ -2,10 +2,12 @@
 title: HBM (High Bandwidth Memory)
 date: 2026-09-04
 tags:
-  - 컴퓨터아키텍처
-draft: false
+  - 컴퓨터구조
 ---
+
 # HBM (High Bandwidth Memory)
+
+---
 
 ## I. AI 시대의 메모리 병목 해소, HBM의 개요
 
@@ -13,6 +15,8 @@ draft: false
 |---|---|
 |**정의**|다수의 DRAM을 TSV 기술로 수직 적층하고 실리콘 인터포저를 통해 고대역폭을 제공하는 초고속 메모리|
 |**특징**|• **초고대역폭**: 수천 개의 I/O 핀을 통한 병렬 데이터 전송 • **저전력·초소형**: 데이터 전송 경로 단축으로 전력 소모 절감 및 실장 면적 축소|
+
+---
 
 ## II. HBM의 아키텍처 및 핵심 구성요소
 
@@ -98,6 +102,8 @@ draft: false
 
 - HBM3E 양산 성숙에 이어 HBM4 세대 진입에 따른 기술 전환 가속화
 
+---
+
 ## III. HBM 세대 발전 전송 특성 및 향후 전망
 
 |구분|HBM3E|HBM4|
@@ -107,6 +113,19 @@ draft: false
 |**적층 단수**|**8-Hi / 12-Hi**|**16-Hi (초고밀도 적층)**|
 |**핵심 기술**|방열 제어 최적화 (Advanced MR-MUF)|Custom Base Die (파운드리 첨단 로직 공정 결합)|
 
-- **커스텀 HBM 시대 도래**: 고객 맞춤형 Custom Base Die 적용으로 GPU·[[NPU]] 시스템 최적화 가속
+- **커스텀 HBM 시대 도래**: 고객 맞춤형 Custom Base Die 적용으로 [[GPU]]·[[NPU]] 시스템 최적화 가속
 - **하이브리드 본딩(Hybrid Bonding) 수율 안정화**: 범프리스(Bumpless) 패키징을 통한 적층 두께 한계 극복
 - **[[PIM]](Processing-In-Memory)으로의 융합 가속**: 메모리 내부 연산 기능 탑재를 통한 폰 노이만 병목의 원천 해소
+
+---
+
+### 🔗 연관 토픽
+
+- **소속 도메인**: [[00_컴퓨터구조_MOC|💻 컴퓨터구조]]
+- **세부 분류**: `2. 캐시 & 메모리 계층 구조 · 스토리지`
+- **핵심 연관 토픽**:
+  - [[PIM|PIM(Processing-In-Memory)]]
+  - [[메모리 반도체|메모리 반도체 (Memory Semiconductor)]]
+  - [[메모리 관리]]
+  - [[NPU|NPU(Neural Processing Unit)]]
+  - [[페이지 교체 알고리즘|페이지 교체 알고리즘 (Paging Replacement Algorithm)]]
