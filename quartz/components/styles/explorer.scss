@@ -106,7 +106,11 @@ button.desktop-explorer {
   align-items: center;
 
   & h2 {
-    font-size: 1rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray);
     display: inline-block;
     margin: 0;
   }
@@ -116,7 +120,7 @@ button.desktop-explorer {
   list-style: none;
   overflow: hidden;
   overflow-y: auto;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 
   & ul {
     list-style: none;
@@ -128,13 +132,24 @@ button.desktop-explorer {
     }
 
     & li > a {
-      color: var(--dark);
+      color: var(--darkgray);
       opacity: 0.75;
+      font-size: 0.88rem;
+      line-height: 1.65;
       pointer-events: all;
+      transition: all 0.15s ease;
+
+      &:hover {
+        opacity: 1;
+        color: var(--dark);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
 
       &.active {
         opacity: 1;
-        color: var(--tertiary);
+        font-weight: 600;
+        color: var(--dark);
       }
     }
   }

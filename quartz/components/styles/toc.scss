@@ -22,7 +22,11 @@ button.toc-header {
   align-items: center;
 
   & h3 {
-    font-size: 1rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray);
     display: inline-block;
     margin: 0;
   }
@@ -41,26 +45,38 @@ button.toc-header {
 ul.toc-content.overflow {
   list-style: none;
   position: relative;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
   padding: 0;
   max-height: calc(100% - 2rem);
   overscroll-behavior: contain;
   list-style: none;
 
   & > li > a {
-    color: var(--dark);
-    opacity: 0.35;
-    transition:
-      0.5s ease opacity,
-      0.3s ease color;
+    color: var(--darkgray);
+    opacity: 0.55;
+    font-size: 0.88rem;
+    line-height: 1.65;
+    display: block;
+    padding: 0.2rem 0;
+    transition: all 0.2s ease;
+
+    &:hover {
+      opacity: 0.95;
+      color: var(--dark);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     &.in-view {
-      opacity: 0.75;
+      opacity: 1;
+      font-weight: 600;
+      color: var(--dark);
     }
   }
 
   @for $i from 0 through 6 {
     & .depth-#{$i} {
-      padding-left: calc(1rem * #{$i});
+      padding-left: calc(0.85rem * #{$i});
     }
   }
 }
