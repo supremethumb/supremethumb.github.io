@@ -17,22 +17,50 @@ interface CategoryMeta {
 }
 
 const KNOWN_CATEGORIES: Record<string, CategoryMeta> = {
-  "02_IT_Tech": {
-    id: "02_IT_Tech",
-    name: "02. IT & 테크 (10대 도메인)",
+  "01_IT-Tech": {
+    id: "01_IT-Tech",
+    name: "01. IT & 테크 (10대 도메인)",
     icon: "💻",
     description:
       "정보관리 및 컴퓨터시스템응용기술사 표준 10대 지식 체계 (인공지능, 보안, SW공학, 네트워크 등)",
-    hubSlug: "02_IT_Tech/00_02_IT_Tech_MOC",
+    hubSlug: "01_IT-Tech/00_02_IT_Tech_MOC",
     cssClass: "cat-tech",
     featuredTags: ["인공지능", "보안", "소프트웨어공학", "네트워크", "데이터베이스"],
   },
-  "01_UX_Design": {
-    id: "01_UX_Design",
-    name: "01. UX & UI 디자인",
+  "01_IT Tech": {
+    id: "01_IT Tech",
+    name: "01. IT & 테크 (10대 도메인)",
+    icon: "💻",
+    description:
+      "정보관리 및 컴퓨터시스템응용기술사 표준 10대 지식 체계 (인공지능, 보안, SW공학, 네트워크 등)",
+    hubSlug: "01_IT-Tech/00_02_IT_Tech_MOC",
+    cssClass: "cat-tech",
+    featuredTags: ["인공지능", "보안", "소프트웨어공학", "네트워크", "데이터베이스"],
+  },
+  "02_Economics": {
+    id: "02_Economics",
+    name: "02. 경제 & 금융",
+    icon: "📈",
+    description: "가치투자, 거시경제 분석, 재테크, 주식 시장 메커니즘, 행동경제학",
+    hubSlug: "02_Economics",
+    cssClass: "cat-econ",
+    featuredTags: ["경제", "금융", "투자", "재테크", "주식"],
+  },
+  "03_Management": {
+    id: "03_Management",
+    name: "03. 경영 & 프로젝트 관리",
+    icon: "📋",
+    description: "PMBOK 7판 12대 원칙, 8대 성과 영역, 맞춤 조정, 모델·방법·가공품 및 공식 색인 체계",
+    hubSlug: "03_Management/00_03_Management_MOC",
+    cssClass: "cat-mgmt",
+    featuredTags: ["프로젝트관리", "경영", "PMBOK", "원가관리", "일정관리"],
+  },
+  "04_Design": {
+    id: "04_Design",
+    name: "04. UX & UI 디자인",
     icon: "🎨",
     description: "UX/UI 설계 방법론, 사용자 리서치, 서비스 기획, 프로덕트 디자인 심리학, AARRR",
-    hubSlug: "01_UX_Design",
+    hubSlug: "04_Design",
     cssClass: "cat-ux",
     featuredTags: ["UX", "디자인", "기획", "마케팅", "브랜드"],
   },
@@ -45,85 +73,67 @@ const KNOWN_CATEGORIES: Record<string, CategoryMeta> = {
     cssClass: "cat-phil",
     featuredTags: ["독서", "인문학", "철학", "인사이트", "자기개발"],
   },
-  "06_Economics": {
-    id: "06_Economics",
-    name: "06. 경제 & 금융",
-    icon: "📈",
-    description: "가치투자, 거시경제 분석, 재테크, 주식 시장 메커니즘, 행동경제학",
-    hubSlug: "06_Economics",
-    cssClass: "cat-econ",
-    featuredTags: ["경제", "금융", "투자", "재테크", "주식"],
-  },
-  "00_Meta": {
-    id: "00_Meta",
-    name: "00. 메타 & 색인",
-    icon: "📑",
-    description: "제텔카스텐 지식 관리 체계, 분류 인덱스, 템플릿",
-    hubSlug: "00_Meta",
-    cssClass: "cat-meta",
-    featuredTags: ["메타", "템플릿"],
-  },
 }
 
 const IT_DOMAINS = [
   {
     name: "인공지능",
     icon: "🤖",
-    moc: "02_IT_Tech/00_인공지능_MOC",
+    moc: "01_IT-Tech/00_인공지능_MOC",
     desc: "수학·통계, 머신러닝, 딥러닝, LLM/RAG, Vision, XAI",
   },
   {
     name: "보안",
     icon: "🛡️",
-    moc: "02_IT_Tech/00_보안_MOC",
+    moc: "01_IT-Tech/00_보안_MOC",
     desc: "암호학, 네트워크/시스템 보안, 웹 취약점, 침해대응",
   },
   {
     name: "소프트웨어공학",
     icon: "🏗️",
-    moc: "02_IT_Tech/00_소프트웨어공학_MOC",
+    moc: "01_IT-Tech/00_소프트웨어공학_MOC",
     desc: "SDLC, 애자일/DevOps, MSA/DDD 아키텍처, 테스팅",
   },
   {
     name: "네트워크",
     icon: "🌐",
-    moc: "02_IT_Tech/00_네트워크_MOC",
+    moc: "01_IT-Tech/00_네트워크_MOC",
     desc: "OSI 7계층, IP 라우팅, 전송제어(QoS), 5G/6G, SDN",
   },
   {
     name: "데이터베이스",
     icon: "🗄️",
-    moc: "02_IT_Tech/00_데이터베이스_MOC",
+    moc: "01_IT-Tech/00_데이터베이스_MOC",
     desc: "데이터 모델링, 트랜잭션, 분산 DB/NoSQL, SQL 튜닝",
   },
   {
     name: "컴퓨터구조",
     icon: "💻",
-    moc: "02_IT_Tech/00_컴퓨터구조_MOC",
+    moc: "01_IT-Tech/00_컴퓨터구조_MOC",
     desc: "CPU 아키텍처, 캐시·메모리, AI 가속기(GPU/NPU), 알고리즘",
   },
   {
     name: "경영전략",
     icon: "📈",
-    moc: "02_IT_Tech/00_경영전략_MOC",
+    moc: "01_IT-Tech/00_경영전략_MOC",
     desc: "전략 프레임워크(3C/SWOT), IT 거버넌스, DX/BPR, ERP",
   },
   {
     name: "운영체제",
     icon: "⚙️",
-    moc: "02_IT_Tech/00_운영체제_MOC",
+    moc: "01_IT-Tech/00_운영체제_MOC",
     desc: "프로세스·스레드, CPU 스케줄링, 동기화, 가상 메모리",
   },
   {
     name: "프로젝트관리",
     icon: "📋",
-    moc: "02_IT_Tech/00_프로젝트관리_MOC",
+    moc: "01_IT-Tech/00_프로젝트관리_MOC",
     desc: "PMBOK 7판, WBS/CPM 일정, FP/EVM 원가, 감리",
   },
   {
     name: "디지털서비스",
     icon: "🚀",
-    moc: "02_IT_Tech/00_디지털서비스_MOC",
+    moc: "01_IT-Tech/00_디지털서비스_MOC",
     desc: "클라우드(IaaS/PaaS/SaaS), 블록체인/Web3, IoT, API",
   },
 ]
@@ -191,8 +201,15 @@ export default (() => {
       }
     })
 
-    // Sort categories: 02_IT_Tech first, then 01_UX_Design, 05_Humanities, 06_Economics, 00_Meta
-    const categoryOrder = ["02_IT_Tech", "01_UX_Design", "05_Humanities", "06_Economics", "00_Meta"]
+    // Sort categories: 01_IT-Tech first, then 02_Economics, 03_Management, 04_Design, 05_Humanities
+    const categoryOrder = [
+      "01_IT-Tech",
+      "01_IT Tech",
+      "02_Economics",
+      "03_Management",
+      "04_Design",
+      "05_Humanities",
+    ]
     categories.sort((a, b) => {
       const idxA = categoryOrder.indexOf(a.id)
       const idxB = categoryOrder.indexOf(b.id)
@@ -203,7 +220,7 @@ export default (() => {
     })
 
     // Build IT 10 domains data
-    const itNotes = folderMap.get("02_IT_Tech") ?? []
+    const itNotes = folderMap.get("01_IT-Tech") ?? folderMap.get("01_IT Tech") ?? []
     const itTotalCount = itNotes.length || 1
     const domainsData = IT_DOMAINS.map((domain) => {
       const matchingNotes = itNotes.filter((n) => (n.frontmatter?.tags ?? []).includes(domain.name))
@@ -355,7 +372,7 @@ export default (() => {
             </h4>
             <div class="explorer-notes-grid">
               <a
-                href={resolveRelative(currentSlug, "02_IT_Tech/00_02_IT_Tech_MOC" as FullSlug)}
+                href={resolveRelative(currentSlug, "01_IT-Tech/00_02_IT_Tech_MOC" as FullSlug)}
                 class="explorer-note-link"
                 data-title="IT & 테크 10대 도메인 마스터 맵"
                 data-tags="IT,MOC"
@@ -364,13 +381,31 @@ export default (() => {
                 <span class="note-badge">1,139개</span>
               </a>
               <a
-                href={resolveRelative(currentSlug, "01_UX_Design/AARRR" as FullSlug)}
+                href={resolveRelative(currentSlug, "03_Management/00_03_Management_MOC" as FullSlug)}
+                class="explorer-note-link"
+                data-title="프로젝트관리 (PMBOK 7판) 마스터 MOC"
+                data-tags="경영,프로젝트관리,PMBOK,MOC"
+              >
+                <span>📋 PMBOK 7판 마스터 MOC</span>
+                <span class="note-badge">400개</span>
+              </a>
+              <a
+                href={resolveRelative(currentSlug, "02_Economics/가치투자" as FullSlug)}
+                class="explorer-note-link"
+                data-title="가치투자 벤저민 그레이엄 워런 버핏"
+                data-tags="경제,투자,금융"
+              >
+                <span>📈 가치투자 원칙</span>
+                <span class="note-badge">경제/금융</span>
+              </a>
+              <a
+                href={resolveRelative(currentSlug, "04_Design/AARRR" as FullSlug)}
                 class="explorer-note-link"
                 data-title="AARRR 그로스 해킹 프레임워크"
                 data-tags="UX,마케팅,비즈니스"
               >
                 <span>🎯 AARRR 프레임워크</span>
-                <span class="note-badge">UX/기획</span>
+                <span class="note-badge">UX/디자인</span>
               </a>
               <a
                 href={resolveRelative(currentSlug, "05_Humanities/제텔카스텐" as FullSlug)}
@@ -389,24 +424,6 @@ export default (() => {
               >
                 <span>📖 사피엔스 요약</span>
                 <span class="note-badge">인문학</span>
-              </a>
-              <a
-                href={resolveRelative(currentSlug, "06_Economics/가치투자" as FullSlug)}
-                class="explorer-note-link"
-                data-title="가치투자 벤저민 그레이엄 워런 버핏"
-                data-tags="경제,투자,금융"
-              >
-                <span>📈 가치투자 원칙</span>
-                <span class="note-badge">경제/금융</span>
-              </a>
-              <a
-                href={resolveRelative(currentSlug, "05_Humanities/인간관계론" as FullSlug)}
-                class="explorer-note-link"
-                data-title="데일 카네기 인간관계론"
-                data-tags="인간관계,자기개발"
-              >
-                <span>🤝 인간관계론</span>
-                <span class="note-badge">인사이트</span>
               </a>
             </div>
           </div>
@@ -532,10 +549,28 @@ export default (() => {
 
         <div class="quick-nav-pills">
           <a
-            href={resolveRelative(currentSlug, "02_IT_Tech/00_02_IT_Tech_MOC" as FullSlug)}
+            href={resolveRelative(currentSlug, "01_IT-Tech/00_02_IT_Tech_MOC" as FullSlug)}
             class="quick-nav-pill"
           >
             🌐 IT & 테크 10대 도메인 마스터 맵
+          </a>
+          <a
+            href={resolveRelative(currentSlug, "02_Economics/가치투자" as FullSlug)}
+            class="quick-nav-pill"
+          >
+            📈 경제 & 금융 핵심: 가치투자
+          </a>
+          <a
+            href={resolveRelative(currentSlug, "03_Management/00_03_Management_MOC" as FullSlug)}
+            class="quick-nav-pill"
+          >
+            📋 경영 & PM: PMBOK 7판 마스터 MOC
+          </a>
+          <a
+            href={resolveRelative(currentSlug, "04_Design/AARRR" as FullSlug)}
+            class="quick-nav-pill"
+          >
+            🎯 UX & 디자인: AARRR
           </a>
           <a
             href={resolveRelative(currentSlug, "05_Humanities/제텔카스텐" as FullSlug)}
@@ -548,18 +583,6 @@ export default (() => {
             class="quick-nav-pill"
           >
             📚 인문학 핵심: 사피엔스
-          </a>
-          <a
-            href={resolveRelative(currentSlug, "06_Economics/가치투자" as FullSlug)}
-            class="quick-nav-pill"
-          >
-            📈 경제 & 금융 핵심: 가치투자
-          </a>
-          <a
-            href={resolveRelative(currentSlug, "01_UX_Design/AARRR" as FullSlug)}
-            class="quick-nav-pill"
-          >
-            🎯 UX & 비즈니스: AARRR
           </a>
         </div>
       </div>

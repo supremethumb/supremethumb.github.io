@@ -27,6 +27,17 @@ const defaultOptions: Options = {
   folderClickBehavior: "link",
   useSavedState: true,
   mapFn: (node) => {
+    const folderNames: Record<string, string> = {
+      "01_IT Tech": "01. IT & 테크",
+      "01_IT-Tech": "01. IT & 테크",
+      "02_Economics": "02. 경제 & 금융",
+      "03_Management": "03. 경영 & 프로젝트 관리",
+      "04_Design": "04. UX & UI 디자인",
+      "05_Humanities": "05. 인문학 & 철학",
+    }
+    if (node.isFolder && folderNames[node.displayName]) {
+      node.displayName = folderNames[node.displayName]
+    }
     return node
   },
   sortFn: (a, b) => {
@@ -46,7 +57,13 @@ const defaultOptions: Options = {
       return -1
     }
   },
-  filterFn: (node) => node.slugSegment !== "tags",
+  filterFn: (node) => {
+    return (
+      node.slugSegment !== "tags" &&
+      !node.slugSegment.startsWith("99_") &&
+      !node.slugSegment.startsWith(".")
+    )
+  },
   order: ["filter", "map", "sort"],
 }
 
