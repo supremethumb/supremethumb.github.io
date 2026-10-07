@@ -162,38 +162,6 @@
   }
 }
 
-/* Theme Toggle Icons */
-#galaxy-theme-toggle {
-  padding: 0.5rem 0.65rem;
-
-  .theme-icon-sun {
-    display: none;
-  }
-  .theme-icon-moon {
-    display: block;
-  }
-}
-
-:root[saved-theme="dark"] #galaxy-theme-toggle,
-html[saved-theme="dark"] #galaxy-theme-toggle {
-  .theme-icon-sun {
-    display: block;
-  }
-  .theme-icon-moon {
-    display: none;
-  }
-}
-
-:root[saved-theme="light"] #galaxy-theme-toggle,
-html[saved-theme="light"] #galaxy-theme-toggle {
-  .theme-icon-sun {
-    display: none;
-  }
-  .theme-icon-moon {
-    display: block;
-  }
-}
-
 /* Floating Bottom Dock */
 .galaxy-bottom-dock {
   position: absolute;

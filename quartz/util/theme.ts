@@ -178,15 +178,15 @@ export function joinStyles(theme: Theme, ...stylesheet: string[]) {
 ${stylesheet.join("\n\n")}
 
 :root {
-  --light: ${theme.colors.lightMode.light};
-  --lightgray: ${theme.colors.lightMode.lightgray};
-  --gray: ${theme.colors.lightMode.gray};
-  --darkgray: ${theme.colors.lightMode.darkgray};
-  --dark: ${theme.colors.lightMode.dark};
-  --secondary: ${theme.colors.lightMode.secondary};
-  --tertiary: ${theme.colors.lightMode.tertiary};
-  --highlight: ${theme.colors.lightMode.highlight};
-  --textHighlight: ${theme.colors.lightMode.textHighlight};
+  --light: ${theme.colors.darkMode.light};
+  --lightgray: ${theme.colors.darkMode.lightgray};
+  --gray: ${theme.colors.darkMode.gray};
+  --darkgray: ${theme.colors.darkMode.darkgray};
+  --dark: ${theme.colors.darkMode.dark};
+  --secondary: ${theme.colors.darkMode.secondary};
+  --tertiary: ${theme.colors.darkMode.tertiary};
+  --highlight: ${theme.colors.darkMode.highlight};
+  --textHighlight: ${theme.colors.darkMode.textHighlight};
 
   --titleFont: "${getFontSpecificationName(theme.typography.title || theme.typography.header)}", ${DEFAULT_SANS_SERIF};
   --headerFont: "${getFontSpecificationName(theme.typography.header)}", ${DEFAULT_SANS_SERIF};
@@ -272,9 +272,9 @@ ${stylesheet.join("\n\n")}
   --link-color-hover: var(--tertiary);
 
   /* Accent HSL (computed from secondary) */
-  --accent-h: ${hexToHsl(theme.colors.lightMode.secondary).h};
-  --accent-s: ${hexToHsl(theme.colors.lightMode.secondary).s}%;
-  --accent-l: ${hexToHsl(theme.colors.lightMode.secondary).l}%;
+  --accent-h: ${hexToHsl(theme.colors.darkMode.secondary).h};
+  --accent-s: ${hexToHsl(theme.colors.darkMode.secondary).s}%;
+  --accent-l: ${hexToHsl(theme.colors.darkMode.secondary).l}%;
 }
 
 :root[saved-theme="dark"] {

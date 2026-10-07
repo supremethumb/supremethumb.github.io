@@ -127,6 +127,11 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.setAttribute('saved-theme', 'dark'); try { localStorage.setItem('theme', 'dark'); } catch (_) {}`,
+          }}
+        />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js

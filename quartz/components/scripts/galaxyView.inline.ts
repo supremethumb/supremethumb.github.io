@@ -467,32 +467,13 @@ function initGalaxy() {
     })
   }
 
-  // Search & Theme HUD Controls
+  // Search HUD Control
   const searchTrigger = document.getElementById("galaxy-search-trigger")
   if (searchTrigger) {
     searchTrigger.addEventListener("click", () => {
       const searchBtn = document.querySelector(".search-button") as HTMLElement | null
       if (searchBtn) {
         searchBtn.click()
-      }
-    })
-  }
-
-  const themeToggle = document.getElementById("galaxy-theme-toggle")
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      const darkmodeBtn = document.querySelector(".darkmode") as HTMLElement | null
-      if (darkmodeBtn) {
-        darkmodeBtn.click()
-      } else {
-        const html = document.documentElement
-        const currentTheme = html.getAttribute("saved-theme") ?? "dark"
-        const newTheme = currentTheme === "dark" ? "light" : "dark"
-        html.setAttribute("saved-theme", newTheme)
-        localStorage.setItem("theme", newTheme)
-        document.body.classList.remove("theme-dark", "theme-light")
-        document.body.classList.add(`theme-${newTheme}`)
-        document.dispatchEvent(new CustomEvent("themechange", { detail: { theme: newTheme } }))
       }
     })
   }
