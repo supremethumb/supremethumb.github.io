@@ -341,26 +341,38 @@ function initGalaxy() {
     if (tooltip) tooltip.classList.remove("visible")
   }
 
-  let isWarping = false
+  let isTransitioning = false
   function navigateToNode(slug: string, targetNode?: GalaxyNode) {
-    if (isWarping) return
-    isWarping = true
+    if (isTransitioning) return
+    isTransitioning = true
 
-    // Activate visual warp speed tunnel overlay
-    const warpOverlay = document.getElementById("galaxy-warp-overlay")
-    if (warpOverlay) {
-      warpOverlay.classList.add("active")
+    // Activate elegant circular focus ring expansion and dissolve overlay
+    const focusOverlay = document.getElementById("galaxy-focus-overlay")
+    if (focusOverlay) {
+      if (targetNode) {
+        // Project 3D node coordinates to 2D screen pixels
+        const nodeVec = new THREE.Vector3(targetNode.x, targetNode.y, targetNode.z)
+        nodeVec.project(camera)
+        const screenX = (nodeVec.x * 0.5 + 0.5) * window.innerWidth
+        const screenY = (-nodeVec.y * 0.5 + 0.5) * window.innerHeight
+
+        const ringSvg = focusOverlay.querySelector(".focus-ring-svg") as HTMLElement | null
+        if (ringSvg) {
+          ringSvg.style.left = `${screenX}px`
+          ringSvg.style.top = `${screenY}px`
+        }
+      }
+      focusOverlay.classList.add("active")
     }
 
-    // Camera dive towards target star node
+    // Smooth camera focus glide towards target node
     if (targetNode) {
       controls.autoRotate = false
       const dirX = targetNode.x - camera.position.x
       const dirY = targetNode.y - camera.position.y
       const dirZ = targetNode.z - camera.position.z
       const dist = Math.sqrt(dirX * dirX + dirY * dirY + dirZ * dirZ)
-      // Fly to a point just ahead of the node
-      const factor = dist > 15 ? 1 - 12 / dist : 0.85
+      const factor = dist > 20 ? 1 - 18 / dist : 0.8
       flyCameraTo(
         camera.position.x + dirX * factor,
         camera.position.y + dirY * factor,
@@ -382,11 +394,11 @@ function initGalaxy() {
         } catch (e) {}
       }
       window.location.href = targetUrl
-    }, 340)
+    }, 380)
   }
 
   function onPointerMove(e: MouseEvent) {
-    if (isWarping) return
+    if (isTransitioning) return
     mouse.x = (e.clientX / window.innerWidth) * 2 - 1
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1
 
@@ -397,7 +409,7 @@ function initGalaxy() {
   }
 
   function onClick(e: MouseEvent) {
-    if (isWarping) return
+    if (isTransitioning) return
     // Also raycast on click so touch taps work immediately
     mouse.x = (e.clientX / window.innerWidth) * 2 - 1
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1
@@ -426,7 +438,7 @@ function initGalaxy() {
 
   if (tooltip) {
     tooltip.addEventListener("click", () => {
-      if (isWarping) return
+      if (isTransitioning) return
       if (hoveredIndex !== null && nodes[hoveredIndex]) {
         const target = nodes[hoveredIndex]
         navigateToNode(target.slug, target)
@@ -541,7 +553,7 @@ function initGalaxy() {
 
     // Smooth camera glide
     if (isFlying) {
-      flyProgress += delta * (isWarping ? 3.5 : 1.5)
+      flyProgress += delta * (isTransitioning ? 2.5 : 1.5)
       if (flyProgress >= 1) {
         flyProgress = 1
         isFlying = false
@@ -550,8 +562,8 @@ function initGalaxy() {
       camera.position.lerpVectors(flyStartPos, flyTargetPos, ease)
       controls.target.lerpVectors(flyStartLook, flyTargetLook, ease)
 
-      if (isWarping) {
-        camera.fov = Math.min(85, 45 + flyProgress * 40)
+      if (isTransitioning) {
+        camera.fov = Math.min(52, 45 + flyProgress * 7)
         camera.updateProjectionMatrix()
       }
     }

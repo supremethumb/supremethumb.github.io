@@ -411,19 +411,19 @@
   }
 }
 
-/* Hyperspace Warp Speed Transition Overlay */
-.galaxy-warp-overlay {
-  position: absolute;
+/* Elegant Circular Focus Ring & Expansion Dissolve */
+.galaxy-focus-overlay {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 55;
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
   transition:
-    opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.25s ease,
     visibility 0.25s ease;
   overflow: hidden;
 
@@ -432,133 +432,85 @@
     visibility: visible;
     pointer-events: auto;
 
-    .warp-flash {
-      animation: warpFlash 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    .focus-ring-svg {
+      animation: focusRingExpand 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    .warp-speed-rays {
-      animation: warpSpeedZoom 0.38s cubic-bezier(0.12, 0.9, 0.24, 1) forwards;
+    .focus-ring-circle {
+      animation: focusRingDraw 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    .warp-hud-label {
-      animation: warpHudFade 0.32s ease-out forwards;
+    .focus-dissolve-veil {
+      animation: focusDissolveFade 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
   }
 
-  .warp-flash {
+  .focus-ring-svg {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
+    margin-top: -45px;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 2;
+    overflow: visible;
+  }
+
+  .focus-ring-circle {
+    fill: none;
+    stroke: #38bdf8;
+    stroke-width: 1.75px;
+    stroke-linecap: round;
+    stroke-dasharray: 290;
+    stroke-dashoffset: 290;
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.7));
+  }
+
+  .focus-dissolve-veil {
     position: absolute;
     inset: 0;
-    background: radial-gradient(
-      circle at center,
-      rgba(255, 255, 255, 0.95) 0%,
-      rgba(56, 189, 248, 0.45) 35%,
-      rgba(15, 23, 42, 0.9) 75%,
-      #020307 100%
-    );
+    background: #121212;
     opacity: 0;
-  }
-
-  .warp-speed-rays {
-    position: absolute;
-    inset: -50%;
-    width: 200%;
-    height: 200%;
-    background:
-      radial-gradient(
-        ellipse at center,
-        transparent 0%,
-        rgba(56, 189, 248, 0.2) 40%,
-        rgba(255, 255, 255, 0.6) 80%,
-        transparent 100%
-      ),
-      repeating-conic-gradient(
-        from 0deg,
-        rgba(56, 189, 248, 0.25) 0deg 2deg,
-        transparent 2deg 12deg,
-        rgba(255, 255, 255, 0.35) 12deg 13deg,
-        transparent 13deg 24deg
-      );
-    opacity: 0;
-    transform: scale(0.3) rotate(0deg);
-    mix-blend-mode: screen;
-  }
-
-  .warp-hud-label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.85);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.75rem 1.4rem;
-    border-radius: 9999px;
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(56, 189, 248, 0.5);
-    box-shadow: 0 0 35px rgba(56, 189, 248, 0.5);
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    opacity: 0;
-    z-index: 2;
-
-    .warp-icon {
-      font-size: 1.25rem;
-      animation: warpRocketPulse 0.4s infinite alternate;
-    }
+    z-index: 1;
   }
 }
 
-@keyframes warpFlash {
+@keyframes focusRingDraw {
+  0% {
+    stroke-dashoffset: 290;
+    opacity: 0.3;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes focusRingExpand {
+  0% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(8);
+    opacity: 0;
+  }
+}
+
+@keyframes focusDissolveFade {
   0% {
     opacity: 0;
   }
-  60% {
-    opacity: 0.85;
-  }
-  100% {
-    opacity: 0.95;
-  }
-}
-
-@keyframes warpSpeedZoom {
-  0% {
-    opacity: 0;
-    transform: scale(0.2) rotate(0deg);
-  }
-  50% {
-    opacity: 0.9;
+  40% {
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
-    transform: scale(1.6) rotate(35deg);
-  }
-}
-
-@keyframes warpHudFade {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.05);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-@keyframes warpRocketPulse {
-  from {
-    transform: translateX(0) scale(1);
-  }
-  to {
-    transform: translateX(4px) scale(1.2);
   }
 }
 
@@ -697,41 +649,28 @@ body:not([data-slug="index"]) {
   }
 }
 
-/* 2. Unified Cosmic Branding on Sidebar Logo */
+/* 2. Editorial Typography on Sidebar Logo */
 .page-title {
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 0.5rem !important;
 
   a {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
     font-weight: 800;
-    letter-spacing: -0.02em;
+    font-size: 1.35rem;
+    letter-spacing: -0.035em;
     color: #ffffff !important;
-    text-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
-    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    position: relative;
-
-    &::before {
-      content: "🪐";
-      font-size: 1.35rem;
-      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-      display: inline-block;
-    }
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 
     &:hover {
       color: #38bdf8 !important;
-      text-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
-      transform: translateX(2px);
-
-      &::before {
-        transform: rotate(20deg) scale(1.18);
-      }
+      text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
     }
   }
 }
 
-/* 3. Cosmic Return Badge in Sidebar */
+/* 3. Minimal Return Badge in Sidebar */
 .galaxy-nav-home-btn {
   display: inline-flex;
   align-items: center;
@@ -740,51 +679,42 @@ body:not([data-slug="index"]) {
   margin-bottom: 0.75rem;
   padding: 0.25rem 0.65rem;
   border-radius: 9999px;
-  background: rgba(56, 189, 248, 0.08);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  color: #38bdf8;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
   font-size: 0.75rem;
-  font-family: var(--codeFont), monospace;
+  font-family: "Pretendard", var(--bodyFont), sans-serif;
   font-weight: 500;
   text-decoration: none !important;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 
   .orbit-dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: #38bdf8;
-    box-shadow: 0 0 8px #38bdf8;
-    animation: pulse-glow 2s infinite ease-in-out;
+    box-shadow: 0 0 6px #38bdf8;
   }
 
   &:hover {
-    background: rgba(56, 189, 248, 0.18);
-    border-color: rgba(56, 189, 248, 0.55);
+    background: rgba(56, 189, 248, 0.12);
+    border-color: rgba(56, 189, 248, 0.4);
     color: #ffffff;
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
     transform: translateY(-1px);
   }
 }
 
-/* 4. Cosmic Home Icon in Breadcrumb */
+/* 4. Breadcrumb Root Link */
 .breadcrumb-container {
   .breadcrumb-element:first-child a {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
     font-weight: 600;
-    color: #38bdf8;
+    color: #94a3b8;
     transition: all 0.2s ease;
 
-    &::before {
-      content: "🪐";
-      font-size: 0.9em;
-    }
-
     &:hover {
-      text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+      color: #38bdf8;
     }
   }
 }

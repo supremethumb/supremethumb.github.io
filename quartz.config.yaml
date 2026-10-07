@@ -18,7 +18,7 @@ configuration:
     typography:
       header: Pretendard
       body: Pretendard
-      code: IBM Plex Mono
+      code: Pretendard
     colors:
       lightMode:
         light: "#121212"
@@ -185,11 +185,7 @@ plugins:
   - source: "@quartz-community/darkmode"
     enabled: false
   - source: "@quartz-community/reader-mode"
-    enabled: true
-    layout:
-      position: left
-      priority: 35
-      group: toolbar
+    enabled: false
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
@@ -275,15 +271,7 @@ layout:
         left: []
         right: []
     content: {}
-    folder:
-      exclude:
-        - reader-mode
-      positions:
-        right: []
-    tag:
-      exclude:
-        - reader-mode
-      positions:
-        right: []
+    folder: {}
+    tag: {}
     canvas: {}
     bases: {}

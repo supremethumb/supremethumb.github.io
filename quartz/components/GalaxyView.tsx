@@ -22,21 +22,18 @@ export default (() => {
           </div>
         </div>
 
-        {/* Hyperspace Warp Speed Transition Overlay */}
-        <div id="galaxy-warp-overlay" class="galaxy-warp-overlay" aria-hidden="true">
-          <div class="warp-flash"></div>
-          <div class="warp-speed-rays"></div>
-          <div class="warp-hud-label">
-            <span class="warp-icon">🚀</span>
-            <span class="warp-text">지식 노드로 워프 도약 중...</span>
-          </div>
+        {/* Elegant Focus Ring & Dissolve Transition Overlay */}
+        <div id="galaxy-focus-overlay" class="galaxy-focus-overlay" aria-hidden="true">
+          <svg class="focus-ring-svg" viewBox="0 0 100 100">
+            <circle class="focus-ring-circle" cx="50" cy="50" r="46" />
+          </svg>
+          <div class="focus-dissolve-veil"></div>
         </div>
 
         {/* Top Minimal HUD */}
         <header class="galaxy-top-hud">
           <div class="galaxy-brand">
             <a href="./" class="galaxy-logo-title">
-              <span class="galaxy-icon">🪐</span>
               <span>Supreme Note</span>
             </a>
             <div class="galaxy-stats-badge">
@@ -107,17 +104,17 @@ export default (() => {
           {/* Action Tools */}
           <div class="galaxy-action-bar">
             <button id="btn-wander" class="action-pill-btn" title="랜덤 지식 노드로 날아가기">
-              <span>🧭 Wander 탐험</span>
+              <span>Wander 탐험</span>
             </button>
             <button
               id="btn-toggle-orbit"
               class="action-pill-btn active"
               title="은하 자동 자전 토글"
             >
-              <span>🪐 자동 회전</span>
+              <span>자동 회전</span>
             </button>
             <button id="btn-reset-view" class="action-pill-btn" title="기본 카메라 시점으로 복귀">
-              <span>🎯 은하 중심</span>
+              <span>은하 중심</span>
             </button>
           </div>
         </nav>
@@ -128,7 +125,7 @@ export default (() => {
           <div class="card-title">Note Title</div>
           <div class="card-meta-row">
             <span class="card-links-count">0 Links</span>
-            <span class="warp-cta">클릭하여 워프 🚀</span>
+            <span class="warp-cta">노드 열기 →</span>
           </div>
         </div>
       </div>
