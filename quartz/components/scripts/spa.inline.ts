@@ -108,7 +108,14 @@ async function _navigate(url: URL, isBack: boolean = false) {
   html.body.appendChild(announcer)
 
   document.querySelector(".navigation-progress")?.remove()
-  micromorph(document.body, html.body)
+  const doc = document as any
+  if (typeof doc.startViewTransition === "function") {
+    await doc.startViewTransition(() => {
+      micromorph(document.body, html.body)
+    }).updateCallbackDone
+  } else {
+    micromorph(document.body, html.body)
+  }
 
   // scroll into place and add history
   if (!isBack) {

@@ -341,20 +341,52 @@ function initGalaxy() {
     if (tooltip) tooltip.classList.remove("visible")
   }
 
-  function navigateToNode(slug: string) {
-    const targetUrl = `./${slug}`
-    // @ts-ignore
-    if (typeof window.spaNavigate === "function") {
-      try {
-        // @ts-ignore
-        window.spaNavigate(new URL(targetUrl, window.location.toString()))
-        return
-      } catch (e) {}
+  let isWarping = false
+  function navigateToNode(slug: string, targetNode?: GalaxyNode) {
+    if (isWarping) return
+    isWarping = true
+
+    // Activate visual warp speed tunnel overlay
+    const warpOverlay = document.getElementById("galaxy-warp-overlay")
+    if (warpOverlay) {
+      warpOverlay.classList.add("active")
     }
-    window.location.href = targetUrl
+
+    // Camera dive towards target star node
+    if (targetNode) {
+      controls.autoRotate = false
+      const dirX = targetNode.x - camera.position.x
+      const dirY = targetNode.y - camera.position.y
+      const dirZ = targetNode.z - camera.position.z
+      const dist = Math.sqrt(dirX * dirX + dirY * dirY + dirZ * dirZ)
+      // Fly to a point just ahead of the node
+      const factor = dist > 15 ? 1 - 12 / dist : 0.85
+      flyCameraTo(
+        camera.position.x + dirX * factor,
+        camera.position.y + dirY * factor,
+        camera.position.z + dirZ * factor,
+        targetNode.x,
+        targetNode.y,
+        targetNode.z,
+      )
+    }
+
+    const targetUrl = `./${slug}`
+    setTimeout(() => {
+      // @ts-ignore
+      if (typeof window.spaNavigate === "function") {
+        try {
+          // @ts-ignore
+          window.spaNavigate(new URL(targetUrl, window.location.toString()))
+          return
+        } catch (e) {}
+      }
+      window.location.href = targetUrl
+    }, 340)
   }
 
   function onPointerMove(e: MouseEvent) {
+    if (isWarping) return
     mouse.x = (e.clientX / window.innerWidth) * 2 - 1
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1
 
@@ -365,6 +397,7 @@ function initGalaxy() {
   }
 
   function onClick(e: MouseEvent) {
+    if (isWarping) return
     // Also raycast on click so touch taps work immediately
     mouse.x = (e.clientX / window.innerWidth) * 2 - 1
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1
@@ -376,7 +409,7 @@ function initGalaxy() {
         const hitIdx = intersects[0].index
         if (hitIdx !== undefined && hitIdx < nodes.length) {
           const target = nodes[hitIdx]
-          navigateToNode(target.slug)
+          navigateToNode(target.slug, target)
           return
         }
       }
@@ -384,7 +417,7 @@ function initGalaxy() {
 
     if (hoveredIndex !== null && nodes[hoveredIndex]) {
       const target = nodes[hoveredIndex]
-      navigateToNode(target.slug)
+      navigateToNode(target.slug, target)
     }
   }
 
@@ -393,8 +426,10 @@ function initGalaxy() {
 
   if (tooltip) {
     tooltip.addEventListener("click", () => {
+      if (isWarping) return
       if (hoveredIndex !== null && nodes[hoveredIndex]) {
-        navigateToNode(nodes[hoveredIndex].slug)
+        const target = nodes[hoveredIndex]
+        navigateToNode(target.slug, target)
       }
     })
   }
@@ -506,7 +541,7 @@ function initGalaxy() {
 
     // Smooth camera glide
     if (isFlying) {
-      flyProgress += delta * 1.5
+      flyProgress += delta * (isWarping ? 3.5 : 1.5)
       if (flyProgress >= 1) {
         flyProgress = 1
         isFlying = false
@@ -514,6 +549,11 @@ function initGalaxy() {
       const ease = 0.5 - Math.cos(flyProgress * Math.PI) / 2
       camera.position.lerpVectors(flyStartPos, flyTargetPos, ease)
       controls.target.lerpVectors(flyStartLook, flyTargetLook, ease)
+
+      if (isWarping) {
+        camera.fov = Math.min(85, 45 + flyProgress * 40)
+        camera.updateProjectionMatrix()
+      }
     }
 
     controls.update()

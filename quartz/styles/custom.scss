@@ -249,3 +249,90 @@
   border: 1px solid var(--lightgray) !important;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08) !important;
 }
+
+/* ==========================================================================
+   Cosmic Ambient Glow & Smooth View Transitions
+   ========================================================================== */
+
+/* 1. View Transitions API Hardware-Accelerated Crossfade */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.28s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+::view-transition-old(root) {
+  animation-name: cosmicFadeOut;
+}
+
+::view-transition-new(root) {
+  animation-name: cosmicFadeIn;
+}
+
+@keyframes cosmicFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.995);
+  }
+}
+
+@keyframes cosmicFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.005);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 2. Deep Space Ambient Cosmic Nebula Glow for Content Pages */
+body:not([data-slug="index"]) {
+  background-color: #121212 !important;
+  background-image:
+    radial-gradient(ellipse 65% 45% at 88% 12%, rgba(56, 189, 248, 0.038) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 40% at 12% 78%, rgba(167, 139, 250, 0.032) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 35% at 50% 92%, rgba(52, 211, 153, 0.022) 0%, transparent 60%) !important;
+  background-attachment: fixed !important;
+}
+
+/* 3. Domain Color Identity Continuity */
+a[href*="01_IT-Tech"],
+a[href*="01_it-tech"] {
+  &:hover {
+    color: #38bdf8 !important;
+  }
+}
+
+a[href*="02_Economics"],
+a[href*="02_economics"] {
+  &:hover {
+    color: #fbbf24 !important;
+  }
+}
+
+a[href*="03_Management"],
+a[href*="03_management"] {
+  &:hover {
+    color: #34d399 !important;
+  }
+}
+
+a[href*="04_Design"],
+a[href*="04_design"] {
+  &:hover {
+    color: #f472b6 !important;
+  }
+}
+
+a[href*="05_Humanities"],
+a[href*="05_humanities"] {
+  &:hover {
+    color: #a78bfa !important;
+  }
+}

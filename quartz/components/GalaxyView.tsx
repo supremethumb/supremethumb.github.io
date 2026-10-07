@@ -22,6 +22,16 @@ export default (() => {
           </div>
         </div>
 
+        {/* Hyperspace Warp Speed Transition Overlay */}
+        <div id="galaxy-warp-overlay" class="galaxy-warp-overlay" aria-hidden="true">
+          <div class="warp-flash"></div>
+          <div class="warp-speed-rays"></div>
+          <div class="warp-hud-label">
+            <span class="warp-icon">🚀</span>
+            <span class="warp-text">지식 노드로 워프 도약 중...</span>
+          </div>
+        </div>
+
         {/* Top Minimal HUD */}
         <header class="galaxy-top-hud">
           <div class="galaxy-brand">
