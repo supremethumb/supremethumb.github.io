@@ -631,12 +631,50 @@ body:not([data-slug="index"]) {
     box-sizing: border-box !important;
     overflow: hidden !important;
 
+    summary.note-properties-header,
     summary {
+      display: flex !important;
+      align-items: center !important;
+      line-height: 1 !important;
       font-size: 0.82rem !important;
       letter-spacing: 0.05em !important;
       text-transform: uppercase !important;
       color: #94a3b8 !important;
       cursor: pointer;
+
+      &::before {
+        content: "" !important;
+        display: inline-block !important;
+        width: 5px !important;
+        height: 5px !important;
+        border-right: 1.5px solid rgba(255, 255, 255, 0.35) !important;
+        border-bottom: 1.5px solid rgba(255, 255, 255, 0.35) !important;
+        border-top: none !important;
+        border-left: none !important;
+        margin-right: 0.5rem !important;
+        flex-shrink: 0 !important;
+        transition:
+          transform 0.2s ease,
+          border-color 0.2s ease !important;
+      }
+
+      &:hover {
+        color: #e2e8f0 !important;
+
+        &::before {
+          border-color: rgba(255, 255, 255, 0.75) !important;
+        }
+      }
+    }
+
+    &[open] > summary.note-properties-header::before,
+    &[open] > summary::before {
+      transform: translateY(-2px) rotate(45deg) !important;
+    }
+
+    &:not([open]) > summary.note-properties-header::before,
+    &:not([open]) > summary::before {
+      transform: translateY(-1px) rotate(-45deg) !important;
     }
 
     .note-properties-table {
@@ -1323,27 +1361,66 @@ a.external {
 
 /* Table of Contents Icons */
 .toc {
+  button.toc-header,
   button {
     display: inline-flex !important;
     align-items: center !important;
     vertical-align: middle !important;
+    gap: 0.35rem !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer !important;
 
-    svg,
-    .fold {
-      width: 13px !important;
-      height: 13px !important;
-      stroke: #64748b !important;
-      opacity: 0.55 !important;
-      vertical-align: middle !important;
-      transition:
-        stroke 0.2s ease,
-        opacity 0.2s ease !important;
+    h3 {
+      font-size: 0.85rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.06em !important;
+      text-transform: uppercase !important;
+      color: #94a3b8 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1 !important;
+      display: inline-flex !important;
+      align-items: center !important;
     }
 
-    &:hover svg,
-    &:hover .fold {
-      stroke: #94a3b8 !important;
-      opacity: 0.9 !important;
+    svg.fold,
+    .fold {
+      width: 14px !important;
+      height: 14px !important;
+      min-width: 14px !important;
+      stroke: rgba(255, 255, 255, 0.35) !important;
+      color: rgba(255, 255, 255, 0.35) !important;
+      opacity: 0.65 !important;
+      margin: 0 !important;
+      margin-left: 0.35rem !important;
+      padding: 0 !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      transform: translateY(-2px) !important;
+      transform-origin: center center !important;
+      transition:
+        transform 0.25s ease,
+        opacity 0.2s ease,
+        stroke 0.2s ease !important;
+    }
+
+    &.collapsed svg.fold,
+    &.collapsed .fold {
+      transform: translateY(-2px) rotateZ(-90deg) !important;
+    }
+
+    &:hover {
+      h3 {
+        color: #e2e8f0 !important;
+      }
+
+      svg.fold,
+      .fold {
+        stroke: rgba(255, 255, 255, 0.8) !important;
+        opacity: 0.95 !important;
+      }
     }
   }
 }
