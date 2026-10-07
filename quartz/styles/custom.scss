@@ -336,3 +336,267 @@ a[href*="05_humanities"] {
     color: #a78bfa !important;
   }
 }
+
+/* ==========================================================================
+   AREA 17 × The New York Times Editorial Typography & Spacing System
+   Ref: https://area17.com/clients/the-new-york-times
+   ========================================================================== */
+
+body:not([data-slug="index"]) {
+  /* 1. Content Container & Optimal Reading Width */
+  .center {
+    max-width: 780px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 3rem 1.75rem 7rem 1.75rem !important;
+
+    @media all and (max-width: 800px) {
+      padding: 1.5rem 1rem 4rem 1rem !important;
+    }
+  }
+
+  /* 2. Article Header & Title (AREA 17 f-heading-01) */
+  .page-header {
+    margin-bottom: 2.75rem !important;
+    padding-bottom: 1.75rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+    .article-title {
+      font-size: clamp(2.35rem, 4.2vw, 3.25rem) !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.035em !important;
+      line-height: 1.15 !important;
+      color: #ffffff !important;
+      margin: 0.85rem 0 1.25rem 0 !important;
+      word-break: keep-all;
+    }
+
+    .content-meta {
+      font-size: 0.92rem !important;
+      color: #94a3b8 !important;
+      font-family: var(--bodyFont) !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 1.25rem !important;
+      margin: 0.75rem 0 1rem 0 !important;
+
+      time {
+        font-weight: 500 !important;
+        color: #cbd5e1 !important;
+      }
+
+      span {
+        color: #64748b !important;
+      }
+    }
+  }
+
+  /* 3. Section Headings Hierarchy & Generous Spacing */
+  article {
+    h1 {
+      font-size: clamp(1.9rem, 3.2vw, 2.45rem) !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.03em !important;
+      line-height: 1.2 !important;
+      color: #ffffff !important;
+      margin-top: 4.75rem !important;
+      margin-bottom: 1.5rem !important;
+      padding-bottom: 0.65rem !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      word-break: keep-all;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 2.6vw, 2.05rem) !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.025em !important;
+      line-height: 1.25 !important;
+      color: #f8fafc !important;
+      margin-top: 4rem !important;
+      margin-bottom: 1.35rem !important;
+      word-break: keep-all;
+    }
+
+    h3 {
+      font-size: 1.38rem !important;
+      font-weight: 600 !important;
+      letter-spacing: -0.018em !important;
+      line-height: 1.35 !important;
+      color: #f1f5f9 !important;
+      margin-top: 2.85rem !important;
+      margin-bottom: 1rem !important;
+      word-break: keep-all;
+    }
+
+    h4 {
+      font-size: 1.15rem !important;
+      font-weight: 600 !important;
+      letter-spacing: -0.012em !important;
+      line-height: 1.4 !important;
+      color: #e2e8f0 !important;
+      margin-top: 2.25rem !important;
+      margin-bottom: 0.75rem !important;
+    }
+
+    /* 4. Body Text & Paragraph Rhythm (AREA 17 wysiwyg-medium) */
+    p {
+      font-size: 1.125rem !important; // 18px optimal editorial size
+      line-height: 1.78 !important; // comfortable vertical rhythm
+      letter-spacing: -0.01em !important;
+      color: #d1d5db !important; // relaxed high-contrast off-white
+      margin-top: 0 !important;
+      margin-bottom: 1.75rem !important; // distinctive paragraph breath
+      word-break: keep-all;
+
+      strong {
+        color: #ffffff !important;
+        font-weight: 700 !important;
+      }
+
+      a.internal {
+        color: #38bdf8 !important;
+        background: rgba(56, 189, 248, 0.08) !important;
+        padding: 0.12rem 0.38rem !important;
+        border-radius: 4px !important;
+        transition: all 0.2s ease !important;
+        border-bottom: 1px solid rgba(56, 189, 248, 0.3) !important;
+
+        &:hover {
+          background: rgba(56, 189, 248, 0.18) !important;
+          border-bottom-color: #38bdf8 !important;
+          color: #ffffff !important;
+        }
+      }
+    }
+
+    /* 5. Editorial Blockquotes (NYT Accent Callout) */
+    blockquote {
+      margin: 2.75rem 0 !important;
+      padding: 1.35rem 1.75rem !important;
+      border-left: 3px solid #38bdf8 !important;
+      background: rgba(255, 255, 255, 0.02) !important;
+      border-radius: 0 8px 8px 0 !important;
+
+      p {
+        font-size: 1.15rem !important;
+        line-height: 1.75 !important;
+        color: #e2e8f0 !important;
+        font-style: normal !important;
+        margin-bottom: 0.75rem !important;
+
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+
+    /* 6. Lists (ul, ol) with refined spacing */
+    ul,
+    ol {
+      margin: 1.75rem 0 2.25rem 0 !important;
+      padding-left: 1.75rem !important;
+
+      li {
+        font-size: 1.1rem !important;
+        line-height: 1.75 !important;
+        color: #d1d5db !important;
+        margin-bottom: 0.65rem !important;
+
+        &::marker {
+          color: #64748b;
+        }
+
+        p {
+          margin-bottom: 0.5rem !important;
+        }
+      }
+    }
+
+    /* 7. Dividers (Subtle Hairline Rule) */
+    hr {
+      margin: 4.5rem 0 !important;
+      border: none !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    /* 8. Code Blocks & Figures */
+    figure[data-rehype-pretty-code-figure],
+    pre {
+      margin: 2.25rem 0 !important;
+      padding: 1.35rem 1.6rem !important;
+      border-radius: 8px !important;
+      background: #18181b !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      line-height: 1.65 !important;
+    }
+
+    /* 9. Tables */
+    table {
+      margin: 2.5rem 0 !important;
+      width: 100% !important;
+      border-collapse: separate !important;
+      border-spacing: 0 !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-radius: 8px !important;
+      overflow: hidden !important;
+
+      th {
+        background: rgba(255, 255, 255, 0.04) !important;
+        color: #ffffff !important;
+        font-weight: 700 !important;
+        font-size: 0.95rem !important;
+        letter-spacing: 0.02em !important;
+        padding: 0.9rem 1.25rem !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+      }
+
+      td {
+        padding: 0.85rem 1.25rem !important;
+        font-size: 0.98rem !important;
+        color: #d1d5db !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+      }
+
+      tr:last-child td {
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  /* 10. Note Properties (Metadata Table) Refinement */
+  .note-properties {
+    margin: 1.25rem 0 1.75rem 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(255, 255, 255, 0.015) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+
+    summary {
+      font-size: 0.82rem !important;
+      letter-spacing: 0.05em !important;
+      text-transform: uppercase !important;
+      color: #94a3b8 !important;
+      cursor: pointer;
+    }
+  }
+
+  /* 11. Breadcrumbs Editorial Styling */
+  .breadcrumb-container {
+    margin-bottom: 1.25rem !important;
+    font-size: 0.85rem !important;
+    color: #64748b !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.4rem !important;
+
+    .breadcrumb-element a {
+      color: #94a3b8 !important;
+      transition: color 0.15s ease !important;
+
+      &:hover {
+        color: #38bdf8 !important;
+      }
+    }
+  }
+}
