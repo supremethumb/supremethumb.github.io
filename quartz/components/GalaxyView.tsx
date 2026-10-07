@@ -119,13 +119,20 @@ export default (() => {
           </div>
         </nav>
 
-        {/* Floating Node Card on Hover */}
-        <div id="galaxy-node-card" class="galaxy-node-card">
-          <div class="card-domain-badge">Domain</div>
+        {/* Floating Word Bubble on Auto-Tour & Hover */}
+        <div id="galaxy-node-card" class="galaxy-node-card galaxy-word-bubble">
+          <div class="bubble-tail"></div>
+          <div class="bubble-header">
+            <span class="card-domain-badge">Domain</span>
+            <span class="bubble-mode-pill">
+              <span class="bubble-pulse-dot"></span>
+              <span class="bubble-mode-text">추천 주제</span>
+            </span>
+          </div>
           <div class="card-title">Note Title</div>
           <div class="card-meta-row">
             <span class="card-links-count">0 Links</span>
-            <span class="warp-cta">노드 열기 →</span>
+            <span class="warp-cta">노드 탐색 ↗</span>
           </div>
         </div>
       </div>
