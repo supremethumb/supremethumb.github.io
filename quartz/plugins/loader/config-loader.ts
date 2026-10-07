@@ -256,6 +256,10 @@ export async function loadQuartzConfig(
     return oldConfig.default
   }
 
+  const GalaxyViewConstructor = (await import("../../components/GalaxyView")).default
+  componentRegistry.register("GalaxyView", GalaxyViewConstructor, "internal")
+  componentRegistry.register("galaxy-view", GalaxyViewConstructor, "internal")
+
   const configuration = {
     ...(json.configuration as unknown as GlobalConfiguration),
     ...configOverrides,

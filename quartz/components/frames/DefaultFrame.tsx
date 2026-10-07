@@ -1,7 +1,11 @@
 import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
+import GalaxyViewConstructor from "../GalaxyView"
+import { componentRegistry } from "../registry"
 
 const Header = HeaderConstructor()
+const GalaxyView = GalaxyViewConstructor()
+componentRegistry.register("GalaxyView", GalaxyViewConstructor, "internal")
 
 /**
  * The default page frame — three-column layout with left sidebar, center
@@ -21,8 +25,11 @@ export const DefaultFrame: PageFrame = {
     right,
     footer,
   }: PageFrameProps) {
+    const isIndex = componentData.fileData.slug === "index"
+
     return (
       <>
+        {isIndex && <GalaxyView {...componentData} />}
         <div class="left sidebar">
           {left.map((BodyComponent) => (
             <BodyComponent {...componentData} />
