@@ -154,9 +154,9 @@ plugins:
     layout:
       position: left
       priority: 20
-      group: toolbar
+      group: brandHeader
       groupOptions:
-        grow: true
+        grow: false
   - source: "@quartz-community/backlinks"
     enabled: true
     layout:
@@ -182,6 +182,9 @@ plugins:
     layout:
       position: left
       priority: 10
+      group: brandHeader
+      groupOptions:
+        grow: false
   - source: "@quartz-community/darkmode"
     enabled: false
   - source: "@quartz-community/reader-mode"
@@ -212,13 +215,7 @@ plugins:
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: "@quartz-community/spacer"
-    enabled: true
-    options: {}
-    order: 25
-    layout:
-      position: left
-      priority: 25
-      display: mobile-only
+    enabled: false
   - source: "@quartz-community/bases-page"
     enabled: true
     options: {}
@@ -260,6 +257,12 @@ plugins:
       display: all
 layout:
   groups:
+    brandHeader:
+      priority: 10
+      direction: row
+      align: center
+      justify: space-between
+      gap: 0.75rem
     toolbar:
       priority: 35
       direction: row

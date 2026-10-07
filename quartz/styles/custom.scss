@@ -1,10 +1,11 @@
 @use "./base.scss";
 @use "../components/styles/galaxyView.scss" as *;
 
-/* Enforce Pretendard Web Font globally across all elements */
+/* Enforce Box-Sizing and Pretendard Web Font globally across all elements */
 *,
 *::before,
 *::after {
+  box-sizing: border-box !important;
   font-family:
     "Pretendard",
     -apple-system,
@@ -18,11 +19,41 @@ code,
 pre,
 kbd,
 samp {
+  box-sizing: border-box !important;
   font-family:
     "Pretendard",
     -apple-system,
     BlinkMacSystemFont,
     monospace !important;
+}
+
+/* Global Refined Low-Contrast Semi-Transparent Gray Scrollbars */
+* {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(255, 255, 255, 0.16) transparent !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14) !important;
+  border-radius: 9999px !important;
+  border: none !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28) !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent !important;
 }
 
 .hero-section {
@@ -373,7 +404,10 @@ body:not([data-slug="index"]) {
     padding: 3rem 1.75rem 7rem 1.75rem !important;
 
     @media all and (max-width: 800px) {
-      padding: 1.5rem 1rem 4rem 1rem !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0.5rem 0 3.5rem 0 !important;
     }
   }
 
@@ -585,13 +619,17 @@ body:not([data-slug="index"]) {
     }
   }
 
-  /* 10. Note Properties (Metadata Table) Refinement */
+  /* 10. Note Properties (Metadata Table) Refinement & Overflow Prevention */
   .note-properties {
     margin: 1.25rem 0 1.75rem 0 !important;
     border: 1px solid rgba(255, 255, 255, 0.08) !important;
     background: rgba(255, 255, 255, 0.015) !important;
     border-radius: 8px !important;
     padding: 0.5rem 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
 
     summary {
       font-size: 0.82rem !important;
@@ -600,29 +638,72 @@ body:not([data-slug="index"]) {
       color: #94a3b8 !important;
       cursor: pointer;
     }
+
+    .note-properties-table {
+      width: 100% !important;
+      max-width: 100% !important;
+      table-layout: fixed !important;
+      box-sizing: border-box !important;
+      margin: 0.5rem 0 !important;
+      border: none !important;
+
+      td.note-properties-key {
+        width: 105px !important;
+        padding: 0.5rem 0.5rem 0.5rem 0 !important;
+        border: none !important;
+        color: #64748b !important;
+        font-size: 0.85rem !important;
+        vertical-align: top !important;
+      }
+
+      td.note-properties-value {
+        width: calc(100% - 105px) !important;
+        padding: 0.5rem 0 !important;
+        border: none !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+      }
+    }
   }
 
   /* 11. Breadcrumbs Editorial Styling */
   .breadcrumb-container {
     margin-bottom: 1.25rem !important;
     font-size: 0.85rem !important;
-    color: #64748b !important;
     display: flex !important;
     align-items: center !important;
     flex-wrap: wrap !important;
-    gap: 0.4rem !important;
+    gap: 0.35rem !important;
 
-    .breadcrumb-element a {
-      color: #94a3b8 !important;
-      transition: color 0.15s ease !important;
+    .breadcrumb-element {
+      display: inline-flex !important;
+      align-items: center !important;
 
-      &::before {
-        display: none !important;
-        content: "" !important;
+      a {
+        color: #94a3b8 !important;
+        font-weight: 500 !important;
+        font-size: 0.85rem !important;
+        transition: color 0.15s ease !important;
+
+        &::before {
+          display: none !important;
+          content: "" !important;
+        }
+
+        &:hover {
+          color: #38bdf8 !important;
+        }
       }
 
-      &:hover {
-        color: #38bdf8 !important;
+      /* Thin, delicate and toned-down separator '>' */
+      p {
+        margin: 0 0.35rem !important;
+        font-size: 0.68rem !important;
+        font-weight: 200 !important;
+        color: rgba(255, 255, 255, 0.22) !important;
+        opacity: 0.55 !important;
+        line-height: 1 !important;
+        user-select: none !important;
       }
     }
   }
@@ -632,187 +713,113 @@ body:not([data-slug="index"]) {
    AREA 17 Editorial Grid & UI Alignment System (Sidebar & Content Harmony)
    ========================================================================== */
 
-/* 1. Ensure 3-column Editorial Grid with Right Sidebar ALWAYS visible on desktop */
-.page > #quartz-body {
-  grid-template-columns: 280px minmax(0, 1fr) 280px !important;
-  column-gap: 2.5rem !important;
-  max-width: 1440px !important;
-  margin: 0 auto !important;
+/* 1. Ensure 3-column Editorial Grid on Desktop & Fluid Clean Layout on Mobile */
+@media all and (min-width: 1201px) {
+  .page > #quartz-body {
+    display: grid !important;
+    grid-template-columns: 280px minmax(0, 1fr) 280px !important;
+    column-gap: 2.5rem !important;
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+    box-sizing: border-box !important;
+  }
+}
 
-  @media all and (max-width: 1200px) and (min-width: 800px) {
+@media all and (max-width: 1200px) and (min-width: 801px) {
+  .page > #quartz-body {
+    display: grid !important;
     grid-template-columns: 240px minmax(0, 1fr) 240px !important;
     column-gap: 1.5rem !important;
-  }
-
-  @media all and (max-width: 800px) {
-    grid-template-columns: 100% !important;
-  }
-}
-
-/* 2. Right Sidebar (Graph & Backlinks) Guaranteed Visibility */
-.sidebar.right {
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  flex-direction: column !important;
-  gap: 2.5rem !important;
-  padding: 3rem 1.5rem 3rem 0 !important;
-
-  @media all and (max-width: 800px) {
-    display: none !important;
-  }
-
-  .graph,
-  .backlinks {
-    display: block !important;
-    width: 100% !important;
-
-    h3 {
-      font-size: 0.85rem !important;
-      font-weight: 700 !important;
-      letter-spacing: 0.06em !important;
-      text-transform: uppercase !important;
-      color: #94a3b8 !important;
-      margin: 0 0 1rem 0 !important;
-      padding-bottom: 0.5rem !important;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-    }
-  }
-
-  .graph-outer {
-    border-radius: 8px !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
-    background: rgba(255, 255, 255, 0.015) !important;
-    overflow: hidden !important;
-  }
-
-  .backlinks ul {
-    margin: 0 !important;
-    padding-left: 0 !important;
-    list-style: none !important;
-
-    li {
-      margin-bottom: 0.5rem !important;
-
-      a {
-        font-size: 0.88rem !important;
-        line-height: 1.45 !important;
-        color: #cbd5e1 !important;
-        transition: color 0.15s ease !important;
-
-        &:hover {
-          color: #38bdf8 !important;
-        }
-      }
-    }
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 1.5rem !important;
+    box-sizing: border-box !important;
   }
 }
 
-/* 3. Left Sidebar UI Alignment & AREA 17 Proportion */
-.sidebar.left {
-  padding: 3rem 0 3rem 1.5rem !important;
-  gap: 1.5rem !important;
-
-  .page-title {
-    margin: 0 !important;
-
-    a {
-      font-size: 1.25rem !important;
-      font-weight: 800 !important;
-      letter-spacing: -0.03em !important;
-      color: #ffffff !important;
-      display: inline-block !important;
-
-      &::before {
-        display: none !important;
-        content: "" !important;
-      }
-    }
+/* Mobile Clean Vertical Flow (Fixes Broken Responsive & Right-Cling Overflow) */
+@media all and (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
   }
 
-  /* Search Button Alignment */
-  .search {
+  .page {
     width: 100% !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
 
-    .search-button {
-      display: flex !important;
-      align-items: center !important;
-      gap: 0.65rem !important;
+  .page > #quartz-body {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 1.25rem !important;
+    box-sizing: border-box !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+    overflow-x: hidden !important;
+  }
+}
+
+/* 2. Right Sidebar (Graph & Backlinks) Guaranteed Visibility on Desktop */
+@media all and (min-width: 801px) {
+  .sidebar.right {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+    padding: 3rem 1.5rem 3rem 0 !important;
+    box-sizing: border-box !important;
+
+    .graph,
+    .backlinks {
+      display: block !important;
       width: 100% !important;
-      height: 38px !important;
-      padding: 0 0.75rem !important;
-      border-radius: 6px !important;
-      background: rgba(255, 255, 255, 0.04) !important;
-      border: 1px solid rgba(255, 255, 255, 0.1) !important;
-      color: #94a3b8 !important;
-      font-size: 0.85rem !important;
-      cursor: pointer !important;
-      transition: all 0.2s ease !important;
 
-      svg {
-        width: 15px !important;
-        height: 15px !important;
-        stroke: currentColor !important;
-        flex-shrink: 0 !important;
-      }
-
-      p {
-        margin: 0 !important;
+      h3 {
         font-size: 0.85rem !important;
-        color: inherit !important;
-      }
-
-      &:hover {
-        background: rgba(255, 255, 255, 0.08) !important;
-        border-color: rgba(255, 255, 255, 0.2) !important;
-        color: #ffffff !important;
-      }
-    }
-  }
-
-  /* Explorer Tree Alignment */
-  .explorer {
-    .title-button {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      width: 100% !important;
-      padding: 0.25rem 0 !important;
-      margin-bottom: 0.5rem !important;
-
-      h2 {
-        font-size: 0.82rem !important;
         font-weight: 700 !important;
         letter-spacing: 0.06em !important;
         text-transform: uppercase !important;
         color: #94a3b8 !important;
-        margin: 0 !important;
-      }
-
-      svg {
-        width: 14px !important;
-        height: 14px !important;
-        stroke: #94a3b8 !important;
+        margin: 0 0 1rem 0 !important;
+        padding-bottom: 0.5rem !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
       }
     }
 
-    .explorer-content {
-      ul {
-        margin: 0 !important;
-        padding-left: 0.75rem !important;
-      }
+    .graph-outer {
+      border-radius: 8px !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      background: rgba(255, 255, 255, 0.015) !important;
+      overflow: hidden !important;
+    }
+
+    .backlinks ul {
+      margin: 0 !important;
+      padding-left: 0 !important;
+      list-style: none !important;
 
       li {
-        line-height: 1.5 !important;
-        margin-bottom: 0.2rem !important;
+        margin-bottom: 0.5rem !important;
 
         a {
-          font-size: 0.85rem !important;
-          color: #94a3b8 !important;
+          font-size: 0.88rem !important;
+          line-height: 1.45 !important;
+          color: #cbd5e1 !important;
           transition: color 0.15s ease !important;
 
           &:hover {
-            color: #ffffff !important;
+            color: #38bdf8 !important;
           }
         }
       }
@@ -820,7 +827,263 @@ body:not([data-slug="index"]) {
   }
 }
 
-/* 4. Center Content Exact Editorial Baseline Alignment */
+@media all and (max-width: 800px) {
+  .sidebar.right {
+    display: none !important;
+  }
+}
+
+/* 3. Left Sidebar UI Alignment & Brand Header (Desktop) */
+@media all and (min-width: 801px) {
+  .sidebar.left {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 3rem 0 3rem 1.5rem !important;
+    gap: 1.5rem !important;
+    box-sizing: border-box !important;
+
+    /* Brand Header Row (Supreme Note on Left, Search Icon immediately on Right) */
+    .flex-component {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      width: 100% !important;
+      gap: 0.75rem !important;
+    }
+
+    .page-title {
+      margin: 0 !important;
+
+      a {
+        font-size: 1.25rem !important;
+        font-weight: 800 !important;
+        letter-spacing: -0.03em !important;
+        color: #ffffff !important;
+        display: inline-block !important;
+        white-space: nowrap !important;
+
+        &::before {
+          display: none !important;
+          content: "" !important;
+        }
+      }
+    }
+
+    /* Explorer Tree */
+    .explorer {
+      width: 100% !important;
+
+      .mobile-explorer {
+        display: none !important;
+      }
+
+      .desktop-explorer,
+      .title-button {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        padding: 0.25rem 0 !important;
+        margin-bottom: 0.5rem !important;
+
+        h2 {
+          font-size: 0.82rem !important;
+          font-weight: 700 !important;
+          letter-spacing: 0.06em !important;
+          text-transform: uppercase !important;
+          color: #94a3b8 !important;
+          margin: 0 !important;
+        }
+
+        svg {
+          width: 14px !important;
+          height: 14px !important;
+          stroke: #94a3b8 !important;
+        }
+      }
+
+      .explorer-content {
+        ul {
+          margin: 0 !important;
+          padding-left: 0.75rem !important;
+        }
+
+        li {
+          line-height: 1.5 !important;
+          margin-bottom: 0.2rem !important;
+
+          a {
+            font-size: 0.85rem !important;
+            color: #94a3b8 !important;
+            transition: color 0.15s ease !important;
+
+            &:hover {
+              color: #ffffff !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 4. Mobile Header Navigation Bar (Hamburger + Supreme Note + Search Icon) */
+@media all and (max-width: 800px) {
+  .sidebar.left {
+    position: static !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 1rem 0 !important;
+    margin: 0 !important;
+    gap: 0.75rem !important;
+    box-sizing: border-box !important;
+
+    /* Mobile Hamburger Menu */
+    .explorer {
+      order: -1 !important;
+      flex-shrink: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: unset !important;
+
+      .desktop-explorer,
+      .title-button {
+        display: none !important; // Hide '탐색기 >' completely on mobile!
+      }
+
+      .mobile-explorer {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 34px !important;
+        height: 34px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        cursor: pointer !important;
+        color: #94a3b8 !important;
+
+        svg {
+          width: 22px !important;
+          height: 22px !important;
+          stroke: #e2e8f0 !important;
+        }
+      }
+    }
+
+    /* Mobile Title + Search Row */
+    .flex-component {
+      flex: 1 !important;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      min-width: 0 !important;
+      gap: 0.5rem !important;
+    }
+
+    .page-title {
+      margin: 0 !important;
+      flex-grow: 1 !important;
+
+      a {
+        font-size: 1.15rem !important;
+        font-weight: 800 !important;
+        letter-spacing: -0.025em !important;
+        color: #ffffff !important;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
+        display: block !important;
+      }
+    }
+  }
+}
+
+/* 5. Universal Search Button (Icon Only on Both Desktop & Mobile) */
+.search {
+  position: relative !important;
+  width: auto !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+
+  .search-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #94a3b8 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+
+    svg {
+      width: 15px !important;
+      height: 15px !important;
+      stroke: currentColor !important;
+      fill: none !important;
+      flex-shrink: 0 !important;
+    }
+
+    /* Completely remove '검색' text button label */
+    p {
+      display: none !important;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.09) !important;
+      border-color: rgba(255, 255, 255, 0.22) !important;
+      color: #ffffff !important;
+    }
+  }
+}
+
+/* 6. Refined Scrollbars for Explorer, TOC, Backlinks & Code */
+.explorer-content,
+.explorer-ul,
+.toc,
+.toc-content,
+.table-of-contents,
+.backlinks,
+.backlinks ul,
+.note-properties,
+pre,
+code {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(255, 255, 255, 0.16) transparent !important;
+
+  &::-webkit-scrollbar {
+    width: 4px !important;
+    height: 4px !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.14) !important;
+    border-radius: 9999px !important;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.28) !important;
+  }
+}
+
+/* 7. Center Content Exact Editorial Baseline Alignment */
 body:not([data-slug="index"]) {
   article {
     h1,
