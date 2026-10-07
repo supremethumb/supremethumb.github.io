@@ -6,9 +6,14 @@ prof
 tsconfig.tsbuildinfo
 .obsidian
 .quartz-cache
+.trash
+**/.trash
 private/
 .replit
 replit.nix
+.tmp.driveupload
+**/.tmp.driveupload
+**/.backup*
 .quartz/
 quartz/cli/tui/dist/
 .turbo/

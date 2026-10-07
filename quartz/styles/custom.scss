@@ -1,3 +1,380 @@
-@use "./variables.scss" as *;
+@use "./base.scss";
 
 // put your custom CSS here!
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45vh;
+  padding: 5rem 2.5rem;
+  margin: 2.5rem 0 4rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+}
+
+#hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.2rem !important;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--dark) !important;
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.hero-subtitle {
+  font-size: 1.35rem;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  font-family: var(--codeFont);
+  /* Typing animation */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--dark);
+  margin: 0 auto 1.5rem auto;
+  animation:
+    typing 3s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+  max-width: fit-content;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: var(--darkgray);
+  max-width: 620px;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--dark);
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    min-height: 35vh;
+    padding: 3rem 1.5rem;
+  }
+  .hero-title {
+    font-size: 2.2rem !important;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Index page category cards */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.75rem;
+  margin: 2rem 0 3.5rem 0;
+}
+
+.category-card {
+  position: relative;
+  padding: 2rem 1.75rem 1.75rem 1.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+  display: block;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--dark);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.category-card .card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.category-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: -0.015em;
+  margin-bottom: 0.6rem;
+}
+
+.category-card .card-desc {
+  font-size: 0.92rem;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+.category-card .card-count {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+  font-family: var(--codeFont);
+  color: var(--gray);
+  background: var(--highlight);
+  border: 1px solid var(--lightgray);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.index-section-title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: -0.02em;
+  margin: 4.5rem 0 1.5rem 0;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.index-intro {
+  font-size: 1.05rem;
+  color: var(--darkgray);
+  line-height: 1.75;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.stats-bar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0 3.5rem 0;
+  padding: 1.5rem 2rem;
+  background: var(--light);
+  border-radius: 6px;
+  border: 1px solid var(--lightgray);
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 90px;
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--dark);
+  font-family: var(--codeFont);
+  display: block;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-top: 0.35rem;
+}
+
+body[data-slug="index"] {
+  /* Hide default title, meta, tags on main page */
+  .article-title,
+  .content-meta,
+  .tags {
+    display: none !important;
+  }
+
+  /* Full-page Background Graph */
+  .graph {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    z-index: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    pointer-events: auto !important;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+
+    h3,
+    .global-graph-icon {
+      display: none !important;
+    }
+
+    .global-graph-outer:not(.active) {
+      display: none !important;
+    }
+  }
+
+  .graph-outer {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    overflow: hidden !important;
+  }
+
+  .graph-container {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block !important;
+    }
+  }
+
+  /* Page content layer above background graph */
+  #quartz-root {
+    position: relative;
+    z-index: 1;
+    pointer-events: none; /* Let clicks on empty space pass through to the background graph */
+  }
+
+  /* Enable interaction and enhance readability for content elements */
+  .left.sidebar,
+  .right.sidebar,
+  .center article > *,
+  .center .page-header > *:not(.popover-hint),
+  .page-footer,
+  footer,
+  a,
+  button,
+  input,
+  table {
+    pointer-events: auto;
+  }
+
+  /* Frosted glass cards over background graph for enhanced readability */
+  .index-intro {
+    background: color-mix(in srgb, var(--light) 90%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    padding: 1.6rem 2rem;
+    box-shadow: none;
+  }
+
+  .stats-bar {
+    background: color-mix(in srgb, var(--light) 90%, transparent) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--lightgray) !important;
+    border-radius: 6px;
+    box-shadow: none;
+  }
+
+  .table-container {
+    background: color-mix(in srgb, var(--light) 90%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+  }
+}
+
+:root[saved-theme="dark"] body[data-slug="index"] {
+  .graph {
+    opacity: 0.65;
+  }
+
+  .index-intro,
+  .stats-bar,
+  .table-container {
+    background: color-mix(in srgb, var(--light) 85%, transparent) !important;
+    border-color: var(--lightgray) !important;
+    box-shadow: none;
+  }
+}
+
+/* AREA 17 / NYT Editorial Tag List & Popover */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 2rem 0;
+  padding: 0;
+  list-style: none;
+
+  & > li {
+    list-style: none;
+    margin: 0;
+
+    & > a.internal.tag-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--gray);
+      background-color: var(--highlight);
+      border: 1px solid var(--lightgray);
+      transition: all 0.15s ease;
+
+      &:hover {
+        border-color: var(--dark);
+        color: var(--dark);
+        background-color: var(--lightgray);
+      }
+    }
+  }
+}
+
+.popover {
+  border-radius: 6px !important;
+  border: 1px solid var(--lightgray) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08) !important;
+}

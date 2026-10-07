@@ -39,10 +39,45 @@ export default (() => {
       (r) => r.loadTime === "beforeDOMReady" && r.contentType === "external",
     )
 
+    const isArticle = fileData.slug !== "index" && fileData.slug !== "404"
+
+    const schemaOrg = {
+      "@context": "https://schema.org",
+      "@type": isArticle ? "Article" : "WebSite",
+      headline: title,
+      description: description,
+      url: socialUrl,
+      author: {
+        "@type": "Person",
+        name: cfg.pageTitle,
+      },
+      ...(isArticle &&
+        fileData.dates && {
+          datePublished: fileData.dates.published
+            ? fileData.dates.published.toISOString()
+            : undefined,
+          dateModified: fileData.dates.modified ? fileData.dates.modified.toISOString() : undefined,
+        }),
+    }
+
+    const schemaOrgString = JSON.stringify(schemaOrg)
+
     return (
       <head>
         <title>{title}</title>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: schemaOrgString }}
+        />
         <meta charSet="utf-8" />
+        <meta name="naver-site-verification" content="c1242d82ba892c9ac6e0542fea634ea5829cf148" />
+        <meta name="google-site-verification" content="GRby-SmWvVKq1RGgI73YGfj0NK-nG6c3R6189cBE9Fw" />
+        <link
+          rel="stylesheet"
+          as="style"
+          crossOrigin="anonymous"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
+        />
         {coreStylesheet && <link rel="preload" href={coreStylesheet} as="style" />}
         {coreScript && coreScript.contentType === "external" && (
           <link rel="preload" href={coreScript.src} as="script" />
