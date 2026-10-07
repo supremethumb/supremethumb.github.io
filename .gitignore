@@ -14,3 +14,6 @@ replit.nix
 .tmp.driveupload
 **/.tmp.driveupload
 **/.backup*
+.quartz/
+quartz/cli/tui/dist/
+.turbo/

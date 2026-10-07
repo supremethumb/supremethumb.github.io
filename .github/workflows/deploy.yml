@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - v4
+      - v5
   workflow_dispatch:
 
 permissions:
@@ -27,6 +28,8 @@ jobs:
           node-version: 22
       - name: Install Dependencies
         run: npm ci
+      - name: Install Quartz Plugins
+        run: npm run install-plugins
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
