@@ -65,13 +65,13 @@ export default (() => {
     return (
       <head>
         <title>{title}</title>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: schemaOrgString }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaOrgString }} />
         <meta charSet="utf-8" />
         <meta name="naver-site-verification" content="c1242d82ba892c9ac6e0542fea634ea5829cf148" />
-        <meta name="google-site-verification" content="GRby-SmWvVKq1RGgI73YGfj0NK-nG6c3R6189cBE9Fw" />
+        <meta
+          name="google-site-verification"
+          content="GRby-SmWvVKq1RGgI73YGfj0NK-nG6c3R6189cBE9Fw"
+        />
         <link
           rel="stylesheet"
           as="style"
