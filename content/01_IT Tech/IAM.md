@@ -12,9 +12,9 @@ tags:
 
 * **정의**: 기업의 IT 리소스(클라우드, SaaS, 내부 시스템 등)에 대해 '적절한 사용자(Who)'가 '적절한 권한(What)'으로 '적절한 조건(When/Where)' 하에 접근할 수 있도록 신원(Identity)과 접근(Access)의 전체 수명주기를 통합 관리하는 보안 및 비즈니스 [[프레임워크]]
 * **필요성 및 주요 특징**:
-* **경계 없는 보안(Perimeter-less Security) 대응**: 클라우드 도입 및 원격 근무 확산으로 전통적인 [[방화벽]] 중심의 경계 보안이 무너짐에 따라, '신원(Identity)' 자체를 새로운 통제 경계로 삼는 제로 트러스트([[제로 트러스트 보안모델|Zero Trust]]) 구현의 필수 요소
-* **사용자 편의성과 보안성의 동시 달성**: 단일 통합 인증(SSO)과 생체 인식 등 다중 요소 인증(MFA/[[FIDO]])을 결합하여, 패스워드 피로도를 줄이는 동시에 크리덴셜 탈취 공격 원천 차단
-* **거버넌스 및 컴플라이언스 준수**: 입사부터 퇴사까지의 계정 생성(Provisioning) 및 회수(De-provisioning)를 자동화하고, 모든 접근 이력을 중앙 집중적으로 감사(Audit)하여 ISMS, GDPR 등 규제 대응
+  * **경계 없는 보안(Perimeter-less Security) 대응**: 클라우드 도입 및 원격 근무 확산으로 전통적인 [[방화벽]] 중심의 경계 보안이 무너짐에 따라, '신원(Identity)' 자체를 새로운 통제 경계로 삼는 제로 트러스트([[제로 트러스트 보안모델|Zero Trust]]) 구현의 필수 요소
+  * **사용자 편의성과 보안성의 동시 달성**: 단일 통합 인증(SSO)과 생체 인식 등 다중 요소 인증(MFA/[[FIDO]])을 결합하여, 패스워드 피로도를 줄이는 동시에 크리덴셜 탈취 공격 원천 차단
+  * **거버넌스 및 컴플라이언스 준수**: 입사부터 퇴사까지의 계정 생성(Provisioning) 및 회수(De-provisioning)를 자동화하고, 모든 접근 이력을 중앙 집중적으로 감사(Audit)하여 ISMS, GDPR 등 규제 대응
 
 
 
@@ -73,14 +73,8 @@ flowchart TD
 | 구분 | 요소기술 및 [[프로토콜]] (키워드) | 세부 설명 |
 | --- | --- | --- |
 | **신원 연동** | Federation (페더레이션) | 서로 다른 신뢰 도메인 간에 사용자 인증 정보를 안전하게 공유하여, 외부 파트너사나 다른 클라우드 서비스에서도 동일한 자격 증명 사용 가능 |
-| **인증 프로토콜** | SAML 2.0 / OAuth 2.0 / OIDC | **SAML**: 엔터프라이즈 SSO의 표준 ([[XML]] 기반)<br>
-
-<br>**OAuth 2.0**: 리소스 접근 권한 인가(Delegation)의 표준<br>
-
-<br>**OIDC (OpenID Connect)**: OAuth 2.0 기반의 신원 인증(Authentication) 표준 ([[JSON]]/JWT 기반) |
-| **접근 인가** | [[RBAC]] / ABAC | **RBAC (Role-Based)**: 사용자의 부서/직급 등 '역할' 기반 접근 통제<br>
-
-<br>**ABAC (Attribute-Based)**: 접속 시간, 위치, 디바이스 보안 상태 등 다양한 '속성'을 동적으로 평가하는 동적 접근 통제 |
+| **인증 프로토콜** | SAML 2.0 / OAuth 2.0 / OIDC | **SAML**: 엔터프라이즈 SSO의 표준 ([[XML]] 기반)<br>**OAuth 2.0**: 리소스 접근 권한 인가(Delegation)의 표준<br>**OIDC (OpenID Connect)**: OAuth 2.0 기반의 신원 인증(Authentication) 표준 ([[JSON]]/JWT 기반) |
+| **접근 인가** | [[RBAC]] / ABAC | **RBAC (Role-Based)**: 사용자의 부서/직급 등 '역할' 기반 접근 통제<br>**ABAC (Attribute-Based)**: 접속 시간, 위치, 디바이스 보안 상태 등 다양한 '속성'을 동적으로 평가하는 동적 접근 통제 |
 | **계정 동기화** | SCIM (System for Cross-domain Identity Management) | 클라우드 환경(SaaS) 간에 사용자 계정의 생성, 갱신, 삭제를 자동화하고 동기화하기 위한 REST API 기반 개방형 표준 프로토콜 |
 | **인증 강화** | MFA (Multi-Factor Authentication) | 지식(비밀번호), 소유(스마트폰/OTP), 생체(지문/FaceID) 중 2가지 이상을 결합하여 크리덴셜 스터핑 등을 방어 |
 | **거버넌스** | IGA (Identity Governance & Admin) | 계정의 접근 권한이 규정(Compliance)에 맞게 부여되었는지 주기적으로 리뷰(Access Review)하고 위험을 분석하는 거버넌스 확장 체계 |

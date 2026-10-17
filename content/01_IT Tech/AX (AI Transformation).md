@@ -74,7 +74,7 @@ flowchart TD
 | --- | --- | --- |
 | **인프라** | **AI Cloud / [[NPU]]** | 초거대 모델의 학습 및 추론을 뒷받침하는 고성능 컴퓨팅 및 전력 효율화(NPU) 클라우드 인프라 |
 | **데이터** | **Vector DB** | 텍스트, 이미지 등 비정형 데이터를 벡터(Embedding) 형태로 저장하여 의미 기반의 초고속 [[유사도]] 검색 지원 |
-| **모델** | **[[sLLM (Smaller Large Language Model)|sLLM]] (소형언어모델)** | 파라미터 규모를 줄이면서도 특정 도메인(금융, 의료 등)에 특화하여 비용 효율성과 보안성을 극대화한 언어모델 |
+| **모델** | **[[sLLM (Smaller Large Language Model)\|sLLM]] (소형언어모델)** | 파라미터 규모를 줄이면서도 특정 도메인(금융, 의료 등)에 특화하여 비용 효율성과 보안성을 극대화한 언어모델 |
 | **최적화 기법** | **RAG (검색 증강 생성)** | 기업 내부의 신뢰할 수 있는 최신 지식베이스를 검색하여 LLM의 환각(Hallucination) 현상을 방지하고 정확도 향상 |
 | **최적화 기법** | **PE (Prompt Engineering)** | 모델의 파라미터 수정 없이 입력 프롬프트를 정교하게 설계하여 원하는 최적의 결과물을 유도하는 기법 |
 | **애플리케이션** | **[[AI Agent]]** | 단순 질의응답을 넘어 주어진 목표를 스스로 인지, 계획, 판단하여 도구(API)를 호출하고 업무를 자율 수행하는 주체 |
@@ -87,7 +87,7 @@ flowchart TD
 
 ### 가. DX(디지털 전환)와 AX(AI 전환)의 패러다임 비교
 
-| 비교 항목 | DX ([[Digital Transformation]]) | AX (AI Transformation) |
+| 비교 항목 | DX ([[디지털 전환\|Digital Transformation]]) | AX (AI Transformation) |
 | --- | --- | --- |
 | **목적 및 방향성** | 업무 프로세스의 전산화, 효율화 및 비용 절감 | 새로운 비즈니스 모델 창출, 인지 노동의 지능화 |
 | **핵심 기술 엔진** | 클라우드(Cloud), 빅데이터(Big Data), IoT | **생성형 AI(Generative AI), 초거대 언어모델(LLM)** |
@@ -96,8 +96,8 @@ flowchart TD
 | **조직 내 역할** | IT 부서 중심의 인프라 및 시스템 혁신 주도 | **현업 중심(Citizen Developer)**의 프로세스 및 서비스 혁신 |
 
 * **전망 및 동향**:
-* **AI-Native Enterprise로의 진화**: 기존 레거시 시스템에 AI를 단순 추가(Add-on)하는 수준을 넘어, 기획 단계부터 AI를 핵심 엔진으로 설계하는 'AI-Native' 아키텍처로의 전환이 가속화되고 있음.
-* **소버린 AI([[Sovereign AI (소버린 AI)|Sovereign AI]]) 대두**: 데이터 주권과 보안을 위해 자체적인 인프라와 도메인 특화 sLLM을 구축하여 국가 및 기업 고유의 문맥과 규제를 반영하는 소버린 AI 체계가 AX의 핵심 경쟁력으로 부상 중임.
+  * **AI-Native Enterprise로의 진화**: 기존 레거시 시스템에 AI를 단순 추가(Add-on)하는 수준을 넘어, 기획 단계부터 AI를 핵심 엔진으로 설계하는 'AI-Native' 아키텍처로의 전환이 가속화되고 있음.
+  * **소버린 AI([[Sovereign AI (소버린 AI)|Sovereign AI]]) 대두**: 데이터 주권과 보안을 위해 자체적인 인프라와 도메인 특화 sLLM을 구축하여 국가 및 기업 고유의 문맥과 규제를 반영하는 소버린 AI 체계가 AX의 핵심 경쟁력으로 부상 중임.
 
 ---
 
@@ -107,7 +107,6 @@ flowchart TD
 - **세부 분류**: `4. 거대언어모델 (LLM) & 생성형 AI`
 - **핵심 연관 토픽**:
   - [[디지털 전환|디지털 전환(DX)]]
-  - [[Digital Transformation]]
   - [[AI Agent]]
   - [[sLLM (Smaller Large Language Model)]]
   - [[AI TRiSM|AI TRiSM(AI Trust Risk and Security Management)]]

@@ -3,98 +3,89 @@ title: MVCC(다중 버전 동시성 제어) 2가지 유형
 date: 2026-04-22
 tags:
   - 데이터베이스
+aliases:
+  - MVCC
+  - Multi-Version Concurrency Control
+  - 다중 버전 동시성 제어
 ---
-# MVCC(다중 버전 동시성 제어) 2가지 유형
-
----
-
-## I. 고성능 트랜잭션 동시성 제어 기법, MVCC의 개요
-
-### 가. MVCC(Multi-Version Concurrency Control)의 정의
-
-* 데이터베이스에서 데이터의 갱신 시 기존 데이터를 덮어쓰지 않고(또는 백업하고) 다수의 버전(Version)을 유지하여, 읽기(Read) 작업과 쓰기(Write) 작업 간의 락(Lock) 경합 없이 동시성을 극대화하는 [[트랜잭션]] 제어 기법
-
-### 나. MVCC 2가지 유형의 등장 배경 및 특징
-
-* **동시성 저하 문제 극복**: 기존 Lock 기반 제어의 성능 저하(Read-Write 블로킹)를 해결하기 위해 스냅샷(Snapshot) 기반의 읽기 일관성(CR) 제공
-* **구현 방식에 따른 2가지 유형**:
-* **Undo Log (Rollback Segment) 기반**: 메인 테이블을 덮어쓰고 구버전은 별도 공간에 저장 (공간 효율성 중시)
-* **Append-Only (MGA) 기반**: 구버전을 유지한 채 신규 버전을 테이블에 추가 저장 (롤백 속도 및 처리 단순성 중시)
-
-
+# MVCC (다중 버전 동시성 제어) 2가지 유형
 
 ---
 
-## II. MVCC 2가지 유형의 개념도 및 핵심 기술 요소
+## I. 읽기와 쓰기가 서로 막지 않도록, MVCC의 개요
 
-### 가. MVCC 2가지 유형의 동작 원리 개념도
+### 가. 정의
+
+- 데이터 변경 시 **이전 버전을 보존해 여러 버전을 유지하고, 각 트랜잭션이 자신의 스냅샷 시점에 맞는 버전을 읽게 하는 동시성 제어 기법**
+
+### 나. 특징 및 2가지 유형
+
+| 구분 | 내용 |
+| --- | --- |
+| 비차단 읽기 | 읽기는 잠금 없이 스냅샷 버전 조회, 쓰기 간 충돌만 잠금으로 제어 |
+| 읽기 일관성 | 문장 또는 트랜잭션 시작 시점 기준의 일관된 결과 |
+| Undo 기반 | 원본을 제자리 갱신하고 이전 버전을 Undo 영역에 보관 (Oracle, MySQL InnoDB) |
+| Append 기반 | 새 버전을 테이블에 추가하고 이전 버전은 무효 표시 (PostgreSQL) |
+
+---
+
+## II. 유형별 동작 및 구성요소
+
+### 가. 두 유형의 동작
 
 ```mermaid
 flowchart LR
-    subgraph Type1["1. Undo Log 기반 MVCC (In-Place Update)"]
+    subgraph U["Undo 기반 (In-place)"]
         direction TB
-        Update1["Update 트랜잭션"]
-        MainBlock1["Main Data Block<br/>(V2: 덮어쓰기된 최신 버전)"]
-        Undo["Undo Segment / Log<br/>(V1: 이전 버전 보관)"]
-        Reader1["Read 트랜잭션"]
-        
-        Update1 -- "① 덮어쓰기 갱신" --> MainBlock1
-        Update1 -- "② 이전 이미지 복사" --> Undo
-        Reader1 -. "③ 롤백된 CR 복제본 생성" .-> Undo
+        W1["UPDATE"] -->|"① 이전 값 복사"| UN["Undo 영역 (V1)"]
+        W1 -->|"② 제자리 갱신"| B1["데이터 블록 (V2)"]
+        R1["과거 시점 읽기"] -. "③ Undo로 과거 버전 재구성" .-> UN
     end
-
-    subgraph Type2["2. Append-Only 기반 MVCC (Out-of-Place Update)"]
+    subgraph A["Append 기반 (Out-of-place)"]
         direction TB
-        Update2["Update 트랜잭션"]
-        MainBlock2["Main Data Block"]
-        V1["이전 Tuple (V1)<br/>(Dead Tuple로 상태 마킹)"]
-        V2["신규 Tuple (V2)<br/>(신규 추가된 최신 버전)"]
-        Reader2["Read 트랜잭션"]
-        
-        MainBlock2 --- V1
-        MainBlock2 --- V2
-        Update2 -- "① 튜플 신규 삽입" --> V2
-        Update2 -- "② 이전 튜플 무효화" --> V1
-        Reader2 -. "③ 트랜잭션 ID 가시성 룰 평가" .-> MainBlock2
+        W2["UPDATE"] -->|"① 새 튜플 추가"| V2["튜플 V2 (xmin = T2)"]
+        W2 -->|"② 이전 튜플 xmax 표시"| V1["튜플 V1 (xmax = T2)"]
+        R2["읽기"] -. "③ xmin·xmax로 가시성 판단" .-> V1
     end
-
 ```
 
-* **Undo Log 기반**: 원본 데이터를 최신 값으로 변경(In-place)하고, 이전 버전을 Undo 영역으로 밀어내어 읽기 트랜잭션이 CR(Consistent Read) 블록을 재조합함
-* **Append-Only 기반**: 원본 데이터를 수정하지 않고 새로운 튜플을 삽입(Out-of-place)하며, 메타데이터(트랜잭션 ID)를 비교하여 자신에게 유효한 버전을 읽어들임
+- Undo 기반은 최신 값이 제자리에 있어 최신 읽기가 빠르고, Append 기반은 여러 버전이 테이블에 공존해 정리(VACUUM)가 필요
 
-### 나. MVCC 2가지 유형의 핵심 기술 요소
+### 나. 구성요소
 
-| 구분 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **공통 요소** | Transaction ID (XID) | - 트랜잭션 시작 시 부여되는 고유 식별자로 데이터 버전의 가시성(Visibility) 판단 기준 |
-| **공통 요소** | Snapshot Isolation | - 특정 시점의 [[데이터베이스]] 스냅샷을 바탕으로 일관성 있는 데이터 읽기 제공 |
-| **Undo Log 기반** | In-Place Update | - 데이터 블록의 튜플을 덮어쓰는 방식으로 갱신하여 메인 데이터 공간 [[단편화]] 최소화 |
-| **Undo Log 기반** | Rollback Segment | - 갱신 전의 데이터 이미지를 보관하는 별도의 Undo 영역 (CR 생성 및 롤백에 사용) |
-| **Undo Log 기반** | CR (Consistent Read) | - 읽기 트랜잭션 시작 시점의 SCN(System Change Number)을 기준으로 과거 버전을 재조합 |
-| **Append-Only 기반** | Out-of-Place Update | - 갱신 시 기존 튜플은 삭제(Dead) 마킹하고, 새로운 트랜잭션 ID(t_xmin)로 신규 튜플 추가 |
-| **Append-Only 기반** | t_xmin / t_xmax | - 튜플 헤더에 삽입 트랜잭션 ID(t_xmin)와 삭제 트랜잭션 ID(t_xmax)를 기록하여 가시성 통제 |
-| **Append-Only 기반** | Vacuum (가비지 컬렉션) | - 어느 트랜잭션에서도 더 이상 참조하지 않는 데드 튜플(Dead Tuple)을 주기적으로 정리 및 공간 회수 |
+| 공통 | 트랜잭션 ID·SCN | 버전 생성 시점 식별, 가시성 판단 기준 |
+| | 스냅샷 | 읽기 시점에 보이는 커밋 트랜잭션 집합 |
+| Undo 기반 | In-place Update | 데이터 블록을 최신 값으로 갱신 |
+| | Undo 세그먼트 | 이전 이미지 보관, 롤백과 읽기 일관성에 사용 |
+| | Consistent Read | 쿼리 시작 SCN 기준으로 Undo를 적용해 과거 블록 재구성 (Oracle) |
+| | Purge | 더 이상 필요 없는 Undo 정리 (InnoDB purge 스레드) |
+| Append 기반 | Out-of-place Update | UPDATE = 새 튜플 INSERT + 이전 튜플 무효화 |
+| | xmin·xmax | 튜플 헤더의 생성·삭제 트랜잭션 ID |
+| | VACUUM | 데드 튜플 공간 회수, 트랜잭션 ID 랩어라운드 방지 |
 
 ---
 
-## III. MVCC 2가지 유형의 비교 및 향후 동향
+## III. 비교 및 동향
 
-### 가. Undo Log 기반 vs Append-Only 기반 MVCC 비교
+### 가. Undo 기반 vs Append 기반
 
-| 비교 항목 | Undo Log 기반 (In-Place Update) | Append-Only 기반 (Out-of-Place Update) |
+| 비교 항목 | Undo 기반 | Append 기반 |
 | --- | --- | --- |
-| **데이터 갱신 방식** | 기존 튜플 덮어쓰기 (In-Place) | 새로운 튜플 추가 (Append-Only) |
-| **구버전 저장 위치** | 별도의 영역 (Undo Segment) | 메인 테이블의 동일한 페이지 내 (또는 오버플로) |
-| **읽기 (CR) 오버헤드** | 높음 (Undo 데이터를 활용한 CR 블록 재조합 필요) | 낮음 (헤더 상태값만 읽어 가시성 판단) |
-| **쓰기 / 롤백 오버헤드** | 쓰기 오버헤드 낮음 / 롤백 오버헤드 높음 | 쓰기 오버헤드 높음 / 롤백 오버헤드 극히 낮음 |
-| **가비지 컬렉션** | 불필요 (트랜잭션 종료 시 Undo 덮어쓰기 허용) | 필수 (주기적인 Vacuum 데몬 구동 필요) |
-| **대표적인 [[DBMS]]** | Oracle, MySQL (InnoDB) | PostgreSQL, CUBRID |
+| 갱신 방식 | 제자리 갱신 | 새 버전 추가 |
+| 이전 버전 위치 | 별도 Undo 영역 | 같은 테이블 |
+| 과거 버전 읽기 | Undo 적용 재구성 비용 | 버전 선택만 하면 됨 |
+| 롤백 | Undo 적용 필요 | 버전 무효 처리로 빠름 |
+| 정리 작업 | Undo 재사용·Purge | VACUUM 필수 (테이블 팽창 위험) |
+| 대표 DBMS | Oracle, MySQL InnoDB | PostgreSQL |
+| 주의 | 긴 쿼리 시 ORA-01555(Snapshot too old) | 장기 트랜잭션 시 VACUUM 지연·팽창 |
 
-### 나. MVCC 기술의 향후 발전 동향
+### 나. 동향
 
-* **인메모리(In-Memory) DB 최적화**: 디스크 I/O가 제거된 환경(SAP HANA 등)에서는 Timestamp 기반 및 Time-Travel 기능을 지원하는 MGA(Multi-Generation Architecture) 형태로 MVCC가 진화 중
-* **분산 환경의 정합성 보장 ([[New SQL|NewSQL]])**: Spanner, [[CockroachDB]] 등 글로벌 [[분산 데이터베이스]] 환경에서 MVCC를 구현하기 위해, TrueTime API나 하이브리드 논리적 시계(HLC)를 활용한 전역적 스냅샷 격리(Global Snapshot Isolation) 기법이 도입되고 있음
+- **분산 MVCC**: Spanner·[[CockroachDB]]가 TrueTime·HLC 타임스탬프로 노드 간 일관된 스냅샷 제공 ([[New SQL|NewSQL]])
+- **PostgreSQL 개선 논의**: 테이블 팽창을 줄이기 위한 Undo 기반 저장 엔진(zheap) 등 대안 연구
+- **격리 수준과 결합**: MVCC 위에서 Snapshot Isolation, SSI로 직렬 가능성 확보 ([[Isolation Level (격리 레벨고립성 수준)|격리 수준]])
 
 ---
 
@@ -103,8 +94,8 @@ flowchart LR
 - **소속 도메인**: [[00_데이터베이스_MOC|🗄️ 데이터베이스]]
 - **세부 분류**: `2. 트랜잭션 & 동시성 제어 (Concurrency)`
 - **핵심 연관 토픽**:
-  - [[트랜잭션]]
-  - [[New SQL]]
+  - [[병행 제어]]
+  - [[Isolation Level (격리 레벨고립성 수준)]]
+  - [[Locking]]
+  - [[타임스탬프 순서 기법]]
   - [[CockroachDB|CockroachDB(코크로치DB)]]
-  - [[데이터베이스]]
-  - [[DBMS]]

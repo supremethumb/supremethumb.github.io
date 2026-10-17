@@ -5,76 +5,85 @@ tags:
   - 보안
 aliases:
   - TPM
+  - Trusted Platform Module
 ---
 # TPM (Trusted Platform Module)
 
 ---
 
-## I. 하드웨어 기반 무결성 검증 및 암호 키 보호를 위한 보안 프로세서, TPM의 개요
+## I. 하드웨어 신뢰 기점, TPM의 개요
 
-* **정의**: 국제 표준화 기구(ISO/IEC 11889) 및 TCG(Trusted Computing Group)에서 제정한 하드웨어 기반의 [[암호화]] 크립토 프로세서로, 시스템의 부팅 및 운영 단계에서 무결성을 검증하고 암호 키를 안전하게 보관하는 보안 칩
-* 펌웨어 위·변조 방지, 루트 오브 트러스트(Root of Trust) 제공 및 제어권 탈취 공격(Ransomware, Bootkit) 차단 목적
-* 특징: 물리적 독립 하드웨어 기반 격리, PCR(Platform Configuration Registers)을 이용한 상태 측정, 안전한 키 생성 및 저장
+### 가. 정의
+
+- TCG(Trusted Computing Group)가 규격화한 **보안 암호 프로세서로, 키를 안전하게 생성·보관하고 부팅 과정을 측정하여 플랫폼 무결성을 증명**하는 하드웨어 신뢰 기점 (TPM 2.0, ISO/IEC 11889)
+
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 키 보호 | 개인키가 칩 밖으로 나가지 않는 구조 |
+| 측정 부팅 | 부팅 구성요소 해시를 PCR에 누적 기록 |
+| 원격 증명 | PCR 값을 서명해 외부 검증자에게 플랫폼 상태 증명 |
+| 봉인 (Sealing) | 특정 PCR 상태에서만 키·데이터 복원 (BitLocker 등) |
+| 보급 | Windows 11 필수 요건으로 PC에 일반화 |
 
 ---
 
-## II. TPM의 아키텍처 및 핵심 기술 요소
+## II. 구조 및 구성요소
 
-### 가. TPM의 하드웨어 아키텍처 및 동작 원리
+### 가. 내부 구조
 
 ```mermaid
-flowchart TB
-    subgraph Host["Host System (CPU / OS)"]
-        OS["Operating System / Applications"]
-    end
-
-    subgraph Bus["Hardware Bus (SPI / LPC)"]
-        COMM["Encrypted Command / Response"]
-    end
-
-    subgraph TPM["TPM Chip (Trusted Platform Module)"]
+flowchart LR
+    HOST["호스트 CPU · OS"] <-->|"명령 · 응답<br/>LPC · SPI · I2C"| IF
+    subgraph TPM["TPM"]
         direction TB
-        CR["Crypto Engine<br/>(RSA, ECC, AES, SHA)"]
-        PR["PCRs<br/>(Platform Configuration Registers)"]
-        NV["NV RAM<br/>(Endorsement & Storage Keys)"]
-        TR["TRNG<br/>(True Random Number Generator)"]
-        
-        CR --- PR
-        CR --- NV
-        CR --- TR
+        IF["I/O"]
+        CE["암호 엔진<br/>RSA · ECC · AES · SHA-2"]
+        RNG["난수 생성기"]
+        PCR["PCR 뱅크"]
+        NV["비휘발성 메모리<br/>EK 인증서 · 정책"]
+        IF --- CE
+        CE --- RNG
+        CE --- PCR
+        CE --- NV
     end
-
-    OS <== Bus ==> COMM
-    COMM ==> TPM
-
 ```
 
-* 호스트 시스템이 SPI/LPC 버스를 통해 TPM과 암호화된 명령을 교환하며, TPM 내부의 암호 엔진과 PCR 및 NV RAM을 통해 [[무결성]] 측정 및 키 관리를 수행하는 구조
+- 호스트는 버스를 통해 TPM에 명령을 보내고, TPM 내부에서 키 생성·서명·봉인 연산을 수행해 결과만 돌려줌
 
-### 나. TPM의 핵심 기술 및 구성 요소
+### 나. 구성요소
 
-| 분류 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| 신뢰 기점 | 루트 오브 트러스트 (Root of Trust) | 시스템 부팅 시 하드웨어 수준에서 신뢰할 수 있는 최초의 실행 및 검증 지점 제공 |
-| 무결성 검증 | PCR (Platform Configuration Registers) | 부팅 단계별(BIOS, 부트로더, OS) 시스템 상태 및 해시값을 누적 저장하는 레지스터 |
-| 암호 연산 | 암호화 코프로세서 (Crypto Engine) | [[RSA (Rivest Shamir Adleman)|RSA]], [[ECC]], [[AES]], SHA 등 고속 암/복호화 및 해시 연산을 하드웨어 가속으로 수행 |
-| 키 관리 | EK / SRK / AIK | Endorsement Key(칩 고유 식별), Storage Root Key(키 관리), Attestation Key(인증) 관리 |
-| 난수 생성 | TRNG (True Random Number Generator) | 물리적 엔트로피 소스를 활용하여 예측 불가능한 암호학적 난수 생성 |
-| 안전 저장소 | 비휘발성 메모리 (NV RAM) | 암호화 키, 플랫폼 자격 증명 및 정책 데이터를 안전하게 보관하는 내부 저장 공간 |
-| [[가상화]] 구현 | fTPM (Firmware TPM) | 별도의 물리 칩 없이 [[CPU]]의 펌웨어 영역 내에서 TPM 기능을 가상화하여 구현 (AMD fTPM 등) |
-| 최신 트렌드 | 포스트 퀀텀(PQC) TPM 준비 | 양자 컴퓨터의 암호 체계 해체 위협에 대응하기 위한 격자 기반 PQC [[알고리즘]] 수용 진화 |
+| 측정 | PCR | `PCR_new = Hash(PCR_old ∥ 측정값)` 확장 방식으로 부팅 단계 기록 |
+| 키 계층 | EK (Endorsement Key) | 칩 고유 식별, 제조사 인증서로 보증 |
+| | SRK (Storage Root Key) | 저장 키 계층의 루트 |
+| | AK (Attestation Key) | PCR 인용(Quote) 서명용 (TPM 1.2의 AIK) |
+| 연산 | 암호 엔진 | RSA, ECC, AES, SHA-2 |
+| | 난수 생성기 | 키 생성용 난수 |
+| 저장 | NV 메모리 | 인증서, 카운터, 정책 데이터 |
+| 기능 | 봉인·원격 증명 | 무결성 상태에 키를 묶고 상태를 외부에 증명 |
+| 구현 형태 | dTPM / fTPM / vTPM | 별도 칩 / CPU 보안 영역 펌웨어(AMD fTPM, Intel PTT) / 가상 머신용 소프트웨어 TPM |
 
 ---
 
-### III. 전용 하드웨어 TPM vs 펌웨어 TPM(fTPM) 비교 및 동향
+## III. 비교 및 동향
 
-| 비교 항목 | 전용 하드웨어 TPM (dTPM) | 펌웨어 TPM (fTPM) | TEE / Secure Element (SE) |
+### 가. dTPM vs fTPM vs TEE·SE
+
+| 비교 항목 | dTPM | fTPM | TEE / SE |
 | --- | --- | --- | --- |
-| **구현 방식** | 메인보드 상에 장착된 독립된 물리 보안 칩 | CPU 내부 펌웨어 및 하이퍼바이저 영역에서 구동 | SoC 내부의 격리된 하드웨어 보안 영역 (TrustZone 등) |
-| **보안 강도** | 물리적 공격(Side-channel) 방어 가능 (최상) | 물리적 칩 탈취 시 상대적으로 취약할 수 있음 | 모바일 환경에 최적화된 고성능 격리 제공 |
-| **적용 영역** | 엔터프라이즈 서버, 고보안 PC, 산업용 장비 | 일반 소비자용 PC (Windows 11 필수 요건 충족) | 스마트폰, 결제 단말기, 임베디드 기기 |
+| 구현 | 메인보드의 독립 칩 | CPU 보안 영역 펌웨어 | SoC 격리 영역(TrustZone) / 보안 칩 |
+| 강점 | 물리적 분리, 변조 저항 인증 | 추가 비용 없음 | 범용 보안 연산 / 결제·키 보관 |
+| 약점 | 버스 스니핑 공격 (암호화 세션 미사용 시) | CPU 취약점 영향 (예: faulTPM) | 표준화 수준 상이 |
+| 적용 | 기업 PC·서버 | 일반 소비자 PC | 스마트폰, 결제 단말 |
 
-* 최근 제어 권한 탈취 및 [[랜섬웨어]] 공격이 고도화됨에 따라, Windows 11 등 OS 표준 사양으로서의 TPM 보급이 일반화되었으며, 향후 [[양자 암호]] 체계 전환에 대비한 **PQC(Post-Quantum Cryptography) 기반 하드웨어 보안 모듈**로의 고도화가 가속화되고 있음
+### 나. 동향
+
+- **버스 보호**: TPM 2.0 파라미터 암호화 세션과 PIN 결합으로 버스 스니핑을 통한 디스크 키 탈취 방어
+- **기밀 컴퓨팅 증명**: 클라우드 VM의 vTPM과 측정 부팅으로 워크로드 무결성 증명 ([[기밀컴퓨팅]])
+- **PQC 대응**: TCG에서 양자내성 알고리즘 지원을 위한 TPM 규격 개정 작업 진행
 
 ---
 
@@ -83,8 +92,8 @@ flowchart TB
 - **소속 도메인**: [[00_보안_MOC|🛡️ 보안]]
 - **세부 분류**: `1. 정보보안 원칙 & 거버넌스 · 인증`
 - **핵심 연관 토픽**:
-  - [[암호화|암호화 (Encryption)]]
+  - [[기밀컴퓨팅|기밀컴퓨팅(Confidential Computing)]]
+  - [[루트킷|루트킷(Rootkit)]]
+  - [[부채널 공격|부채널 공격(Side Channel Attack)]]
   - [[RSA (Rivest Shamir Adleman)]]
-  - [[AES]]
   - [[ECC|ECC(Elliptic Curve Cryptography)]]
-  - [[양자 암호|양자 암호(Quantum Cryptography)]]

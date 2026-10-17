@@ -7,7 +7,7 @@ tags:
 
 # 🤖 인공지능 MOC (Map of Content)
 
-> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **212개**  
+> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **200개**  
 > 수학·통계학 이론부터 머신러닝, 딥러닝, 거대언어모델(LLM), 생성형 AI, 컴퓨터 비전, XAI 및 AI 윤리/거버넌스까지 인공지능 전 영역을 아우르는 지식 지도입니다.
 
 ---
@@ -27,13 +27,12 @@ flowchart TD
 
 ## 📑 핵심 분류 체계 및 토픽 목록
 
-### 1. 수학 · 통계학 & 데이터 전처리 (81)
+### 1. 수학 · 통계학 & 데이터 전처리 (76)
 
 > 확률분포, 가설검정, 상관/회귀분석, 차원축소 및 데이터 정제 기법
 
 - [[가설 검정|가설 검정]]
 - [[거리 공식|거리 공식(Distance Formula)]]
-- [[거리함수|거리함수]]
 - [[결측치|결측치]]
 - [[관계검정|관계검정 (Relationship Test)]]
 - [[기술 통계|기술 통계(Descriptive statistics)]]
@@ -45,7 +44,6 @@ flowchart TD
 - [[로지스틱회귀분석|로지스틱회귀분석]]
 - [[모델 드리프트 컨셉 드리프트 & 데이터 드리프트|모델 드리프트 컨셉 드리프트 & 데이터 드리프트]]
 - [[모델 프리|모델 프리]]
-- [[밀도기반 클러스터링|밀도기반 클러스터링(DBSCAN)]]
 - [[베르누이 분포|베르누이 분포 (Bernoulli distribution)]]
 - [[베이즈 정리|베이즈 정리 (이론)]]
 - [[베이즈 추론|베이즈 추론]]
@@ -77,17 +75,14 @@ flowchart TD
 - [[차원 축소|차원 축소(Dimensionality Reduction)]]
 - [[추론 통계|추론 통계(Inferential Statistics)]]
 - [[추정 이론|추정 이론(Estimation Theory)]]
-- [[추정통계|추정통계 (Estimation Statistics)]]
 - [[클래스 불균형|클래스 불균형(Class Imbalance)]]
 - [[통계 데이터 마이닝|통계데이터마이닝 (연관규칙 & 베이즈)]]
-- [[통계적 가설검정|통계적 가설검정 (Hypothesis Testing)]]
 - [[포아송 분포|포아송 분포 (Poisson Distribution)]]
 - [[표본 추출|표본 추출]]
 - [[표현 학습|표현 학습]]
 - [[할루시네이션|할루시네이션(Hallucination)]]
 - [[합성 데이터|합성 데이터(Synthetic Data)]]
 - [[확률분포|확률분포]]
-- [[확률분포와 확률 밀도 함수|확률분포와 확률 밀도 함수]]
 - [[회귀분석|회귀분석(Regression Analysis)]]
 - [[AI 시스템 테스트|AI 시스템 테스트]]
 - [[AIC(Akaike information Criterion) & BIC(Bayesian information Criterion)|AIC(Akaike information Criterion) & BIC(Bayesian information Criterion)]]
@@ -104,7 +99,7 @@ flowchart TD
 - [[LoRA(Low-rank adaptation)|LoRA(Low-rank adaptation)]]
 - [[MLOps|MLOps]]
 - [[Network Dessection|Network Dessection]]
-- [[Optimization Algorithm|Optimization Algorithm]]
+- [[최적화 알고리즘|최적화 알고리즘 (Optimization Algorithm)]]
 - [[PCA(Principal Component Analysis)|PCA(Principal Component Analysis)]]
 - [[ROC 곡선|ROC 곡선]]
 - [[SVD(Singular Value Decomposition)|SVD(Singular Value Decomposition)]]
@@ -113,7 +108,7 @@ flowchart TD
 - [[VAE|VAE(Variational Autoencoder)]]
 - [[Z-검정|Z-검정 (Z-test)]]
 
-### 2. 머신러닝 기초 & 핵심 알고리즘 (25)
+### 2. 머신러닝 기초 & 핵심 알고리즘 (24)
 
 > 지도/비지도/강화학습, 의사결정나무, 군집화, 앙상블 및 모델 평가 지표
 
@@ -130,7 +125,6 @@ flowchart TD
 - [[역전파|역전파(Backpropagation)]]
 - [[이미지넷|이미지넷]]
 - [[인공지능 감리|인공지능 감리 (AI Audit)]]
-- [[인공지능 적대적 공격|인공지능 적대적 공격]]
 - [[자기 지도 증강|자기 지도 증강]]
 - [[자기지도학습|자기지도학습]]
 - [[전용 인공지능|전용 인공지능]]
@@ -143,7 +137,7 @@ flowchart TD
 - [[MNIST|MNIST]]
 - [[Q러닝|Q러닝]]
 
-### 3. 딥러닝 핵심 아키텍처 & 신경망 (28)
+### 3. 딥러닝 핵심 아키텍처 & 신경망 (26)
 
 > 인공신경망, CNN, RNN/LSTM, Transformer, Attention 메커니즘, 최적화 및 활성화 함수
 
@@ -153,8 +147,6 @@ flowchart TD
 - [[딥러닝|딥러닝]]
 - [[딥페이크|딥페이크(Deepfake)]]
 - [[모델 구조|모델 구조]]
-- [[범용 인공지능|범용 인공지능]]
-- [[어텐션 매커니즘|어텐션 매커니즘]]
 - [[어텐션 메커니즘|어텐션 메커니즘(Attention Mechanism)]]
 - [[인공지능|인공지능]]
 - [[자기 집중|자기 집중]]
@@ -176,21 +168,19 @@ flowchart TD
 - [[RPN|RPN]]
 - [[seq2seq|seq2seq]]
 
-### 4. 거대언어모델 (LLM) & 생성형 AI (47)
+### 4. 거대언어모델 (LLM) & 생성형 AI (44)
 
 > Foundation Model, BERT/GPT, RAG, 프롬프트 엔지니어링, 파인튜닝(PEFT), 경량화
 
 - [[공공부문 초거대AI 도입, 활용 가이드라인 2.0(2025.04)|공공부문 초거대AI 도입, 활용 가이드라인 2.0(2025.04)]]
 - [[대규모 언어 모델 성능 향상 기술|대규모 언어 모델(LLM) 성능 향상 기술]]
 - [[랭체인|랭체인(LangChain)]]
-- [[머신러닝 옵티마이저|머신러닝 옵티마이저]]
 - [[머신러닝 학습방법|머신러닝 학습방법]]
 - [[메타학습|메타학습]]
 - [[바이브코딩|바이브코딩(Vibe Coding)]]
 - [[블랙박스 모델|블랙박스 모델]]
 - [[생성형 인공지능 서비스 이용자 보호 가이드라인|생성형 인공지능 서비스 이용자 보호 가이드라인]]
 - [[생성형 인공지능 저작권|생성형 인공지능 저작권]]
-- [[생성형 인공지능 저작권 이슈 및 대응방안|생성형 인공지능(Generative AI) 저작권 이슈 및 대응방안]]
 - [[생성형 AI 위협 및 대응방안|생성형 AI 위협 및 대응방안]]
 - [[생성형AI 데이터 품질관리 가이드 v2.0|생성형AI 데이터 품질관리 가이드 v2.0]]
 - [[심볼릭 추론|심볼릭 추론]]
@@ -199,7 +189,6 @@ flowchart TD
 - [[지식 증류|지식 증류 (Knowledge Distillation)]]
 - [[테스트 타임 스케일링|테스트 타임 스케일링(Test-Time Scaling, TTS)]]
 - [[파운데이션 모델|파운데이션 모델(Foundation Model)]]
-- [[파인 튜닝|파인 튜닝(Fine-tuning)]]
 - [[프롬프트 엔지니어링|프롬프트 엔지니어링(Prompt Engineering)]]
 - [[프롬프트 인젝션|프롬프트 인젝션(Prompt Injection)]]
 - [[프롬프트 튜닝|프롬프트 튜닝(Prompt Tuning)]]
@@ -242,7 +231,7 @@ flowchart TD
 - [[LDA(Linear Discriminant Analysis)|LDA(Linear Discriminant Analysis)]]
 - [[MCP|MCP (Model Context Protocol)]]
 
-### 6. 설명가능한 AI (XAI) & AI 윤리 · 거버넌스 (22)
+### 6. 설명가능한 AI (XAI) & AI 윤리 · 거버넌스 (21)
 
 > XAI 해석 기법(LIME, LRP, Grad-CAM), AI 윤리/안전, 소버린 AI, AI 기본법 및 AGI
 
@@ -250,7 +239,6 @@ flowchart TD
 - [[배치 정규화|배치 정규화]]
 - [[버티컬 AI|버티컬 AI(Vertical AI)]]
 - [[범용 인공지능 위험관리 프레임워크|범용 인공지능 위험관리 프레임워크]]
-- [[소버린 AI|소버린 AI(Artificial Intelligence)]]
 - [[연합 학습|연합 학습]]
 - [[온디바이스 AI|온디바이스 AI]]
 - [[유전 알고리즘|유전 알고리즘 (Genetic Algorithm)]]

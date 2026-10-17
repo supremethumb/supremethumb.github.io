@@ -12,8 +12,8 @@ tags:
 
 * **가. CTI(Cyber Threat Intelligence)의 정의**: 사이버 공격과 관련된 다양한 데이터와 정보를 수집 및 분석하여, 공격자의 의도, 목적, TTPs(전술·기술·절차)를 파악하고 선제적 방어를 가능하게 하는 지능형 위협 정보
 * **나. CTI의 필요성 및 특징**:
-* **필요성**: 기존의 침해사고 사후 대응(Reactive) 위주에서 벗어나, 고도화된 APT 공격 및 제로데이 위협에 대한 사전 예방(Proactive) 체계로의 패러다임 전환 필요
-* **특징**: 증거 기반의 지식 확보, 위협 인텔리전스 라이프사이클(기획-수집-처리-분석-배포) 기반 지속적 고도화, 자동화된 위협 정보 공유 체계(STIX/TAXII) 활용
+  * **필요성**: 기존의 침해사고 사후 대응(Reactive) 위주에서 벗어나, 고도화된 APT 공격 및 제로데이 위협에 대한 사전 예방(Proactive) 체계로의 패러다임 전환 필요
+  * **특징**: 증거 기반의 지식 확보, 위협 인텔리전스 라이프사이클(기획-수집-처리-분석-배포) 기반 지속적 고도화, 자동화된 위협 정보 공유 체계(STIX/TAXII) 활용
 
 
 
@@ -61,7 +61,7 @@ flowchart LR
 
 | 구분 | 요소기술(키워드) | 세부 설명 |
 | --- | --- | --- |
-| **분석 [[프레임워크]]** | [[MITRE ATT&CK (Adversarial Tactics, Techniques & Common Knowledge)|MITRE ATT&CK]] | 해커의 공격 과정을 전술(Tactics), 기술(Techniques), 절차(Procedures)로 분류한 글로벌 지식 기반 프레임워크 |
+| **분석 [[프레임워크]]** | [[MITRE ATT&CK (Adversarial Tactics, Techniques & Common Knowledge)\|MITRE ATT&CK]] | 해커의 공격 과정을 전술(Tactics), 기술(Techniques), 절차(Procedures)로 분류한 글로벌 지식 기반 프레임워크 |
 | **분석 프레임워크** | Diamond Model | 사이버 공격을 공격자(Adversary), 인프라(Infra), 피해자(Victim), 역량(Capability)의 4대 요소로 모델링하는 기법 |
 | **위협 지표** | IoC (Indicator of Compromise) | 침해사고의 징후를 나타내는 기술적 식별 지표 (예: 악성 IP, 악성코드 해시값, C&C 서버 도메인 등) |
 | **위협 지표** | TTPs | 공격자의 전략, 기술, 절차를 의미하며, 단순 IoC 차단을 넘어선 공격자의 근본적인 행위 기반 패턴 지표 |

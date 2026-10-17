@@ -80,8 +80,8 @@ flowchart TD
 | **주요 솔루션** | Scikit-learn, TensorFlow, PyTorch 직접 활용 | Google Cloud AutoML, H2O.ai, DataRobot, Auto-sklearn |
 
 * **향후 전망 및 동향**:
-* 초기에는 고전적인 머신러닝 위주였으나, 최근에는 **NAS(Neural Architecture Search)를 통한 딥러닝 최적화**와 비전/자연어 처리(NLP) 분야로 영역이 크게 확장됨.
-* 특히 최근 대형언어모델([[초거대 언어 모델|LLM]])과 결합하여, 사용자가 **자연어 프롬프트(Prompt)만으로 데이터 분석 목적을 입력하면 LLM이 AutoML 에이전트를 제어하여 최종 모델과 분석 리포트까지 도출**하는 LLM 기반 AutoML 프레임워크로 빠르게 진화하고 있음.
+  * 초기에는 고전적인 머신러닝 위주였으나, 최근에는 **NAS(Neural Architecture Search)를 통한 딥러닝 최적화**와 비전/자연어 처리(NLP) 분야로 영역이 크게 확장됨.
+  * 특히 최근 대형언어모델([[초거대 언어 모델|LLM]])과 결합하여, 사용자가 **자연어 프롬프트(Prompt)만으로 데이터 분석 목적을 입력하면 LLM이 AutoML 에이전트를 제어하여 최종 모델과 분석 리포트까지 도출**하는 LLM 기반 AutoML 프레임워크로 빠르게 진화하고 있음.
 
 ---
 

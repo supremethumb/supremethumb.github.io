@@ -87,7 +87,7 @@ classDiagram
 | **[[결합도]]** | **낮음 (Low)**: 인터페이스에 의존하나, Subject와 Observer가 서로를 인지함 | **매우 낮음 (Decoupled)**: Publisher와 Subscriber가 서로의 존재를 전혀 모름 |
 | **통신 매개체** | 객체 간 **직접 통신** (Direct Call) | 중간에 **이벤트 버스/메시지 브로커** 존재 |
 | **동기성** | 주로 **동기적(Synchronous)**으로 실행됨 | 주로 **비동기적(Asynchronous)**으로 실행됨 |
-| **적용 범위** | 단일 애플리케이션 내 객체 간 통신 (GUI, MVC) | 분산 시스템, [[MSA (Micro Service Architecture)|MSA]], 대규모 데이터 스트리밍 처리 |
+| **적용 범위** | 단일 애플리케이션 내 객체 간 통신 (GUI, MVC) | 분산 시스템, [[MSA (Micro Service Architecture)\|MSA]], 대규모 데이터 스트리밍 처리 |
 
 ### 나. 실무 적용 시 유의사항 및 최신 기술 동향
 
@@ -102,7 +102,6 @@ classDiagram
 - **세부 분류**: `4. 아키텍처 스타일 & 객체지향 설계 원리`
 - **핵심 연관 토픽**:
   - [[디자인 패턴|디자인 패턴 (Design Pattern)]]
-  - [[Design Pattern (23개 패턴)]]
   - [[MSA (Micro Service Architecture)]]
   - [[결합도]]
   - [[MVC 패턴 (Model-View-Controller Pattern)]]

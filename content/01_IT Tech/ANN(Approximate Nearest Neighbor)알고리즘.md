@@ -51,7 +51,7 @@ flowchart TB
 | **그래프 기반 (Graph)** | HNSW (Hierarchical Navigable Small World) | 다층 구조의 '작은 세상 네트워크'를 구축하여 검색 속도와 정확도(Recall)가 가장 우수한 SOTA 알고리즘 |
 | **트리 기반 (Tree)** | Annoy / KD-Tree | 고차원 공간을 랜덤 하이퍼플레인으로 분할하여 이진 트리를 구성하고 근접 영역을 탐색 |
 | **해싱 기반 (Hashing)** | LSH (Locality Sensitive Hashing) | 유사한 벡터들이 동일한 해시 버킷(Bucket)에 매핑될 확률을 높여 탐색 범위를 해시 충돌 영역으로 제한 |
-| **군집화 기반 (Cluster)** | IVF (Inverted File [[RDBMS 인덱스(index)|Index]]) | 전체 벡터를 K-means 등으로 군집화(Voronoi Cell)한 후, 쿼리와 가장 가까운 군집 내에서만 역색인 검색 |
+| **군집화 기반 (Cluster)** | IVF (Inverted File [[RDBMS 인덱스(index)\|Index]]) | 전체 벡터를 K-means 등으로 군집화(Voronoi Cell)한 후, 쿼리와 가장 가까운 군집 내에서만 역색인 검색 |
 | **양자화 기반 (Quantization)** | PQ (Product Quantization) | 고차원 벡터를 여러 서브 벡터로 쪼개어 군집화하고 짧은 코드북으로 압축하여 메모리 사용량을 최소화 |
 | **복합 인덱스 (Hybrid)** | IVF-PQ | 대용량 데이터 환경에서 탐색 속도(IVF)와 메모리 효율성(PQ)을 동시에 달성하기 위한 결합 기법 |
 | **거리 측정 (Metric)** | Cosine Similarity / L2 Distance | 벡터 간의 유사도를 판별하기 위한 수학적 거리 측정 기준 (코사인 [[유사도]], 유클리디안 거리 등) |

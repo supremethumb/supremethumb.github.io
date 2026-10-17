@@ -10,11 +10,11 @@ tags:
 
 ## I. TCP 통신 효율성 극대화를 위한, Sliding Window와 Nagle 알고리즘 개요
 
-* **정의**: 안정적이고 효율적인 [[TCP]] 데이터 전송을 위해, 수신 버퍼 크기 내에서 연속적으로 패킷을 전송하는 흐름 제어 기법(Sliding Window)과 작은 크기의 패킷 발생을 억제하여 헤더 오버헤드를 줄이는 **[[혼잡 제어]] [[알고리즘]](Nagle)**
+* **정의**: 안정적이고 효율적인 [[TCP]] 데이터 전송을 위해, 수신 버퍼 크기 내에서 연속적으로 패킷을 전송하는 흐름 제어 기법(Sliding Window)과 작은 크기의 패킷 발생을 억제하여 헤더 오버헤드를 줄이는 **[[TCP 혼잡제어|혼잡 제어]] [[알고리즘]](Nagle)**
 * **등장배경 및 특징**:
-* **대역폭 낭비 방지**: Stop-and-Wait 방식의 비효율성 극복(Sliding Window) 및 Tinygram(초소형 패킷)으로 인한 네트워크 혼잡 방지(Nagle)
-* **Silly Window Syndrome 해결**: 송신측의 작은 데이터 전송을 Nagle 알고리즘으로 제어하여 네트워크 효율성 보장
-* **상호 보완적 동작**: Sliding Window는 전송량(Throughput)을 늘리고, Nagle 알고리즘은 전송 단위(Payload)를 최적화함
+  * **대역폭 낭비 방지**: Stop-and-Wait 방식의 비효율성 극복(Sliding Window) 및 Tinygram(초소형 패킷)으로 인한 네트워크 혼잡 방지(Nagle)
+  * **Silly Window Syndrome 해결**: 송신측의 작은 데이터 전송을 Nagle 알고리즘으로 제어하여 네트워크 효율성 보장
+  * **상호 보완적 동작**: Sliding Window는 전송량(Throughput)을 늘리고, Nagle 알고리즘은 전송 단위(Payload)를 최적화함
 
 
 
@@ -93,8 +93,7 @@ flowchart TD
 - **소속 도메인**: [[00_네트워크_MOC|🌐 네트워크]]
 - **세부 분류**: `3. 전송 계층 & 트래픽 / 혼잡 제어 (L4)`
 - **핵심 연관 토픽**:
-  - [[혼잡 제어]]
+  - [[TCP 혼잡제어|혼잡 제어]]
   - [[TCP]]
   - [[QoS|QoS (Quality of Service)]]
-  - [[TCP 혼잡제어]]
   - [[알고리즘]]

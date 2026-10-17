@@ -3,60 +3,99 @@ title: TCP 혼잡제어
 date: 2026-04-22
 tags:
   - 네트워크
+aliases:
+  - 혼잡 제어
+  - 혼잡제어
+  - TCP Congestion Control
 ---
 # TCP 혼잡제어 (TCP Congestion Control)
 
 ---
 
-## I. 네트워크 대역폭 포화 방지와 공정성 유지를 위한 L4 전송 제어 기술, TCP 혼잡제어의 개요
+## I. 네트워크 붕괴 방지와 공정한 대역폭 분배, TCP 혼잡제어의 개요
 
-* **정의**: 네트워크 내 라우터와 링크의 과부하(Congestion)를 방지하기 위해, 송신 측이 수신 측의 버퍼 여유 공간뿐만 아니라 네트워크 상태를 고려하여 전송 데이터 양을 동적으로 조절하는 핵심 제어 메커니즘
-* 패킷 유실 방지, 네트워크 자원의 공정 분배 및 전송 효율성(Throughput) 극대화 목적
-* 특징: AIMD 기반 윈도우 조절, 느린 시작 및 혼잡 회피 단계, 최신 BBRv3 등 모델 기반 대역폭 추정 진화
+### 가. 정의
+
+- 라우터·링크의 과부하로 인한 패킷 손실을 막기 위해 **송신 측이 네트워크 상태를 추정하여 혼잡 윈도우(cwnd)로 전송량을 동적으로 조절**하는 [[TCP]]의 전송 제어 기법
+
+### 나. 등장 배경 및 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 등장 배경 | 1986년 인터넷 혼잡 붕괴(Congestion Collapse): 손실 → 무분별한 재전송 → 혼잡 악화의 악순환 |
+| 송신 측 주도 | 송신 측이 ACK·타임아웃으로 혼잡을 추정 ([[End-to-End]] 제어) |
+| 실제 전송량 | $\min(cwnd, rwnd)$, 혼잡 윈도우와 수신 윈도우 중 작은 값 |
+| AIMD | 정상 시 선형 증가(Additive Increase), 손실 시 절반 감소(Multiplicative Decrease)로 공정성 확보 |
 
 ---
 
-## II. TCP 혼잡제어의 아키텍처 및 핵심 구성요소
+## II. 동작 원리 및 핵심 요소
 
-### 가. TCP 혼잡제어 상태 전이 및 동작 원리
+### 가. 상태 전이 (TCP Reno 기준)
 
 ```mermaid
-flowchart TB
-    subgraph CC["TCP Congestion Control Phases"]
+stateDiagram-v2
     direction LR
-        S1["Slow Start<br/>(느린 시작: CWND 지수 증가)"] -->|Threshold 도달| S2["Congestion Avoidance<br/>(혼잡 회피: CWND 선형 증가)"]
-        S2 -->|패킷 유실 감지 / TimeOut| S3["Fast Recovery / Retransmit<br/>(빠른 회복 / CWND 반감)"]
-        S3 --> S2
-    end
+    state "Slow Start (느린 시작)" as SS
+    state "Congestion Avoidance (혼잡 회피)" as CA
+    state "Fast Recovery (빠른 회복)" as FR
 
+    [*] --> SS : cwnd = 1 MSS
+    SS --> SS : ACK마다 +1 (RTT마다 2배)
+    SS --> CA : cwnd ≥ ssthresh
+    CA --> CA : RTT마다 +1 MSS
+    SS --> FR : 3 Dup ACK
+    CA --> FR : 3 Dup ACK (빠른 재전송, ssthresh = cwnd/2)
+    FR --> CA : 새 ACK 수신 (cwnd = ssthresh)
+    CA --> SS : 타임아웃 (ssthresh = cwnd/2, cwnd = 1)
+    FR --> SS : 타임아웃
 ```
 
-* 연결 초기 느린 시작(Slow Start)을 통해 지수적으로 윈도우 크기(CWND)를 키우고, 임계값(SSTHRESH) 도달 시 혼잡 회피(Congestion Avoidance)로 전환하여 선형 증가하며, 패킷 유실 감지 시 급격히 윈도우를 축소하여 안정성을 유지하는 구조
+- 3 Dup ACK는 일부 패킷이 도착하고 있다는 신호이므로 가벼운 혼잡으로 보고 절반만 줄이며, 타임아웃은 심각한 혼잡으로 보고 cwnd를 1로 초기화
 
-### 나. TCP 혼잡제어의 핵심 기술 및 구성 요소
+### 나. 핵심 요소
 
-| 분류 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| 제어 변수 | 혼잡 윈도우 (CWND) | 네트워크 상황을 반영하여 송신 측이 허용하는 최대 전송 패킷 수 |
-| 핵심 [[알고리즘]] | 느린 시작 (Slow Start) | 초기 연결 시 CWND를 1에서 시작하여 ACK 수신마다 지수적 증가 |
-| 핵심 알고리즘 | 혼잡 회피 (Congestion Avoidance) | 임계값(SSTHRESH) 초과 시 CWND를 매 RTT마다 1개씩 선형 증가 |
-| 손실 대응 | 빠른 재전송 / 빠른 회복 | 중복 ACK 3회 수신 시 타임아웃 대기 없이 즉시 재전송 및 CWND 조정 |
-| 최신 알고리즘 | BBR (Bottleneck Bandwidth and RTT) | 손실 기반 제어의 한계를 극복하고 대역폭과 왕복 지연을 측정하여 제어 |
-| 최신 표준 | HyStart++ | 느린 시작 단계에서 지연 기반 혼잡 조기 탐지 및 오버슈팅 방지 |
-| 패킷 마킹 | ECN (Explicit Congestion Notification) | [[라우터]] 패킷 유실 전 명시적 혼잡 표식을 통해 사전 송신율 조절 |
-| 최신 트렌드 | AI/ML 기반 [[혼잡 제어]] | [[강화학습]] 기반으로 시시각각 변하는 동적 네트워크 환경에 대응하는 제어 |
+| 제어 변수 | cwnd | 송신 측이 ACK 없이 보낼 수 있는 데이터 양 |
+| | ssthresh | 느린 시작에서 혼잡 회피로 전환하는 임계값 |
+| 알고리즘 | Slow Start | ACK마다 cwnd +1 MSS, RTT마다 2배 증가 |
+| | Congestion Avoidance | RTT마다 cwnd +1 MSS 선형 증가 |
+| | Fast Retransmit | 3 Dup ACK 수신 시 타임아웃 전에 즉시 재전송 |
+| | Fast Recovery | cwnd를 1이 아닌 절반으로 줄이고 혼잡 회피로 복귀 (Reno) |
+| 버전 | Tahoe → Reno → NewReno → CUBIC | Tahoe는 손실 시 항상 cwnd = 1, CUBIC은 3차 함수로 증가해 리눅스 기본 |
+| | BBR | 병목 대역폭과 최소 RTT를 측정해 전송률 결정 (모델 기반) |
+| 네트워크 지원 | ECN | 라우터가 손실 전에 IP 헤더에 혼잡을 표시해 송신 측이 미리 감속 |
+| | AQM (RED, CoDel) | 큐가 차기 전에 확률적으로 폐기해 버퍼블로트 완화 |
 
 ---
 
-## III. 전통적 손실 기반 혼잡제어 vs 최신 모델 기반(BBR) 혼잡제어 비교 및 동향
+## III. 비교 및 동향
 
-| 비교 항목 | 전통적 손실 기반 혼잡제어 (CUBIC 등) | 최신 모델 기반 혼잡제어 (BBRv3 등) |
+### 가. 혼잡제어 vs 흐름제어
+
+| 비교 항목 | 혼잡제어 | 흐름제어 |
 | --- | --- | --- |
-| **혼잡 감지 기준** | 패킷 손실(Packet Loss) 및 타임아웃 발생 여부 | 병목 대역폭(Bottleneck Bandwidth)과 최소 RTT 측정 |
-| **고대역폭-지연 망** | 버퍼bloat 현상 발생 및 대역폭 활용 효율 저하 | 고속·대형 네트워크에서 최대 대역폭 고속 활용 가능 |
-| **공정성 및 안정성** | 손실 발생 시 과도한 CWND 축소로 속도 급감 | 안정적인 전송 유지 및 지연 시간(Latency) 최소화 |
+| 목적 | 네트워크(라우터) 과부하 방지 | 수신 측 버퍼 오버플로 방지 |
+| 병목 지점 | 라우터 큐, 링크 | 수신 호스트 버퍼 |
+| 판단 주체 | 송신 측이 추정 | 수신 측이 rwnd 통보 |
+| 기준 변수 | cwnd | rwnd |
+| 기법 | Slow Start, AIMD, Fast Recovery | [[Sliding Window & 네이글(Nagle's) 알고리즘\|Sliding Window]], Stop-and-Wait |
 
-* 최근 클라우드 데이터센터 및 5G/6G 대규모 백본망의 고도화에 따라, 단순 패킷 유실에 반응하는 전통적 CUBIC 방식에서 벗어나 실시간 대역폭과 지연을 정밀 추정하는 BBR 기반 지능형 혼잡제어 체계가 표준으로 자리 잡고 있음
+### 나. 손실 기반 vs 모델 기반
+
+| 비교 항목 | 손실 기반 (Reno, CUBIC) | 모델 기반 (BBR) |
+| --- | --- | --- |
+| 혼잡 신호 | 패킷 손실, 타임아웃 | 병목 대역폭, 최소 RTT 측정 |
+| 큐 상태 | 버퍼를 가득 채워 버퍼블로트 유발 | 큐를 비운 상태 유지, 지연 최소화 |
+| 고대역폭·장거리망 | 손실 한 번에 속도 급감 | 손실이 있어도 높은 처리량 유지 |
+| 한계 | 무선 비혼잡 손실에 오판 | 다른 알고리즘과 공존 시 공정성 문제 (BBRv2·v3에서 개선) |
+
+### 다. 동향
+
+- **BBR 확산**: Google·CDN·클라우드에서 BBRv3 적용, QUIC 스택에도 탑재
+- **데이터센터 혼잡제어**: ECN 기반 DCTCP, 지연 기반 Swift 등 초저지연 환경 특화
+- **학습 기반 제어**: [[강화학습]]으로 망 상태 변화에 맞춰 전송률을 조절하는 연구
 
 ---
 
@@ -65,8 +104,8 @@ flowchart TB
 - **소속 도메인**: [[00_네트워크_MOC|🌐 네트워크]]
 - **세부 분류**: `3. 전송 계층 & 트래픽 / 혼잡 제어 (L4)`
 - **핵심 연관 토픽**:
-  - [[혼잡 제어]]
-  - [[라우터]]
-  - [[강화학습]]
+  - [[TCP]]
+  - [[전송 계층]]
+  - [[Sliding Window & 네이글(Nagle's) 알고리즘]]
   - [[Traffic Shaping (트래픽 쉐이핑)]]
-  - [[Traffic Policing (트래픽 정책처리)]]
+  - [[QoS|QoS (Quality of Service)]]

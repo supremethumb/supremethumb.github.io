@@ -3,78 +3,87 @@ title: TPU (Tensor Processing Unit)
 date: 2026-04-22
 tags:
   - 컴퓨터구조
+aliases:
+  - TPU
+  - Tensor Processing Unit
 ---
 # TPU (Tensor Processing Unit)
 
 ---
 
-## I. 대규모 딥러닝 연산 최적화 전용 맞춤형 ASIC 가속기, TPU의 개요
+## I. 구글의 딥러닝 전용 ASIC, TPU의 개요
 
-* **정의**: 구글이 인공신경망 연산(특히 행렬 곱셈)의 성능과 전력 효율을 극대화하기 위해 독자적으로 개발한 주문형 반도체(ASIC) 기반 [[인공지능]] 가속 프로세서
-* 거대 언어 모델([[초거대 언어 모델|LLM]]) 학습 및 추론 가속, 범용 프로세서([[CPU]]/[[GPU]]) 대비 뛰어난 전력 당 연산 성능(TOPS/W) 제공 목적
-* 특징: 행렬 연산 유닛(MXU) 중심 구조, JAX/TensorFlow 최적화, 최신 6세대 트릴륨(Trillium, v6) 기반 대규모 슈퍼포드 확장
+### 가. 정의
+
+- 구글이 신경망의 **행렬 곱셈을 [[시스톨릭 어레이]] 기반 행렬 연산 유닛(MXU)으로 가속하도록 설계한 [[인공지능]] 전용 ASIC** (2015년 사내 도입, 2016년 공개)
+
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| MXU 중심 | 대형 시스톨릭 어레이(v1 256×256, v2~v5 128×128, v6e 256×256)로 행렬 곱 처리 |
+| 전력 효율 | 범용 [[CPU]]·[[GPU]] 대비 신경망 연산의 와트당 성능 우수 |
+| Pod 확장 | 칩 간 전용 링크(ICI)로 수천 개 칩을 하나의 Pod로 연결 |
+| 클라우드 제공 | Google Cloud로만 제공, JAX·TensorFlow·PyTorch/XLA 지원 |
 
 ---
 
-## II. TPU의 아키텍처 및 핵심 구성요소
+## II. 구조 및 구성요소
 
-### 가. TPU (Trillium v6 기준)의 아키텍처 및 동작 원리
+### 가. 칩 구조
 
 ```mermaid
 flowchart TB
-    subgraph Host["Host CPU / Orchestrator"]
-    end
-
-    subgraph TPU_Chip["Google Trillium TPU Chip (v6)"]
+    HOST["호스트 CPU"] <-- "PCIe" --> CHIP
+    subgraph CHIP["TPU 칩"]
         direction TB
-        
-        subgraph TensorCore["TensorCore"]
-            MXU1["MXU 1 (Matrix Multiply Unit)<br/>(BF16 / FP8 연산)"]
-            MXU2["MXU 2 (Matrix Multiply Unit)<br/>(BF16 / FP8 연산)"]
-            VU["Vector Unit / Scalar Unit"]
+        subgraph TC["TensorCore"]
+            MXU["MXU<br/>행렬 곱 (BF16 · INT8 · FP8)"]
+            VU["벡터 · 스칼라 유닛"]
+            MXU --- VU
         end
-        
-        SC["SparseCores<br/>(임베딩 및 희소 연산 가속)"]
-        HBM["High Bandwidth Memory (HBM)<br/>(초고대역폭 메모리)"]
-        ICI["ICI (Inter-Chip Interconnect)<br/>(고속 칩간 통신)"]
-
-        HBM ==> MXU1 & MXU2 & SC
-        MXU1 --- VU
-        MXU2 --- VU
+        SC["SparseCore<br/>임베딩 가속"]
+        HBM["HBM"]
+        ICI["ICI 칩 간 링크"]
+        HBM --> TC
+        HBM --> SC
     end
-
-    Host <== "PCIe / ICI Fabric" ==> TPU_Chip
-    TPU_Chip <== "Multislice Interconnect" ==> Network["TPU SuperPod<br/>(수만 개 칩 확장)"]
-
+    ICI <--> POD["Pod / Multislice<br/>칩 수천 개 확장"]
 ```
 
-* 호스트 CPU에서 전달된 [[딥러닝]] 연산 요구를 받아, 내부의 대규모 MXU(행렬 연산 유닛)와 SparseCore를 통해 병렬 행렬 곱셈 및 임베딩 처리를 고속 수행하고, 고속 ICI를 통해 대규모 Pod 간 확장하는 구조
+- XLA 컴파일러가 연산 그래프를 MXU·벡터 유닛 명령으로 변환, 대형 모델은 ICI로 여러 칩에 분산
 
-### 나. TPU의 핵심 기술 및 구성 요소
+### 나. 구성요소
 
-| 분류 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| 핵심 연산 | MXU (Matrix Multiply Unit) | 수만 개의 [[MAC]] 연산기를 집적하여 행렬 곱셈 및 누산(MAC)을 초고속 처리 |
-| 희소성 가속 | SparseCores | 대규모 임베딩 레이어의 무작위/비정형 접근 연산을 독립적으로 가속 |
-| 메모리 구조 | [[HBM|HBM (High Bandwidth Memory)]] | 고대역폭을 지원하여 대규모 LLM 파라미터 로딩 시 대기 시간 최소화 |
-| 통신 인터페이스 | ICI (Inter-Chip Interconnect) | 칩 간 고속 통신을 지원하여 멀티칩 동기화 오버헤드 감소 |
-| 확장성 기술 | Multislice / SuperPod | 수만 개의 TPU 칩을 페타비트급 네트워크로 연결하여 거대 모델 분산 학습 지원 |
-| 소프트웨어 [[프레임워크]] | JAX / TensorFlow | 구글 생태계에 최적화된 고성능 자동 미분 및 분산 컴파일 지원 |
-| 최신 아키텍처 | Trillium (TPU v6e/v6p) | 6세대 아키텍처로 이전 세대 대비 전력 효율 및 연산 성능 대폭 향상 |
-| 활용 영역 | Gemini 학습 및 서빙 | 구글 DeepMind의 최신 멀티모달 LLM(Gemini) 학습 및 대규모 추론에 핵심 활용 |
+| 연산 | MXU | 시스톨릭 어레이로 구성된 행렬 곱-누산([[MAC 배열\|MAC]]) 유닛 |
+| | 벡터·스칼라 유닛 | 활성화 함수, 정규화, 제어 흐름 |
+| | SparseCore | 추천 모델 임베딩 조회 등 희소·비정형 접근 가속 (v4~) |
+| 메모리 | [[HBM\|HBM (High Bandwidth Memory)]] | 파라미터·활성값을 담는 고대역폭 메모리 |
+| 연결 | ICI (Inter-Chip Interconnect) | 칩 간 직접 연결, 2D·3D 토러스 구성 |
+| | OCS (광 회로 스위치) | v4부터 Pod 토폴로지를 광 스위치로 재구성 |
+| 확장 | Multislice | 여러 Pod(슬라이스)를 데이터센터 네트워크로 묶어 학습 |
+| SW | XLA, JAX, TensorFlow | 그래프 컴파일과 분산 학습 지원 |
 
 ---
 
-## III. TPU vs GPU 비교 및 최신 동향
+## III. 비교 및 동향
 
-| 비교 항목 | TPU (Tensor Processing Unit) | GPU (Graphics Processing Unit) |
+### 가. TPU vs GPU
+
+| 비교 항목 | TPU | [[GPU]] |
 | --- | --- | --- |
-| **설계 철학** | 인공신경망(딥러닝) 연산 전용 주문형 반도체(ASIC) | 그래픽 렌더링 및 범용 병렬 연산 범용 프로세서(GPGPU) |
-| **핵심 연산 유닛** | MXU (Matrix Multiply Unit) 중심 시스톨릭 구조 | CUDA Core 및 Tensor Core 병렬 복합 구조 |
-| **생태계 및 유연성** | 구글 클라우드(GCP), JAX/TensorFlow 중심으로 최적화 | 범용 라이브러리(CUDA) 지원으로 전 산업 표준 생태계 구축 |
-| **전력 및 비용 효율** | 특정 딥러닝 연산에서 탁월한 전력 효율 및 비용 경쟁력 | 뛰어난 범용성과 유연성으로 다양한 AI/HPC 워크로드 소화 |
+| 설계 | 신경망 전용 ASIC | 그래픽·범용 병렬 프로세서 |
+| 연산 유닛 | MXU (시스톨릭) | CUDA 코어 + Tensor 코어 |
+| 확장 | ICI·OCS 기반 Pod | NVLink·NVSwitch + InfiniBand·Ethernet |
+| 생태계 | Google Cloud, JAX·XLA 중심 | CUDA 기반, 온프레미스·전 클라우드 |
+| 강점 | 대규모 학습·추론의 전력·비용 효율 | 범용성, 소프트웨어 생태계 |
 
-* 최근 초거대 AI 모델의 급증과 함께, 구글의 6세대 트릴륨(Trillium) TPU 등 전용 ASIC은 고효율 대규모 LLM 학습·추론 영역에서 엔비디아 GPU의 강력한 대안으로 입지를 확고히 하고 있음
+### 나. 동향
+
+- **세대 진화**: v4(2021, OCS) → v5e·v5p(2023) → v6e Trillium(2024, v5e 대비 칩당 최대 성능 약 4.7배) → v7 Ironwood(2025, 추론 중심, Pod당 최대 9,216칩)
+- **외부 고객 확대**: Gemini 학습·서빙 외에 Anthropic 등 외부 AI 기업의 대규모 TPU 사용으로 GPU 대안으로 부상
 
 ---
 
@@ -83,8 +92,8 @@ flowchart TB
 - **소속 도메인**: [[00_컴퓨터구조_MOC|💻 컴퓨터구조]]
 - **세부 분류**: `1. CPU 프로세서 & 마이크로아키텍처`
 - **핵심 연관 토픽**:
-  - [[GPU]]
-  - [[CPU]]
   - [[시스톨릭 어레이]]
+  - [[NPU|NPU(Neural Processing Unit)]]
+  - [[GPU]]
+  - [[PE|PE(Processing Element)]]
   - [[딥러닝]]
-  - [[인공지능]]

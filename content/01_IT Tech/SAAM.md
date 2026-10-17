@@ -12,8 +12,8 @@ tags:
 
 * **정의**: 소프트웨어 아키텍처가 시스템이 요구하는 비기능적 품질 속성(Quality Attributes), 특히 변경 용이성(Modifiability)과 확장성을 얼마나 잘 지원하는지 시나리오(Scenario)를 기반으로 분석하고 평가하는 초기 아키텍처 평가 방법론
 * **등장 배경 및 필요성**:
-* 아키텍처 설계 단계의 오류나 결함은 개발 후반부나 운영 단계에서 막대한 수정 비용(Rework Cost)을 초래함
-* 시스템 구현 이전에 설계된 아키텍처 대안들이 비즈니스 목표와 이해관계자의 요구사항을 충족하는지 객관적으로 검증할 수 있는 체계적인 도구의 필요성 대두 (1994년 카네기 멜런 대학 SEI 개발)
+  * 아키텍처 설계 단계의 오류나 결함은 개발 후반부나 운영 단계에서 막대한 수정 비용(Rework Cost)을 초래함
+  * 시스템 구현 이전에 설계된 아키텍처 대안들이 비즈니스 목표와 이해관계자의 요구사항을 충족하는지 객관적으로 검증할 수 있는 체계적인 도구의 필요성 대두 (1994년 카네기 멜런 대학 SEI 개발)
 
 
 * **특징**: 특정 품질 속성(주로 유지보수성, 변경 용이성)에 집중하며, 여러 대안 아키텍처 간의 비교 평가가 용이함. 이후 품질 속성 간의 충돌을 다루는 [[ATAM]](Architecture Tradeoff Analysis Method) 모델의 모태가 됨
@@ -68,7 +68,7 @@ SAAM의 한계를 극복하기 위해 품질 속성 간의 충돌(Trade-off)과 
 
 | 비교 항목 | SAAM (SW Architecture Analysis Method) | ATAM (Architecture Tradeoff Analysis Method) | [[CBAM]] (Cost Benefit Analysis Method) |
 | --- | --- | --- | --- |
-| **평가 중심** | **변경 용이성** (Modifiability) 단일 초점 | **다양한 품질 속성** (성능, 보안, [[HA(High Availability)|가용성]] 등) 및 이들 간의 충돌 | **경제성 및 투자 대비 효과** (ROI) |
+| **평가 중심** | **변경 용이성** (Modifiability) 단일 초점 | **다양한 품질 속성** (성능, 보안, [[HA(High Availability)\|가용성]] 등) 및 이들 간의 충돌 | **경제성 및 투자 대비 효과** (ROI) |
 | **핵심 기법** | 직접/간접 시나리오 분석, 상호작용 식별 | **민감점(Sensitivity Point)**, **절충점(Trade-off)** 분석 | 비용-이익(Cost-Benefit) 곡선, 비즈니스 가치 평가 |
 | **진화 단계** | 1세대 (개념적, 단편적 품질 평가) | 2세대 (포괄적 품질 속성 평가의 표준) | 3세대 (비즈니스 및 경제적 타당성 통합) |
 | **주요 한계** | 여러 품질 속성이 얽힌 복잡한 현대 시스템 평가에는 한계가 있음 | 의사결정에 따른 재무적(비용) 타당성까지는 제시하지 못함 | 비용과 수익을 정확히 추정(정량화)하기가 매우 어려움 |
@@ -86,7 +86,6 @@ SAAM의 한계를 극복하기 위해 품질 속성 간의 충돌(Trade-off)과 
 - **세부 분류**: `3. 요구사항 공학 & UML 객체지향 분석/설계`
 - **핵심 연관 토픽**:
   - [[ATAM]]
-  - [[SW 아키텍처 평가|SW 아키텍처 평가 (Software Architecture Evaluation)]]
+  - [[SW Architecture 평가|SW 아키텍처 평가 (Software Architecture Evaluation)]]
   - [[CBAM|CBAM(Cost Benefit Analysis Method)]]
   - [[ARID]]
-  - [[SW Architecture 평가]]

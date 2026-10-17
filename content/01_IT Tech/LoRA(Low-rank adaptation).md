@@ -3,88 +3,82 @@ title: LoRA(Low-rank adaptation)
 date: 2026-04-22
 tags:
   - 인공지능
+aliases:
+  - LoRA
+  - Low-Rank Adaptation
 ---
 # LoRA (Low-Rank Adaptation)
 
 ---
 
-## I. 파라미터 효율적 미세조정(PEFT)의 핵심, LoRA의 개요
+## I. 변화량만 저랭크로 학습하는, LoRA의 개요
 
-* **정의**: 거대 언어 모델([[초거대 언어 모델|LLM]])의 사전 학습된 가중치(Pre-trained Weights)는 고정(Freeze)한 채, 다운스트림 태스크를 위한 가중치 변화량($\Delta W$)을 두 개의 저차원 행렬(Low-Rank Matrices)로 분해하여 학습시키는 매개변수 효율적 파인튜닝([[PEFT]]) 기술
-* **등장 배경 및 필요성**:
-* **Full [[Fine-Tuning]]의 한계**: 수백억~수천억 파라미터 모델 전체를 재학습할 경우 막대한 [[GPU]] VRAM, 연산 비용 및 태스크별 중복 저장 공간 문제 발생
-* **본질적 차원(Intrinsic Dimension) 가설**: 모델 파라미터가 매우 크더라도 실제 특정 하위 태스크 학습에 필요한 변화량은 저차원 공간(Low-rank subspace)에 존재한다는 원리 활용
+### 가. 정의
 
+- 사전학습 가중치 $W_0$는 고정하고 **가중치 변화량 $\Delta W$를 두 저랭크 행렬의 곱 $BA$로 표현해 그 행렬만 학습**하는 [[PEFT]] 기법 (Microsoft, 2021)
 
-* **특징**: 기존 사전 학습 가중치 불변 유지, 추론 지연 시간(Inference Latency) 제로(Zero 추가 레이턴시), 학습 파라미터 99% 이상 절감 및 어댑터 교체의 경량성
+### 나. 등장 배경 및 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 전체 미세조정의 한계 | 모든 파라미터 갱신 시 GPU 메모리·연산·태스크별 저장 비용이 큼 ([[Fine-Tuning]]) |
+| 저랭크 가설 | 적응에 필요한 가중치 변화는 낮은 내재 차원(Intrinsic Rank)을 가짐 |
+| 파라미터 절감 | 학습 파라미터를 전체의 1% 미만으로 축소 (GPT-3 175B 기준 약 1만 분의 1) |
+| 추론 지연 없음 | 학습 후 $W_0 + BA$로 병합하면 추가 연산 없음 |
+| 모듈성 | 태스크별 작은 어댑터만 저장·교체 |
 
 ---
 
-## II. LoRA의 아키텍처 및 핵심 기술 요소
+## II. 구조 및 핵심 요소
 
-### 가. LoRA의 구조 및 순전파(Forward Pass) 메커니즘
+### 가. 순전파 구조
 
 ```mermaid
 flowchart LR
-    X["입력 벡터 x<br/>(d 차원)"]
-
-    subgraph Frozen ["사전 학습 레이어 (Frozen)"]
-        W0["W_0<br/>(d x k 차원 고정 가중치)<br/>*가중치 업데이트 없음*"]
-    end
-
-    subgraph Trainable ["LoRA 어댑터 (Trainable Low-Rank)"]
-        direction TB
-        A["행렬 A<br/>(d x r 차원)<br/>*N(0, σ²) 정규분포 초기화*"]
-        B["행렬 B<br/>(r x k 차원)<br/>*0으로 초기화*"]
-        A -->|rank r| B
-    end
-
-    Sum((+))
-    H["출력 벡터 h<br/>h = W_0·x + ΔW·x<br/>(k 차원)"]
-
-    X --> W0
-    X --> A
-    W0 --> Sum
-    B -->|"(α / r) 스케일링"| Sum
-    Sum --> H
-
+    X["입력 x<br/>(k차원)"] --> W0["W₀ (d × k)<br/>고정"]
+    X --> A["A (r × k)<br/>가우시안 초기화"]
+    A --> B["B (d × r)<br/>0으로 초기화"]
+    W0 --> P((+))
+    B -- "× α / r" --> P
+    P --> H["h = W₀x + (α/r)·BAx"]
 ```
 
-* 원본 가중치 $W_0 \in \mathbb{R}^{d \times k}$는 동결하고, 가중치 변화량 $\Delta W = B \cdot A$ ($A \in \mathbb{R}^{d \times r}$, $B \in \mathbb{R}^{r \times k}$, $r \ll \min(d, k)$)만을 학습함.
-* 초기 학습 시점에는 $B=0$으로 설정되어 $\Delta W = 0$이므로, 원본 사전 학습 모델의 출력과 완전히 동일한 상태에서 안정적으로 학습을 시작함.
+- $W_0 \in \mathbb{R}^{d \times k}$, $B \in \mathbb{R}^{d \times r}$, $A \in \mathbb{R}^{r \times k}$, $r \ll \min(d, k)$
+- $B = 0$으로 시작해 학습 초기 $\Delta W = 0$, 원 모델 출력에서 안정적으로 출발
 
-### 나. LoRA의 핵심 기술 요소
+### 나. 핵심 요소
 
-| 분류 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **수학적 모델링** | 저순위 행렬 분해 (Low-Rank) | 고차원 변화량 $\Delta W(d \times k)$를 랭크 $r$ 크기의 두 행렬 곱($B \times A$)으로 분해하여 학습 대상 파라미터 수 최소화 |
-| **파라미터 초기화** | 초기화 기법 ($B=0, A=\mathcal{N}$) | 행렬 $A$는 가우시안 [[정규분포]], 행렬 $B$는 0으로 초기화하여 훈련 시작 시 $\Delta W = 0$ 보장 |
-| **하이퍼파라미터** | Rank ($r$) | 축소 차원의 크기 (보통 $r=4, 8, 16, 64$ 설정; 작을수록 연산 효율 증가, 충분한 표현력 유지) |
-| **하이퍼파라미터** | Alpha 스케일링 ($\alpha$) | 어댑터 출력에 적용되는 가중 상수 ($\frac{\alpha}{r} \Delta W$). $r$ 변경 시 학습률(Learning Rate) 재조정 부담 완화 |
-| **추론 최적화** | 가중치 병합 (Weight Merge) | 배포 시 $W_{final} = W_0 + \frac{\alpha}{r}(BA)$로 사전 합산(Merge)하여 서비스 시 추가 연산 및 레이턴시 오버헤드 원천 제거 |
-| **배포 유연성** | 어댑터 스위칭 (Adapter Swapping) | 동일한 기반 모델($W_0$) 위에 태스크별로 수십 MB 수준의 LoRA 어댑터 가중치만 교체 탑재하여 다중 도메인 서빙 지원 |
-| **적용 계층** | 어텐션 가중치 적용 ($W_q, W_v$) | 일반적으로 Transformer Self-Attention의 Query, Value 투영 행렬에 우선 적용하여 적은 비용으로 최대 효율 달성 |
-| **메모리 최적화** | [[옵티마이저]] 메모리 절감 | [[역전파]] 시 $W_0$의 그래디언트 및 옵티마이저 상태(Adam의 $m, v$)를 저장하지 않아 VRAM 사용량 대폭 감소 |
+| 분해 | 저랭크 행렬 $B, A$ | $d \times k$ 대신 $r(d + k)$개 파라미터만 학습 |
+| 초기화 | $A \sim \mathcal{N}$, $B = 0$ | 시작 시 $\Delta W = 0$ 보장 |
+| 하이퍼파라미터 | 랭크 $r$ | 보통 4~64, 작을수록 효율적이나 표현력 제한 |
+| | 스케일 $\alpha$ | $\frac{\alpha}{r}BA$로 적용, $r$을 바꿔도 학습률 재조정 부담 완화 |
+| 적용 위치 | 어텐션 투영 | 원 논문은 $W_q, W_v$, 실무에서는 모든 선형층에 적용하기도 함 |
+| 메모리 | 옵티마이저 상태 절감 | $W_0$의 기울기·Adam 상태를 저장하지 않음 |
+| 배포 | 가중치 병합 | $W = W_0 + \frac{\alpha}{r}BA$로 합쳐 지연 제거 |
+| | 어댑터 교체 | 하나의 기반 모델에 태스크별 어댑터(수 MB~수백 MB) 교체 |
 
 ---
 
-## III. 미세조정 방식 비교 및 파생 발전 기술
+## III. 비교 및 동향
 
-### 가. LLM 튜닝 방식 비교 (Full Fine-Tuning vs Prefix Tuning vs LoRA)
+### 가. 미세조정 방식 비교
 
-| 비교 항목 | Full Fine-Tuning (전체 파인튜닝) | Prefix / Prompt Tuning | LoRA (Low-Rank Adaptation) |
+| 비교 항목 | 전체 미세조정 | Prefix·Prompt Tuning | LoRA |
 | --- | --- | --- | --- |
-| **학습 파라미터** | 모델 전체 (100%) | 가상 토큰 임베딩 (0.1% 미만) | 저순위 분해 행렬 (0.1% ~ 1%) |
-| **추론 추가 지연** | 없음 | **있음** (시퀀스 길이 점유로 입력 토큰 감소) | **없음 (가중치 사전 병합 가능)** |
-| **GPU VRAM 소모** | 매우 높음 (수백 GB 이상 요구) | 낮음 | 매우 낮음 (단일 컨슈머 GPU 구동 가능) |
-| **태스크별 저장량** | 모델 크기 전체 (수십~수백 GB) | 매우 작음 (수 KB~MB) | 작음 (수십 MB 수준) |
-| **성능 (정확도)** | 기준선 (최고 성능) | 태스크 난이도에 따라 성능 저하 발생 | **Full Fine-Tuning과 동등한 수준 달성** |
+| 학습 파라미터 | 100% | 0.1% 미만 (가상 토큰) | 약 0.01~1% |
+| 추론 지연 | 없음 | 가상 토큰이 컨텍스트 차지 | 병합 시 없음 |
+| 메모리 | 매우 큼 | 작음 | 작음 |
+| 저장 | 태스크마다 전체 모델 | 매우 작음 | 작음 |
+| 성능 | 기준 | 소형 모델·어려운 태스크에서 저하 | 많은 태스크에서 전체 미세조정에 근접 |
 
-### 나. LoRA의 파생 및 최신 발전 동향
+### 나. 동향
 
-* **QLoRA (Quantized LoRA)**: 기본 모델을 4-bit NormalFloat(NF4)로 양자화(Quantization)하고 이중 양자화 및 페이징 메모리 기법을 결합하여, 단일 24GB VRAM GPU(RTX 3090/4090 등)에서 65B~70B 규모 LLM의 미세조정을 가능하게 한 기술
-* **DoRA (Weight-Decomposed Low-Rank Adaptation)**: 가중치를 크기(Magnitude)와 방향(Direction)으로 분해하여 방향 성분에만 LoRA를 적용함으로써 Full Fine-Tuning의 학습 동역학에 더욱 근접시킨 진화형 모델
-* **MoA / Multi-LoRA 서빙 최적화**: vLLM, S-LoRA 등의 최신 서빙 프레임워크와 결합하여 단일 GPU 인스턴스에서 하나의 베이스 모델로 수십~수백 개의 서로 다른 사용자 맞춤형 LoRA 어댑터를 동적 배치(Batching) 처리하는 인프라 구조로 정착 중
+- **QLoRA (2023)**: 기반 모델을 4비트 NF4로 양자화하고 이중 양자화·페이지드 옵티마이저를 결합해 65B 모델을 단일 48GB GPU에서 미세조정
+- **DoRA (2024)**: 가중치를 크기와 방향으로 분해하고 방향에 LoRA 적용, 크기는 별도 학습해 전체 미세조정과의 격차 축소
+- **멀티 LoRA 서빙**: S-LoRA, vLLM 등이 하나의 기반 모델에서 다수 어댑터를 동시에 배치 처리
+- **확산 모델 적용**: 이미지 생성 모델의 스타일·인물 학습에 LoRA가 표준적으로 사용 ([[Diffusion 모델]])
 
 ---
 
@@ -93,8 +87,8 @@ flowchart LR
 - **소속 도메인**: [[00_인공지능_MOC|🤖 인공지능]]
 - **세부 분류**: `1. 수학 · 통계학 & 데이터 전처리`
 - **핵심 연관 토픽**:
-  - [[Fine-Tuning]]
-  - [[초거대 언어 모델|초거대 언어 모델(Large Language Model)]]
   - [[PEFT|PEFT(Parameter-Efficient Fine-Tuning)]]
+  - [[Fine-Tuning]]
+  - [[프롬프트 튜닝|프롬프트 튜닝(Prompt Tuning)]]
   - [[SVD(Singular Value Decomposition)]]
-  - [[정규분포|정규분포(Normal Distribution)]]
+  - [[초거대 언어 모델|초거대 언어 모델(Large Language Model)]]

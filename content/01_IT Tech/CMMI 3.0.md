@@ -57,7 +57,7 @@ flowchart TB
 | --- | --- | --- |
 | **도메인 확장** | 8대 도메인 체계 | 기존(개발, 서비스, 공급자) 영역에 **Data, People, Virtual, Safety, Security** 5개 영역을 신규 편입 |
 | **평가 구조** | ML2 아키텍처 개편 | Maturity Level 2에서 특정 PA 위주가 아닌, **모든 Practice Area가 Capability Level 2를 충족**하도록 병렬적 개선 철학 적용 |
-| **컨텍스트** | Agile Development | 기존 'Agile with [[SCRUM|Scrum]]' 가이드를 개편하여, 다양한 애자일 방법론 환경에서의 프로세스 적용 지침 강화 |
+| **컨텍스트** | Agile Development | 기존 'Agile with [[SCRUM\|Scrum]]' 가이드를 개편하여, 다양한 애자일 방법론 환경에서의 프로세스 적용 지침 강화 |
 | **컨텍스트** | DevSecOps 통합 | 보안이 내재화된 개발 및 운영 자동화(CI/CD) 환경에서의 실무 적용 가이드(Context-Specific) 신설 |
 | **도메인 특화** | Data & People | 엔터프라이즈 데이터 품질/관리 체계 및 인적 자원 역량 강화(Workforce Empowerment) 기준 제시 |
 | **도메인 특화** | Virtual & Security | 지리적으로 분산된 원격 인력 관리(Virtual)와 제품/서비스의 사이버 보안(Security) 및 물리적 안전(Safety) 기준 신설 |

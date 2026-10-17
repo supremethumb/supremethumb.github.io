@@ -7,7 +7,7 @@ tags:
 
 # 🛡️ 보안 MOC (Map of Content)
 
-> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **184개**  
+> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **178개**  
 > 정보보안 원칙, 암호학, 네트워크·인프라 보안, 웹·애플리케이션 취약점 분석, 사이버 공격 대응 및 프라이버시 보호를 포괄하는 종합 보안 지식 지도입니다.
 
 ---
@@ -27,7 +27,7 @@ flowchart TD
 
 ## 📑 핵심 분류 체계 및 토픽 목록
 
-### 1. 정보보안 원칙 & 거버넌스 · 인증 (51)
+### 1. 정보보안 원칙 & 거버넌스 · 인증 (49)
 
 > CIA 3요소, 접근통제(DAC, MAC, RBAC), 제로트러스트(ZTNA), ISMS-P, CSAP 및 보안 관리체계
 
@@ -54,9 +54,7 @@ flowchart TD
 - [[자율주행 자동차 보안취약점 및 대응방안|자율주행 자동차 보안취약점 및 대응방안]]
 - [[전자봉투|전자봉투(Digital Envelope)]]
 - [[접근 제어 접근 통제|접근 제어/접근 통제(Access Control)]]
-- [[접근 통제 모델|접근 통제 모델]]
 - [[정보보안 부서의 신설과 정보보안 체계|정보보안 부서의 신설과 정보보안 체계]]
-- [[정보보호 및 개인정보보호 관리체계 인증|정보보호 및 개인정보보호 관리체계 인증(ISMS-P)]]
 - [[제로 트러스트 보안모델|제로 트러스트 (Zero Trust) 보안모델]]
 - [[제로트러스트 가이드라인 2.0|제로트러스트 가이드라인 2.0]]
 - [[해시 함수의 안전성|해시 함수의 안전성]]
@@ -78,12 +76,12 @@ flowchart TD
 - [[MDC|MDC]]
 - [[RBAC|RBAC]]
 - [[SSL-TLS|SSL-TLS]]
-- [[SW난독화|SW난독화]]
+- [[난독화|난독화]]
 - [[TPM|TPM (Trusted Platform Module)]]
 - [[UAM 취약점 및 대응방안|UAM 취약점 및 대응방안]]
 - [[VPN|VPN(Virtual Private Network)]]
 
-### 2. 현대 암호학 & 키 관리 · 전자서명 (63)
+### 2. 현대 암호학 & 키 관리 · 전자서명 (59)
 
 > 대칭키(AES, DES, SEED), 공개키(RSA, ECC), 해시함수, 전자서명(DSA), PKI 및 블록 암호
 
@@ -99,7 +97,6 @@ flowchart TD
 - [[부채널 공격|부채널 공격(Side Channel Attack)]]
 - [[블록체인 플랫폼|블록체인 (Block Chain) 플랫폼]]
 - [[블록체인 암호기술 가이드라인|블록체인 암호기술 가이드라인]]
-- [[사이트간 위조공격|사이트간 위조공격]]
 - [[생체 인증|생체 인증(텔레바이오 인증)]]
 - [[시그니처 탐지기법|시그니처 탐지기법 (Signature-based Detection)]]
 - [[안티 포렌식|안티 포렌식(Anti-forensic)]]
@@ -114,10 +111,8 @@ flowchart TD
 - [[제1 역상 저항성|제1 역상 저항성]]
 - [[제2 역상 저항성|제2 역상 저항성]]
 - [[차세대 SIEM|차세대 SIEM(Security Information and Event Management)]]
-- [[크로스 사이트 스크립팅|크로스 사이트 스크립팅]]
 - [[타원곡선 암호|타원곡선 (Elliptic Curve Cryptography)]]
 - [[패스키|패스키(Passkey)]]
-- [[포스트 양자 암호|포스트 양자 암호(Post-Quantum Cryptography)]]
 - [[하이브리드 양자암호통신|하이브리드 양자암호통신]]
 - [[해시 솔트와 키 스트레칭|해시 솔트(Salt)와 키 스트레칭(Key Stretching)]]
 - [[AES|AES]]
@@ -125,7 +120,6 @@ flowchart TD
 - [[CSRF|CSRF]]
 - [[CTAP|CTAP]]
 - [[CWE|CWE]]
-- [[Diffie-Hellman 키 교환 (Diffie-Hellman Key Exchange)|Diffie-Hellman 키 교환 (Diffie-Hellman Key Exchange)]]
 - [[DNS 싱크홀(Sinkhole)|DNS 싱크홀(Sinkhole)]]
 - [[ECC|ECC(Elliptic Curve Cryptography)]]
 - [[ECDHE|ECDHE]]

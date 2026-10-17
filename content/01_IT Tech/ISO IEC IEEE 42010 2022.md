@@ -80,11 +80,7 @@ flowchart TB
 
 | 비교 항목 | ISO/IEC/IEEE 42010:2011 | ISO/IEC/IEEE 42010:2022 |
 | --- | --- | --- |
-| **표준 명칭** | **Systems and software** engineering<br>
-
-<br>— Architecture description | **Software, systems and enterprise**<br>
-
-<br>— Architecture description |
+| **표준 명칭** | **Systems and software** engineering<br>— Architecture description | **Software, systems and enterprise**<br>— Architecture description |
 | **관심 대상(Scope)** | 시스템 (System of Interest) | 소프트웨어, 시스템 및 **엔터프라이즈(Enterprise)** |
 | **타 표준 정합성** | 초기 통합 수준 | **ISO/IEC/IEEE 15288(시스템 생명주기), ISO 15704(엔터프라이즈)** 등과 완벽한 정렬 |
 | **의사결정 관리** | AD 내 개념적 존재 | **아키텍처 의사결정(Decision)과 근거(Rationale)**의 추적성 및 기록 의무 강화 |

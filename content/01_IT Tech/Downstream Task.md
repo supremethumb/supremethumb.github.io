@@ -12,9 +12,9 @@ tags:
 
 * **정의**: 대규모 데이터로 사전 학습된 [[파운데이션 모델]](Foundation Model)이나 사전 학습 언어 모델(PLM)을 기반으로, 감성 분석, 질의응답, 객체 인식 등 사용자의 실제 비즈니스 목적을 달성하기 위해 수행하는 구체적인 하위 응용 태스크
 * **배경 및 특징**:
-* **효율적 AI 개발 파이프라인**: Upstream Task(사전 학습)와 분리하여 개발 시간 및 컴퓨팅 자원을 획기적으로 절감
-* **전이 학습(Transfer Learning) 활용**: 사전 학습된 범용적 특징(Representation)을 특정 도메인 문제 해결에 [[재사용]]
-* **적은 데이터로 고성능 달성**: 소량의 레이블링(Labeled) 데이터만으로도 미세조정([[Fine-Tuning]]) 및 프롬프팅을 통해 높은 정확도 확보
+  * **효율적 AI 개발 파이프라인**: Upstream Task(사전 학습)와 분리하여 개발 시간 및 컴퓨팅 자원을 획기적으로 절감
+  * **전이 학습(Transfer Learning) 활용**: 사전 학습된 범용적 특징(Representation)을 특정 도메인 문제 해결에 [[재사용]]
+  * **적은 데이터로 고성능 달성**: 소량의 레이블링(Labeled) 데이터만으로도 미세조정([[Fine-Tuning]]) 및 프롬프팅을 통해 높은 정확도 확보
 
 
 
@@ -60,7 +60,7 @@ flowchart LR
 | 분류 | 요소기술(키워드) | 세부 설명 |
 | --- | --- | --- |
 | **적응 기법 (Tuning)** | Fine-Tuning | 사전 학습 모델의 전체 또는 일부 가중치를 Downstream 데이터에 맞게 재학습하는 미세조정 기법 |
-| **적응 기법 ([[PEFT]])** | [[LoRA(Low-rank adaptation)|LoRA]] / QLoRA | 전체 모델 대신 랭크가 낮은 소규모 행렬(Low-Rank)만 추가 학습하여 메모리와 연산량을 극도로 최소화하는 기법 |
+| **적응 기법 ([[PEFT]])** | [[LoRA(Low-rank adaptation)\|LoRA]] / QLoRA | 전체 모델 대신 랭크가 낮은 소규모 행렬(Low-Rank)만 추가 학습하여 메모리와 연산량을 극도로 최소화하는 기법 |
 | **적응 기법 (추론)** | In-Context Learning | 가중치 업데이트 없이 프롬프트(Prompt)에 예시(Zero/Few-shot)를 제공하여 태스크를 수행하는 기법 |
 | **NLP 태스크 (NLU)** | 텍스트 분류 / 감성 분석 | 주어진 문장의 카테고리(스팸 여부, 긍/부정 등)를 분류하는 자연어 이해 기반 하위 작업 |
 | **NLP 태스크 (NLU)** | 개체명 인식 (NER) | 문장 내에서 인물, 장소, 조직 등 고유 의미를 갖는 개체명을 식별하고 추출하는 작업 |
@@ -80,7 +80,7 @@ flowchart LR
 | **학습 데이터** | 대규모 비지도 데이터 (Unlabeled Data) | 소규모 지도 데이터 (Task-specific Labeled Data) |
 | **학습 방법론** | Self-Supervised Learning, Masked LM | Supervised Learning, Fine-tuning, Prompting |
 | **컴퓨팅 자원** | 막대한 [[GPU]] 클러스터 및 긴 시간 소요 | 상대적으로 적은 GPU 자원 및 짧은 시간 소요 |
-| **주요 결과물** | Foundation Model ([[초거대 언어 모델|LLM]], Vision Model 등) | 도메인 특화 모델 (챗봇, 번역기, 불량 검출기 등) |
+| **주요 결과물** | Foundation Model ([[초거대 언어 모델\|LLM]], Vision Model 등) | 도메인 특화 모델 (챗봇, 번역기, 불량 검출기 등) |
 
 ### 나. Downstream Task의 최신 트렌드 및 향후 전망
 

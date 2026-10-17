@@ -3,90 +3,87 @@ title: CDN(Contents Delivery Network)
 date: 2026-04-22
 tags:
   - 네트워크
+aliases:
+  - CDN
+  - Content Delivery Network
 ---
-# CDN (Contents Delivery Network)
-
----
-
-## I. 글로벌 콘텐츠의 빠르고 안정적인 전송 기술, CDN의 개요
-
-* **가. CDN(Contents Delivery Network)의 정의**
-* 대용량 콘텐츠를 빠르고 안정적으로 전달하기 위해, 사용자와 지리적으로 가장 가까운 분산된 엣지 서버([[EDGE|Edge]] Server, PoP)에 원본 콘텐츠를 캐싱(Caching)하여 제공하는 글로벌 전송 네트워크 기술임.
-
-
-* **나. CDN의 등장 배경 및 특징**
-* **등장 배경**: 스트리밍 등 대용량 멀티미디어 트래픽 급증, 원본 서버(Origin) 집중으로 인한 병목현상 및 응답 지연(Latency) 심화, 글로벌 서비스 확장에 따른 네트워크 비용 증가.
-* **주요 특징**: 응답속도 최적화(GSLB 라우팅), 대역폭(Bandwidth) 비용 절감(캐시 히트), [[HA(High Availability)|가용성]] 향상 및 보안 강화(SPOF 방지, 엣지단 [[DDOS|DDoS]] 흡수).
-
-
+# CDN (Content Delivery Network)
 
 ---
 
-## II. CDN의 개념도 및 핵심 기술 요소
+## I. 가까운 곳에서 꺼내 주는, CDN의 개요
 
-### 가. CDN의 아키텍처 및 동작 원리
+### 가. 정의
+
+- 원본 서버의 콘텐츠를 **사용자 가까운 여러 엣지 서버(PoP)에 캐싱하고, 요청을 최적의 엣지로 유도해 빠르고 안정적으로 전달**하는 분산 전송 네트워크
+
+### 나. 등장 배경 및 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 등장 배경 | 영상·대용량 콘텐츠 증가, 원본 집중에 따른 병목과 장거리 지연 |
+| 지연 단축 | 물리적으로 가까운 [[EDGE\|엣지]]에서 응답 |
+| 원본 부하 감소 | 캐시 적중만큼 원본 트래픽·대역 비용 절감 |
+| 가용성 | 엣지 분산으로 단일 장애점 완화 |
+| 보안 | 엣지에서 [[DDOS\|DDoS]] 흡수, WAF 적용 |
+
+---
+
+## II. 구조 및 구성요소
+
+### 가. 요청 처리 흐름
 
 ```mermaid
 flowchart TB
-    subgraph Users["사용자 (End Users)"]
-        direction LR
-        U1(("사용자 A<br/>(한국)"))
-        U2(("사용자 B<br/>(미국)"))
-    end
-
-    DNS["DNS / GSLB<br/>(최적 경로 탐색 및 IP 반환)"]
-
-    subgraph CDN_Network["CDN 분산 네트워크 (Edge/PoP)"]
-        Edge1["Edge Server (아시아)<br/>- 정적/동적 캐싱<br/>- WAF / DDoS 방어"]
-        Edge2["Edge Server (북미)<br/>- 정적/동적 캐싱<br/>- Edge Computing"]
-    end
-
-    Origin["원본 서버 (Origin Server)<br/>(AWS S3, EC2 등 통합 스토리지)"]
-
-    U1 -. "1. 콘텐츠 요청" .-> DNS
-    DNS -. "2. 가장 가까운 Edge IP 반환" .-> U1
-    U1 == "3. 콘텐츠 요청 (Cache Hit)" ==> Edge1
-    
-    U2 == "콘텐츠 요청 (Cache Miss)" ==> Edge2
-    Edge2 -. "4. 캐시 갱신 요청" .-> Origin
-    Origin -. "5. 원본 데이터 전달" .-> Edge2
-
-
+    U1(("사용자 A (한국)"))
+    U2(("사용자 B (미국)"))
+    DNS["DNS · GSLB<br/>(최적 엣지 선택)"]
+    E1["엣지 (아시아)<br/>캐시 · WAF"]
+    E2["엣지 (북미)<br/>캐시 · 엣지 연산"]
+    O["원본 서버"]
+    U1 -. "1. 이름 질의" .-> DNS
+    DNS -. "2. 최적 엣지 IP" .-> U1
+    U1 == "3. 요청 (캐시 적중)" ==> E1
+    U2 == "요청 (캐시 미스)" ==> E2
+    E2 -. "4. 원본 요청" .-> O
+    O -. "5. 콘텐츠 전달 · 캐싱" .-> E2
 ```
 
-* 사용자의 [[DNS(Domain Name System)|DNS]] 질의 시 GSLB가 위치/네트워크 상태를 파악하여 가장 가까운 엣지 서버로 연결함.
-* 엣지에 데이터가 있으면 즉시 반환(Cache Hit)하고, 없으면 원본 서버에서 가져와 캐싱 후 전달(Cache Miss)함.
+- [[DNS(Domain Name System)|DNS]] 또는 애니캐스트로 사용자를 최적 엣지에 연결하고, 캐시에 없으면 원본에서 가져와 저장 후 응답
 
-### 나. CDN의 핵심 기술 및 구성 요소
+### 나. 구성요소
 
-| 분류 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **트래픽 라우팅** | GSLB (Global Server Load Balancing) | 접속자의 지리적 위치, 서버 상태, 네트워크 지연시간을 종합 분석하여 최적의 엣지 노드로 트래픽을 분산 |
-| **트래픽 라우팅** | Anycast Routing | 다수의 엣지 서버가 동일한 IP 주소를 공유하며, [[BGP]] 프로토콜을 통해 네트워크상 가장 짧은 경로의 서버로 자동 라우팅 |
-| **콘텐츠 가속** | Caching & TTL | 원본 데이터를 엣지에 임시 저장하며, TTL(Time To Live)을 설정하여 데이터의 최신성(Freshness) 유지 관리 |
-| **콘텐츠 가속** | [[DSA]] (Dynamic Site Acceleration) | 정적 자산뿐만 아니라 동적 콘텐츠(API, HTML)의 전송 경로 최적화 및 [[TCP]] 연결 지속을 통한 지연시간 최소화 |
-| **보안 강화** | Edge WAF (Web App Firewall) | 엣지 서버 단에서 악의적 웹 트래픽([[SQL(Structured Query Language)|SQL]] 인젝션, [[XSS]] 등)을 원본 도달 전에 사전 차단 |
-| **보안 강화** | DDoS Mitigation | 수백 Tbps급의 글로벌 대역폭을 활용하여 분산 서비스 거부 공격 트래픽을 엣지에서 흡수 및 무효화 |
-| **확장 연산** | Edge Computing | 엣지 노드에서 직접 Serverless 함수(예: AWS Lambda@Edge, Cloudflare Workers)를 실행하여 개인화 및 연산 수행 |
-| **미디어 전송** | 적응형 비디오 스트리밍 | 사용자의 네트워크 대역폭에 맞춰 화질을 동적으로 조절하는 [[프로토콜]](HLS, MPEG-DASH) 지원 |
+| 요청 유도 | DNS 기반 GSLB | 위치·부하·지연을 고려해 엣지 IP 응답 |
+| | 애니캐스트 | 여러 PoP가 같은 IP를 [[BGP]]로 광고, 가까운 PoP로 라우팅 |
+| 캐싱 | TTL · Cache-Control | 유효 기간 동안 캐시 사용, 만료 시 재검증 |
+| | 계층 캐시 (Origin Shield) | 중간 캐시로 원본 요청 집약 |
+| | Purge · 무효화 | 원본 변경 시 캐시 즉시 삭제 |
+| 가속 | 동적 가속 ([[DSA]]) | 캐시 불가 콘텐츠의 경로 최적화, [[TCP]] 연결 재사용 |
+| 보안 | Edge WAF · DDoS 완화 | 원본 도달 전 공격 차단, 대규모 분산 흡수 |
+| 연산 | 엣지 컴퓨팅 | 엣지에서 서버리스 함수 실행 (Cloudflare Workers, Lambda@Edge) |
+| 미디어 | 적응형 스트리밍 | HLS·MPEG-DASH 세그먼트 캐싱 |
 
 ---
 
-## III. 전통적 웹 호스팅과 CDN 비교 및 발전 동향
+## III. 비교 및 동향
 
-### 가. 전통적 웹 호스팅과 CDN 아키텍처 비교
+### 가. 원본 단독 서비스 vs CDN
 
-| 비교 항목 | 전통적 웹 호스팅 (Origin Only) | CDN 기반 서비스 |
+| 비교 항목 | 원본 단독 | CDN |
 | --- | --- | --- |
-| **콘텐츠 위치** | 단일 데이터센터 (중앙 집중형) | 글로벌 분산 엣지 서버 (지역 분산형) |
-| **트래픽 처리** | 트래픽 폭증 시 원본 서버 부하 직격 (SPOF 우려) | 수많은 엣지로 트래픽이 분산되어 부하 경감 |
-| **응답 지연(Latency)** | 서버와 사용자 간의 물리적 거리에 비례하여 증가 | 사용자와 가장 가까운 엣지에서 응답하여 지연 최소화 |
-| **대역폭 비용** | 모든 요청이 원본을 향하므로 트래픽 비용 과다 | 캐시 히트율(Cache Hit Ratio)만큼 원본 트래픽 절감 |
+| 콘텐츠 위치 | 단일 데이터센터 | 전 세계 분산 엣지 |
+| 트래픽 처리 | 원본에 집중 | 엣지로 분산 |
+| 지연 | 거리에 비례해 증가 | 근거리 응답 |
+| 대역 비용 | 전부 원본에서 송출 | 캐시 적중률만큼 절감 |
+| 장애 영향 | 원본 장애 시 전면 중단 | 엣지 장애는 다른 PoP로 우회 |
 
-### 나. CDN의 최근 발전 동향 (Trend)
+### 나. 동향
 
-* **Multi-CDN 전략 도입**: 특정 CDN 업체의 전면 장애(SPOF)에 대비하고, 지역별/[[ISP (Information Strategy Plan)|ISP]]별 강점을 조합하여 비용 효율성과 가용성을 극대화하는 멀티 벤더 라우팅 확산.
-* **Edge AI 추론(Inference) 결합**: 단순 콘텐츠 전송을 넘어, 엣지 서버에 [[NPU]]/[[GPU]]를 탑재하여 사용자 위치에서 실시간 AI 추론(얼굴 인식, 개인화 추천)을 수행하는 **초저지연 엣지 인텔리전스**로 진화 중임.
+- **멀티 CDN**: 특정 CDN 장애 대비와 지역별 성능·비용 최적화를 위해 여러 CDN을 동시 운용
+- **프로토콜 고도화**: [[HTTP 3|HTTP/3]]·TLS 1.3 기본 지원으로 연결 지연 감소
+- **엣지 AI 추론**: 엣지 PoP에 GPU를 배치해 사용자 가까이에서 추론 서비스 제공
 
 ---
 
@@ -96,7 +93,7 @@ flowchart TB
 - **세부 분류**: `3. 전송 계층 & 트래픽 / 혼잡 제어 (L4)`
 - **핵심 연관 토픽**:
   - [[DNS(Domain Name System)]]
-  - [[프로토콜]]
-  - [[TCP]]
-  - [[DDOS]]
   - [[BGP|BGP(Border Gateway Protocol)]]
+  - [[HTTP 3|HTTP/3]]
+  - [[DDOS]]
+  - [[Mobile Edge Computing|Mobile Edge Computing (MEC)]]

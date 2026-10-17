@@ -7,7 +7,7 @@ tags:
 
 # 🏗️ 소프트웨어공학 MOC (Map of Content)
 
-> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **183개**  
+> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **170개**  
 > 소프트웨어 생명주기(SDLC), 애자일/DevOps, 아키텍처 설계 원리, 마이크로서비스(MSA), 디자인 패턴, 테스팅 및 품질 관리를 망라한 엔지니어링 지도입니다.
 
 ---
@@ -27,7 +27,7 @@ flowchart TD
 
 ## 📑 핵심 분류 체계 및 토픽 목록
 
-### 1. 소프트웨어 개발 생명주기(SDLC) & 방법론 (24)
+### 1. 소프트웨어 개발 생명주기(SDLC) & 방법론 (23)
 
 > 폭포수, 나선형, 프로토타이핑, 반복/증분형 모델, V-모델 및 소프트웨어 수명주기 표준
 
@@ -41,7 +41,6 @@ flowchart TD
 - [[증분형 개발 모델|증분형 개발 모델 (Incremental Model)]]
 - [[지능정보기술 감리 실무 가이드|지능정보기술 감리 실무 가이드 (빅데이터 중심)]]
 - [[진화형 개발 모델|진화형 개발 모델 (Evolutional Model)]]
-- [[폭포수 모델|폭포수 모델]]
 - [[프로토타이핑 모델|프로토타이핑 모델]]
 - [[형상 관리|형상 관리]]
 - [[형상 관리 도구|형상 관리 도구]]
@@ -56,7 +55,7 @@ flowchart TD
 - [[Spiral 모델|Spiral 모델]]
 - [[Test Process|Test Process]]
 
-### 2. 애자일(Agile) & 지속적 통합/배포(CI/CD) (25)
+### 2. 애자일(Agile) & 지속적 통합/배포(CI/CD) (23)
 
 > Agile 선언/원칙, 스크럼(SCRUM), XP, TDD/BDD, 페어 프로그래밍, CI/CD 및 데브옵스 문화
 
@@ -72,7 +71,6 @@ flowchart TD
 - [[테스트 실행 도구|테스트 실행 도구]]
 - [[테스트 오라클|테스트 오라클]]
 - [[소프트웨어 테스트 원리|테스트 원리]]
-- [[테스트 커버리지|테스트 커버리지 (Test Coverage)]]
 - [[테스트 하네스|테스트 하네스]]
 - [[테일러링|테일러링 (Tailoring)]]
 - [[페르소나|페르소나 (Persona)]]
@@ -83,10 +81,9 @@ flowchart TD
 - [[SRE (Site Reliability Engineering)|SRE (Site Reliability Engineering)]]
 - [[STPA|STPA (System-Theoretic Process Analysis)]]
 - [[TDD|TDD (Test Driven Development)]]
-- [[Test Coverage|Test Coverage]]
 - [[Test Exit Criteria|Test Exit Criteria]]
 
-### 3. 요구사항 공학 & UML 객체지향 분석/설계 (43)
+### 3. 요구사항 공학 & UML 객체지향 분석/설계 (39)
 
 > 요구사항 도출/분석/명세/검증, 유즈케이스 다이어그램, DFD, 시퀀스 다이어그램 등 UML 전반
 
@@ -121,20 +118,16 @@ flowchart TD
 - [[ATAM|ATAM]]
 - [[Function Point|Function Point]]
 - [[Interaction overview diagram|Interaction overview diagram]]
-- [[Product Line (Software Product Line)|Product Line (Software Product Line)]]
 - [[SAAM|SAAM]]
 - [[SP 인증|SP 인증]]
 - [[SW 규모산정|SW 규모산정]]
-- [[SW 아키텍처 평가|SW 아키텍처 평가 (Software Architecture Evaluation)]]
 - [[SW Architecture 구축 절차|SW Architecture 구축 절차]]
 - [[Test 일반|Test 일반]]
 - [[UML|UML (정적, 동적 다이어그램)]]
-- [[UML Diagram 전체|UML / Diagram 전체]]
 - [[UML의 4+1 View Model|UML의 4+1 View Model]]
 - [[UML의 관계|UML의 관계 (Relationship)]]
-- [[Usecase diagram|Usecase diagram]]
 
-### 4. 아키텍처 스타일 & 객체지향 설계 원리 (50)
+### 4. 아키텍처 스타일 & 객체지향 설계 원리 (46)
 
 > 모듈화(결합도, 응집도), SOLID, Clean Architecture, MSA, DDD, API Gateway, 서킷브레이커
 
@@ -150,14 +143,12 @@ flowchart TD
 - [[성능 테스트 도구|성능 테스트 도구]]
 - [[소프트웨어 리팩토링|소프트웨어 리팩토링]]
 - [[소프트웨어 아키텍처 스타일|소프트웨어 아키텍처 스타일]]
-- [[싱글턴 패턴|싱글턴 패턴 (Singleton pattern)]]
 - [[어댑터 패턴|어댑터 패턴 (Adapter Pattern)]]
 - [[응집도|응집도]]
 - [[인스턴스|인스턴스]]
 - [[재사용|재사용]]
 - [[정보은닉|정보은닉 (Information Hiding)]]
 - [[카오스 엔지니어링|카오스 엔지니어링 (Chaos Engineering)]]
-- [[카오스 테스트|카오스 테스트 (Chaos Test)]]
 - [[캡슐화|캡슐화 (encapsulation)]]
 - [[컴퓨팅적 사고능력|컴퓨팅적 사고능력]]
 - [[통합 테스트|통합 테스트]]
@@ -169,7 +160,6 @@ flowchart TD
 - [[CBAM|CBAM(Cost Benefit Analysis Method)]]
 - [[CMMI 3.0|CMMI 3.0]]
 - [[DDD (Domain Driven Design)|DDD (Domain Driven Design)]]
-- [[Design Pattern (23개 패턴)|Design Pattern (23개 패턴)]]
 - [[EDA|EDA (Event-Driven Architecture)]]
 - [[Factory Method (생성 위임)|Factory Method (생성 위임)]]
 - [[ISO IEC IEEE 42010 2022|ISO/IEC/IEEE 42010:2022]]
@@ -182,7 +172,6 @@ flowchart TD
 - [[MVVM (Model, View, View Model)|MVVM (Model, View, View Model)]]
 - [[Observer (상태 변화 통지)|Observer (상태 변화 통지)]]
 - [[Proxy Pattern|Proxy (대리자, 최근 기출)]]
-- [[Regression Test|Regression Test]]
 - [[SAGA패턴|SAGA패턴]]
 - [[Singleton (전역 인스턴스)|Singleton (전역 인스턴스)]]
 - [[Strategy (알고리즘 교체)|Strategy (알고리즘 교체)]]
@@ -195,7 +184,7 @@ flowchart TD
 
 - *(관련 토픽 준비 중)*
 
-### 6. 소프트웨어 테스팅 & 품질 보증 (QA/QC) (41)
+### 6. 소프트웨어 테스팅 & 품질 보증 (QA/QC) (39)
 
 > 화이트/블랙박스, 단위/통합/시스템/인수 테스트, 테스트 자동화, CMMI, SPICE, ISO 29119, 리팩토링 및 3R
 
@@ -203,7 +192,6 @@ flowchart TD
 - [[공공소프트웨어사업 과업심의 가이드|공공소프트웨어사업 과업심의 가이드]]
 - [[공통감리 절차|공통감리 절차]]
 - [[기능안전 표준|기능안전 표준 (Functional Safety Standards)]]
-- [[난독화|난독화]]
 - [[무중단 배포|무중단 배포]]
 - [[사용성 평가|사용성 평가]]
 - [[상용 소프트웨어 직접구매 제도|상용 소프트웨어 직접구매 제도]]
@@ -236,7 +224,6 @@ flowchart TD
 - [[ISO 29119-11|ISO 29119-11]]
 - [[ISO IEC 25010 2023|ISO/IEC 25010:2023]]
 - [[SBOM|SBOM]]
-- [[SW 사업대가 ('25년 개정판)|SW 사업대가 ('25년 개정판)]]
 - [[SW 안전성(SW Safety) 및 분석 개념|SW 안전성(SW Safety) 및 분석 개념]]
 - [[SW사업 대가산정 가이드|SW사업 대가산정 가이드]]
 - [[XML|XML]]

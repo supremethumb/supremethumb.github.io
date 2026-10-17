@@ -3,81 +3,75 @@ title: ARIES (Algorithms for Recovery and Isolation Exploiting Semantics)
 date: 2026-03-27
 tags:
   - 데이터베이스
+aliases:
+  - ARIES 회복 알고리즘
 ---
 # ARIES (Algorithms for Recovery and Isolation Exploiting Semantics)
 
 ---
 
-## I. 데이터베이스 복구의 표준 알고리즘, ARIES의 개요
+## I. 로그 기반 회복의 표준, ARIES의 개요
 
-* **가. ARIES의 정의**
-* 시스템 장애 발생 시 데이터베이스의 일관성과 [[무결성]](ACID)을 보장하기 위해, WAL(Write-Ahead Logging) 기반으로 분석, 재도(Redo), 실행취소(Undo)의 3단계를 거쳐 복구를 수행하는 [[데이터베이스]] 장애 복구 [[알고리즘]]
+### 가. 정의
 
+- WAL 원칙 아래 **분석(Analysis)·REDO·UNDO 3단계로 장애 직전 상태를 재현한 뒤 미완료 트랜잭션을 취소하는 회복 알고리즘** (C. Mohan 외, IBM, 1992)
 
-* **나. ARIES의 등장배경 및 특징**
-* **등장배경**: 기존 복구 기법(지연 갱신 등)의 성능 한계 극복, 시스템 비정상 종료 시 트랜잭션의 원자성(Atomicity) 및 영속성(Durability)을 완벽히 보장할 필요성 대두
-* **특징**: WAL 기반의 로그 선기록, 과거의 완벽한 재현(Repeating History), Undo 과정에서의 보상 로그(CLR) 기록을 통한 재장애 대비, Fuzzy Checkpoint를 통한 성능 최적화
+### 나. 특징
 
-
+| 구분 | 내용 |
+| --- | --- |
+| WAL | 데이터 페이지보다 로그를 먼저 안정 저장소에 기록 |
+| Repeating History | REDO 단계에서 커밋 여부와 관계없이 장애 직전 상태를 그대로 재현 |
+| CLR 기록 | UNDO 중에도 보상 로그를 남겨 회복 중 재장애에도 중복 취소 방지 |
+| 정책 | Steal·No-Force 버퍼 정책 지원, 레코드 단위 잠금과 호환 |
 
 ---
 
-## II. ARIES의 아키텍처 및 핵심 구성요소
+## II. 회복 절차 및 구성요소
 
-### 가. ARIES의 복구 프로세스(3단계) 및 개념도
+### 가. 3단계 회복
 
 ```mermaid
-flowchart TD
-    CKPT([Fuzzy Checkpoint 발생]) --> T1(T1: 완료 트랜잭션 - Winner)
-    CKPT --> T2(T2: 진행 중 트랜잭션 - Loser)
-    T1 --> CRASH{System Crash<br/>장애 발생}
-    T2 --> CRASH
-
-    CRASH --> PHASE1["1. 분석 단계 (Analysis Phase)"]
-    PHASE1 --> PHASE2["2. 재도 단계 (Redo Phase)"]
-    PHASE2 --> PHASE3["3. 실행취소 단계 (Undo Phase)"]
-
-    PHASE1 -.-> |"복구 시작점 파악<br/>Winner/Loser 분류"| TT["TT (Transaction Table)<br/>DPT (Dirty Page Table) 구성"]
-    PHASE2 -.-> |"Redo LSN부터 장애 시점까지<br/>순방향(Forward) 모든 연산 재현"| REDO["Repeating History<br/>DB 상태 롤포워드(Roll-forward)"]
-    PHASE3 -.-> |"Loser(T2) 대상 CLR 기록하며<br/>역방향(Backward) 롤백"| UNDO["일관성 확보<br/>실행취소 중 재장애 방지"]
-    
-    style CRASH fill:#ffe6e6,stroke:#ff0000,stroke-width:2px
-    style PHASE1 fill:#e6f2ff,stroke:#0066cc,stroke-width:1px
-    style PHASE2 fill:#e6f2ff,stroke:#0066cc,stroke-width:1px
-    style PHASE3 fill:#e6f2ff,stroke:#0066cc,stroke-width:1px
-
+flowchart LR
+    C["장애 발생"] --> A["1. 분석<br/>마지막 체크포인트부터 로그 스캔<br/>트랜잭션 테이블·Dirty Page Table 재구성"]
+    A --> R["2. REDO<br/>RedoLSN부터 정방향 재실행<br/>(Repeating History)"]
+    R --> U["3. UNDO<br/>미완료(Loser) 트랜잭션 역방향 취소<br/>CLR 기록"]
 ```
 
-* **동작 흐름**: 장애 발생 시 **분석 단계**를 통해 트랜잭션의 상태와 Redo 시작점을 찾고, **재도 단계**에서 장애 시점까지의 상태를 똑같이 재현(Roll-forward)한 뒤, **실행취소 단계**에서 실패한 트랜잭션을 역순으로 롤백(Roll-back)함.
+- 분석 단계에서 REDO 시작점과 취소 대상 트랜잭션을 정하고, REDO로 장애 직전 상태를 만든 뒤 UNDO로 원자성을 회복
 
-### 나. ARIES의 핵심 기술 및 구성 요소
+### 나. 구성요소
 
-| 구분 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **기본 원칙** | **WAL (Write Ahead Logging)** | 변경된 데이터 페이지를 디스크에 기록하기 전에, 관련된 로그 레코드를 먼저 안전하게 디스크에 기록하는 원칙 |
-| **기본 원칙** | **Repeating History** | Redo 수행 시, Commit/Abort 여부에 상관없이 장애 발생 전까지의 모든 연산을 로그 기반으로 동일하게 재현 |
-| **데이터 구조** | **LSN (Log Sequence Number)** | 각 로그 레코드에 부여되는 고유하고 단조 증가하는(Monotonically Increasing) 식별 번호 |
-| **데이터 구조** | **TT (Transaction Table)** | 장애 발생 시점에 활성화되어 있는 트랜잭션의 상태 정보(Winner/Loser 여부 등)를 관리하는 테이블 |
-| **데이터 구조** | **DPT (Dirty Page Table)** | 메인 메모리(버퍼 캐시)에서 변경되었으나 아직 디스크에 쓰이지 않은(Dirty) 페이지 정보 관리 |
-| **복구 기법** | **CLR (Compensation Log Record)** | Undo 연산 수행 시 남기는 보상 로그로, 복구 과정 중 다시 장애가 발생하더라도 중복 Undo를 방지 |
-| **성능 최적화** | **Fuzzy Checkpoint** | 체크포인트 수행 시 모든 더티 페이지를 강제로 디스크에 기록하지 않고 상태만 기록하여 DB I/O 부하 최소화 |
-| **로깅 기법** | **Physiological Logging** | 논리적(Logical) 로깅과 물리적(Physical) 로깅의 장점을 결합, 페이지 단위의 독립적 복구를 지원하는 기법 |
+| 원칙 | WAL | 로그 우선 기록, 커밋 시 로그 강제 기록 |
+| | Repeating History | 장애 직전 상태 재현 후 UNDO |
+| 자료구조 | LSN | 로그 레코드의 단조 증가 번호, 페이지에 PageLSN 기록 |
+| | 트랜잭션 테이블 (TT) | 활성 트랜잭션 상태와 LastLSN |
+| | Dirty Page Table (DPT) | 디스크에 반영되지 않은 페이지와 RecLSN |
+| 로그 | CLR | UNDO 수행 내역 기록, UndoNextLSN으로 다음 취소 지점 지정 |
+| | Physiological Logging | 페이지는 물리적, 페이지 내부는 논리적으로 기록 |
+| 최적화 | Fuzzy Checkpoint | 더티 페이지를 강제 기록하지 않고 TT·DPT만 기록해 운영 중단 최소화 |
 
 ---
 
-## III. ARIES 복구 방식과 대안 기법 비교 및 동향
+## III. 비교 및 동향
 
-### 가. ARIES와 타 데이터베이스 장애 복구 기법 비교
+### 가. 회복 기법 비교
 
-| 비교 항목 | ARIES (즉시 갱신 기반) | 지연 갱신 (Deferred Update) | 그림자 페이징 ([[그림자페이지 기법|Shadow Paging]]) |
+| 비교 항목 | ARIES | 지연 갱신 | [[그림자페이지 기법\|그림자 페이징]] |
 | --- | --- | --- | --- |
-| **핵심 매커니즘** | 로그 선기록(WAL), 3단계 복구 | [[트랜잭션]] 완료 시까지 디스크 기록 지연 | 현재/그림자 페이지 복제 기반 디렉터리 스위칭 |
-| **수행 연산** | **Redo 및 Undo 모두 수행** | Redo만 수행 (Undo 불필요) | Redo/Undo 불필요 (로그 기록 없음) |
-| **I/O 부하** | 로그의 순차적 I/O로 디스크 부하 낮음 | 완료 시점에 일괄 반영하여 부하 집중 | 페이지 단위의 빈번한 복사로 I/O 오버헤드 심화 |
-| **동시성 제어** | 레코드 단위 잠금 등 정밀 제어 가능 | 블록/테이블 단위 잠금으로 동시성 저하 발생 | 동시 다발적 트랜잭션 처리에 매우 취약 |
-| **적합한 환경** | 대규모 트랜잭션 및 현대 상용 [[DBMS]] | 동시성이 낮은 소규모 배치 작업 시스템 | 로그 관리가 제한되는 특정 임베디드 시스템 |
+| 갱신 방식 | 즉시 갱신 (Steal 허용) | 커밋 후 반영 | 비제자리 갱신 |
+| 회복 연산 | 분석·REDO·UNDO | REDO만 | 포인터 교체 |
+| 버퍼 정책 | Steal·No-Force | No-Steal | — |
+| 동시성 | 레코드 단위 잠금 지원 | 버퍼 크기 제약 | 다중 트랜잭션 지원 어려움 |
+| 적용 | DB2, SQL Server 등 상용 RDBMS | 소규모 시스템 | 파일 시스템 CoW |
 
-* **전망 및 동향**: ARIES 알고리즘은 성능과 안정성을 완벽히 조화시킨 설계로 평가받으며, Oracle, Microsoft [[SQL(Structured Query Language)|SQL]] Server, IBM DB2 등 현대 RDBMS의 표준 장애 복구 매커니즘으로 자리매김함. 최근 [[클라우드 네이티브]] 데이터베이스에서는 ARIES 기반의 논리적 아키텍처를 분산 스토리지 로그 기반으로 확장하여 가용성을 극대화(예: Amazon Aurora)하는 방향으로 진화하고 있음.
+### 나. 동향
+
+- **클라우드 DB**: Aurora는 REDO 로그 적용을 분산 스토리지 계층에 맡겨 복구 시간 단축 ([[클라우드 네이티브]])
+- **복구 시간 단축**: SQL Server Accelerated Database Recovery(ADR)는 버전 저장소로 UNDO 시간을 일정하게 유지
+- **비휘발성 메모리**: NVM 환경에 맞춘 경량 로깅·즉시 복구 연구
 
 ---
 
@@ -86,8 +80,8 @@ flowchart TD
 - **소속 도메인**: [[00_데이터베이스_MOC|🗄️ 데이터베이스]]
 - **세부 분류**: `2. 트랜잭션 & 동시성 제어 (Concurrency)`
 - **핵심 연관 토픽**:
-  - [[데이터베이스]]
-  - [[무결성]]
-  - [[트랜잭션]]
-  - [[그림자페이지 기법|그림자페이지(Shadow Paging) 기법]]
   - [[DB 회복기법]]
+  - [[그림자페이지 기법|그림자페이지(Shadow Paging) 기법]]
+  - [[트랜잭션]]
+  - [[DBMS]]
+  - [[DRP(RTO, RPO 등)]]

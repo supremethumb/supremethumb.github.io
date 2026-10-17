@@ -18,9 +18,9 @@ tags:
 
 * **등장배경**: 기존 통신 장비의 벤더 종속성(Vendor Lock-in) 탈피, 상용 하드웨어(COTS) 활용을 통한 통신망 구축 및 운영 비용(CAPEX/OPEX) 절감 요구 증대
 * **핵심 특징**:
-* **개방화(Openness)**: O-RU와 O-DU 간 Open Fronthaul 등 표준 인터페이스 적용
-* **[[가상화]](Virtualization)**: vRAN/Cloud RAN 기반의 유연한 인프라(O-Cloud) 구성
-* **지능화(Intelligence)**: RIC(RAN Intelligent Controller)를 통한 무선망 자율 제어 및 AI/ML 최적화
+  * **개방화(Openness)**: O-RU와 O-DU 간 Open Fronthaul 등 표준 인터페이스 적용
+  * **[[가상화]](Virtualization)**: vRAN/Cloud RAN 기반의 유연한 인프라(O-Cloud) 구성
+  * **지능화(Intelligence)**: RIC(RAN Intelligent Controller)를 통한 무선망 자율 제어 및 AI/ML 최적화
 
 
 
@@ -74,9 +74,9 @@ flowchart TD
 | 분류 | 요소기술(키워드) | 세부 설명 |
 | --- | --- | --- |
 | **무선망 개체** | **O-RU** (Open Radio Unit) | 기지국의 하위 물리계층(Lower PHY) 및 RF 신호 처리, 안테나 송수신 기능 수행 |
-| **무선망 개체** | **O-DU** (Open Distributed Unit) | RLC, [[MAC]], 상위 물리계층(High PHY) 기능 수행 및 O-RU와 패킷 데이터 송수신 |
+| **무선망 개체** | **O-DU** (Open Distributed Unit) | RLC, MAC, 상위 물리계층(High PHY) 기능 수행 및 O-RU와 패킷 데이터 송수신 |
 | **무선망 개체** | **O-CU** (Open Centralized Unit) | RRC, SDAP, PDCP 계층 처리 및 트래픽 특성에 따라 CP(제어부)와 UP(사용자부)로 분리 운영 |
-| **지능화 제어부** | **RIC** (RAN Intelligent Controller) | 무선 [[자원 최적화]] 및 자동화를 위한 AI/ML 기반 [[SDN(Software Defined Network)|SDN]] 컨트롤러 (Near-RT 및 Non-RT로 구분) |
+| **지능화 제어부** | **RIC** (RAN Intelligent Controller) | 무선 [[자원 최적화]] 및 자동화를 위한 AI/ML 기반 [[SDN(Software Defined Network)\|SDN]] 컨트롤러 (Near-RT 및 Non-RT로 구분) |
 | **오케스트레이션** | **SMO** | 전체 O-RAN 도메인의 FCAPS(장애, 과금, 성능, 보안 관리) 및 [[프로비저닝]] 수행 관리 플랫폼 |
 | **애플리케이션** | **xApp / rApp** | Near-RT RIC에서 1초 미만 제어를 수행하는 앱(xApp), SMO에서 비실시간 AI 모델링을 수행하는 앱(rApp) |
 | **표준 인터페이스** | **Open Fronthaul** | O-DU와 O-RU를 연결하는 개방형 표준 인터페이스 (Option 7-2x Split 아키텍처 및 eCPRI 적용) |

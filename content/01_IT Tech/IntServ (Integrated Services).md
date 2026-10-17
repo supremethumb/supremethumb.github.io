@@ -5,97 +5,88 @@ tags:
   - 네트워크
 aliases:
   - IntServ
+  - Integrated Services
 ---
 # IntServ (Integrated Services)
 
 ---
 
-## I. 종단 간 확정적 QoS 보장 모델, IntServ의 개요
+## I. 미리 예약하고 보장받는, IntServ의 개요
 
-* **정의**: IP 네트워크에서 어플리케이션의 트래픽을 전송하기 전에 RSVP 프로토콜을 사용하여 종단 간([[End-to-End]]) 경로 상의 라우터에 개별 플로우(Flow) 단위로 대역폭 자원을 사전에 예약하는 절대적(Hard) [[QoS]] 보장 모델
-* **등장 배경 및 필요성**:
-* **Best-Effort 기반 IP 망의 한계**: 지연(Delay), 지터(Jitter), 패킷 손실로 인해 실시간 트래픽(음성, 화상회의 등)의 통신 품질 저하 발생
-* **보장형 서비스 요구**: 멀티미디어 서비스 확대로 트래픽 낭비 없이 대역폭을 독점적으로 할당받을 수 있는 엄격한 트래픽 제어 메커니즘 필요
+### 가. 정의
 
+- 데이터 전송 전에 **RSVP로 경로 상 모든 라우터에 플로우 단위 자원(대역·버퍼)을 예약해 종단 간 품질을 보장**하는 [[QoS]] 구조 (RFC 1633, RSVP는 RFC 2205)
 
-* **특징**:
-* **Per-Flow State 유지**: 라우터가 통신 중인 각 플로우의 상태 정보를 메모리에 유지(Stateful)
-* **사전 시그널링(Signaling)**: 데이터 패킷 전송 전 RSVP(Resource Reservation Protocol)를 통한 네트워크 자원 예약 절차 선행
+### 나. 등장 배경 및 특징
 
-
+| 구분 | 내용 |
+| --- | --- |
+| 등장 배경 | Best-Effort IP망에서 음성·화상의 지연·지터·손실 문제 |
+| 사전 시그널링 | 전송 전 PATH/RESV 메시지로 예약 |
+| 플로우 상태 | 경로 상 라우터가 플로우별 상태 유지 (Stateful) |
+| 승인 제어 | 자원이 부족하면 예약 거절 → 수락된 플로우는 보장 |
+| 확장성 한계 | 플로우 수에 비례해 라우터 상태·시그널링 부하 증가 |
 
 ---
 
-## II. IntServ의 개념도 및 핵심 구성요소
+## II. 구조 및 구성요소
 
-### 가. IntServ의 동작 개념도
+### 가. RSVP 예약 흐름
 
 ```mermaid
 flowchart LR
-    subgraph "Sender (송신자)"
-        S_APP[Application<br/>T-Spec 전송]
-    end
-    
-    subgraph "IntServ Router (인터서브 라우터)"
+    S["송신자<br/>(T-Spec)"]
+    subgraph RT["경로 상 라우터"]
         direction TB
-        AC[Admission Control<br/>승인 제어]
-        C[Classifier<br/>트래픽 분류기]
-        Sch[Packet Scheduler<br/>패킷 스케줄러]
-        
-        AC -. "제어 및 자원 할당" .-> C
-        AC -. "제어 및 자원 할당" .-> Sch
-        C -->|큐잉| Sch
+        AC["승인 제어"] -.-> CL["분류기"]
+        AC -.-> SC["패킷 스케줄러"]
+        CL --> SC
     end
-    
-    subgraph "Receiver (수신자)"
-        R_APP[Application<br/>R-Spec 전송]
-    end
-
-    S_APP -- "1. RSVP PATH 메시지" --> AC
-    AC -- "1. RSVP PATH 메시지" --> R_APP
-    
-    R_APP -- "2. RSVP RESV 메시지<br/>(자원 예약 요청)" --> AC
-    AC -- "2. RSVP RESV 메시지" --> S_APP
-    
-    S_APP == "3. 사용자 데이터 트래픽 (Flow)" ==> C
-    Sch == "4. QoS 보장 전송" ==> R_APP
-
+    R["수신자<br/>(R-Spec)"]
+    S -- "1. PATH (트래픽 특성)" --> AC
+    AC -- "1. PATH 전달" --> R
+    R -- "2. RESV (예약 요청)" --> AC
+    AC -- "2. RESV 전달" --> S
+    S == "3. 데이터 플로우" ==> CL
+    SC == "4. 예약 품질로 전달" ==> R
 ```
 
-* 송신자가 PATH 메시지로 트래픽 특성을 알리면 수신자가 RESV 메시지로 예약을 요청하고, 경로상 라우터는 Admission Control을 통해 가용 자원을 확인 후 자원을 예약함.
+- 송신자가 PATH로 경로와 트래픽 특성을 알리면, 수신자가 역경로로 RESV를 보내고 각 라우터가 승인 제어 후 자원을 예약 (수신자 주도 예약)
 
-### 나. IntServ의 핵심 기술 요소
+### 나. 구성요소
 
-| 분류 | 핵심 기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **시그널링** | **RSVP** (Resource Reservation Protocol) | 데이터 전송 전 종단 간 라우터에 대역폭, 버퍼 등 자원을 예약하기 위한 단방향 기반 제어 [[프로토콜]] |
-| **트래픽 정의** | **T-Spec** (Traffic Specification) | 송신자가 발생시킬 트래픽의 특성(최대 데이터 전송률, 토큰 버킷 크기 등)을 명시하는 매개변수 |
-| **품질 요구** | **R-Spec** (Reservation Specification) | 수신자가 네트워크 라우터에 요구하는 QoS 수준(대역폭, 패킷 지연 한계 등)을 명시하는 매개변수 |
-| **[[라우터]] 제어** | **Admission Control** (승인 제어) | 라우터가 수신자의 요구(R-Spec)를 처리할 충분한 가용 자원이 있는지 판단하여 예약을 승인/거절하는 기능 |
-| **라우터 제어** | **Classifier** (분류기) | 라우터로 유입되는 패킷의 헤더(IP, Port 등)를 분석하여 해당 패킷이 예약된 플로우(Flow)에 속하는지 식별 |
-| **라우터 제어** | **Packet Scheduler** ([[스케줄러]]) | 식별된 패킷들을 큐([[Queue]])에 배치하고 예약된 QoS 요구사항에 맞춰 우선순위 기반으로 포워딩([[WFQ]] 등 활용) |
-| **상태 관리** | **Soft State** (소프트 상태) | 예약된 정보는 영구적이지 않으며, 주기적인 RSVP 메시지로 갱신되지 않으면 일정 시간([[Timeout]]) 후 예약 해제됨 |
-| **제어 단위** | **Flow** (플로우) | 동일한 송수신 IP, 포트번호, 프로토콜(5-Tuple)을 가지는 단일 통신 [[세션]] (IntServ의 QoS 보장 최소 단위) |
+| 시그널링 | RSVP | 단방향 플로우 자원 예약, PATH(송신→수신)·RESV(수신→송신) |
+| 명세 | T-Spec | 송신 트래픽 특성 (토큰 버킷 속도·크기, 최대 속도) |
+| | R-Spec | 요구 품질 (예약 대역, 지연 한계) |
+| 라우터 기능 | 승인 제어 (Admission Control) | 가용 자원 확인 후 예약 수락·거절 |
+| | 분류기 (Classifier) | 5-튜플로 예약 플로우 식별 |
+| | 스케줄러 | 예약 대역에 맞춰 전송 ([[WFQ]] 등) |
+| 상태 | Soft State | 주기적 갱신이 없으면 예약 자동 해제 |
+| 서비스 | Guaranteed Service | 지연 상한까지 수학적으로 보장 |
+| | Controlled-Load Service | 혼잡 없는 망과 비슷한 품질 제공 |
 
 ---
 
-## III. IntServ와 DiffServ 비교 및 향후 전망
+## III. 비교 및 동향
 
-### 가. IntServ와 DiffServ(Differentiated Services) 비교
+### 가. IntServ vs DiffServ
 
-| 비교 항목 | IntServ (Integrated Services) | [[DiffServ (Differentiated Services)]] |
+| 비교 항목 | IntServ | [[DiffServ (Differentiated Services)\|DiffServ]] |
 | --- | --- | --- |
-| **QoS 보장 단위** | **개별 플로우 (Per Flow) 기반** | **트래픽 [[클래스]] (Per Class) 기반** |
-| **QoS 보장 수준** | 절대적 품질 보장 (Hard QoS) | 상대적 우선순위 보장 (Soft QoS) |
-| **시그널링 유무** | RSVP를 통한 사전 자원 예약 수행 | 사전 예약 없음 (트래픽 마킹(DSCP) 방식) |
-| **라우터 상태** | Stateful (모든 플로우의 상태 정보 유지) | Stateless (플로우 상태 유지 불필요) |
-| **네트워크 확장성** | **낮음** (대규모 망 적용 시 라우터 오버헤드 극심) | **높음** (대규모 코어 망 적용에 적합) |
-| **시스템 복잡도** | 망 내 모든 라우터에 과부하 집중 우려 | 엣지 라우터에 복잡성 집중, 코어 라우터는 단순화 |
+| 단위 | 플로우 | 등급 (Class) |
+| 보장 수준 | 절대적 (Hard QoS) | 상대적 (Soft QoS) |
+| 시그널링 | RSVP 사전 예약 | 없음 (DSCP 마킹) |
+| 라우터 상태 | 플로우별 상태 유지 | 코어 무상태 |
+| 확장성 | 낮음 | 높음 |
+| 복잡도 위치 | 경로 상 모든 라우터 | 경계 라우터 |
 
-### 나. 향후 전망 및 활용 시사점
+### 나. 동향
 
-* **확장성 한계 극복을 위한 혼합 아키텍처**: IntServ는 코어 망 라우터에 심각한 병목 현상을 유발하므로, 가입자 엑세스/엣지 망에서는 IntServ를 적용하고 백본(코어) 망에서는 DiffServ를 적용하는 **IntServ over DiffServ** 하이브리드 모델이 산업계 표준으로 정착됨.
-* **진화 방향**: 개별 플로우의 사전 자원 예약 및 경로 제어 개념은 5G/6G 환경의 **[[네트워크 슬라이싱]](Network Slicing)** 및 [[SDN(Software Defined Network)|SDN]](Software Defined Networking) 기반의 동적 트래픽 엔지니어링 기술로 계승 및 발전하여 초저지연(URLLC) 서비스 보장에 활용되고 있음.
+- **IntServ over DiffServ (RFC 2998)**: 접속망에서는 RSVP로 승인 제어, 코어에서는 DiffServ로 집합 처리하는 결합 모델
+- **RSVP-TE**: 예약 개념은 MPLS 트래픽 엔지니어링의 경로·대역 예약으로 계승 (Segment Routing으로 일부 대체 중)
+- **결정적 네트워크**: 지연 상한 보장 요구는 TSN·DetNet, [[네트워크 슬라이싱]]으로 이어짐
 
 ---
 
@@ -106,6 +97,6 @@ flowchart LR
 - **핵심 연관 토픽**:
   - [[DiffServ (Differentiated Services)]]
   - [[QoS|QoS (Quality of Service)]]
+  - [[WFQ|WFQ (Weighted Fair Queuing)]]
+  - [[Traffic Shaping (트래픽 쉐이핑)]]
   - [[네트워크 슬라이싱]]
-  - [[프로토콜]]
-  - [[라우터]]

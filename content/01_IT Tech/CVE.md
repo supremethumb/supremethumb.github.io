@@ -12,14 +12,11 @@ tags:
 
 * **가. CVE(Common Vulnerabilities and Exposures)의 정의**: 공개적으로 알려진 소프트웨어 및 하드웨어의 보안 취약점(Vulnerability)과 노출(Exposure) 상태를 고유한 식별자로 표준화하여 명명한 취약점 사전(Dictionary)
 * **나. CVE의 필요성 및 특징**:
-* **필요성**: 이기종 보안 솔루션 간 취약점 정보 공유의 일관성 확보, 신속한 보안 패치 및 체계적인 취약점 관리(Vulnerability Management) 기반 마련
+  * **필요성**: 이기종 보안 솔루션 간 취약점 정보 공유의 일관성 확보, 신속한 보안 패치 및 체계적인 취약점 관리(Vulnerability Management) 기반 마련
 * **특징**:
-* **고유 식별자(Unique ID)**: 전 세계적으로 통용되는 단일 식별 체계(CVE-YYYY-NNNNN) 제공
-* **분산 할당 체계**: MITRE Corporation의 총괄 하에 지정된 CNA(CVE Numbering Authority)가 식별자 할당
-* **공공재 성격**: 누구나 열람 가능한 공개 데이터로, NVD 등 각종 보안 데이터베이스의 인덱스로 활용
-
-
-
+  * **고유 식별자(Unique ID)**: 전 세계적으로 통용되는 단일 식별 체계(CVE-YYYY-NNNNN) 제공
+  * **분산 할당 체계**: MITRE Corporation의 총괄 하에 지정된 CNA(CVE Numbering Authority)가 식별자 할당
+  * **공공재 성격**: 누구나 열람 가능한 공개 데이터로, NVD 등 각종 보안 데이터베이스의 인덱스로 활용
 
 
 ---
@@ -74,8 +71,8 @@ flowchart TD
 | **운영 주체** | CNA (Numbering Auth.) | MITRE로부터 권한을 위임받아 자사 제품이나 특정 영역의 CVE ID를 할당하는 기관 (MS, Oracle 등) |
 | **상태 관리** | CVE Status (상태 값) | 취약점의 처리 단계에 따라 RESERVED, PUBLISHED, REJECTED, DISPUTED 상태로 관리 |
 | **평가 지표** | CVSS (위험도 평가) | 취약점의 심각도를 0.0부터 10.0까지의 점수와 정형화된 벡터(Vector)로 평가하는 개방형 [[프레임워크]] |
-| **원인 분류** | [[CWE]] (약점 열거) | 버퍼 오버플로우, [[SQL(Structured Query Language)|SQL]] 인젝션 등 소프트웨어 보안 약점의 근본적인 원인(유형)을 분류한 체계 |
-| **대상 식별** | CPE (플랫폼 열거) | 취약점이 존재하는 하드웨어, [[OS(운영체제)|운영체제]], 애플리케이션의 버전을 명확히 식별하기 위한 표준 명명법 |
+| **원인 분류** | [[CWE]] (약점 열거) | 버퍼 오버플로우, [[SQL(Structured Query Language)\|SQL]] 인젝션 등 소프트웨어 보안 약점의 근본적인 원인(유형)을 분류한 체계 |
+| **대상 식별** | CPE (플랫폼 열거) | 취약점이 존재하는 하드웨어, [[OS(운영체제)\|운영체제]], 애플리케이션의 버전을 명확히 식별하기 위한 표준 명명법 |
 | **통합 DB** | NVD (국가 취약점 DB) | 미국 NIST에서 운영하며, CVE 목록을 기반으로 CVSS, CWE, CPE, 패치 정보 등을 통합 제공하는 [[데이터베이스]] |
 | **자동화 표준** | SCAP | CVE, CVSS, CPE 등의 표준을 활용하여 취약점 점검 및 보안 설정을 자동화하기 위한 [[프로토콜]] |
 

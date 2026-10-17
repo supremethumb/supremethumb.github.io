@@ -3,86 +3,86 @@ title: String Type
 date: 2026-04-13
 tags:
   - 컴퓨터구조
+aliases:
+  - 문자열
+  - 문자열 타입
 ---
 # String Type (문자열 타입)
 
 ---
 
-## I. 텍스트 데이터 표현 및 처리를 위한 기본 데이터 타입, String Type의 개요
+## I. 문자의 나열을 다루는, 문자열 타입의 개요
 
-* **정의**: 프로그래밍 언어, [[데이터베이스]] 및 시스템에서 일련의 문자(Character)들의 집합을 표현하기 위해 사용하는 대표적인 복합 데이터 타입
-* **등장 배경 및 특징**:
-* **텍스트 정보 처리**: 숫자 외에 자연어, 기호, 코드 등 비정형 텍스트 정보를 메모리 및 저장소에 효율적으로 저장하기 위해 도입
-* **불변성(Immutability) 및 가변성**: 많은 현대 언어(Java, Python 등)에서 데이터 무결성과 스레드 안전성을 위해 불변 객체로 설계
-* **인코딩(Encoding) 의존성**: 물리적 저장 시 문자 세트(ASCII, UTF-8, UTF-16 등) 규격에 따른 바이트 변환 과정 필수
+### 가. 정의
 
+- **문자들의 순서 있는 나열을 표현하는 자료형**으로, 언어에 따라 문자 배열(C의 NULL 종료 char 배열) 또는 문자열 객체(Java·Python의 String)로 구현
 
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 인코딩 의존 | 저장 시 문자 집합·인코딩(ASCII, UTF-8, UTF-16)에 따라 바이트로 변환 |
+| 불변성 | Java·Python·C# 등은 불변 객체, 수정 시 새 문자열 생성 |
+| 길이 표현 | NULL 종료(C) 또는 길이 필드 저장(대부분의 현대 언어) |
+| 보안 민감 | 입력 문자열이 명령·쿼리로 해석되는 인젝션 취약점의 주 경로 |
 
 ---
 
-## II. String Type의 메모리 아키텍처 및 핵심 기술 요소
+## II. 구조 및 구성요소
 
-### 가. String Type의 메모리 할당 및 내부 아키텍처
+### 가. 메모리 구조 (Java 예)
 
 ```mermaid
-flowchart TB
-    subgraph "Stack Memory (스택 영역)"
-        Var1["String s1 = 'Hello'"]
-        Var2["String s2 = 'Hello'"]
-    end
-
-    subgraph "Heap Memory / String Pool (힙 영역 / 문자열 풀)"
+flowchart LR
+    subgraph ST["스택"]
         direction TB
-        Pool["String Pool (Literal Pool)<br/>- 중복 생성 방지 및 메모리 최적화"]
-        Obj["String Object (Immutable)<br/>- Value 배열 참조 (byte[] / char[])"]
-        
-        Pool --> Obj
+        V1["s1 → 참조"]
+        V2["s2 → 참조"]
     end
-
-    Var1 ==>|문자열 리터럴 공유| Pool
-    Var2 ==>|동일 참조 주소 반환| Pool
-
-    subgraph "Mutable Alternative (가변 버퍼)"
-        SB["StringBuilder / StringBuffer<br/>- 동적 버퍼 확장을 통한 연산 최적화"]
+    subgraph HP["힙"]
+        direction TB
+        POOL["문자열 풀<br/>리터럴 'Hello' 1개"]
+        SB["StringBuilder<br/>가변 버퍼"]
     end
-
-    style Pool fill:#f9f,stroke:#333,stroke-width:2px
-    style Obj fill:#f9f,stroke:#333,stroke-width:2px
-
+    V1 --> POOL
+    V2 --> POOL
 ```
 
-* 문자열 리터럴 생성 시 힙 내의 String Pool에 저장되어 참조를 공유하며, 불변(Immutable) 특성으로 인해 값 변경 시 새로운 객체가 생성되므로 대량 연산 시 가변 버퍼(StringBuilder 등) 사용 필수
+- 같은 리터럴은 풀의 객체 하나를 공유(Interning), 반복 연결은 가변 버퍼(StringBuilder)로 처리
 
-### 나. String Type의 핵심 기술 및 구성 요소
+### 나. 구성요소
 
-| 구분 | 요소기술 (키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **메모리 최적화** | String Interning | 동일한 문자열 리터럴의 중복 생성을 막고 메모리 풀(Pool)의 주소를 공유하는 기법 |
-| **가변성 제어** | StringBuilder / StringBuffer | 문자열 연산 시 객체 생성을 줄이고 내부 버퍼를 동적으로 조작하여 성능 최적화 |
-| **인코딩 방식** | UTF-8 / UTF-16 | 가변 길이(1~4바이트) 유니코드 인코딩(UTF-8) 및 고정/가변 혼용 인코딩(UTF-16) 규격 |
-| **메모리 압축** | Compact Strings (Java 9+) | 영문/ASCII 위주의 문자열은 1바이트(Latin-1)로 압축 저장하여 메모리 효율성 제고 |
-| **패턴 매칭** | 정규 표현식 (Regex) | 특정한 규칙을 가진 문자열 집합을 검색, 추출, 치환하기 위한 강력한 패턴 검증 도구 |
-| **보안 취약점** | Format String / Injection | 사용자 입력값이 형식 지정자나 [[SQL(Structured Query Language)|SQL]] 구문으로 직접 해석되어 발생하는 취약점 및 방어 |
-| **DB 스토리지** | VARCHAR / TEXT / CLOB | 관계형 데이터베이스에서 가변 길이 텍스트 및 대용량 객체를 저장하는 데이터 타입 |
-| **최신 동향** | Zero-Copy String | 메모리 간 데이터 복사(Copy) 과정을 생략하고 포인터만 전달하여 고속 처리하는 구조 |
+| 표현 | C 문자열 | 끝에 '\0'을 둔 char 배열, 길이 계산 O(n), 경계 검사 없음 |
+| | 문자열 객체 | 길이·문자 배열(byte[]/char[])을 가진 객체 |
+| 인코딩 | UTF-8 | 1~4바이트 가변, ASCII 호환, 웹 표준 |
+| | UTF-16 | 2바이트 또는 4바이트(서로게이트 쌍), Java·JavaScript·Windows 내부 표현 |
+| 메모리 최적화 | String Interning | 같은 문자열을 한 객체로 공유 |
+| | Compact Strings (Java 9+) | Latin-1로 표현 가능하면 문자당 1바이트로 저장 |
+| 가변 버퍼 | StringBuilder / StringBuffer | 내부 버퍼를 늘려가며 수정 (Buffer는 동기화) |
+| 처리 | 정규 표현식 | 패턴 검색·추출·치환 |
+| 보안 | 포맷 문자열·[[SQL(Structured Query Language)\|SQL]] 인젝션 | 입력값을 형식 지정자·쿼리로 해석해 발생, 매개변수화로 방어 |
+| DB 타입 | CHAR / VARCHAR / TEXT·CLOB | 고정 길이 / 가변 길이 / 대용량 텍스트 ([[Char Type]]) |
 
 ---
 
-## III. 불변(Immutable) 문자열과 가변(Mutable) 문자열 비교 및 향후 전망
+## III. 비교 및 동향
 
-### 가. Immutable String vs Mutable String (Buffer/Builder) 비교
+### 가. 불변 문자열 vs 가변 문자열
 
-| 비교 항목 | Immutable String (`String`) | Mutable String (`StringBuilder`) |
+| 비교 항목 | 불변 (String) | 가변 (StringBuilder) |
 | --- | --- | --- |
-| **객체 상태** | 생성 후 내부 값 변경 불가 (불변) | 내부 버퍼(Buffer)를 통해 값의 수정·추가 가능 (가변) |
-| **메모리 영향** | 문자열 연산(`+`) 시 매번 새로운 객체 생성으로 가비지(GC) 유발 | 객체 재생성 없이 기존 버퍼 내에서 수정되어 메모리 효율적 |
-| **스레드 안전성** | 불변성으로 인해 멀티스레드 환경에서 **Thread-Safe** 보장 | 동기화 처리가 없어 멀티스레드 환경에서 안전하지 않음 (StringBuffer는 안전) |
-| **주요 활용** | 고정된 텍스트, Map의 Key 값, 설정 정보 관리 | 반복적인 문자열 조작, 동적 쿼리 생성, 로그 수집 처리 |
+| 상태 | 생성 후 변경 불가 | 버퍼 안에서 수정·추가 |
+| 반복 연결 | 매번 새 객체 생성, GC 부담 | 버퍼 재사용, 효율적 |
+| 스레드 안전 | 안전 (공유해도 변하지 않음) | 안전하지 않음 (StringBuffer는 동기화) |
+| 활용 | 맵의 키, 상수, 설정값 | 반복 조립, 동적 쿼리, 로그 생성 |
 
-### 나. 향후 전망 및 발전 방향
+### 나. 동향
 
-* **메모리 안전성 및 제로코피(Zero-Copy) 최적화**: 고성능 시스템 프로그래밍(Rust, Go 등)에서 문자열 슬라이싱(Slice) 시 메모리 복사를 원천 차단하는 안전한 참조 모델 표준화
-* **AI 기반 자연어 텍스트 벡터화 연동**: 전통적인 바이트/유니코드 기반 String Type에서 나아가, [[초거대 언어 모델|LLM]] 및 RAG 처리를 위해 임베딩(Vector) 데이터 타입과 긴밀히 연계되는 하이브리드 문자열 처리 아키텍처로 진화
+- **복사 없는 문자열 뷰**: C++ std::string_view, Rust &str, Go 슬라이스처럼 원본을 공유하는 참조로 복사 비용 제거
+- **UTF-8 기본화**: Java 18부터 기본 문자셋 UTF-8, Python 3 str은 Unicode 기본
+- **메모리 안전**: C 문자열 함수(strcpy 등)의 버퍼 오버플로우를 피하려 경계 검사 함수와 메모리 안전 언어 사용 확대
 
 ---
 
@@ -91,8 +91,8 @@ flowchart TB
 - **소속 도메인**: [[00_컴퓨터구조_MOC|💻 컴퓨터구조]]
 - **세부 분류**: `2. 캐시 & 메모리 계층 구조 · 스토리지`
 - **핵심 연관 토픽**:
-  - [[데이터베이스]]
+  - [[Char Type]]
+  - [[Data Type]]
+  - [[배열]]
   - [[SQL(Structured Query Language)]]
-  - [[메모리 반도체|메모리 반도체 (Memory Semiconductor)]]
-  - [[선형 자료구조와 비선형 자료구조]]
-  - [[초거대 언어 모델|초거대 언어 모델(Large Language Model)]]
+  - [[변수]]

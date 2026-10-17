@@ -3,87 +3,79 @@ title: Phantom Read
 date: 2026-04-22
 tags:
   - 데이터베이스
+aliases:
+  - 팬텀 리드
+  - 유령 읽기
 ---
 # 팬텀 리드 (Phantom Read)
 
 ---
 
-## I. 트랜잭션 동시성 환경의 유령 레코드 현상, Phantom Read의 개요
+## I. 범위 재조회 시 나타나는 유령 행, Phantom Read의 개요
 
-* **정의**: 하나의 [[트랜잭션]] 내에서 동일한 조건식(Range Query)으로 두 번 이상 데이터를 조회할 때, 다른 병행 트랜잭션이 해당 조건에 맞는 새로운 데이터를 삽입(Insert)하거나 삭제(Delete)하여 **이전 결과에 없던 유령(Phantom) 데이터가 나타나거나 기존 데이터가 사라지는 데이터 불일치 현상**
-* **등장 배경 및 원인**:
-* 다중 사용자 환경([[DBMS]])에서 성능(동시성)을 극대화하기 위해 트랜잭션 격리 수준([[Isolation Level (격리 레벨고립성 수준)|Isolation Level]])을 완화할 때 발생하는 구조적 이상([[Anomaly(이상현상)|Anomaly]]) 현상 중 하나임.
-* 특정 행(Row)에 대한 잠금(Record Lock)은 수행하지만, 조건에 해당하는 범위(Range)나 빈 공간(Gap)에 대한 잠금 처리를 하지 않을 때 발생함.
+### 가. 정의
 
+- 한 [[트랜잭션]]이 같은 조건으로 범위를 다시 조회할 때, **다른 트랜잭션이 커밋한 INSERT·DELETE 때문에 처음에 없던 행이 나타나거나 있던 행이 사라지는 이상 현상**
 
-* **특징**: 단순한 값의 변경(Update)이 아닌, 레코드 건수(튜플의 수)가 변동되는 것이 핵심이며, ANSI [[SQL(Structured Query Language)|SQL]] 표준 기준 `REPEATABLE READ` 격리 수준 이하에서 발생할 수 있음.
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 핵심 | 값이 아닌 행 집합(건수)이 바뀜 |
+| 원인 | 읽은 행만 잠그고 조건 범위·빈 공간(Gap)은 잠그지 않음 |
+| 표준 정의 | ANSI SQL-92에서 REPEATABLE READ 이하 수준에서 허용 |
+| 방지 | SERIALIZABLE, 범위·Gap 잠금, 스냅샷 격리 |
 
 ---
 
-## II. Phantom Read의 발생 메커니즘 및 핵심 기술 요소
+## II. 발생 원리 및 제어 기법
 
-### 가. Phantom Read 발생 개념도 (Sequence Diagram)
+### 가. 발생 시나리오
 
 ```mermaid
 sequenceDiagram
-    participant TxA as 트랜잭션 A
-    participant DB as 데이터베이스 (조건: ID > 10)
-    participant TxB as 트랜잭션 B
-
-    Note over TxA: 트랜잭션 A 시작
-
-    TxA->>DB: 1. 범위 조회: SELECT (ID > 10)
-    DB-->>TxA: 반환: [ID: 11, ID: 12] (2건)
-    
-    Note over TxB: 트랜잭션 B 시작
-
-    TxB->>DB: 2. 신규 삽입: INSERT (ID: 15)
-    TxB->>DB: 3. COMMIT 완료
-    
-    Note over TxA: 트랜잭션 A 로직 계속 수행
-
-    TxA->>DB: 4. 동일 범위 재조회: SELECT (ID > 10)
-    DB-->>TxA: 반환: [ID: 11, ID: 12, ID: 15] (3건)
-    
-    Note over TxA,DB: 🚨 이상 현상 발생:<br/>동일 트랜잭션 내에서 없던 레코드(ID: 15)가 유령처럼 출현함
-
+    participant A as 트랜잭션 A
+    participant DB as DB
+    participant B as 트랜잭션 B
+    A->>DB: SELECT ... WHERE ID > 10
+    DB-->>A: 11, 12 (2건)
+    B->>DB: INSERT ID = 15
+    B->>DB: COMMIT
+    A->>DB: SELECT ... WHERE ID > 10
+    DB-->>A: 11, 12, 15 (3건, 팬텀 발생)
 ```
 
-* 트랜잭션 A가 특정 조건(`ID > 10`)으로 데이터를 읽은 후, 트랜잭션 B가 해당 범위 내에 들어가는 새로운 데이터를 삽입(Insert)하고 커밋함.
-* 트랜잭션 A가 동일한 조건으로 다시 조회하면, 처음에 보이지 않던 레코드(Phantom)가 조회되어 데이터 정합성이 깨지게 됨.
+- A가 읽은 행(11, 12)은 잠겨 있어도 그 사이·뒤 공간에 B의 삽입을 막지 못해 결과 집합이 달라짐
 
-### 나. Phantom Read 제어와 관련된 핵심 기술 요소
+### 나. 제어 기법
 
-| 분류 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **현상 조건** | Range Query (범위 검색) | `BETWEEN`, `>`, `<`, `LIKE` 등 여러 건의 레코드를 스캔하는 조건절을 사용할 때 주로 발생 |
-| **방어 수준** | SERIALIZABLE (직렬화 가능) | ANSI SQL 표준 상 Phantom Read를 완벽히 방어할 수 있는 가장 엄격한 최고 단계의 격리 수준 |
-| **잠금 기법** | 갭 락 (Gap Lock) | 인덱스 레코드 사이의 빈 공간(Gap)에 잠금을 걸어, 타 트랜잭션이 해당 범위 내에 Insert 하는 것을 방지 |
-| **잠금 기법** | 넥스트 키 락 (Next-Key Lock) | 레코드 락(Record Lock)과 갭 락(Gap Lock)을 결합한 형태로, MySQL(InnoDB)에서 Phantom Read를 막는 핵심 기법 |
-| **대안 기법** | MVCC (다중 버전 동시성 제어) | 데이터 변경 시 Undo 로그에 이전 버전을 유지하여, 읽기 작업 시 락(Lock) 없이 특정 스냅샷(시점)의 데이터만 일관되게 제공 |
-| **관련 이상 현상** | Lost Update (갱신 분실) | 두 트랜잭션이 동시에 같은 데이터를 갱신할 때, 하나의 갱신 내용이 다른 하나에 의해 덮어씌워져 유실되는 현상 |
+| 발생 조건 | 범위 질의 | BETWEEN, >, <, LIKE 등 여러 행을 스캔하는 조건 |
+| 격리 수준 | SERIALIZABLE | 표준상 팬텀까지 방지하는 최고 수준 ([[Isolation Level (격리 레벨고립성 수준)\|격리 수준]]) |
+| 잠금 | Gap Lock | 인덱스 레코드 사이 공간을 잠가 삽입 차단 |
+| | Next-Key Lock | 레코드 잠금 + 앞쪽 Gap 잠금 (MySQL InnoDB) |
+| | Predicate Lock | 검색 조건 자체를 잠금 (이론적 방법, PostgreSQL SSI가 변형 사용) |
+| 버전 | 스냅샷 읽기 | 트랜잭션 시작 시점 스냅샷만 읽어 재조회 결과 고정 ([[MVCC(다중 버전 동시성 제어) 2가지 유형\|MVCC]]) |
 
 ---
 
-## III. 데이터 읽기 이상 현상(Read Anomaly) 비교 및 현대 DBMS 동향
+## III. 비교 및 동향
 
-### 가. 3대 트랜잭션 읽기 이상 현상(Read Anomaly) 비교
+### 가. 읽기 이상 현상 비교
 
-| 비교 항목 | [[Dirty Read]] (오독) | Non-Repeatable Read (반복 불가능 읽기) | Phantom Read (유령 읽기) |
+| 비교 항목 | [[Dirty Read]] | Non-Repeatable Read | Phantom Read |
 | --- | --- | --- | --- |
-| **발생 원인** | 타 트랜잭션이 **Commit 하지 않은** 데이터를 읽음 | 타 트랜잭션이 데이터를 **수정(Update)** 하고 Commit 함 | 타 트랜잭션이 데이터를 **삽입(Insert)/삭제(Delete)** 하고 Commit 함 |
-| **증상** | 비정상적인 임시 데이터를 읽어 잘못된 로직 수행 (이후 롤백될 수 있음) | 동일한 조회 결과의 **'값(Value)'**이 변경됨 | 동일한 조건 검색 결과의 **'행(Row) 개수'**가 변경됨 |
-| **최소 방어 수준** | `READ COMMITTED` | `REPEATABLE READ` | `SERIALIZABLE` |
-| **대상 단위** | Row (행) 단위 | Row (행) 단위 | Range (범위) 단위 |
+| 원인 | 미커밋 변경 읽기 | 커밋된 UPDATE·DELETE | 커밋된 INSERT·DELETE |
+| 증상 | 롤백될 값 사용 | 같은 행의 값 변경 | 결과 행 수 변경 |
+| 방지 최소 수준 | READ COMMITTED | REPEATABLE READ | SERIALIZABLE |
+| 단위 | 행 | 행 | 범위 |
 
-### 나. 한계 극복 및 최신 DBMS 벤더 구현 동향
+### 나. DBMS 구현 동향
 
-* **표준과 실제 구현의 차이**: ANSI SQL-92 표준에서는 `REPEATABLE READ` 격리 수준에서 Phantom Read가 발생하는 것으로 정의되어 있으나, 현대의 주요 RDBMS 벤더들은 이를 자체적인 기술로 방어하고 있음.
-* **MySQL (InnoDB)**: 기본 격리 수준이 `REPEATABLE READ`임에도 불구하고, 인덱스 기반의 **Next-Key Lock**과 **MVCC**를 혼합 적용하여 사실상 Phantom Read가 발생하지 않음.
-* **PostgreSQL**: `REPEATABLE READ` 수준에서 **SI(Snapshot Isolation)** 기법을 사용하여, 트랜잭션 시작 시점의 스냅샷만 참조하게 함으로써 Phantom Read를 원천 차단함.
-
-
-* **전망**: 고도의 동시성(성능)과 데이터 [[무결성]](일관성)의 Trade-off 관계 속에서, 최근의 분산/클라우드 데이터베이스들은 분산 락(Distributed Lock)과 MVCC 아키텍처를 고도화하여 Serializable 수준의 일관성을 제공하면서도 락 경합을 최소화(Lock-free read)하는 논블로킹(Non-blocking) 구조를 지향하고 있음.
+- **MySQL InnoDB**: 기본 REPEATABLE READ에서 일반 SELECT는 스냅샷, 잠금 읽기(FOR UPDATE)는 Next-Key Lock으로 팬텀 방지 (두 방식을 섞으면 예외 발생 가능)
+- **PostgreSQL**: REPEATABLE READ를 스냅샷 격리로 구현해 팬텀이 보이지 않음, SERIALIZABLE은 SSI로 쓰기 스큐까지 방지
+- **분산 DB**: [[CockroachDB]] 등은 기본 SERIALIZABLE로 팬텀·쓰기 스큐를 함께 차단
 
 ---
 
@@ -92,8 +84,8 @@ sequenceDiagram
 - **소속 도메인**: [[00_데이터베이스_MOC|🗄️ 데이터베이스]]
 - **세부 분류**: `2. 트랜잭션 & 동시성 제어 (Concurrency)`
 - **핵심 연관 토픽**:
-  - [[Dirty Read]]
   - [[Isolation Level (격리 레벨고립성 수준)]]
-  - [[무결성]]
-  - [[트랜잭션]]
-  - [[CockroachDB|CockroachDB(코크로치DB)]]
+  - [[Dirty Read]]
+  - [[Locking]]
+  - [[MVCC(다중 버전 동시성 제어) 2가지 유형]]
+  - [[병행 제어]]

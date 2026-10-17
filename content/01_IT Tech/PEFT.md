@@ -77,7 +77,7 @@ tags:
 
 |구분|기술|설명|
 |---|---|---|
-|**재매개변수화**|**LoRA** _([[LoRA(Low-rank adaptation)|Low-Rank Adaptation]])_|가중치 변화량(\Delta W)을 저순위(Low-Rank) 행렬 분해(A \times B)로 근사 학습|
+|**재매개변수화**|**LoRA** _([[LoRA(Low-rank adaptation)\|Low-Rank Adaptation]])_|가중치 변화량(\Delta W)을 저순위(Low-Rank) 행렬 분해(A \times B)로 근사 학습|
 |**양자화 결합**|**QLoRA**|기본 모델을 **4-bit NormalFloat (NF4)**로 양자화하여 단일 [[GPU]] 메모리 내 학습 지원|
 |**추가형 (Additive)**|**Adapter**|[[트랜스포머]] 레이어 사이에 병렬 또는 직렬로 소형 피드포워드 신경망을 삽입하여 학습|
 ||**Prefix-Tuning**|Attention 키(K)와 밸류(V) 앞에 학습 가능한 **가상 토큰 텐서를 추가**하여 최적화|

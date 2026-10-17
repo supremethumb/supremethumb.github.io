@@ -67,7 +67,7 @@ flowchart TB
 | **품질 (Quality)** | 대표성 (Representativeness) | 특정 편향에 치우치지 않고 실제 환경의 데이터 분포를 균형 있게 반영 |
 | **품질 (Quality)** | 정확성 및 적시성 | 값의 사실 여부 검증 및 최신 사건·문맥을 반영하여 환각(Hallucination) 방지 |
 | **구조화 (Structure)** | Chunking & Embedding | RAG 및 시맨틱 검색을 위해 문서를 의미 단위로 분할하고 다차원 벡터로 변환 |
-| **구조화 (Structure)** | Knowledge Graph (Ontology) | [[엔티티|엔티티(Entity)]] 간의 관계를 온톨로지 기반 지식망으로 연결하여 추론 성능 강화 |
+| **구조화 (Structure)** | Knowledge Graph (Ontology) | [[엔티티\|엔티티(Entity)]] 간의 관계를 온톨로지 기반 지식망으로 연결하여 추론 성능 강화 |
 | **추적 (Traceability)** | Metadata Management | 데이터 출처, 수집 목적, 소유자, 보존 기간 등 데이터에 관한 속성 정보 정의 |
 | **추적 (Traceability)** | Data Lineage (계보) | 데이터의 생성부터 가공, 최종 AI 모델 주입까지의 이동 경로 및 변환 이력 시각화 |
 | **거버넌스 (Governance)** | 접근 통제 (Access Control) | AI 에이전트의 데이터 쿼리 범위 및 권한을 제어하여 기밀 정보 유출 차단 |

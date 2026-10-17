@@ -79,15 +79,15 @@ flowchart TD
 
 ### 가. 클라우드 네이티브(MSA) 환경에서의 ATAM 활용 방안 및 동향
 
-| 구분 | [[MSA (Micro Service Architecture)|MSA]] 설계 시 주요 Trade-off (상충점) | ATAM 기반 아키텍처 의사결정 방안 |
+| 구분 | [[MSA (Micro Service Architecture)\|MSA]] 설계 시 주요 Trade-off (상충점) | ATAM 기반 아키텍처 의사결정 방안 |
 | --- | --- | --- |
-| **데이터 일관성** | **강결합 정합성(ACID) vs [[HA(High Availability)|고가용성]]/성능** | Saga 패턴, Event Sourcing 적용에 따른 복잡도 증대(Risk)와 [[트랜잭션]] 성능(Sensitivity) 평가 |
+| **데이터 일관성** | **강결합 정합성(ACID) vs [[HA(High Availability)\|고가용성]]/성능** | Saga 패턴, Event Sourcing 적용에 따른 복잡도 증대(Risk)와 [[트랜잭션]] 성능(Sensitivity) 평가 |
 | **서비스 분할** | **민첩성/확장성 vs 통신 오버헤드** | 서비스 분할 입도(Granularity) 설정 시 네트워크 지연시간 시나리오 기반 타당성 분석 |
 | **보안 및 접근 제어** | **Zero-Trust 보안 vs 응답 지연** | [[API Gateway]] 및 Service Mesh 도입 시 인증/인가 로직의 중앙화 대비 병목 현상 평가 |
 
 * **전망 및 동향**:
-* 모노리틱(Monolithic) 환경에서 ATAM은 주로 완성 전 아키텍처의 리스크 제거에 집중되었으나, 최근 클라우드 및 MSA 전환(Modernization) 프로젝트에서는 **기존 시스템 분할 모델의 타당성을 검증하고 분산 환경의 가용성/성능/보안 간의 타협점(Trade-off)을 찾는 최적의 프레임워크**로 적극 활용되고 있음.
-* 또한, [[CBAM]](경제성 평가)과 결합하여 아키텍처 리팩토링 및 클라우드 이전 비용 대비 비즈니스 ROI를 검증하는 모델로 확장 적용 중임.
+  * 모노리틱(Monolithic) 환경에서 ATAM은 주로 완성 전 아키텍처의 리스크 제거에 집중되었으나, 최근 클라우드 및 MSA 전환(Modernization) 프로젝트에서는 **기존 시스템 분할 모델의 타당성을 검증하고 분산 환경의 가용성/성능/보안 간의 타협점(Trade-off)을 찾는 최적의 프레임워크**로 적극 활용되고 있음.
+  * 또한, [[CBAM]](경제성 평가)과 결합하여 아키텍처 리팩토링 및 클라우드 이전 비용 대비 비즈니스 ROI를 검증하는 모델로 확장 적용 중임.
 
 ---
 
@@ -99,5 +99,5 @@ flowchart TD
   - [[SAAM]]
   - [[유틸리티 트리|유틸리티 트리 (Utility Tree)]]
   - [[CBAM|CBAM(Cost Benefit Analysis Method)]]
-  - [[SW 아키텍처 평가|SW 아키텍처 평가 (Software Architecture Evaluation)]]
+  - [[SW Architecture 평가|SW 아키텍처 평가 (Software Architecture Evaluation)]]
   - [[소프트웨어 품질 속성 시나리오]]

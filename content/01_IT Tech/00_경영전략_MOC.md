@@ -7,7 +7,7 @@ tags:
 
 # 📈 경영전략 MOC (Map of Content)
 
-> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **77개**  
+> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **75개**  
 > 경영 환경 분석 프레임워크, IT 거버넌스, 엔터프라이즈 아키텍처(EA), 비즈니스 혁신(BPR/DX), 기업 솔루션(ERP/CRM/SCM) 및 비즈니스 연속성(BCP)을 체계화한 전략 지도입니다.
 
 ---
@@ -33,12 +33,12 @@ flowchart TD
 - [[3C 4C 분석|3C  4C 분석]]
 - [[가치사슬|가치사슬(Value Chain)]]
 - [[가트너 2025 전략 기술|가트너 2025 전략 기술 (Gartner Top 10 Strategic Technology Trends for 2025)]]
+- [[가트너 2026 전략 기술|가트너 2026 전략 기술 (Gartner Top 10 Strategic Technology Trends for 2026)]]
 - [[고객여정지도|고객여정지도 (Customer Journey Map)]]
 - [[01_IT Tech/그로스 해킹|그로스 해킹(Growth hacking)]]
 - [[기술 부채|기술 부채]]
 - [[디지털 전환|디지털 전환(DX)]]
 - [[디지털 카르텔|디지털 카르텔]]
-- [[비즈니스 연속성 계획|비즈니스 연속성 계획]]
 - [[서비타이제이션|서비타이제이션(Servitization)]]
 - [[의도 경제|의도 경제(Intention Economy)]]
 - [[환경분석|환경분석]]
@@ -106,19 +106,17 @@ flowchart TD
 - [[ISO 22301|ISO 22301]]
 - [[IT Compliance|IT-Compliance]]
 
-### 4. 기업 핵심 정보시스템 (ERP · CRM · SCM) (3)
+### 4. 기업 핵심 정보시스템 (ERP · CRM · SCM) (2)
 
 > ERP, CRM(고객관계관리), SCM(공급망관리), EAI/ESB 연계, EDI, 지식관리시스템(KMS), CALS, SI 사업
 
 - [[정보시스템 하드웨어 규모산정 지침|정보시스템 하드웨어 규모산정 지침]]
 - [[KMS|KMS]]
-- [[SOS랩 (Solution in Our Society Lab)|SOS랩 (Solution in Our Society Lab)]]
 
-### 5. IT 투자 성과 평가 & 비즈니스 연속성 계획 (BCP) (9)
+### 5. IT 투자 성과 평가 & 비즈니스 연속성 계획 (BCP) (8)
 
 > BSC, IT ROI, SLA/SLM, 비즈니스 연속성 계획(BCP), BIA, 재해복구시스템(DRS/DRP, RTO, RPO, DRaaS)
 
-- [[경제성 평가 기법|경제성 평가 기법]]
 - [[다중지역 A-A DRS|다중지역 A-A DRS]]
 - [[디지털 안전 3법|디지털 안전 3법]]
 - [[시빅 해킹|시빅 해킹(Civic Hacking)]]

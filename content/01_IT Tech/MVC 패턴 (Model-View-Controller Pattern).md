@@ -59,7 +59,7 @@ flowchart TB
 | **핵심 계층** | View (뷰) | - Model의 데이터를 바탕으로 사용자에게 시각적 인터페이스(HTML, [[JSON]] 등) 제공 |
 | **핵심 계층** | Controller (컨트롤러) | - 사용자의 입력을 해석하고, Model과 View 사이의 데이터 흐름을 중재하는 [[라우터]] 역할 |
 | **디자인 원칙** | Separation of Concerns | - 각 컴포넌트의 책임(관심사)을 명확히 분리하여 스파게티 코드 방지 및 [[모듈화]] 달성 |
-| **설계 패턴** | [[Observer (상태 변화 통지)|Observer]] Pattern | - Model의 상태 변화 발생 시, 이를 구독하고 있는 View에 즉각적으로 통지 (Active MVC) |
+| **설계 패턴** | [[Observer (상태 변화 통지)\|Observer]] Pattern | - Model의 상태 변화 발생 시, 이를 구독하고 있는 View에 즉각적으로 통지 (Active MVC) |
 | **웹 확장 (Spring)** | Front Controller | - DispatcherServlet과 같이 모든 클라이언트 요청을 단일 진입점에서 중앙 집중적으로 처리 |
 | **웹 확장 (Spring)** | View Resolver | - Controller가 반환한 논리적 뷰 이름을 실제 뷰(JSP, Thymeleaf 등) 물리 파일로 매핑 |
 | **객체 전달** | DTO / VO | - 계층 간(Layer) 의존성을 낮추기 위해 데이터 교환용으로 사용하는 순수 데이터 전송 객체 |
@@ -70,7 +70,7 @@ flowchart TB
 
 ### 가. UI 아키텍처 패턴의 진화 (MVC vs MVP vs MVVM)
 
-| 비교 항목 | MVC (Model-View-Controller) | [[01_IT Tech/MVP]] (Model-View-Presenter) | [[MVVM (Model, View, View Model)|MVVM]] (Model-View-ViewModel) |
+| 비교 항목 | MVC (Model-View-Controller) | [[01_IT Tech/MVP]] (Model-View-Presenter) | [[MVVM (Model, View, View Model)\|MVVM]] (Model-View-ViewModel) |
 | --- | --- | --- | --- |
 | **매개자 역할** | **Controller** (요청 진입점) | **Presenter** (View와 1:1 대응) | **ViewModel** (View를 위한 상태 모델) |
 | **의존성([[결합도]])** | View와 Model 간 간접적 의존성 존재 가능 | View와 Model 완벽 분리 (Presenter가 중재) | View와 Model 완벽 분리 (ViewModel이 중재) |

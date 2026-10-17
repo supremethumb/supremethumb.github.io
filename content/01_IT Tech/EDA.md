@@ -20,9 +20,7 @@ tags:
       
     
 - **특징**: 서비스 간 느슨한 결합(Loose Coupling), 비동기 통신(Asynchronous), 높은 확장성(Scalability) 및 탄력성, 실시간 스트리밍 데이터 처리 용이
-    
-      
-    
+
 
 ---
 
@@ -55,9 +53,7 @@ flowchart LR
 ```
 
 - 이벤트 생성자(Producer)가 이벤트를 발생시키면, 브로커(Broker)가 이를 적절한 큐/토픽에 라우팅 및 보관하고 구독자(Consumer)가 비동기적으로 가져가(Pull/Push) 처리하는 구조
-    
-      
-    
+
 
 ### 나. EDA의 핵심 기술 요소
 

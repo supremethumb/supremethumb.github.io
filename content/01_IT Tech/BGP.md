@@ -3,83 +3,82 @@ title: BGP(Border Gateway Protocol)
 date: 2026-04-22
 tags:
   - 네트워크
+aliases:
+  - Border Gateway Protocol
 ---
-# BGP(Border Gateway Protocol)
-
----
-
-## I. 인터넷 자율 시스템(AS) 간 정책 기반 경로 제어, BGP의 개요
-
-* **정의**: 서로 다른 자율 시스템(AS, Autonomous System) 간에 경로 도달 가능성(Reachability) 정보와 경로 속성(Path Attributes)을 교환하는 [[TCP]](포트 179) 기반의 외부 [[게이트웨이]] 라우팅 [[프로토콜]](EGP)
-* **필요성/특징**:
-* **Path Vector 기반**: 최단 홉 카운트 대신 AS-Path 목록을 전달하여 라우팅 루프 원천 차단
-* **정책 기반 라우팅(Policy-Based Routing)**: 대역폭/지연시간이 아닌 조직의 상업적 계약 및 트래픽 엔지니어링 정책 우선 적용
-* **안정적 [[신뢰성]]**: 전송 계층으로 TCP 179번 포트를 사용하여 [[세션]] 수립 및 Keepalive를 통한 세션 유지
-
-
+# BGP (Border Gateway Protocol)
 
 ---
 
-## II. BGP의 개념도 및 핵심 기술 요소
+## I. 인터넷을 하나로 묶는 AS 간 라우팅, BGP의 개요
 
-### 가. BGP의 구성도 및 동작 원리
+### 가. 정의
+
+- 서로 다른 자율 시스템(AS) 사이에서 **목적지 도달 정보(NLRI)와 경로 속성을 교환하고, 정책에 따라 최적 경로를 선택**하는 경로 벡터 방식의 외부 라우팅 [[프로토콜]] (BGP-4, RFC 4271)
+
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 경로 벡터 | 경로가 거쳐 온 AS 목록(AS_PATH)을 전달, 자기 AS 번호가 있으면 폐기해 루프 방지 |
+| 정책 기반 | 속도·홉 수보다 사업자 간 계약·운영 정책으로 경로 선택 |
+| [[TCP]] 179 | TCP 세션 위에서 동작, 신뢰성은 TCP에 위임 |
+| 증분 갱신 | 최초 전체 교환 후 변경분만 UPDATE로 전송 |
+| 대규모 | 인터넷 전체 경로(IPv4 약 100만 개) 처리 |
+
+---
+
+## II. 구조 및 구성요소
+
+### 가. eBGP · iBGP 구성
 
 ```mermaid
 flowchart LR
-    subgraph AS100["AS 100 (Enterprise / ISP A)"]
-        R1["iBGP Router 1"]
-        R2["eBGP Border Router 1"]
-        R1 <--"iBGP (TCP 179)<br/>Full-Mesh / Route Reflector"--> R2
+    subgraph AS100["AS 100"]
+        R1["내부 라우터"] <-- "iBGP<br/>(Full-Mesh 또는 RR)" --> R2["경계 라우터"]
     end
-
-    subgraph AS200["AS 200 (Transit ISP B)"]
-        R3["eBGP Border Router 2"]
-        R4["iBGP Router 3"]
-        R3 <--"iBGP (TCP 179)"--> R4
+    subgraph AS200["AS 200"]
+        R3["경계 라우터"] <-- "iBGP" --> R4["내부 라우터"]
     end
-
-    R2 <=="eBGP Session (TCP 179)<br/>AS-Path, Next-Hop, MED, Local Pref"==> R3
-
-    classDef as fill:#f8f9fa,stroke:#333,stroke-width:1px;
-    classDef router fill:#e9ecef,stroke:#495057,stroke-width:1px;
-    class AS100,AS200 as;
-    class R1,R2,R3,R4 router;
-
+    R2 <== "eBGP (TCP 179)<br/>AS_PATH · NEXT_HOP · MED" ==> R3
 ```
 
-* **동작 흐름**: TCP 3-Way Handshake $\rightarrow$ Open $\rightarrow$ Keepalive 메시지를 통한 피어링 세션 성립 후 Update 메시지로 NLRI(Network Layer Reachability Information) 및 경로 속성 증분 교환
+- TCP 연결 → OPEN 교환 → KEEPALIVE로 Established 상태가 되면 UPDATE로 경로와 속성을 교환
 
-### 나. BGP의 핵심 기술 및 구성 요소
+### 나. 구성요소
 
-| 구분 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **운영 방식** | **eBGP (External BGP)** | 서로 다른 AS 간 [[라우터]] 간 피어링(기본 TTL=1), AS-Path 속성에 자가 AS 추가 |
-| **운영 방식** | **iBGP (Internal BGP)** | 동일 AS 내부 라우터 간 피어링(Loopback IP 기반 권장), 수신 경로 재광고 제한(루프 방지) |
-| **스케일링** | **Route Reflector (RR)** | iBGP의 Full-Mesh 요구 한계($N(N-1)/2$) 극복을 위한 대표 반사 라우터(RFC 4456) |
-| **스케일링** | **BGP Confederation** | 대규모 단일 AS를 내부 서브 AS(자율 시스템) 구조로 분할하여 확장성 확보 |
-| **경로 속성** | **AS-Path / Next-Hop** | 목적지까지 거쳐간 AS 목록(루프 방지 및 최단 AS 선택) / 패킷을 전달할 다음 홉 IP |
-| **경로 속성** | **Local Preference** | AS 내부 트래픽이 외부로 나가는 출구 경로를 결정하는 최우선 표준 속성(높을수록 우선) |
-| **경로 속성** | **MED (Metric)** | 인접 AS 트래픽이 자가 AS로 들어오는 입구 경로를 유도하는 비필수 속성(낮을수록 우선) |
-| **보안 기술** | **RPKI (Resource PKI)** | 라우트 하이재킹 방지를 위해 IP 접두부와 원점 AS 번호의 유효성을 검증하는 ROA 서명 체계 |
+| 메시지 | OPEN · UPDATE · KEEPALIVE · NOTIFICATION | 세션 수립, 경로 광고·철회, 세션 유지, 오류 통보 |
+| 피어링 | eBGP | 다른 AS 간, 보통 직접 연결 (TTL 1) |
+| | iBGP | 같은 AS 내부, iBGP로 받은 경로는 다른 iBGP 피어에 재광고하지 않음 |
+| 확장 | Route Reflector | iBGP Full-Mesh(n(n-1)/2 세션) 부담 해소 (RFC 4456) |
+| | Confederation | 큰 AS를 하위 AS로 분할 |
+| 경로 속성 | AS_PATH · NEXT_HOP | 거쳐 온 AS 목록, 다음 홉 주소 |
+| | LOCAL_PREF | AS에서 나가는 출구 선택, 높을수록 우선 (AS 내부 전파) |
+| | MED | 인접 AS에 들어오는 입구 선호 전달, 낮을수록 우선 |
+| | Community | 경로에 태그를 붙여 정책 일괄 적용 |
+| 보안 | RPKI · ROA | 접두사와 원천 AS의 정당성 검증 (Route Origin Validation) |
 
 ---
 
-## III. BGP와 IGP(OSPF) 비교 및 보안 동향
+## III. 비교 및 동향
 
-### 가. BGP vs OSPF 비교
+### 가. BGP vs OSPF
 
-| 비교 항목 | BGP (Border Gateway Protocol) | OSPF (Open Shortest Path First) |
+| 비교 항목 | BGP | OSPF |
 | --- | --- | --- |
-| **프로토콜 범주** | EGP (Exterior Gateway Protocol) | IGP (Interior Gateway Protocol) |
-| **[[알고리즘]]** | Path-Vector (경로 벡터) | Link-State ([[다익스트라 알고리즘|Dijkstra]] SPF) |
-| **동작 계층** | [[전송 계층]] 상위 (TCP 포트 179) | [[네트워크 계층]] (IP 프로토콜 89) |
-| **경로 결정 기준** | 관리자 정의 정책(Policy) 및 BGP 속성 우선순위 | 링크 코스트(Cost, 대역폭 기반 수치 메트릭) |
-| **수렴 속도/규모** | 수렴 속도 느림(대규모 글로벌 확장성 보장) | 수렴 속도 빠름(AS 내부 규모에 국한) |
+| 범주 | EGP (AS 간) | IGP (AS 내부) |
+| 알고리즘 | 경로 벡터 | 링크 상태 ([[다익스트라 알고리즘\|Dijkstra]]) |
+| 전송 | TCP 179 | IP 프로토콜 번호 89 |
+| 경로 선택 | 속성과 정책 | 링크 비용(Cost) |
+| 수렴 · 규모 | 느림, 인터넷 규모 | 빠름, AS 내부 규모 |
 
-### 나. 한계점 및 보안 최신 동향
+### 나. 동향
 
-* **BGP Hijacking / Route Leak 취약성**: 경로 정보 무단 위조 및 잘못된 광고로 인한 글로벌 트래픽 탈취 위험 상존
-* **BGPsec 및 ASPA 도입**: RPKI를 통한 ROA(Route Origin Authorization) 적용 확대 및 AS 전송 경로 위변조를 검증하는 ASPA(Autonomous System Provider Authorization) 기반 제로트러스트 라우팅 고도화 진행 중
+- **경로 보안**: 하이재킹·Route Leak 대응으로 RPKI ROV 확산, AS 경로 검증용 ASPA 표준화, BGPsec은 보급 저조
+- **데이터센터 활용**: Spine-Leaf 언더레이 라우팅과 EVPN 컨트롤 플레인으로 BGP 사용 (RFC 7938)
+- **MANRS**: 사업자 간 라우팅 보안 실천 규범 확산
 
 ---
 
@@ -88,8 +87,8 @@ flowchart LR
 - **소속 도메인**: [[00_네트워크_MOC|🌐 네트워크]]
 - **세부 분류**: `1. OSI 7계층 & 데이터링크 계층 (L1/L2)`
 - **핵심 연관 토픽**:
-  - [[네트워크 계층|네트워크 계층 (Network Layer)]]
+  - [[Routing Protocol]]
+  - [[링크 상태 알고리즘]]
+  - [[거리 벡터 알고리즘]]
   - [[라우터]]
-  - [[신뢰성]]
-  - [[프로토콜]]
-  - [[TCP]]
+  - [[네트워크 계층|네트워크 계층 (Network Layer)]]

@@ -3,91 +3,81 @@ title: PACELC
 date: 2026-04-22
 tags:
   - 데이터베이스
+aliases:
+  - NoSQL 품질속성 PACELC
+  - PACELC 이론
 ---
 # PACELC
 
 ---
 
-## I. CAP 이론의 한계 극복, PACELC 모델의 개요
+## I. 장애 시와 평상시의 선택, PACELC의 개요
 
-### 가. PACELC 모델의 정의
+### 가. 정의
 
-* 분산 시스템 환경에서 네트워크 단절(Partition) 시 [[HA(High Availability)|가용성]](A)과 일관성(C)의 선택뿐만 아니라, 정상 상태(Else)에서의 지연시간(L)과 일관성(C) 간의 트레이드오프(Trade-off)를 정의한 아키텍처 평가 모델
-* 예일대 다니엘 아바디(Daniel Abadi) 교수가 CAP 이론의 불완전성(장애 상황에 국한됨)을 보완하기 위해 제안한 [[데이터베이스]] 품질 속성 기준
+- 분산 시스템에서 **네트워크 분할(P) 시에는 가용성(A)과 일관성(C) 중, 정상 상태(Else)에서는 지연시간(L)과 일관성(C) 중 무엇을 우선하는지로 시스템을 분류하는 모델** (Daniel Abadi, 2010 제안·2012 논문)
 
-### 나. PACELC 모델의 등장배경 및 핵심 특징
+### 나. 특징
 
-* **CAP 이론의 한계**: 실제 클라우드 환경에서 네트워크 [[파티셔닝|파티션]](P)은 드물게 발생하나, 정상 상태(E)에서의 응답 지연(Latency) 문제에 대한 설명 부재
-* **정상 상태 성능 평가**: 네트워크가 정상(Else)일 때 데이터 동기화로 인한 지연시간(Latency)과 정합성(Consistency) 간의 명확한 선택 기준 제공
-* **글로벌 스케일 설계 지침**: 다중 리전(Multi-Region) 분산 DB 환경에서 애플리케이션 요구사항에 맞춘 정밀한 [[NoSQL (CAP 이론 BASE 속성)|NoSQL]] 분류 체계 확보
+| 구분 | 내용 |
+| --- | --- |
+| CAP 보완 | CAP는 분할 상황만 설명, 평상시 복제 지연의 트레이드오프 누락 |
+| 평상시 기준 | 동기 복제(일관성) vs 비동기 복제(저지연) |
+| 분류 | PA/EL, PA/EC, PC/EL, PC/EC |
+| 설계 지침 | 업무 중요도에 맞는 DB·일관성 수준 선택 근거 |
 
 ---
 
-## II. PACELC 모델의 개념도 및 핵심 구성 요소
+## II. 분류 구조 및 구성요소
 
-### 가. PACELC 모델의 개념도 및 동작 원리
+### 가. 판단 흐름
 
 ```mermaid
-flowchart TD
-    Start{"네트워크 파티션(P) <br/>발생 여부"}
-    
-    Start -- "Yes (Partition)" --> P_Choice{"어떤 속성을 <br/>우선할 것인가?"}
-    Start -- "No (Else, 정상상태)" --> E_Choice{"어떤 속성을 <br/>우선할 것인가?"}
-    
-    P_Choice -- "가용성(Availability)" --> PA["PA (Partition-Availability)"]
-    P_Choice -- "일관성(Consistency)" --> PC["PC (Partition-Consistency)"]
-    
-    E_Choice -- "지연시간(Latency 최소화)" --> EL["EL (Else-Latency)"]
-    E_Choice -- "일관성(Consistency 보장)" --> EC["EC (Else-Consistency)"]
-    
-    PA -.-> PA_EL["PA/EL 모델<br/>(Cassandra, DynamoDB)"]
-    PA -.-> PA_EC["PA/EC 모델<br/>(MongoDB, Hazelcast)"]
-    
-    PC -.-> PC_EC["PC/EC 모델<br/>(HBase, BigTable)"]
-    PC -.-> PC_EL["PC/EL 모델<br/>(PNUTS)"]
-    
-    EL -.-> PA_EL
-    EL -.-> PC_EL
-    EC -.-> PA_EC
-    EC -.-> PC_EC
-
+flowchart TB
+    S{"네트워크 분할(P)?"}
+    S -->|"예"| P{"A 또는 C"}
+    S -->|"아니오 (Else)"| E{"L 또는 C"}
+    P -->|"가용성 우선"| PA["PA"]
+    P -->|"일관성 우선"| PC["PC"]
+    E -->|"지연시간 우선"| EL["EL"]
+    E -->|"일관성 우선"| EC["EC"]
 ```
 
-* 네트워크 분할(P) 시 A와 C 중 하나를 선택하고, 분할되지 않은 평상시(E)에는 L과 C 중 우선순위를 선택하여 전체 분산 시스템의 아키텍처를 결정함
-* 분산 데이터베이스의 데이터 복제(Replication) 전략과 동기/비동기 쓰기 방식을 결정하는 핵심 기준임
+- 분할 시 선택(PA·PC)과 평상시 선택(EL·EC)의 조합으로 시스템 유형을 표기
 
-### 나. PACELC 모델의 핵심 기술 및 구성 요소
+### 나. 구성요소
 
-| 구분 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **P 상황 속성** | **P (Partition)** | 클러스터 내 노드 간 통신 단절(네트워크 파티션) 상태 |
-| **P 상황 속성** | **A (Availability)** | P 상황 시 일관성이 깨지더라도 즉각적인 응답(가용성)을 보장 |
-| **P 상황 속성** | **C (Consistency)** | P 상황 시 데이터 정합성을 위해 일시적으로 응답 불가 상태 허용 |
-| **E 상황 속성** | **E (Else)** | 네트워크 통신 장애가 없는 정상적인 시스템 운영 상태 |
-| **E 상황 속성** | **L (Latency)** | E 상황 시 빠른 응답(저지연)을 위해 비동기식 복제 적용 (성능 우선) |
-| **E 상황 속성** | **C (Consistency)** | E 상황 시 완벽한 데이터 정합성을 위해 동기식 복제 적용 (정합성 우선) |
-| **아키텍처 모델** | **PA/EL 모델** | P 시 가용성 보장, E 시 저지연 보장 (예: DynamoDB, Cassandra) |
-| **아키텍처 모델** | **PC/EC 모델** | P와 E 상황 모두 데이터 일관성 최우선 보장 (예: HBase, BigTable) |
-| **아키텍처 모델** | **PA/EC 모델** | P 시 가용성 보장, E 시 일관성 최우선 보장 (예: MongoDB) |
+| 분할 시 | P (Partition) | 노드 간 통신 단절 |
+| | A (Availability) | 불일치를 감수하고 응답 |
+| | C (Consistency) | 일관성을 위해 일부 요청 거부·대기 |
+| 평상시 | E (Else) | 장애 없는 정상 상태 |
+| | L (Latency) | 비동기 복제로 빠른 응답 |
+| | C (Consistency) | 동기 복제·합의로 일관된 응답 |
+| 유형 | PA/EL | Cassandra, DynamoDB (기본 설정) |
+| | PA/EC | MongoDB (Abadi 분류) |
+| | PC/EL | Yahoo PNUTS |
+| | PC/EC | HBase, BigTable, Spanner, [[CockroachDB]] 등 분산 SQL |
 
 ---
 
-## III. PACELC 모델과 CAP 이론 비교 및 향후 전망
+## III. 비교 및 동향
 
-### 가. 분산 시스템 품질 속성 CAP과 PACELC 비교
+### 가. CAP vs PACELC
 
-| 비교 항목 | CAP 이론 | PACELC 모델 |
+| 비교 항목 | CAP | PACELC |
 | --- | --- | --- |
-| **평가 관점** | 장애 상황(네트워크 단절) 국한 | 장애 상황(P) + 정상 상황(E) 통합 고려 |
-| **선택 기준** | 파티션 발생 시 A와 C 중 택 1 | 파티션 시 A vs C / 정상 시 L vs C |
-| **성능(응답) 속성** | 가용성(A)으로만 표현됨 | 정상 시의 지연시간(Latency) 개념 구체화 |
-| **NoSQL 분류력** | CP, AP, CA (분류의 한계 및 모호성 존재) | PA/EL, PC/EC, PA/EC, PC/EL (정밀한 분류 체계 제공) |
+| 관점 | 분할 상황만 | 분할 + 정상 상황 |
+| 선택 | A vs C | (A vs C) + (L vs C) |
+| 성능 표현 | 없음 | 지연시간을 명시적 고려 |
+| 분류 | CP, AP | PA/EL, PA/EC, PC/EL, PC/EC |
 
-### 나. PACELC 기반 NoSQL 최신 트렌드 및 시사점
+### 나. 동향
 
-* **튜너블 컨시스턴시(Tunable Consistency)**: 애플리케이션 요구사항에 따라 L(Latency)과 C(Consistency)의 강도를 동적으로 조절할 수 있는 유연한 설정 지원 (예: Azure Cosmos DB의 [[PMBOK 프로세스 그룹 (5단계)|5단계]] 일관성 수준 제공)
-* **[[New SQL|NewSQL]]의 부상**: PACELC의 한계를 극복하고 글로벌 스케일에서 완벽한 일관성(C)과 지연시간(L) 최소화를 동시에 달성하기 위해 원자시계(TrueTime) 등을 활용한 Google Spanner 중심의 분산 관계형 데이터베이스(NewSQL) 확산
-* **멀티 리전(Multi-Region) 아키텍처 최적화**: [[클라우드 네이티브]] 환경 설계 시 비즈니스 크리티컬리티(금융/결제=PC/EC, 로그/SNS 피드=PA/EL)에 따른 적정 NoSQL 엔진 도입 및 분산 아키텍처 설계 필수
+- **조정 가능한 일관성**: Cassandra 일관성 레벨, Azure Cosmos DB 5단계 일관성으로 요청별 L–C 선택
+- **분산 SQL의 선택**: Spanner·[[New SQL|NewSQL]]은 PC/EC를 택하고 TrueTime·리더 배치로 지연을 줄임 (트레이드오프 자체는 존재)
+- **업무별 설계**: 결제·원장은 PC/EC, 피드·로그·장바구니는 PA/EL 지향
 
 ---
 
@@ -97,7 +87,7 @@ flowchart TD
 - **세부 분류**: `3. 장애 회복 기법 & 데이터 무결성`
 - **핵심 연관 토픽**:
   - [[NoSQL (CAP 이론 BASE 속성)]]
-  - [[데이터베이스]]
-  - [[파티셔닝|파티션]]
-  - [[New SQL]]
   - [[분산 데이터베이스|분산 데이터베이스 (Distributed Database)]]
+  - [[New SQL]]
+  - [[CockroachDB|CockroachDB(코크로치DB)]]
+  - [[합의 알고리즘]]

@@ -3,83 +3,75 @@ title: ICMP
 date: 2026-04-13
 tags:
   - 네트워크
+aliases:
+  - Internet Control Message Protocol
 ---
 # ICMP (Internet Control Message Protocol)
 
 ---
 
-## I. IP 통신의 신뢰성을 보완하는 네트워크 제어 및 에러 보고 표준, ICMP의 개요
+## I. IP의 오류를 알려주는 전령, ICMP의 개요
 
-* **정의**: 신뢰성을 보장하지 않는(Unreliable) IP 프로토콜을 보완하기 위해, [[네트워크 계층]](L3)에서 라우터나 호스트 간에 패킷 전송 중 발생하는 에러 상황을 보고하고 네트워크 상태를 진단(Query)하는 [[프로토콜]] (RFC 792)
-* **필요성 및 주요 특징**:
-* **에러 보고 및 진단**: 데이터그램 전송 실패 시 송신자에게 원인(예: 목적지 도달 불가, TTL 만료)을 알려주며, Ping이나 Traceroute 같은 네트워크 진단 도구의 핵심 메커니즘으로 동작
-* **IP 데이터그램 [[캡슐화]]**: [[TCP]]/UDP와 같은 상위 계층(L4) 프로토콜처럼 동작하지만, 포트 번호 없이 IP 패킷의 페이로드(데이터 영역)에 캡슐화되어 전송됨 (Protocol ID = 1)
-* **상태 비저장(Stateless)**: ICMP 메시지 자체에 대한 응답이나 [[신뢰성]] 검증은 수행하지 않으며, 에러 메시지에 대한 에러 메시지는 무한 루프 방지를 위해 생성하지 않음
+### 가. 정의
 
+- 신뢰성을 보장하지 않는 IP를 보완해 **전달 과정의 오류를 송신자에게 보고하고 네트워크 상태를 진단(질의)하는** [[네트워크 계층]] 제어 [[프로토콜]] (RFC 792)
 
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 오류 보고 | 목적지 도달 불가, TTL 초과, 단편화 필요 등 폐기 사유 통지 |
+| 진단 | ping(Echo), traceroute(TTL 초과 응답) 기반 |
+| IP 캡슐화 | IP 페이로드로 전송 (IPv4 프로토콜 번호 1), 포트 없음 |
+| 오류 처리 한계 | 오류를 보고만 하고 복구는 상위 계층 담당 |
+| 루프 방지 | ICMP 오류 메시지·브로드캐스트·비첫 조각에 대해서는 오류 메시지를 만들지 않음 |
 
 ---
 
-## II. ICMP의 개념도 및 핵심 기술 요소
+## II. 동작 구조 및 구성요소
 
-### 가. ICMP 에러 보고 메커니즘 개념도
+### 가. 오류 보고 흐름
 
 ```mermaid
 flowchart LR
-    subgraph Source_Net ["송신 네트워크"]
-        HostA["Host A<br/>(송신자)"]
-    end
-
-    subgraph Transit_Net ["전송 인프라"]
-        direction LR
-        Router1["Router 1"]
-        Router2["Router 2<br/>(장애 발생 지점)"]
-        Router1 -->|1. IP 패킷 전송| Router2
-    end
-
-    subgraph Dest_Net ["수신 네트워크"]
-        HostB["Host B<br/>(목적지)"]
-    end
-
-    HostA --> Router1
-    Router2 -. "2. 라우팅 테이블 누락 또는 TTL=0" .-> Drop((패킷 폐기))
-    Router2 ===>|"3. ICMP Error Message 회신<br/>(Destination Unreachable 등)"| HostA
-    Router2 ~~~ HostB
-
+    A["Host A<br/>(송신자)"] --> R1["Router 1"] -- "1. IP 패킷" --> R2["Router 2"]
+    R2 -. "2. 경로 없음 또는 TTL 0" .-> D(("패킷 폐기"))
+    R2 == "3. ICMP 오류 회신<br/>(원 패킷 헤더 + 8바이트 포함)" ==> A
 ```
 
-* 송신자(Host A)가 보낸 IP 패킷이 네트워크 인프라(Router 2)를 통과하던 중 문제가 발생하여 폐기(Drop)되면, 해당 라우터는 송신자에게 실패 사유를 담은 ICMP 에러 메시지를 회신함
+- 패킷을 폐기한 라우터나 목적지가 원 패킷의 헤더 일부를 담아 송신자에게 사유를 알림
 
-### 나. ICMP의 주요 메시지 타입 및 구성 요소
+### 나. 주요 메시지
 
-| 구분 | Type 번호 (분류) | 세부 설명 및 주요 기능 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **질의 (Query)** | Type 0 (Echo Reply) | **Ping** 유틸리티의 응답 메시지. 송신자가 보낸 Type 8에 대해 목적지가 정상 수신했음을 회신 |
-| **질의 (Query)** | Type 8 (Echo Request) | 목적지 노드가 살아있는지(Reachability) 확인하기 위해 송신자가 보내는 질의 메시지 |
-| **에러 (Error)** | Type 3 (Destination Unreachable) | 목적지 네트워크나 호스트, 포트에 도달할 수 없을 때 라우터나 수신측이 반환 (네트워크 단절, [[방화벽]] 차단 등) |
-| **에러 (Error)** | Type 5 (Redirect) | 현재 라우터보다 목적지로 향하는 더 짧고 최적화된 경로(다른 [[라우터]])가 있음을 송신자에게 안내 |
-| **에러 (Error)** | Type 11 (Time Exceeded) | 패킷의 수명(TTL: Time To Live)이 0이 되어 패킷이 폐기되었음을 알림. **Traceroute(경로 추적)** 명령어의 핵심 원리 |
-| **헤더 구조** | Type (1 Byte) | ICMP 메시지의 대분류 (에러인지, 질의인지, 그 종류는 무엇인지 정의) |
-| **헤더 구조** | Code (1 Byte) | Type에 대한 상세 사유 (예: Type 3 내에서 Code 0=Net Unreachable, Code 1=Host Unreachable 등) |
+| 질의 | Type 8 / 0 (Echo Request / Reply) | ping, 도달성·왕복 시간 확인 |
+| 오류 | Type 3 (Destination Unreachable) | 네트워크·호스트·포트 도달 불가 (Code로 세분) |
+| | Type 3 Code 4 (Fragmentation Needed) | DF 설정 패킷이 MTU 초과, Path MTU Discovery에 사용 |
+| | Type 11 (Time Exceeded) | TTL 0 도달, traceroute 원리 |
+| | Type 5 (Redirect) | 같은 서브넷의 더 나은 다음 홉 [[라우터]] 안내 |
+| | Type 12 (Parameter Problem) | 헤더 필드 오류 |
+| 헤더 | Type · Code · Checksum | 메시지 종류, 세부 사유, 오류 검출 |
 
 ---
 
-## III. 프로토콜 비교 및 최신 보안(SecOps) 동향
+## III. 비교 및 동향
 
-### 가. ICMPv4 와 ICMPv6 비교
+### 가. ICMPv4 vs ICMPv6
 
-| 비교 항목 | ICMPv4 ([[IPv4]] 환경) | ICMPv6 ([[IPv6]] 환경) |
+| 비교 항목 | ICMPv4 | ICMPv6 |
 | --- | --- | --- |
-| **기본 프로토콜 ID** | Protocol ID = 1 | Next Header = 58 |
-| **역할 및 범위** | 에러 보고 및 단순 네트워크 상태 진단 | 기존 ICMPv4 기능 + **[[ARP]], [[IGMP]] 기능까지 통합** 수행 |
-| **주소 해석 ([[MAC]] 찾기)** | 별도의 **ARP (Address Resolution Protocol)** 사용 | ICMPv6 내의 **NDP (Neighbor Discovery Protocol)**로 통합 대체 |
-| **멀티캐스트 관리** | 별도의 **IGMP** 프로토콜 사용 | ICMPv6 내의 **MLD (Multicast Listener Discovery)**로 통합 대체 |
-| **보안 강화** | 평문 전송 (보안 취약) | [[IP Sec|IPsec]] 적용이 기본 권장되어 메시지 위변조 방지 가능 |
+| 식별 | IPv4 Protocol 1 | IPv6 Next Header 58 |
+| 역할 | 오류 보고, 진단 | 오류 보고, 진단 + 이웃 탐색 + 멀티캐스트 관리 |
+| 주소 해석 | 별도 [[ARP]] | NDP (NS/NA) |
+| 멀티캐스트 관리 | 별도 [[IGMP]] | MLD |
+| 필터링 | 일부 차단 가능 | 필수 메시지 차단 시 IPv6 통신 불가 (RFC 4890) |
 
-### 나. ICMP 관련 최신 보안 위협 및 클라우드 운영 동향
+### 나. 동향
 
-* **[[DDOS|DDoS]] 공격의 단골 벡터**: 공격자가 출발지 IP를 희생자의 IP로 위조한 대량의 Ping Request를 브로드캐스트 주소로 보내어 막대한 응답이 희생자에게 쏟아지게 하는 **Smurf Attack**이나, 봇넷을 이용한 **ICMP Flooding** 등 네트워크 대역폭 고갈 공격에 자주 악용됨
-* **클라우드/제로 트러스트 환경의 Stealth 모드 (ICMP Drop)**: 전통적인 네트워크에서는 장애 진단을 위해 ICMP를 허용했으나, 최근 AWS, Azure 등 퍼블릭 클라우드 방화벽(Security Group)이나 엔터프라이즈 제로 트러스트 아키텍처에서는 정찰 공격(Port Scanning, Ping Sweep)을 막기 위해 모든 외부 ICMP 트래픽을 기본적으로 차단(Drop)하는 것이 표준 보안 프랙티스(Best Practice)로 자리 잡음. (필요 시 특정 모니터링 서버의 IP만 화이트리스트로 허용)
+- **공격 악용**: ICMP Flood, Smurf(브로드캐스트 증폭), Ping Sweep 정찰에 악용 → 속도 제한과 외부 Echo 제한 ([[DDOS|DDoS]])
+- **선별 허용**: 전면 차단 시 PMTUD 실패로 연결이 멈추는 문제(Black Hole)가 생기므로 Type 3·11 등 필수 메시지는 허용
+- **클라우드**: 보안 그룹 기본 정책은 인바운드 차단, 모니터링 대역만 Echo 허용
 
 ---
 
@@ -88,8 +80,8 @@ flowchart LR
 - **소속 도메인**: [[00_네트워크_MOC|🌐 네트워크]]
 - **세부 분류**: `1. OSI 7계층 & 데이터링크 계층 (L1/L2)`
 - **핵심 연관 토픽**:
+  - [[IP]]
+  - [[IGMP]]
+  - [[ARP]]
   - [[네트워크 계층|네트워크 계층 (Network Layer)]]
-  - [[IPv4]]
   - [[DDOS]]
-  - [[프로토콜]]
-  - [[라우터]]

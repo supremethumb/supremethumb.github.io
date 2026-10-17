@@ -10,17 +10,22 @@ aliases:
 
 # SOAR (Security Orchestration, Automation and Response)
 
-## I. Security 조치의 Automation, SOAR
+---
 
-|**구분**|**내용**|
-|---|---|
-|**정의**|SOA, SIRP, TIP 기반으로 보안위협 발생 시 전체 시스템 조율, 조치 자동화 보안 플랫폼|
-|**특징**|Orchestration, Automation, Response|
+## I. 보안 대응의 자동화, SOAR의 개요
+
+| **구분** | **내용** |
+| --- | --- |
+| **정의** | SOA·SIRP·TIP을 기반으로 보안 위협 발생 시 이기종 보안 솔루션을 조율(Orchestration)하고, 표준 대응 절차(Playbook)에 따라 조치를 자동화(Automation)하는 통합 보안 플랫폼 |
+| **특징** | Orchestration, Automation, Response |
+| **필요성** | - 보안 이벤트 급증에 따른 분석가 피로(Alert Fatigue)<br>- 반복 작업 자동화로 MTTR(평균 대응 시간) 단축<br>- SOC 업무 표준화 |
 
 ---
-## II. SOAR의 개념도 및 주요기능
+
+## II. SOAR의 개념도 및 주요 기능
 
 ### 가. SOAR의 개념도
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500" width="100%" height="auto" style="max-width: 680px; width: 100%; height: auto; display: block; margin: 1.5rem auto;">
   <defs>
     <marker id="soar-arrow-1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
@@ -63,21 +68,60 @@ aliases:
   <path d="M 460 435 L 190 435 L 190 371" fill="none" stroke="#4B5563" stroke-width="1.5" marker-end="url(#soar-arrow-1)"/>
 </svg>
 
-- 보안 관제/조치의 능률성 향상 목표
+```Plain Text
+   [ 외부 위협 정보 ]          [ 내부 보안 장비 (SIEM/FW/IPS) ]
+          |                             | (Alert/Log)
+          v                             v
+ +-----------------------------------------------------------+
+ |                       SOAR Platform                       |
+ |  +----------------+     +-------------------------------+ |
+ |  |      TIP       | --> |              SOA              | |
+ |  | (위협 인텔리전스) |     | (오케스트레이션 & 자동화, Playbook) | |
+ |  +----------------+     +-------------------------------+ |
+ |          ^                              | (Action)        |
+ |  +----------------+                     v                 |
+ |  |      SIRP      | <-- [ 사고 대응: IP 차단, 격리, 티켓 ]     |
+ |  | (사고 대응 관리)  |                                       |
+ |  +----------------+                                       |
+ +-----------------------------------------------------------+
+```
 
-### 나. SOAR의 주요기능
+- TIP이 위협 정보를 분석하고, SOA가 Playbook에 따라 자동 조치하며, SIRP가 사고 대응 전 과정을 관리 (SIT 구조)
 
-| **구분**            | **주요기능**        | **설 명**                      |
-| ----------------- | --------------- | ---------------------------- |
-| **Orchestration** | - [[SIEM]]<br>  | - 시스템 보안모듈<br>               |
-|                   | - [[EDR]]       | - 보안 탐지 및 전달                 |
-| **Automation**    | - Playbook<br>  | - 보안조치 발생시 Rule Based 대응<br> |
-|                   | - 연관자 통보        | - 보안 체계 기반 공유                |
-| **Response**      | - Filtering<br> | - 이상 패킷/트래픽<br>              |
-|                   | - Block         | - 조치, 처리                     |
-- 기업보안이 비즈니스 목표 달성에 중요하여 SOAR를 통한 효율적 보안관리 사례 증가
+### 나. 핵심 구성요소 (SIT)
+
+| **구성요소** | **설명** |
+| --- | --- |
+| **SOA** (Security Orchestration & Automation) | 이기종 보안 솔루션 연동, 반복 작업 자동화, Playbook 기반 워크플로우 |
+| **SIRP** (Security Incident Response Platform) | 사고 접수 → 대응 → 보고까지 수명주기 관리, 케이스 관리·협업 |
+| **TIP** (Threat Intelligence Platform) | 외부 위협 정보(IoC, 평판)를 수집해 내부 이벤트와 상관 분석 ([[CTI]]) |
+
+### 다. 주요 기능
+
+| **구분** | **주요 기능** | **설명** |
+| --- | --- | --- |
+| **Orchestration** | [[SIEM]] 연동 | 탐지 경보를 수신하여 대응 흐름 시작 |
+| | [[EDR(Endpoint Detection and Response)\|EDR]] 연동 | 단말 위협 탐지 정보 전달·격리 |
+| **Automation** | Playbook | 위협 유형별 Rule 기반 자동 대응 |
+| | 관련자 통보 | 보안 담당자·조직에 자동 공유 |
+| **Response** | Filtering | 이상 패킷·트래픽 차단 |
+| | Block | IP 차단, 계정 잠금 등 조치 |
+
 ---
-## III. SOAR 적용 고려 사항
+
+## III. SOAR와 SIEM 비교 및 적용 고려사항
+
+### 가. SIEM vs SOAR
+
+| 비교 항목 | [[SIEM]] (탐지 중심) | SOAR (대응 중심) |
+| --- | --- | --- |
+| 목적 | 로그 수집·상관 분석, 위협 탐지 | 대응 자동화, 절차 표준화, 협업 |
+| 핵심 기능 | 로그 중앙화, 경보 생성 | Playbook 실행, 오케스트레이션 |
+| 데이터 | 대용량 로그·이벤트 | 위협 인텔리전스, 사건(Case) 정보 |
+| 역할 | 위협 식별 (Identify) | 식별된 위협 대응 (Respond) |
+
+### 나. 적용 고려사항
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 170" width="100%" height="auto" style="max-width: 580px; width: 100%; height: auto; display: block; margin: 1.5rem auto;">
   <defs>
     <marker id="soar-arrow-2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
@@ -107,77 +151,9 @@ aliases:
   <text x="40" y="145" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#374151" text-anchor="start">자동처리 대응 향상</text>
 </svg>
 
-- SOAR 적용 전 보안 처리 정책 사전확인 필수
-
----
-
-## I. 보안 관제의 복잡성 해결 및 자동화, SOAR의 개요
-
-### 가. SOAR의 정의
-
-- 다양한 보안 위협에 대해 대응 수준을 자동으로 분류하고, 표준화된 업무 [[프로세스]](Playbook)에 따라 보안 담당자와 솔루션이 유기적으로 협력하여 대응을 **자동화(Automation)** 및 **오케스트레이션(Orchestration)**하는 통합 보안 플랫폼.
-- 기존 보안 관제의 한계(이벤트 과다, 분석 시간 소요)를 극복하기 위해 **SOC(Security Operation Center)** 업무를 최적화하는 기술.
-### 나. 필요성
-
-- **보안 위협 급증:** 수많은 보안 이벤트 발생으로 인한 분석가의 피로도(Alert Fatigue) 증가.
-- **대응 속도 향상:** 단순 반복적인 작업을 자동화하여 MTTR(평균 대응 시간) 단축 필요.
-
----
-
----
-
-## II. SOAR의 핵심 아키텍처 및 주요 기능
-
-### 가. SOAR 아키텍처 도식화 (차별화: 3대 요소 SIT의 유기적 연동 표현)
-
-```Plain Text
-       [ 외부 위협 정보 ]         [ 내부 보안 장비 (SIEM/FW/IPS) ]
-              |                             | (Alert/Log)
-              v                             v
-    +-------------------------------------------------------------+
-    |                         SOAR Platform                       |
-    |  +------------------+   +-------------------------------+   |
-    |  |       TIP        |-->|             SOA               |   |
-    |  | (위협 인텔리전스)|   | (오케스트레이션 & 자동화)     |   |
-    |  +------------------+   |  - Workflow / Playbook 실행   |   |
-    |          ^              +-------------------------------+   |
-    |          |                            | (Action)            |
-    |  +------------------+                 v                     |
-    |  |      SIRP        |<-- [ 사고 대응 (Response) ]           |
-    |  | (사고 대응 관리) |    - IP 차단, 격리, 티켓 생성     |   |
-    |  +------------------+                                       |
-    +-------------------------------------------------------------+
-```
-
-- **도식화 포인트:** **TIP**에서 위협 정보를 분석하고, **SOA**가 **Playbook**에 따라 자동화된 명령을 내리며, **SIRP**가 전체 사고 대응 프로세스를 관리하는 흐름을 **‘SIT (SOA, SIRP, TIP)’** 구조로 명확히 표현.
-### 나. 핵심 구성요소 (핵심 키워드: 소.시.티 / SIT)
-
-| 구성요소 | 상세 설명 |
-| --- | --- |
-| **SOA**<br>(Security Orchestration & Automation) | - 다양한 이기종 보안 솔루션을 연동(Orchestration)하고, 반복적인 작업을 자동화(Automation).<br>- **Playbook**: 대응 절차를 시나리오화한 워크플로우 적용. |
-| **SIRP**<br>(Security Incident Response Platform) | - 보안 사고의 접수부터 대응, 보고까지의 **전체 수명주기**를 관리.<br>- 협업 도구 및 케이스 관리(Case Management) 기능 제공. |
-| **TIP**<br>(Threat Intelligence Platform) | - 외부의 최신 위협 정보(IoC, 평판 정보 등)를 수집 및 분석하여 내부 이벤트와 상관 분석 수행. |
-
----
-
----
-
-## III. SOAR와 SIEM의 비교 및 연계
-
-### 가. SOAR와 SIEM 비교
-
-| 비교 항목 | [[SIEM]] (탐지 중심) | SOAR (대응 중심) |
-| --- | --- | --- |
-| **주요 목적** | 로그 수집, 상관 분석, **위협 탐지** | **대응 자동화**, 프로세스 표준화, 협업 |
-| **핵심 기능** | 로그 중앙화, 경고(Alert) 생성 | **Playbook** 실행, 워크플로우, 오케스트레이션 |
-| **데이터** | 대용량 로그 및 패킷 데이터 | 위협 인텔리전스, 사건(Case) 정보 |
-| **역할** | 위협을 **식별(Identify)**하는 도구 | 식별된 위협에 **대응(Respond)**하는 도구 |
-
-### 나. 활용 방안
-
-- **SIEM + SOAR 연동:** SIEM에서 탐지된 경보를 SOAR로 전달하여, SOAR가 Playbook에 따라 [[방화벽]] 차단 등 즉각적인 대응 수행.
-- **관제 효율화:** 단순 반복 업무는 SOAR가 자동 처리하고, 보안 전문가는 고도화된 위협 분석(Threat Hunting)에 집중.
-“끝”
+- **사전 정책 정립**: 자동화 전에 보안 처리 정책과 대응 절차를 먼저 정의해야 오탐에 의한 업무 중단 방지
+- **SIEM + SOAR 연동**: SIEM 경보를 SOAR가 받아 [[방화벽]] 차단 등 즉시 대응
+- **관제 효율화**: 반복 업무는 SOAR가 처리하고, 전문가는 [[위협 헌팅]] 등 고도화 분석에 집중
 
 ---
 

@@ -1,0 +1,82 @@
+﻿물리적 AI	Physical AI
+범용 인공지능	AGI
+비즈니스 연속성 계획	BCP
+BEC (Backward Error Correction)	FEC(Forward Error Correction) BEC(Backward Error Correction)
+자동재송요구	FEC(Forward Error Correction) BEC(Backward Error Correction)
+CAP 이론과 BASE 이론	NoSQL (CAP 이론 BASE 속성)
+NoSQL 품질속성 PACELC	PACELC
+가상물리시스템	CPS
+중앙처리장치	CPU
+순환중복검사	CRC
+사이트간 위조공격	CSRF
+크로스 사이트 스크립팅	XSS
+Design Pattern (23개 패턴)	디자인 패턴
+Digital Transformation	디지털 전환
+Diffie-Hellman 키 교환 (Diffie-Hellman Key Exchange)	디피-헬만 알고리즘
+Distance Vector Algorithm	거리 벡터 알고리즘
+Link State Algorithm	링크 상태 알고리즘
+밀도기반 클러스터링	DBSCAN(밀도 기반 클러스터링)
+파인 튜닝	Fine-Tuning
+인텐트 기반 네트워킹	IBN(Intent-Based Networking)
+IoT Matter	매터
+정보보호 및 개인정보보호 관리체계 인증	ISMS-P
+고립화 수준	Isolation Level (격리 레벨고립성 수준)
+마이크로 서비스 아키텍쳐	MSA (Micro Service Architecture)
+Network Neutrality	망 중립성
+오픈플로우	OpenFlow
+빅오 표기법	O-Notation (O-표기법)
+운영체제	OS(운영체제)
+옵티마이저	OPTIMIZER
+Optimization Algorithm	최적화 알고리즘
+머신러닝 옵티마이저	최적화 알고리즘
+프로세스 제어 블록	PCB(Process Control Block)
+Product Line (Software Product Line)	소프트웨어 프로덕트 라인
+Regression Test	리그레션 테스트
+스크럼	SCRUM
+Service Primitive	서비스 프리미티브
+싱글턴 패턴	Singleton (전역 인스턴스)
+소버린 AI	Sovereign AI (소버린 AI)
+SOS랩 (Solution in Our Society Lab)	리빙랩, S.O.S랩
+SW 아키텍처 평가	SW Architecture 평가
+서브네팅	Subnetting (서브네팅)
+Test Coverage	코드 커버리지
+테스트 커버리지	코드 커버리지
+Timestamp Ordering	타임스탬프 순서 기법
+가상메모리 관리기법	가상 메모리 관리 정책
+메모리 관리 정책	가상 메모리 관리 정책
+경제성 평가 기법	경제성 분석 기법
+데이터베이스 파티셔닝	파티셔닝
+메모리 단편화	단편화
+스케줄러	스케줄링
+CPU Scheduling	스케줄링
+쓰레드와 프로세스 비교	프로세스와 스레드 비교
+어텐션 매커니즘	어텐션 메커니즘
+포스트 양자 암호	양자내성암호
+폭포수 모델	워터폴
+인공지능 적대적 공격	적대적 공격
+접근 통제 모델	접근 제어 접근 통제
+카오스 테스트	카오스 엔지니어링
+카탈로그 시스템 카탈로그	시스템 카탈로그
+캐시 일관성 유지 기법	캐시 일관성
+회복기법	DB 회복기법
+DB 동시성제어	병행 제어
+생성형 인공지능 저작권 이슈 및 대응방안	생성형 인공지능 저작권
+UML Diagram 전체	UML
+Usecase diagram	유즈케이스 다이어그램
+거리함수	거리 공식
+확률분포와 확률 밀도 함수	확률분포
+통계적 가설검정	가설 검정
+추정통계	추정 이론
+SW난독화	난독화
+Network(3) 레이어	네트워크 계층
+Data Link(2) 레이어	데이터 링크 계층
+Transport(4) 레이어	전송 계층
+혼잡 제어	TCP 혼잡제어
+빅데이터 관련 정보화 사업에 대한 감리 수행	빅데이터 감리
+Public Cloud 배치 분류별 3가지	클라우드 컴퓨팅의 배치 모델 유형
+해싱과 충돌해결방법	해시 테이블
+정보시스템 감리 절차	공통감리 절차
+SW 사업대가 ('25년 개정판)	SW사업 대가산정 가이드
+IEEE 802.11bn (Wi-Fi 8 표준)	Wi-Fi 8
+Agile 선언문과 12개 원칙	애자일 선언문
+애자일 12개 원칙	애자일 선언문

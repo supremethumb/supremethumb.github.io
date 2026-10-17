@@ -19,8 +19,8 @@ tags:
 
 * **등장배경**: 개별 해커들의 개발 비용 및 기술 한계 극복, 기업화된 범죄 조직의 수익 극대화 및 역할 분담(전문화) 필요성 대두
 * **주요 특징**:
-* **제휴 모델(Affiliate Model)**: 개발자(Operator)와 실행자(Affiliate)가 협력하여 수익을 분배(보통 7:3 또는 8:2 비율)
-* **다중 협박(Multi-Extortion)**: 파일 암호화뿐만 아니라 데이터 유출, [[DDOS|DDoS]], 제3자 협박을 결합한 고도화된 갈취 전략
+  * **제휴 모델(Affiliate Model)**: 개발자(Operator)와 실행자(Affiliate)가 협력하여 수익을 분배(보통 7:3 또는 8:2 비율)
+  * **다중 협박(Multi-Extortion)**: 파일 암호화뿐만 아니라 데이터 유출, [[DDOS|DDoS]], 제3자 협박을 결합한 고도화된 갈취 전략
 
 
 
@@ -64,12 +64,12 @@ flowchart TD
 | --- | --- | --- |
 | **운영 모델** | **Affiliate Program** | 개발자(Operator)와 실행자(Affiliate)가 역할을 분담하고 서비스형 소프트웨어(SaaS) 형태로 범죄 수행 |
 | **초기 침투** | **IAB 연계 (Initial Access)** | 취약점 계정, RDP 무차별 대입, 악성 스피어 피싱 등을 통해 기업 내부망에 최초로 교두보를 확보 |
-| **우회 기술** | **Evasion Payload** | [[EDR(Endpoint Detection and Response)|EDR]] 및 백신 탐지를 회피하기 위해 안티 디버깅, 코드 [[난독화]], 드라이버 블랭킹(BYOVD) 적용 |
+| **우회 기술** | **Evasion Payload** | [[EDR(Endpoint Detection and Response)\|EDR]] 및 백신 탐지를 회피하기 위해 안티 디버깅, 코드 [[난독화]], 드라이버 블랭킹(BYOVD) 적용 |
 | **확산 기술** | **Lateral Movement** | 내부망 진입 후 권한 상승(Privilege Escalation) 및 액티브 디렉토리(AD) 장악을 통한 전사 확산 |
 | **협박 전략** | **Triple / Quad Extortion** | 암호화 + 데이터 유출 + 고객/파트너 협박 + DDoS 공격을 병행하여 지불 압박 극대화 |
 | **인프라** | **Tor & Crypto Mixing** | 추적을 차단하기 위해 Tor 네트워크 기반의 C2 서버 운영 및 가상자산 믹서(Mixer) 활용 |
 | **관리 도구** | **RaaS Control Panel** | 가입자 관리, 감염 통계, 피해자별 몸값 협상(Chat Portal)을 제공하는 웹 기반 대시보드 |
-| **방어 체계** | **[[XDR]] & [[SOAR (Security Orchestration, Automation and Response)|SOAR]] 연동** | 단말 이상 징후를 실시간 탐지하고, 격리(Isolation) 및 자동화된 플레이북으로 피해 확산 차단 |
+| **방어 체계** | **[[XDR]] & [[SOAR (Security Orchestration, Automation and Response)\|SOAR]] 연동** | 단말 이상 징후를 실시간 탐지하고, 격리(Isolation) 및 자동화된 플레이북으로 피해 확산 차단 |
 
 ---
 

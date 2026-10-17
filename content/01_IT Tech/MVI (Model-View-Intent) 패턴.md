@@ -20,9 +20,9 @@ aliases:
 
 * **등장배경**: 기존 [[MVVM (Model, View, View Model)|MVVM]] 아키텍처에서 다수의 데이터 스트림(LiveData/Flow) 운영 시 발생하는 상태 충돌(State Overlap) 및 의도치 않은 부수 효과(Side Effect) 제어의 어려움 극복
 * **특징**:
-* **엄격한 단방향 흐름**: 데이터가 반드시 Intent → Model → View의 한 방향으로만 순환함
-* **단일 진실 공급원(SSOT)**: 화면의 모든 상태를 하나의 불변 객체(State)로 통합 관리함
-* **선언형 UI 최적화**: Jetpack Compose, SwiftUI 등 모던 프론트엔드 프레임워크와 높은 시너지 창출
+  * **엄격한 단방향 흐름**: 데이터가 반드시 Intent → Model → View의 한 방향으로만 순환함
+  * **단일 진실 공급원(SSOT)**: 화면의 모든 상태를 하나의 불변 객체(State)로 통합 관리함
+  * **선언형 UI 최적화**: Jetpack Compose, SwiftUI 등 모던 프론트엔드 프레임워크와 높은 시너지 창출
 
 
 

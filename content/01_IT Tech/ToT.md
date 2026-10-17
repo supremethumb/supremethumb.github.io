@@ -49,7 +49,7 @@ flowchart TB
 | 탐색 [[알고리즘]] | 너비/깊이 우선 탐색 (BFS / DFS) | 트리의 노드를 체계적으로 순회하며 해결 가능성을 검증하는 탐색 제어 |
 | 제어 기법 | 백트래킹 (Backtracking) | 잘못된 추론이나 막힌 경로 발견 시 이전 상태로 돌아가 다른 경로를 탐색 |
 | 확장 기법 | 몬테카를로 트리 탐색 (MCTS) | 시뮬레이션 기반 확률적 트리 탐색을 결합하여 추론 성능 극대화 |
-| 진화 모델 | Graph of Thoughts ([[Graph of Thought (GoT)|GoT]]) | 트리를 넘어 생각 간의 순환, 병합 및 분할이 가능한 그래프 구조로 확장 |
+| 진화 모델 | Graph of Thoughts ([[Graph of Thought (GoT)\|GoT]]) | 트리를 넘어 생각 간의 순환, 병합 및 분할이 가능한 그래프 구조로 확장 |
 | 최신 적용 | 추론 시간 연산 (Inference-time Compute) | 최신 추론 모델(OpenAI o1/o3 등)의 내부 탐색 및 검증 메커니즘으로 활용 |
 
 ---

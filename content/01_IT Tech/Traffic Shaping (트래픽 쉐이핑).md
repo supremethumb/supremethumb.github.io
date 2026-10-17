@@ -42,22 +42,22 @@ flowchart TB
 | 제어 알고리즘 | 리키 버킷 (Leaky Bucket) | 물이 일정한 속도로 떨어지듯 트래픽을 일정한 속도로 균등하게 출력 |
 | 제어 알고리즘 | 토큰 버킷 (Token Bucket) | 일정 수준의 버스트 트래픽을 허용하면서 평균 전송률을 규제 |
 | 큐잉 방식 | CBQ (Class-Based Queuing) | 트래픽을 클래스별로 분류하고 등급에 따라 대역폭 차등 할당 |
-| 큐잉 방식 | [[WFQ|WFQ (Weighted Fair Queuing)]] | 세션별 가중치를 부여하여 공정하게 대역폭을 분배하고 지연 제어 |
+| 큐잉 방식 | [[WFQ\|WFQ (Weighted Fair Queuing)]] | 세션별 가중치를 부여하여 공정하게 대역폭을 분배하고 지연 제어 |
 | 제어 특성 | 버퍼링 및 지연 (Delay) | 초과 패킷을 버리지 않고 대기시키므로 지연 시간은 증가하나 손실 방지 |
 | 적용 위치 | 송신 측 (Egress Interface) | 외부 네트워크로 트래픽을 내보내기 전 송신율을 제어하는 위치 |
-| 표준 기술 | QoS / [[DiffServ (Differentiated Services)|DiffServ]] | 서비스 품질 아키텍처 내에서 트래픽 성형 및 우선순위 제어 연계 |
+| 표준 기술 | QoS / [[DiffServ (Differentiated Services)\|DiffServ]] | 서비스 품질 아키텍처 내에서 트래픽 성형 및 우선순위 제어 연계 |
 | 최신 트렌드 | AI 기반 동적 쉐이핑 | 실시간 네트워크 대역폭(RTT) 변동에 맞춰 쉐이핑 파라미터 자동 조절 |
 
 ---
 
 ## III. 트래픽 쉐이핑 vs 트래픽 폴리싱 비교 및 최신 동향
 
-| 비교 항목 | 트래픽 쉐이핑 (Traffic Shaping) | 트래픽 폴리싱 ([[Traffic Policing (트래픽 정책처리)|Traffic Policing]]) |
+| 비교 항목 | 트래픽 쉐이핑 (Traffic Shaping) | 트래픽 폴리싱 ([[Traffic Policing (트래픽 정책처리)\|Traffic Policing]]) |
 | --- | --- | --- |
 | **초과 패킷 처리** | 버퍼에 **대기(Buffering)** 시켰다가 순차 전송 | 규격 초과 패킷을 **즉시 폐기(Drop)** 또는 마킹 |
 | **패킷 손실률** | 버퍼 크기 내에서 패킷 손실 최소화 (Low Loss) | 대역폭 초과 시 패킷 손실 발생 가능성 높음 |
 | **지연 시간 (Latency)** | 버퍼링으로 인한 전송 지연 발생 | 지연 시간 발생 없음 (즉각 처리) |
-| **주요 적용 위치** | 송신 측 (Egress) 인터페이스 | 수신 측 및 [[ISP (Information Strategy Plan)|ISP]] 경계 [[라우터]] (Ingress) |
+| **주요 적용 위치** | 송신 측 (Egress) 인터페이스 | 수신 측 및 ISP 경계 [[라우터]] (Ingress) |
 
 * 최근 5G, [[Wi-Fi 7]] 및 [[클라우드 네이티브]] 분산 환경의 고도화에 따라, 단순 정적 버퍼 기반 쉐이핑을 넘어 실시간 애플리케이션의 트래픽 특성(지연 민감도 등)을 반영하는 **AI 기반 적응형 쉐이핑(Adaptive Shaping)** 체계로 고도화되는 중
 
@@ -70,6 +70,6 @@ flowchart TB
 - **핵심 연관 토픽**:
   - [[QoS|QoS (Quality of Service)]]
   - [[Traffic Policing (트래픽 정책처리)]]
-  - [[Network Neutrality]]
+  - [[망 중립성|Network Neutrality]]
   - [[Wi-Fi 7|WI-FI 7 (IEEE 802.11be)]]
   - [[WFQ|WFQ (Weighted Fair Queuing)]]

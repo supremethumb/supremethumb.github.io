@@ -57,12 +57,12 @@ flowchart TD
 | **정보 유출** | **LLM02: Sensitive Info. Disclosure** | PII, API 크리덴셜, 비공개 비즈니스 데이터 등 민감 정보가 모델의 훈련 데이터나 출력물에 노출 |
 | **공급망/데이터** | **LLM03: Supply Chain** | 취약한 서드파티 오픈소스 모델, 라이브러리, 데이터셋, 플러그인을 통해 백도어 및 악성코드 유입 |
 | **공급망/데이터** | **LLM04: Data & Model Poisoning** | 학습, 파인튜닝, 임베딩 데이터를 오염시켜 모델의 편향성, 오작동 및 보안 우회 백도어 생성 |
-| **출력/실행** | **LLM05: Improper Output Handling** | LLM의 출력값을 적절한 검증/필터링 없이 다운스트림 시스템으로 전달하여 [[XSS]], [[SSRF(Server-Side Request Forgery)|SSRF]], RCE 등 유발 |
+| **출력/실행** | **LLM05: Improper Output Handling** | LLM의 출력값을 적절한 검증/필터링 없이 다운스트림 시스템으로 전달하여 [[XSS]], [[SSRF(Server-Side Request Forgery)\|SSRF]], RCE 등 유발 |
 | **출력/실행** | **LLM06: Excessive Agency** | 에이전트에 불필요하게 광범위한 기능, 권한, 자율성을 부여하여 의도치 않은 파괴적 [[트랜잭션]] 수행 허용 |
 | **시스템/구조** | **LLM07: System Prompt Leakage** | 시스템 역할, 보안 지침, 백엔드 로직이 담긴 '시스템 프롬프트'를 탈취하여 애플리케이션의 방어 체계 우회 |
 | **시스템/구조** | **LLM08: Vector & Embedding Weaknesses** | RAG 아키텍처에서 벡터 검색을 우회하거나 임베딩 역전(Inversion) 공격을 통해 기밀 원본 데이터 대량 유출 |
-| **품질/[[HA(High Availability)|가용성]]** | **LLM09: Misinformation** | 모델이 생성한 거짓/편향된 정보([[할루시네이션]])를 사용자가 과도하게 신뢰하여 발생하는 기업 평판 및 법적 피해 |
-| **품질/가용성** | **LLM10: Unbounded Consumption** | 모델 API의 무제한 자원 소모를 유발해 서비스 거부([[DoS (Denial of Service)|DoS]]) 및 막대한 클라우드 요금(Denial of Wallet) 발생 |
+| **품질/[[HA(High Availability)\|가용성]]** | **LLM09: Misinformation** | 모델이 생성한 거짓/편향된 정보([[할루시네이션]])를 사용자가 과도하게 신뢰하여 발생하는 기업 평판 및 법적 피해 |
+| **품질/가용성** | **LLM10: Unbounded Consumption** | 모델 API의 무제한 자원 소모를 유발해 서비스 거부([[DoS (Denial of Service)\|DoS]]) 및 막대한 클라우드 요금(Denial of Wallet) 발생 |
 
 ---
 

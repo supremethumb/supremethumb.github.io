@@ -12,13 +12,13 @@ tags:
 
 * **정의**: 인공신경망의 최종 예측 결과(출력값)로부터 입력 계층 방향으로 [[역전파]](Backpropagation)하며, 각 뉴런이 최종 판단에 기여한 타당성 점수(Relevance Score)를 계층별로 분해 및 재분배하는 설명 가능한 [[인공지능]]([[XAI]]) 기술
 * **등장 배경 및 필요성**:
-* **블랙박스 문제(Black-box Problem)**: 심층 신경망(DNN)의 복잡한 비선형 구조로 인해 예측 결과에 대한 내부 판단 근거 추적 및 [[신뢰성]] 확보 불가
-* **고위험 산업군 규제 대응**: 의료 진단, [[Smart Car(자율주행)|자율주행]], 금융 신용평가 등 의사결정의 설명 책임(Accountability)과 GDPR 등 인공지능 규제 준수 요구 증대
+  * **블랙박스 문제(Black-box Problem)**: 심층 신경망(DNN)의 복잡한 비선형 구조로 인해 예측 결과에 대한 내부 판단 근거 추적 및 [[신뢰성]] 확보 불가
+  * **고위험 산업군 규제 대응**: 의료 진단, [[Smart Car(자율주행)|자율주행]], 금융 신용평가 등 의사결정의 설명 책임(Accountability)과 GDPR 등 인공지능 규제 준수 요구 증대
 
 
 * **핵심 특징**:
-* **보존 법칙(Conservation Property)**: 상위 계층 뉴런들이 받은 타당성 총합은 하위 계층으로 분배되는 총합과 동일하게 유지됨 ($\sum_j R_j = \sum_k R_k$)
-* **화소 단위 해석(Pixel-wise Attribution)**: 최종 분류 점수를 원본 입력(이미지 픽셀, 단어 등) 수준의 히트맵(Heatmap) 형태로 시각화 가능
+  * **보존 법칙(Conservation Property)**: 상위 계층 뉴런들이 받은 타당성 총합은 하위 계층으로 분배되는 총합과 동일하게 유지됨 ($\sum_j R_j = \sum_k R_k$)
+  * **화소 단위 해석(Pixel-wise Attribution)**: 최종 분류 점수를 원본 입력(이미지 픽셀, 단어 등) 수준의 히트맵(Heatmap) 형태로 시각화 가능
 
 
 
@@ -80,7 +80,7 @@ flowchart RL
 
 ### 가. 대표적 사후(Post-hoc) XAI 기법 비교 (LRP vs CAM vs SHAP)
 
-| 비교 항목 | LRP (Layer-wise Relevance) | Grad-CAM | [[커널|Kernel]] SHAP |
+| 비교 항목 | LRP (Layer-wise Relevance) | Grad-CAM | [[커널\|Kernel]] SHAP |
 | --- | --- | --- | --- |
 | **접근 방식** | **계층별 역전파 분해 (Decomposition)** | 최종 합성곱 계층 그래디언트 기반 시각화 | 협동 게임이론 (Shapley Value) 기반 추정 |
 | **내부 구조 의존성** | 화이트박스 (신경망 가중치/구조 필요) | 화이트박스 (주로 [[CNN]] 계층에 특화) | 블랙박스 (입출력 인터페이스만으로 가능) |

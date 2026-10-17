@@ -52,8 +52,8 @@ flowchart TB
 | 버스트 허용 | CBS (Committed Burst Size) | 토큰 버킷의 최대 용량으로, 단기적인 대용량 버스트 트래픽 수용 크기 |
 | 위반 처리 | 드롭 (Drop) / 마킹 (Mark-Down) | 규격을 초과한 패킷을 즉시 버리거나 우선순위(DSCP)를 낮춰 처리 |
 | 2/3색 마커 | srTCM / trTCM | 단일/이중 래트 토큰 버킷을 이용한 Green/Yellow/Red 다단계 트래픽 분류 |
-| 비교 대상 | 트래픽 셰이핑 ([[Traffic Shaping (트래픽 쉐이핑)|Traffic Shaping]]) | 트래픽을 버퍼에 대기(Queueing)시켰다가 일정하게 내보내는 지연 제어 방식 |
-| 표준 기술 | [[DiffServ (Differentiated Services)|DiffServ]] / [[QoS]] | 서비스 품질(QoS) 아키텍처 내에서 패킷 분류 및 대역폭 제어의 핵심 요소 |
+| 비교 대상 | 트래픽 셰이핑 ([[Traffic Shaping (트래픽 쉐이핑)\|Traffic Shaping]]) | 트래픽을 버퍼에 대기(Queueing)시켰다가 일정하게 내보내는 지연 제어 방식 |
+| 표준 기술 | [[DiffServ (Differentiated Services)\|DiffServ]] / [[QoS]] | 서비스 품질(QoS) 아키텍처 내에서 패킷 분류 및 대역폭 제어의 핵심 요소 |
 | 최신 트렌드 | AI 기반 지능형 대역폭 제어 | 실시간 트래픽 패턴 변화에 맞춰 폴리싱 파라미터(CIR/CBS)를 동적 최적화 |
 
 ---
@@ -64,7 +64,7 @@ flowchart TB
 | --- | --- | --- |
 | **초과 처리 방식** | 규격 초과 패킷을 **즉시 폐기(Drop)** 또는 마킹 | 초과 패킷을 **버퍼([[Queue]])에 대기**시켰다가 순차 전송 |
 | **지연 (Latency)** | 지연 시간이 발생하지 않음 (Low Latency) | 버퍼링으로 인해 지연 시간(Delay)이 발생할 수 있음 |
-| **주요 활용 위치** | [[ISP (Information Strategy Plan)|ISP]] 경계 [[라우터]] 및 수신 측(Ingress) 대역폭 통제 | 송신 측(Egress) 인터페이스 및 부드러운 전송률 유지 |
+| **주요 활용 위치** | ISP 경계 [[라우터]] 및 수신 측(Ingress) 대역폭 통제 | 송신 측(Egress) 인터페이스 및 부드러운 전송률 유지 |
 | **패킷 손실률** | 대역폭 초과 시 패킷 손실률이 상대적으로 높음 | 버퍼 크기 내에서 패킷 손실을 최소화하고 평탄화 |
 
 * 최근 5G, [[Wi-Fi 7]] 및 [[클라우드 네이티브]] 네트워크 환경의 고도화에 따라, 단순 정적 폴리싱을 넘어 애플리케이션의 실시간 특성에 맞춰 동적으로 정책을 변경하는 지능형 QoS 관리 체계로 진화 중

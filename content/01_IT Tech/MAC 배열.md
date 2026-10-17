@@ -3,90 +3,87 @@ title: MAC 배열
 date: 2026-08-28
 tags:
   - 컴퓨터구조
+aliases:
+  - MAC Array
+  - 곱셈누산기 배열
 ---
 
-# MAC 배열
+# MAC 배열 (Multiply-Accumulate Array)
 
 ---
 
-## I. 딥러닝 행렬 연산 고속화를 위한 하드웨어 코어, MAC 배열의 개요
-- 정의: [[딥러닝]]의 핵심 연산인 합성곱과 행렬 곱을 초고속 처리하기 위해, 다수의 곱셈-누산 유닛을 1D/2D 격자망으로 집적하여 연산 병렬성과 데이터 재사용성을 극대화한 하드웨어 가속 아키텍처
-- 특징: 메모리 벽 극복, 초고병렬 처리, 에너지 효율성 최적화
+## I. 곱하고 더하기를 대량으로, MAC 배열의 개요
+
+### 가. 정의
+
+- **곱셈-누산(a × b + c) 유닛을 1차원·2차원 격자로 대량 집적**해 [[딥러닝]]의 행렬 곱·합성곱을 병렬 처리하는 하드웨어 연산 구조
+
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 연산 특화 | 신경망 연산 대부분을 차지하는 MAC에 회로 집중 |
+| 대규모 병렬 | 수천~수만 개 MAC를 동시에 구동 |
+| 데이터 재사용 | 이웃 [[PE]]로 값을 전달해 메모리 접근 감소 |
+| 에너지 효율 | 제어 로직 최소화로 TOPS/W 향상 |
 
 ---
-## II. MAC 배열의 아키텍처 및 핵심 기술 요소
 
-### 가. MAC 배열의 2차원 연산 아키텍처 및 데이터 흐름
+## II. 구조 및 구성요소
+
+### 가. 2차원 MAC 배열 데이터 흐름
+
 ```mermaid
-graph TD
-    subgraph InputBuffers ["입력 버퍼 계층 (On-chip SRAM)"]
-        IA["Activation Buffer (Feature Maps)"]
-        IW["Weight Buffer (Filter Weights)"]
+flowchart TB
+    W["가중치 버퍼 (SRAM)"] --> P11
+    A["활성값 버퍼 (SRAM)"] --> P11
+    subgraph G["MAC 배열"]
+        direction LR
+        P11["PE"] -- "활성값" --> P12["PE"] -- "활성값" --> P13["PE"]
+        P21["PE"] -- "활성값" --> P22["PE"] -- "활성값" --> P23["PE"]
+        P11 -- "부분합" --> P21
+        P12 -- "부분합" --> P22
+        P13 -- "부분합" --> P23
     end
-
-    subgraph MAC_Grid ["2D MAC Processing Array (PE Grid)"]
-        direction TB
-        subgraph Row1 ["Row 1"]
-            PE11["PE (1,1)<br/>Mult + Acc"] -->|Act Data| PE12["PE (1,2)<br/>Mult + Acc"]
-            PE12 -->|Act Data| PE13["PE (1,3)<br/>Mult + Acc"]
-        end
-        subgraph Row2 ["Row 2"]
-            PE21["PE (2,1)<br/>Mult + Acc"] -->|Act Data| PE22["PE (2,2)<br/>Mult + Acc"]
-            PE22 -->|Act Data| PE23["PE (2,3)<br/>Mult + Acc"]
-        end
-        subgraph Row3 ["Row 3"]
-            PE31["PE (3,1)<br/>Mult + Acc"] -->|Act Data| PE32["PE (3,2)<br/>Mult + Acc"]
-            PE32 -->|Act Data| PE33["PE (3,3)<br/>Mult + Acc"]
-        end
-
-        PE11 -->|Partial Sum| PE21
-        PE21 -->|Partial Sum| PE31
-        PE12 -->|Partial Sum| PE22
-        PE22 -->|Partial Sum| PE32
-        PE13 -->|Partial Sum| PE23
-        PE23 -->|Partial Sum| PE33
-    end
-
-    subgraph OutputStage ["출력 및 후처리 계층"]
-        OUT["Accumulator / Activation Function<br/>(ReLU / GELU / Quantization)"]
-    end
-
-    IA --> Row1
-    IA --> Row2
-    IA --> Row3
-    IW --> PE11
-    IW --> PE12
-    IW --> PE13
-    PE31 --> OUT
-    PE32 --> OUT
-    PE33 --> OUT
+    P21 --> OUT["누산기 · 활성화 함수 · 양자화"]
+    P22 --> OUT
+    P23 --> OUT
 ```
 
-- 활성화 데이터와 가중치가 배열 내부로 주입되어 각 PE에서  연산을 수행하고, 생성된 부분합]이 누적 전파되어 최종 행렬 결과 출력
-### 나. MAC 배열의 핵심 기술 요소
+- 활성값은 가로로, 부분합은 세로로 흐르며 각 PE에서 곱셈-누산을 수행하고 결과를 후처리 유닛으로 출력
 
-| **구분**                | **핵심 기술(키워드)**               | **세부 설명 및 특징**                    |
-| --------------------- | ---------------------------- | --------------------------------- |
-| **연산 코어**             | **PE (Processing Element)**  | 구성된 최소 연산 단위                      |
-| **연산 코어**             | **CSA (Carry-Save Adder)**   | 다중 덧셈 연산 속도를 가속하는 회로              |
-| **데이터플로우 (Dataflow)** | **Weight Stationary (WS)**   | 재사용하는 방식                          |
-| **데이터플로우 (Dataflow)** | **Output Stationary (OS)**   | 메모리 쓰기 대역폭을 최소화하는 구조              |
-| **데이터플로우 (Dataflow)** | **Row Stationary (RS)**      | 행 단위로 매핑하여 [[재사용]]                    |
-| **정밀도 및 가속**          | **혼합 정밀도 (Mixed Precision)** | 누적하여 연산 속도와 정확도 동시 확보             |
-| **정밀도 및 가속**          | **희소성 가속 (Sparsity Engine)** | 연산 및 데이터 이동을 스킵                   |
-| **차세대 인터커넥트**         | **CIM Crossbar Array**       | 옴의 법칙 및 키르히호프 법칙을 이용한 아날로그 [[MAC]] 배열 |
+### 나. 구성요소
+
+| 구분 | 요소 | 설명 |
+| --- | --- | --- |
+| 연산 단위 | MAC 유닛 | 곱셈기 + 누산기, 부동소수점은 FMA(Fused Multiply-Add)로 한 번만 반올림 |
+| | PE | MAC + 로컬 레지스터 + 이웃 연결 |
+| | CSA (Carry-Save Adder) | 다수 부분곱을 자리올림 전파 없이 더해 곱셈·누산 가속 |
+| 데이터 흐름 | WS (Weight Stationary) | 가중치를 PE에 고정해 재적재 감소 |
+| | OS (Output Stationary) | 부분합을 PE에 고정해 부분합 이동 감소 |
+| | RS (Row Stationary) | 행 단위 매핑으로 전체 재사용 균형 |
+| 정밀도 | 혼합 정밀도 | 저정밀 곱셈(FP8·INT8) + 고정밀 누산(FP32·INT32)으로 속도와 정확도 확보 |
+| 효율화 | 희소성 가속 | 0 값 연산 생략, 구조적 희소성(2:4) 지원 |
+| 아날로그 | CIM 크로스바 | 메모리 셀 배열에서 옴·키르히호프 법칙으로 MAC 수행 ([[멤리스터]]) |
 
 ---
-## III. MAC 배열 vs 범용 ALU 배열 비교 및 발전 전망
 
-| **비교 항목**     | **MAC 배열 (AI / [[NPU]] 가속기)**                           | **범용 ALU 배열 ([[CPU]] / 일반 코어)**              |
-| ------------- | --------------------------------------------------- | ---------------------------------------- |
-| **연산 특화도**    | **행렬 곱셈·누산($A \times B + C$) 전용 구조**                | **사칙연산, 논리연산, 분기 등 범용 연산 수행**            |
-| **데이터 공유 방식** | **PE 간 직접 연결(Systolic / Mesh)을 통한 데이터 재사용**         | **중앙 레지스터 파일 및 공유 캐시 경유**                |
-| **제어 오버헤드**   | 단순한 제어 로직, 높은 면적 대비 연산 집적도                          | 복잡한 명령어 디코더, 분기 예측기(Branch Predictor) 필요 |
-| **에너지 효율성**   | 극도로 높음 (TOPS/W 최적화)                                 | 범용성으로 인해 상대적으로 낮음                        |
-| **대표 적용 사례**  | **Google [[TPU (Tensor Processing Unit)|TPU]] Matrix Unit, NVIDIA Tensor Core, [[NPU]]** | **x86 CPU 코어, ARM Cortex-A ALU**         |
-- 초저정밀도 포맷 도입, 3D 적층 및 [[PIM]](Processing-In-Memory) 결합
+## III. 비교 및 동향
+
+### 가. MAC 배열 vs 범용 ALU
+
+| 비교 항목 | MAC 배열 ([[NPU]]·가속기) | 범용 ALU ([[CPU]] 코어) |
+| --- | --- | --- |
+| 연산 | 행렬 곱-누산 전용 | 산술·논리·분기 등 범용 |
+| 데이터 공유 | PE 간 직접 전달 | 레지스터 파일·캐시 경유 |
+| 제어 | 단순, 면적 대비 연산 밀도 높음 | 명령 해독·분기 예측 등 복잡 |
+| 에너지 효율 | 높음 | 상대적으로 낮음 |
+| 사례 | Google [[TPU (Tensor Processing Unit)\|TPU]] MXU, NVIDIA Tensor Core | x86·ARM 코어 정수·FP 유닛 |
+
+### 나. 동향
+
+- **초저정밀 포맷**: FP8·FP4·MX 포맷 지원으로 같은 면적에서 MAC 수 확대
+- **메모리 결합**: [[PIM]]·3D 적층으로 MAC 배열을 메모리 가까이 배치해 데이터 이동 감소
 
 ---
 
@@ -95,8 +92,8 @@ graph TD
 - **소속 도메인**: [[00_컴퓨터구조_MOC|💻 컴퓨터구조]]
 - **세부 분류**: `2. 캐시 & 메모리 계층 구조 · 스토리지`
 - **핵심 연관 토픽**:
-  - [[PIM|PIM(Processing-In-Memory)]]
-  - [[TPU (Tensor Processing Unit)]]
-  - [[CPU]]
-  - [[GPU]]
+  - [[시스톨릭 어레이]]
+  - [[PE|PE(Processing Element)]]
   - [[NPU|NPU(Neural Processing Unit)]]
+  - [[TPU (Tensor Processing Unit)]]
+  - [[PIM|PIM(Processing-In-Memory)]]

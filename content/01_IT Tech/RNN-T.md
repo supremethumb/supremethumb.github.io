@@ -12,8 +12,8 @@ tags:
 
 * **정의**: 입력 시퀀스(오디오 프레임)와 출력 시퀀스(텍스트 토큰)의 길이가 다를 때 명시적인 정렬(Alignment) 없이 두 시퀀스를 매핑하며, 입력이 들어오는 즉시 실시간(Streaming)으로 출력을 생성할 수 있는 엔드투엔드([[End-to-End]]) 시퀀스 변환 모델
 * **등장 배경 및 필요성**:
-* **CTC(Connectionist Temporal Classification)의 한계**: 출력 토큰들이 서로 독립적이라는 조건부 독립(Conditionally Independent) 가정을 바탕으로 하여, 이전 출력 단어가 다음 단어 예측에 영향을 주지 못하는 언어적 문맥 파악의 한계 존재
-* **[[seq2seq|Seq2Seq]](Attention)의 한계**: 문맥 파악은 탁월하나, 문장의 끝까지(전체 입력) 다 들은 후에야 번역/인식을 시작할 수 있어 지연 시간(Latency)이 길고 실시간 스트리밍 처리에 부적합함
+  * **CTC(Connectionist Temporal Classification)의 한계**: 출력 토큰들이 서로 독립적이라는 조건부 독립(Conditionally Independent) 가정을 바탕으로 하여, 이전 출력 단어가 다음 단어 예측에 영향을 주지 못하는 언어적 문맥 파악의 한계 존재
+  * **[[seq2seq|Seq2Seq]](Attention)의 한계**: 문맥 파악은 탁월하나, 문장의 끝까지(전체 입력) 다 들은 후에야 번역/인식을 시작할 수 있어 지연 시간(Latency)이 길고 실시간 스트리밍 처리에 부적합함
 
 
 * **특징**: 음향 모델(Acoustic Model)과 언어 모델(Language Model)의 역할을 하나의 단일 네트워크로 통합하였으며, '공백(Blank)' 토큰을 활용해 입력 데이터의 길이와 출력 데이터의 길이를 동적으로 맞추어 실시간(Online) 디코딩을 지원함
@@ -67,15 +67,9 @@ flowchart TD
 
 | 서브 네트워크 | 역할 및 기능 | 세부 설명 및 특징 |
 | --- | --- | --- |
-| **인코더 네트워크**<br>
-
-<br>(Encoder Net) | **음향 모델(AM) 역할** | 연속적인 오디오 프레임($x_t$)을 입력받아 고차원의 음향 특징 표현($h_t$)으로 변환. 과거에는 [[LSTM (Long Short-Term Memory)|LSTM]]/[[RNN (Recurrent Neural Network)|RNN]]을 썼으나, 현재는 Conformer/Transformer 등으로 대체되는 추세 |
-| **예측 네트워크**<br>
-
-<br>(Prediction Net) | **언어 모델(LM) 역할** | 현재까지 예측된 Non-blank 레이블 시퀀스($y_{u-1}$)를 입력받아 다음 토큰에 대한 언어적 문맥 벡터($h_u$)를 생성. CTC의 조건부 독립성 한계를 해결하는 핵심 요소 |
-| **결합 네트워크**<br>
-
-<br>(Joint Net) | **정보 융합 및 최종 분류** | 인코더의 음향 특징과 예측 네트워크의 문맥 특징을 Feed-Forward 네트워크로 결합(보통 더하기 연산)한 후, Softmax를 통해 실제 어휘 토큰이거나 Blank($\emptyset$)일 확률을 계산 |
+| **인코더 네트워크**<br>(Encoder Net) | **음향 모델(AM) 역할** | 연속적인 오디오 프레임($x_t$)을 입력받아 고차원의 음향 특징 표현($h_t$)으로 변환. 과거에는 [[LSTM (Long Short-Term Memory)\|LSTM]]/[[RNN (Recurrent Neural Network)\|RNN]]을 썼으나, 현재는 Conformer/Transformer 등으로 대체되는 추세 |
+| **예측 네트워크**<br>(Prediction Net) | **언어 모델(LM) 역할** | 현재까지 예측된 Non-blank 레이블 시퀀스($y_{u-1}$)를 입력받아 다음 토큰에 대한 언어적 문맥 벡터($h_u$)를 생성. CTC의 조건부 독립성 한계를 해결하는 핵심 요소 |
+| **결합 네트워크**<br>(Joint Net) | **정보 융합 및 최종 분류** | 인코더의 음향 특징과 예측 네트워크의 문맥 특징을 Feed-Forward 네트워크로 결합(보통 더하기 연산)한 후, Softmax를 통해 실제 어휘 토큰이거나 Blank($\emptyset$)일 확률을 계산 |
 
 ---
 

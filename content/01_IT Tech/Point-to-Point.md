@@ -3,93 +3,92 @@ title: Point-to-Point
 date: 2026-08-24
 tags:
   - 네트워크
+aliases:
+  - 점대점
+  - P2P 링크
+---
+# Point-to-Point (점대점)
+
 ---
 
-# Point-to-Point
+## I. 둘만 쓰는 전용 통로, Point-to-Point의 개요
+
+### 가. 정의
+
+- 두 노드를 **공유 매체 없이 전용 링크로 1:1 직접 연결**하는 통신·인터커넥트 방식 (WAN 전용선, PPP, PCIe·NVLink 같은 칩 간 연결까지 포함)
+
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 경합 없음 | 매체를 두 노드만 써서 매체 접근 제어·충돌 불필요 |
+| 전이중 | 송신·수신 경로 분리로 동시 양방향 |
+| 예측 가능 지연 | 공유 경쟁이 없어 지연이 일정 |
+| 보안 | 다른 노드가 링크를 공유하지 않음 |
+| 확장 비용 | 완전 연결 시 링크 수 n(n−1)/2 → 스위치로 보완 |
 
 ---
 
-## I. 독립된 전용 통로 기반 1:1 직접 연결, Point-to-Point의 개요
+## II. 구조 및 구성요소
 
-- **정의**: 두 개의 통신 노드 또는 시스템 단말 간에 중간 공유 매체 없이 단일 링크로 데이터를 송수신하는 1:1 직접 연결 통신 및 인터커넥트 방식
-- **특징**: 대역폭 경합 및 충돌(Collision) 해결, 전이중(Full-Duplex) 고속 전송, 전용 대역폭 독점, 보안성 및 [[무결성]] 우수, 연결 노드 증가 시 회선 복잡도($\frac{n(n-1)}{2}$) 증가 
----
-## II. Point-to-Point의 개념도 및 핵심 기술 요소
-### 가. Point-to-Point의 연결 구성도 및 동작 메커니즘
+### 가. 계층별 점대점 연결
+
 ```mermaid
 flowchart TB
-    subgraph P2P_NET["1. 네트워크 계층 (Point-to-Point Network Link)"]
+    subgraph NET["네트워크 링크"]
         direction LR
-        NODE_A["송신 노드 (Node A)"]
-        TX["TX (송신 채널)"]
-        RX["RX (수신 채널)"]
-        NODE_B["수신 노드 (Node B)"]
-        
-        NODE_A -->|"독립 전용 대역폭 (No Collision)"| TX
-        TX ==> NODE_B
-        NODE_B -->|"동시 전이중 통신 (Full-Duplex)"| RX
-        RX ==> NODE_A
+        A["노드 A"] <== "전용 링크 (PPP · 전용선)" ==> B["노드 B"]
     end
-
-    subgraph P2P_HW["2. 하드웨어/칩셋 계층 (High-Speed Serial Interconnect)"]
+    subgraph HW["시스템 인터커넥트"]
         direction LR
-        HOST_CPU["호스트 CPU"]
-        PCIE_SWITCH["PCIe / CXL Switch Fabric"]
-        ACC_GPU["가속기 (GPU / NPU)"]
-        MEM_DEV["CXL 확장 메모리"]
-
-        HOST_CPU <== "Point-to-Point Link (x16 Lanes)" ==> PCIE_SWITCH
-        PCIE_SWITCH <== "Point-to-Point Link (Gen 5/6)" ==> ACC_GPU
-        PCIE_SWITCH <== "CXL.mem / CXL.io Direct" ==> MEM_DEV
-        ACC_GPU <== "NVLink (GPU-to-GPU P2P Direct)" ==> ACC_GPU
+        CPU["CPU"] <== "PCIe x16" ==> PSW["PCIe · CXL 스위치"]
+        PSW <== "PCIe Gen5/6" ==> GPU["GPU · NPU"]
+        PSW <== "CXL.mem" ==> MEM["CXL 메모리"]
+        GPU <== "NVLink" ==> GPU2["GPU"]
     end
-
-    subgraph P2P_SW["3. 소프트웨어/EAI 계층 (Application Direct Integration)"]
+    subgraph SW["응용 연계"]
         direction LR
-        SYS_A["시스템 A<br/>(Source)"] <== "Direct REST / RPC / Socket (1:1 연계)" ==> SYS_B["시스템 B<br/>(Target)"]
+        SA["시스템 A"] <== "직접 API · 소켓" ==> SB["시스템 B"]
     end
-
-    P2P_NET --- P2P_HW
-    P2P_HW --- P2P_SW
+    NET ~~~ HW ~~~ SW
 ```
 
-- 송수신 단말 간 전용 링크를 설정하여 매체 접근 제어([[MAC]])의 경합 없이 전이중 고속 전송을 수행하며, 최근 단일 칩/가속기 인터커넥트([[PCIe]], NVLink, [[CXL]])로 확장 적용
-### 나. Point-to-Point의 핵심 기술 및 구성 요소
+- 네트워크 전용선부터 칩 간 직렬 링크, 시스템 간 직접 연계까지 1:1 연결 원리를 공유하며, 다수 노드는 스위치로 묶어 확장
 
-| **구분**        | **핵심 기술(키워드)**                     | **세부 설명**                                                                  |
-| ------------- | ---------------------------------- | -------------------------------------------------------------------------- |
-| **[[네트워크 프로토콜]]** | **PPP (Point-to-Point Protocol)**  | [[데이터 링크 계층]] 1:1 직렬 링크 표준, LCP(링크 제어) 및 NCP(네트워크 제어) 기반 [[캡슐화]]·인증 지원             |
-| **네트워크 [[프로토콜]]** | **HDLC (High-Level Data Link)**    | 비트 지향 동기식 전송 제어 [[프로토콜]], 슬라이딩 윈도우 기반 오류 제어 및 전이중 점대점 통신 제공                    |
-| **물리/전송 링크**  | **전용회선 (Leased Line)**             | T1/E1, 광선로 기반 엔드포인트 간 고정 대역폭 독점 할당, [[QoS]] 보장 및 도청 차단                         |
-| **시스템 인터커넥트** | **[[PCIe]] ([[PCI Express (Peripheral Component Interconnect Express)|PCI Express]])**         | 공유 버스를 대체한 패킷 기반 직렬 점대점 인터커넥트, 레인(Lane) 단위 스케일링(x1~x16) 및 초저지연 전송          |
-| **시스템 인터커넥트** | **[[CXL]] (Compute Express Link)** | PCIe 물리 계층 기반의 점대점 [[캐시 일관성]](Cache Coherency) 및 메모리 풀링 프로토콜([[CXL]].io/cache/mem) |
-| **가속기 인터커넥트** | **NVLink / P2P [[DMA(Direct Memory Access)|DMA]]**               | [[GPU]] 간 호스트 [[CPU]] 메모리를 경유하지 않고 직접 데이터를 복사·통신하는 초고대역폭(1.8TB/s) 점대점 패브릭          |
-| **소프트웨어 통합**  | **P2P 연계 (Direct Integration)**    | 미들웨어([[EAI]]/ESB) 없이 소스-타깃 시스템 간 1:1 직접 API/소켓/DB 링크 연결 방식                     |
-| **차세대 보안/양자** | **QKD 점대점 링크 (BB84)**              | 송수신자(Alice-Bob) 간 단일 광자 채널 및 고전 채널을 1:1 직접 연결하여 무조건적 안전성의 비밀키 분배           |
+### 나. 구성요소
+
+| 구분 | 요소 | 설명 |
+| --- | --- | --- |
+| [[네트워크 프로토콜]] | PPP | 점대점 직렬 링크용 [[데이터 링크 계층]] 프로토콜, LCP·NCP, PAP/CHAP 인증 |
+| | HDLC | 비트 지향 동기식 링크 제어, 슬라이딩 윈도우 오류 제어 |
+| 회선 | 전용선 (Leased Line) | T1/E1·광 전용 회선, 고정 대역·[[QoS]] 보장 |
+| 시스템 인터커넥트 | [[PCI Express (Peripheral Component Interconnect Express)\|PCIe]] | 공유 버스(PCI)를 대체한 패킷 기반 직렬 점대점, 레인 x1~x16 |
+| | [[CXL]] | PCIe 물리 계층 위 [[캐시 일관성]]·메모리 확장 (CXL.io·cache·mem) |
+| | NVLink | GPU 간 고대역 직접 연결 (5세대 GPU당 최대 1.8TB/s) |
+| 응용 연계 | 직접 연계 | 미들웨어([[EAI]]/ESB) 없이 시스템 간 1:1 인터페이스 |
+| 보안 | QKD 링크 | 송수신자 간 광 링크로 양자 키 분배 (BB84) |
 
 ---
 
-## III. Point-to-Point vs Multi-Point(공유 버스) 비교 및 발전 전망
+## III. 비교 및 동향
 
-### 가. Point-to-Point vs Multi-Point(Shared/Multipoint) 방식 비교
+### 가. Point-to-Point vs Multipoint
 
-|**비교 항목**|**Point-to-Point (점대점)**|**Multi-Point (다중점 / 공유 버스)**|
-|---|---|---|
-|**연결 구조**|2개 노드 간 1:1 독립 전용선|1개 공유 매체에 다수 노드 1:N 연결|
-|**대역폭 할당**|채널 대역폭 100% 독점 사용|전체 노드가 공용 대역폭 시분할 공유|
-|**매체 접근 제어**|불필요 (경합/충돌 없음, No Contention)|필수 ([[CSMA CD|CSMA/CD]], Token, Polling/Selecting 제어)|
-|**전송 지연 (Latency)**|매우 낮고 일정 (Deterministic)|트래픽 증가 시 충돌/재전송으로 지연 급증|
-|**회선 비용 및 복잡도**|노드 증가 시 비용 및 포트 수 급증($O(N^2)$)|케이블 및 인터페이스 비용 절감($O(N)$)|
-|**장애 영향도**|특정 링크 장애 시 해당 구간만 단절|공유 버스/케이블 단절 시 전체 네트워크 마비|
-|**현대 기술 적용**|PCIe 6.0/7.0, NVLink, CXL, 전용선|레거시 이더넷(동축), I2C, CAN Bus|
+| 비교 항목 | Point-to-Point | Multipoint (공유 매체) |
+| --- | --- | --- |
+| 연결 | 두 노드 1:1 | 한 매체에 여러 노드 |
+| 대역 | 링크 대역을 두 노드가 전용 | 여러 노드가 공유 |
+| 매체 접근 제어 | 불필요 | 필요 ([[CSMA CD\|CSMA/CD]], 토큰, 폴링) |
+| 지연 | 일정 | 부하 증가 시 증가 |
+| 비용 | 노드 증가 시 링크 수 O(n²) | 매체 하나로 O(n) |
+| 장애 영향 | 해당 링크만 | 공유 매체 장애 시 전체 |
+| 예 | PCIe, NVLink, 전용선, 전이중 스위치 포트 | 초기 동축 이더넷, I2C, CAN |
 
-### 나. Point-to-Point 아키텍처의 발전 전망
+### 나. 동향
 
-- **컴퓨팅 버스 패러다임의 완전 전환**: 과거 병렬 공유 버스(PCI, FSB)의 신호 왜곡(Skew) 문제를 점대점 고속 차동 신호(Differential Signaling) 인터커넥트(PCIe, CXL, NVLink)가 완전히 대체
-    
-      
-    
-- **[[스위치]] 패브릭 기반의 스케일아웃 진화**: 점대점 연결의 $O(N^2)$ 복잡도 한계를 극복하기 위해 점대점 링크 다수를 고속 패킷 [[스위치 (Layer 3 Switch)|스위치]](PCIe Switch, NVSwitch)로 메시(Mesh)/크로스바 토폴로지화하는 가속기 클러스터 아키텍처 표준화
+- **버스에서 링크로**: 병렬 공유 버스(PCI, FSB)는 고속 직렬 차동 링크(PCIe, CXL, UPI)로 대체
+- **스위치 패브릭 확장**: 점대점 링크를 PCIe 스위치·NVSwitch로 묶어 대규모 가속기 클러스터 구성
+- **개방형 가속기 연결**: UALink·Ultra Ethernet 등 GPU 간 연결 표준화 경쟁
 
 ---
 
@@ -99,7 +98,7 @@ flowchart TB
 - **세부 분류**: `3. 전송 계층 & 트래픽 / 혼잡 제어 (L4)`
 - **핵심 연관 토픽**:
   - [[PCI Express (Peripheral Component Interconnect Express)]]
+  - [[CXL]]
+  - [[데이터 링크 계층]]
+  - [[CSMA CD|CSMA/CD]]
   - [[EAI]]
-  - [[QoS|QoS (Quality of Service)]]
-  - [[스위치 (Layer 3 Switch)]]
-  - [[네트워크 프로토콜|네트워크 프로토콜 (Network Protocol)]]

@@ -7,7 +7,7 @@ tags:
 
 # 🚀 디지털서비스 MOC (Map of Content)
 
-> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **53개**  
+> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **48개**  
 > 클라우드 컴퓨팅, 가상화/컨테이너, 블록체인 및 Web3, 사물인터넷(IoT), 스마트 인프라, 플랫폼 및 기능안전 표준을 포괄하는 신기술 지식 지도입니다.
 
 ---
@@ -26,13 +26,12 @@ flowchart TD
 
 ## 📑 핵심 분류 체계 및 토픽 목록
 
-### 1. 클라우드 컴퓨팅 & 가상화 인프라 (19)
+### 1. 클라우드 컴퓨팅 & 가상화 인프라 (16)
 
 > IaaS, PaaS, SaaS, XaaS, 퍼블릭/프라이빗/하이브리드 배치 모델, 하이퍼바이저, HPA 및 오토스케일링
 
 - [[가상화|가상화]]
 - [[도커|도커 (Docker)]]
-- [[마이크로 서비스 아키텍쳐|마이크로 서비스 아키텍쳐]]
 - [[멀티클라우드|멀티클라우드 (Multi-Cloud)]]
 - [[오픈 스택 프로젝트|오픈 스택 프로젝트]]
 - [[컨테이너|컨테이너 (Container)]]
@@ -43,11 +42,9 @@ flowchart TD
 - [[포그 컴퓨팅|포그 컴퓨팅 (Fog Computing)]]
 - [[Auto Scale Up Auto Scale Out|Auto Scale Up Auto Scale Out]]
 - [[CSP|CSP (Cloud Service Provider)]]
-- [[Digital Transformation|Digital Transformation]]
 - [[HPA (Horizontal Pod Autoscaler)|HPA (Horizontal Pod Autoscaler)]]
 - [[Hypervisor (VMM)|Hypervisor (VMM)]]
 - [[PaaS|PaaS (Platform as a Service)]]
-- [[Public Cloud 배치 분류별 3가지|Public Cloud 배치 분류별 3가지]]
 - [[XaaS|XaaS(Everything as a Service)]]
 
 ### 2. 블록체인 & 분산원장 · Web3 (6)
@@ -61,7 +58,7 @@ flowchart TD
 - [[Web 3.0|Web 3.0]]
 - [[Web 4.0, 5.0|Web 4.0 5.0]]
 
-### 3. 사물인터넷 (IoT) & 스마트 플랫폼 · 메타버스 (18)
+### 3. 사물인터넷 (IoT) & 스마트 플랫폼 · 메타버스 (17)
 
 > IoT 아키텍처, CPS, 스마트시티, 스마트팩토리, 자율주행(C-ITS), 확장현실(XR/VR/AR), SCADA 제어
 
@@ -69,7 +66,6 @@ flowchart TD
 - [[디지털 역기능|디지털 역기능 (Digital Dysfunction)]]
 - [[디지털 트윈|디지털 트윈 (Digital Twin)]]
 - [[메타버스|메타버스 (Metaverse)]]
-- [[물리적 AI|물리적 AI]]
 - [[인더스트리 4.0 5.0|인더스트리 4.0 5.0 (Industry 4.0 5.0)]]
 - [[인터미턴트 컴퓨팅|인터미턴트 컴퓨팅 (intermittent computing)]]
 - [[측위기술|측위기술 (LDT Location Determination Technology)]]
@@ -84,11 +80,10 @@ flowchart TD
 - [[UAM|UAM (Urban Air Mobility)]]
 - [[XR 유형|XR(eXtended Reality) 유형]]
 
-### 4. 데이터 플랫폼 & 개방형 API 생태계 (7)
+### 4. 데이터 플랫폼 & 개방형 API 생태계 (6)
 
 > Open API, 분산 데이터 처리 플랫폼(Hadoop), 링크드 오픈 데이터(LOD), 공공/마이데이터 생태계
 
-- [[가상물리시스템|가상물리시스템]]
 - [[개방형 연결 데이터|개방형 연결 데이터 (LOD Linked Open Data)]]
 - [[모노리식 아키텍처|모노리식 아키텍처(Monolithic Architecture)]]
 - [[전자 서명|전자 서명 (Digital Signature)]]

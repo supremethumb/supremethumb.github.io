@@ -9,7 +9,7 @@ tags:
 
 ---
 
-음성인식을 위해서 구글이 제안한 방식으로 Encoder 가 Listen 역할을 하고 그 다음에 attention 모듈 그리고 디코더가 Spell 역할을 하는 구조로 이루어짐 기계번역에 사용되는 모듈을 그대로 이용하여 음성인식에 사용한 구조임. 인코더는 Bidirectional [[LSTM]] 이므로 On-line 실시간 처리에는 부적합함.[^1]
+음성인식을 위해서 구글이 제안한 방식으로 Encoder 가 Listen 역할을 하고 그 다음에 attention 모듈 그리고 디코더가 Spell 역할을 하는 구조로 이루어짐 기계번역에 사용되는 모듈을 그대로 이용하여 음성인식에 사용한 구조임. 인코더는 Bidirectional [[LSTM (Long Short-Term Memory)|LSTM]] 이므로 On-line 실시간 처리에는 부적합함.[^1]
 [^1]: 쉽게 활용하는 [[인공지능]] 비즈니스
 
 ## 활용 및 발전방향
@@ -30,5 +30,5 @@ tags:
   - [[인공지능]]
   - [[RNN-T]]
   - [[딥페이크|딥페이크(Deepfake)]]
-  - [[범용 인공지능]]
+  - [[AGI|범용 인공지능]]
   - [[MOE(Mixture of Experts)]]

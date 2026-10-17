@@ -3,74 +3,81 @@ title: PIM(Processing-In-Memory)
 date: 2026-08-24
 tags:
   - 컴퓨터구조
+aliases:
+  - Processing-In-Memory
+  - 지능형 메모리
 ---
 
-# PIM(Processing-In-Memory)
+# PIM (Processing-In-Memory)
 
 ---
 
-## I. 메모리 병목 및 전력 한계 극복, PIM(Processing-In-Memory)의 개요
-- 정의: 폰 노이만 구조의 메모리 벽(Memory Wall)을 극복하기 위해 메모리 내부(DRAM Bank, Cell Array)에 연산기(ALU/[[MAC]])를 직접 집적하여, 데이터 이동 없이 메모리 내부에서 연산을 수행하는 지능형 융합 반도체 기술.
-- 폰 노이만 병목 해소, 에너지 소비 및 발열 절감, Memory-Bound 워크로드 가속
+## I. 데이터가 있는 곳에서 계산하는, PIM의 개요
+
+### 가. 정의
+
+- **메모리 내부(DRAM 뱅크 옆 등)에 연산기([[MAC 배열|MAC]]·ALU)를 넣어** 데이터를 프로세서로 옮기지 않고 메모리 안에서 연산하는 반도체 기술
+
+### 나. 필요성 및 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 메모리 장벽 | 연산 성능 증가를 메모리 대역폭이 따라가지 못하는 Memory Wall |
+| 데이터 이동 에너지 | 연산보다 DRAM↔프로세서 이동에 더 많은 에너지 소모 |
+| 내부 대역폭 활용 | 여러 뱅크를 동시에 연산해 외부 버스보다 큰 내부 대역폭 사용 |
+| 적합 연산 | 산술 강도가 낮은 메모리 바운드 연산 (GEMV, 원소별 연산, 임베딩 조회) |
 
 ---
-## II. PIM의 아키텍처 및 핵심 기술 요소
-### 가. PIM의 개념도 및 데이터 처리 동작 원리
+
+## II. 구조 및 구성요소
+
+### 가. 구조와 동작
 
 ```mermaid
-graph LR
-    subgraph Host_System ["Host Processor (CPU / GPU / NPU)"]
-        HOST_CTRL["Host Control Unit"]
-        HOST_CACHE["L1/L2/L3 Cache"]
-    end
-
-    subgraph PIM_Architecture ["PIM (DRAM / HBM 내부 구조)"]
+flowchart LR
+    HOST["호스트 CPU · GPU"] -- "PIM 명령 · 오프로딩" --> SEQ["PIM 명령 디코더<br/>시퀀서"]
+    subgraph MEM["PIM 메모리 (DRAM · HBM)"]
         direction TB
-        CMD_DEC["PIM Instruction Decoder / Sequencer"]
-        
-        subgraph Bank_0 ["Bank 0 Core"]
-            MEM_CORE0["DRAM Cell Array"] <--> SA0["Sense Amplifier"]
-            SA0 <--> PIM_ALU0["In-Bank ALU / MAC"]
-        end
-        
-        subgraph Bank_N ["Bank N Core"]
-            MEM_COREN["DRAM Cell Array"] <--> SAN["Sense Amplifier"]
-            SAN <--> PIM_ALUN["In-Bank ALU / MAC"]
-        end
+        SEQ --> B0["뱅크 0<br/>셀 어레이 → 센스 앰프 → 연산 유닛"]
+        SEQ --> BN["뱅크 N<br/>셀 어레이 → 센스 앰프 → 연산 유닛"]
     end
-
-    HOST_CTRL -->|"PIM Command / Offloading"| CMD_DEC
-    CMD_DEC --> PIM_ALU0
-    CMD_DEC --> PIM_ALUN
-    PIM_ALU0 -.->|"최종 연산 결과만 반환 (Traffic 최소화)"| HOST_CTRL
+    B0 -. "결과만 반환" .-> HOST
+    BN -. "결과만 반환" .-> HOST
 ```
 
-- **동작 원리**: Host가 PIM 제어 명령(Custom Command)을 전달하면, 메모리 내부의 뱅크별 연산 유닛(In-Bank ALU)이 내부 로컬 버스를 통해 셀 데이터를 직접 인출하여 병렬(Bank-level Parallelism) 연산(GEMV, Element-wise)을 수행하고 최종 결괏값만 Host로 반환.
-### 나. PIM의 핵심 기술 및 구성 요소
+- 호스트가 PIM 명령을 보내면 뱅크별 연산 유닛이 동시에 연산(뱅크 수준 병렬성)하고 결과만 돌려줌
 
-  
+### 나. 구성요소
 
-| **구분**       | **요소기술(키워드)**                | **세부 설명 및 특징**                                               |
-| ------------ | ---------------------------- | ------------------------------------------------------------ |
-| **연산 코어**    | **In-Bank ALU / MAC**        | DRAM 뱅크마다 1:1 또는 1:N으로 내장되는 FP16/BF16/INT8 고속 산술 연산 장치   |
-| **연산 코어**    | **SIMD Engine**          | 벡터 데이터 및 텐서 행렬-벡터 곱셈(GEMV)을 단일 사이클로 처리하는 병렬 유닛               |
-| **제어/명령**    | **PIM Sequencer**            | Host 표준 커맨드(JEDEC) 사이에 PIM 연산 명령을 디코딩하여 내부 파이프라인 제어          |
-| **제어/명령**    | **Instruction Buffer & SFR** | PIM 전용 연산 매크로 명령 및 가중치/상태 레지스터(Special Function Register) 저장 |
-| **도메인 분류**   | **Digital PIM**              | Sense-Amp 후단 디지털 신호 기반 연산, 공정 수율 및 [[신뢰성]] 우수 (예: [[HBM]]-PIM, AiM)  |
-| **도메인 분류**   | **Analog PIM**               | Sense-Amp 전단 크로스바(Crossbar) 어레이에서 옴·키르히호프 법칙 기반 초저전력 연산      |
-| **인터커넥트**    | **TSV / Local Bus**          | [[HBM]] Core Die 적층 구조 내 수직 전송 채널(TSV) 및 뱅크 간 고속 내부 전송 경로        |
-| **소프트웨어 스택** | **PIM Compiler / Framework** | PyTorch, TensorFlow 모델의 연산 그래프 중 메모리 바운드 연산을 자동 분할·오프로딩      |
-| **표준화/확장**   | **JEDEC PIM / [[CXL]] 연동**       | 표준 DRAM 타이밍 호환 규격 및 [[CXL]](Compute Express Link) 기반 메모리 풀링 연계   |
+| 구분 | 요소 | 설명 |
+| --- | --- | --- |
+| 연산 | 뱅크 내 연산 유닛 | 뱅크마다 붙은 FP16·BF16·INT8 SIMD·MAC 유닛 |
+| 제어 | PIM 시퀀서 | 표준 DRAM 명령 사이에 PIM 연산 명령을 해석·실행 |
+| | 명령 버퍼·레지스터 | PIM 연산 프로그램과 중간 결과 저장 |
+| 방식 | 디지털 PIM | 센스 앰프 뒤 디지털 회로로 연산, DRAM 공정 호환 (HBM-PIM, AiM) |
+| | 아날로그 CIM | ReRAM·SRAM 크로스바에서 전류 합으로 MAC, 저전력이나 정밀도·변동성 과제 ([[멤리스터]]) |
+| 연결 | TSV / 내부 버스 | [[HBM]] 적층 구조의 수직 채널과 뱅크 내부 경로 |
+| SW | 컴파일러·런타임 | 모델 그래프에서 메모리 바운드 연산을 골라 PIM으로 오프로드 |
+| 표준 | JEDEC 표준화 | LPDDR·HBM 계열 PIM 규격화 논의, [[CXL]] 메모리와 연계 |
 
 ---
-## III. PIM vs PNM 비교 및 향후 전망
 
-| **비교 항목**     | **PIM (Processing-In-Memory)**             | **PNM (Processing-Near-Memory)**             |
-| ------------- | ------------------------------------------ | -------------------------------------------- |
-| **연산 위치**     | 메모리 셀 어레이 내부 (In-DRAM / In-Bank)           | 메모리 인터페이스/컨트롤러 인접 (Base Die, CXL Controller) |
-| **데이터 대역폭**   | 내부 극대화 대역폭 활용 (극초고속)                       | 버스 대역폭 대비 고속 (PIM 대비 중간 수준)                  |
-| **설계/공정 난이도** | 높음 (DRAM 미세공정과 로직 공정 융합 한계)                | 보통 (기존 표준 DRAM [[재사용]] 및 로직 다이 분리 설계)            |
-| **적용 사례**     | Samsung HBM-PIM, Aquabolt-XL, SK Hynix AiM | Samsung CXL-PNM, HBM Base Die Processing     |
+## III. 비교 및 동향
+
+### 가. PIM vs PNM
+
+| 비교 항목 | PIM (In-Memory) | PNM (Near-Memory) |
+| --- | --- | --- |
+| 연산 위치 | 메모리 다이 내부, 뱅크 옆 | 메모리 옆 로직 (HBM 베이스 다이, CXL 컨트롤러, 버퍼 칩) |
+| 대역폭 | 내부 뱅크 대역폭 사용, 가장 큼 | 메모리 인터페이스 대역폭 수준 |
+| 설계 난이도 | 높음 (DRAM 공정에 로직 구현, 면적·발열 제약) | 중간 (로직 공정 다이 분리) |
+| 사례 | 삼성 HBM-PIM(Aquabolt-XL), SK hynix GDDR6-AiM, UPMEM | 삼성 CXL-PNM, AXDIMM |
+
+### 나. 동향
+
+- **LLM 추론 가속**: 디코딩 단계의 GEMV가 메모리 바운드여서 PIM·PNM 적용 효과가 큰 분야로 부각
+- **LPDDR-PIM**: 모바일 [[온디바이스 AI]]용 저전력 PIM 연구·표준화 추진
+- **프로그래밍 모델**: 범용 프레임워크에서 PIM을 쓰기 위한 컴파일러·라이브러리 정비가 확산의 관건
 
 ---
 
@@ -81,6 +88,6 @@ graph LR
 - **핵심 연관 토픽**:
   - [[HBM|HBM (High Bandwidth Memory)]]
   - [[메모리 반도체|메모리 반도체 (Memory Semiconductor)]]
-  - [[멤리스터]]
   - [[MAC 배열]]
   - [[지능형 반도체]]
+  - [[멤리스터]]

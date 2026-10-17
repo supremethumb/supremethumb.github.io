@@ -66,11 +66,11 @@ flowchart TB
 
 | 구분 | 핵심 기술 (키워드) | 세부 설명 |
 | --- | --- | --- |
-| **아키텍처** | MoE ([[MOE(Mixture of Experts)|Mixture of Experts]]) | 수조 개의 파라미터 중 입력된 토큰에 특화된 일부 신경망(Expert)만 활성화하여 연산 효율성 극대화 |
+| **아키텍처** | MoE ([[MOE(Mixture of Experts)\|Mixture of Experts]]) | 수조 개의 파라미터 중 입력된 토큰에 특화된 일부 신경망(Expert)만 활성화하여 연산 효율성 극대화 |
 | **분산 학습** | 3D 병렬처리 (3D Parallelism) | 초대규모 모델을 텐서(Tensor), 파이프라인(Pipeline), 데이터(Data) 단위로 분할하여 클러스터 분산 학습 |
 | **위치 인코딩** | RoPE (Rotary Position Embedding) | 토큰의 상대적 위치 정보를 회전 행렬로 표현하여 무한대에 가까운 긴 문맥(Long-context) 처리 지원 |
-| **모델 정렬** | DPO (Direct Preference [[OPT|Opt]].) | 별도의 보상 모델 없이 인간의 선호 데이터를 직접 최적화하여 기존 RLHF의 복잡성과 불안정성 개선 |
-| **파인튜닝** | [[PEFT]] ([[LoRA(Low-rank adaptation)|LoRA]]) | 수백억 개의 파라미터 중 저랭크(Low-Rank) 행렬로 분해된 일부 가중치만 업데이트하여 학습 비용 절감 |
+| **모델 정렬** | DPO (Direct Preference Optimization) | 별도의 보상 모델 없이 인간의 선호 데이터를 직접 최적화하여 기존 RLHF의 복잡성과 불안정성 개선 |
+| **파인튜닝** | [[PEFT]] ([[LoRA(Low-rank adaptation)\|LoRA]]) | 수백억 개의 파라미터 중 저랭크(Low-Rank) 행렬로 분해된 일부 가중치만 업데이트하여 학습 비용 절감 |
 | **추론 최적화** | PagedAttention (vLLM) | OS의 페이징(Paging) 기법을 차용해 KV Cache 메모리의 파편화를 제거하고 동시 추론(Throughput)량 향상 |
 | **지식 확장** | RAG (검색 증강 생성) | 모델 외부에 있는 최신 지식이나 기업 내부 벡터 DB를 검색/주입하여 고질적인 환각(Hallucination) 현상 억제 |
 | **인프라망** | 초저지연 패브릭 네트워크 | 10만 개 이상의 GPU 클러스터를 무손실(Zero-packet-loss)로 묶는 InfiniBand 및 NVLink/NVSwitch 스위칭 기술 |
@@ -83,7 +83,7 @@ flowchart TB
 
 | 비교 항목 | 기존 AI 모델 | 초대규모 AI 모델 |
 | --- | --- | --- |
-| **설계 목적** | 특정 단일 문제 해결 (이미지 분류, 예측 등) | 범용적 문제 해결 및 [[AGI]]([[범용 인공지능]]) 기반 |
+| **설계 목적** | 특정 단일 문제 해결 (이미지 분류, 예측 등) | 범용적 문제 해결 및 [[AGI]]([[AGI\|범용 인공지능]]) 기반 |
 | **파라미터/데이터** | 수백만 ~ 수천만 개 / 수 GB 규모 도메인 데이터 | 수백억 ~ 수조(Trillion) 개 / 수십 PB 규모 멀티모달 |
 | **추론 방식** | Dense Network (모든 파라미터 활성화) | Sparse Network (MoE 기반 필요 파라미터만 활성화) |
 | **태스크 적응** | 태스크마다 별도의 모델 개발 및 라벨링 필수 | [[프롬프트 엔지니어링]](Zero-shot)만으로 다양한 태스크 수행 |

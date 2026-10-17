@@ -16,7 +16,7 @@ aliases:
 
 * **정의**: 두 개의 큰 소수(Prime Number)를 곱한 값을 소인수분해하는 것이 수학적으로 매우 어렵다는 사실(Computational Hardness)을 기반으로, 암호화용 공개키(Public Key)와 복호화용 **개인키(Private Key)** 쌍을 생성하여 데이터를 안전하게 전달하는 **비대칭키(Asymmetric Key) [[암호화]] [[알고리즘]]**
 * **등장 배경 및 필요성**:
-* 기존 대칭키(Symmetric Key) 암호 체계([[DES]], AES 등)의 치명적 약점인 **키 분배(Key Distribution) 문제**를 해결하기 위해 1977년 개발됨 (안전하지 않은 채널에서도 비밀키를 안전하게 공유할 방법이 필요)
+  * 기존 대칭키(Symmetric Key) 암호 체계([[DES]], AES 등)의 치명적 약점인 **키 분배(Key Distribution) 문제**를 해결하기 위해 1977년 개발됨 (안전하지 않은 채널에서도 비밀키를 안전하게 공유할 방법이 필요)
 
 
 * **특징**: 키 전달의 보안성은 완벽에 가깝지만, 복잡한 모듈러 거듭제곱 연산으로 인해 대칭키 대비 연산 속도가 약 1,000배 이상 느림. 따라서 대용량 데이터 암호화보다는 **대칭키 교환(Key Exchange)** 및 전자서명(Digital Signature)에 주로 사용됨.
@@ -79,7 +79,7 @@ flowchart LR
 
 ### 가. 3대 핵심 암호화 알고리즘 비교 (AES vs RSA vs ECC)
 
-| 비교 항목 | AES ([[AES|Advanced Encryption Standard]]) | RSA (Rivest Shamir Adleman) | [[ECC]] (Elliptic Curve Cryptography) |
+| 비교 항목 | AES ([[AES\|Advanced Encryption Standard]]) | RSA (Rivest Shamir Adleman) | [[ECC]] (Elliptic Curve Cryptography) |
 | --- | --- | --- | --- |
 | **암호화 방식** | **대칭키** (비밀키 1개 공유) | **비대칭키** (공개키/개인키 쌍) | **비대칭키** (공개키/개인키 쌍) |
 | **보안 기반 수학** | 혼돈(Confusion)과 확산(Diffusion) | **소인수분해의 난해성** | **타원곡선 이산대수 문제 (ECDLP)** |

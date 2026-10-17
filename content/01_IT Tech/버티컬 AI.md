@@ -70,7 +70,7 @@ flowchart TB
 | 구분 | 요소기술(키워드) | 세부 설명 |
 | --- | --- | --- |
 | **모델 경량화** | sLLM (Small LLM) | 수십억~백억 개 수준의 파라미터로 구성되어 구축/운영 비용을 절감하는 경량 언어 모델 |
-| **도메인 학습** | PEFT (Parameter-Efficient FT) | 모델의 전체 가중치 대신 일부 파라미터만 업데이트([[LoRA(Low-rank adaptation)|LoRA]] 등)하여 효율적으로 도메인 지식 주입 |
+| **도메인 학습** | PEFT (Parameter-Efficient FT) | 모델의 전체 가중치 대신 일부 파라미터만 업데이트([[LoRA(Low-rank adaptation)\|LoRA]] 등)하여 효율적으로 도메인 지식 주입 |
 | **지식 증강** | 특화 RAG (Retrieval-Augmented Gen.) | 기업 내부 [[데이터베이스]] 및 전문 문헌을 벡터화하여 검색 후 생성, 할루시네이션(환각) 최소화 |
 | **데이터 처리** | Domain Knowledge Graph | 산업별 복잡한 전문 용어 및 개체 간의 연관 관계를 구조화하여 AI의 맥락 이해도 향상 |
 | **보안/[[신뢰성]]** | AI Guardrails | 법적 규제 준수, 민감 정보(PII 등) 필터링 및 편향성 제거를 위한 입출력 통제 시스템 |

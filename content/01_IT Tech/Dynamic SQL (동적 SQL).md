@@ -5,86 +5,76 @@ tags:
   - 데이터베이스
 aliases:
   - Dynamic SQL
+  - 동적 SQL
 ---
 # Dynamic SQL (동적 SQL)
 
 ---
 
-## I. 유연한 데이터 처리를 위한 런타임 쿼리 생성 기법, Dynamic SQL의 개요
+## I. 실행 시점에 만드는 SQL, Dynamic SQL의 개요
 
-* **정의**: 컴파일 시점(Compile-time)이 아닌 실행 시점(Run-time)에 사용자의 입력 값이나 비즈니스 조건에 따라 [[SQL(Structured Query Language)|SQL]] 문장을 동적으로 조립하고 실행하는 [[데이터베이스]] 프로그래밍 기법
-* **필요성 및 특징**:
-* **비즈니스 유연성**: 다중 검색 조건(Optional 필터), 동적 정렬(ORDER BY), 가변적인 테이블/컬럼 선택 등 복잡한 요구사항 대응
-* **코드 재사용성**: 유사한 구조의 SQL을 통합하여 중복 코드를 최소화하고 애플리케이션의 유지보수성 향상
-* **성능 및 보안 트레이드오프**: 쿼리 구조 변경에 따른 [[DBMS]] 하드 파싱(Hard Parsing) 오버헤드 발생 및 [[SQL Injection]] 보안 위협 존재
+### 가. 정의
 
+- SQL 문장을 **컴파일 시점이 아니라 실행 시점에 조건에 따라 조립해 실행하는 기법** (선택적 검색 조건, 동적 정렬, 가변 테이블·컬럼)
 
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 유연성 | 다양한 검색 조건 조합을 하나의 로직으로 처리 |
+| 파싱 비용 | 문장 텍스트가 달라지면 하드 파싱 증가 |
+| 보안 위험 | 입력값을 문자열로 결합하면 [[SQL Injection]] 취약 |
+| 대응 | 바인드 변수, 식별자 화이트리스트, 쿼리 빌더 |
 
 ---
 
-## II. Dynamic SQL의 개념도 및 핵심 구성 요소
+## II. 동작 구조 및 구성요소
 
-### 가. Dynamic SQL의 개념도 및 동작 원리
+### 가. 처리 흐름
 
 ```mermaid
 flowchart LR
-    subgraph AppLayer["Application Layer"]
-        direction TB
-        Input["사용자 입력<br/>(검색 조건, 정렬 기준)"]
-        Mapper["동적 쿼리 엔진<br/>(MyBatis, QueryDSL 등)"]
-        QueryString["동적 SQL 조립<br/>(문자열 결합 + 바인드 변수)"]
-        
-        Input --> Mapper
-        Mapper --> QueryString
-    end
-
-    subgraph DBLayer["Database System"]
-        direction TB
-        Parser["SQL Parser<br/>(Soft / Hard Parsing)"]
-        Optimizer["Query Optimizer<br/>(실행 계획 수립)"]
-        Executor["Execution Engine<br/>(데이터 조회 및 반환)"]
-        
-        Parser --> Optimizer --> Executor
-    end
-
-    QueryString == "런타임 SQL 실행 요청" ==> Parser
-    Executor -. "ResultSet 반환" .-> Mapper
-
+    I["사용자 입력<br/>(검색 조건·정렬)"] --> B["쿼리 조립<br/>(MyBatis·QueryDSL·문자열)"]
+    B -->|"SQL 텍스트 + 바인드 값"| P["DB 파서"]
+    P -->|"캐시에 같은 문장 있음"| SP["소프트 파싱"]
+    P -->|"새 문장"| HP["하드 파싱<br/>(최적화 재수행)"]
+    SP & HP --> E["실행"]
 ```
 
-* 애플리케이션에서 조건절(WHERE)이나 구조를 런타임에 결정하여 DBMS로 전송하며, 쿼리 텍스트가 변경될 때마다 DBMS는 새로운 실행 계획을 수립(하드 파싱)함
+- 값은 바인드 변수로 넘겨 문장 텍스트를 고정해야 실행 계획을 재사용하고 인젝션도 막을 수 있음
 
-### 나. Dynamic SQL의 핵심 기술 및 구성 요소
+### 나. 구성요소
 
-| 구분 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **구현 방식** | String Concatenation | 런타임에 분기문(if/else)을 통해 SQL 문자열을 직접 결합하는 가장 원시적인 방식 |
-| **구현 방식** | ORM / SQL Mapper | MyBatis(`<if>`, `<choose>`), JPA Criteria, Hibernate 등을 활용한 선언적 쿼리 생성 |
-| **성능 최적화** | Bind Variable (바인드 변수) | 파라미터 값만 변경되는 경우, SQL 텍스트를 고정하여 Soft Parsing을 유도하는 기법 (`?` 형태) |
-| **성능 최적화** | Hard / Soft Parsing | 동적 쿼리 구조 변경 시 하드 파싱, 캐시된 실행 계획(Library Cache) [[재사용]] 시 소프트 파싱 발생 |
-| **DBMS 기능** | EXECUTE IMMEDIATE | Oracle PL/SQL 등 DBMS 내부 스토어드 프로시저에서 동적 [[DDL]]/[[DML]]을 실행하는 명령어 |
-| **보안 통제** | SQL Injection | 악의적인 쿼리 삽입 공격. 동적 SQL 조립 시 입력값 검증 부재로 발생하는 주요 보안 취약점 |
-| **보안 통제** | PreparedStatement | 쿼리 구조를 미리 컴파일하고 데이터만 바인딩하여 SQL 인젝션을 원천적으로 방어하는 API |
-| **최신 기술** | Type-Safe Builder | QueryDSL, JOOQ 등을 활용하여 동적 쿼리를 자바 코드로 작성, 컴파일 타임에 오류 사전 검출 |
+| 구현 | 문자열 결합 | if/else로 SQL 문자열 직접 조립, 가장 위험 |
+| | SQL Mapper | MyBatis `<if>`, `<choose>`, `<where>` 동적 태그 |
+| | 쿼리 빌더 | JPA Criteria, QueryDSL, jOOQ로 타입 안전한 조립 |
+| DB 내부 | EXECUTE IMMEDIATE·sp_executesql | 프로시저 안에서 동적 DDL·DML 실행 ([[절차형 SQL]]) |
+| 성능 | 바인드 변수 | 값만 바꿔 같은 문장 재사용, 소프트 파싱 유도 |
+| | 하드·소프트 파싱 | 실행 계획 신규 생성 vs 캐시 재사용 |
+| 보안 | PreparedStatement | 문장 구조와 데이터 분리, 인젝션 방어 |
+| | 식별자 검증 | 테이블·컬럼명은 바인딩 불가 → 허용 목록으로 검증 |
 
 ---
 
-## III. Dynamic SQL과 Static SQL 비교 및 최신 트렌드
+## III. 비교 및 동향
 
-### 가. Dynamic SQL과 Static(정적) SQL 비교
+### 가. Static SQL vs Dynamic SQL
 
-| 비교 항목 | Static SQL (정적 SQL) | Dynamic SQL (동적 SQL) |
+| 비교 항목 | Static SQL | Dynamic SQL |
 | --- | --- | --- |
-| **쿼리 확정 시점** | 컴파일 시점 (Compile-time) | 실행 시점 (Run-time) |
-| **유연성** | 낮음 (고정된 조건 및 구조만 처리) | 높음 (다양한 검색 조건 및 동적 DDL 처리 가능) |
-| **DBMS 파싱 부하** | 낮음 (대부분 Soft Parsing 유도 용이) | 상대적으로 높음 (구조 변경 시 Hard Parsing 발생) |
-| **실행 계획 캐싱** | 재사용성 매우 높음 | 구조가 바뀔 때마다 캐시 미스(Cache Miss) 발생 |
-| **보안 (SQL Injection)** | 상대적으로 안전함 | 입력값 검증 누락 시 매우 취약함 |
+| 확정 시점 | 컴파일 시점 | 실행 시점 |
+| 유연성 | 낮음 | 높음 |
+| 파싱 | 재사용 용이 | 구조 변경 시 하드 파싱 |
+| 오류 발견 | 컴파일 시 | 실행 시 (쿼리 빌더는 컴파일 시) |
+| 보안 | 상대적으로 안전 | 바인딩 미적용 시 취약 |
 
-### 나. 안전한 Dynamic SQL 활용 방안 및 최신 동향
+### 나. 동향
 
-* **Type-Safe 동적 쿼리의 부상**: 과거 문자열(String) 기반의 MyBatis 동적 쿼리에서 벗어나, 최근에는 **QueryDSL**이나 **JOOQ**와 같이 객체 지향적이고 컴파일 타임에 문법 오류를 검출할 수 있는 Type-Safe 쿼리 빌더가 실무 표준으로 자리매김함
-* **시큐어 코딩 의무화**: 동적 쿼리 작성 시 식별자(테이블명, 컬럼명)는 애플리케이션 레벨에서 화이트리스트 방식으로 철저히 검증하고, 데이터 값은 반드시 **PreparedStatement 기반의 바인드 변수를 적용**하여 보안과 성능을 동시에 확보해야 함
+- **타입 안전 쿼리 빌더**: QueryDSL·jOOQ로 문자열 조립을 대체해 컴파일 시 오류 검출
+- **시큐어 코딩 기준**: 행정안전부 소프트웨어 보안약점 진단 기준 등에서 SQL 삽입 방지를 위해 바인딩 사용 요구
+- **실행 계획 안정화**: 값에 따라 계획이 흔들리는 문제(바인드 변수 엿보기)에 적응형 커서 공유·계획 고정 활용
 
 ---
 
@@ -94,7 +84,7 @@ flowchart LR
 - **세부 분류**: `3. 장애 회복 기법 & 데이터 무결성`
 - **핵심 연관 토픽**:
   - [[SQL Injection]]
+  - [[절차형 SQL]]
+  - [[OPTIMIZER]]
+  - [[JDBC]]
   - [[SQL(Structured Query Language)]]
-  - [[DDL]]
-  - [[DML]]
-  - [[데이터베이스]]

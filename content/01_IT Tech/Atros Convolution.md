@@ -58,7 +58,7 @@ flowchart LR
 | **핵심 파라미터** | **Dilation Rate ($r$)** | 필터의 가중치 간 간격을 정의하는 값 ($r=1$이면 일반 합성곱, $r>1$이면 간격 생성) |
 | **성능 지표** | **Receptive Field (수용영역)** | 출력 뉴런 하나가 참조하는 입력 차원의 공간 크기 (Rate 증가 시 공간 정보 참조 범위를 넓힘) |
 | **네트워크 구조** | **ASPP (Atrous Spatial Pyramid Pooling)** | 여러 개의 다양한 Dilation Rate를 병렬로 적용해 입력 이미지의 다중 스케일(Multi-scale) 특성 추출 |
-| **해결 과제** | **해상도 보존 (Resolution)** | Pooling과 [[STRIDE|Stride]] 연산을 최소화하여 특징 맵의 축소를 방지하고 원래 이미지의 공간적 세부 정보(Spatial Detail) 유지 |
+| **해결 과제** | **해상도 보존 (Resolution)** | Pooling과 [[STRIDE\|Stride]] 연산을 최소화하여 특징 맵의 축소를 방지하고 원래 이미지의 공간적 세부 정보(Spatial Detail) 유지 |
 | **연산 효율** | **파라미터 수 유지** | 필터의 논리적 크기는 확장되나, 빈 공간(Hole) 부분은 연산에서 제외되어 실제 가중치 및 연산량은 동일 |
 | **적용 분야** | **Semantic Segmentation** | 이미지 내 모든 픽셀 단위에 대해 클래스를 예측하여 객체의 정밀한 경계선을 분할하는 컴퓨터 비전 태스크 |
 | **대표 모델** | **DeepLab 시리즈** | 구글에서 제안한 영상 분할 모델로, Atrous Conv와 CRF(Conditional Random Field) 등을 결합하여 성능 극대화 |
@@ -79,8 +79,8 @@ flowchart LR
 | **주요 활용 분야** | 이미지 분류 (Classification), 객체 탐지 (Detection) | **시맨틱 세그먼테이션**, 의료 영상 정밀 분할 |
 
 * **전망 및 동향**:
-* 초기에는 DeepLab 모델을 필두로 정적 이미지 분할에 주로 사용되었으나, 최근에는 파라미터 효율성과 넓은 시야각 확보라는 장점을 살려 [[Smart Car(자율주행)|자율주행]] 차량의 실시간 도로/보행자 인식 및 의료 AI의 미세 종양 탐지 등으로 응용 범위가 크게 확대되고 있음.
-* 자연어 처리(NLP) 분야의 TCN(Temporal Convolutional Network)에서도 순차 데이터의 장기 의존성(Long-term Dependency)을 학습하기 위해 Atrous Conv(Dilated Conv) 개념을 차용하는 등 [[딥러닝]] 전반의 범용적인 핵심 아키텍처로 자리매김함.
+  * 초기에는 DeepLab 모델을 필두로 정적 이미지 분할에 주로 사용되었으나, 최근에는 파라미터 효율성과 넓은 시야각 확보라는 장점을 살려 [[Smart Car(자율주행)|자율주행]] 차량의 실시간 도로/보행자 인식 및 의료 AI의 미세 종양 탐지 등으로 응용 범위가 크게 확대되고 있음.
+  * 자연어 처리(NLP) 분야의 TCN(Temporal Convolutional Network)에서도 순차 데이터의 장기 의존성(Long-term Dependency)을 학습하기 위해 Atrous Conv(Dilated Conv) 개념을 차용하는 등 [[딥러닝]] 전반의 범용적인 핵심 아키텍처로 자리매김함.
 
 ---
 

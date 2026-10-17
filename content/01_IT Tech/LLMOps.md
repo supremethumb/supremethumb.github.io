@@ -60,7 +60,7 @@ flowchart TD
 
 | 구분 | 요소기술(키워드) | 세부 설명 |
 | --- | --- | --- |
-| **모델 튜닝** | PEFT (Parameter-Efficient FT) | 모델의 전체 가중치가 아닌 핵심 파라미터([[LoRA(Low-rank adaptation)|LoRA]] 등)만 미세조정하여 GPU 메모리와 학습 시간을 혁신적으로 절감 |
+| **모델 튜닝** | PEFT (Parameter-Efficient FT) | 모델의 전체 가중치가 아닌 핵심 파라미터([[LoRA(Low-rank adaptation)\|LoRA]] 등)만 미세조정하여 GPU 메모리와 학습 시간을 혁신적으로 절감 |
 | **컨텍스트 강화** | RAG (Retrieval-Augmented Gen) | 답변 생성 전 최신/내부 데이터를 벡터 DB에서 검색하여 프롬프트에 주입, 모델의 환각(Hallucination) 현상 최소화 |
 | **데이터 인프라** | Vector DB ([[벡터 데이터베이스]]) | 비정형 텍스트를 고차원 임베딩 벡터로 변환 및 저장하여, 코사인 [[유사도]] 기반의 초고속 의미 검색 지원 (예: Pinecone, Milvus) |
 | **인터페이스 관리** | Prompt Management | 다양한 프롬프트 템플릿의 버전 관리, A/B 테스트 및 실험(Tracing) 이력을 관리하는 [[프레임워크]] (예: LangChain, PromptFlow) |

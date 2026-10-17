@@ -60,7 +60,7 @@ flowchart TB
 | **요청 전달** | API Composition | 여러 마이크로서비스의 응답 데이터를 취합(Aggregation)하여 단일 응답으로 클라이언트에 반환 |
 | **보안/인증** | 인증 및 인가 (Auth) | JWT 검증, OAuth 2.0 연동 등을 통해 개별 서비스가 아닌 Gateway 레벨에서 중앙 집중식 권한 통제 |
 | **보안/인증** | SSL 터미네이션 | 복호화 처리를 Gateway에서 수행하여 내부 마이크로서비스의 [[CPU]] 부하 경감 |
-| **안정성 확보** | Rate Limiting / Throttling | 특정 클라이언트의 단위 시간당 API 호출 횟수를 제한하여 백엔드 서버 과부하 및 [[DDOS|DDoS]] 공격 방지 |
+| **안정성 확보** | Rate Limiting / Throttling | 특정 클라이언트의 단위 시간당 API 호출 횟수를 제한하여 백엔드 서버 과부하 및 [[DDOS\|DDoS]] 공격 방지 |
 | **안정성 확보** | 로드밸런싱 (Load Balancing) | 다수의 서비스 [[인스턴스]] 간 트래픽을 균등하게 분산 (Round Robin, Least Connection 등) |
 | **유연성 제공** | 프로토콜 변환 (Translation) | 외부의 HTTP/REST 요청을 내부 통신용 gRPC, AMQP 등 이기종 프로토콜로 변환하여 전달 |
 | **가시성 확보** | 중앙 집중식 로깅/모니터링 | 모든 API 인입/반환 트래픽의 메트릭 수집 및 분산 추적(Distributed Tracing)용 상관 ID 발급 |

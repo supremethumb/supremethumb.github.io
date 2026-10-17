@@ -7,7 +7,7 @@ tags:
 
 # 💻 컴퓨터구조 MOC (Map of Content)
 
-> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **90개**  
+> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **83개**  
 > CPU 아키텍처, 파이프라인, 캐시·메모리 계층, 고성능 AI 가속기 하드웨어, 기본 자료구조 및 알고리즘을 아우르는 컴퓨터 시스템 구조 지도입니다.
 
 ---
@@ -26,7 +26,7 @@ flowchart TD
 
 ## 📑 핵심 분류 체계 및 토픽 목록
 
-### 1. CPU 프로세서 & 마이크로아키텍처 (26)
+### 1. CPU 프로세서 & 마이크로아키텍처 (24)
 
 > CPU 구조, 명령어 세트(ISA), RISC vs CISC, 명령어 파이프라인 및 해저드(Hazard), 레지스터, 카르노 맵
 
@@ -38,12 +38,10 @@ flowchart TD
 - [[사상 기법|사상 기법]]
 - [[시스톨릭 어레이|시스톨릭 어레이]]
 - [[알고리즘|알고리즘]]
-- [[중앙처리장치|중앙처리장치 (CPU Central Processing Unit)]]
 - [[지능형 반도체|지능형 반도체]]
 - [[카르노 맵|카르노 맵 (Karnaugh Map)]]
 - [[캐시 메모리|캐시 메모리]]
 - [[캐시 일관성|캐시 일관성(Cache Coherence)]]
-- [[캐시 일관성 유지 기법|캐시 일관성(Cache Coherence) 유지 기법]]
 - [[캐시 메모리의 쓰기 정책|캐시메모리의 쓰기정책(Write Policy)]]
 - [[CPU|CPU]]
 - [[CPU 처리과정|CPU 처리과정]]
@@ -57,7 +55,7 @@ flowchart TD
 - [[Pipeline Hazard|Pipeline Hazard]]
 - [[TPU (Tensor Processing Unit)|TPU (Tensor Processing Unit)]]
 
-### 2. 캐시 & 메모리 계층 구조 · 스토리지 (37)
+### 2. 캐시 & 메모리 계층 구조 · 스토리지 (33)
 
 > 기억장치 계층, 캐시 메모리 매핑, 캐시 일관성(MESI), DRAM/SRAM, HBM, CXL, 플래시 메모리, 액침냉각(데이터센터)
 
@@ -65,12 +63,9 @@ flowchart TD
 - [[가상 메모리 관리 정책|가상 메모리 관리 정책]]
 - [[링크드 리스트|링크드 리스트(Linked List)]]
 - [[메모리 관리|메모리 관리]]
-- [[메모리 관리 정책|메모리 관리 정책]]
-- [[메모리 단편화|메모리 단편화 (Fragmentation)]]
 - [[메모리 반도체|메모리 반도체 (Memory Semiconductor)]]
 - [[멤리스터|멤리스터]]
 - [[변수|변수]]
-- [[빅오 표기법|빅오 표기법 (O-Notation)]]
 - [[삽입 정렬|삽입 정렬 (Insertion Sort)]]
 - [[선형 자료구조와 비선형 자료구조|선형 자료구조와 비선형 자료구조]]
 - [[세그멘테이션|세그멘테이션 (Segmentation, 가변분할)]]
@@ -82,7 +77,6 @@ flowchart TD
 - [[퀵 정렬|퀵 정렬 (Quick Sort)]]
 - [[페이지 교체 알고리즘|페이지 교체 알고리즘 (Paging Replacement Algorithm)]]
 - [[해시 테이블|해시 테이블]]
-- [[해싱과 충돌해결방법|해싱과 충돌해결방법]]
 - [[Char Type|Char Type]]
 - [[Data Type|Data Type]]
 - [[Flash Memory(NOR, NAND)|Flash Memory(NOR, NAND)]]
@@ -131,7 +125,7 @@ flowchart TD
 - [[AVL 트리|AVL 트리]]
 - [[Queue|Queue]]
 
-### 5. 핵심 알고리즘 & 계산 복잡도 (Algorithms) (5)
+### 5. 핵심 알고리즘 & 계산 복잡도 (Algorithms) (4)
 
 > 빅오 표기법(O-Notation), 정렬(퀵, 병합, 버블, 삽입), 탐색, 최단경로(다익스트라), 그리디, 동적 계획법(DP), 해싱
 
@@ -139,7 +133,6 @@ flowchart TD
 - [[동적 계획법|동적 계획법 (Dynamic Programming)]]
 - [[런랭스 코딩|런랭스 (Run Length) 코딩]]
 - [[우선순위 역전현상|우선순위 역전현상]]
-- [[최적화 알고리즘|최적화 알고리즘 (Optimization Algorithm)]]
 
 ---
 

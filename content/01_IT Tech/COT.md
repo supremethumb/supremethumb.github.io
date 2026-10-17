@@ -12,14 +12,11 @@ tags:
 
 * **가. CoT(Chain of Thought)의 정의**: 대규모 언어 모델([[초거대 언어 모델|LLM]])이 복잡한 문제를 해결할 때, 최종 답을 도출하기 전 중간 추론 과정(Reasoning Steps)을 명시적으로 생성하도록 유도하여 답변의 정확도와 신뢰성을 높이는 [[프롬프트 엔지니어링]] 기법
 * **나. CoT의 필요성 및 특징**:
-* **필요성**: 기존 LLM의 복잡한 수학 연산, 상식 추론 영역에서의 한계 및 환각(Hallucination) 현상 극복 필요
+  * **필요성**: 기존 LLM의 복잡한 수학 연산, 상식 추론 영역에서의 한계 및 환각(Hallucination) 현상 극복 필요
 * **특징**:
-* **설명 가능성 확보(Explainability)**: 문제 해결의 중간 단계 노출을 통해 결과에 대한 논리적 해석 가능
-* **Test-Time Compute 확장**: 생성되는 토큰 수를 늘려 추론(Inference) 단계에서 더 많은 연산 자원 활용
-* **System 2 사고 모방**: 직관적이고 즉각적인 답변(System 1) 대신, 논리적이고 단계적인 분석(System 2) 수행
-
-
-
+  * **설명 가능성 확보(Explainability)**: 문제 해결의 중간 단계 노출을 통해 결과에 대한 논리적 해석 가능
+  * **Test-Time Compute 확장**: 생성되는 토큰 수를 늘려 추론(Inference) 단계에서 더 많은 연산 자원 활용
+  * **System 2 사고 모방**: 직관적이고 즉각적인 답변(System 1) 대신, 논리적이고 단계적인 분석(System 2) 수행
 
 
 ---
@@ -56,7 +53,7 @@ flowchart LR
 | **프롬프트 기법** | Zero-Shot CoT | 예시 없이 프롬프트 끝에 "Let's think step by step" 등의 트리거 문구를 추가하여 자발적 추론을 유도 |
 | **성능 향상** | Self-Consistency (자기 일관성) | 동일한 문제에 대해 여러 개의 다양한 CoT 경로를 생성한 후, 다수결(Majority Vote)로 최종 정답을 도출 |
 | **구조적 확장** | [[ToT]] (Tree of Thoughts) | 선형적 추론을 넘어, 여러 대안적 추론 경로를 트리 구조로 탐색(BFS/DFS)하고 평가(Heuristic)하는 기법 |
-| **구조적 확장** | [[Graph of Thought (GoT)|GoT]] (Graph of Thoughts) | 추론 노드 간의 결합(Aggregation) 및 분리(Refinement)를 허용하여 복잡한 네트워크 형태의 사고 모델링 |
+| **구조적 확장** | [[Graph of Thought (GoT)\|GoT]] (Graph of Thoughts) | 추론 노드 간의 결합(Aggregation) 및 분리(Refinement)를 허용하여 복잡한 네트워크 형태의 사고 모델링 |
 | **검증 체계** | PRM (Process Reward Model) | 최종 결과만 평가하는 ORM과 달리, 중간 추론 단계(Step)별로 논리적 오류를 검증하고 보상을 부여하는 모델 |
 | **지식 융합** | ReAct (Reasoning and Acting) | CoT의 추론 과정과 외부 도구(API, 검색 등) 활용을 결합하여 환각을 줄이고 동적 정보 획득 |
 | **최신 동향** | Internal CoT (Hidden CoT) | OpenAI o1 모델 등에서 사용되는 방식으로, 사용자에게 프롬프트를 노출하지 않고 모델 내부적으로 [[강화학습]] 기반의 심층 추론 수행 |

@@ -14,9 +14,9 @@ aliases:
 
 * **정의**: 서비스 제공자(Provider)와 이용자(Customer) 간에 서비스 품질 수준([[HA(High Availability)|가용성]], 성능 등)을 정량적으로 측정하고, 달성 목표치 및 미달 시 보상 체계를 명시한 공식적인 협약(Contract)
 * **등장 배경 및 특징**:
-* **클라우드 및 [[XaaS]] 확대**: 아웃소싱 및 클라우드 환경에서 서비스 품질에 대한 책임 소재 명확화 필요성 증대
-* **정량적 지표 기반**: 모호한 서비스 기준을 배제하고 SLI, SLO 기반의 측정 가능한 객관적 수치 제공
-* **비즈니스 연계**: IT 인프라의 안정성을 넘어 Error Budget 등 SRE([[SRE (Site Reliability Engineering)|Site Reliability Engineering]]) 관점의 비즈니스 연속성 및 배포 속도 제어 수단으로 진화
+  * **클라우드 및 [[XaaS]] 확대**: 아웃소싱 및 클라우드 환경에서 서비스 품질에 대한 책임 소재 명확화 필요성 증대
+  * **정량적 지표 기반**: 모호한 서비스 기준을 배제하고 SLI, SLO 기반의 측정 가능한 객관적 수치 제공
+  * **비즈니스 연계**: IT 인프라의 안정성을 넘어 Error Budget 등 SRE([[SRE (Site Reliability Engineering)|Site Reliability Engineering]]) 관점의 비즈니스 연속성 및 배포 속도 제어 수단으로 진화
 
 
 

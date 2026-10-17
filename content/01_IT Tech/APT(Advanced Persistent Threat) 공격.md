@@ -71,9 +71,9 @@ flowchart TD
 | **탐지 난이도** | 상대적으로 탐지 용이 (시그니처 패턴 기반) | 탐지 매우 어려움 (행위 기반 이상 징후 분석 필요) |
 
 * **최신 방어 및 동향**:
-* **[[MITRE ATT&CK (Adversarial Tactics, Techniques & Common Knowledge)|MITRE ATT&CK]] [[프레임워크]] 적용**: 공격자의 전술, 기법, 절차(TTPs)를 분석하여 선제적 [[위협 헌팅|위협 헌팅(Threat Hunting)]] 및 [[SIEM]]/[[SOAR (Security Orchestration, Automation and Response)|SOAR]] 기반 침해 대응 자동화 수행.
-* **제로 트러스트([[제로 트러스트 보안모델|Zero Trust]]) 아키텍처**: "절대 신뢰하지 않고, 항상 검증한다(Never Trust, Always Verify)"는 원칙 하에 내부망에서도 최소 권한 접근 통제 및 마이크로 세그먼테이션 적용.
-* **행위 기반 엔드포인트 방어([[EDR(Endpoint Detection and Response)|EDR]]/[[XDR]])**: 단일 백신을 넘어 네트워크와 엔드포인트 전반의 이상 행위를 모니터링하고 즉각적으로 단말을 격리하는 다층 방어 체계 구축 필요.
+  * **[[MITRE ATT&CK (Adversarial Tactics, Techniques & Common Knowledge)|MITRE ATT&CK]] [[프레임워크]] 적용**: 공격자의 전술, 기법, 절차(TTPs)를 분석하여 선제적 [[위협 헌팅|위협 헌팅(Threat Hunting)]] 및 [[SIEM]]/[[SOAR (Security Orchestration, Automation and Response)|SOAR]] 기반 침해 대응 자동화 수행.
+  * **제로 트러스트([[제로 트러스트 보안모델|Zero Trust]]) 아키텍처**: "절대 신뢰하지 않고, 항상 검증한다(Never Trust, Always Verify)"는 원칙 하에 내부망에서도 최소 권한 접근 통제 및 마이크로 세그먼테이션 적용.
+  * **행위 기반 엔드포인트 방어([[EDR(Endpoint Detection and Response)|EDR]]/[[XDR]])**: 단일 백신을 넘어 네트워크와 엔드포인트 전반의 이상 행위를 모니터링하고 즉각적으로 단말을 격리하는 다층 방어 체계 구축 필요.
 
 ---
 

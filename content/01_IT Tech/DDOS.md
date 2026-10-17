@@ -3,94 +3,84 @@ title: DDOS
 date: 2026-04-13
 tags:
   - 보안
+aliases:
+  - DDoS
+  - 분산 서비스 거부 공격
 ---
 # DDoS (Distributed Denial of Service)
 
 ---
 
-## I. 다수의 좀비 PC를 활용한 가용성 파괴 공격, DDoS의 개요
+## I. 봇넷으로 가용성을 무너뜨리는, DDoS의 개요
 
-* **가. DDoS(Distributed [[DoS (Denial of Service)|Denial of Service]], 분산 서비스 거부)의 정의**: 공격자가 악성코드로 감염시킨 다수의 분산된 시스템(봇넷)을 원격에서 제어하여, 특정 웹 서버나 네트워크 인프라에 대량의 트래픽이나 요청을 동시에 집중시킴으로써 정상적인 서비스 제공을 불가능하게 만드는 사이버 공격 기법
-* **나. DDoS의 필요성(대응 배경) 및 특징**:
-* **필요성**: 단일 소스 기반의 단순 DoS 공격을 넘어선 수만~수백만 대의 분산된 공격 원천 차단, 대규모 트래픽 유입 시 서비스 [[HA(High Availability)|가용성]](Availability) 보장 필요
-* **특징**:
-* **분산 및 익명성**: 전 세계에 퍼진 좀비 PC(Botnet)를 활용하므로 공격자 추적과 최초 출발지 차단이 극도로 어려움
-* **자원 고갈 유발**: 네트워크 대역폭, 서버 [[CPU]]/메모리, [[세션]] 테이블 등의 시스템 자원을 고갈시켜 마비 유도
-* **다층적 공격 벡터**: [[네트워크 계층]](L3/4)부터 애플리케이션 계층(L7)까지 다양한 계층을 타겟으로 진화
+### 가. 정의
 
+- 악성코드에 감염된 **다수의 분산 시스템(봇넷)을 원격 조종하여 표적에 트래픽·요청을 동시에 집중**시켜 정상 서비스를 불가능하게 만드는 분산 서비스 거부 공격
 
+### 나. 특징
 
-
+| 구분 | 내용 |
+| --- | --- |
+| 분산성 | 수만~수백만 대 봇(PC·IoT 기기)이 동시 공격 |
+| 추적 곤란 | 실제 공격자는 C&C 뒤에 숨고, 출발지가 넓게 분산 |
+| 자원 고갈 | 회선 대역폭, 서버 CPU·메모리, 세션 테이블 소진 |
+| 다계층 | L3/L4 볼륨 공격부터 L7 애플리케이션 공격까지 |
+| [[가용성]] 침해 | CIA 중 가용성을 직접 공격 |
 
 ---
 
-## II. DDoS의 아키텍처 개념도 및 핵심 기술 요소
+## II. 공격 구조 및 유형
 
-### 가. DDoS 공격 인프라 및 방어 체계 개념도
+### 가. 공격·방어 구조
 
 ```mermaid
-flowchart TD
-    subgraph Attacker_Network ["공격자 인프라 (Botnet)"]
-        direction LR
-        Attacker["공격자 (Attacker)"] -->|"C&C (명령 제어)"| C1["좀비 PC 1"]
-        Attacker -->|"C&C (명령 제어)"| C2["좀비 PC 2"]
-        Attacker -->|"C&C (명령 제어)"| C3["좀비 PC N"]
+flowchart LR
+    ATK["공격자"] -->|"명령"| CC["C&C 서버"]
+    CC --> B1["봇 1"]
+    CC --> B2["봇 2"]
+    CC --> BN["봇 N"]
+    B1 & B2 & BN ==>|"대량 트래픽"| AC["Anycast 분산"]
+    subgraph DEF["방어 (클라우드 스크러빙)"]
+        AC --> SC["스크러빙 센터<br/>비정상 트래픽 제거"]
     end
-
-    subgraph Defense_System ["방어 인프라 (Cloud Scrubbing Center)"]
-        direction TB
-        Anycast["Anycast 라우팅<br/>(트래픽 분산)"]
-        Scrubbing["Scrubbing Center<br/>(비정상 트래픽 정화/세탁)"]
-        Anycast --> Scrubbing
-    end
-
-    subgraph Target_Server ["목표 시스템"]
-        direction TB
-        WAF["WAF / 방화벽"]
-        Server["웹 서버 / DB"]
-        WAF --> Server
-    end
-
-    C1 & C2 & C3 == "대규모 분산 트래픽 폭주<br/>(Volumetric / Flood)" ===> Anycast
-    Scrubbing == "정상 트래픽만 허용" ===> WAF
-    
-    classDef major fill:#f9f9f9,stroke:#333,stroke-width:2px;
-    class Defense_System,Target_Server major;
-
+    SC ==>|"정상 트래픽"| WAF["WAF · 방화벽"] --> SRV["서비스"]
 ```
 
-* 공격자는 C&C 서버를 통해 분산된 좀비 PC들을 조종하여 타겟에 대규모 공격을 감행하며, 방어 측은 클라우드 기반의 스크러빙 센터(Scrubbing Center)를 통해 비정상 트래픽을 걸러내고 정상 트래픽만 서버로 유도함
+- 공격자는 C&C로 봇넷에 명령하고, 방어 측은 Anycast로 트래픽을 분산해 스크러빙 센터에서 정화한 뒤 정상 트래픽만 전달
 
-### 나. DDoS의 핵심 공격 유형 및 기술 요소
+### 나. 공격 유형
 
-| 분류 | 공격 기법 (Keyword) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **대역폭 고갈** | Volumetric Attacks | UDP Flood, [[ICMP]] Flood 등 네트워크 대역폭의 한계를 초과하는 거대한 트래픽을 발생시켜 회선 마비 유도 |
-| **[[프로토콜]] 공격** | SYN Flood | [[TCP]] 3-Way Handshake 과정을 악용하여 허위의 ACK 응답을 대기하게 만듦으로써 서버의 연결 테이블(Connection Pool) 고갈 |
-| **프로토콜 공격** | Ping of Death / Land | 규격에 어긋난 대형 패킷을 전송하거나 출발지/목적지 IP를 동일하게 조작하여 시스템 패닉 및 오작동 유발 |
-| **애플리케이션** | HTTP Get/POST Flood | 정상적인 웹 요청처럼 위장하여 특정 고부하 페이지(검색, 대용량 다운로드 등)를 무한 반복 호출 |
-| **애플리케이션** | Slowloris (Slow HTTP) | HTTP 헤더를 매우 느린 속도로 분할 전송하여, 서버의 동시 연결 제한(Connection Limit)을 장기간 점유 |
-| **통제 요소** | Botnet / C&C Server | 악성코드로 감염된 단말들의 집합(봇넷)과 이를 원격에서 조종하기 위한 명령 제어(Command & Control) 서버 |
-| **방어 기술** | Scrubbing Center | 의심스러운 트래픽을 우회시켜 패턴 분석 및 정화 과정을 거친 후, 깨끗한 트래픽만 원본 서버로 전달하는 전문 보안 시설 |
+| 볼륨 공격 | UDP·ICMP Flood | 대량 패킷으로 회선 대역폭 포화 |
+| | 반사·증폭 | DNS·NTP·Memcached 응답을 표적으로 반사 ([[DRDOS\|DRDoS]]) |
+| 프로토콜 공격 | SYN Flood | SYN만 대량 전송해 반개방 연결 백로그 고갈 |
+| | ACK·Fragment Flood | 상태 추적 장비(방화벽·LB) 자원 고갈 |
+| 애플리케이션 공격 | HTTP GET/POST Flood | 정상 요청으로 위장해 고부하 페이지 반복 호출 |
+| | Slowloris·RUDY | 헤더·본문을 느리게 보내 연결을 장시간 점유 |
+| 공격 인프라 | 봇넷·[[C2]] | 감염 기기 집합과 원격 명령 서버 (예: Mirai IoT 봇넷) |
+| 방어 | 스크러빙 센터 | 트래픽을 우회시켜 정화 후 원 서버로 전달 |
+| | SYN Cookie | 연결 상태 저장 없이 SYN 처리 |
 
 ---
 
-## III. 네트워크 계층 vs 애플리케이션 계층 DDoS 비교 및 방어 동향
+## III. 비교 및 동향
 
-### 가. 네트워크/프로토콜 공격(L3/4)과 애플리케이션 공격(L7) 비교
+### 가. L3/L4 공격 vs L7 공격
 
-| 비교 항목 | 네트워크/프로토콜 공격 (L3 / L4 DDoS) | 애플리케이션 공격 (L7 DDoS) |
+| 비교 항목 | L3/L4 공격 | L7 공격 |
 | --- | --- | --- |
-| **타겟 계층** | OSI 3계층(네트워크) 및 4계층(전송) | OSI 7계층(애플리케이션 - 웹 서버/DB) |
-| **공격 방식** | 대량의 패킷을 보내 회선 대역폭 또는 네트워크 장비 자원 고갈 | 정상적인 웹 요청 형태로 위장하여 서버의 **[[프로세스]] 및 DB 자원 고갈** |
-| **트래픽 특징** | 트래픽의 용량(Gbps, Mpps)이 매우 큼 | 트래픽 용량은 적으나, **구분이 어려워 탐지가 까다로움** |
-| **대표 사례** | SYN Flood, UDP Flood, ICMP Flood | HTTP Get/POST Flood, Slowloris, RUDY |
-| **대응 방법** | [[ISP (Information Strategy Plan)|ISP]] 연동 대역폭 확장, 패킷 필터링, Anti-DDoS 장비 | 웹 [[방화벽]](WAF), 챌린지 검증(CAPTCHA), 행위 기반 탐지 |
+| 대상 | 회선, 네트워크 장비, TCP 스택 | 웹 서버, WAS, DB |
+| 방식 | 대량 패킷 (Gbps·Mpps) | 정상과 유사한 요청 (RPS) |
+| 탐지 | 트래픽 급증으로 비교적 쉬움 | 정상 요청과 구분 어려움 |
+| 예 | SYN·UDP·ICMP Flood, 증폭 공격 | HTTP Flood, Slowloris, RUDY |
+| 대응 | ISP 연동, 스크러빙, Anti-DDoS 장비 | WAF, 봇 관리, 챌린지, 요청 제한 |
 
-### 나. 향후 전망 및 방어 동향
+### 나. 동향
 
-* **클라우드 기반 스크러빙 서비스([[SecaaS (Security as a Service)|SecaaS]])의 보편화**: 온프레미스 장비만으로는 테라비트(Tbps) 급의 초대형 대역폭 공격에 대응하기 어려워짐에 따라, 클라우드 가상 라우팅(Anycast)을 활용해 트래픽을 분산하고 클라우드 단에서 원천 차단하는 **클라우드 Anti-DDoS 서비스**가 필수 표준으로 자리 잡음
-* **AI 머신러닝 기반의 실시간 행위 분석 탐지**: 시그니처 기반 탐지를 우회하는 지능형 L7 공격에 대응하기 위해, 정상 사용자와 봇(Bot)의 미세한 마우스 움직임, 요청 패턴, 세션 유지 행위를 AI가 실시간 학습하여 오탐 없이 즉각 차단하는 지능형 방어 체계로 고도화되는 추세임
+- **초대형화**: IoT 봇넷과 HTTP/2 Rapid Reset(CVE-2023-44487) 등으로 Tbps·수억 RPS 규모 공격 등장
+- **클라우드 방어**: 클라우드 Anti-DDoS·[[CDN]]·[[WAAP]]를 상시 경유하는 구조가 표준화 ([[SecaaS (Security as a Service)|SecaaS]])
+- **랜섬 DDoS**: 공격 후 금전을 요구하는 RDoS 증가
 
 ---
 
@@ -100,7 +90,7 @@ flowchart TD
 - **세부 분류**: `1. 정보보안 원칙 & 거버넌스 · 인증`
 - **핵심 연관 토픽**:
   - [[DoS (Denial of Service)]]
-  - [[ICMP]]
-  - [[SecaaS (Security as a Service)]]
-  - [[기밀성]]
   - [[DRDOS]]
+  - [[C2]]
+  - [[WAAP|WAAP(Web Application and API Protection)]]
+  - [[가용성]]

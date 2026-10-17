@@ -7,7 +7,7 @@ tags:
 
 # 🗄️ 데이터베이스 MOC (Map of Content)
 
-> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **108개**  
+> **상위 허브**: [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC]] | **소속 토픽 수**: **99개**  
 > 데이터 모델링, 트랜잭션 동시성 제어, 장애 회복, 물리적 저장 및 인덱스, 대용량 분산 DB/NoSQL 및 SQL 튜닝을 체계화한 데이터베이스 지식 지도입니다.
 
 ---
@@ -27,7 +27,7 @@ flowchart TD
 
 ## 📑 핵심 분류 체계 및 토픽 목록
 
-### 1. 데이터 모델링 & 관계형 DB 설계 (32)
+### 1. 데이터 모델링 & 관계형 DB 설계 (31)
 
 > 개념/논리/물리 모델링, 정규화(1NF~BCNF), 반정규화, 함수적 종속성, 식별자, ERD, ANSI-SPARC 3단계 구조
 
@@ -49,7 +49,6 @@ flowchart TD
 - [[연결함정|연결함정(Connection Trap)]]
 - [[자료 사전|자료 사전]]
 - [[조인|조인(Join)]]
-- [[카탈로그 시스템 카탈로그|카탈로그/시스템 카탈로그/ (System Catalog)]]
 - [[특수화|특수화]]
 - [[함수적 종속성|함수적 종속성 (Functional Dependency)]]
 - [[Anomaly(이상현상)|Anomaly(이상현상)]]
@@ -64,12 +63,11 @@ flowchart TD
 - [[OLAP|OLAP]]
 - [[SQL 문법|SQL 문법]]
 
-### 2. 트랜잭션 & 동시성 제어 (Concurrency) (36)
+### 2. 트랜잭션 & 동시성 제어 (Concurrency) (31)
 
 > ACID 원칙, 직렬성(Serializability), 트랜잭션 격리 수준, 2PL, MVCC, 타임스탬프 순서 기법, 이상현상(Dirty/Phantom Read)
 
 - [[2PL|2PL (Two-Phase Locking Protocol)]]
-- [[고립화 수준|고립화 수준]]
 - [[공공데이터 품질인증 매뉴얼(2025.07.)|공공데이터 품질인증 매뉴얼(2025.07.)]]
 - [[그림자페이지 기법|그림자페이지(Shadow Paging) 기법]]
 - [[낙관적 검증 기법|낙관적 검증 (Validation) 기법]]
@@ -78,7 +76,6 @@ flowchart TD
 - [[데이터 레이크하우스|데이터 레이크하우스(Data Lakehouse)]]
 - [[데이터 품질인증 가이드라인 - DQ인증 (2025.02.26)|데이터 품질인증 가이드라인 - DQ인증 (2025.02.26)]]
 - [[데이터베이스 무결성|데이터베이스 무결성]]
-- [[데이터베이스 파티셔닝|데이터베이스 파티셔닝(Partitioning)]]
 - [[무결성|무결성]]
 - [[연관성 분석|연관성 분석]]
 - [[연관화|연관화]]
@@ -86,12 +83,10 @@ flowchart TD
 - [[쿼리오프로딩|쿼리오프로딩(Query offloading)]]
 - [[타임스탬프 순서 기법|타임스탬프 순서 기법 (Timestamp Ordering)]]
 - [[트랜잭션|트랜잭션]]
-- [[회복기법|회복기법]]
 - [[Apriori 알고리즘|Apriori 알고리즘]]
 - [[ARIES|ARIES (Algorithms for Recovery and Isolation Exploiting Semantics)]]
-- [[CAP 이론과 BASE 이론|CAP 이론과 BASE 이론]]
 - [[CockroachDB|CockroachDB(코크로치DB)]]
-- [[DB 동시성제어|DB 동시성제어]]
+- [[병행 제어|병행 제어 (Concurrency Control)]]
 - [[DB 성능 개선 방안|DB 성능 개선 방안 (Tuning)]]
 - [[DB 회복기법|DB 회복기법]]
 - [[Dirty Read|Dirty Read]]
@@ -103,7 +98,6 @@ flowchart TD
 - [[OLTP|OLTP]]
 - [[Phantom Read|Phantom Read]]
 - [[RDBMS 인덱스(index)|RDBMS 인덱스(index)]]
-- [[Timestamp Ordering|Timestamp Ordering]]
 
 ### 3. 장애 회복 기법 & 데이터 무결성 (8)
 
@@ -118,13 +112,12 @@ flowchart TD
 - [[PACELC|PACELC]]
 - [[SQL 함수|SQL 함수]]
 
-### 4. 물리 저장 구조 & 인덱스 최적화 (11)
+### 4. 물리 저장 구조 & 인덱스 최적화 (10)
 
 > B-Tree, B+Tree, 다차원 색인, 클러스터드 인덱스, 뷰, 테이블 파티셔닝(Partitioning), 저장 메커니즘
 
 - [[마이데이터|마이데이터]]
 - [[분산 데이터베이스|분산 데이터베이스 (Distributed Database)]]
-- [[빅데이터 관련 정보화 사업에 대한 감리 수행|빅데이터 관련 정보화 사업에 대한 감리 수행]]
 - [[샤딩|샤딩 (Sharding)]]
 - [[인덱스 구조에 따른 분류|인덱스 구조에 따른 분류 (Index Classification by Structure)]]
 - [[파티셔닝|파티션]]
@@ -134,7 +127,7 @@ flowchart TD
 - [[Hadoop 3.0|Hadoop 3.0]]
 - [[HDFS|HDFS]]
 
-### 5. 분산 데이터베이스 & NoSQL & 대용량 (5)
+### 5. 분산 데이터베이스 & NoSQL & 대용량 (4)
 
 > CAP 이론, BASE, PACELC, NoSQL 유형, 샤딩, 복제, CockroachDB, CDC, ETL, 데이터 웨어하우스(DW), 데이터 레이크
 
@@ -142,9 +135,8 @@ flowchart TD
 - [[아파치 카프카|아파치 카프카]]
 - [[일반화|일반화]]
 - [[Daap(Data as a product)|Daap(Data as a product)]]
-- [[NoSQL 품질속성 PACELC|NoSQL 품질속성 PACELC]]
 
-### 6. SQL 표준 문법 & 쿼리 성능 튜닝 (16)
+### 6. SQL 표준 문법 & 쿼리 성능 튜닝 (15)
 
 > DDL/DML/DCL, 고급 SQL 함수, 옵티마이저(RBO/CBO), 실행계획, 조인(Join) 최적화, DB 튜닝 기법
 
@@ -157,7 +149,6 @@ flowchart TD
 - [[분류화|분류화]]
 - [[분석 모델 평가 방법|분석 모델 평가 방법]]
 - [[빅데이터 분석 기법|빅데이터 분석 기법 (알고리즘)]]
-- [[옵티마이저|옵티마이저 (Optimizer)]]
 - [[탐색적 데이터 분석과 확증적 데이터 분석|탐색적 데이터 분석과 확증적 데이터 분석]]
 - [[ANN(Approximate Nearest Neighbor)알고리즘|ANN(Approximate Nearest Neighbor)알고리즘]]
 - [[EDM|EDM]]

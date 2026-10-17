@@ -3,67 +3,82 @@ title: PE(Processing Element)
 date: 2026-08-24
 tags:
   - 컴퓨터구조
+aliases:
+  - Processing Element
 ---
 
-# PE(Processing Element)
-
----
-
-## I. NPU 병렬 연산의 최소 단위, PE(Processing Element)의 개요
-- 정의: [[NPU]] 내에서 [[딥러닝]] 텐서 연산을 초고속·저전력으로 수행하기 위해 [[MAC]] 연산기, 로컬 레지스터, 데이터 전송 인터페이스로 구성된 최소 하드웨어 연산 유닛.
-- 특징: 메모리 벽 극복, 도메인 특화 아키텍처([[DSA]]), 공간적 데이터 흐름(Spatial Architecture)
+# PE (Processing Element)
 
 ---
 
-## II. PE의 아키텍처 및 핵심 기술 요소
-### 가. PE의 내부 아키텍처 및 2D Systolic Array 동작 원리
+## I. AI 가속기 병렬 연산의 최소 단위, PE의 개요
+
+### 가. 정의
+
+- [[NPU]] 등 AI 가속기 안에서 **[[MAC 배열|MAC]] 연산기·로컬 레지스터·이웃 PE와의 데이터 경로로 구성된 최소 연산 셀**
+
+### 나. 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 공간 구조 | 수백~수만 개 PE를 격자로 배치, 데이터가 PE 사이를 흐르며 연산 (Spatial Architecture) |
+| 데이터 재사용 | 로컬 레지스터·이웃 전달로 외부 메모리 접근 최소화 |
+| 단순 제어 | 같은 연산을 반복, 명령 해독·분기 로직이 거의 없음 |
+| [[DSA]] | 신경망 연산에 특화된 도메인 특화 구조 |
+
+---
+
+## II. 구조 및 구성요소
+
+### 가. PE 내부 구조와 배열
+
 ```mermaid
-graph LR
-    subgraph Single_PE ["단일 Processing Element (PE) 내부 구조"]
+flowchart LR
+    subgraph PE["단일 PE"]
         direction TB
-        IN_A["Activation In (West)"] --> MULT["Multiplier (곱셈기)"]
-        IN_W["Weight Register (Local RF)"] --> MULT
-        MULT --> ADD["Adder (덧셈기)"]
-        IN_PS["Partial Sum In (North)"] --> ADD
-        ADD --> ACC_REG["Accumulator / Psum Reg"]
-        ACC_REG --> OUT_PS["Partial Sum Out (South)"]
-        IN_A --> OUT_A["Activation Bypass (East)"]
+        A["입력 활성값 (서쪽)"] --> MUL["곱셈기"]
+        W["가중치 레지스터"] --> MUL
+        MUL --> ADD["덧셈기"]
+        PS["부분합 입력 (북쪽)"] --> ADD
+        ADD --> ACC["누산 레지스터"]
     end
-
-    subgraph Systolic_Grid ["2D Systolic Array 데이터 흐름 메커니즘"]
-        PE00["PE (0,0)"] -->|Act| PE01["PE (0,1)"]
-        PE00 -->|Psum| PE10["PE (1,0)"]
-        PE01 -->|Psum| PE11["PE (1,1)"]
-        PE10 -->|Act| PE11
-    end
+    ACC --> OUT["부분합 출력 (남쪽)"]
+    A --> PASS["활성값 전달 (동쪽)"]
 ```
 
-- 인접 PE로 전송되는 파이프라인 구조.
-### 나. PE의 핵심 기술 및 구성 요소
+- 활성값은 동쪽 PE로, 부분합은 남쪽 PE로 전달되어 [[시스톨릭 어레이]]를 구성
 
-| **구분**     | **핵심 기술(키워드)**               | **기술 설명 및 세부 특징**               |
-| ---------- | ---------------------------- | ------------------------------- |
-| **연산 유닛**  | **MAC Unit**                 | 곱셈 및 누산을 처리하는 핵심 연산 블록          |
-| **연산 유닛**  | **Mixed-Precision ALU**      | 모델 경량화 및 고효율 처리를 위한 가변 정밀도 지원   |
-| **저장 버퍼**  | **Local Register File (RF)** | 글로벌 메모리 접근 최소화                  |
-| **저장 버퍼**  | **Double Buffering**         | 연산과 데이터 로드/스토어를 오버랩하여 대기 사이클 제거 |
-| **데이터 흐름** | **Weight Stationary (WS)**   | 로드 전력 절감                        |
-| **데이터 흐름** | **Output Stationary (OS)**   | 누산 버스 트래픽 최소화                   |
-| **데이터 흐름** | **Row Stationary (RS)**      | 에너지 효율 극대화                      |
-| **효율화 기법** | **Zero-skipping Logic**      | 연산 및 메모리 접근을 스킵                 |
-| **효율화 기법** | **Clock/Power Gating**       | 정적/동적 전력 소모 억제                  |
+### 나. 구성요소
+
+| 구분 | 요소 | 설명 |
+| --- | --- | --- |
+| 연산 | MAC 유닛 | 곱셈 후 누산, PE의 핵심 연산 |
+| | 가변 정밀도 ALU | INT8·FP16·FP8 등 여러 정밀도 지원 |
+| 저장 | 로컬 레지스터 파일 | 가중치·부분합 보관, 상위 버퍼 접근 감소 |
+| | 더블 버퍼링 | 연산과 다음 데이터 적재를 겹쳐 대기 제거 |
+| 데이터 흐름 | WS (Weight Stationary) | 가중치를 PE에 고정, 가중치 재적재 에너지 절감 |
+| | OS (Output Stationary) | 부분합을 PE에 고정, 부분합 이동 감소 |
+| | RS (Row Stationary) | 행 단위 매핑으로 입력·가중치·부분합 재사용 균형 (Eyeriss) |
+| 저전력 | Zero-skipping | 입력·가중치가 0이면 연산·메모리 접근 생략 |
+| | 클록·파워 게이팅 | 쉬는 PE의 동적·정적 전력 차단 |
 
 ---
 
-## III. PE 기반 NPU vs GPU 연산 코어 비교 및 향후 전망
+## III. 비교 및 동향
 
-| **비교 항목**    | **[[NPU]] Processing Element (PE)**                 | **[[GPU]] CUDA Core (Streaming Processor)**         |
-| ------------ | ----------------------------------------------- | ----------------------------------------------- |
-| **연산 제어 구조** | SIMD/Systolic 기반 고정 데이터플로우, 극소화된 제어 로직          | SIMT 기반 독립적 [[CPU Scheduling|스케줄링]], Warp Scheduler 및 Branch 유닛 포함 |
-| **메모리 의존도**  | PE 간 직접 전송(Data Reuse)으로 레지스터/캐시 의존도 극소화        | 레지스터 파일 및 공유 메모리(Shared Memory) 의존도 높음          |
-| **최적화 대상**   | Dense/Sparse Matrix Multiplication (GEMM, Conv) | 범용 그래픽 렌더링, 병렬 수치 해석 및 [[딥러닝]] 연산                   |
-| **전력 효율성**   | 매우 높음 (수~수십 TOPS/W, Domain-Specific 특화)         | 중간 (범용 파이프라인 및 복잡한 제어로 전력 소모 상대적 높음)            |
-- [[PIM]]/PNM 연계 융합, 초저정밀도 및 미세 스케일링(Microscaling)
+### 가. NPU PE vs GPU CUDA 코어
+
+| 비교 항목 | NPU PE | [[GPU]] CUDA 코어 |
+| --- | --- | --- |
+| 제어 | 고정 데이터플로, 제어 로직 최소 | SIMT, Warp 스케줄러·분기 처리 포함 |
+| 데이터 이동 | PE 간 직접 전달 | 레지스터 파일·공유 메모리 경유 |
+| 최적 대상 | 행렬 곱(GEMM)·합성곱 | 그래픽·과학 계산·[[딥러닝]] 등 범용 |
+| 전력 효율 | 높음 | 중간 |
+
+### 나. 동향
+
+- **메모리 근접 배치**: PE를 메모리 내부·옆에 두는 [[PIM]]·PNM 구조로 데이터 이동 감소
+- **초저정밀 포맷**: OCP MX(Microscaling) 포맷(MXFP8·MXFP4 등)처럼 블록 단위 스케일을 공유하는 저비트 연산 지원
 
 ---
 
@@ -72,8 +87,8 @@ graph LR
 - **소속 도메인**: [[00_컴퓨터구조_MOC|💻 컴퓨터구조]]
 - **세부 분류**: `1. CPU 프로세서 & 마이크로아키텍처`
 - **핵심 연관 토픽**:
-  - [[NPU|NPU(Neural Processing Unit)]]
-  - [[GPU]]
   - [[시스톨릭 어레이]]
-  - [[CPU]]
-  - [[딥러닝]]
+  - [[MAC 배열]]
+  - [[NPU|NPU(Neural Processing Unit)]]
+  - [[TPU (Tensor Processing Unit)]]
+  - [[GPU]]
