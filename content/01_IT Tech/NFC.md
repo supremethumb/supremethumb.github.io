@@ -3,93 +3,94 @@ title: NFC
 date: 2026-04-13
 tags:
   - 네트워크
+aliases:
+  - NFC
+  - Near Field Communication
+  - 근거리 무선 통신
 ---
 # NFC (Near Field Communication)
 
 ---
 
-## I. 근거리 무선 통신 기술, NFC의 개요
+## I. 초근접 비접촉 무선 통신, NFC의 개요
 
-### 가. NFC의 정의
+### 가. 정의
 
-* 13.56MHz 주파수 대역을 사용하여 수 센티미터(10cm 이내)의 아주 가까운 거리에서 양방향 통신을 지원하는 비접촉식 근거리 무선 통신 기술
+- 13.56MHz 주파수 대역을 사용하여 10cm 이내의 초단거리에서 기기 간 데이터를 양방향으로 전송하는 **비접촉식 근거리 무선 통신 기술 표준 (ISO/IEC 18092)**
 
-### 나. NFC의 등장 배경 및 특징
+### 나. 특징 및 필요성
 
-* **[[RFID]]/Smart Card 기술의 진화**: 기존 RFID의 일방향성 및 결제 제한성을 극복하고, 기기 간 양방향 데이터 교환 및 보안성 강화 필요성에 따라 표준화
-* **특징**:
-  * **초단거리 보안성**: 통신 거리가 매우 짧아 도신(Eavesdropping) 및 중간자 공격(MITM) 방어에 유리
-  * **다양한 동작 모드**: 카드 에뮬레이션, 리더/라이터, P2P 모드를 모두 지원하여 호환성 우수
-  * **호환성**: 기존 ISO/IEC 14443 및 FeliCa 등 비접촉식 스마트카드 인프라와 완벽한 호환 보장
-
-
+| 구분 | 내용 |
+| --- | --- |
+| 초단거리 보안성 | 통신 반경이 10cm 이내(통상 4cm 이하)로 제한되어 전파 도청 및 중간자 공격(MITM) 위험 원천 차단 |
+| 복합 동작 모드 | 단일 칩에서 카드 에뮬레이션, 리더/라이터, P2P 모드를 동적 전환 지원 |
+| 즉시성 (Zero Setup) | 블루투스와 달리 별도의 페어링 절차 없이 단말 태깅 즉시(0.1초 미만) 세션 연결 |
+| 인프라 호환성 | 기존 비접촉식 교통카드 및 스마트카드 표준(ISO/IEC 14443, FeliCa)과 하위 호환성 유지 |
 
 ---
 
-## II. NFC의 아키텍처 및 핵심 기술 요소
+## II. 개념도 및 핵심 구성요소
 
-### 가. NFC의 동작 모드 및 시스템 아키텍처
+### 가. 개념도 (동작 원리 및 상호작용)
 
 ```mermaid
-flowchart TB
-    subgraph "NFC Device Initiator"
+flowchart LR
+    subgraph Initiator ["주도 기기 (NFC Initiator)"]
         direction TB
-        App1["NFC Application"]
-        NFC_Cont["NFC Controller / Secure Element (SE)"]
-        App1 --- NFC_Cont
+        App1["NFC 애플리케이션"]
+        Cont["NFC 컨트롤러 / SE"]
+        App1 --- Cont
     end
 
-    subgraph "NFC RF Field (13.56 MHz)"
+    subgraph RF_Field ["RF 통신 필드 (13.56MHz)"]
         direction TB
-        RF["자기장 유도 결합 (Inductive Coupling)"]
+        Field["전자기 유도 결합<br/>(Inductive Coupling)"]
     end
 
-    subgraph "NFC Target / Tag"
+    subgraph Target ["대상 기기 / 태그 (Target)"]
         direction TB
-        Antenna["Antenna Coil"]
-        TargetApp["Passive Tag / Smart Card"]
-        Antenna --- TargetApp
+        Antenna["루프 안테나 코일"]
+        Tag["수동형 태그 / 스마트카드"]
+        Antenna --- Tag
     end
 
-    NFC_Cont <== "RF 신호 발생 (Active / Passive)" ==> RF
-    RF <== "전자기 유도" ==> Antenna
-
+    Cont <== "RF 신호 발생 (Active/Passive)" ==> Field
+    Field <== "유도 기전력 공급 및 응답" ==> Antenna
 ```
 
-* NFC 통신은 자기장 유도 결합 방식을 사용하여, 주도 기기(Initiator)가 무선 주파수(RF) 필드를 형성하면 대상 기기(Target)가 에너지를 공급받거나 응답함
-* 하드웨어 보안 요소(SE, Secure Element)를 연동하여 금융 결제 및 신분증 인증 정보를 안전하게 보호함
+- 주도 기기(Initiator)가 13.56MHz의 교류 자기장을 발생시키면 대상 기기(Target)의 코일에 유도 기전력이 발생하여 에너지를 공급받고 데이터를 변복조하여 전송
 
-### 나. NFC의 핵심 기술 및 구성 요소
+### 나. 핵심 기술 요소 및 동작 모드
 
-| 구분 | 요소기술(키워드) | 세부 설명 |
+| 구분 | 요소 | 설명 |
 | --- | --- | --- |
-| **통신 모드** | Card Emulation Mode | - 스마트폰 등이 교통카드나 신용카드처럼 동작하여 리더기에 태깅되는 모드 |
-| **통신 모드** | Reader / Writer Mode | - NFC 스마트폰이 태그(Tag)나 포스터의 스마트 포스터 정보를 읽거나 쓰는 모드 |
-| **통신 모드** | Peer-to-Peer (P2P) Mode | - 두 대의 NFC 기기 간 양방향으로 연락처, 사진, 파일 등을 직접 교환하는 모드 |
-| **하드웨어 보안** | Secure Element (SE) | - 암호 키와 사용자 금융 정보를 안전하게 저장하는 독립된 하드웨어 칩 또는 유심(USIM) |
-| **소프트웨어 보안** | Host Card Emulation (HCE) | - 하드웨어 SE 없이 클라우드 및 OS 소프트웨어 레벨에서 카드 에뮬레이션을 안전하게 처리 |
-| **물리 규격** | 13.56 MHz & ISO/IEC 18092 | - 국제 표준으로 제정된 RFID 기반의 근거리 무선 주파수 대역 및 통신 [[프로토콜]] 규격 |
-| **연동 기술** | SWP (Single Wire Protocol) | - NFC칩과 통신사 USIM(SE) 간의 암호화된 데이터를 전송하기 위한 단일 배선 인터페이스 |
-| **응용 서비스** | Apple Pay / Google Pay | - 토큰화(Tokenization) 기술을 결합하여 오프라인 매장에서 안전한 모바일 결제 구현 |
+| 3대 동작 모드 | 카드 에뮬레이션 | 스마트폰이 교통카드나 신용카드(스마트카드)처럼 동작하여 POS 리더기에 결제 수행 |
+| | 리더 / 라이터 | 스마트폰이 RFID 태그에 기록된 정보(스마트 포스터, URL, 제품 정보)를 읽거나 수정 |
+| | Peer-to-Peer (P2P) | 두 NFC 단말 간에 명함, 사진, Wi-Fi 접속 정보 등을 직접 양방향 교환 |
+| 보안 아키텍처 | Secure Element (SE) | 암호화 키와 금융 결제 정보를 물리적으로 격리 보관하는 하드웨어 보안 칩 (eSE, USIM) |
+| | Host Card Emulation (HCE) | 물리적 SE 칩 없이 OS 커널 및 클라우드 가상 환경에서 카드 결제를 안전하게 처리 |
+| 인터페이스 | Single Wire Protocol (SWP) | NFC 비접촉 컨트롤러와 통신사 USIM 카드 간 단일 배선으로 통신하는 표준 규격 |
+| 무선 규격 | 13.56 MHz 대역 | ISM 대역을 사용하며 전송 속도는 106, 212, 424 kbps 지원 |
 
 ---
 
-## III. NFC와 블루투스/RFID 비교 및 향후 동향
+## III. 무선 기술 비교 및 동향
 
-### 가. 근거리 무선 통신 기술 비교 (NFC vs BLE vs RFID)
+### 가. NFC vs BLE vs RFID
 
-| 비교 항목 | NFC (Near Field Communication) | BLE (Bluetooth Low Energy) | RFID (Radio Frequency ID) |
+| 비교 항목 | NFC (Near Field Communication) | BLE (Bluetooth Low Energy) | RFID (Radio Frequency Identification) |
 | --- | --- | --- | --- |
-| **통신 거리** | **초단거리 (10cm 이내)** | 중단거리 (10m ~ 100m) | 단거리 ~ 장거리 (수 cm ~ 수 m) |
-| **통신 방향** | 양방향 (Bi-directional) | 양방향 (Bi-directional) | 단방향 (Tag → Reader 위주) |
-| **주파수 대역** | 13.56 MHz | 2.4 GHz ISM Band | LF, HF, UHF (다양함) |
-| **연결 설정 시간** | 즉시 태깅 (0.1초 이내) | 페어링(Pairing) 절차 필요 (수 초) | 태그 인식 즉시 응답 |
-| **주요 활용 분야** | 모바일 결제, 출입증, 교통카드 | 비콘 위치추적, 웨어러블 기기 연동 | 물류 관리, 재고 조사, 자산 추적 |
+| 통신 거리 | **초단거리 (10cm 이내)** | 중단거리 (10m ~ 100m) | 주파수에 따라 단거리 ~ 장거리 (수 cm ~ 수십 m) |
+| 통신 방향 | **양방향 (Bi-directional)** | **양방향 (Bi-directional)** | 단방향 (태그 $\rightarrow$ 리더 일방 통신) |
+| 주파수 대역 | 13.56 MHz | 2.4 GHz ISM 대역 | LF, HF, UHF(900MHz), 마이크로웨이브 |
+| 페어링 절차 | 불필요 (단말 태깅 즉시 통신) | 페어링 탐색 및 수락 과정 필요 | 불필요 |
+| 주요 활용처 | 모바일 결제, 모바일 신분증, 출입통제 | 비콘 위치추적, 스마트워치, 무선 이어폰 | 물류 유통, 재고 관리, 도서관 대출, 하이패스 |
 
-### 나. NFC 기술의 향후 전망 및 최신 동향
+### 나. 동향
 
-* **디지털 지갑 및 신분증으로의 확장**: 모바일 결제 범용화를 넘어, 모바일 주민등록증, 운전면허증, 모바일 사원증 등 신원 확인(ID) 인프라의 핵심 수단으로 자리매김
-* **IoT 기기 페어링 간소화**: 스마트 홈 가전, 의료기기, 오디오 장비 등의 초기 블루투스/Wi-Fi 연결 시 복잡한 설정 과정을 없애고 '태그 앤 고(Tag & Go)' 방식으로 연결성을 제공하는 형태로 고도화 중
+- **모바일 신분증 및 디지털 지갑 표준화**: 모바일 운전면허증, 주민등록증, 사원증 등 국가 공공 신분증 및 디지털 키(차량 도어록)의 핵심 인증 매체로 안착
+- **IoT 기기 초간편 설정(Zero-Touch Pairing)**: 복잡한 Wi-Fi 비밀번호 입력 없이 스마트홈 가전이나 블루투스 스피커에 스마트폰을 태깅하여 원터치 연동 지원
+- **NFC 무선 충전(WLC) 규격 확대**: 초소형 저전력 웨어러블(스타일러스 펜, 스마트 링, 무선 이어버드)에 통신과 최대 1W 무선 충전을 동시 공급하는 기술 확산
 
 ---
 
@@ -99,7 +100,7 @@ flowchart TB
 - **세부 분류**: `4. 무선 및 차세대 이동통신 (5G/6G/Wi-Fi)`
 - **핵심 연관 토픽**:
   - [[RFID]]
+  - [[Wi-Fi 7]]
+  - [[암호화]]
   - [[프로토콜]]
-  - [[FIDO]]
-  - [[01_IT Tech/핀테크|핀테크 (FinTech)]]
-  - [[CTAP]]
+  - [[매터]]

@@ -11,15 +11,15 @@ tags:
 ## I. 안전한 자원 접근 위임, OAuth 2.0의 개요
 
 ### 가. OAuth 2.0의 정의
-
-* 사용자의 계정 정보(비밀번호 등)를 서비스에 노출하지 않고, 서드파티 애플리케이션(Client)이 사용자를 대신하여 자원(Resource)에 접근할 수 있도록 인가(Authorization)를 위임하는 개방형 표준 [[프로토콜]]
-* RFC 6749 표준으로 정의되며, 웹, 모바일, 데스크톱 등 다양한 클라이언트 환경을 지원하기 위해 4가지 권한 부여 방식(Grant Type)을 제공하는 보안 [[프레임워크]]
+- 사용자의 패스워드를 직접 노출하지 않고 서드파티 애플리케이션에 보호된 자원에 대한 접근 권한(인증 및 인가)을 위임하는 IETF RFC 6749 개방형 표준 [[프로토콜]].
 
 ### 나. OAuth 2.0의 필요성 및 주요 특징
-
-* **보안성 강화**: 패스워드 직접 공유 방식(Anti-Pattern) 배제, Access Token 기반의 제한적 접근 권한 제어
-* **유연한 확장성**: HTTP/HTTPS 기반의 RESTful API 아키텍처에 최적화, 다양한 디바이스 및 토큰 생명주기(Refresh Token) 관리 지원
-* **표준화된 위임**: 서비스 간 연동(API Mashup) 시 사용자 동의(Consent) 기반의 투명하고 안전한 권한 위임
+| 구분 | 내용 |
+| --- | --- |
+| 패스워드 비노출 | 사용자 자격 증명(ID/PW) 대신 인가 토큰(Access Token)을 발급하여 계정 탈취 위험 차단 |
+| 스코프 기반 권한 제어 | 권한 범위(Scope)와 토큰 유효기간(TTL)을 세분화하여 최소 권한 부여 원칙 준수 |
+| 토큰 생명주기 관리 | 단기 유효 Access Token과 장기 Refresh Token의 분리 운용으로 안전한 세션 연장 지원 |
+| RESTful API 최적화 | HTTP/HTTPS 기반 웹, 모바일, 데스크톱 환경 전반의 유연한 분산 API 연동성 보장 |
 
 ---
 
@@ -75,10 +75,9 @@ sequenceDiagram
 | **표준 계층** | 권한 위임 프레임워크 (단독 동작) | OAuth 2.0 프로토콜 위에서 동작하는 인증 계층 |
 
 ### 나. OAuth 2.0 최신 보안 동향 및 향후 전망 (OAuth 2.1)
-
-* **PKCE(Proof Key for Code Exchange) 의무화**: 인가 코드 가로채기 공격(Authorization Code Interception Attack)을 방지하기 위해 모바일 앱뿐만 아니라 모든 클라이언트 환경에서 PKCE 사용 필수화
-* **취약한 Grant Type 폐지**: 보안 위험이 높은 Implicit Grant(암묵적 부여)와 Resource Owner Password Credentials Grant(비밀번호 자격 증명) 방식을 OAuth 2.1 표준 권고안에서 전면 폐지(Deprecated)
-* **API 보안 규격 강화(FAPI)**: [[마이데이터]](MyData) 및 오픈뱅킹 확산에 따라 상호 인증(mTLS), 메세지 서명 등을 결합하여 보안을 극대화한 금융 등급 API(Financial-grade API) 보안 프로파일 적용이 표준화되는 추세임
+- **PKCE(Proof Key for Code Exchange) 전면 의무화**: 인가 코드 가로채기(Code Interception) 방지를 위해 SPA 및 모바일 앱뿐 아니라 모든 클라이언트 유형에 PKCE 적용 강제화.
+- **취약 권한 부여 방식(Grant Type) 폐지**: 보안 취약성이 높은 암묵적 부여(Implicit Grant) 및 비밀번호 직접 전달(Resource Owner Password Credentials) 방식을 차기 OAuth 2.1 표준에서 완전 폐기(Deprecated).
+- **FAPI(Financial-grade API) 보안 규격 확산**: [[마이데이터]] 및 금융 오픈뱅킹 API 보안성 보장을 위해 상호 전송계층 보안(mTLS), JARM(JWT Secured Authorization Response Mode) 결합 금융 등급 보안 프로파일 채택.
 
 ---
 

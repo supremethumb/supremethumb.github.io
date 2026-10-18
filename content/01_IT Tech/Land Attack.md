@@ -10,9 +10,16 @@ tags:
 
 ## I. 자원 고갈을 유발하는 자기 참조 루프형 DoS 공격, Land Attack의 개요
 
-* **정의**: 공격자가 [[TCP]] SYN 패킷의 출발지 IP 주소와 포트를 타겟 시스템의 목적지 IP 주소와 포트와 동일하게 위조(Spoofing)하여 전송함으로써, 타겟 시스템이 자신에게 무한 응답하게 만들어 자원을 고갈시키는 [[DoS (Denial of Service)|DoS(Denial of Service)]] 공격 기법
-* **필요성(방어 관점)**: [[방화벽]] 및 라우터의 인바운드 패킷 검증 정책 부재 시 시스템 마비 위험, 레거시 시스템 및 보안 패치가 미흡한 IoT 기기에서의 치명적 장애 예방
-* **특징**: IP 스푸핑(Spoofing) 기반, TCP 3-Way Handshake 취약점 악용, 시스템 자기 참조(Self-Referencing)에 의한 [[CPU]] 및 메모리 부하 가중
+### 가. Land Attack의 정의
+- 공격자가 [[TCP]] SYN 패킷의 출발지 IP 주소와 포트를 타겟 시스템의 목적지 IP 주소 및 포트와 동일하게 위조(Spoofing)하여 전송함으로써, 타겟 시스템이 자기 자신에게 무한 응답하게 만들어 자원을 고갈시키는 [[DoS (Denial of Service)|DoS(Denial of Service)]] 공격 기법.
+
+### 나. Land Attack의 주요 특징 및 위험성
+| 구분 | 내용 |
+| --- | --- |
+| 주소 위조 (Spoofing) | 패킷의 출발지 IP/Port를 목적지 IP/Port와 완전 일치시켜 발송 |
+| 핸드셰이크 악용 | TCP 3-Way Handshake 과정의 연결 응답(SYN/ACK) 메커니즘 악용 |
+| 자원 고갈 메커니즘 | 자기 참조(Self-Referencing) 무한 루프로 인한 [[CPU]] 100% 점유 및 메모리·세션 자원 고갈 |
+| 잠재적 위험 대상 | 패치 미적용 레거시 OS, 산업용 제어 시스템(ICS/OT), 보안 기능이 취약한 소형 IoT 기기 |
 
 ---
 
@@ -66,9 +73,9 @@ flowchart LR
 | **핵심 대응 방안** | Src IP와 Dst IP가 동일한 패킷 차단 | 라우터 설정에서 Direct Broadcast 기능 비활성화 |
 
 ### 나. Land Attack 관련 최신 보안 동향
-
-* **레거시/IoT 디바이스 위협 지속**: Windows, Linux 등 현대의 최신 OS는 TCP/IP 스택 레벨에서 Land Attack 패킷을 기본적으로 필터링하지만, 업데이트가 지원되지 않는 **구형 산업용 제어 시스템(ICS/OT) 및 소형 IoT 기기**에서는 여전히 치명적인 서비스 거부 취약점으로 작용할 수 있음
-* **[[DDOS|DDoS]]로의 진화**: 단일 Land Attack은 쉽게 차단되나, 최근에는 수많은 봇넷(Botnet)을 동원하여 다양한 IP 대역에서 변형된 Land Attack과 SYN Flood를 혼합 전송하는 복합 [[다형성]] 공격(Multi-Vector Attack) 형태로 진화하여 보안 장비의 탐지/차단 부하를 유발함
+- **레거시 및 IoT 디바이스 위협 지속**: 최신 범용 OS는 스택 레벨에서 자체 필터링하나, 패치 지원이 중단된 노후 구형 운영체제 및 보안 기능이 제한된 IoT·ICS/OT 환경에서는 여전히 서비스 불능 유발 위험 잔존.
+- **DDoS 복합 벡터로의 진화**: 단독 공격 형태보다는 대규모 봇넷(Botnet)을 활용해 SYN Flood, UDP Flood 등과 혼합 전송하는 멀티벡터 [[DDOS|DDoS]] 공격 기법의 구성 요소로 변형 활용.
+- **경계 보안 및 제로트러스트 심층 방어**: 경계 방화벽의 Ingress Filtering뿐만 아니라 내부망 마이크로세그멘테이션 및 [[SDP(Software Defined Perimeter)|SDP]]를 적용해 내부 스푸핑 패킷 전달 원천 차단.
 
 ---
 

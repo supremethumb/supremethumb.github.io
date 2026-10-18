@@ -10,9 +10,18 @@ tags:
 
 ## I. 웹 환경에서 구조화된 데이터 교환과 저장을 위한 메타 마크업 언어, XML의 개요
 
-* **정의**: W3C에서 표준화한 텍스트 기반의 마크업 언어로, 사용자가 직접 태그를 정의하여 이기종 시스템 간에 구조화된 데이터를 교환하고 저장할 수 있도록 지원하는 범용 메타언어
-* 웹 브라우저 간 표현 중심인 HTML의 한계를 극복하고, 데이터의 의미(Semantic)와 구조를 명확히 기술하여 상호운용성 확보 목적
-* 특징: 확장 가능한 커스텀 태그 정의, 트리 구조의 계층적 데이터 표현, 플랫폼 및 하드웨어 독립성 보장
+### 가. 정의
+
+- 사용자가 직접 태그를 정의하여 이기종 시스템 간에 구조화된 데이터를 저장·교환할 수 있도록 W3C에서 표준화한 텍스트 기반 범용 메타언어
+
+### 나. 필요성 및 특징
+
+| 구분 | 내용 |
+| --- | --- |
+| 이기종 시스템 상호운용성 | 플랫폼, 운영체제, 언어에 독립적인 텍스트 포맷으로 원활한 데이터 교환 지원 |
+| 데이터 의미(Semantic) 표현 | 표현(Style) 중심의 HTML 한계를 극복하고 데이터의 의미와 구조를 태그로 명확히 명세 |
+| 엄격한 구조 및 무결성 검증 | DTD, XSD(XML Schema)를 통해 문서의 문법 및 유효성(Well-formed, Valid) 강제 |
+| 계층적 트리 구조 | 중첩 가능한 태그 구조를 통해 복잡한 다차원 데이터를 직관적으로 모델링 |
 
 ---
 
@@ -23,7 +32,7 @@ tags:
 ```mermaid
 flowchart TB
     subgraph Source["XML 문서 원본 (.xml)"]
-        DOC["<?xml version='1.0' encoding='UTF-8'?>\n<Root>\n  <Element>Data</Element>\n</Root>"]
+        DOC["&lt;?xml version='1.0' encoding='UTF-8'?&gt;<br/>&lt;Root&gt;<br/>  &lt;Element&gt;Data&lt;/Element&gt;<br/>&lt;/Root&gt;"]
     end
 
     subgraph Validation["유효성 검증 영역"]
@@ -39,12 +48,9 @@ flowchart TB
         APP["비즈니스 로직 및 데이터 연동"]
     end
 
-    DOC --> PARSER
-    SCHEMA -.-> VALIDATION
-    VALIDATION --> PARSER
-    PARSER --> DOM & SAX
+    DOC --> DOM & SAX
+    SCHEMA -.->|유효성 검증| DOM & SAX
     DOM & SAX --> APP
-
 ```
 
 * XML 원본 문서가 [[스키마]](XSD/DTD) 검증을 거쳐 DOM 또는 SAX 파서로 유입된 뒤, 메모리 구조나 이벤트 스트림으로 변환되어 애플리케이션에 전달되는 구조
@@ -73,7 +79,11 @@ flowchart TB
 | **스키마 및 검증** | XSD, DTD를 통한 강력한 정적 유효성 검증 지원 | 별도의 표준 스키마(JSON Schema)가 존재하나 상대적으로 단순함 |
 | **주요 활용 영역** | 기업간 문서 교환, 문서 서식 규격(Office), 설정 파일 | 현대 웹/모바일 API, RESTful 서비스, 마이크로서비스 통신 |
 
-* 현대의 대다수 웹/모바일 API 환경은 가볍고 빠른 JSON으로 전환되었으나, XML은 엄격한 스키마 검증과 복잡한 문서 구조 표현 능력을 바탕으로 기업 간 전자문서([[EDI]]), 공공 표준, 문서 파일 포맷(OOXML) 영역에서 핵심 표준으로 건재함
+### 나. 최신 동향 및 발전 방향
+
+- **기업 간 전자문서·공공 표준 건재**: 웹 API의 주도권은 [[JSON]]으로 이동했으나 전자세금계산서, 관세 EDI, 국방/조달 등 엄격한 스키마 준수가 필수인 B2B/B2G 영역에서 XML 표준 고수
+- **문서 서식 및 오피스 표준 기반**: MS 오피스(OOXML, `.docx`), 한글(OWPML), 전자책(EPUB) 등 복잡한 문서 메타데이터 저장 포맷의 표준 기반 기술로 활용 지속
+- **XML 보안 취약점(XXE) 방어**: XML 파싱 과정에서 외부 엔티티를 악용한 XXE(XML External Entity) 공격 방어를 위해 파서 레벨의 DTD 참조 차단 및 DevSecOps 연계 필수화
 
 ---
 

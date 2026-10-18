@@ -10,17 +10,18 @@ tags:
 
 ## I. 양방향 문맥 이해 기반 사전학습 언어모델, BERT의 개요
 
-* **가. BERT(Bidirectional Encoder Representations from Transformers)의 정의**
-* 구글이 제안한 [[트랜스포머]](Transformer)의 인코더(Encoder) 아키텍처를 기반으로, 대규모 텍스트 코퍼스를 양방향으로 읽어 문맥을 파악하는 사전학습(Pre-trained) 기반 자연어 처리 모델
+### 가. 정의
 
+- 구글이 제안한 [[트랜스포머]](Transformer)의 인코더(Encoder) 아키텍처를 기반으로, 대규모 텍스트 코퍼스를 양방향으로 동시에 학습하여 심층적인 문맥 표현을 도출하는 사전학습(Pre-trained) 언어 모델
 
-* **나. BERT의 등장배경 및 특징**
-* **등장배경**: 기존 단방향(좌에서 우로) 언어 모델(GPT-1 등) 및 얕은 양방향 모델(ELMo)이 지닌 문맥 이해 한계 극복, 범용적인 NLU(자연어 이해) 태스크 성능 향상 필요성 대두
-* **특징**: 양방향(Bidirectional) 컨텍스트 동시 반영, MLM(Masked Language Model) 및 NSP(Next Sentence Prediction) 기법 적용, 사전학습-미세조정(Pre-training & [[Fine-Tuning|Fine-tuning]]) 패러다임 확립
+### 나. 주요 특징
 
-
-
----
+| 구분 | 주요 내용 |
+| --- | --- |
+| 완전한 양방향 문맥 | 기존 단방향(GPT)이나 얕은 결합(ELMo)과 달리 단어의 좌우 양방향 문맥을 Self-Attention으로 동시 포착 |
+| 혁신적 사전학습 과제 | 단어의 15%를 가리고 맞히는 마스크 언어 모델(MLM)과 문장 간 인접성을 판단하는 다음 문장 예측(NSP) 적용 |
+| 사전학습-미세조정 패러다임 | 대규모 말뭉치로 범용 표현을 사전학습(Upstream)한 후, 분류·QA 등 세부 작업(Downstream)에 맞게 미세조정 |
+| 서브워드 토큰화 | WordPiece 알고리즘을 적용하여 신조어 및 희귀 단어에 대한 미등록 어휘(OOV) 문제 근본적 해결 |
 
 ## II. BERT의 아키텍처 및 핵심 구성요소
 
@@ -86,9 +87,11 @@ flowchart TD
 | **강점 분야** | 자연어 이해 (NLU): 문장 분류, 감성 분석, 형태소 분석 | 자연어 생성 (NLG): 텍스트 생성, 번역, 대화(Chat) |
 | **주요 변형 모델** | RoBERTa, ALBERT, DistilBERT, KoBERT | GPT-3, GPT-4, LLaMA, Claude |
 
-* **전망 및 동향**:
-  * 최근 생성형 AI 트렌드의 확산으로 GPT와 같은 디코더 기반의 텍스트 생성형 [[초거대 언어 모델|LLM]]이 시장을 주도하고 있으나, 연산 비용이 높다는 단점이 존재함.
-  * 이에 따라 BERT 계열 모델은 성능을 경량화(DistilBERT 등)하여 비용 효율을 극대화하는 방향으로 발전 중이며, 빠른 속도와 높은 정확도가 요구되는 **문서 분류 시스템(Spam/Abuse Detection)** 및 **RAG 기반 시맨틱 검색(Semantic Search) 엔진의 벡터 임베딩 모델** 분야에서 대체 불가능한 핵심 인프라로 지속 활용되고 있음.
+### 나. BERT의 최신 트렌드 및 향후 전망
+
+- **RAG 및 시맨틱 검색의 핵심 임베딩 엔진으로 정착**: 텍스트 생성 작업은 거대 디코더 모델(GPT 등)로 이동했으나, 벡터 검색 및 지식베이스 구축을 위한 고정밀 밀집 임베딩(Dense Embedding) 분야에서는 BERT/RoBERTa 기반 인코더가 독보적 표준으로 활용
+- **경량화 및 증류(Knowledge Distillation) 고도화**: 온디바이스 및 실시간 서빙 환경을 위해 모델 크기와 추론 시간을 획기적으로 줄인 DistilBERT, MobileBERT 등 지식 증류 기반의 초경량화 모델 도입 활성화
+- **도메인 특화 및 다국어 모델 확장**: 바이오/의료(BioBERT), 법률(LegalBERT), 한국어(KoBERT) 등 전문 산업 도메인 특화 사전학습 모델과 다국어 통합 모델(mBERT)을 통한 크로스링구얼 NLU 인프라 구축 지속
 
 ---
 

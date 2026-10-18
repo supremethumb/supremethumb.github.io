@@ -10,13 +10,17 @@ tags:
 
 ## I. 객체 탐지(Object Detection)의 병목을 해결한 핵심 신경망, RPN의 개요
 
-* **정의**: 입력된 이미지 내에서 객체(Object)가 존재할 만한 후보 영역(Region Proposals)을 빠르고 정확하게 찾아내기 위해, 백본(Backbone) [[CNN]]이 추출한 특징 맵(Feature Map) 위에서 동작하는 **완전 합성곱 신경망(Fully Convolutional Network, FCN)**
-* **등장 배경 및 필요성**:
-  * 기존의 객체 탐지 모델(R-CNN, Fast R-CNN)은 후보 영역을 추출할 때 [[CPU]] 기반의 전통적인 컴퓨터 비전 알고리즘인 선택적 탐색(Selective Search)을 사용하여, 이 과정이 전체 처리 시간의 심각한 병목(Bottleneck)으로 작용함
-  * 후보 영역 추출 과정까지 [[딥러닝]] 네트워크([[GPU]]) 내부로 끌어들여, 특징 추출부터 영역 제안, 최종 분류까지를 하나의 통합된 네트워크로 묶는 **진정한 엔드투엔드([[End-to-End]]) 학습**을 달성하기 위해 고안됨 (Faster R-CNN의 핵심 모듈)
+### 가. RPN의 정의
+- 입력 이미지에서 객체(Object)가 존재할 만한 후보 영역(Region Proposals)을 신속하게 검출하기 위해, 백본 합성곱 신경망([[CNN]])이 추출한 특징 맵(Feature Map) 위에서 슬라이딩 윈도우 방식으로 동작하는 완전 합성곱 신경망(FCN)이다.
 
+### 나. RPN의 등장 배경 및 주요 특징
 
-* **특징**: 다양한 크기와 비율의 참조 박스인 앵커 박스(Anchor Box)를 사용하여 다중 스케일의 객체를 효과적으로 탐지하며, 특징 맵을 후속 분류 네트워크와 공유하므로 연산 비용이 극적으로 감소함
+| 구분 | 주요 내용 |
+| --- | --- |
+| CPU 병목 해소 | R-CNN 계열의 CPU 기반 선택적 탐색(Selective Search) 병목을 제거하여 GPU 내부 연산으로 완전 전환 |
+| 엔드투엔드 통합 | 특징 추출, 영역 제안, 객체 분류 및 바운딩 박스 회귀를 단일 네트워크로 통합 학습(Faster R-CNN) |
+| 다중 스케일 탐지 | 사전 정의된 다양한 크기와 종횡비의 앵커 박스(Anchor Box)를 투영하여 다양한 크기의 객체 후보 검출 |
+| 연산 효율 극대화 | 후속 분류기(Fast R-CNN)와 백본 특징 맵을 공유하여 후보 영역 추출에 소요되는 연산 오버헤드 최소화 |
 
 ---
 
@@ -85,10 +89,9 @@ flowchart TD
 | **최적화 구조** | 영역 제안 부분은 학습 불가능 (Heuristic) | 전체 파이프라인이 하나의 손실 함수로 엔드투엔드(End-to-End) 학습 가능 |
 
 ### 나. 한계 극복 및 현대 객체 탐지(Object Detection)의 발전 동향
-
-* **1-Stage Detector와의 경쟁 (YOLO, SSD)**: RPN을 사용하는 Faster R-CNN 계열(2-Stage Detector)은 정확도가 매우 높지만, 영역을 먼저 제안하고 이후에 분류를 수행하는 두 단계 구조 탓에 모바일 환경 등에서의 초고속 실시간 처리(FPS)에는 한계가 있었습니다. 이를 극복하기 위해 RPN 단계를 생략하고 이미지를 한 번만 보고 클래스와 위치를 동시에 예측하는 **YOLO(You Only Look Once)** 계열의 1-Stage 모델이 실시간 탐지의 주류로 자리 잡았습니다.
-* **앵커 프리(Anchor-free) 모델의 대두**: 앵커 박스의 크기와 비율을 사전에 사람이 직접 설계(Hyperparameter)해야 하는 RPN의 번거로움을 없애기 위해, 객체의 중심점(Center Point)이나 특징점(Keypoint)만을 예측하여 바운딩 박스를 유추하는 **FCOS, CenterNet** 등의 앵커 프리(Anchor-free) 방식이 등장하여 아키텍처를 크게 단순화시켰습니다.
-* **Vision Transformer (DETR)로의 진화**: 최근에는 RPN이나 NMS 같은 복잡한 합성곱 신경망의 휴리스틱(Heuristic) 구성 요소를 완전히 제거하고, [[트랜스포머]](Transformer)의 어텐션 메커니즘을 이용해 객체를 집합 예측(Set Prediction)하는 **DETR(DEtection TRansformer)** 구조가 등장하며 객체 탐지의 새로운 패러다임을 열고 있습니다.
+- **1-Stage Detector와의 경쟁 (YOLO, SSD)**: RPN 기반 2단계 탐지기의 높은 정확도 대비 느린 추론 속도를 극복하기 위해, 영역 제안 단계를 생략하고 단일 패스로 바운딩 박스를 직접 회귀하는 YOLO 계열이 실시간 시스템의 주류로 정착
+- **앵커 프리(Anchor-free) 모델 대두**: 앵커 박스의 스케일 및 종횡비 수동 설계(Hyperparameter) 부담을 해소하기 위해 객체 중심점이나 특징점 기반으로 바운딩 박스를 직접 예측하는 FCOS, CenterNet 구조 확산
+- **Vision Transformer (DETR) 진화**: RPN과 NMS 같은 복잡한 합성곱 휴리스틱 모듈을 전면 배제하고, 트랜스포머 어텐션 메커니즘을 이용해 객체를 직접 이분 매칭(Bipartite Matching) 및 집합 예측하는 DETR 계열로 패러다임 전환
 
 ---
 

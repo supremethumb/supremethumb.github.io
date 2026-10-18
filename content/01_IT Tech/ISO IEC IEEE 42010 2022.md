@@ -3,90 +3,98 @@ title: ISO/IEC/IEEE 42010:2022
 date: 2026-04-22
 tags:
   - 소프트웨어공학
+aliases:
+  - ISO/IEC/IEEE 42010:2022
+  - ISO 42010
+  - 아키텍처 명세 표준
 ---
-# ISO/IEC/IEEE 42010:2022
+# ISO/IEC/IEEE 42010:2022 (아키텍처 기술 표준)
 
 ---
 
 ## I. 소프트웨어, 시스템 및 엔터프라이즈 아키텍처 기술 국제표준, ISO 42010:2022의 개요
 
-* **정의**: 소프트웨어, 시스템뿐만 아니라 엔터프라이즈 전반의 아키텍처를 명확하게 기술(Description)하기 위한 개념적 메타 모델과 공통 어휘를 제공하는 국제 표준
-* **등장배경**: 기존 2011년 버전(ISO/IEC/IEEE 42010:2011)을 개정하여, 복잡해지는 현대 IT 환경에 맞춰 적용 범위를 '엔터프라이즈(Enterprise)' 영역까지 확장하고 타 시스템 엔지니어링 표준(ISO 15288 등)과의 정합성을 확보하기 위해 제정됨
-* **특징**: 이해관계자(Stakeholder) 중심의 관심사(Concern) 도출, 뷰(View) 및 뷰포인트(Viewpoint) 분리, 아키텍처 의사결정(Decision) 및 근거(Rationale)의 명시적 기록 체계화
+소프트웨어, 시스템뿐만 아니라 엔터프라이즈(Enterprise) 전반의 아키텍처를 일관되고 체계적으로 기술(Description)하기 위한 개념적 메타 모델과 공통 어휘를 제공하는 국제 표준(ISO/IEC/IEEE 42010:2022)이다.
+
+| 구분 | 주요 내용 |
+| --- | --- |
+| **개념** | 다양한 이해관계자의 관심사를 수렴하여 이를 해결하기 위한 관점(Viewpoint), 뷰(View), 아키텍처 결정(Decision) 및 근거를 명세하는 표준 프레임워크 |
+| **등장 배경** | 2011년 판본의 시스템 중심 한계를 극복하고, 복잡한 현대 IT 환경에 맞추어 엔터프라이즈 영역까지 적용 범위를 확장하며 타 생명주기 표준(ISO 15288 등)과 정합성 확보 필요 |
+| **핵심 특징** | 적용 대상(Scope)의 엔터프라이즈 확장, 이해관계자-관심사-뷰포인트-뷰 간의 명확한 지배 관계 규정, 아키텍처 의사결정 기록(ADR) 체계 공식화 |
 
 ---
 
-## II. ISO/IEC/IEEE 42010:2022의 개념도 및 핵심 구성 요소
+## II. ISO/IEC/IEEE 42010:2022의 아키텍처 메타 모델 및 핵심 구성 요소
 
-### 가. ISO/IEC/IEEE 42010:2022의 아키텍처 기술(AD) 개념 모델
+### 가. ISO/IEC/IEEE 42010:2022 아키텍처 기술(AD) 개념 모델
 
 ```mermaid
 flowchart TB
-    subgraph Context["컨텍스트 및 요구사항 영역"]
+    subgraph Context ["컨텍스트 및 요구사항 영역"]
         direction TB
-        Entity["관심 엔터티<br/>(System / Enterprise)"]
-        SH["이해관계자<br/>(Stakeholder)"]
-        Concern["관심사<br/>(Concern)"]
+        Entity["관심 엔터티 (Entity of Interest)<br/>(System / Enterprise)"]
+        SH["이해관계자 (Stakeholder)"]
+        Concern["관심사 (Concern)"]
         
-        Entity -->|"has (가짐)"| SH
-        SH -->|"has (가짐)"| Concern
+        Entity -->|"소유/지분"| SH
+        SH -->|"관심/요구"| Concern
     end
 
-    subgraph Architecture_Domain["아키텍처 및 기술 영역"]
+    subgraph Architecture_Domain ["아키텍처 명세 및 기술 영역"]
         direction TB
-        Arch["아키텍처<br/>(Architecture)"]
-        AD["아키텍처 기술<br/>(Architecture Description)"]
-        View["아키텍처 뷰<br/>(Architecture View)"]
-        VP["아키텍처 뷰포인트<br/>(Architecture Viewpoint)"]
-        Model["아키텍처 모델<br/>(Architecture Model)"]
-        Decision["의사결정 및 근거<br/>(Decision & Rationale)"]
+        Arch["아키텍처 (Architecture)"]
+        AD["아키텍처 기술서 (Architecture Description)"]
+        View["아키텍처 뷰 (Architecture View)"]
+        VP["아키텍처 뷰포인트 (Architecture Viewpoint)"]
+        Decision["의사결정 및 근거 (Decision & Rationale)"]
 
-        AD -->|"expresses (표현)"| Arch
-        AD -->|"includes (포함)"| View
-        AD -->|"includes (포함)"| VP
-        AD -->|"records (기록)"| Decision
+        AD -->|"표현 (expresses)"| Arch
+        AD -->|"포함 (includes)"| View
+        AD -->|"포함 (includes)"| VP
+        AD -->|"기록 (records)"| Decision
         
-        View -->|"governed by (지배됨)"| VP
-        View -->|"composed of (구성됨)"| Model
+        View -->|"지배됨 (governed by)"| VP
     end
 
-    Entity ==>|"exhibits (나타냄)"| Arch
-    AD -.->|"identifies (식별)"| SH
-    AD -.->|"addresses (해결)"| Concern
-    View -.->|"addresses (해결)"| Concern
-
+    Entity ==>|"보유 (exhibits)"| Arch
+    AD -.->|"식별 (identifies)"| SH
+    AD -.->|"해결 (addresses)"| Concern
+    View -.->|"해결 (addresses)"| Concern
 ```
 
-* 특정 시스템이나 엔터프라이즈(Entity)가 가지는 아키텍처를 문서화(AD)할 때, 다양한 이해관계자의 관심사를 식별하고, 이를 해결하기 위해 정해진 관점(Viewpoint)에 따라 뷰(View)와 모델을 작성하는 일련의 프레임워크를 정의함
+관심 대상 엔터티의 이해관계자가 가진 관심사를 식별하고, 특정 관심사를 프레이밍하는 규약인 뷰포인트(Viewpoint)에 따라 구체적인 뷰(View)를 작성하며, 의사결정의 근거를 기록한다.
 
-### 나. ISO/IEC/IEEE 42010:2022의 핵심 기술/구성 요소
+### 나. ISO/IEC/IEEE 42010:2022의 핵심 개념 요소
 
-| 분류 | 요소기술(키워드) | 세부 설명 |
+| 분류 | 요소기술 (키워드) | 세부 설명 |
 | --- | --- | --- |
-| **대상** | 관심 엔터티 (Entity of Interest) | 아키텍처가 적용되는 대상 객체 (소프트웨어, 시스템, 시스템-오브-시스템즈, 엔터프라이즈 등) |
-| **핵심 자산** | 아키텍처 (Architecture) | 엔터티가 환경 속에서 나타내는 근본적인 개념이나 속성 (컴포넌트, 관계, 설계 원칙 등) |
-| **핵심 자산** | 아키텍처 기술 (AD) | 아키텍처를 표현하기 위해 작성된 작업 산출물(문서, 모델, 저장소 등)의 집합 |
-| **요구 식별** | 이해관계자 (Stakeholder) | 아키텍처 및 시스템에 대한 권리, 몫, 지분을 가지는 개인, 팀 또는 조직 (사용자, 개발자, 경영진 등) |
-| **요구 식별** | 관심사 (Concern) | 시스템의 목적, 성능, 보안, 유지보수성 등 이해관계자에게 중요한 아키텍처적 요건 |
-| **명세 구조** | 뷰포인트 (Viewpoint) | 특정 관심사를 프레이밍(Framing)하기 위한 규약, 규칙, 작성 기준 및 모델링 방법론 |
-| **명세 구조** | 뷰 (View) | 특정 뷰포인트의 규칙에 따라 전체 아키텍처 중 일부를 구체적으로 표현한 결과물 |
-| **추적성** | 의사결정 및 근거 (Decision/Rationale) | 대안 중 특정 아키텍처를 선택한 의사결정 내역과 이를 뒷받침하는 기술적/비즈니스적 근거 |
+| **적용 대상** | 관심 엔터티 (Entity of Interest) | 아키텍처 기술의 대상이 되는 소프트웨어, 시스템, 시스템-오브-시스템즈(SoS), 엔터프라이즈 조직 |
+| **핵심 본질** | 아키텍처 (Architecture) | 엔터티가 환경 속에서 구체화되는 근본적인 개념 및 속성 (컴포넌트 구조, 상호 관계, 설계 원칙) |
+| **작업 산출물** | 아키텍처 기술서 (AD) | 아키텍처를 공식적으로 기록하고 이해관계자에게 전달하기 위한 산출물의 집합 (문서, 저장소, 모델) |
+| **요구 주체** | 이해관계자 (Stakeholder) | 시스템의 성공이나 결과에 권리, 몫, 관심 또는 법적 책임을 가지는 개인, 팀 또는 조직 |
+| **품질/요구** | 관심사 (Concern) | 성능, 보안, 가용성, 비즈니스 목표 등 이해관계자 관점에서 해결되어야 하는 핵심 요구사항 |
+| **설계 규약** | 뷰포인트 (Viewpoint) | 특정 관심사를 다루기 위해 뷰를 작성하는 규칙, 표기법(UML 등), 모델링 패턴 및 분석 기법의 정의 |
+| **구체적 표현** | 뷰 (View) | 정의된 뷰포인트의 규칙에 따라 전체 아키텍처 중 특정 관심사 영역을 구체적으로 표현한 산출물 |
+| **추적성** | 의사결정 및 근거 (Rationale) | 복수의 아키텍처 대안 중 특정 설계를 채택한 기술적·비즈니스적 선택 이유와 트레이드오프 기록 |
 
 ---
 
-## III. ISO 42010 개정(2011 vs 2022) 비교 및 향후 활용 전망
+## III. 2011년 판본과 2022년 판본 비교 및 최신 동향
 
-### 가. ISO/IEC/IEEE 42010의 2011년 및 2022년 버전 핵심 비교
+### 가. ISO/IEC/IEEE 42010:2011 vs 42010:2022 비교
 
 | 비교 항목 | ISO/IEC/IEEE 42010:2011 | ISO/IEC/IEEE 42010:2022 |
 | --- | --- | --- |
-| **표준 명칭** | **Systems and software** engineering<br>— Architecture description | **Software, systems and enterprise**<br>— Architecture description |
-| **관심 대상(Scope)** | 시스템 (System of Interest) | 소프트웨어, 시스템 및 **엔터프라이즈(Enterprise)** |
-| **타 표준 정합성** | 초기 통합 수준 | **ISO/IEC/IEEE 15288(시스템 생명주기), ISO 15704(엔터프라이즈)** 등과 완벽한 정렬 |
-| **의사결정 관리** | AD 내 개념적 존재 | **아키텍처 의사결정(Decision)과 근거(Rationale)**의 추적성 및 기록 의무 강화 |
+| **표준 명칭** | Systems and software engineering | **Software, systems and enterprise** |
+| **적용 범위** | 시스템 (System of Interest) 한정 | 시스템뿐만 아니라 **엔터프라이즈(Enterprise) 전반 확장** |
+| **타 표준 연계** | 개별 아키텍처 명세 위주 정렬 | **ISO/IEC/IEEE 15288(시스템 수명주기), ISO 15704(EA)** 완벽 연계 |
+| **의사결정 기록** | 아키텍처 기술서 내 개념적 권고 | **ADR(Architecture Decision Record) 기록 의무 강화** |
+| **주요 목적** | 소프트웨어/시스템 아키텍처 문서화 표준화 | 비즈니스-시스템-소프트웨어를 아우르는 **통합 아키텍처 거버넌스** |
 
-* **활용 및 실무 동향**: 2022년 개정을 통해 엔터프라이즈 아키텍처(EA, TOGAF 등)와의 개념적 호환성이 크게 향상됨.
-* 특히 최근 애자일([[Agile]]) 및 마이크로서비스 아키텍처([[MSA (Micro Service Architecture)|MSA]]) 환경에서 아키텍처의 지속적인 변화를 관리하기 위해 사용하는 실무 기법인 ADR(Architecture Decision Record)이 ISO 42010:2022의 '의사결정 및 근거(Decision & Rationale)' 모델과 직접적으로 매핑되어, 현대적 SW 개발 파이프라인의 필수적인 거버넌스 도구로 확산되고 있음.
+### 나. 최신 기술 동향 및 발전 방향
+
+* **ADR(Architecture Decision Record) 실무 정착**: 클라우드 네이티브 및 마이크로서비스 환경에서 아키텍처 드리프트를 방지하고 설계 이력을 Git 리포지토리에서 코드와 함께 관리하는 ADR 실무가 본 표준의 Rationale 모델을 기반으로 대중화됨.
+* **엔터프라이즈 아키텍처(EA/TOGAF)와의 융합**: 기업의 비즈니스 아키텍처(BA), 데이터 아키텍처(DA), 애플리케이션 아키텍처(AA), 기술 아키텍처(TA)를 일관된 메타 모델로 통합 기술하는 거버넌스 프레임워크로 활용됨.
 
 ---
 
@@ -95,8 +103,8 @@ flowchart TB
 - **소속 도메인**: [[00_소프트웨어공학_MOC|🏗️ 소프트웨어공학]]
 - **세부 분류**: `4. 아키텍처 스타일 & 객체지향 설계 원리`
 - **핵심 연관 토픽**:
+  - [[SW Architecture 구축 절차]]
+  - [[SW Architecture 평가]]
   - [[MSA (Micro Service Architecture)]]
   - [[Agile]]
-  - [[CBAM|CBAM(Cost Benefit Analysis Method)]]
-  - [[ARID]]
-  - [[성능 테스트 도구]]
+  - [[CBAM]]

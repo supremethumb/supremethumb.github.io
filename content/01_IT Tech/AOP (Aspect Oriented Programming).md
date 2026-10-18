@@ -5,92 +5,93 @@ tags:
   - 소프트웨어공학
 aliases:
   - AOP
+  - Aspect Oriented Programming
+  - 관점 지향 프로그래밍
 ---
 # AOP (Aspect Oriented Programming)
 
 ---
 
-## I. 핵심 비즈니스 로직과 횡단 관심사의 완벽한 분리, AOP의 개요
+## I. 핵심 비즈니스 로직과 횡단 관심사의 분리, AOP의 개요
 
-* **정의**: 애플리케이션의 핵심 비즈니스 로직과 시스템 공통으로 사용되는 부가적인 기능(로깅, 보안, [[트랜잭션]] 등)을 분리하여 모듈화하는 관점 지향 프로그래밍 패러다임
-* **필요성/특징**:
-  * **OOP의 한계 극복**: 객체 지향 프로그래밍(OOP)만으로는 여러 모듈에 흩어지는 공통 로직(코드 흩어짐 및 얽힘 현상)을 완벽히 모듈화하기 어려움
-  * **관심사 분리(SoC)**: 핵심 관심사(Core Concern)와 횡단 관심사(Cross-cutting Concern)를 분리하여 코드의 응집도를 높이고 결합도를 낮춤
-  * **재사용성 및 유지보수성**: 공통 로직을 한 곳(Aspect)에서 관리하므로 중복 코드가 제거되고, 비즈니스 로직 변경 없이 부가 기능의 유연한 탈부착이 가능함
+애플리케이션의 핵심 비즈니스 로직과 시스템 전반에 걸쳐 공통으로 반복되는 부가 기능(로깅, 보안, 트랜잭션 등)을 분리하여 모듈화하는 관점 지향 프로그래밍 패러다임이다.
 
-
+| 구분 | 주요 내용 |
+| --- | --- |
+| **개념** | 핵심 관심사(Core Concern)와 횡단 관심사(Cross-cutting Concern)를 분리하고, Aspect라는 모듈 단위로 공통 로직을 캡슐화하여 위빙(Weaving)하는 기법 |
+| **등장 배경** | 객체 지향 프로그래밍(OOP)에서 모듈 간 공통 코드가 중복·분산되는 코드 얽힘(Code Tangling) 및 코드 흩어짐(Code Scattering) 한계 극복 |
+| **핵심 특징** | 관심사의 분리(SoC), 핵심 비즈니스 코드의 순수성 보장, 높은 응집도 및 결합도 감소, 선언적 부가 기능 제어 |
 
 ---
 
-## II. AOP의 아키텍처 및 핵심 구성요소
+## II. AOP의 아키텍처 및 핵심 기술 요소
 
-### 가. AOP의 개념도 및 동작 원리
+### 가. AOP의 아키텍처 및 프록시 동작 원리
 
 ```mermaid
 flowchart TB
-    subgraph Cross_Cutting["Aspect (횡단 관심사 모듈)"]
+    subgraph Cross_Cutting["Aspect (횡단 관심사 공통 모듈)"]
         direction TB
         Log["로깅 (Logging)"]
-        Sec["보안 (Security)"]
+        Sec["보안 / 인증 (Security)"]
         Tx["트랜잭션 (Transaction)"]
     end
 
-    subgraph Core_Logic["Target (핵심 관심사 / 비즈니스 로직)"]
+    subgraph Core_Logic["Target (핵심 비즈니스 서비스)"]
         direction TB
         U["User Service"]
         O["Order Service"]
         P["Payment Service"]
     end
 
-    Log & Sec & Tx -. "Pointcut에 의한<br/>Weaving 적용 범위" .-> Core_Logic
+    Log & Sec & Tx -. "Pointcut에 의한 Weaving 주입" .-> Core_Logic
 
-    subgraph Runtime_Weaving["Spring AOP 프록시(Proxy) 동작 원리"]
+    subgraph Runtime_Weaving["Spring AOP 프록시(Proxy) 런타임 제어"]
         direction LR
-        Client(("Client<br/>호출"))
+        Client(("Client 요청"))
         
         subgraph ProxyObject["AOP Proxy 객체"]
-            Adv["Advice<br/>(공통 기능 실행)"]
-            Tgt["Target<br/>(실제 객체 메서드)"]
+            Adv["Advice (공통 기능 실행)"]
+            Tgt["Target (실제 비즈니스 메서드)"]
             Adv -- "메서드 위임" --> Tgt
         end
         
-        Client -- "요청" --> ProxyObject
+        Client --> ProxyObject
     end
-
 ```
 
-* 여러 비즈니스 모듈에 걸쳐 나타나는 횡단 관심사를 Aspect로 분리하고, 런타임 시 프록시(Proxy) 객체를 생성하여 타겟(Target) 객체의 메서드 실행 전후에 공통 기능(Advice)을 동적으로 삽입(Weaving)함
+핵심 비즈니스 모듈과 독립적으로 정의된 Aspect가 런타임에 프록시(Proxy) 객체를 생성하여, 클라이언트 요청 시 공통 부가 기능(Advice)을 사전·사후에 실행하고 실제 타겟 메서드로 호출을 위임한다.
 
 ### 나. AOP의 핵심 기술 및 구성 요소
 
-| 분류 | 요소기술(키워드) | 세부 설명 |
+| 분류 | 요소기술 (키워드) | 세부 설명 |
 | --- | --- | --- |
-| **관심사 [[모듈화]]** | Aspect (관점) | 부가 기능(Advice)과 이를 적용할 위치(PointCut)를 결합하여 모듈화한 핵심 단위 |
-| **적용 대상** | Target (타겟) | 핵심 비즈니스 로직이 구현되어 있으며, 부가 기능(Advice)이 적용될 실제 객체 |
-| **부가 기능** | Advice (조언) | 타겟에 제공할 실질적인 부가 기능 구현체 (실행 시점에 따라 Before, After, Around 등) |
-| **적용 후보군** | JoinPoint (결합점) | Advice가 적용될 수 있는 모든 논리적 실행 지점 (메서드 호출 시점, 예외 발생 시점 등) |
-| **적용 지점** | PointCut (교차점) | 무수히 많은 JoinPoint 중에서 실제로 Advice를 적용할 지점을 선별하기 위한 정규표현식 및 조건식 |
-| **결합 과정** | Weaving (위빙) | PointCut에 의해 결정된 JoinPoint에 Advice를 동적으로 주입하여 결합하는 과정 |
-| **동작 매개체** | Proxy (프록시) | 타겟 객체를 감싸서(Wrapping) 클라이언트의 요청을 가로채고 Advice를 실행한 후 타겟을 호출하는 대리 객체 |
-| **구현 방식** | JDK Dynamic Proxy / CGLIB | Java 인터페이스 기반의 프록시 생성(JDK) 또는 바이트코드 조작을 통한 [[클래스]] 상속 기반의 프록시 생성(CGLIB) 기법 |
+| **관심사 모듈화** | Aspect (관점) | 부가 기능(Advice)과 적용 위치(Pointcut)를 하나로 묶어 독립적으로 캡슐화한 핵심 단위 |
+| **적용 대상** | Target (타겟) | 핵심 비즈니스 로직을 수행하며, Aspect의 부가 기능이 적용되는 실제 객체 |
+| **부가 기능** | Advice (조언) | 타겟에 주입할 실질적인 공통 기능 구현체 (실행 시점에 따라 Before, After, Around 등 지원) |
+| **적용 후보군** | Joinpoint (결합점) | Advice가 삽입될 수 있는 프로그램 실행 중의 모든 논리적 위치 (메서드 호출, 예외 발생 시점 등) |
+| **적용 지점** | Pointcut (교차점) | 무수히 많은 Joinpoint 중 실제로 특정 Advice를 적용할 지점을 선별하는 표현식 및 규칙 |
+| **주입 과정** | Weaving (위빙) | Pointcut에 의해 매핑된 Joinpoint에 Advice를 삽입하는 과정 (컴파일 시점, 클래스 로딩 시점, 런타임 시점) |
+| **동작 대리자** | Proxy (프록시) | 타겟 객체를 감싸 클라이언트 호출을 가로채고, Advice 실행 후 타겟을 대리 실행하는 객체 |
+| **프록시 구현** | JDK Dynamic Proxy / CGLIB | Java 인터페이스 기반 동적 프록시(JDK) 또는 바이트코드 조작 기반 서브클래싱 프록시(CGLIB) 활용 |
 
 ---
 
-## III. AOP와 OOP의 비교 및 향후 활용 전망
+## III. OOP와 AOP 비교 및 최신 동향
 
-### 가. 상호 보완적 패러다임, AOP와 OOP 비교
+### 가. OOP vs AOP 비교
 
-| 비교 항목 | OOP (Object Oriented Programming) | AOP (Aspect Oriented Programming) |
+| 비교 항목 | OOP (객체 지향 프로그래밍) | AOP (관점 지향 프로그래밍) |
 | --- | --- | --- |
-| **주요 목적** | 비즈니스 로직의 상태와 행위를 객체로 [[캡슐화]] | 여러 객체에 산재된 인프라성/공통 로직의 중복 제거 |
-| **관심사 (Concern)** | 핵심 관심사 (Core Concern) / 종단(Vertical) | 횡단 관심사 (Cross-cutting Concern) / 수평(Horizontal) |
-| **모듈화의 단위** | 클래스 (Class) | 관점 (Aspect) |
-| **상호 관계** | 애플리케이션의 뼈대와 비즈니스 흐름 구성 | OOP가 챙기지 못하는 횡단 관심사를 보완 (대체재 아님) |
+| **주요 목적** | 비즈니스 엔티티의 상태와 행위를 객체로 캡슐화 | 객체 간 분산된 공통 관심사의 중복 제거 및 모듈화 |
+| **관심사 방향** | **핵심 관심사 (Core Concern)** / 수직적(Vertical) | **횡단 관심사 (Cross-cutting Concern)** / 수평적(Horizontal) |
+| **모듈화 단위** | 클래스 (Class) | 관점 (Aspect) |
+| **상호 관계** | 시스템의 뼈대와 비즈니스 도메인 로직 구성 | OOP의 구조적 한계를 보완하는 상호 보완적 패러다임 |
 
-### 나. 분산 아키텍처 환경에서의 AOP 활용 전망
+### 나. 최신 기술 동향 및 발전 방향
 
-* **마이크로서비스([[MSA (Micro Service Architecture)|MSA]]) 관측성 확보**: MSA 분산 환경에서 여러 서비스 간의 호출 추적(Distributed Tracing, 예: Zipkin, Sleuth 등) 로직을 AOP 기반으로 주입하여, 핵심 비즈니스 코드의 침범 없이 전체 시스템의 가시성을 확보하는 핵심 기술로 활용됨
-* **어노테이션 기반 인프라 자동화**: Spring Boot 환경 등에서 `@Transactional`, `@Async`, `@Cacheable`과 같은 메타 어노테이션 기반 선언적 프로그래밍을 지원하는 백엔드 엔진으로 지속 활용되며 엔터프라이즈 시스템 개발 생산성을 주도함
+* **마이크로서비스 분산 추적(Distributed Tracing) 연계**: [[MSA (Micro Service Architecture)|MSA]] 환경에서 비즈니스 코드 수정 없이 요청 흐름 추적 ID(Trace ID, Span ID)를 발급하고 OpenTelemetry/Zipkin으로 전송하는 관측성(Observability) 엔진으로 활용됨.
+* **선언적 인프라 자동화 고도화**: Spring Boot 환경의 `@Transactional`, `@Retryable`, `@CircuitBreaker` 등 선언적 어노테이션 기반 인프라 로직 주입의 핵심 백엔드 메커니즘으로 안착됨.
 
 ---
 
@@ -99,8 +100,8 @@ flowchart TB
 - **소속 도메인**: [[00_소프트웨어공학_MOC|🏗️ 소프트웨어공학]]
 - **세부 분류**: `4. 아키텍처 스타일 & 객체지향 설계 원리`
 - **핵심 연관 토픽**:
-  - [[모듈화|모듈화 (Modularity)]]
-  - [[캡슐화|캡슐화 (encapsulation)]]
+  - [[Annotation]]
+  - [[모듈화]]
+  - [[결합도]]
+  - [[응집도]]
   - [[MSA (Micro Service Architecture)]]
-  - [[Proxy Pattern|Proxy (대리자, 최근 기출)]]
-  - [[클래스]]

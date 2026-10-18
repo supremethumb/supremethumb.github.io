@@ -10,13 +10,15 @@ tags:
 
 ## I. 다양한 크기의 객체 탐지를 위한 특징 추출 아키텍처, Feature Pyramid Network의 개요
 
-* **정의**: 컴퓨터 비전 모델에서 하향식 경로(Top-down)와 측면 연결(Lateral Connection)을 활용하여, 높은 공간 해상도(Spatial Resolution)와 강력한 의미 정보(Semantic Information)를 결합한 다중 스케일 특징 맵을 구축하는 [[딥러닝]] 아키텍처 기술
-* **필요성 및 등장배경/특징**:
-  * **작은 객체 탐지(Small Object Detection) 한계 극복**: 기존 [[CNN]]의 최상위 계층만 사용할 경우 공간 정보가 유실되어 작은 객체 탐지율이 저하되는 문제 해결
-  * **연산 효율성 확보**: 여러 해상도의 이미지를 입력하는 이미지 피라미드(Image Pyramid) 방식의 막대한 컴퓨팅 연산 오버헤드 해소
-  * **풍부한 의미망 구성**: 상위 계층의 강한 의미적 특징을 하위 계층으로 전달하여, 모든 해상도의 특징 맵이 강력한 문맥(Context) 정보를 보유하도록 아키텍처 개선
+### 가. Feature Pyramid Network의 정의
+컴퓨터 비전 모델에서 하향식 경로(Top-down)와 측면 연결(Lateral Connection)을 활용하여, 높은 공간 해상도(Spatial Resolution)와 강력한 의미 정보(Semantic Information)를 결합한 다중 스케일 특징 맵을 구축하는 [[딥러닝]] 아키텍처 기술이다.
 
-
+### 나. Feature Pyramid Network의 필요성 및 특징
+| 구분 | 세부 특징 |
+| --- | --- |
+| 작은 객체 탐지 한계 극복 | 기존 [[CNN]]의 최상위 계층만 사용할 경우 공간 정보가 유실되어 작은 객체 탐지율이 저하되는 문제 해결 |
+| 연산 효율성 확보 | 여러 해상도의 이미지를 입력하는 이미지 피라미드(Image Pyramid) 방식의 막대한 컴퓨팅 연산 오버헤드 해소 |
+| 풍부한 의미망 구성 | 상위 계층의 강한 의미적 특징을 하위 계층으로 전달하여, 모든 해상도의 특징 맵이 강력한 문맥(Context) 정보를 보유하도록 아키텍처 개선 |
 
 ---
 
@@ -89,8 +91,9 @@ flowchart LR
 
 ### 나. FPN의 산업 활용 및 차세대 발전 동향
 
-* **객체 탐지 모델의 표준 백본(Backbone)화**: FPN은 그 자체로 단독 모델이 아니며, Faster R-CNN, Mask R-CNN, RetinaNet 등의 2-Stage 및 1-Stage 객체 탐지 네트워크의 특징 추출기로 결합되어 성능을 비약적으로 향상하는 업계 표준으로 자리잡음
-* **양방향 특징 피라미드(BiFPN)로의 진화**: 기존 FPN의 단순한 하향식 연결을 개선하여, 구글의 EfficientDet 등에서는 상향식과 하향식 경로를 양방향으로 교차 연결하고 가중치를 부여하는 **BiFPN(Bi-directional FPN)** 및 **PANet(Path Aggregation Network)** 등 차세대 피라미드 아키텍처로 고도화되고 있음
+* **객체 탐지 모델의 표준 백본화**: Faster R-CNN, Mask R-CNN, RetinaNet 등 1-Stage 및 2-Stage 객체 탐지 모델의 기본 특징 추출기로 광범위하게 채택
+* **양방향 및 반복적 특징 피라미드로 고도화**: 단순 Top-down 연결을 넘어 PANet의 Bottom-up 재결합, EfficientDet의 BiFPN 등 가중치 기반 양방향 교차 연결 구조로 발전
+* **비전 트랜스포머(ViT)와의 결합 확장**: CNN 기반을 넘어 Swin Transformer 등 계층적 비전 트랜스포머 아키텍처와 결합하여 고해상도 분할 및 자율주행 객체 인식에 필수 적용
 
 ---
 

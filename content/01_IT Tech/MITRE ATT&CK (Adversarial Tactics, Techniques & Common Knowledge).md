@@ -13,14 +13,14 @@ aliases:
 ## I. 실효적 사이버 위협 방어체계, MITRE ATT&CK의 개요
 
 ### 가. MITRE ATT&CK의 정의
+- 사이버 공격자의 전술(Tactics), 기술(Techniques), 절차(Procedures)를 기반으로 실제 침해 행위를 분석하고 범주화한 글로벌 표준 지식 베이스(Framework).
 
-* 사이버 공격자의 전술(Tactics), 기술(Techniques), 절차(Procedures)를 기반으로 위협 행위를 분석하고 범주화한 글로벌 보안 표준 지식 베이스(Framework)
-
-### 나. MITRE ATT&CK의 필요성 및 특징
-
-* **행위(Behavior) 중심 방어**: 단편적인 침해지표(IoC, IP/Hash 등)가 아닌 공격자의 실제 의도와 행동 패턴(TTPs)에 집중하여 우회 공격 사전 탐지
-* **공통 언어 제공**: 레드팀(공격 훈련)과 블루팀(방어) 간의 표준화된 위협 커뮤니케이션 체계 지원 및 협업 가속화
-* **능동적 방어 체계 구축**: 조직의 방어 커버리지(Coverage)를 정량적으로 평가하고 [[SIEM]]/[[SOAR (Security Orchestration, Automation and Response)|SOAR]] 탐지 룰 최적화 및 Threat Hunting 수행에 직접 활용
+### 나. MITRE ATT&CK의 필요성 및 주요 특징
+| 구분 | 내용 |
+| --- | --- |
+| 행위(Behavior) 중심 | 정적 침해지표(IoC: IP, Hash 등)를 넘어 공격자의 실제 의도와 행동 패턴(TTPs) 기반 심층 탐지 |
+| 표준 공통 언어 | 레드팀(공격 훈련)과 블루팀(방어) 간 표준화된 공격 기술 용어 및 커뮤니케이션 프레임워크 제공 |
+| 능동적 방어 검증 | 조직의 보안 커버리지(Coverage) 정량 평가, [[SIEM]]/[[SOAR (Security Orchestration, Automation and Response)|SOAR]] 룰셋 최적화 및 Threat Hunting 표준 활용 |
 
 ---
 
@@ -89,9 +89,9 @@ flowchart LR
 | **주요 활용** | 거시적 방어 전략 수립 및 보안 아키텍처 설계 | 실무적 탐지 룰 적용, 레드/블루팀 모의해킹 훈련 기반 |
 
 ### 나. 실무 적용 시 고려사항 및 최신 기술 동향
-
-* **보안 커버리지 자동 검증**: BAS (Breach and Attack Simulation) 솔루션과 ATT&CK 매트릭스를 결합하여 조직의 방어 및 탐지 역량을 상시 자동 평가하는 체계로 고도화 중
-* **클라우드 위협 모델링 확대**: [[클라우드 네이티브]] 환경(SaaS, IaaS) 및 최신 소프트웨어 [[공급망 공격]] 패턴이 매트릭스에 지속 반영되고 있어, 기업의 제로 트러스트([[제로 트러스트 보안모델|Zero Trust]]) 아키텍처 수립을 위한 핵심 레퍼런스로 자리매김함
+- **BAS(Breach and Attack Simulation) 연계**: 공격 시뮬레이션 도구와 ATT&CK 매트릭스를 자동 연동하여 조직의 방어·탐지 통제 공백(Gap)을 상시 정량 측정 및 보완.
+- **클라우드 및 생성형 AI(ATLAS) 확장**: [[클라우드 네이티브]](Kubernetes, IaaS/SaaS) 및 LLM 인공지능 위협을 분석하기 위한 MITRE ATLAS(Adversarial Threat Landscape for AI Systems) 프레임워크로 TTPs 체계 지속 확장.
+- **XDR 및 차세대 SOC 융합**: [[CTI]]와 연계된 ATT&CK TTPs 지표를 [[XDR]] 및 자율 대응 오케스트레이션([[SOAR (Security Orchestration, Automation and Response)|SOAR]]) 플레이북에 매핑하여 침해 사고 자동 격리 체계 확립.
 
 ---
 
