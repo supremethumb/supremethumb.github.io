@@ -683,6 +683,35 @@ function initGalaxy() {
     }, 4500)
   })
 
+  // Domain MOC Quick Links
+  const DOMAIN_MOCS: Record<string, { label: string; slug: string }> = {
+    "01_IT Tech": { label: "IT & 테크 MOC ↗", slug: "01_it-tech/00_02_it_tech_moc" },
+    "02_Economics": { label: "경제 & 금융 MOC ↗", slug: "02_economics/00_02_economics_moc" },
+    "03_Management": { label: "경영 & PM MOC ↗", slug: "03_management/00_03_management_moc" },
+    "04_Design": { label: "UX & 디자인 MOC ↗", slug: "04_design/00_04_design_moc" },
+    "05_Humanities": { label: "인문 & 철학 MOC ↗", slug: "05_humanities/00_05_humanities_moc" },
+  }
+
+  const domainMocBtn = document.getElementById("btn-domain-moc")
+  const domainMocLabel = document.getElementById("domain-moc-label")
+  if (domainMocBtn) {
+    domainMocBtn.addEventListener("click", () => {
+      if (selectedDomain && DOMAIN_MOCS[selectedDomain]) {
+        navigateToNode(DOMAIN_MOCS[selectedDomain].slug)
+      }
+    })
+  }
+
+  function updateDomainMocBtn() {
+    if (!domainMocBtn) return
+    if (selectedDomain && DOMAIN_MOCS[selectedDomain]) {
+      if (domainMocLabel) domainMocLabel.innerText = DOMAIN_MOCS[selectedDomain].label
+      domainMocBtn.style.display = "inline-flex"
+    } else {
+      domainMocBtn.style.display = "none"
+    }
+  }
+
   // Domain Filter Buttons
   const filterButtons = document.querySelectorAll<HTMLButtonElement>(".domain-pill")
   filterButtons.forEach((btn) => {
@@ -693,6 +722,7 @@ function initGalaxy() {
       const domain = btn.dataset.domain ?? null
       selectedDomain = domain === "all" ? null : domain
       applyDomainFilter()
+      updateDomainMocBtn()
 
       if (autoTourActive) {
         scheduleTour(600)
@@ -772,6 +802,29 @@ function initGalaxy() {
         searchBtn.click()
       }
     })
+  }
+
+  // Dashboard Scroll Controls
+  function scrollToDashboard() {
+    const dashboard = document.querySelector(".center") ?? document.querySelector("article")
+    if (dashboard) {
+      dashboard.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
+  const dashboardTrigger = document.getElementById("galaxy-dashboard-trigger")
+  if (dashboardTrigger) {
+    dashboardTrigger.addEventListener("click", scrollToDashboard)
+  }
+
+  const scrollDashboardBtn = document.getElementById("btn-scroll-dashboard")
+  if (scrollDashboardBtn) {
+    scrollDashboardBtn.addEventListener("click", scrollToDashboard)
+  }
+
+  const scrollHint = document.getElementById("galaxy-scroll-hint")
+  if (scrollHint) {
+    scrollHint.addEventListener("click", scrollToDashboard)
   }
 
   // Smooth camera flight

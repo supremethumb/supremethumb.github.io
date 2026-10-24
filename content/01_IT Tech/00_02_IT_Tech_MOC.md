@@ -70,4 +70,4 @@ flowchart TD
 3. **지식 그래프 탐색**: 페이지 우측 상단의 **Local Graph** 및 메인 화면의 **Global Graph**를 통해 시각적으로 연결된 개념을 탐색하세요.
 
 ---
-[[content/index|🏠 Supreme Note 디지털 가든 메인으로 돌아가기]]
+[[index|🏠 Supreme Note 디지털 가든 메인으로 돌아가기]]

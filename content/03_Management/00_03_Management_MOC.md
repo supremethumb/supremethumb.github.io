@@ -166,3 +166,8 @@ flowchart TD
 
 ---
 
+## 🧭 빠른 이동 및 관련 도메인
+- [[index|🏠 Supreme Note 디지털 가든 홈]]
+- [[01_IT Tech/00_02_IT_Tech_MOC|🌐 IT & 테크 마스터 MOC]]
+- [[01_IT Tech/00_프로젝트관리_MOC|📋 정보관리기술사 프로젝트관리 MOC]]
+

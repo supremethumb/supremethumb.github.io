@@ -45,6 +45,28 @@ export default (() => {
           <div class="galaxy-top-controls">
             <button
               class="galaxy-hud-btn"
+              id="galaxy-dashboard-trigger"
+              aria-label="지식 도메인 허브 대시보드 보기"
+              title="5대 도메인 & 10대 IT MOC 허브로 이동"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="width: 0.95rem; height: 0.95rem;"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>지식 허브 ↓</span>
+            </button>
+
+            <button
+              class="galaxy-hud-btn"
               id="galaxy-search-trigger"
               aria-label="지식 검색"
               title="지식 검색 (Ctrl+K)"
@@ -103,6 +125,21 @@ export default (() => {
 
           {/* Action Tools */}
           <div class="galaxy-action-bar">
+            <button
+              id="btn-domain-moc"
+              class="action-pill-btn highlight-pill"
+              style="display: none;"
+              title="선택된 도메인의 마스터 MOC 문서 열기"
+            >
+              <span id="domain-moc-label">MOC 열기 ↗</span>
+            </button>
+            <button
+              id="btn-scroll-dashboard"
+              class="action-pill-btn"
+              title="5대 도메인 & MOC 대시보드로 스크롤"
+            >
+              <span>📚 지식 허브</span>
+            </button>
             <button id="btn-wander" class="action-pill-btn" title="랜덤 지식 노드로 날아가기">
               <span>Wander 탐험</span>
             </button>
@@ -118,6 +155,14 @@ export default (() => {
             </button>
           </div>
         </nav>
+
+        {/* Scroll Hint to Hub */}
+        <div id="galaxy-scroll-hint" class="galaxy-scroll-hint" title="아래로 스크롤하여 지식 허브 탐색">
+          <span>지식 허브 둘러보기</span>
+          <svg class="scroll-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
 
         {/* Floating Word Bubble on Auto-Tour & Hover */}
         <div id="galaxy-node-card" class="galaxy-node-card galaxy-word-bubble">

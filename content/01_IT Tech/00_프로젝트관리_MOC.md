@@ -105,4 +105,4 @@ flowchart TD
 
 ## 🧭 빠른 이동 및 관련 도메인
 - [[00_02_IT_Tech_MOC|🏠 IT & 테크 마스터 MOC로 돌아가기]]
-- [[content/index|🌐 Supreme Note 디지털 가든 홈]]
+- [[index|🌐 Supreme Note 디지털 가든 홈]]
